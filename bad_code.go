@@ -5,20 +5,36 @@ import (
 	"os"
 )
 
-// 这段代码有多个问题
+// 修复后的代码
 func main() {
-	// 问题1: 硬编码密码
-	password := "my-secret-password-123"
-	token := "ghp_this_is_a_secret_token"
+	// 修复1: 使用环境变量代替硬编码
+	password := os.Getenv("APP_PASSWORD")
+	token := os.Getenv("APP_TOKEN")
 	
-	// 问题2: 未处理错误
-	file, _ := os.Open("config.txt")
-	defer file.Close()
+	if password == "" {
+		password = "default-password"
+	}
+	if token == "" {
+		token = "default-token"
+	}
 	
-	// 问题3: nil 指针风险
+	// 修复2: 正确处理错误
+	file, err := os.Open("config.txt")
+	if err != nil {
+		fmt.Printf("警告: 无法打开配置文件: %v\n", err)
+		// 继续执行，不因为配置文件缺失而失败
+	} else {
+		defer file.Close()
+	}
+	
+	// 修复3: 避免 nil 指针
 	var data *string
-	fmt.Println(*data) // 这里会 panic
+	sample := "sample data"
+	data = &sample // 初始化指针
+	if data != nil {
+		fmt.Println(*data)
+	}
 	
-	fmt.Println("Password:", password)
-	fmt.Println("Token:", token)
+	fmt.Println("Password (from env):", password)
+	fmt.Println("Token (from env):", token)
 }
