@@ -27,13 +27,10 @@ func main() {
 		defer file.Close()
 	}
 
-	// 修复3: 避免 nil 指针
-	var data *string
+	// 修复3: 避免 nil 指针 - 移除多余的 nil 检查
 	sample := "sample data"
-	data = &sample // 初始化指针
-	if data != nil {
-		fmt.Println(*data)
-	}
+	data := &sample
+	fmt.Println(*data)
 
 	fmt.Println("Password (from env):", password)
 	fmt.Println("Token (from env):", token)
