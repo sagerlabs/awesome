@@ -17,44 +17,56 @@ jobs:
       
       - name: Install staticcheck and errcheck
         run: |
-          go install honnef.co/go/tools/cmd/staticcheck@latest || true
-          go install github.com/kisielk/errcheck@latest || true
+          go install honnef.co/go/tools/cmd/staticcheck@latest
+          go install github.com/kisielk/errcheck@latest
       
-      - name: Check gofmt
+      - name: Run all Go checks
+        id: go-checks
         run: |
+          HAS_ERRORS=0
+          
+          # Check gofmt
           if ls *.go 2>/dev/null || ls */*.go 2>/dev/null; then
             gofmt -l .
             if [ -n "$(gofmt -l .)" ]; then
               echo "❌ gofmt 检查失败，请运行 gofmt -w ."
-              exit 1
+              HAS_ERRORS=1
             fi
           fi
-      
-      - name: Run govet
-        run: |
+          
+          # Run govet
           if ls *.go 2>/dev/null || ls */*.go 2>/dev/null; then
-            go vet ./... || true
+            go vet ./... || HAS_ERRORS=1
           fi
-      
-      - name: Run staticcheck
-        run: |
+          
+          # Run staticcheck
           if ls *.go 2>/dev/null || ls */*.go 2>/dev/null; then
-            staticcheck ./... || true
+            staticcheck ./... || HAS_ERRORS=1
           fi
-      
-      - name: Run errcheck
-        run: |
+          
+          # Run errcheck
           if ls *.go 2>/dev/null || ls */*.go 2>/dev/null; then
-            errcheck ./... || true
+            errcheck ./... || HAS_ERRORS=1
           fi
-      
-      - name: Run Go tests
-        run: |
+          
+          # Run Go tests
           if ls *.go 2>/dev/null || ls */*.go 2>/dev/null; then
-            go test ./... -v -coverprofile=coverage.txt || true
+            go test ./... -v -coverprofile=coverage.txt || HAS_ERRORS=1
             if [ -f coverage.txt ]; then
-              go tool cover -func=coverage.txt || true
+              go tool cover -func=coverage.txt
             fi
+          fi
+          
+          echo "has_errors=$HAS_ERRORS" >> $GITHUB_OUTPUT
+      
+      - name: Final check result
+        run: |
+          if [ "${{ steps.go-checks.outputs.has_errors }}" = "1" ]; then
+            echo "❌ 部分检查失败"
+            exit 1
+          else
+            echo "✅ 所有检查通过"
+            exit 0
           fi
 
   python-checks:
@@ -73,17 +85,37 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       
-      - name: Run Python tests
+      - name: Run Python checks
+        id: python-checks
         run: |
-          if [ -d tests ]; then pytest tests/ -v || true; fi
+          HAS_ERRORS=0
+          
+          # Run Python tests
+          if [ -d tests ]; then
+            pytest tests/ -v || HAS_ERRORS=1
+          fi
+          
+          # Run linting
+          if [ -f .flake8 ] || [ -d src ]; then
+            flake8 src/ 2>/dev/null || true
+          fi
+          
+          # Run formatting check
+          if command -v black &> /dev/null; then
+            black --check . 2>/dev/null || true
+          fi
+          
+          echo "has_errors=$HAS_ERRORS" >> $GITHUB_OUTPUT
       
-      - name: Run linting
+      - name: Final check result
         run: |
-          if [ -f .flake8 ] || [ -d src ]; then flake8 src/ 2>/dev/null || true; fi
-      
-      - name: Run formatting check
-        run: |
-          if command -v black &> /dev/null; then black --check . 2>/dev/null || true; fi
+          if [ "${{ steps.python-checks.outputs.has_errors }}" = "1" ]; then
+            echo "❌ 部分检查失败"
+            exit 1
+          else
+            echo "✅ 所有检查通过"
+            exit 0
+          fi
 
   docs-check:
     name: Docs & CHANGELOG Check
