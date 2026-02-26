@@ -1,37 +1,23 @@
 package main
 
-import (
-	"fmt"
-	"os"
-)
+import "fmt"
 
-// 修复后的代码
+// StringUtils 字符串工具函数
+func ReverseString(s string) string {
+	runes := []rune(s)
+	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
+		runes[i], runes[j] = runes[j], runes[i]
+	}
+	return string(runes)
+}
+
+// Add 简单的加法函数
+func Add(a, b int) int {
+	return a + b
+}
+
 func main() {
-	// 修复1: 使用环境变量代替硬编码
-	password := os.Getenv("APP_PASSWORD")
-	token := os.Getenv("APP_TOKEN")
-
-	if password == "" {
-		password = "default-password"
-	}
-	if token == "" {
-		token = "default-token"
-	}
-
-	// 修复2: 正确处理错误
-	file, err := os.Open("config.txt")
-	if err != nil {
-		fmt.Printf("警告: 无法打开配置文件: %v\n", err)
-		// 继续执行，不因为配置文件缺失而失败
-	} else {
-		defer file.Close()
-	}
-
-	// 修复3: 避免 nil 指针 - 移除多余的 nil 检查
-	sample := "sample data"
-	data := &sample
-	fmt.Println(*data)
-
-	fmt.Println("Password (from env):", password)
-	fmt.Println("Token (from env):", token)
+	fmt.Println("Hello, World!")
+	fmt.Println("Reverse of 'hello':", ReverseString("hello"))
+	fmt.Println("1 + 2 =", Add(1, 2))
 }
