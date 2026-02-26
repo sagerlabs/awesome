@@ -1,0 +1,46 @@
+name: PR Auto Review
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Auto Review
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: files } = await github.rest.pulls.listFiles({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number
+            });
+            
+            let reviewComment = '## 自动 Review 报告\n\n';
+            let hasIssues = false;
+            
+            for (const file of files) {
+              if (file.filename.includes('.env')) {
+                reviewComment += `⚠️ **警告**: 检测到环境变量文件 ${file.filename}\n`;
+                hasIssues = true;
+              }
+              if (file.additions > 500) {
+                reviewComment += `📝 **注意**: ${file.filename} 添加了 ${file.additions} 行，建议拆分 PR\n`;
+              }
+            }
+            
+            if (!hasIssues) {
+              reviewComment += '✅ 未发现明显问题，等待人工 review\n';
+            }
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: reviewComment
+            });
