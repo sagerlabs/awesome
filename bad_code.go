@@ -10,14 +10,14 @@ func main() {
 	// 修复1: 使用环境变量代替硬编码
 	password := os.Getenv("APP_PASSWORD")
 	token := os.Getenv("APP_TOKEN")
-	
+
 	if password == "" {
 		password = "default-password"
 	}
 	if token == "" {
 		token = "default-token"
 	}
-	
+
 	// 修复2: 正确处理错误
 	file, err := os.Open("config.txt")
 	if err != nil {
@@ -26,7 +26,7 @@ func main() {
 	} else {
 		defer file.Close()
 	}
-	
+
 	// 修复3: 避免 nil 指针
 	var data *string
 	sample := "sample data"
@@ -34,7 +34,7 @@ func main() {
 	if data != nil {
 		fmt.Println(*data)
 	}
-	
+
 	fmt.Println("Password (from env):", password)
 	fmt.Println("Token (from env):", token)
 }
