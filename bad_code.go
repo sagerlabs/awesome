@@ -16,8 +16,14 @@ func Add(a, b int) int {
 	return a + b
 }
 
+// Multiply 乘法函数（新增功能）
+func Multiply(a, b int) int {
+	return a * b
+}
+
 func main() {
 	fmt.Println("Hello, World!")
 	fmt.Println("Reverse of 'hello':", ReverseString("hello"))
 	fmt.Println("1 + 2 =", Add(1, 2))
+	fmt.Println("3 * 4 =", Multiply(3, 4))
 }
