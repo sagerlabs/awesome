@@ -39,3 +39,22 @@ func TestAdd(t *testing.T) {
 		}
 	}
 }
+
+func TestMultiply(t *testing.T) {
+	tests := []struct {
+		a, b     int
+		expected int
+	}{
+		{3, 4, 12},
+		{0, 5, 0},
+		{-2, 3, -6},
+		{10, 10, 100},
+	}
+
+	for _, tt := range tests {
+		result := Multiply(tt.a, tt.b)
+		if result != tt.expected {
+			t.Errorf("Multiply(%d, %d) = %d, expected %d", tt.a, tt.b, result, tt.expected)
+		}
+	}
+}

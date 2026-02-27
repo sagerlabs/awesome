@@ -1,4 +1,4 @@
-.PHONY: test lint format check pr help
+.PHONY: test lint format check pr help gitflow-help
 
 help:  ## 显示帮助
 	@awk 'BEGIN {FS = ":.*##"; printf "\n用法:\n  make \033[36m<目标>\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 }' $(MAKEFILE_LIST)
@@ -17,3 +17,7 @@ check:  ## 运行所有检查
 
 pr:  ## 创建 PR
 	./scripts/create-pr.sh
+
+gitflow-help:  ## 显示 GitFlow 帮助
+	./scripts/git-flow.sh help
+
