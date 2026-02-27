@@ -21,9 +21,15 @@ func Multiply(a, b int) int {
 	return a * b
 }
 
+// Subtract 减法函数（GitHub PR 演示）
+func Subtract(a, b int) int {
+	return a - b
+}
+
 func main() {
 	fmt.Println("Hello, World!")
 	fmt.Println("Reverse of 'hello':", ReverseString("hello"))
 	fmt.Println("1 + 2 =", Add(1, 2))
 	fmt.Println("3 * 4 =", Multiply(3, 4))
+	fmt.Println("10 - 5 =", Subtract(10, 5))
 }
