@@ -1,7 +1,6 @@
 package sse
 
 import (
-	"bytes"
 	"context"
 	"encoding/json"
 	"io"
@@ -14,9 +13,9 @@ import (
 
 func TestEvent_String(t *testing.T) {
 	tests := []struct {
-		name string
+		name  string
 		event *Event
-		want string
+		want  string
 	}{
 		{
 			name: "basic event",
@@ -56,18 +55,18 @@ func TestEvent_String(t *testing.T) {
 func TestEvent_MarshalJSON(t *testing.T) {
 	event := &Event{}
 	data := map[string]string{"key": "value"}
-	
+
 	err := event.MarshalJSON(data)
 	if err != nil {
 		t.Fatalf("MarshalJSON failed: %v", err)
 	}
-	
+
 	var result map[string]string
 	err = json.Unmarshal([]byte(event.Data), &result)
 	if err != nil {
 		t.Fatalf("Unmarshal failed: %v", err)
 	}
-	
+
 	if result["key"] != "value" {
 		t.Errorf("Expected key=value, got key=%s", result["key"])
 	}
@@ -77,13 +76,13 @@ func TestEvent_UnmarshalJSON(t *testing.T) {
 	event := &Event{
 		Data: `{"key":"value"}`,
 	}
-	
+
 	var result map[string]string
 	err := event.UnmarshalJSON(&result)
 	if err != nil {
 		t.Fatalf("UnmarshalJSON failed: %v", err)
 	}
-	
+
 	if result["key"] != "value" {
 		t.Errorf("Expected key=value, got key=%s", result["key"])
 	}
@@ -91,12 +90,12 @@ func TestEvent_UnmarshalJSON(t *testing.T) {
 
 func TestServer_SubscribeUnsubscribe(t *testing.T) {
 	server := NewServer()
-	
+
 	ch := server.Subscribe()
 	if server.ClientCount() != 1 {
 		t.Errorf("Expected 1 client, got %d", server.ClientCount())
 	}
-	
+
 	server.Unsubscribe(ch)
 	if server.ClientCount() != 0 {
 		t.Errorf("Expected 0 clients, got %d", server.ClientCount())
@@ -105,13 +104,13 @@ func TestServer_SubscribeUnsubscribe(t *testing.T) {
 
 func TestServer_Publish(t *testing.T) {
 	server := NewServer()
-	
+
 	ch1 := server.Subscribe()
 	ch2 := server.Subscribe()
-	
+
 	event := &Event{Data: "test"}
 	server.Publish(event)
-	
+
 	select {
 	case e := <-ch1:
 		if e.Data != "test" {
@@ -120,7 +119,7 @@ func TestServer_Publish(t *testing.T) {
 	case <-time.After(100 * time.Millisecond):
 		t.Error("Timeout waiting for event on ch1")
 	}
-	
+
 	select {
 	case e := <-ch2:
 		if e.Data != "test" {
@@ -133,25 +132,27 @@ func TestServer_Publish(t *testing.T) {
 
 func TestServer_ServeHTTP(t *testing.T) {
 	server := NewServer()
-	
+
 	ts := httptest.NewServer(server)
 	defer ts.Close()
-	
+
 	req, err := http.NewRequest("GET", ts.URL, nil)
 	if err != nil {
 		t.Fatalf("Failed to create request: %v", err)
 	}
-	
+
 	client := &http.Client{
 		Timeout: 1 * time.Second,
 	}
-	
+
 	resp, err := client.Do(req)
 	if err != nil {
 		t.Fatalf("Failed to make request: %v", err)
 	}
-	defer resp.Body.Close()
-	
+	defer func() {
+		_ = resp.Body.Close()
+	}()
+
 	if resp.Header.Get("Content-Type") != ContentType {
 		t.Errorf("Expected Content-Type=%s, got %s", ContentType, resp.Header.Get("Content-Type"))
 	}
@@ -191,7 +192,7 @@ func TestParseEvent(t *testing.T) {
 			if err != nil {
 				t.Fatalf("parseEvent failed: %v", err)
 			}
-			
+
 			if got.ID != tt.want.ID {
 				t.Errorf("ID: got %q, want %q", got.ID, tt.want.ID)
 			}
@@ -211,8 +212,10 @@ func TestParseEvent(t *testing.T) {
 func TestEventReader_Read(t *testing.T) {
 	data := "data: event1\n\ndata: event2\n\n"
 	r := NewEventReader(io.NopCloser(strings.NewReader(data)), nil)
-	defer r.Close()
-	
+	defer func() {
+		_ = r.Close()
+	}()
+
 	event1, err := r.Read()
 	if err != nil {
 		t.Fatalf("Read failed: %v", err)
@@ -220,7 +223,7 @@ func TestEventReader_Read(t *testing.T) {
 	if event1.Data != "event1" {
 		t.Errorf("Expected event1, got %s", event1.Data)
 	}
-	
+
 	event2, err := r.Read()
 	if err != nil {
 		t.Fatalf("Read failed: %v", err)
@@ -228,7 +231,7 @@ func TestEventReader_Read(t *testing.T) {
 	if event2.Data != "event2" {
 		t.Errorf("Expected event2, got %s", event2.Data)
 	}
-	
+
 	_, err = r.Read()
 	if err != io.EOF {
 		t.Errorf("Expected EOF, got %v", err)
@@ -239,14 +242,14 @@ func TestClient_Connect(t *testing.T) {
 	server := NewServer()
 	ts := httptest.NewServer(server)
 	defer ts.Close()
-	
+
 	client := NewClient(ts.URL)
 	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Second)
 	defer cancel()
-	
+
 	reader, err := client.Connect(ctx)
 	if err == nil {
-		reader.Close()
+		_ = reader.Close()
 	}
 }
 
@@ -254,37 +257,34 @@ func TestClient_Stream(t *testing.T) {
 	server := NewServer()
 	ts := httptest.NewServer(server)
 	defer ts.Close()
-	
+
 	client := NewClient(ts.URL)
 	ctx, cancel := context.WithTimeout(context.Background(), 2*time.Second)
 	defer cancel()
-	
+
 	eventCh, errCh := client.Stream(ctx)
-	
-	// Publish an event
+
 	go func() {
 		time.Sleep(100 * time.Millisecond)
 		server.Publish(&Event{Data: "test"})
 	}()
-	
+
 	select {
 	case event := <-eventCh:
 		if event != nil && event.Data == "test" {
-			// Success
 		}
 	case err := <-errCh:
 		if err != context.DeadlineExceeded {
 			t.Logf("Stream error: %v", err)
 		}
 	case <-ctx.Done():
-		// Timeout is expected
 	}
 }
 
 func TestServer_WithOptions(t *testing.T) {
 	connectCalled := false
 	disconnectCalled := false
-	
+
 	server := NewServer(
 		WithBufferSize(200),
 		WithOnConnect(func(ch chan *Event) {
@@ -294,12 +294,12 @@ func TestServer_WithOptions(t *testing.T) {
 			disconnectCalled = true
 		}),
 	)
-	
+
 	ch := server.Subscribe()
 	if !connectCalled {
 		t.Error("Expected OnConnect to be called")
 	}
-	
+
 	server.Unsubscribe(ch)
 	if !disconnectCalled {
 		t.Error("Expected OnDisconnect to be called")
@@ -308,14 +308,14 @@ func TestServer_WithOptions(t *testing.T) {
 
 func TestClient_WithOptions(t *testing.T) {
 	httpClient := &http.Client{Timeout: 10 * time.Second}
-	
+
 	client := NewClient(
 		"http://example.com",
 		WithHTTPClient(httpClient),
 		WithLastEventID("last-id"),
 		WithRetry(10000),
 	)
-	
+
 	if client.HTTPClient != httpClient {
 		t.Error("Expected custom HTTP client")
 	}
@@ -334,7 +334,7 @@ func BenchmarkEvent_String(b *testing.B) {
 		Data:  "hello world",
 		Retry: 5000,
 	}
-	
+
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		_ = event.String()
@@ -343,7 +343,7 @@ func BenchmarkEvent_String(b *testing.B) {
 
 func BenchmarkParseEvent(b *testing.B) {
 	text := "id: 123\nevent: message\ndata: hello world\nretry: 5000"
-	
+
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		_, _ = parseEvent(text, nil)
@@ -352,19 +352,17 @@ func BenchmarkParseEvent(b *testing.B) {
 
 func BenchmarkServer_Publish(b *testing.B) {
 	server := NewServer()
-	
-	// Create 10 subscribers
+
 	for i := 0; i < 10; i++ {
 		ch := server.Subscribe()
-		// Drain events
 		go func() {
 			for range ch {
 			}
 		}()
 	}
-	
+
 	event := &Event{Data: "benchmark"}
-	
+
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		server.Publish(event)

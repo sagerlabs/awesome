@@ -54,22 +54,21 @@ func (e *Event) String() string {
 	var buf bytes.Buffer
 
 	if e.ID != "" {
-		buf.WriteString(fmt.Sprintf("id: %s\n", e.ID))
+		_, _ = buf.WriteString(fmt.Sprintf("id: %s\n", e.ID))
 	}
 	if e.Event != "" {
-		buf.WriteString(fmt.Sprintf("event: %s\n", e.Event))
+		_, _ = buf.WriteString(fmt.Sprintf("event: %s\n", e.Event))
 	}
 	if e.Retry > 0 {
-		buf.WriteString(fmt.Sprintf("retry: %d\n", e.Retry))
+		_, _ = buf.WriteString(fmt.Sprintf("retry: %d\n", e.Retry))
 	}
 
-	// Handle multi-line data
 	lines := strings.Split(e.Data, "\n")
 	for _, line := range lines {
-		buf.WriteString(fmt.Sprintf("data: %s\n", line))
+		_, _ = buf.WriteString(fmt.Sprintf("data: %s\n", line))
 	}
 
-	buf.WriteString("\n")
+	_, _ = buf.WriteString("\n")
 	return buf.String()
 }
 
@@ -90,11 +89,11 @@ func (e *Event) UnmarshalJSON(v interface{}) error {
 
 // Server represents an SSE server that can send events to multiple clients
 type Server struct {
-	mu          sync.RWMutex
-	clients     map[chan *Event]struct{}
-	onConnect   func(chan *Event)
+	mu           sync.RWMutex
+	clients      map[chan *Event]struct{}
+	onConnect    func(chan *Event)
 	onDisconnect func(chan *Event)
-	bufferSize  int
+	bufferSize   int
 }
 
 // ServerOption is a function that configures a Server
@@ -174,7 +173,6 @@ func (s *Server) Publish(event *Event) {
 		select {
 		case ch <- event:
 		default:
-			// Drop event if client is slow
 		}
 	}
 }
@@ -188,25 +186,21 @@ func (s *Server) ClientCount() int {
 
 // ServeHTTP implements http.Handler for SSE streaming
 func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	// Set SSE headers
 	w.Header().Set("Content-Type", ContentType)
 	w.Header().Set("Cache-Control", CacheControl)
 	w.Header().Set("Connection", ConnectionHeader)
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 
-	// Flush support
 	flusher, ok := w.(http.Flusher)
 	if !ok {
 		http.Error(w, "Streaming unsupported", http.StatusInternalServerError)
 		return
 	}
 
-	// Subscribe client
 	ch := s.Subscribe()
 	defer s.Unsubscribe(ch)
 
-	// Send initial comment to keep connection alive
-	fmt.Fprintf(w, ": connected\n\n")
+	_, _ = fmt.Fprintf(w, ": connected\n\n")
 	flusher.Flush()
 
 	for {
@@ -215,7 +209,7 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			if event == nil {
 				return
 			}
-			fmt.Fprint(w, event.String())
+			_, _ = fmt.Fprint(w, event.String())
 			flusher.Flush()
 
 		case <-r.Context().Done():
@@ -289,16 +283,15 @@ func (c *Client) Connect(ctx context.Context) (*EventReader, error) {
 		return nil, err
 	}
 
-	// Check content type
 	contentType := resp.Header.Get("Content-Type")
 	mediaType, _, err := mime.ParseMediaType(contentType)
 	if err != nil || mediaType != ContentType {
-		resp.Body.Close()
+		_ = resp.Body.Close()
 		return nil, fmt.Errorf("unexpected content type: %s", contentType)
 	}
 
 	if resp.StatusCode != http.StatusOK {
-		resp.Body.Close()
+		_ = resp.Body.Close()
 		return nil, fmt.Errorf("unexpected status code: %d", resp.StatusCode)
 	}
 
@@ -323,13 +316,11 @@ func NewEventReader(r io.ReadCloser, client *Client) *EventReader {
 	}
 }
 
-// scanSSE is a bufio.SplitFunc for SSE streams
 func scanSSE(data []byte, atEOF bool) (advance int, token []byte, err error) {
 	if atEOF && len(data) == 0 {
 		return 0, nil, nil
 	}
 
-	// Look for double newline
 	if i := bytes.Index(data, []byte("\n\n")); i >= 0 {
 		return i + 2, data[0:i], nil
 	}
@@ -357,7 +348,6 @@ func (r *EventReader) Read() (*Event, error) {
 	return parseEvent(r.scanner.Text(), r.client)
 }
 
-// parseEvent parses an SSE event from text
 func parseEvent(text string, client *Client) (*Event, error) {
 	event := &Event{}
 	var dataBuf bytes.Buffer
@@ -389,9 +379,9 @@ func parseEvent(text string, client *Client) (*Event, error) {
 			event.Event = value
 		case "data":
 			if dataBuf.Len() > 0 {
-				dataBuf.WriteString("\n")
+				_, _ = dataBuf.WriteString("\n")
 			}
-			dataBuf.WriteString(value)
+			_, _ = dataBuf.WriteString(value)
 		case "retry":
 			if retry, err := strconv.Atoi(value); err == nil {
 				event.Retry = retry
@@ -431,7 +421,6 @@ func (c *Client) Stream(ctx context.Context) (<-chan *Event, <-chan error) {
 			reader, err := c.Connect(ctx)
 			if err != nil {
 				errCh <- err
-				// Backoff before retry
 				time.Sleep(time.Duration(c.Retry) * time.Millisecond)
 				continue
 			}
@@ -439,9 +428,8 @@ func (c *Client) Stream(ctx context.Context) (<-chan *Event, <-chan error) {
 			for {
 				event, err := reader.Read()
 				if err != nil {
-					reader.Close()
+					_ = reader.Close()
 					if err == io.EOF {
-						// Normal end, retry
 						time.Sleep(time.Duration(c.Retry) * time.Millisecond)
 						break
 					}
@@ -453,7 +441,7 @@ func (c *Client) Stream(ctx context.Context) (<-chan *Event, <-chan error) {
 				select {
 				case eventCh <- event:
 				case <-ctx.Done():
-					reader.Close()
+					_ = reader.Close()
 					errCh <- ctx.Err()
 					return
 				}
