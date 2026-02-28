@@ -3,6 +3,7 @@ package sse
 import (
 	"encoding/json"
 	"io"
+	"net/http"
 	"strings"
 	"testing"
 	"time"
