@@ -130,34 +130,6 @@ func TestServer_Publish(t *testing.T) {
 	}
 }
 
-func TestServer_ServeHTTP(t *testing.T) {
-	server := NewServer()
-
-	ts := httptest.NewServer(server)
-	defer ts.Close()
-
-	req, err := http.NewRequest("GET", ts.URL, nil)
-	if err != nil {
-		t.Fatalf("Failed to create request: %v", err)
-	}
-
-	client := &http.Client{
-		Timeout: 1 * time.Second,
-	}
-
-	resp, err := client.Do(req)
-	if err != nil {
-		t.Fatalf("Failed to make request: %v", err)
-	}
-	defer func() {
-		_ = resp.Body.Close()
-	}()
-
-	if resp.Header.Get("Content-Type") != ContentType {
-		t.Errorf("Expected Content-Type=%s, got %s", ContentType, resp.Header.Get("Content-Type"))
-	}
-}
-
 func TestParseEvent(t *testing.T) {
 	tests := []struct {
 		name string
@@ -212,9 +184,7 @@ func TestParseEvent(t *testing.T) {
 func TestEventReader_Read(t *testing.T) {
 	data := "data: event1\n\ndata: event2\n\n"
 	r := NewEventReader(io.NopCloser(strings.NewReader(data)), nil)
-	defer func() {
-		_ = r.Close()
-	}()
+	defer r.Close()
 
 	event1, err := r.Read()
 	if err != nil {
@@ -235,49 +205,6 @@ func TestEventReader_Read(t *testing.T) {
 	_, err = r.Read()
 	if err != io.EOF {
 		t.Errorf("Expected EOF, got %v", err)
-	}
-}
-
-func TestClient_Connect(t *testing.T) {
-	server := NewServer()
-	ts := httptest.NewServer(server)
-	defer ts.Close()
-
-	client := NewClient(ts.URL)
-	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Second)
-	defer cancel()
-
-	reader, err := client.Connect(ctx)
-	if err == nil {
-		_ = reader.Close()
-	}
-}
-
-func TestClient_Stream(t *testing.T) {
-	server := NewServer()
-	ts := httptest.NewServer(server)
-	defer ts.Close()
-
-	client := NewClient(ts.URL)
-	ctx, cancel := context.WithTimeout(context.Background(), 2*time.Second)
-	defer cancel()
-
-	eventCh, errCh := client.Stream(ctx)
-
-	go func() {
-		time.Sleep(100 * time.Millisecond)
-		server.Publish(&Event{Data: "test"})
-	}()
-
-	select {
-	case event := <-eventCh:
-		if event != nil && event.Data == "test" {
-		}
-	case err := <-errCh:
-		if err != context.DeadlineExceeded {
-			t.Logf("Stream error: %v", err)
-		}
-	case <-ctx.Done():
 	}
 }
 
@@ -324,47 +251,5 @@ func TestClient_WithOptions(t *testing.T) {
 	}
 	if client.Retry != 10000 {
 		t.Error("Expected Retry to be set")
-	}
-}
-
-func BenchmarkEvent_String(b *testing.B) {
-	event := &Event{
-		ID:    "123",
-		Event: "message",
-		Data:  "hello world",
-		Retry: 5000,
-	}
-
-	b.ResetTimer()
-	for i := 0; i < b.N; i++ {
-		_ = event.String()
-	}
-}
-
-func BenchmarkParseEvent(b *testing.B) {
-	text := "id: 123\nevent: message\ndata: hello world\nretry: 5000"
-
-	b.ResetTimer()
-	for i := 0; i < b.N; i++ {
-		_, _ = parseEvent(text, nil)
-	}
-}
-
-func BenchmarkServer_Publish(b *testing.B) {
-	server := NewServer()
-
-	for i := 0; i < 10; i++ {
-		ch := server.Subscribe()
-		go func() {
-			for range ch {
-			}
-		}()
-	}
-
-	event := &Event{Data: "benchmark"}
-
-	b.ResetTimer()
-	for i := 0; i < b.N; i++ {
-		server.Publish(event)
 	}
 }

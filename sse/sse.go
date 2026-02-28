@@ -1,14 +1,4 @@
 // Package sse provides a robust Server-Sent Events (SSE) implementation for Go.
-// This implementation is inspired by how major LLM providers (OpenAI, Anthropic, etc.)
-// handle streaming responses in their Go SDKs.
-//
-// Key features:
-//   - Thread-safe event streaming
-//   - Automatic reconnection with backoff
-//   - Custom event types and data
-//   - Id and retry support
-//   - Context-aware cancellation
-//   - Buffered and unbuffered modes
 package sse
 
 import (
@@ -39,13 +29,9 @@ const (
 
 // Event represents a single SSE event
 type Event struct {
-	// ID is the event identifier (optional)
-	ID string
-	// Event is the event type (optional, defaults to "message")
+	ID    string
 	Event string
-	// Data is the event payload (required)
-	Data string
-	// Retry is the retry interval in milliseconds (optional)
+	Data  string
 	Retry int
 }
 
@@ -54,21 +40,21 @@ func (e *Event) String() string {
 	var buf bytes.Buffer
 
 	if e.ID != "" {
-		_, _ = buf.WriteString(fmt.Sprintf("id: %s\n", e.ID))
+		buf.WriteString("id: " + e.ID + "\n")
 	}
 	if e.Event != "" {
-		_, _ = buf.WriteString(fmt.Sprintf("event: %s\n", e.Event))
+		buf.WriteString("event: " + e.Event + "\n")
 	}
 	if e.Retry > 0 {
-		_, _ = buf.WriteString(fmt.Sprintf("retry: %d\n", e.Retry))
+		buf.WriteString(fmt.Sprintf("retry: %d\n", e.Retry))
 	}
 
 	lines := strings.Split(e.Data, "\n")
 	for _, line := range lines {
-		_, _ = buf.WriteString(fmt.Sprintf("data: %s\n", line))
+		buf.WriteString("data: " + line + "\n")
 	}
 
-	_, _ = buf.WriteString("\n")
+	buf.WriteString("\n")
 	return buf.String()
 }
 
@@ -200,7 +186,7 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	ch := s.Subscribe()
 	defer s.Unsubscribe(ch)
 
-	_, _ = fmt.Fprintf(w, ": connected\n\n")
+	fmt.Fprintf(w, ": connected\n\n")
 	flusher.Flush()
 
 	for {
@@ -209,7 +195,7 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			if event == nil {
 				return
 			}
-			_, _ = fmt.Fprint(w, event.String())
+			fmt.Fprint(w, event.String())
 			flusher.Flush()
 
 		case <-r.Context().Done():
@@ -286,12 +272,12 @@ func (c *Client) Connect(ctx context.Context) (*EventReader, error) {
 	contentType := resp.Header.Get("Content-Type")
 	mediaType, _, err := mime.ParseMediaType(contentType)
 	if err != nil || mediaType != ContentType {
-		_ = resp.Body.Close()
+		resp.Body.Close()
 		return nil, fmt.Errorf("unexpected content type: %s", contentType)
 	}
 
 	if resp.StatusCode != http.StatusOK {
-		_ = resp.Body.Close()
+		resp.Body.Close()
 		return nil, fmt.Errorf("unexpected status code: %d", resp.StatusCode)
 	}
 
@@ -379,9 +365,9 @@ func parseEvent(text string, client *Client) (*Event, error) {
 			event.Event = value
 		case "data":
 			if dataBuf.Len() > 0 {
-				_, _ = dataBuf.WriteString("\n")
+				dataBuf.WriteString("\n")
 			}
-			_, _ = dataBuf.WriteString(value)
+			dataBuf.WriteString(value)
 		case "retry":
 			if retry, err := strconv.Atoi(value); err == nil {
 				event.Retry = retry
@@ -428,7 +414,7 @@ func (c *Client) Stream(ctx context.Context) (<-chan *Event, <-chan error) {
 			for {
 				event, err := reader.Read()
 				if err != nil {
-					_ = reader.Close()
+					reader.Close()
 					if err == io.EOF {
 						time.Sleep(time.Duration(c.Retry) * time.Millisecond)
 						break
@@ -441,7 +427,7 @@ func (c *Client) Stream(ctx context.Context) (<-chan *Event, <-chan error) {
 				select {
 				case eventCh <- event:
 				case <-ctx.Done():
-					_ = reader.Close()
+					reader.Close()
 					errCh <- ctx.Err()
 					return
 				}
