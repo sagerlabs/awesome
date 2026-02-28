@@ -58,8 +58,8 @@ func (e *Event) String() string {
 	return buf.String()
 }
 
-// MarshalJSON marshals the event data to JSON
-func (e *Event) MarshalJSON(v interface{}) error {
+// MarshalData marshals the given data to JSON and sets it as the event data
+func (e *Event) MarshalData(v interface{}) error {
 	data, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -68,8 +68,8 @@ func (e *Event) MarshalJSON(v interface{}) error {
 	return nil
 }
 
-// UnmarshalJSON unmarshals the event data from JSON
-func (e *Event) UnmarshalJSON(v interface{}) error {
+// UnmarshalData unmarshals the event data from JSON into the given value
+func (e *Event) UnmarshalData(v interface{}) error {
 	return json.Unmarshal([]byte(e.Data), v)
 }
 

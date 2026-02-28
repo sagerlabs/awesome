@@ -142,24 +142,24 @@ fmt.Println(event.String())
 // (空行)
 ```
 
-#### MarshalJSON(v interface{}) error
+#### MarshalData(v interface{}) error
 将数据序列化为 JSON 格式。
 
 ```go
 event := &sse.Event{}
-err := event.MarshalJSON(map[string]string{
+err := event.MarshalData(map[string]string{
     "status": "completed",
     "result": "42",
 })
 ```
 
-#### UnmarshalJSON(v interface{}) error
+#### UnmarshalData(v interface{}) error
 从 JSON 数据反序列化。
 
 ```go
 event := &sse.Event{Data: `{"status":"completed"}`}
 var result map[string]string
-err := event.UnmarshalJSON(&result)
+err := event.UnmarshalData(&result)
 ```
 
 ### Server 方法
@@ -337,7 +337,7 @@ func (cs *ChatServer) SendMessage(username, text string) {
     event := &sse.Event{
         Event: "message",
     }
-    event.MarshalJSON(message)
+    event.MarshalData(message)
     cs.sseServer.Publish(event)
 }
 
@@ -459,7 +459,7 @@ func processTask(taskID string, server *sse.Server) {
             event := &sse.Event{
                 Event: "progress",
             }
-            event.MarshalJSON(update)
+            event.MarshalData(update)
             server.Publish(event)
             
             time.Sleep(100 * time.Millisecond)

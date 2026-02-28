@@ -50,13 +50,13 @@ func TestEvent_String(t *testing.T) {
 	}
 }
 
-func TestEvent_MarshalJSON(t *testing.T) {
+func TestEvent_MarshalData(t *testing.T) {
 	event := &Event{}
 	data := map[string]string{"key": "value"}
 
-	err := event.MarshalJSON(data)
+	err := event.MarshalData(data)
 	if err != nil {
-		t.Fatalf("MarshalJSON failed: %v", err)
+		t.Fatalf("MarshalData failed: %v", err)
 	}
 
 	var result map[string]string
@@ -70,15 +70,15 @@ func TestEvent_MarshalJSON(t *testing.T) {
 	}
 }
 
-func TestEvent_UnmarshalJSON(t *testing.T) {
+func TestEvent_UnmarshalData(t *testing.T) {
 	event := &Event{
 		Data: `{"key":"value"}`,
 	}
 
 	var result map[string]string
-	err := event.UnmarshalJSON(&result)
+	err := event.UnmarshalData(&result)
 	if err != nil {
-		t.Fatalf("UnmarshalJSON failed: %v", err)
+		t.Fatalf("UnmarshalData failed: %v", err)
 	}
 
 	if result["key"] != "value" {
