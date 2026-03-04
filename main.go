@@ -4,6 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/gin-contrib/cors"
 	"net/http"
 	"os"
 	"os/signal"
@@ -11,10 +12,8 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/sirupsen/logrus"
-	"github.com/toorop/gin-logrus"
-
 	"github.com/sagerlabs/awesome/tft"
+	"github.com/sirupsen/logrus"
 )
 
 func main() {
@@ -39,11 +38,12 @@ func main() {
 	}
 
 	e := gin.New()
-	e.Use(
-		gin.Recovery(),           // panic 恢复
-		ginlogrus.Logger(logger), // 请求日志：用 gin-logrus，保持 Gin 原有风格 + logrus 输出
-	)
 
+	e.Use(
+		cors.Default(),
+		gin.Recovery(), // panic 恢复
+	)
+	e.StaticFile("/", "./fronted/index.html")
 	tftHandler.RegisterRoutes(e)
 
 	// ── 5. 启动 HTTP Server ───────────────────────────────────────────────────

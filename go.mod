@@ -6,6 +6,7 @@ require (
 	github.com/cloudwego/eino v0.7.37
 	github.com/cloudwego/eino-ext/components/model/ark v0.1.65
 	github.com/cloudwego/eino-ext/components/model/openai v0.1.8
+	github.com/gin-contrib/cors v1.7.6
 	github.com/gin-gonic/gin v1.12.0
 	github.com/sirupsen/logrus v1.9.3
 	github.com/toorop/gin-logrus v0.0.0-20210225092905-2c785434f26f
