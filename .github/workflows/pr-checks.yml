@@ -25,73 +25,44 @@ jobs:
         run: |
           HAS_ERRORS=0
           
-          echo "::group::Check gofmt"
+          # Check gofmt
           if ls *.go 2>/dev/null || ls */*.go 2>/dev/null; then
-            FMT_OUT=$(gofmt -l .)
-            if [ -n "$FMT_OUT" ]; then
-              echo "❌ gofmt 检查失败，以下文件需要格式化："
-              echo "$FMT_OUT"
-              echo "请运行: gofmt -w ."
+            gofmt -l .
+            if [ -n "$(gofmt -l .)" ]; then
+              echo "❌ gofmt 检查失败，请运行 gofmt -w ."
               HAS_ERRORS=1
-            else
-              echo "✅ gofmt 检查通过"
             fi
           fi
-          echo "::endgroup::"
           
-          echo "::group::Run go vet"
+          # Run govet
           if ls *.go 2>/dev/null || ls */*.go 2>/dev/null; then
-            if go vet ./...; then
-              echo "✅ go vet 检查通过"
-            else
-              echo "❌ go vet 检查失败"
-              HAS_ERRORS=1
-            fi
+            go vet ./... || HAS_ERRORS=1
           fi
-          echo "::endgroup::"
           
-          echo "::group::Run staticcheck"
+          # Run staticcheck
           if ls *.go 2>/dev/null || ls */*.go 2>/dev/null; then
-            if staticcheck ./...; then
-              echo "✅ staticcheck 检查通过"
-            else
-              echo "❌ staticcheck 检查失败"
-              HAS_ERRORS=1
-            fi
+            staticcheck ./... || HAS_ERRORS=1
           fi
-          echo "::endgroup::"
           
-          echo "::group::Run errcheck"
+          # Run errcheck
           if ls *.go 2>/dev/null || ls */*.go 2>/dev/null; then
-            if errcheck ./...; then
-              echo "✅ errcheck 检查通过"
-            else
-              echo "❌ errcheck 检查失败"
-              HAS_ERRORS=1
-            fi
+            errcheck ./... || HAS_ERRORS=1
           fi
-          echo "::endgroup::"
           
-          echo "::group::Run Go tests"
+          # Run Go tests
           if ls *.go 2>/dev/null || ls */*.go 2>/dev/null; then
-            if go test ./... -v -coverprofile=coverage.txt; then
-              echo "✅ Go tests 检查通过"
-              if [ -f coverage.txt ]; then
-                go tool cover -func=coverage.txt
-              fi
-            else
-              echo "❌ Go tests 检查失败"
-              HAS_ERRORS=1
+            go test ./... -v -coverprofile=coverage.txt || HAS_ERRORS=1
+            if [ -f coverage.txt ]; then
+              go tool cover -func=coverage.txt
             fi
           fi
-          echo "::endgroup::"
           
           echo "has_errors=$HAS_ERRORS" >> $GITHUB_OUTPUT
       
       - name: Final check result
         run: |
           if [ "${{ steps.go-checks.outputs.has_errors }}" = "1" ]; then
-            echo "❌ 部分检查失败，请查看上方日志详情"
+            echo "❌ 部分检查失败"
             exit 1
           else
             echo "✅ 所有检查通过"
@@ -119,41 +90,20 @@ jobs:
         run: |
           HAS_ERRORS=0
           
-          echo "::group::Run Python tests"
+          # Run Python tests
           if [ -d tests ]; then
-            if pytest tests/ -v; then
-              echo "✅ Python tests 检查通过"
-            else
-              echo "❌ Python tests 检查失败"
-              HAS_ERRORS=1
-            fi
+            pytest tests/ -v || HAS_ERRORS=1
           fi
-          echo "::endgroup::"
           
-          echo "::group::Run linting (flake8)"
+          # Run linting
           if [ -f .flake8 ] || [ -d src ]; then
-            if flake8 src/ 2>/dev/null; then
-              echo "✅ flake8 检查通过"
-            else
-              echo "❌ flake8 检查失败"
-              # 注意：原脚本这里使用了 || true，意味着 flake8 失败不计入错误
-              # 如果你想让 flake8 失败导致 CI 失败，请去掉下面的注释
-              # HAS_ERRORS=1
-            fi
+            flake8 src/ 2>/dev/null || true
           fi
-          echo "::endgroup::"
           
-          echo "::group::Run formatting check (black)"
+          # Run formatting check
           if command -v black &> /dev/null; then
-            if black --check . 2>/dev/null; then
-              echo "✅ black 检查通过"
-            else
-              echo "❌ black 检查失败"
-              # 同上，原脚本使用了 || true
-              # HAS_ERRORS=1
-            fi
+            black --check . 2>/dev/null || true
           fi
-          echo "::endgroup::"
           
           echo "has_errors=$HAS_ERRORS" >> $GITHUB_OUTPUT
       
