@@ -182,7 +182,7 @@ func TestParseEvent(t *testing.T) {
 func TestEventReader_Read(t *testing.T) {
 	data := "data: event1\n\ndata: event2\n\n"
 	r := NewEventReader(io.NopCloser(strings.NewReader(data)), nil)
-	defer func() { _ = r.Close() }()
+	defer r.Close()
 
 	event1, err := r.Read()
 	if err != nil {

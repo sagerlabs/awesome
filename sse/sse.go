@@ -186,9 +186,7 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	ch := s.Subscribe()
 	defer s.Unsubscribe(ch)
 
-	if _, err := fmt.Fprintf(w, ": connected\n\n"); err != nil {
-		return
-	}
+	fmt.Fprintf(w, ": connected\n\n")
 	flusher.Flush()
 
 	for {
@@ -197,9 +195,7 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			if event == nil {
 				return
 			}
-			if _, err := fmt.Fprint(w, event.String()); err != nil {
-				return
-			}
+			fmt.Fprint(w, event.String())
 			flusher.Flush()
 
 		case <-r.Context().Done():
@@ -276,12 +272,12 @@ func (c *Client) Connect(ctx context.Context) (*EventReader, error) {
 	contentType := resp.Header.Get("Content-Type")
 	mediaType, _, err := mime.ParseMediaType(contentType)
 	if err != nil || mediaType != ContentType {
-		_ = resp.Body.Close()
+		resp.Body.Close()
 		return nil, fmt.Errorf("unexpected content type: %s", contentType)
 	}
 
 	if resp.StatusCode != http.StatusOK {
-		_ = resp.Body.Close()
+		resp.Body.Close()
 		return nil, fmt.Errorf("unexpected status code: %d", resp.StatusCode)
 	}
 
@@ -418,7 +414,7 @@ func (c *Client) Stream(ctx context.Context) (<-chan *Event, <-chan error) {
 			for {
 				event, err := reader.Read()
 				if err != nil {
-					_ = reader.Close()
+					reader.Close()
 					if err == io.EOF {
 						time.Sleep(time.Duration(c.Retry) * time.Millisecond)
 						break
@@ -431,7 +427,7 @@ func (c *Client) Stream(ctx context.Context) (<-chan *Event, <-chan error) {
 				select {
 				case eventCh <- event:
 				case <-ctx.Done():
-					_ = reader.Close()
+					reader.Close()
 					errCh <- ctx.Err()
 					return
 				}
