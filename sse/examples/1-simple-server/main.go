@@ -51,15 +51,15 @@ SSE 是一种允许服务器向客户端推送数据的技术。
 				if content == "\n" {
 					content = "<br>" // 简单处理换行，以便在 HTML 中显示
 				}
-				
+
 				fmt.Fprintf(w, "data: %s\n\n", content)
 				flusher.Flush()
-				
+
 				// 模拟打字延迟 (50ms - 150ms 之间会更自然，这里固定 100ms)
 				time.Sleep(100 * time.Millisecond)
 			}
 		}
-		
+
 		// 发送结束消息
 		fmt.Fprintf(w, "data: [DONE]\n\n")
 		flusher.Flush()

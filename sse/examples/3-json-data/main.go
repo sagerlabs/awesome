@@ -33,10 +33,10 @@ func main() {
 	// Send stock updates
 	go func() {
 		stocks := map[string]float64{
-			"AAPL": 175.50,
+			"AAPL":  175.50,
 			"GOOGL": 140.25,
-			"MSFT": 380.75,
-			"TSLA": 250.00,
+			"MSFT":  380.75,
+			"TSLA":  250.00,
 		}
 
 		ticker := time.NewTicker(2 * time.Second)

@@ -185,7 +185,7 @@ type Recommendation struct {
 	MissingUnits   []string `json:"missing_units"`   // 缺少的核心英雄（中文名）
 	MatchedItems   []string `json:"matched_items"`   // 命中的装备（中文名）
 	SuggestedCarry string   `json:"suggested_carry"` // 建议的 carry 英雄（中文名）
-	Top4Rate       int      `json:"top4_rate"`
+	Top4Rate       float64  `json:"top4_rate"`
 }
 
 // ConfidenceDesc 根据置信度数值返回描述文字
