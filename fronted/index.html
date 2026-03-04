@@ -219,7 +219,8 @@
         }
         @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.4} }
 
-        .panel-close {
+        .panel-close,
+        .panel-settings {
             width: 28px; height: 28px;
             border-radius: 8px;
             border: none;
@@ -231,7 +232,48 @@
             transition: background 0.15s, color 0.15s;
             flex-shrink: 0;
         }
-        .panel-close:hover { background: var(--dark-4); color: var(--text-1); }
+        .panel-close:hover,
+        .panel-settings:hover { background: var(--dark-4); color: var(--text-1); }
+
+        /* 设置弹窗 */
+        .settings-modal {
+            display: none;
+            position: absolute;
+            top: 52px; right: 12px;
+            z-index: 10;
+            background: var(--dark-2);
+            border: 1px solid var(--dark-4);
+            border-radius: 12px;
+            padding: 14px;
+            width: 280px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+            animation: msg-in 0.15s ease;
+        }
+        .settings-modal.show { display: block; }
+        .settings-modal label {
+            font-size: 11px; color: var(--text-2);
+            display: block; margin-bottom: 6px;
+            letter-spacing: 0.05em;
+        }
+        .settings-modal input {
+            width: 100%; padding: 7px 10px;
+            background: var(--dark-3); border: 1px solid var(--dark-4);
+            border-radius: 8px; color: var(--text-1);
+            font-size: 12px; font-family: 'JetBrains Mono', monospace;
+            outline: none;
+        }
+        .settings-modal input:focus { border-color: var(--gold-dim); }
+        .settings-save {
+            margin-top: 10px; width: 100%;
+            padding: 7px; border-radius: 8px; border: none;
+            background: linear-gradient(135deg, var(--gold-dim), var(--gold));
+            color: var(--dark-0); font-size: 12px; font-weight: 600;
+            cursor: pointer; transition: filter 0.2s;
+        }
+        .settings-save:hover { filter: brightness(1.15); }
+        .settings-tip {
+            margin-top: 8px; font-size: 10px; color: var(--text-3); text-align: center;
+        }
 
         /* 消息列表 */
         .messages {
@@ -481,7 +523,16 @@
             <h3>TFT Copilot</h3>
             <p><span class="status-dot"></span>云顶之弈 · 阵容分析</p>
         </div>
+        <button class="panel-settings" id="settings-btn" title="服务器设置">⚙</button>
         <button class="panel-close" id="close-btn" title="最小化">╱╲</button>
+    </div>
+
+    <!-- 设置弹窗 -->
+    <div class="settings-modal" id="settings-modal">
+        <label>后端服务器地址</label>
+        <input type="text" id="api-input" placeholder="http://your-server:8080" />
+        <button class="settings-save" id="settings-save">保存并重连</button>
+        <div class="settings-tip">修改后当前对话会重置</div>
     </div>
 
     <!-- 消息列表 -->
@@ -528,8 +579,37 @@
 
 <script>
     // ── 配置 ──────────────────────────────────────────────────────────
-    const API_BASE = 'http://localhost:8080'  // ← 修改为你的服务器地址
-    const STREAM_URL = `${API_BASE}/v1/tft/analyze/stream`
+    // ── 配置加载 ──────────────────────────────────────────────────────
+    // Electron 环境：通过 IPC 读取用户数据目录的 config.json（可持久修改）
+    // 浏览器环境：fetch ./config.json，或使用 localStorage 缓存
+    let API_BASE   = 'http://localhost:8080'
+    let STREAM_URL = `${API_BASE}/v1/tft/analyze/stream`
+
+    function applyConfig(cfg) {
+        if (cfg && cfg.api_base) {
+            API_BASE   = cfg.api_base
+            STREAM_URL = `${API_BASE}/v1/tft/analyze/stream`
+        }
+    }
+
+    async function loadConfig() {
+        if (window.electronAPI) {
+            // Electron：从用户数据目录读（main.js 负责初始化和持久化）
+            const cfg = await window.electronAPI.getConfig()
+            applyConfig(cfg)
+        } else {
+            // 浏览器：优先 localStorage，其次 fetch config.json
+            const saved = localStorage.getItem('tft_api_base')
+            if (saved) { applyConfig({ api_base: saved }); return }
+            try {
+                const res = await fetch('./config.json')
+                if (res.ok) applyConfig(await res.json())
+            } catch (e) {
+                console.log('config.json 未找到，使用默认地址')
+            }
+        }
+    }
+    loadConfig()
 
     // ── DOM 引用 ──────────────────────────────────────────────────────
     const bubble   = document.getElementById('bubble')
@@ -844,6 +924,50 @@
             sendMessage()
         }
     })
+    // ── 设置弹窗 ──────────────────────────────────────────────────────
+    const settingsBtn   = document.getElementById('settings-btn')
+    const settingsModal = document.getElementById('settings-modal')
+    const apiInput      = document.getElementById('api-input')
+    const settingsSave  = document.getElementById('settings-save')
+
+    settingsBtn.addEventListener('click', (e) => {
+        e.stopPropagation()
+        const isOpen = settingsModal.classList.toggle('show')
+        if (isOpen) apiInput.value = API_BASE
+    })
+
+    // 点击面板外关闭设置弹窗
+    document.addEventListener('click', (e) => {
+        if (!settingsModal.contains(e.target) && e.target !== settingsBtn) {
+            settingsModal.classList.remove('show')
+        }
+    })
+
+    settingsSave.addEventListener('click', async () => {
+        const val = apiInput.value.trim().replace(/\/+$/, '')
+        if (!val) return
+
+        applyConfig({ api_base: val })
+
+        if (window.electronAPI) {
+            // Electron：持久化到用户数据目录的 config.json
+            const result = await window.electronAPI.saveConfig({ api_base: val })
+            console.log('配置已保存到:', result.path)
+        } else {
+            // 浏览器：存 localStorage
+            localStorage.setItem('tft_api_base', val)
+        }
+
+        settingsModal.classList.remove('show')
+
+        // 清空对话，提示已切换
+        messages.innerHTML = ''
+        const b = addMessage('ai', '')
+        b.classList.add('md')
+        b.innerHTML = marked.parse('✅ 已连接到 `' + val + '`')
+        document.getElementById('suggestions').style.display = 'flex'
+    })
+
     sendBtn.addEventListener('click', sendMessage)
 
     // ── Electron 鼠标穿透控制 ─────────────────────────────────────────
