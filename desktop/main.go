@@ -39,8 +39,8 @@ func NewApp(logger *logrus.Logger) *App {
 func (a *App) OnStartup(ctx context.Context) {
 	a.ctx = ctx
 
-	a.logger.WithField("data_dir", data.DataDir()).Info("加载 TFT 数据")
-	store, err := data.NewStore(data.DataDir())
+	a.logger.WithField("data_dir", data.GetDataDir()).Info("加载 TFT 数据")
+	store, err := data.NewStore(data.GetDataDir())
 	if err != nil {
 		a.logger.WithError(err).Fatal("数据加载失败")
 	}

@@ -135,7 +135,7 @@ jobs:
       # desktop/ 目录下执行 wails build
       - name: Build desktop app
         working-directory: desktop
-        run: wails build -tags desktop -clean -o ${{ matrix.artifact }}
+        run: wails build -clean -o ${{ matrix.artifact }}
 
       # 同时构建后端服务二进制（go embed 版，部署用）
       - name: Build server binary
