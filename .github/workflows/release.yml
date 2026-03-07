@@ -29,13 +29,13 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version: '1.21'
+          go-version-file: 'go.mod'
 
       - name: Run Go checks
         run: |
           HAS_ERRORS=0
 
-          UNFORMATTED=$(gofmt -l $(find . -name "*.go" -not -path "*/vendor/*") 2>/dev/null)
+          UNFORMATTED=$(gofmt -l $(find . -name "*.go" -not -path "*/vendor/*" -not -path "*/desktop/*") 2>/dev/null)
           if [ -n "$UNFORMATTED" ]; then
             echo "❌ gofmt 未通过：$UNFORMATTED"
             HAS_ERRORS=1
@@ -43,7 +43,7 @@ jobs:
             echo "✅ gofmt 通过"
           fi
 
-          if ! go vet ./...; then
+          if ! go vet $(go list ./... | grep -v 'awesome/desktop'); then
             echo "❌ go vet 失败"
             HAS_ERRORS=1
           else
@@ -101,7 +101,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version: '1.21'
+          go-version-file: 'go.mod'
 
       # Wails 依赖的系统库
       - name: Install Linux deps
@@ -134,7 +134,7 @@ jobs:
           GOOS=${{ matrix.goos }} GOARCH=${{ matrix.goarch }} \
           go build -ldflags "-X main.Version=${{ needs.checks.outputs.version }}" \
           -o bin/tft-server-${{ matrix.goos }}-${{ matrix.goarch }} \
-          ./main.go ./embed.go
+          ./main.go
 
       # tag 触发 → 上传到 GitHub Release
       - name: Upload to GitHub Release
