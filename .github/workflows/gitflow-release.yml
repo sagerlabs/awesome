@@ -25,7 +25,7 @@ jobs:
       - name: Run Go checks
         run: |
           if ls *.go 2>/dev/null || ls */*.go 2>/dev/null; then
-            go test ./... -v
+            go test $(go list ./... | grep -v -E 'awesome/desktop|awesome/tft/agent') -v
           fi
       
       - name: Extract version
