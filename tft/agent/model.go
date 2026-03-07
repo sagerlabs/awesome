@@ -4,11 +4,16 @@ import (
 	"context"
 	"fmt"
 	"os"
+	"strconv"
 	"time"
 
-	"github.com/cloudwego/eino-ext/components/model/ark"
-	"github.com/cloudwego/eino-ext/components/model/openai"
 	"github.com/cloudwego/eino/components/model"
+
+	// OpenAI / 兼容 OpenAI 协议的接入（如 DeepSeek、通义千问）
+	"github.com/cloudwego/eino-ext/components/model/openai"
+
+	// 字节跳动火山引擎 Ark（豆包大模型）
+	"github.com/cloudwego/eino-ext/components/model/ark"
 )
 
 // ── Provider 类型 ─────────────────────────────────────────────────────────────
@@ -17,8 +22,8 @@ type ModelProvider string
 
 const (
 	ProviderOpenAI   ModelProvider = "openai"
-	ProviderDeepSeek ModelProvider = "deepseek"
-	ProviderArk      ModelProvider = "ark"
+	ProviderDeepSeek ModelProvider = "deepseek" // OpenAI 兼容协议
+	ProviderArk      ModelProvider = "ark"      // 火山引擎豆包
 )
 
 // ── 统一配置 ──────────────────────────────────────────────────────────────────
@@ -30,15 +35,40 @@ type ModelConfig struct {
 }
 
 // DefaultModelConfig 默认配置，优先用环境变量决定 Provider
+//
+// 环境变量：
+//
+//	LLM_MAX_TOKENS = 200（默认）控制输出长度，越小 TTFT 越低
+//	LLM_TEMPERATURE = 0.7（默认）
 func DefaultModelConfig() *ModelConfig {
 	provider := ModelProvider(os.Getenv("LLM_PROVIDER"))
 	if provider == "" {
-		provider = ProviderOpenAI // 默认 OpenAI
+		provider = ProviderOpenAI
 	}
+
+	maxTokens := 60 // 20字建议约30 token，60为硬上限，防止 LLM 超量输出
+	if v := os.Getenv("LLM_MAX_TOKENS"); v != "" {
+		if n, err := strconv.Atoi(v); err == nil && n > 0 {
+			maxTokens = n
+		}
+	}
+	// 安全兜底：无论环境变量设多少，硬限制不超过 150
+	// 防止误配置导致 token 飙升（Out >> In 的根本原因）
+	if maxTokens > 150 {
+		maxTokens = 150
+	}
+
+	temperature := float32(0.7)
+	if v := os.Getenv("LLM_TEMPERATURE"); v != "" {
+		if f, err := strconv.ParseFloat(v, 32); err == nil {
+			temperature = float32(f)
+		}
+	}
+
 	return &ModelConfig{
 		Provider:    provider,
-		Temperature: 0.7,
-		MaxTokens:   50000,
+		Temperature: temperature,
+		MaxTokens:   maxTokens,
 	}
 }
 
@@ -91,10 +121,12 @@ func newOpenAIModel(ctx context.Context, cfg *ModelConfig) (model.ChatModel, err
 
 	modelName := os.Getenv("OPENAI_MODEL")
 	if modelName == "" {
-		// DeepSeek 默认模型；OpenAI 默认模型
 		if cfg.Provider == ProviderDeepSeek {
+			// deepseek-chat 延迟较高，优先用 deepseek-reasoner 或更快的 V3
+			// 可通过 OPENAI_MODEL=deepseek-chat 覆盖
 			modelName = "deepseek-chat"
 		} else {
+			// gpt-4o-mini 比 gpt-4o 快 3x，对20字建议完全够用
 			modelName = "gpt-4o-mini"
 		}
 	}
@@ -127,7 +159,15 @@ func newArkModel(ctx context.Context, cfg *ModelConfig) (model.ChatModel, error)
 		return nil, fmt.Errorf("ARK_MODEL_ID is not set（推理接入点 ID，非模型名称）")
 	}
 
-	timeout := 300 * time.Second
+	// 超时从环境变量读，默认 60s；流式接口 TTFT 敏感，不要设太短
+	timeoutSec := 60
+	if v := os.Getenv("ARK_TIMEOUT_SEC"); v != "" {
+		if n, err := strconv.Atoi(v); err == nil && n > 0 {
+			timeoutSec = n
+		}
+	}
+	timeout := time.Duration(timeoutSec) * time.Second
+
 	acfg := &ark.ChatModelConfig{
 		APIKey:      apiKey,
 		Model:       modelID,

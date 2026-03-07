@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TFT Copilot</title>
+    <!-- marked.js: 优先从 CDN 加载，CDN 失败时降级为纯文本显示 -->
+    <script>
+        // 内联极简 marked 降级实现，CDN 加载失败时使用
+        window._markedFallback = function(text) {
+            return text
+                    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+                    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/`(.+?)`/g, '<code>$1</code>')
+                    .replace(/^#{1,3} (.+)$/gm, '<strong>$1</strong>')
+                    .replace(/ /g, '<br>')
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"
+            onerror="window.marked={parse:window._markedFallback}">
+    </script>
+    <!-- 字体：优先 Google Fonts，离线时自动降级为系统中文字体 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap"
+          rel="stylesheet"
+          onerror="this.remove()">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -30,7 +47,7 @@
         }
 
         body {
-            font-family: 'Noto Sans SC', sans-serif;
+            font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
             background: #1a2035;
             min-height: 100vh;
             /* 演示背景 */
@@ -259,7 +276,7 @@
             width: 100%; padding: 7px 10px;
             background: var(--dark-3); border: 1px solid var(--dark-4);
             border-radius: 8px; color: var(--text-1);
-            font-size: 12px; font-family: 'JetBrains Mono', monospace;
+            font-size: 12px; font-family: 'JetBrains Mono', 'Courier New', monospace;
             outline: none;
         }
         .settings-modal input:focus { border-color: var(--gold-dim); }
@@ -421,7 +438,7 @@
             outline: none;
             color: var(--text-1);
             font-size: 13px;
-            font-family: 'Noto Sans SC', sans-serif;
+            font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
             resize: none;
             max-height: 100px;
             line-height: 1.5;
@@ -457,7 +474,7 @@
             color: var(--text-3);
             text-align: center;
             margin-top: 6px;
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
             letter-spacing: 0.05em;
         }
         .input-hint kbd {
@@ -481,7 +498,7 @@
         .msg-bubble.md ul,
         .msg-bubble.md ol         { padding-left: 16px; margin: 4px 0 8px; }
         .msg-bubble.md li         { margin: 3px 0; line-height: 1.6; }
-        .msg-bubble.md code       { font-family: 'JetBrains Mono', monospace;
+        .msg-bubble.md code       { font-family: 'JetBrains Mono', 'Courier New', monospace;
             background: var(--dark-0); color: var(--gold);
             padding: 1px 5px; border-radius: 4px; font-size: 11px; }
         .msg-bubble.md pre        { background: var(--dark-0); border-radius: 8px;
@@ -579,6 +596,11 @@
 
 <script>
     // ── 配置 ──────────────────────────────────────────────────────────
+    // ── 运行环境检测 ──────────────────────────────────────────────────
+    // Wails 环境：window.go 存在，通过 Go binding 直接调用
+    // 浏览器/Electron 环境：通过 SSE HTTP 接口
+    const IS_WAILS = typeof window !== 'undefined' && !!window.go
+
     // ── 配置加载 ──────────────────────────────────────────────────────
     // Electron 环境：通过 IPC 读取用户数据目录的 config.json（可持久修改）
     // 浏览器环境：fetch ./config.json，或使用 localStorage 缓存
@@ -822,61 +844,61 @@
         let fullText = ''
 
         try {
-            const response = await fetch(STREAM_URL, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ input: text, plain: false }),
-                signal: AbortSignal.timeout(90000),
-            })
+            if (IS_WAILS) {
+                // ── Wails 模式：直接调 Go binding，一次性返回 ──────────────
+                // Wails 暂不支持流式，Go 端 Analyze 返回完整结果
+                typingEl.remove()
+                aiBubble = addMessage('ai', '')
 
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}`)
-            }
+                const result = await window.go.main.App.Analyze(text)
+                fullText = result
+                aiBubble.classList.add('md')
+                aiBubble.innerHTML = marked.parse(fullText)
 
-            const reader  = response.body.getReader()
-            const decoder = new TextDecoder()
-            let   buffer  = ''
+            } else {
+                // ── HTTP SSE 模式：流式逐 chunk 显示 ────────────────────────
+                const response = await fetch(STREAM_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ input: text, plain: false }),
+                    signal: AbortSignal.timeout(90000),
+                })
 
-            while (true) {
-                const { done, value } = await reader.read()
-                if (done) break
+                if (!response.ok) throw new Error(`HTTP ${response.status}`)
 
-                buffer += decoder.decode(value, { stream: true })
-                const lines = buffer.split('\n')
-                buffer = lines.pop() // 保留不完整的行
+                const reader  = response.body.getReader()
+                const decoder = new TextDecoder()
+                let   buffer  = ''
 
-                for (const line of lines) {
-                    if (!line.startsWith('data:')) continue
-                    const raw = line.slice(5).trim()
-                    if (!raw) continue
+                while (true) {
+                    const { done, value } = await reader.read()
+                    if (done) break
 
-                    try {
-                        const chunk = JSON.parse(raw)
+                    buffer += decoder.decode(value, { stream: true })
+                    const lines = buffer.split('\n')
+                    buffer = lines.pop()
 
-                        if (chunk.type === 'token' && chunk.content) {
-                            // 第一个 token 到达：移除打字动画，创建真实气泡
-                            if (!aiBubble) {
-                                typingEl.remove()
-                                aiBubble = addMessage('ai', '')
+                    for (const line of lines) {
+                        if (!line.startsWith('data:')) continue
+                        const raw = line.slice(5).trim()
+                        if (!raw) continue
+                        try {
+                            const chunk = JSON.parse(raw)
+                            if (chunk.type === 'token' && chunk.content) {
+                                if (!aiBubble) { typingEl.remove(); aiBubble = addMessage('ai', '') }
+                                fullText += chunk.content
+                                aiBubble.textContent = fullText
+                                scrollToBottom()
+                            } else if (chunk.type === 'done') {
+                                if (aiBubble && fullText) {
+                                    aiBubble.classList.add('md')
+                                    aiBubble.innerHTML = marked.parse(fullText)
+                                }
+                                break
+                            } else if (chunk.type === 'error') {
+                                throw new Error(chunk.error || '推理出错')
                             }
-                            fullText += chunk.content
-                            // 流式输出中：纯文本显示（避免 Markdown 中途渲染出错）
-                            aiBubble.textContent = fullText
-                            scrollToBottom()
-
-                        } else if (chunk.type === 'done') {
-                            // 流结束：切换为 Markdown 渲染
-                            if (aiBubble && fullText) {
-                                aiBubble.classList.add('md')
-                                aiBubble.innerHTML = marked.parse(fullText)
-                            }
-                            break
-
-                        } else if (chunk.type === 'error') {
-                            throw new Error(chunk.error || '推理出错')
-                        }
-                    } catch (parseErr) {
-                        // 跳过非 JSON 行（如 SSE comment）
+                        } catch (parseErr) { /* 跳过非 JSON 行 */ }
                     }
                 }
             }

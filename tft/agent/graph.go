@@ -6,9 +6,9 @@ import (
 	"github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
+	"github.com/sagerlabs/awesome/tft/parser"
 
 	"github.com/sagerlabs/awesome/tft/data"
-	"github.com/sagerlabs/awesome/tft/parser"
 	"github.com/sagerlabs/awesome/tft/tool"
 )
 

@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"os"
 	"strings"
 	"time"
 
@@ -37,7 +38,14 @@ func NewHandler(ctx context.Context, logger *logrus.Logger) (*Handler, error) {
 
 	// 2. 初始化 Agent
 	logger.Info("初始化 Eino Agent（编译 Graph + 加载 LLM）")
-	a, err := agent.NewAgent(ctx, store)
+
+	// 从环境变量读链路追踪开关：TRACE=true 开启节点级耗时日志
+	enableTrace := os.Getenv("TRACE") == "true"
+
+	a, err := agent.NewAgentWithConfig(ctx, store, &agent.AgentConfig{
+		Logger:      logger,
+		EnableTrace: enableTrace,
+	})
 	if err != nil {
 		logger.WithError(err).Error("Agent 初始化失败")
 		return nil, fmt.Errorf("init tft agent: %w", err)
@@ -170,7 +178,7 @@ func (h *Handler) Health(c *gin.Context) {
 
 // flushThreshold 触发推送的条件：
 // 缓冲累积超过此字数，或收到标点/换行时立即推送
-const flushThreshold = 5
+const flushThreshold = 2 // 更小的缓冲，更快推出第一个可见 chunk
 
 func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *sse.Server) {
 	log := h.logger.WithField("input", input)
@@ -227,8 +235,7 @@ func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *
 		// 遇到标点或换行立即推送（自然断句，阅读体验好）
 		// 或缓冲超过阈值也推送（防止长句一直不断句）
 		last := output.LLMAdvice[len(output.LLMAdvice)-1]
-		shouldFlush := buf.Len() >= flushThreshold ||
-			last == ':' || last == ' ' ||
+		shouldFlush := buf.Len() >= flushThreshold || last == ':' || last == ' ' ||
 			last == '.' || last == ',' || last == '!' || last == '?'
 
 		if shouldFlush {

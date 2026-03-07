@@ -1,10 +1,12 @@
+//go:build !desktop
+
 package main
 
 import (
 	"context"
+	_ "embed"
 	"errors"
 	"fmt"
-	"github.com/gin-contrib/cors"
 	"net/http"
 	"os"
 	"os/signal"
@@ -12,55 +14,51 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/sagerlabs/awesome/tft"
 	"github.com/sirupsen/logrus"
+
+	"github.com/sagerlabs/awesome/tft"
 )
 
+//go:embed frontend/index.html
+var indexHTML []byte
+
 func main() {
-	// ── 1. 初始化 logrus ──────────────────────────────────────────────────────
 	logger := tft.NewLogger()
 
-	// ── 2. 检查环境变量 ───────────────────────────────────────────────────────
+	// env
 	if err := checkEnv(logger); err != nil {
 		logger.WithError(err).Fatal("环境变量检查失败")
 	}
 
-	// ── 3. 初始化 TFT Handler ─────────────────────────────────────────────────
+	// init tft handler
 	ctx := context.Background()
 	tftHandler, err := tft.NewHandler(ctx, logger)
 	if err != nil {
 		logger.WithError(err).Fatal("TFT Handler 初始化失败")
 	}
 
-	// ── 4. 配置 Gin ───────────────────────────────────────────────────────────
 	if os.Getenv("LOG_ENV") == "prod" {
 		gin.SetMode(gin.ReleaseMode)
 	}
 
 	e := gin.New()
-
 	e.Use(
-		cors.Default(),
-		gin.Recovery(), // panic 恢复
+		gin.Recovery(),
 	)
-	e.StaticFile("/", "./fronted/index.html")
 	tftHandler.RegisterRoutes(e)
-
-	// ── 5. 启动 HTTP Server ───────────────────────────────────────────────────
+	e.GET("/", func(c *gin.Context) {
+		c.Data(http.StatusOK, "text/html; charset=utf-8", indexHTML)
+	})
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
 	}
 
 	srv := &http.Server{
-		Addr:         fmt.Sprintf(":%s", port),
-		Handler:      e,
-		ReadTimeout:  30 * time.Second,
-		WriteTimeout: 120 * time.Second,
-		IdleTimeout:  60 * time.Second,
+		Addr:    fmt.Sprintf(":%s", port),
+		Handler: e,
 	}
 
-	// ── 6. 优雅退出 ───────────────────────────────────────────────────────────
 	go func() {
 		quit := make(chan os.Signal, 1)
 		signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
@@ -79,6 +77,7 @@ func main() {
 	logger.WithFields(logrus.Fields{
 		"addr": fmt.Sprintf("http://localhost:%s", port),
 		"routes": []string{
+			"GET  /                    (index.html)",
 			"POST /v1/tft/analyze",
 			"POST /v1/tft/analyze/stream",
 			"GET  /v1/tft/health",
@@ -92,7 +91,7 @@ func main() {
 	logger.Info("Server 已退出")
 }
 
-// checkEnv 检查必要的环境变量
+// checkEnv
 func checkEnv(logger *logrus.Logger) error {
 	provider := os.Getenv("LLM_PROVIDER")
 	if provider == "" {
