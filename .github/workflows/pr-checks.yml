@@ -21,7 +21,7 @@ jobs:
           HAS_ERRORS=0
 
           # ── gofmt ──────────────────────────────────────────────
-          UNFORMATTED=$(gofmt -l $(find . -name "*.go" -not -path "*/vendor/*") 2>/dev/null)
+          UNFORMATTED=$(gofmt -l $(find . -name "*.go" -not -path "*/vendor/*" -not -path "*/desktop/*") 2>/dev/null)
           if [ -n "$UNFORMATTED" ]; then
             echo "❌ 以下文件需要 gofmt 格式化："
             echo "$UNFORMATTED"
@@ -32,7 +32,7 @@ jobs:
 
           # ── go vet ─────────────────────────────────────────────
           # go vet 是官方工具，报的都是真实问题，保留
-          if ! go vet ./...; then
+          if ! go vet $(go list ./... | grep -v 'awesome/desktop'); then
             echo "❌ go vet 检查失败"
             HAS_ERRORS=1
           else

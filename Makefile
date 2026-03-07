@@ -10,7 +10,7 @@ MAIN       := ./main.go
 
 # 数据目录
 DATA_DIR   := ./metadata/tft-meta
-SCRAPER    := $(DATA_DIR)/scraper.py
+SCRAPER    := $(DATA_DIR)/get_tftmeta.py
 PYTHON     := python3
 
 # Go 工具
@@ -91,7 +91,7 @@ build-mac: ## 交叉编译 macOS arm64（Apple Silicon）
 .PHONY: data
 data: ## 拉取最新阵容数据 + 生成汉化表（每个版本跑一次）
 	@echo "📦 开始爬取 TFT 数据..."
-	cd $(DATA_DIR) && $(PYTHON) scraper.py
+	cd $(DATA_DIR) && $(PYTHON) get_tftmeta.py
 	@echo "✅ 数据更新完成"
 
 .PHONY: data-check
