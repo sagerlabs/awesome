@@ -3,6 +3,7 @@ package agent
 import (
 	"context"
 	"fmt"
+
 	"os"
 	"strconv"
 	"time"
@@ -10,9 +11,8 @@ import (
 	"github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
-	"github.com/sirupsen/logrus"
-
 	"github.com/sagerlabs/awesome/tft/data"
+	"github.com/sirupsen/logrus"
 )
 
 // AgentConfig Agent 运行时配置，通过 NewAgentWithConfig 传入
@@ -113,7 +113,7 @@ func (a *Agent) maxTokens() int {
 			return n
 		}
 	}
-	return 60
+	return 4096
 }
 
 // withLLMTimeout 在 ctx 上套一层 LLM 专属超时
@@ -154,7 +154,10 @@ func (a *Agent) AnalyzeStream(ctx context.Context, rawInput string) (
 	start := time.Now()
 
 	opts := append(a.traceOpts, compose.WithChatModelOption(model.WithMaxTokens(a.maxTokens())))
-	opts = append(opts, compose.WithChatModelOption())
+	//opts = append(opts, compose.WithChatModelOption(
+	//	ark.WithThinking(&ark.Thinking{
+	//		Type: arkModel.ThinkingTypeDisabled,
+	//	})))
 	sr, err := a.runnable.Stream(llmCtx, &GraphInput{RawInput: rawInput}, opts...)
 	if err != nil {
 		cancel()
@@ -175,11 +178,11 @@ func (a *Agent) AnalyzeStream(ctx context.Context, rawInput string) (
 	)
 
 	// 包一层：流关闭时取消 LLM timeout context
-	wrapped := wrapStreamWithCleanup(converted, func() {
-		cancel()
-	})
+	//wrapped := wrapStreamWithCleanup(converted, func() {
+	//	cancel()
+	//})
 
-	return wrapped, nil
+	return converted, nil
 }
 
 // wrapStreamWithCleanup 包装 StreamReader，在 Close 时执行 cleanup

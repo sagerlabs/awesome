@@ -55,7 +55,7 @@ func DefaultModelConfig() *ModelConfig {
 	// 安全兜底：无论环境变量设多少，硬限制不超过 150
 	// 防止误配置导致 token 飙升（Out >> In 的根本原因）
 	if maxTokens > 150 {
-		maxTokens = 150
+		maxTokens = 3333
 	}
 
 	temperature := float32(0.7)

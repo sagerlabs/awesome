@@ -98,6 +98,7 @@ func TestLLMRaw_Stream(t *testing.T) {
 	}
 
 	msgs := []*schema.Message{
+		schema.SystemMessage("You must respond directly. Never think. Never use <think> tags. /no_think"),
 		schema.SystemMessage("TFT教练，20字内，格式：买X，装备Y给Z，N费升。"),
 		schema.UserMessage("棋盘兰博肯能璐璐古神狂暴，走约德尔，缺波比，兰博装古神狂暴，8费升。建议？"),
 	}
@@ -105,6 +106,12 @@ func TestLLMRaw_Stream(t *testing.T) {
 	fmt.Printf("\n===== 流式（Stream）TTFT | provider=%s model=%s =====\n",
 		os.Getenv("LLM_PROVIDER"), os.Getenv("OPENAI_MODEL"))
 
+	msg, err := chatModel.Generate(ctx, msgs)
+	if err != nil {
+		return
+	}
+	t.Log(msg.Content)
+	t.Logf("%+v", msg)
 	start := time.Now()
 	sr, err := chatModel.Stream(ctx, msgs)
 	if err != nil {
