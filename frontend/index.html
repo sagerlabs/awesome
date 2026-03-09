@@ -488,34 +488,39 @@
         }
 
         /* ── Markdown 渲染样式 ───────────────────────────────────────── */
-        .msg-bubble.md p          { margin: 0 0 8px; }
-        .msg-bubble.md p:last-child { margin-bottom: 0; }
+        .msg-bubble.md            { white-space: normal !important; line-height: 1.4 !important; }
+
+        .msg-bubble.md p          { margin: 0 0 2px 0 !important; }
         .msg-bubble.md h1,
         .msg-bubble.md h2,
-        .msg-bubble.md h3         { color: var(--gold); font-size: 13px; font-weight: 600;
-            margin: 10px 0 4px; letter-spacing: 0.05em; }
-        .msg-bubble.md h1         { font-size: 14px; border-bottom: 1px solid var(--dark-4); padding-bottom: 4px; }
+        .msg-bubble.md h3         { margin: 4px 0 2px 0 !important; }
         .msg-bubble.md ul,
-        .msg-bubble.md ol         { padding-left: 16px; margin: 4px 0 8px; }
-        .msg-bubble.md li         { margin: 3px 0; line-height: 1.6; }
-        .msg-bubble.md code       { font-family: 'JetBrains Mono', 'Courier New', monospace;
-            background: var(--dark-0); color: var(--gold);
-            padding: 1px 5px; border-radius: 4px; font-size: 11px; }
-        .msg-bubble.md pre        { background: var(--dark-0); border-radius: 8px;
-            padding: 10px 12px; overflow-x: auto; margin: 8px 0;
-            border: 1px solid var(--dark-4); }
+        .msg-bubble.md ol         { margin: 0 0 2px 0 !important; }
+        .msg-bubble.md li         { margin: 0 0 1px 0 !important; }
+        .msg-bubble.md hr         { border: none; border-top: 1px solid var(--dark-4); margin: 6px 0 !important; }
+
+        .msg-bubble.md p:empty    { display: none !important; margin: 0 !important; padding: 0 !important; }
+        .msg-bubble.md p br:first-child:last-child { display: none !important; }
+        .msg-bubble.md br + br    { display: none !important; }
+
+        /* 基础元素样式保留 */
+        .msg-bubble.md code       { font-family: 'JetBrains Mono', monospace; background: var(--dark-0); color: var(--gold); padding: 1px 5px; border-radius: 4px; font-size: 11px; }
+        .msg-bubble.md pre        { background: var(--dark-0); border-radius: 8px; padding: 6px 8px !important; overflow-x: auto; margin: 4px 0 !important; border: 1px solid var(--dark-4); }
         .msg-bubble.md pre code   { background: none; padding: 0; color: var(--text-1); font-size: 11px; }
         .msg-bubble.md strong     { color: var(--text-1); font-weight: 600; }
         .msg-bubble.md em         { color: var(--gold-dim); font-style: italic; }
         .msg-bubble.md blockquote { border-left: 3px solid var(--gold-dim); padding-left: 10px;
             color: var(--text-2); margin: 6px 0; font-style: italic; }
-        .msg-bubble.md table      { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 12px; }
+        .msg-bubble.md table      { border-collapse: collapse; width: 100%; margin: 6px 0; font-size: 12px; }
         .msg-bubble.md th         { background: var(--dark-3); color: var(--gold);
-            padding: 5px 8px; text-align: left; font-weight: 500; }
+            padding: 4px 8px; text-align: left; font-weight: 500; }
         .msg-bubble.md td         { padding: 4px 8px; border-top: 1px solid var(--dark-4); color: var(--text-2); }
         .msg-bubble.md a          { color: var(--accent); text-decoration: none; }
         .msg-bubble.md a:hover    { text-decoration: underline; }
-        .msg-bubble.md hr         { border: none; border-top: 1px solid var(--dark-4); margin: 10px 0; }
+        .msg-bubble.md hr         { border: none; border-top: 1px solid var(--dark-4); margin: 8px 0; }
+
+        /* 3. 强制隐藏大模型生成的多余连续换行 (Hack) */
+        .msg-bubble.md br + br    { display: none; }
     </style>
 </head>
 <body>
@@ -560,7 +565,7 @@
             <div class="msg-bubble md" id="welcome-msg"></div>
         </div>
         <script>
-            document.getElementById('welcome-msg').innerHTML = marked.parse(
+            document.getElementById('welcome-msg').innerHTML = renderMd(
                 "你好！我是你的**云顶之弈阵容教练** 🎮\n\n" +
                 "告诉我棋盘上的英雄和装备，我来分析最优方向。\n\n" +
                 "> 例如：`兰博 肯能 璐璐 破败 大帽子`"
@@ -853,8 +858,7 @@
                 const result = await window.go.main.App.Analyze(text)
                 fullText = result
                 aiBubble.classList.add('md')
-                aiBubble.innerHTML = marked.parse(fullText)
-
+                aiBubble.innerHTML = renderMd(fullText.replace(/\n\s*\n/g, '\n\n'))
             } else {
                 // ── HTTP SSE 模式：流式逐 chunk 显示 ────────────────────────
                 const response = await fetch(STREAM_URL, {
@@ -893,7 +897,7 @@
                             } else if (chunk.type === 'done') {
                                 if (aiBubble && fullText) {
                                     aiBubble.classList.add('md')
-                                    aiBubble.innerHTML = marked.parse(fullText)
+                                    aiBubble.innerHTML = renderMd(fullText)
                                     scrollToBottom()
                                 }
                                 streamDone = true  // 退出 while
@@ -917,7 +921,7 @@
             if (!aiBubble) {
                 const errBubble = addMessage('ai', '')
                 errBubble.classList.add('md')
-                errBubble.innerHTML = marked.parse(`**连接失败**：${err.message}\n\n请检查服务器是否启动：\`${API_BASE}\``)
+                errBubble.innerHTML = renderMd(`**连接失败**：${err.message}\n\n请检查服务器是否启动：\`${API_BASE}\``)
             }
         } finally {
             isStreaming = false
@@ -933,6 +937,14 @@
         input.value = text
         input.focus()
         autoResize()
+    }
+
+    // 封装一个渲染函数，放在 script 顶部
+    function renderMd(text) {
+        const cleaned = text
+            .replace(/\n{3,}/g, '\n\n')   // 3个以上空行压缩成2个
+            .replace(/^\s+|\s+$/g, '')     // 去首尾空白
+        return marked.parse(cleaned)
     }
 
     // ── 输入框自动高度 ────────────────────────────────────────────────
@@ -989,7 +1001,7 @@
         messages.innerHTML = ''
         const b = addMessage('ai', '')
         b.classList.add('md')
-        b.innerHTML = marked.parse('✅ 已连接到 `' + val + '`')
+        b.innerHTML = renderMd('✅ 已连接到 `' + val + '`')
         document.getElementById('suggestions').style.display = 'flex'
     })
 

@@ -3,7 +3,8 @@ package agent
 import (
 	"context"
 	"fmt"
-
+	"github.com/cloudwego/eino-ext/components/model/ark"
+	arkModel "github.com/volcengine/volcengine-go-sdk/service/arkruntime/model"
 	"os"
 	"strconv"
 	"time"
@@ -113,7 +114,7 @@ func (a *Agent) maxTokens() int {
 			return n
 		}
 	}
-	return 4096
+	return 1024
 }
 
 // withLLMTimeout 在 ctx 上套一层 LLM 专属超时
@@ -153,11 +154,11 @@ func (a *Agent) AnalyzeStream(ctx context.Context, rawInput string) (
 
 	start := time.Now()
 
-	opts := append(a.traceOpts, compose.WithChatModelOption(model.WithMaxTokens(a.maxTokens())))
-	//opts = append(opts, compose.WithChatModelOption(
-	//	ark.WithThinking(&ark.Thinking{
-	//		Type: arkModel.ThinkingTypeDisabled,
-	//	})))
+	//opts := append(a.traceOpts, compose.WithChatModelOption(model.WithMaxTokens(a.maxTokens())))
+	opts := append(a.traceOpts, compose.WithChatModelOption(
+		ark.WithThinking(&ark.Thinking{
+			Type: arkModel.ThinkingTypeDisabled,
+		})))
 	sr, err := a.runnable.Stream(llmCtx, &GraphInput{RawInput: rawInput}, opts...)
 	if err != nil {
 		cancel()
