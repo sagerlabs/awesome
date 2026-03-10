@@ -231,10 +231,10 @@ type NluContext struct {
 }
 
 func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, store *data.Store) (
-	compose.Runnable[*NluContext, *GraphOutput], error,
+	compose.Runnable[*NluContext, *NluContext], error,
 ) {
-	g := compose.NewGraph[*NluContext, *GraphOutput]()
-	nluExtarct := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluContext, err error) {
+	g := compose.NewGraph[*NluContext, *NluContext]()
+	nluExtract := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluContext, err error) {
 		logrus.Println("用户输入:", input.UserInput)
 		fullPrompt, err := prompt.BuildNLUPrompt(input.UserInput)
 		if err != nil {
@@ -247,18 +247,31 @@ func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, store *data.S
 			return nil, fmt.Errorf("generate: %w", err)
 		}
 		var c Context
-		_ = json.Unmarshal([]byte(resp.Content), &c)
+		if err := json.Unmarshal([]byte(resp.Content), &c); err != nil {
+			logrus.WithError(err).WithField("content", resp.Content).Warn("JSON解析失败，使用空Context")
+		}
 		input.Ctx = c
 		logrus.Printf("llm 提取的内容为: %+v\n", input.Ctx)
 		return input, nil
 	})
-	_ = g.AddLambdaNode("nlu_extract", nluExtarct)
+	if err := g.AddLambdaNode("nlu_extract", nluExtract); err != nil {
+		return nil, fmt.Errorf("add nlu_extract node: %w", err)
+	}
 
-	_ = g.AddEdge(compose.START, "nlu_extract")
+	if err := g.AddEdge(compose.START, "nlu_extract"); err != nil {
+		return nil, fmt.Errorf("edge START->nlu_extract: %w", err)
+	}
 
-	_ = g.AddEdge("nlu_extract", compose.END)
+	if err := g.AddEdge("nlu_extract", compose.END); err != nil {
+		return nil, fmt.Errorf("edge nlu_extract->END: %w", err)
+	}
+
 	runnable, err := g.Compile(ctx,
-		compose.WithGraphName("TFTCopilotGraph"),
+		compose.WithGraphName("NLUExtractGraph"),
 	)
-	return runnable, err
+	if err != nil {
+		return nil, fmt.Errorf("compile nlu graph: %w", err)
+	}
+
+	return runnable, nil
 }
