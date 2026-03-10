@@ -74,12 +74,23 @@ type StreamChunk struct {
 	Error   string `json:"error,omitempty"`
 }
 
+type NluAnalyzeRequest struct {
+	Input string `json:"input"`
+}
+
+type NluAnalyzeResponse struct {
+	Success bool           `json:"success"`
+	Data    *agent.Context `json:"data,omitempty"`
+	Error   string         `json:"error,omitempty"`
+}
+
 // ── 路由注册 ───────────────────────────────────────────────────────────────────
 
 func (h *Handler) RegisterRoutes(e *gin.Engine) {
 	group := e.Group("/v1")
 	group.POST("/tft/analyze", h.Analyze)
 	group.POST("/tft/analyze/stream", h.AnalyzeStream) // ← 注意：路由是 /stream 不是 /analyzeStream
+	group.POST("/tft/nlu", h.NluAnalyze)
 	group.GET("/tft/health", h.Health)
 }
 
@@ -166,6 +177,48 @@ func (h *Handler) AnalyzeStream(c *gin.Context) {
 	)
 
 	srv.ServeHTTP(c.Writer, c.Request)
+}
+
+// ── POST /v1/tft/nlu ──────────────────────────────────────────────────────
+
+func (h *Handler) NluAnalyze(c *gin.Context) {
+	log := h.logger
+
+	var req NluAnalyzeRequest
+	if err := c.ShouldBindJSON(&req); err != nil {
+		log.WithError(err).Warn("NLU请求体解析失败")
+		c.JSON(http.StatusBadRequest, NluAnalyzeResponse{Success: false, Error: "invalid request body"})
+		return
+	}
+	if req.Input == "" {
+		log.Warn("NLU input 字段为空")
+		c.JSON(http.StatusBadRequest, NluAnalyzeResponse{Success: false, Error: "input is required"})
+		return
+	}
+
+	log.WithField("input", req.Input).Info("开始NLU分析")
+	start := time.Now()
+
+	ctx, cancel := context.WithTimeout(context.Background(), 90*time.Second)
+	defer cancel()
+
+	result, err := h.ag.NluAnalyze(ctx, req.Input)
+	if err != nil {
+		log.WithError(err).WithFields(logrus.Fields{
+			"input":   req.Input,
+			"elapsed": time.Since(start).String(),
+		}).Error("NLU分析失败")
+		c.JSON(http.StatusInternalServerError, NluAnalyzeResponse{Success: false, Error: err.Error()})
+		return
+	}
+
+	log.WithFields(logrus.Fields{
+		"input":   req.Input,
+		"elapsed": time.Since(start).String(),
+		"intent":  result.Intent,
+	}).Info("NLU分析完成")
+
+	c.JSON(http.StatusOK, NluAnalyzeResponse{Success: true, Data: result})
 }
 
 // ── GET /v1/tft/health ────────────────────────────────────────────────────────
