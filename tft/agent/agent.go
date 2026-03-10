@@ -39,7 +39,7 @@ func defaultLLMTimeout() time.Duration {
 // Agent TFT Copilot 的对外入口
 type Agent struct {
 	runnable    compose.Runnable[*GraphInput, *schema.Message]
-	nluRunnable compose.Runnable[*NluContext, *NluContext]
+	nluRunnable compose.Runnable[*NluContext, *NluEnrichedContext]
 	store       *data.Store
 	llmTimeout  time.Duration
 	logger      *logrus.Logger
@@ -193,9 +193,9 @@ func (a *Agent) AnalyzeStream(ctx context.Context, rawInput string) (
 	return converted, nil
 }
 
-// NluAnalyze NLU分析接口：提取用户输入的结构化信息
+// NluAnalyze NLU分析接口：提取用户输入的结构化信息并查询数据
 func (a *Agent) NluAnalyze(ctx context.Context, rawInput string) (
-	*Context, error,
+	*NluEnrichedContext, error,
 ) {
 	llmCtx, cancel := a.withLLMTimeout(ctx)
 	defer cancel()
@@ -213,11 +213,13 @@ func (a *Agent) NluAnalyze(ctx context.Context, rawInput string) (
 	}
 
 	a.logger.WithFields(logrus.Fields{
-		"elapsed": time.Since(start).Round(time.Millisecond).String(),
-		"intent":  result.Intent,
+		"elapsed":       time.Since(start).Round(time.Millisecond).String(),
+		"intent":        result.Ctx.Intent,
+		"matched_comps": len(result.MatchedComps),
+		"matched_items": len(result.MatchedItems),
 	}).Debug("NLU分析完成")
 
-	return &result.Ctx, nil
+	return result, nil
 }
 
 // wrapStreamWithCleanup 包装 StreamReader，在 Close 时执行 cleanup
