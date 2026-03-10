@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"strings"
 	"github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
@@ -247,8 +248,15 @@ func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, store *data.S
 			return nil, fmt.Errorf("generate: %w", err)
 		}
 		var c Context
-		if err := json.Unmarshal([]byte(resp.Content), &c); err != nil {
-			logrus.WithError(err).WithField("content", resp.Content).Warn("JSON解析失败，使用空Context")
+		// 提取JSON内容：去除think标签和其他前缀，找到第一个{和最后一个}之间的内容
+		content := resp.Content
+		if startIdx := strings.Index(content, "{"); startIdx != -1 {
+			if endIdx := strings.LastIndex(content, "}"); endIdx != -1 && endIdx > startIdx {
+				content = content[startIdx : endIdx+1]
+			}
+		}
+		if err := json.Unmarshal([]byte(content), &c); err != nil {
+			logrus.WithError(err).WithField("raw_content", resp.Content).WithField("extracted_content", content).Warn("JSON解析失败，使用空Context")
 		}
 		input.Ctx = c
 		logrus.Printf("llm 提取的内容为: %+v\n", input.Ctx)
