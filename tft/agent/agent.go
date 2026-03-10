@@ -38,11 +38,12 @@ func defaultLLMTimeout() time.Duration {
 
 // Agent TFT Copilot 的对外入口
 type Agent struct {
-	runnable   compose.Runnable[*GraphInput, *schema.Message]
-	store      *data.Store
-	llmTimeout time.Duration
-	logger     *logrus.Logger
-	traceOpts  []compose.Option // 链路追踪 callback，每次调用时注入
+	runnable    compose.Runnable[*GraphInput, *schema.Message]
+	nluRunnable compose.Runnable[*NluContext, *GraphOutput]
+	store       *data.Store
+	llmTimeout  time.Duration
+	logger      *logrus.Logger
+	traceOpts   []compose.Option // 链路追踪 callback，每次调用时注入
 }
 
 // NewAgent 使用默认配置初始化 Agent
@@ -97,12 +98,18 @@ func NewAgentWithConfig(ctx context.Context, store *data.Store, cfg *AgentConfig
 		return nil, fmt.Errorf("build graph: %w", err)
 	}
 
+	nluRunable, err := BuildNluGraph(ctx, chatModel, store)
+	if err != nil {
+		return nil, fmt.Errorf("build nlu graph: %w", err)
+	}
+
 	return &Agent{
-		runnable:   runnable,
-		store:      store,
-		llmTimeout: llmTimeout,
-		logger:     logger,
-		traceOpts:  traceOpts,
+		nluRunnable: nluRunable,
+		runnable:    runnable,
+		store:       store,
+		llmTimeout:  llmTimeout,
+		logger:      logger,
+		traceOpts:   traceOpts,
 	}, nil
 }
 
@@ -184,6 +191,46 @@ func (a *Agent) AnalyzeStream(ctx context.Context, rawInput string) (
 	//})
 
 	return converted, nil
+}
+
+// NluStream 流式接口：返回 StreamReader，由 handler 逐 chunk 推送
+func (a *Agent) NluStream(ctx context.Context, rawInput string) (
+	*GraphOutput, error,
+) {
+	llmCtx, cancel := a.withLLMTimeout(ctx)
+
+	start := time.Now()
+
+	//opts := append(a.traceOpts, compose.WithChatModelOption(model.WithMaxTokens(a.maxTokens())))
+	opts := append(a.traceOpts, compose.WithChatModelOption(
+		ark.WithThinking(&ark.Thinking{
+			Type: arkModel.ThinkingTypeDisabled,
+		})))
+	sr, err := a.nluRunnable.Invoke(llmCtx, &NluContext{UserInput: rawInput}, opts...)
+	if err != nil {
+		cancel()
+		a.logger.WithError(err).WithField("elapsed", time.Since(start).String()).Error("流式推理启动失败")
+		return nil, fmt.Errorf("graph stream: %w", err)
+	}
+
+	// 把 *schema.Message 流转换成 *GraphOutput 流，同时在流结束时打印总耗时
+	//tokenCount := 0
+	//converted := schema.StreamReaderWithConvert(sr,
+	//	func(ctx *NluContext) (*GraphOutput, error) {
+	//		if ctx == nil || ctx.Content == "" {
+	//			return nil, schema.ErrNoValue
+	//		}
+	//		tokenCount++
+	//		return &GraphOutput{LLMAdvice: msg.Content}, nil
+	//	},
+	//)
+
+	// 包一层：流关闭时取消 LLM timeout context
+	//wrapped := wrapStreamWithCleanup(converted, func() {
+	//	cancel()
+	//})
+
+	return sr, nil
 }
 
 // wrapStreamWithCleanup 包装 StreamReader，在 Close 时执行 cleanup

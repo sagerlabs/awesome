@@ -2,11 +2,14 @@ package agent
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
 	"github.com/sagerlabs/awesome/tft/parser"
+	"github.com/sagerlabs/awesome/tft/prompt"
+	"github.com/sirupsen/logrus"
 
 	"github.com/sagerlabs/awesome/tft/data"
 	"github.com/sagerlabs/awesome/tft/tool"
@@ -219,4 +222,43 @@ func BuildGraph(ctx context.Context, chatModel model.ChatModel, store *data.Stor
 	}
 
 	return runnable, nil
+}
+
+type NluContext struct {
+	UserInput  string
+	Ctx        Context
+	FinalReply string
+}
+
+func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, store *data.Store) (
+	compose.Runnable[*NluContext, *GraphOutput], error,
+) {
+	g := compose.NewGraph[*NluContext, *GraphOutput]()
+	nluExtarct := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluContext, err error) {
+		logrus.Println("用户输入:", input.UserInput)
+		fullPrompt, err := prompt.BuildNLUPrompt(input.UserInput)
+		if err != nil {
+			return nil, fmt.Errorf("build nlu prompt: %w", err)
+		}
+		resp, err := chatModel.Generate(ctx, []*schema.Message{
+			schema.UserMessage(fullPrompt),
+		})
+		if err != nil {
+			return nil, fmt.Errorf("generate: %w", err)
+		}
+		var c Context
+		_ = json.Unmarshal([]byte(resp.Content), &c)
+		input.Ctx = c
+		logrus.Printf("llm 提取的内容为: %+v\n", input.Ctx)
+		return input, nil
+	})
+	_ = g.AddLambdaNode("nlu_extract", nluExtarct)
+
+	_ = g.AddEdge(compose.START, "nlu_extract")
+
+	_ = g.AddEdge("nlu_extract", compose.END)
+	runnable, err := g.Compile(ctx,
+		compose.WithGraphName("TFTCopilotGraph"),
+	)
+	return runnable, err
 }

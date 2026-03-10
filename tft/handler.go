@@ -12,9 +12,9 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
-	"github.com/sagerlabs/awesome/sse"
 	"github.com/sagerlabs/awesome/tft/agent"
 	"github.com/sagerlabs/awesome/tft/data"
+	"github.com/sagerlabs/awesome/tft/sse"
 )
 
 // Handler TFT Copilot 的 HTTP 处理器
@@ -107,7 +107,7 @@ func (h *Handler) Analyze(c *gin.Context) {
 	ctx, cancel := context.WithTimeout(context.Background(), 90*time.Second)
 	defer cancel()
 
-	output, err := h.ag.Analyze(ctx, req.Input)
+	output, err := h.ag.NluStream(ctx, req.Input)
 	if err != nil {
 		log.WithError(err).WithFields(logrus.Fields{
 			"input":   req.Input,
