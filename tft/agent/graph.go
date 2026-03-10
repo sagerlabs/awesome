@@ -301,13 +301,10 @@ func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, store *data.S
 			Ctx:       input.Ctx,
 		}
 
-		// 1. 将英雄/装备/羁绊转换为标准ID
-		normalizedCtx := normalizeContext(input.Ctx, store)
-
-		// 2. 查询匹配的阵容（根据英雄）
-		if len(normalizedCtx.Champions) > 0 {
-			heroIDs := make([]string, 0, len(normalizedCtx.Champions))
-			for name := range normalizedCtx.Champions {
+		// 1. 查询匹配的阵容（根据英雄）- 直接用原始名称去Resolve
+		if len(input.Ctx.Champions) > 0 {
+			heroIDs := make([]string, 0, len(input.Ctx.Champions))
+			for name := range input.Ctx.Champions {
 				if id := store.ResolveUnitID(name); id != "" {
 					heroIDs = append(heroIDs, id)
 				}
@@ -320,9 +317,9 @@ func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, store *data.S
 			}
 		}
 
-		// 3. 查询匹配的装备
-		if len(normalizedCtx.Items) > 0 {
-			for _, itemName := range normalizedCtx.Items {
+		// 2. 查询匹配的装备 - 直接用原始名称去Resolve
+		if len(input.Ctx.Items) > 0 {
+			for _, itemName := range input.Ctx.Items {
 				if itemID := store.ResolveItemID(itemName); itemID != "" {
 					itemInfo := MatchedItemInfo{
 						ItemID:   itemID,
@@ -345,6 +342,9 @@ func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, store *data.S
 				}
 			}
 		}
+
+		// 3. 将Context中的名称转换为中文（用于展示给LLM）
+		result.Ctx = normalizeContext(input.Ctx, store)
 
 		return result, nil
 	})
