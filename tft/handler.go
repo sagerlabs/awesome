@@ -107,7 +107,7 @@ func (h *Handler) Analyze(c *gin.Context) {
 	ctx, cancel := context.WithTimeout(context.Background(), 90*time.Second)
 	defer cancel()
 
-	output, err := h.ag.NluStream(ctx, req.Input)
+	output, err := h.ag.Analyze(ctx, req.Input)
 	if err != nil {
 		log.WithError(err).WithFields(logrus.Fields{
 			"input":   req.Input,

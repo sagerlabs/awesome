@@ -39,7 +39,7 @@ func defaultLLMTimeout() time.Duration {
 // Agent TFT Copilot 的对外入口
 type Agent struct {
 	runnable    compose.Runnable[*GraphInput, *schema.Message]
-	nluRunnable compose.Runnable[*NluContext, *GraphOutput]
+	nluRunnable compose.Runnable[*NluContext, *NluContext]
 	store       *data.Store
 	llmTimeout  time.Duration
 	logger      *logrus.Logger
@@ -98,13 +98,13 @@ func NewAgentWithConfig(ctx context.Context, store *data.Store, cfg *AgentConfig
 		return nil, fmt.Errorf("build graph: %w", err)
 	}
 
-	nluRunable, err := BuildNluGraph(ctx, chatModel, store)
+	nluRunnable, err := BuildNluGraph(ctx, chatModel, store)
 	if err != nil {
 		return nil, fmt.Errorf("build nlu graph: %w", err)
 	}
 
 	return &Agent{
-		nluRunnable: nluRunable,
+		nluRunnable: nluRunnable,
 		runnable:    runnable,
 		store:       store,
 		llmTimeout:  llmTimeout,
@@ -193,44 +193,31 @@ func (a *Agent) AnalyzeStream(ctx context.Context, rawInput string) (
 	return converted, nil
 }
 
-// NluStream 流式接口：返回 StreamReader，由 handler 逐 chunk 推送
-func (a *Agent) NluStream(ctx context.Context, rawInput string) (
-	*GraphOutput, error,
+// NluAnalyze NLU分析接口：提取用户输入的结构化信息
+func (a *Agent) NluAnalyze(ctx context.Context, rawInput string) (
+	*Context, error,
 ) {
 	llmCtx, cancel := a.withLLMTimeout(ctx)
+	defer cancel()
 
 	start := time.Now()
 
-	//opts := append(a.traceOpts, compose.WithChatModelOption(model.WithMaxTokens(a.maxTokens())))
 	opts := append(a.traceOpts, compose.WithChatModelOption(
 		ark.WithThinking(&ark.Thinking{
 			Type: arkModel.ThinkingTypeDisabled,
 		})))
-	sr, err := a.nluRunnable.Invoke(llmCtx, &NluContext{UserInput: rawInput}, opts...)
+	result, err := a.nluRunnable.Invoke(llmCtx, &NluContext{UserInput: rawInput}, opts...)
 	if err != nil {
-		cancel()
-		a.logger.WithError(err).WithField("elapsed", time.Since(start).String()).Error("流式推理启动失败")
-		return nil, fmt.Errorf("graph stream: %w", err)
+		a.logger.WithError(err).WithField("elapsed", time.Since(start).String()).Error("NLU分析失败")
+		return nil, fmt.Errorf("nlu analyze: %w", err)
 	}
 
-	// 把 *schema.Message 流转换成 *GraphOutput 流，同时在流结束时打印总耗时
-	//tokenCount := 0
-	//converted := schema.StreamReaderWithConvert(sr,
-	//	func(ctx *NluContext) (*GraphOutput, error) {
-	//		if ctx == nil || ctx.Content == "" {
-	//			return nil, schema.ErrNoValue
-	//		}
-	//		tokenCount++
-	//		return &GraphOutput{LLMAdvice: msg.Content}, nil
-	//	},
-	//)
+	a.logger.WithFields(logrus.Fields{
+		"elapsed": time.Since(start).Round(time.Millisecond).String(),
+		"intent":  result.Intent,
+	}).Debug("NLU分析完成")
 
-	// 包一层：流关闭时取消 LLM timeout context
-	//wrapped := wrapStreamWithCleanup(converted, func() {
-	//	cancel()
-	//})
-
-	return sr, nil
+	return &result.Ctx, nil
 }
 
 // wrapStreamWithCleanup 包装 StreamReader，在 Close 时执行 cleanup
