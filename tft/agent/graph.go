@@ -292,3 +292,154 @@ func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, store *data.S
 
 	return runnable, nil
 }
+
+// BuildNluStreamGraph 构建支持流式输出的NLU Graph，包含LLM润色节点
+func BuildNluStreamGraph(ctx context.Context, chatModel model.ChatModel, store *data.Store) (
+	compose.Runnable[*NluContext, *schema.Message], error,
+) {
+	g := compose.NewGraph[*NluContext, *schema.Message]()
+
+	// Node 1: NLU提取
+	nluExtract := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluContext, err error) {
+		logrus.Println("用户输入:", input.UserInput)
+		fullPrompt, err := prompt.BuildNLUPrompt(input.UserInput)
+		if err != nil {
+			return nil, fmt.Errorf("build nlu prompt: %w", err)
+		}
+		resp, err := chatModel.Generate(ctx, []*schema.Message{
+			schema.UserMessage(fullPrompt),
+		})
+		if err != nil {
+			return nil, fmt.Errorf("generate: %w", err)
+		}
+		var c Context
+		// 提取JSON内容：去除think标签和其他前缀，找到第一个{和最后一个}之间的内容
+		content := resp.Content
+		if startIdx := strings.Index(content, "{"); startIdx != -1 {
+			if endIdx := strings.LastIndex(content, "}"); endIdx != -1 && endIdx > startIdx {
+				content = content[startIdx : endIdx+1]
+			}
+		}
+		if err := json.Unmarshal([]byte(content), &c); err != nil {
+			logrus.WithError(err).WithField("raw_content", resp.Content).WithField("extracted_content", content).Warn("JSON解析失败，使用空Context")
+		}
+		input.Ctx = c
+		logrus.Printf("llm 提取的内容为: %+v\n", input.Ctx)
+		return input, nil
+	})
+	if err := g.AddLambdaNode("nlu_extract", nluExtract); err != nil {
+		return nil, fmt.Errorf("add nlu_extract node: %w", err)
+	}
+
+	// Node 2: 数据查询和中文转换
+	dataLookup := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluEnrichedContext, err error) {
+		result := QueryNLUData(input.Ctx, store)
+		result.UserInput = input.UserInput
+		return result, nil
+	})
+	if err := g.AddLambdaNode("data_lookup", dataLookup); err != nil {
+		return nil, fmt.Errorf("add data_lookup node: %w", err)
+	}
+
+	// Node 3: 构建LLM润色prompt
+	llmInput := compose.InvokableLambda(func(ctx context.Context, input *NluEnrichedContext) ([]*schema.Message, error) {
+		prompt := buildNluRefinePrompt(input)
+		return []*schema.Message{
+			schema.SystemMessage(nluRefineSystemPrompt),
+			schema.UserMessage(prompt),
+		}, nil
+	})
+	if err := g.AddLambdaNode("llm_input", llmInput); err != nil {
+		return nil, fmt.Errorf("add llm_input node: %w", err)
+	}
+
+	// Node 4: LLM润色
+	if err := g.AddChatModelNode("llm_refine", chatModel); err != nil {
+		return nil, fmt.Errorf("add llm_refine node: %w", err)
+	}
+
+	// Connect edges
+	if err := g.AddEdge(compose.START, "nlu_extract"); err != nil {
+		return nil, fmt.Errorf("edge START->nlu_extract: %w", err)
+	}
+	if err := g.AddEdge("nlu_extract", "data_lookup"); err != nil {
+		return nil, fmt.Errorf("edge nlu_extract->data_lookup: %w", err)
+	}
+	if err := g.AddEdge("data_lookup", "llm_input"); err != nil {
+		return nil, fmt.Errorf("edge data_lookup->llm_input: %w", err)
+	}
+	if err := g.AddEdge("llm_input", "llm_refine"); err != nil {
+		return nil, fmt.Errorf("edge llm_input->llm_refine: %w", err)
+	}
+	if err := g.AddEdge("llm_refine", compose.END); err != nil {
+		return nil, fmt.Errorf("edge llm_refine->END: %w", err)
+	}
+
+	runnable, err := g.Compile(ctx,
+		compose.WithGraphName("NLUStreamGraph"),
+	)
+	if err != nil {
+		return nil, fmt.Errorf("compile nlu stream graph: %w", err)
+	}
+
+	return runnable, nil
+}
+
+// nluRefineSystemPrompt NLU润色的系统提示词
+const nluRefineSystemPrompt = `你是一个专业的云顶之弈（TFT）助手。请根据用户提供的查询和匹配到的数据，用自然、友好的语言给出建议。
+
+要求：
+1. 用中文回复
+2. 语言简洁明了，不要过于冗长
+3. 重点突出阵容推荐和装备建议
+4. 结合数据中的阵容强度信息给出合理建议
+5. 不要直接复制JSON数据，要用自然语言组织`
+
+// buildNluRefinePrompt 构建NLU润色的prompt
+func buildNluRefinePrompt(data *NluEnrichedContext) string {
+	var sb strings.Builder
+
+	sb.WriteString(fmt.Sprintf("用户原始输入: %s\n\n", data.UserInput))
+	sb.WriteString(fmt.Sprintf("用户意图: %s\n\n", data.Ctx.Intent))
+
+	if len(data.Ctx.Champions) > 0 {
+		sb.WriteString("提到的英雄:\n")
+		for name, star := range data.Ctx.Champions {
+			sb.WriteString(fmt.Sprintf("- %s (%d星)\n", name, star))
+		}
+		sb.WriteString("\n")
+	}
+
+	if len(data.Ctx.Items) > 0 {
+		sb.WriteString(fmt.Sprintf("提到的装备: %s\n\n", strings.Join(data.Ctx.Items, ", ")))
+	}
+
+	if len(data.MatchedComps) > 0 {
+		sb.WriteString("匹配到的阵容:\n")
+		for i, comp := range data.MatchedComps {
+			if i >= 3 {
+				break
+			}
+			sb.WriteString(fmt.Sprintf("- %s\n", comp.Name))
+		}
+		sb.WriteString("\n")
+	}
+
+	if len(data.MatchedItems) > 0 {
+		sb.WriteString("匹配到的装备适配阵容:\n")
+		for _, item := range data.MatchedItems {
+			sb.WriteString(fmt.Sprintf("- %s:\n", item.ItemName))
+			for i, comp := range item.CompInfos {
+				if i >= 2 {
+					break
+				}
+				sb.WriteString(fmt.Sprintf("  - %s (Tier: %s, 平均排名: %.2f)\n", comp.CompName, comp.CompTier, comp.CompAvg))
+			}
+		}
+		sb.WriteString("\n")
+	}
+
+	sb.WriteString("请根据以上信息，给用户一个友好、专业的建议。")
+
+	return sb.String()
+}
