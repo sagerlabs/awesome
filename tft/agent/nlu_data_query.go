@@ -104,30 +104,30 @@ func QueryNLUData(ctx Context, store *data.Store) *NluEnrichedContext {
 		}
 	} else if hasItems {
 		// 没有英雄输入，但有装备输入：根据装备查询最强三套阵容
-		// 收集所有装备适配的阵容
+		// 直接从所有装备适配的阵容中去重并获取完整阵容
 		clusterIDSet := make(map[string]bool)
-		var allCompInfos []ItemFitCompInfo
+		var compsToAdd []data.Comp
 
 		for _, item := range result.MatchedItems {
 			for _, compInfo := range item.CompInfos {
 				if !clusterIDSet[compInfo.ClusterID] {
 					clusterIDSet[compInfo.ClusterID] = true
-					allCompInfos = append(allCompInfos, compInfo)
+					if comp, ok := store.GetCompByClusterID(compInfo.ClusterID); ok {
+						compsToAdd = append(compsToAdd, *comp)
+					}
 				}
 			}
 		}
 
-		// 按平均排名升序排序（越小越强），取前3个
-		sortCompInfosByAvg(allCompInfos)
+		// 按平均排名升序排序（越小越强）
+		sortCompsByAvg(compsToAdd)
 
-		// 获取完整的阵容信息
-		for i, compInfo := range allCompInfos {
+		// 取前3个
+		for i, comp := range compsToAdd {
 			if i >= 3 {
 				break
 			}
-			if comp, ok := store.GetCompByClusterID(compInfo.ClusterID); ok {
-				result.MatchedComps = append(result.MatchedComps, *comp)
-			}
+			result.MatchedComps = append(result.MatchedComps, comp)
 		}
 	}
 
@@ -142,6 +142,15 @@ func sortCompInfosByAvg(infos []ItemFitCompInfo) {
 	for i := 1; i < len(infos); i++ {
 		for j := i; j > 0 && infos[j].CompAvg < infos[j-1].CompAvg; j-- {
 			infos[j], infos[j-1] = infos[j-1], infos[j]
+		}
+	}
+}
+
+// sortCompsByAvg 按平均排名升序排序阵容
+func sortCompsByAvg(comps []data.Comp) {
+	for i := 1; i < len(comps); i++ {
+		for j := i; j > 0 && comps[j].AvgPlacement < comps[j-1].AvgPlacement; j-- {
+			comps[j], comps[j-1] = comps[j-1], comps[j]
 		}
 	}
 }
