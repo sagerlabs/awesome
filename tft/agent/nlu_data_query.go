@@ -120,7 +120,7 @@ func QueryNLUData(ctx Context, store *data.Store) *NluEnrichedContext {
 		}
 
 		// 按平均排名升序排序（越小越强）
-		sortCompsByAvg(compsToAdd)
+		sortCompsByAvgPlacement(compsToAdd)
 
 		// 取前3个
 		for i, comp := range compsToAdd {
@@ -137,8 +137,8 @@ func QueryNLUData(ctx Context, store *data.Store) *NluEnrichedContext {
 	return result
 }
 
-// sortCompInfosByAvg 按平均排名升序排序装备适配阵容信息
-func sortCompInfosByAvg(infos []ItemFitCompInfo) {
+// sortItemFitCompInfosByAvg 按平均排名升序排序装备适配阵容信息
+func sortItemFitCompInfosByAvg(infos []ItemFitCompInfo) {
 	for i := 1; i < len(infos); i++ {
 		for j := i; j > 0 && infos[j].CompAvg < infos[j-1].CompAvg; j-- {
 			infos[j], infos[j-1] = infos[j-1], infos[j]
@@ -146,8 +146,8 @@ func sortCompInfosByAvg(infos []ItemFitCompInfo) {
 	}
 }
 
-// sortCompsByAvg 按平均排名升序排序阵容
-func sortCompsByAvg(comps []data.Comp) {
+// sortCompsByAvgPlacement 按平均排名升序排序阵容
+func sortCompsByAvgPlacement(comps []data.Comp) {
 	for i := 1; i < len(comps); i++ {
 		for j := i; j > 0 && comps[j].AvgPlacement < comps[j-1].AvgPlacement; j-- {
 			comps[j], comps[j-1] = comps[j-1], comps[j]
