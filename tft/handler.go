@@ -215,10 +215,10 @@ func (h *Handler) NluAnalyze(c *gin.Context) {
 	log.WithFields(logrus.Fields{
 		"input":   req.Input,
 		"elapsed": time.Since(start).String(),
-		"intent":  result.Intent,
+		"intent":  result.Ctx,
 	}).Info("NLU分析完成")
 
-	c.JSON(http.StatusOK, NluAnalyzeResponse{Success: true, Data: result})
+	c.JSON(http.StatusOK, NluAnalyzeResponse{Success: true, Data: &result.Ctx})
 }
 
 // ── GET /v1/tft/health ────────────────────────────────────────────────────────
