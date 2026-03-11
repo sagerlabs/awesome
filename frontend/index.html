@@ -610,12 +610,12 @@
     // Electron 环境：通过 IPC 读取用户数据目录的 config.json（可持久修改）
     // 浏览器环境：fetch ./config.json，或使用 localStorage 缓存
     let API_BASE   = 'http://localhost:8080'
-    let STREAM_URL = `${API_BASE}/v1/tft/analyze/stream`
+    let STREAM_URL = `${API_BASE}/v1/tft/nlu/stream`
 
     function applyConfig(cfg) {
         if (cfg && cfg.api_base) {
             API_BASE   = cfg.api_base
-            STREAM_URL = `${API_BASE}/v1/tft/analyze/stream`
+            STREAM_URL = `${API_BASE}/v1/tft/nlu/stream`
         }
     }
 
