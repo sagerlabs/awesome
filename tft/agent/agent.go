@@ -260,8 +260,9 @@ func (a *Agent) NluAnalyzeStream(ctx context.Context, rawInput string) (
 		},
 	)
 
-	// 包装流，在Close时调用cancel
-	return wrapStreamWithCleanup(converted, cancel), nil
+	// 注意：不使用 wrapStreamWithCleanup，保持与 AnalyzeStream 一致
+	// cancel 在 handler 层管理
+	return converted, nil
 }
 
 // wrapStreamWithCleanup 包装 StreamReader，在 Close 时执行 cleanup
