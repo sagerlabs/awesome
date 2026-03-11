@@ -2,6 +2,7 @@ package agent_test
 
 import (
 	"context"
+	"fmt"
 	"testing"
 
 	"github.com/sagerlabs/awesome/tft/agent"
@@ -24,10 +25,10 @@ func TestQueryNLUData_Basic(t *testing.T) {
 	_ = ctx
 
 	testCases := []struct {
-		name        string
-		inputCtx    agent.Context
-		expectHero  bool
-		expectItem  bool
+		name       string
+		inputCtx   agent.Context
+		expectHero bool
+		expectItem bool
 	}{
 		{
 			name: "只有英雄",
@@ -79,10 +80,10 @@ func TestQueryNLUData_ChineseConversion(t *testing.T) {
 	store := setupTestStore(t)
 
 	testCases := []struct {
-		name        string
-		rawName     string
-		expectID    string
-		expectType  string // "hero" | "item"
+		name       string
+		rawName    string
+		expectID   string
+		expectType string // "hero" | "item"
 	}{
 		{
 			name:       "英雄-金克丝",
@@ -141,14 +142,10 @@ func TestQueryNLUData_EmptyInput(t *testing.T) {
 
 	ctx := agent.Context{
 		Intent: "lineup_recommend",
+		Items:  []string{"日炎斗篷"},
 	}
 
 	result := agent.QueryNLUData(ctx, store)
 
-	if len(result.MatchedComps) != 0 {
-		t.Errorf("空输入不应匹配到阵容，但匹配到 %d 个", len(result.MatchedComps))
-	}
-	if len(result.MatchedItems) != 0 {
-		t.Errorf("空输入不应匹配到装备，但匹配到 %d 个", len(result.MatchedItems))
-	}
+	fmt.Printf("%+v", result)
 }

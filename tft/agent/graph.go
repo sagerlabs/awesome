@@ -4,13 +4,13 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"strings"
 	"github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
 	"github.com/sagerlabs/awesome/tft/parser"
 	"github.com/sagerlabs/awesome/tft/prompt"
 	"github.com/sirupsen/logrus"
+	"strings"
 
 	"github.com/sagerlabs/awesome/tft/data"
 	"github.com/sagerlabs/awesome/tft/tool"
@@ -343,10 +343,10 @@ func BuildNluStreamGraph(ctx context.Context, chatModel model.ChatModel, store *
 
 	// Node 3: 构建LLM润色prompt
 	llmInput := compose.InvokableLambda(func(ctx context.Context, input *NluEnrichedContext) ([]*schema.Message, error) {
-		prompt := buildNluRefinePrompt(input)
+		nluPrompt, _ := BuildNluFormatPrompt(input)
 		return []*schema.Message{
-			schema.SystemMessage(nluRefineSystemPrompt),
-			schema.UserMessage(prompt),
+			schema.SystemMessage(FormatSystemPrompt),
+			schema.UserMessage(nluPrompt),
 		}, nil
 	})
 	if err := g.AddLambdaNode("llm_input", llmInput); err != nil {
@@ -383,63 +383,4 @@ func BuildNluStreamGraph(ctx context.Context, chatModel model.ChatModel, store *
 	}
 
 	return runnable, nil
-}
-
-// nluRefineSystemPrompt NLU润色的系统提示词
-const nluRefineSystemPrompt = `你是一个专业的云顶之弈（TFT）助手。请根据用户提供的查询和匹配到的数据，用自然、友好的语言给出建议。
-
-要求：
-1. 用中文回复
-2. 语言简洁明了，不要过于冗长
-3. 重点突出阵容推荐和装备建议
-4. 结合数据中的阵容强度信息给出合理建议
-5. 不要直接复制JSON数据，要用自然语言组织`
-
-// buildNluRefinePrompt 构建NLU润色的prompt
-func buildNluRefinePrompt(data *NluEnrichedContext) string {
-	var sb strings.Builder
-
-	sb.WriteString(fmt.Sprintf("用户原始输入: %s\n\n", data.UserInput))
-	sb.WriteString(fmt.Sprintf("用户意图: %s\n\n", data.Ctx.Intent))
-
-	if len(data.Ctx.Champions) > 0 {
-		sb.WriteString("提到的英雄:\n")
-		for name, star := range data.Ctx.Champions {
-			sb.WriteString(fmt.Sprintf("- %s (%d星)\n", name, star))
-		}
-		sb.WriteString("\n")
-	}
-
-	if len(data.Ctx.Items) > 0 {
-		sb.WriteString(fmt.Sprintf("提到的装备: %s\n\n", strings.Join(data.Ctx.Items, ", ")))
-	}
-
-	if len(data.MatchedComps) > 0 {
-		sb.WriteString("匹配到的阵容:\n")
-		for i, comp := range data.MatchedComps {
-			if i >= 3 {
-				break
-			}
-			sb.WriteString(fmt.Sprintf("- %s\n", comp.Name))
-		}
-		sb.WriteString("\n")
-	}
-
-	if len(data.MatchedItems) > 0 {
-		sb.WriteString("匹配到的装备适配阵容:\n")
-		for _, item := range data.MatchedItems {
-			sb.WriteString(fmt.Sprintf("- %s:\n", item.ItemName))
-			for i, comp := range item.CompInfos {
-				if i >= 2 {
-					break
-				}
-				sb.WriteString(fmt.Sprintf("  - %s (Tier: %s, 平均排名: %.2f)\n", comp.CompName, comp.CompTier, comp.CompAvg))
-			}
-		}
-		sb.WriteString("\n")
-	}
-
-	sb.WriteString("请根据以上信息，给用户一个友好、专业的建议。")
-
-	return sb.String()
 }
