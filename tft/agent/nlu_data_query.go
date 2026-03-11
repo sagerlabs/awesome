@@ -44,24 +44,21 @@ func QueryNLUData(ctx Context, store *data.Store) *NluEnrichedContext {
 		Ctx: ctx,
 	}
 
-	// 1. 查询匹配的阵容（根据英雄）- 直接用原始名称去Resolve
-	if len(ctx.Champions) > 0 {
-		heroIDs := make([]string, 0, len(ctx.Champions))
-		for name := range ctx.Champions {
-			if id := store.ResolveUnitID(name); id != "" {
-				heroIDs = append(heroIDs, id)
-			}
-		}
-		if len(heroIDs) > 0 {
-			matches := store.GetCompsByUnits(heroIDs)
-			for _, match := range matches {
-				result.MatchedComps = append(result.MatchedComps, match.Comp)
-			}
-		}
-	}
+	// TODO: 散件合成逻辑
+	// 当用户只输入散件（如女神之泪、反曲之弓等基础装备）时：
+	// 1. 需要散件合成列表，知道该散件可以合成哪些成品装备
+	// 2. 找到包含了该散件合成的最强装备的阵容
+	// 3. 返回最强的三套阵容
+	// 当用户同时输入了英雄和散件时：
+	// 1. 先找英雄最强的三套阵容
+	// 2. 然后看看哪些必须的装备是由该散件合成的
+	// 3. 如果没有就是不合适
 
-	// 2. 查询匹配的装备 - 直接用原始名称去Resolve
-	if len(ctx.Items) > 0 {
+	hasHeroes := len(ctx.Champions) > 0
+	hasItems := len(ctx.Items) > 0
+
+	// 1. 处理装备查询
+	if hasItems {
 		for _, itemName := range ctx.Items {
 			if itemID := store.ResolveItemID(itemName); itemID != "" {
 				itemInfo := MatchedItemInfo{
@@ -86,10 +83,67 @@ func QueryNLUData(ctx Context, store *data.Store) *NluEnrichedContext {
 		}
 	}
 
+	// 2. 处理阵容查询
+	if hasHeroes {
+		// 有英雄输入：根据英雄查询阵容
+		heroIDs := make([]string, 0, len(ctx.Champions))
+		for name := range ctx.Champions {
+			if id := store.ResolveUnitID(name); id != "" {
+				heroIDs = append(heroIDs, id)
+			}
+		}
+		if len(heroIDs) > 0 {
+			matches := store.GetCompsByUnits(heroIDs)
+			// 最多取3个阵容
+			for i, match := range matches {
+				if i >= 3 {
+					break
+				}
+				result.MatchedComps = append(result.MatchedComps, match.Comp)
+			}
+		}
+	} else if hasItems {
+		// 没有英雄输入，但有装备输入：根据装备查询最强三套阵容
+		// 收集所有装备适配的阵容
+		clusterIDSet := make(map[string]bool)
+		var allCompInfos []ItemFitCompInfo
+
+		for _, item := range result.MatchedItems {
+			for _, compInfo := range item.CompInfos {
+				if !clusterIDSet[compInfo.ClusterID] {
+					clusterIDSet[compInfo.ClusterID] = true
+					allCompInfos = append(allCompInfos, compInfo)
+				}
+			}
+		}
+
+		// 按平均排名升序排序（越小越强），取前3个
+		sortCompInfosByAvg(allCompInfos)
+
+		// 获取完整的阵容信息
+		for i, compInfo := range allCompInfos {
+			if i >= 3 {
+				break
+			}
+			if comp, ok := store.GetCompByClusterID(compInfo.ClusterID); ok {
+				result.MatchedComps = append(result.MatchedComps, *comp)
+			}
+		}
+	}
+
 	// 3. 将Context中的名称转换为中文（用于展示给LLM）
 	result.Ctx = normalizeContext(ctx, store)
 
 	return result
+}
+
+// sortCompInfosByAvg 按平均排名升序排序装备适配阵容信息
+func sortCompInfosByAvg(infos []ItemFitCompInfo) {
+	for i := 1; i < len(infos); i++ {
+		for j := i; j > 0 && infos[j].CompAvg < infos[j-1].CompAvg; j-- {
+			infos[j], infos[j-1] = infos[j-1], infos[j]
+		}
+	}
 }
 
 // normalizeContext 尝试将Context中的黑话/昵称转换为标准名称
