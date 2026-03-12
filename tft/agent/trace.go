@@ -10,6 +10,8 @@ import (
 	"github.com/cloudwego/eino/callbacks"
 	"github.com/cloudwego/eino/schema"
 	"github.com/sirupsen/logrus"
+
+	"github.com/sagerlabs/awesome/tft/trace"
 )
 
 // NewTraceCallback 构建节点级链路追踪 Handler
@@ -20,7 +22,9 @@ func NewTraceCallback(logger *logrus.Logger) callbacks.Handler {
 	return callbacks.NewHandlerBuilder().
 		OnStartFn(func(ctx context.Context, info *callbacks.RunInfo, input callbacks.CallbackInput) context.Context {
 			spans.start(info)
+			traceID, _ := trace.TraceIDFromContext(ctx)
 			logger.WithFields(logrus.Fields{
+				"trace_id":  traceID,
 				"node":      info.Name,
 				"component": info.Type,
 			}).Debug("→ 节点开始")
@@ -28,7 +32,9 @@ func NewTraceCallback(logger *logrus.Logger) callbacks.Handler {
 		}).
 		OnEndFn(func(ctx context.Context, info *callbacks.RunInfo, output callbacks.CallbackOutput) context.Context {
 			elapsed, ok := spans.end(info)
+			traceID, _ := trace.TraceIDFromContext(ctx)
 			fields := logrus.Fields{
+				"trace_id":  traceID,
 				"node":      info.Name,
 				"component": info.Type,
 			}
@@ -46,7 +52,9 @@ func NewTraceCallback(logger *logrus.Logger) callbacks.Handler {
 		}).
 		OnErrorFn(func(ctx context.Context, info *callbacks.RunInfo, err error) context.Context {
 			elapsed, ok := spans.end(info)
+			traceID, _ := trace.TraceIDFromContext(ctx)
 			fields := logrus.Fields{
+				"trace_id":  traceID,
 				"node":      info.Name,
 				"component": info.Type,
 				"error":     err.Error(),
@@ -59,8 +67,10 @@ func NewTraceCallback(logger *logrus.Logger) callbacks.Handler {
 		}).
 		OnStartWithStreamInputFn(func(ctx context.Context, info *callbacks.RunInfo, input *schema.StreamReader[callbacks.CallbackInput]) context.Context {
 			spans.start(info)
+			traceID, _ := trace.TraceIDFromContext(ctx)
 			input.Close() // 不消费 stream，直接关闭避免泄露
 			logger.WithFields(logrus.Fields{
+				"trace_id":  traceID,
 				"node":      info.Name,
 				"component": info.Type,
 			}).Debug("→ 节点开始（流式输入）")
@@ -68,6 +78,7 @@ func NewTraceCallback(logger *logrus.Logger) callbacks.Handler {
 		}).
 		OnEndWithStreamOutputFn(func(ctx context.Context, info *callbacks.RunInfo, output *schema.StreamReader[callbacks.CallbackOutput]) context.Context {
 			startTime, _ := spans.endTime(info)
+			traceID, _ := trace.TraceIDFromContext(ctx)
 
 			// 异步消费 stream 统计 token 数，不阻塞主流程
 			go func() {
@@ -87,6 +98,7 @@ func NewTraceCallback(logger *logrus.Logger) callbacks.Handler {
 					}
 				}
 				logger.WithFields(logrus.Fields{
+					"trace_id":    traceID,
 					"node":        info.Name,
 					"component":   info.Type,
 					"elapsed":     time.Since(startTime).Round(time.Millisecond).String(),

@@ -15,6 +15,7 @@ import (
 	"github.com/sagerlabs/awesome/tft/agent"
 	"github.com/sagerlabs/awesome/tft/data"
 	"github.com/sagerlabs/awesome/tft/sse"
+	"github.com/sagerlabs/awesome/tft/trace"
 )
 
 // Handler TFT Copilot 的 HTTP 处理器
@@ -112,28 +113,44 @@ func (h *Handler) Analyze(c *gin.Context) {
 		return
 	}
 
-	log.WithField("input", req.Input).Info("开始分析")
+	// 1. 生成或获取trace_id
+	traceID := c.GetHeader("X-Trace-ID")
+	if traceID == "" {
+		traceID = trace.NewTraceID()
+	}
+
+	// 2. 注入到context
+	ctx := trace.WithTraceID(context.Background(), traceID)
+
+	log.WithFields(logrus.Fields{
+		"trace_id": traceID,
+		"endpoint": "/v1/tft/analyze",
+		"input":    req.Input,
+	}).Info("请求开始")
 	start := time.Now()
 
 	// 用独立 context，不受客户端断开影响
-	ctx, cancel := context.WithTimeout(context.Background(), 90*time.Second)
+	ctx, cancel := context.WithTimeout(ctx, 90*time.Second)
 	defer cancel()
 
 	output, err := h.ag.Analyze(ctx, req.Input)
 	if err != nil {
 		log.WithError(err).WithFields(logrus.Fields{
-			"input":   req.Input,
-			"elapsed": time.Since(start).String(),
+			"trace_id": traceID,
+			"input":    req.Input,
+			"elapsed":  time.Since(start).String(),
 		}).Error("Agent 推理失败")
 		c.JSON(http.StatusInternalServerError, AnalyzeResponse{Success: false, Error: err.Error()})
 		return
 	}
 
 	log.WithFields(logrus.Fields{
+		"trace_id":  traceID,
 		"input":     req.Input,
 		"elapsed":   time.Since(start).String(),
 		"rec_count": len(output.Recommendations),
-	}).Info("分析完成")
+		"success":   true,
+	}).Info("请求结束")
 
 	c.JSON(http.StatusOK, AnalyzeResponse{Success: true, Data: output})
 }
@@ -155,6 +172,21 @@ func (h *Handler) AnalyzeStream(c *gin.Context) {
 		return
 	}
 
+	// 1. 生成或获取trace_id
+	traceID := c.GetHeader("X-Trace-ID")
+	if traceID == "" {
+		traceID = trace.NewTraceID()
+	}
+
+	// 2. 注入到context
+	ctx := trace.WithTraceID(c.Request.Context(), traceID)
+
+	log.WithFields(logrus.Fields{
+		"trace_id": traceID,
+		"endpoint": "/v1/tft/analyze/stream",
+		"input":    req.Input,
+	}).Info("请求开始")
+
 	// ── SSE panic 修复 ────────────────────────────────────────────────────────
 	// gin 的 c.Writer 实现了 http.Flusher，但 sse.Server 内部直接断言
 	// 提前检查，避免 panic，给客户端一个明确的错误
@@ -173,7 +205,7 @@ func (h *Handler) AnalyzeStream(c *gin.Context) {
 		sse.WithBufferSize(100),
 		sse.WithOnConnect(func(_ chan *sse.Event) {
 			// 流式接口保留 c.Request.Context()：客户端断开时级联取消推理
-			go h.runStream(c.Request.Context(), req.Input, req.Plain, srv)
+			go h.runStream(ctx, req.Input, req.Plain, srv, traceID, log)
 		}),
 	)
 
@@ -197,27 +229,43 @@ func (h *Handler) NluAnalyze(c *gin.Context) {
 		return
 	}
 
-	log.WithField("input", req.Input).Info("开始NLU分析")
+	// 1. 生成或获取trace_id
+	traceID := c.GetHeader("X-Trace-ID")
+	if traceID == "" {
+		traceID = trace.NewTraceID()
+	}
+
+	// 2. 注入到context
+	ctx := trace.WithTraceID(context.Background(), traceID)
+
+	log.WithFields(logrus.Fields{
+		"trace_id": traceID,
+		"endpoint": "/v1/tft/nlu",
+		"input":    req.Input,
+	}).Info("请求开始")
 	start := time.Now()
 
-	ctx, cancel := context.WithTimeout(context.Background(), 90*time.Second)
+	ctx, cancel := context.WithTimeout(ctx, 90*time.Second)
 	defer cancel()
 
 	result, err := h.ag.NluAnalyze(ctx, req.Input)
 	if err != nil {
 		log.WithError(err).WithFields(logrus.Fields{
-			"input":   req.Input,
-			"elapsed": time.Since(start).String(),
+			"trace_id": traceID,
+			"input":    req.Input,
+			"elapsed":  time.Since(start).String(),
 		}).Error("NLU分析失败")
 		c.JSON(http.StatusInternalServerError, NluAnalyzeResponse{Success: false, Error: err.Error()})
 		return
 	}
 
 	log.WithFields(logrus.Fields{
-		"input":   req.Input,
-		"elapsed": time.Since(start).String(),
-		"intent":  result.Ctx,
-	}).Info("NLU分析完成")
+		"trace_id": traceID,
+		"input":    req.Input,
+		"elapsed":  time.Since(start).String(),
+		"intent":   result.Ctx.Intent,
+		"success":  true,
+	}).Info("请求结束")
 
 	c.JSON(http.StatusOK, NluAnalyzeResponse{Success: true, Data: &result.Ctx})
 }
@@ -239,6 +287,21 @@ func (h *Handler) NluAnalyzeStream(c *gin.Context) {
 		return
 	}
 
+	// 1. 生成或获取trace_id
+	traceID := c.GetHeader("X-Trace-ID")
+	if traceID == "" {
+		traceID = trace.NewTraceID()
+	}
+
+	// 2. 注入到context
+	ctx := trace.WithTraceID(c.Request.Context(), traceID)
+
+	log.WithFields(logrus.Fields{
+		"trace_id": traceID,
+		"endpoint": "/v1/tft/nlu/stream",
+		"input":    req.Input,
+	}).Info("请求开始")
+
 	// 检查 ResponseWriter 是否支持流式推送
 	if _, ok := c.Writer.(http.Flusher); !ok {
 		log.Error("当前 ResponseWriter 不支持流式推送（不实现 http.Flusher）")
@@ -255,7 +318,7 @@ func (h *Handler) NluAnalyzeStream(c *gin.Context) {
 		sse.WithBufferSize(100),
 		sse.WithOnConnect(func(_ chan *sse.Event) {
 			// 流式接口保留 c.Request.Context()：客户端断开时级联取消推理
-			go h.runNluStream(c.Request.Context(), req.Input, srv)
+			go h.runNluStream(ctx, req.Input, srv, traceID, log)
 		}),
 	)
 
@@ -264,15 +327,15 @@ func (h *Handler) NluAnalyzeStream(c *gin.Context) {
 
 // ── NLU流式推理 goroutine ────────────────────────────────────────────────────────
 
-func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Server) {
-	log := h.logger.WithField("input", input)
+func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Server, traceID string, reqLog *logrus.Entry) {
+	log := reqLog.WithField("input", input)
 	start := time.Now()
 	tokenCount := 0
 	totalChars := 0
 
 	sr, err := h.ag.NluAnalyzeStream(ctx, input)
 	if err != nil {
-		log.WithError(err).Error("NLU流式推理启动失败")
+		log.WithError(err).WithField("trace_id", traceID).Error("NLU流式推理启动失败")
 		srv.Publish(buildEvent("error", StreamChunk{Type: "error", Error: err.Error()}, false))
 		return
 	}
@@ -297,13 +360,16 @@ func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Serve
 			flush()
 			if err == io.EOF {
 				log.WithFields(logrus.Fields{
+					"trace_id":    traceID,
 					"token_count": tokenCount,
 					"total_chars": totalChars,
 					"elapsed":     time.Since(start).String(),
-				}).Info("NLU流式推理完成")
+					"success":     true,
+				}).Info("请求结束")
 				srv.Publish(buildEvent("done", StreamChunk{Type: "done"}, false))
 			} else {
 				log.WithError(err).WithFields(logrus.Fields{
+					"trace_id":    traceID,
 					"token_count": tokenCount,
 					"total_chars": totalChars,
 					"elapsed":     time.Since(start).String(),
@@ -344,15 +410,15 @@ func (h *Handler) Health(c *gin.Context) {
 // 缓冲累积超过此字数，或收到标点/换行时立即推送
 const flushThreshold = 2 // 更小的缓冲，更快推出第一个可见 chunk
 
-func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *sse.Server) {
-	log := h.logger.WithField("input", input)
+func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *sse.Server, traceID string, reqLog *logrus.Entry) {
+	log := reqLog.WithField("input", input)
 	start := time.Now()
 	tokenCount := 0
 	totalChars := 0
 
 	sr, err := h.ag.AnalyzeStream(ctx, input)
 	if err != nil {
-		log.WithError(err).Error("流式推理启动失败")
+		log.WithError(err).WithField("trace_id", traceID).Error("流式推理启动失败")
 		srv.Publish(buildEvent("error", StreamChunk{Type: "error", Error: err.Error()}, plain))
 		return
 	}
@@ -377,13 +443,16 @@ func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *
 			flush()
 			if err == io.EOF {
 				log.WithFields(logrus.Fields{
+					"trace_id":    traceID,
 					"token_count": tokenCount,
 					"total_chars": totalChars,
 					"elapsed":     time.Since(start).String(),
-				}).Info("流式推理完成")
+					"success":     true,
+				}).Info("请求结束")
 				srv.Publish(buildEvent("done", StreamChunk{Type: "done"}, plain))
 			} else {
 				log.WithError(err).WithFields(logrus.Fields{
+					"trace_id":    traceID,
 					"token_count": tokenCount,
 					"total_chars": totalChars,
 					"elapsed":     time.Since(start).String(),

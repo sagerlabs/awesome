@@ -3,16 +3,17 @@ package agent
 import (
 	"context"
 	"fmt"
-	"github.com/cloudwego/eino-ext/components/model/ark"
-	arkModel "github.com/volcengine/volcengine-go-sdk/service/arkruntime/model"
 	"os"
 	"strconv"
 	"time"
 
+	"github.com/cloudwego/eino-ext/components/model/ark"
+	arkModel "github.com/volcengine/volcengine-go-sdk/service/arkruntime/model"
 	"github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
 	"github.com/sagerlabs/awesome/tft/data"
+	"github.com/sagerlabs/awesome/tft/trace"
 	"github.com/sirupsen/logrus"
 )
 
@@ -139,20 +140,28 @@ func (a *Agent) withLLMTimeout(parent context.Context) (context.Context, context
 
 // Analyze 普通接口：等待 LLM 完整输出后返回
 func (a *Agent) Analyze(ctx context.Context, rawInput string) (*GraphOutput, error) {
+	traceID, _ := trace.TraceIDFromContext(ctx)
 	llmCtx, cancel := a.withLLMTimeout(ctx)
 	defer cancel()
 
 	start := time.Now()
-	a.logger.WithField("input", rawInput).Debug("开始推理")
+	a.logger.WithFields(logrus.Fields{
+		"trace_id": traceID,
+		"input":    rawInput,
+	}).Debug("开始推理")
 
 	opts := append(a.traceOpts, compose.WithChatModelOption(model.WithMaxTokens(a.maxTokens())))
 	msg, err := a.runnable.Invoke(llmCtx, &GraphInput{RawInput: rawInput}, opts...)
 	if err != nil {
-		a.logger.WithError(err).WithField("elapsed", time.Since(start).String()).Error("推理失败")
+		a.logger.WithError(err).WithFields(logrus.Fields{
+			"trace_id": traceID,
+			"elapsed":  time.Since(start).String(),
+		}).Error("推理失败")
 		return nil, fmt.Errorf("graph invoke: %w", err)
 	}
 
 	a.logger.WithFields(logrus.Fields{
+		"trace_id":     traceID,
 		"elapsed":      time.Since(start).Round(time.Millisecond).String(),
 		"output_chars": len([]rune(msg.Content)),
 	}).Debug("推理完成")
@@ -204,6 +213,7 @@ func (a *Agent) AnalyzeStream(ctx context.Context, rawInput string) (
 func (a *Agent) NluAnalyze(ctx context.Context, rawInput string) (
 	*NluEnrichedContext, error,
 ) {
+	traceID, _ := trace.TraceIDFromContext(ctx)
 	llmCtx, cancel := a.withLLMTimeout(ctx)
 	defer cancel()
 
@@ -215,11 +225,15 @@ func (a *Agent) NluAnalyze(ctx context.Context, rawInput string) (
 		})))
 	result, err := a.nluRunnable.Invoke(llmCtx, &NluContext{UserInput: rawInput}, opts...)
 	if err != nil {
-		a.logger.WithError(err).WithField("elapsed", time.Since(start).String()).Error("NLU分析失败")
+		a.logger.WithError(err).WithFields(logrus.Fields{
+			"trace_id": traceID,
+			"elapsed":  time.Since(start).String(),
+		}).Error("NLU分析失败")
 		return nil, fmt.Errorf("nlu analyze: %w", err)
 	}
 
 	a.logger.WithFields(logrus.Fields{
+		"trace_id":      traceID,
 		"elapsed":       time.Since(start).Round(time.Millisecond).String(),
 		"intent":        result.Ctx.Intent,
 		"matched_comps": len(result.MatchedComps),
