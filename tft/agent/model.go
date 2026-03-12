@@ -46,16 +46,15 @@ func DefaultModelConfig() *ModelConfig {
 		provider = ProviderOpenAI
 	}
 
-	maxTokens := 60 // 20字建议约30 token，60为硬上限，防止 LLM 超量输出
+	maxTokens := 1024 // 默认值提高到1024，给LLM足够的输出空间
 	if v := os.Getenv("LLM_MAX_TOKENS"); v != "" {
 		if n, err := strconv.Atoi(v); err == nil && n > 0 {
 			maxTokens = n
 		}
 	}
-	// 安全兜底：无论环境变量设多少，硬限制不超过 150
-	// 防止误配置导致 token 飙升（Out >> In 的根本原因）
-	if maxTokens > 150 {
-		maxTokens = 3333
+	// 安全兜底：设置一个合理的上限
+	if maxTokens > 4096 {
+		maxTokens = 4096
 	}
 
 	temperature := float32(0.7)

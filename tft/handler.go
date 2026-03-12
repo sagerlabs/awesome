@@ -268,6 +268,7 @@ func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Serve
 	log := h.logger.WithField("input", input)
 	start := time.Now()
 	tokenCount := 0
+	totalChars := 0
 
 	sr, err := h.ag.NluAnalyzeStream(ctx, input)
 	if err != nil {
@@ -285,7 +286,6 @@ func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Serve
 		if s == "" {
 			return
 		}
-		tokenCount++
 		srv.Publish(buildEvent("message", StreamChunk{Type: "token", Content: s}, false))
 		buf.Reset()
 	}
@@ -298,12 +298,14 @@ func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Serve
 			if err == io.EOF {
 				log.WithFields(logrus.Fields{
 					"token_count": tokenCount,
+					"total_chars": totalChars,
 					"elapsed":     time.Since(start).String(),
 				}).Info("NLU流式推理完成")
 				srv.Publish(buildEvent("done", StreamChunk{Type: "done"}, false))
 			} else {
 				log.WithError(err).WithFields(logrus.Fields{
 					"token_count": tokenCount,
+					"total_chars": totalChars,
 					"elapsed":     time.Since(start).String(),
 				}).Error("NLU流式推理中断")
 				srv.Publish(buildEvent("error", StreamChunk{Type: "error", Error: err.Error()}, false))
@@ -314,6 +316,8 @@ func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Serve
 			continue
 		}
 
+		tokenCount++  // 每次收到LLM的chunk就算一个token
+		totalChars += len(output.LLMAdvice)
 		buf.WriteString(output.LLMAdvice)
 
 		// 遇到标点或换行立即推送（自然断句，阅读体验好）
@@ -344,6 +348,7 @@ func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *
 	log := h.logger.WithField("input", input)
 	start := time.Now()
 	tokenCount := 0
+	totalChars := 0
 
 	sr, err := h.ag.AnalyzeStream(ctx, input)
 	if err != nil {
@@ -361,7 +366,6 @@ func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *
 		if s == "" {
 			return
 		}
-		tokenCount++
 		srv.Publish(buildEvent("message", StreamChunk{Type: "token", Content: s}, plain))
 		buf.Reset()
 	}
@@ -374,12 +378,14 @@ func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *
 			if err == io.EOF {
 				log.WithFields(logrus.Fields{
 					"token_count": tokenCount,
+					"total_chars": totalChars,
 					"elapsed":     time.Since(start).String(),
 				}).Info("流式推理完成")
 				srv.Publish(buildEvent("done", StreamChunk{Type: "done"}, plain))
 			} else {
 				log.WithError(err).WithFields(logrus.Fields{
 					"token_count": tokenCount,
+					"total_chars": totalChars,
 					"elapsed":     time.Since(start).String(),
 				}).Error("流式推理中断")
 				srv.Publish(buildEvent("error", StreamChunk{Type: "error", Error: err.Error()}, plain))
@@ -390,6 +396,8 @@ func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *
 			continue
 		}
 
+		tokenCount++  // 每次收到LLM的chunk就算一个token
+		totalChars += len(output.LLMAdvice)
 		buf.WriteString(output.LLMAdvice)
 
 		// 遇到标点或换行立即推送（自然断句，阅读体验好）
