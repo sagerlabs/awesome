@@ -43,6 +43,7 @@ func main() {
 
 	e := gin.New()
 	e.Use(
+		gin.Logger(),
 		gin.Recovery(),
 	)
 	tftHandler.RegisterRoutes(e)

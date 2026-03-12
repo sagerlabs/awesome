@@ -91,6 +91,7 @@ func (h *Handler) RegisterRoutes(e *gin.Engine) {
 	group.POST("/tft/analyze", h.Analyze)
 	group.POST("/tft/analyze/stream", h.AnalyzeStream) // ← 注意：路由是 /stream 不是 /analyzeStream
 	group.POST("/tft/nlu", h.NluAnalyze)
+	group.POST("/tft/nlu/stream", h.NluAnalyzeStream) // NLU流式接口
 	group.GET("/tft/health", h.Health)
 }
 
@@ -215,10 +216,120 @@ func (h *Handler) NluAnalyze(c *gin.Context) {
 	log.WithFields(logrus.Fields{
 		"input":   req.Input,
 		"elapsed": time.Since(start).String(),
-		"intent":  result.Intent,
+		"intent":  result.Ctx,
 	}).Info("NLU分析完成")
 
-	c.JSON(http.StatusOK, NluAnalyzeResponse{Success: true, Data: result})
+	c.JSON(http.StatusOK, NluAnalyzeResponse{Success: true, Data: &result.Ctx})
+}
+
+// ── POST /v1/tft/nlu/stream ───────────────────────────────────────────────
+
+func (h *Handler) NluAnalyzeStream(c *gin.Context) {
+	log := h.logger
+
+	var req NluAnalyzeRequest
+	if err := c.ShouldBindJSON(&req); err != nil {
+		log.WithError(err).Warn("NLU流式请求体解析失败")
+		c.JSON(http.StatusBadRequest, NluAnalyzeResponse{Success: false, Error: "invalid request body"})
+		return
+	}
+	if req.Input == "" {
+		log.Warn("NLU流式接口 input 字段为空")
+		c.JSON(http.StatusBadRequest, NluAnalyzeResponse{Success: false, Error: "input is required"})
+		return
+	}
+
+	// 检查 ResponseWriter 是否支持流式推送
+	if _, ok := c.Writer.(http.Flusher); !ok {
+		log.Error("当前 ResponseWriter 不支持流式推送（不实现 http.Flusher）")
+		c.JSON(http.StatusInternalServerError, NluAnalyzeResponse{
+			Success: false, Error: "streaming not supported",
+		})
+		return
+	}
+
+	log.WithField("input", req.Input).Info("开始NLU流式分析")
+
+	var srv *sse.Server
+	srv = sse.NewServer(
+		sse.WithBufferSize(100),
+		sse.WithOnConnect(func(_ chan *sse.Event) {
+			// 流式接口保留 c.Request.Context()：客户端断开时级联取消推理
+			go h.runNluStream(c.Request.Context(), req.Input, srv)
+		}),
+	)
+
+	srv.ServeHTTP(c.Writer, c.Request)
+}
+
+// ── NLU流式推理 goroutine ────────────────────────────────────────────────────────
+
+func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Server) {
+	log := h.logger.WithField("input", input)
+	start := time.Now()
+	tokenCount := 0
+	totalChars := 0
+
+	sr, err := h.ag.NluAnalyzeStream(ctx, input)
+	if err != nil {
+		log.WithError(err).Error("NLU流式推理启动失败")
+		srv.Publish(buildEvent("error", StreamChunk{Type: "error", Error: err.Error()}, false))
+		return
+	}
+	defer sr.Close()
+
+	var buf strings.Builder // token 缓冲区
+
+	// flush 把缓冲区内容推送出去，然后清空
+	flush := func() {
+		s := buf.String()
+		if s == "" {
+			return
+		}
+		srv.Publish(buildEvent("message", StreamChunk{Type: "token", Content: s}, false))
+		buf.Reset()
+	}
+
+	for {
+		output, err := sr.Recv()
+		if err != nil {
+			// 流结束前把缓冲区剩余内容推出去
+			flush()
+			if err == io.EOF {
+				log.WithFields(logrus.Fields{
+					"token_count": tokenCount,
+					"total_chars": totalChars,
+					"elapsed":     time.Since(start).String(),
+				}).Info("NLU流式推理完成")
+				srv.Publish(buildEvent("done", StreamChunk{Type: "done"}, false))
+			} else {
+				log.WithError(err).WithFields(logrus.Fields{
+					"token_count": tokenCount,
+					"total_chars": totalChars,
+					"elapsed":     time.Since(start).String(),
+				}).Error("NLU流式推理中断")
+				srv.Publish(buildEvent("error", StreamChunk{Type: "error", Error: err.Error()}, false))
+			}
+			return
+		}
+		if output == nil || output.LLMAdvice == "" {
+			continue
+		}
+
+		tokenCount++  // 每次收到LLM的chunk就算一个token
+		totalChars += len(output.LLMAdvice)
+		buf.WriteString(output.LLMAdvice)
+
+		// 遇到标点或换行立即推送（自然断句，阅读体验好）
+		// 或缓冲超过阈值也推送（防止长句一直不断句）
+		last := output.LLMAdvice[len(output.LLMAdvice)-1]
+		shouldFlush := buf.Len() >= flushThreshold || last == ':' || last == ' ' ||
+			last == '.' || last == ',' || last == '!' || last == '?'
+
+		if shouldFlush {
+			flush()
+		}
+	}
 }
 
 // ── GET /v1/tft/health ────────────────────────────────────────────────────────
@@ -237,6 +348,7 @@ func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *
 	log := h.logger.WithField("input", input)
 	start := time.Now()
 	tokenCount := 0
+	totalChars := 0
 
 	sr, err := h.ag.AnalyzeStream(ctx, input)
 	if err != nil {
@@ -254,7 +366,6 @@ func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *
 		if s == "" {
 			return
 		}
-		tokenCount++
 		srv.Publish(buildEvent("message", StreamChunk{Type: "token", Content: s}, plain))
 		buf.Reset()
 	}
@@ -267,12 +378,14 @@ func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *
 			if err == io.EOF {
 				log.WithFields(logrus.Fields{
 					"token_count": tokenCount,
+					"total_chars": totalChars,
 					"elapsed":     time.Since(start).String(),
 				}).Info("流式推理完成")
 				srv.Publish(buildEvent("done", StreamChunk{Type: "done"}, plain))
 			} else {
 				log.WithError(err).WithFields(logrus.Fields{
 					"token_count": tokenCount,
+					"total_chars": totalChars,
 					"elapsed":     time.Since(start).String(),
 				}).Error("流式推理中断")
 				srv.Publish(buildEvent("error", StreamChunk{Type: "error", Error: err.Error()}, plain))
@@ -283,6 +396,8 @@ func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *
 			continue
 		}
 
+		tokenCount++  // 每次收到LLM的chunk就算一个token
+		totalChars += len(output.LLMAdvice)
 		buf.WriteString(output.LLMAdvice)
 
 		// 遇到标点或换行立即推送（自然断句，阅读体验好）

@@ -38,12 +38,13 @@ func defaultLLMTimeout() time.Duration {
 
 // Agent TFT Copilot 的对外入口
 type Agent struct {
-	runnable    compose.Runnable[*GraphInput, *schema.Message]
-	nluRunnable compose.Runnable[*NluContext, *NluContext]
-	store       *data.Store
-	llmTimeout  time.Duration
-	logger      *logrus.Logger
-	traceOpts   []compose.Option // 链路追踪 callback，每次调用时注入
+	runnable         compose.Runnable[*GraphInput, *schema.Message]
+	nluRunnable      compose.Runnable[*NluContext, *NluEnrichedContext]
+	nluStreamRunnable compose.Runnable[*NluContext, *schema.Message]
+	store            *data.Store
+	llmTimeout       time.Duration
+	logger           *logrus.Logger
+	traceOpts        []compose.Option // 链路追踪 callback，每次调用时注入
 }
 
 // NewAgent 使用默认配置初始化 Agent
@@ -103,13 +104,19 @@ func NewAgentWithConfig(ctx context.Context, store *data.Store, cfg *AgentConfig
 		return nil, fmt.Errorf("build nlu graph: %w", err)
 	}
 
+	nluStreamRunnable, err := BuildNluStreamGraph(ctx, chatModel, store)
+	if err != nil {
+		return nil, fmt.Errorf("build nlu stream graph: %w", err)
+	}
+
 	return &Agent{
-		nluRunnable: nluRunnable,
-		runnable:    runnable,
-		store:       store,
-		llmTimeout:  llmTimeout,
-		logger:      logger,
-		traceOpts:   traceOpts,
+		nluRunnable:      nluRunnable,
+		nluStreamRunnable: nluStreamRunnable,
+		runnable:         runnable,
+		store:            store,
+		llmTimeout:       llmTimeout,
+		logger:           logger,
+		traceOpts:        traceOpts,
 	}, nil
 }
 
@@ -193,9 +200,9 @@ func (a *Agent) AnalyzeStream(ctx context.Context, rawInput string) (
 	return converted, nil
 }
 
-// NluAnalyze NLU分析接口：提取用户输入的结构化信息
+// NluAnalyze NLU分析接口：提取用户输入的结构化信息并查询数据
 func (a *Agent) NluAnalyze(ctx context.Context, rawInput string) (
-	*Context, error,
+	*NluEnrichedContext, error,
 ) {
 	llmCtx, cancel := a.withLLMTimeout(ctx)
 	defer cancel()
@@ -213,11 +220,49 @@ func (a *Agent) NluAnalyze(ctx context.Context, rawInput string) (
 	}
 
 	a.logger.WithFields(logrus.Fields{
-		"elapsed": time.Since(start).Round(time.Millisecond).String(),
-		"intent":  result.Intent,
+		"elapsed":       time.Since(start).Round(time.Millisecond).String(),
+		"intent":        result.Ctx.Intent,
+		"matched_comps": len(result.MatchedComps),
+		"matched_items": len(result.MatchedItems),
 	}).Debug("NLU分析完成")
 
-	return &result.Ctx, nil
+	return result, nil
+}
+
+// NluAnalyzeStream NLU流式分析接口：提取用户输入的结构化信息并查询数据，然后流式返回LLM润色结果
+func (a *Agent) NluAnalyzeStream(ctx context.Context, rawInput string) (
+	*schema.StreamReader[*GraphOutput], error,
+) {
+	llmCtx, cancel := a.withLLMTimeout(ctx)
+
+	start := time.Now()
+
+	opts := append(a.traceOpts, compose.WithChatModelOption(
+		ark.WithThinking(&ark.Thinking{
+			Type: arkModel.ThinkingTypeDisabled,
+		})))
+	sr, err := a.nluStreamRunnable.Stream(llmCtx, &NluContext{UserInput: rawInput}, opts...)
+	if err != nil {
+		cancel()
+		a.logger.WithError(err).WithField("elapsed", time.Since(start).String()).Error("NLU流式推理启动失败")
+		return nil, fmt.Errorf("nlu stream graph: %w", err)
+	}
+
+	// 把 *schema.Message 流转换成 *GraphOutput 流
+	tokenCount := 0
+	converted := schema.StreamReaderWithConvert(sr,
+		func(msg *schema.Message) (*GraphOutput, error) {
+			if msg == nil || msg.Content == "" {
+				return nil, schema.ErrNoValue
+			}
+			tokenCount++
+			return &GraphOutput{LLMAdvice: msg.Content}, nil
+		},
+	)
+
+	// 注意：不使用 wrapStreamWithCleanup，保持与 AnalyzeStream 一致
+	// cancel 在 handler 层管理
+	return converted, nil
 }
 
 // wrapStreamWithCleanup 包装 StreamReader，在 Close 时执行 cleanup
