@@ -200,12 +200,17 @@ func (h *Handler) AnalyzeStream(c *gin.Context) {
 
 	log.WithField("input", req.Input).Info("开始流式分析")
 
+	reqLog := log.WithFields(logrus.Fields{
+		"trace_id": traceID,
+		"endpoint": "/v1/tft/analyze/stream",
+	})
+
 	var srv *sse.Server
 	srv = sse.NewServer(
 		sse.WithBufferSize(100),
 		sse.WithOnConnect(func(_ chan *sse.Event) {
 			// 流式接口保留 c.Request.Context()：客户端断开时级联取消推理
-			go h.runStream(ctx, req.Input, req.Plain, srv, traceID, log)
+			go h.runStream(ctx, req.Input, req.Plain, srv, traceID, reqLog)
 		}),
 	)
 
@@ -313,12 +318,17 @@ func (h *Handler) NluAnalyzeStream(c *gin.Context) {
 
 	log.WithField("input", req.Input).Info("开始NLU流式分析")
 
+	reqLog := log.WithFields(logrus.Fields{
+		"trace_id": traceID,
+		"endpoint": "/v1/tft/nlu/stream",
+	})
+
 	var srv *sse.Server
 	srv = sse.NewServer(
 		sse.WithBufferSize(100),
 		sse.WithOnConnect(func(_ chan *sse.Event) {
 			// 流式接口保留 c.Request.Context()：客户端断开时级联取消推理
-			go h.runNluStream(ctx, req.Input, srv, traceID, log)
+			go h.runNluStream(ctx, req.Input, srv, traceID, reqLog)
 		}),
 	)
 
