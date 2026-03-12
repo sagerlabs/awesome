@@ -255,7 +255,12 @@ func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, store *data.S
 			logrus.WithError(err).WithField("raw_content", resp.Content).WithField("extracted_content", content).Warn("JSON解析失败，使用空Context")
 		}
 		input.Ctx = c
-		logrus.Printf("llm 提取的内容为: %+v\n", input.Ctx)
+		// 使用JSON缩进格式输出，更易读
+		if jsonBytes, err := json.MarshalIndent(input.Ctx, "", "  "); err == nil {
+			logrus.Println("llm 提取的内容为:\n" + string(jsonBytes))
+		} else {
+			logrus.Printf("llm 提取的内容为: %+v\n", input.Ctx)
+		}
 		return input, nil
 	})
 	if err := g.AddLambdaNode("nlu_extract", nluExtract); err != nil {
@@ -324,7 +329,12 @@ func BuildNluStreamGraph(ctx context.Context, chatModel model.ChatModel, store *
 			logrus.WithError(err).WithField("raw_content", resp.Content).WithField("extracted_content", content).Warn("JSON解析失败，使用空Context")
 		}
 		input.Ctx = c
-		logrus.Printf("llm 提取的内容为: %+v\n", input.Ctx)
+		// 使用JSON缩进格式输出，更易读
+		if jsonBytes, err := json.MarshalIndent(input.Ctx, "", "  "); err == nil {
+			logrus.Println("llm 提取的内容为:\n" + string(jsonBytes))
+		} else {
+			logrus.Printf("llm 提取的内容为: %+v\n", input.Ctx)
+		}
 		return input, nil
 	})
 	if err := g.AddLambdaNode("nlu_extract", nluExtract); err != nil {
