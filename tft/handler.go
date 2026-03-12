@@ -189,7 +189,7 @@ func (h *Handler) AnalyzeStream(c *gin.Context) {
 		sse.WithBufferSize(100),
 		sse.WithOnConnect(func(_ chan *sse.Event) {
 			// 流式接口保留 c.Request.Context()：客户端断开时级联取消推理
-			go h.runStream(c.Request.Context(), req.Input, req.Plain, srv)
+			go h.runStream(c.Request.Context(), req.Input, req.Plain, srv, log)
 		}),
 	)
 
@@ -287,7 +287,7 @@ func (h *Handler) NluAnalyzeStream(c *gin.Context) {
 		sse.WithBufferSize(100),
 		sse.WithOnConnect(func(_ chan *sse.Event) {
 			// 流式接口保留 c.Request.Context()：客户端断开时级联取消推理
-			go h.runNluStream(c.Request.Context(), req.Input, srv)
+			go h.runNluStream(c.Request.Context(), req.Input, srv, log)
 		}),
 	)
 
@@ -296,8 +296,8 @@ func (h *Handler) NluAnalyzeStream(c *gin.Context) {
 
 // ── NLU流式推理 goroutine ────────────────────────────────────────────────────────
 
-func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Server) {
-	log := logrus.NewEntry(h.logger).WithField("input", input)
+func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Server, logger *logrus.Entry) {
+	log := logger.WithField("input", input)
 	start := time.Now()
 	tokenCount := 0
 	totalChars := 0
@@ -376,8 +376,8 @@ func (h *Handler) Health(c *gin.Context) {
 // 缓冲累积超过此字数，或收到标点/换行时立即推送
 const flushThreshold = 2 // 更小的缓冲，更快推出第一个可见 chunk
 
-func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *sse.Server) {
-	log := logrus.NewEntry(h.logger).WithField("input", input)
+func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *sse.Server, logger *logrus.Entry) {
+	log := logger.WithField("input", input)
 	start := time.Now()
 	tokenCount := 0
 	totalChars := 0
