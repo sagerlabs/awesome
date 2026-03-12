@@ -12,9 +12,9 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
-// NewTraceCallback 构建节点级链路追踪 Handler
+// NewTraceCallback 构建节点级链路追踪 Handler。
 // 使用 callbacks.NewHandlerBuilder() 注册各阶段回调，无需手动实现接口
-func NewTraceCallback(logger *logrus.Logger) callbacks.Handler {
+func NewTraceCallback(logger *logrus.Entry) callbacks.Handler {
 	spans := &spanStore{}
 
 	return callbacks.NewHandlerBuilder().

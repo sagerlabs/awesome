@@ -98,7 +98,15 @@ func (h *Handler) RegisterRoutes(e *gin.Engine) {
 // ── POST /v1/tft/analyze ──────────────────────────────────────────────────────
 
 func (h *Handler) Analyze(c *gin.Context) {
-	log := h.logger
+	var log *logrus.Entry
+	if v, ok := c.Get(ContextKeyLogger); ok {
+		if entry, ok := v.(*logrus.Entry); ok {
+			log = entry
+		}
+	}
+	if log == nil {
+		log = logrus.NewEntry(h.logger)
+	}
 
 	var req AnalyzeRequest
 	if err := c.ShouldBindJSON(&req); err != nil {
@@ -141,7 +149,15 @@ func (h *Handler) Analyze(c *gin.Context) {
 // ── POST /v1/tft/analyze/stream ───────────────────────────────────────────────
 
 func (h *Handler) AnalyzeStream(c *gin.Context) {
-	log := h.logger
+	var log *logrus.Entry
+	if v, ok := c.Get(ContextKeyLogger); ok {
+		if entry, ok := v.(*logrus.Entry); ok {
+			log = entry
+		}
+	}
+	if log == nil {
+		log = logrus.NewEntry(h.logger)
+	}
 
 	var req AnalyzeRequest
 	if err := c.ShouldBindJSON(&req); err != nil {
@@ -183,7 +199,15 @@ func (h *Handler) AnalyzeStream(c *gin.Context) {
 // ── POST /v1/tft/nlu ──────────────────────────────────────────────────────
 
 func (h *Handler) NluAnalyze(c *gin.Context) {
-	log := h.logger
+	var log *logrus.Entry
+	if v, ok := c.Get(ContextKeyLogger); ok {
+		if entry, ok := v.(*logrus.Entry); ok {
+			log = entry
+		}
+	}
+	if log == nil {
+		log = logrus.NewEntry(h.logger)
+	}
 
 	var req NluAnalyzeRequest
 	if err := c.ShouldBindJSON(&req); err != nil {
@@ -225,7 +249,15 @@ func (h *Handler) NluAnalyze(c *gin.Context) {
 // ── POST /v1/tft/nlu/stream ───────────────────────────────────────────────
 
 func (h *Handler) NluAnalyzeStream(c *gin.Context) {
-	log := h.logger
+	var log *logrus.Entry
+	if v, ok := c.Get(ContextKeyLogger); ok {
+		if entry, ok := v.(*logrus.Entry); ok {
+			log = entry
+		}
+	}
+	if log == nil {
+		log = logrus.NewEntry(h.logger)
+	}
 
 	var req NluAnalyzeRequest
 	if err := c.ShouldBindJSON(&req); err != nil {
@@ -265,7 +297,7 @@ func (h *Handler) NluAnalyzeStream(c *gin.Context) {
 // ── NLU流式推理 goroutine ────────────────────────────────────────────────────────
 
 func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Server) {
-	log := h.logger.WithField("input", input)
+	log := logrus.NewEntry(h.logger).WithField("input", input)
 	start := time.Now()
 	tokenCount := 0
 	totalChars := 0
@@ -345,7 +377,7 @@ func (h *Handler) Health(c *gin.Context) {
 const flushThreshold = 2 // 更小的缓冲，更快推出第一个可见 chunk
 
 func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *sse.Server) {
-	log := h.logger.WithField("input", input)
+	log := logrus.NewEntry(h.logger).WithField("input", input)
 	start := time.Now()
 	tokenCount := 0
 	totalChars := 0

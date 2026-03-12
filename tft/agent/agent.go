@@ -3,11 +3,12 @@ package agent
 import (
 	"context"
 	"fmt"
-	"github.com/cloudwego/eino-ext/components/model/ark"
-	arkModel "github.com/volcengine/volcengine-go-sdk/service/arkruntime/model"
 	"os"
 	"strconv"
 	"time"
+
+	"github.com/cloudwego/eino-ext/components/model/ark"
+	arkModel "github.com/volcengine/volcengine-go-sdk/service/arkruntime/model"
 
 	"github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/compose"
@@ -88,7 +89,7 @@ func NewAgentWithConfig(ctx context.Context, store *data.Store, cfg *AgentConfig
 	// Callback 通过 compose.WithCallbacks 在每次 Invoke/Stream 时传入
 	var traceOpts []compose.Option
 	if cfg.EnableTrace {
-		tracer := NewTraceCallback(logger)
+		tracer := NewTraceCallback(logrus.NewEntry(logger))
 		traceOpts = append(traceOpts, compose.WithCallbacks(tracer))
 		logger.Info("链路追踪已开启（节点级耗时日志）")
 	}
