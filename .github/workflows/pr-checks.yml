@@ -1,32 +1,167 @@
 name: PR Checks
 on:
   pull_request:
-    branches: [ main, master ]
+    branches: [ main, master, dev ]
 
 jobs:
-  test:
+  go-checks:
+    name: Go Checks
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: 'go.mod'
+
+      - name: Run Go checks
+        id: go-checks
+        run: |
+          HAS_ERRORS=0
+
+          # ── gofmt ──────────────────────────────────────────────
+          UNFORMATTED=$(gofmt -l $(find . -name "*.go" -not -path "*/vendor/*" -not -path "*/desktop/*") 2>/dev/null)
+          if [ -n "$UNFORMATTED" ]; then
+            echo "❌ 以下文件需要 gofmt 格式化："
+            echo "$UNFORMATTED"
+            HAS_ERRORS=1
+          else
+            echo "✅ gofmt 通过"
+          fi
+
+          # ── go vet ─────────────────────────────────────────────
+          # go vet 是官方工具，报的都是真实问题，保留
+          if ! go vet $(go list ./... | grep -v 'awesome/desktop'); then
+            echo "❌ go vet 检查失败"
+            HAS_ERRORS=1
+          else
+            echo "✅ go vet 通过"
+          fi
+
+          # ── go test ────────────────────────────────────────────
+          # 只跑 tool/ 和 data/ 的单元测试，跳过需要 LLM 的 agent/ 集成测试
+          if find . -name "*_test.go" -not -path "*/vendor/*" | grep -q .; then
+            if ! go test ./tft/tool/... ./tft/data/... -v -count=1 \
+                  -coverprofile=coverage.txt 2>&1; then
+              echo "❌ 单元测试失败"
+              HAS_ERRORS=1
+            else
+              echo "✅ 单元测试通过"
+              if [ -f coverage.txt ]; then
+                go tool cover -func=coverage.txt | tail -1
+              fi
+            fi
+          else
+            echo "⏭ 没有测试文件，跳过"
+          fi
+
+          echo "has_errors=$HAS_ERRORS" >> $GITHUB_OUTPUT
+
+      - name: Final result
+        run: |
+          if [ "${{ steps.go-checks.outputs.has_errors }}" = "1" ]; then
+            echo "❌ 部分检查失败"
+            exit 1
+          else
+            echo "✅ 所有 Go 检查通过"
+          fi
+
+  python-checks:
+    name: Python Checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      
-      - name: Run tests
+          # 只安装爬虫实际依赖，不装 flake8/black（可选工具）
+          pip install requests
+
+      - name: Run Python checks
+        id: python-checks
         run: |
-          if [ -d tests ]; then pytest tests/ -v; fi
-      
-      - name: Run linting
+          HAS_ERRORS=0
+
+          # ── 语法检查（py_compile，零依赖）────────────────────
+          echo "检查 Python 语法..."
+          find . -name "*.py" -not -path "*/vendor/*" | while read f; do
+            if ! python -m py_compile "$f" 2>&1; then
+              echo "❌ 语法错误: $f"
+              # 写入标记文件，因为子 shell 无法修改外部变量
+              touch /tmp/py_error
+            fi
+          done
+
+          if [ -f /tmp/py_error ]; then
+            rm /tmp/py_error
+            HAS_ERRORS=1
+          else
+            echo "✅ Python 语法检查通过"
+          fi
+
+          # ── pytest（仅在有测试文件时运行）───────────────────
+          if find . -name "test_*.py" -o -name "*_test.py" | grep -q .; then
+            pip install pytest -q
+            if ! pytest -q 2>&1; then
+              echo "❌ Python 测试失败"
+              HAS_ERRORS=1
+            else
+              echo "✅ Python 测试通过"
+            fi
+          else
+            echo "⏭ 没有 Python 测试文件，跳过"
+          fi
+
+          echo "has_errors=$HAS_ERRORS" >> $GITHUB_OUTPUT
+
+      - name: Final result
         run: |
-          if [ -f .flake8 ] || [ -d src ]; then flake8 src/ 2>/dev/null || true; fi
-      
-      - name: Run formatting check
+          if [ "${{ steps.python-checks.outputs.has_errors }}" = "1" ]; then
+            echo "❌ 部分检查失败"
+            exit 1
+          else
+            echo "✅ 所有 Python 检查通过"
+          fi
+
+  docs-check:
+    name: Docs Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Check docs update
         run: |
-          if command -v black &> /dev/null; then black --check . 2>/dev/null || true; fi
+          CODE_CHANGED=$(git diff --name-only HEAD~1 HEAD | grep -E '\.(go|py)$' || true)
+
+          if [ -z "$CODE_CHANGED" ]; then
+            echo "⏭ 没有代码变更，跳过文档检查"
+            exit 0
+          fi
+
+          echo "📝 变更的代码文件："
+          echo "$CODE_CHANGED"
+
+          DOCS_CHANGED=$(git diff --name-only HEAD~1 HEAD | grep -E '\.(md)$' || true)
+          CHANGELOG_CHANGED=$(git diff --name-only HEAD~1 HEAD | grep -i 'changelog' || true)
+
+          # 文档未更新只警告，不阻断 PR
+          if [ -z "$DOCS_CHANGED" ]; then
+            echo "⚠️  提示：有代码变更但 README/文档未更新（不阻断合并）"
+          else
+            echo "✅ 文档已同步更新"
+          fi
+
+          if [ -z "$CHANGELOG_CHANGED" ]; then
+            echo "⚠️  提示：CHANGELOG 未更新（不阻断合并）"
+          else
+            echo "✅ CHANGELOG 已更新"
+          fi

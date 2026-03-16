@@ -1,0 +1,171 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+    branches:
+      - 'release/**'
+  workflow_dispatch:
+    inputs:
+      api_base:
+        description: '后端服务器地址'
+        required: false
+        default: 'http://your-server-ip:8080'
+
+permissions:
+  contents: write
+
+jobs:
+  # ── Job 1: Go 检查 + 测试 ─────────────────────────────────────────
+  checks:
+    name: Release Branch Checks
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: 'go.mod'
+
+      - name: Run Go checks
+        run: |
+          HAS_ERRORS=0
+
+          UNFORMATTED=$(gofmt -l $(find . -name "*.go" -not -path "*/vendor/*" -not -path "*/desktop/*") 2>/dev/null)
+          if [ -n "$UNFORMATTED" ]; then
+            echo "❌ gofmt 未通过：$UNFORMATTED"
+            HAS_ERRORS=1
+          else
+            echo "✅ gofmt 通过"
+          fi
+
+          if ! go vet $(go list ./... | grep -v 'awesome/desktop'); then
+            echo "❌ go vet 失败"
+            HAS_ERRORS=1
+          else
+            echo "✅ go vet 通过"
+          fi
+
+          if find . -name "*_test.go" -not -path "*/vendor/*" | grep -q .; then
+            if ! go test ./tft/tool/... ./tft/data/... -v -count=1; then
+              echo "❌ 单元测试失败"
+              HAS_ERRORS=1
+            else
+              echo "✅ 单元测试通过"
+            fi
+          fi
+
+          [ $HAS_ERRORS -eq 0 ] || exit 1
+
+      - name: Extract version
+        id: version
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/* ]]; then
+            VERSION="${GITHUB_REF_NAME}"
+          else
+            # 从 go.mod 或 git describe 读取版本
+            VERSION=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0-dev")
+          fi
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "版本号: $VERSION"
+
+  # ── Job 2: 三平台打包（Wails，不需要 Node.js）────────────────────
+  build:
+    name: Build (${{ matrix.os }})
+    needs: checks
+    strategy:
+      matrix:
+        include:
+          - os: macos-latest
+            goos: darwin
+            goarch: arm64
+            artifact: tft-copilot-darwin-arm64
+          - os: ubuntu-latest
+            goos: linux
+            goarch: amd64
+            artifact: tft-copilot-linux-amd64
+          - os: windows-latest
+            goos: windows
+            goarch: amd64
+            artifact: tft-copilot-windows-amd64.exe
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: 'go.mod'
+
+      # Wails 依赖的系统库（仅 Linux）
+      - name: Install Linux deps
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update -qq
+          if apt-cache show libwebkit2gtk-4.1-dev > /dev/null 2>&1; then
+            sudo apt-get install -y libwebkit2gtk-4.1-dev libgtk-3-dev pkg-config build-essential
+          else
+            sudo apt-get install -y libwebkit2gtk-4.0-dev libgtk-3-dev pkg-config build-essential
+          fi
+
+      - name: Install Wails CLI
+        run: go install github.com/wailsapp/wails/v2/cmd/wails@latest
+
+      - name: Inject config.json
+        shell: bash
+        run: |
+          API_BASE="${{ github.event.inputs.api_base || 'http://your-server-ip:8080' }}"
+          VERSION="${{ needs.checks.outputs.version }}"
+          echo "{ \"api_base\": \"$API_BASE\", \"version\": \"$VERSION\" }" > frontend/config.json
+          echo "✅ config.json → $API_BASE ($VERSION)"
+
+      # go:embed 不允许 ../，构建前把 frontend/ 复制进 desktop/
+      - name: Copy frontend into desktop/
+        shell: bash
+        run: |
+          mkdir -p desktop/frontend
+          cp -r frontend/. desktop/frontend/
+
+      # desktop/ 目录下执行 wails build
+      - name: Build desktop app
+        working-directory: desktop
+        run: wails build -clean -o ${{ matrix.artifact }}
+
+      # 同时构建后端服务二进制（go embed 版，部署用）
+      - name: Build server binary
+        run: |
+          GOOS=${{ matrix.goos }} GOARCH=${{ matrix.goarch }} \
+          go build -ldflags "-X main.Version=${{ needs.checks.outputs.version }}" \
+          -o bin/tft-server-${{ matrix.goos }}-${{ matrix.goarch }} \
+          ./main.go
+
+      # tag 触发 → 上传到 GitHub Release
+      - name: Upload to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: false
+          prerelease: ${{ contains(github.ref_name, 'beta') || contains(github.ref_name, 'alpha') }}
+          generate_release_notes: true
+          files: |
+            desktop/build/bin/${{ matrix.artifact }}
+            bin/tft-server-*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 分支触发 → 上传为 Artifact
+      - name: Upload build artifact
+        if: startsWith(github.ref, 'refs/heads/')
+        uses: actions/upload-artifact@v4
+        with:
+          name: tft-copilot-${{ matrix.os }}
+          path: |
+            desktop/build/bin/${{ matrix.artifact }}
+            bin/tft-server-*
+          retention-days: 7

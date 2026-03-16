@@ -1,7 +1,7 @@
 name: PR Auto Review
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, synchronize, reopened]
 
 jobs:
   review:
@@ -10,6 +10,27 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      
+      - name: Calculate PR size
+        id: pr-size
+        run: |
+          ADDITIONS=$(git diff --stat HEAD~1 HEAD | tail -1 | awk '{print $1}')
+          DELETIONS=$(git diff --stat HEAD~1 HEAD | tail -1 | awk '{print $3}')
+          TOTAL=$((ADDITIONS + DELETIONS))
+          
+          if [ "$TOTAL" -lt 10 ]; then
+            echo "size=XS" >> $GITHUB_OUTPUT
+          elif [ "$TOTAL" -lt 50 ]; then
+            echo "size=S" >> $GITHUB_OUTPUT
+          elif [ "$TOTAL" -lt 200 ]; then
+            echo "size=M" >> $GITHUB_OUTPUT
+          elif [ "$TOTAL" -lt 1000 ]; then
+            echo "size=L" >> $GITHUB_OUTPUT
+          else
+            echo "size=XL" >> $GITHUB_OUTPUT
+          fi
       
       - name: Auto Review
         uses: actions/github-script@v7
@@ -21,26 +42,135 @@ jobs:
               pull_number: context.payload.pull_request.number
             });
             
-            let reviewComment = '## 自动 Review 报告\n\n';
-            let hasIssues = false;
+            const prSize = '${{ steps.pr-size.outputs.size }}';
             
+            let reviewComment = '## 👋 欢迎贡献！\n\n';
+            let hasCriticalIssues = false;
+            let hasWarnings = false;
+            let issues = [];
+            let suggestions = [];
+            
+            // PR 大小标签
+            reviewComment += `### 📏 PR 大小: **${prSize}**\n\n`;
+            
+            // 检测变更类型
+            const hasGoFiles = files.some(f => f.filename.endsWith('.go'));
+            const hasPythonFiles = files.some(f => f.filename.endsWith('.py'));
+            const hasDocs = files.some(f => f.filename.toLowerCase().includes('readme')) || 
+                           files.some(f => f.filename.toLowerCase().includes('changelog')) ||
+                           files.some(f => f.filename.endsWith('.md'));
+            
+            if (hasGoFiles) {
+              reviewComment += '### 🐹 检测到 Go 代码变更\n';
+            }
+            if (hasPythonFiles) {
+              reviewComment += '### 🐍 检测到 Python 代码变更\n';
+            }
+            
+            reviewComment += '\n---\n\n## 🔍 检查结果:\n\n';
+            
+            // 检查每个文件
             for (const file of files) {
-              if (file.filename.includes('.env')) {
-                reviewComment += `⚠️ **警告**: 检测到环境变量文件 ${file.filename}\n`;
-                hasIssues = true;
+              // 检查环境变量文件
+              if (file.filename.includes('.env') || 
+                  file.filename.includes('.env.local') || 
+                  file.filename.includes('secret')) {
+                issues.push(`🔑 **严重**: 检测到敏感文件 ${file.filename} - 不应提交到仓库`);
+                hasCriticalIssues = true;
               }
+              
+              // 检查大文件
               if (file.additions > 500) {
-                reviewComment += `📝 **注意**: ${file.filename} 添加了 ${file.additions} 行，建议拆分 PR\n`;
+                suggestions.push(`📝 **建议**: ${file.filename} 添加了 ${file.additions} 行，建议拆分 PR`);
+              }
+              
+              // 检查 Go 代码问题
+              if (file.filename.endsWith('.go')) {
+                try {
+                  const { data: content } = await github.rest.repos.getContent({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    path: file.filename,
+                    ref: context.payload.pull_request.head.sha
+                  });
+                  
+                  const code = Buffer.from(content.content, 'base64').toString();
+                  
+                  // 检查硬编码密码
+                  if (code.toLowerCase().includes('password') || 
+                      code.toLowerCase().includes('secret') || 
+                      code.toLowerCase().includes('token') ||
+                      code.toLowerCase().includes('api_key') ||
+                      code.toLowerCase().includes('apikey')) {
+                    issues.push(`🔑 **警告**: ${file.filename} 可能包含硬编码的敏感信息，请使用环境变量`);
+                    hasWarnings = true;
+                  }
+                  
+                  // 检查 TODO/FIXME
+                  if (code.includes('TODO') || code.includes('FIXME')) {
+                    suggestions.push(`📌 ${file.filename} 包含 TODO/FIXME，记得跟进`);
+                  }
+                } catch (e) {
+                  // 忽略获取内容失败
+                }
               }
             }
             
-            if (!hasIssues) {
-              reviewComment += '✅ 未发现明显问题，等待人工 review\n';
+            // 检查是否需要更新文档
+            if ((hasGoFiles || hasPythonFiles) && !hasDocs) {
+              suggestions.push('📚 **建议**: 检测到代码变更但未看到文档更新，请考虑更新 README 或 CHANGELOG');
             }
             
+            // 超大 PR 提示
+            if (prSize === 'XL') {
+              suggestions.push('⚡ 这个 PR 比较大，建议拆分成多个小 PR 以便 review');
+            }
+            
+            // 生成评论
+            if (issues.length > 0) {
+              reviewComment += '### ❌ 问题:\n\n';
+              reviewComment += issues.map(i => `- ${i}`).join('\n\n');
+              reviewComment += '\n\n';
+            }
+            
+            if (suggestions.length > 0) {
+              reviewComment += '### 💡 建议:\n\n';
+              reviewComment += suggestions.map(s => `- ${s}`).join('\n\n');
+              reviewComment += '\n\n';
+            }
+            
+            if (issues.length === 0 && suggestions.length === 0) {
+              reviewComment += '✅ 未发现明显问题，等待人工 review\n\n';
+            }
+            
+            // 添加感谢语
+            reviewComment += '\n---\n\n';
+            reviewComment += '感谢你的贡献！🙏\n';
+            reviewComment += '维护者会尽快 review。\n';
+            
+            // 添加评论
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.payload.pull_request.number,
               body: reviewComment
             });
+            
+            // 添加大小标签
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              labels: [`size/${prSize}`]
+            });
+            
+            // 如果有严重问题，请求更改
+            if (hasCriticalIssues) {
+              await github.rest.pulls.createReview({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: context.payload.pull_request.number,
+                event: 'REQUEST_CHANGES',
+                body: '❌ 检测到严重问题，请修复后重新提交'
+              });
+            }

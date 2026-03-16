@@ -1,0 +1,102 @@
+name: GitFlow Release
+on:
+  push:
+    branches:
+      - 'release/*'
+  pull_request:
+    branches:
+      - main
+    types: [closed]
+
+jobs:
+  # 当发布分支推送到远程时，运行检查
+  release-checks:
+    name: Release Branch Checks
+    if: startsWith(github.ref, 'refs/heads/release/')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: 'go.mod'
+      
+      - name: Run Go checks
+        run: |
+          if ls *.go 2>/dev/null || ls */*.go 2>/dev/null; then
+            go test $(go list ./... | grep -v -E 'awesome/desktop|awesome/tft/agent') -v
+          fi
+      
+      - name: Extract version
+        id: extract-version
+        run: |
+          BRANCH_NAME="${GITHUB_REF#refs/heads/}"
+          VERSION="${BRANCH_NAME#release/}"
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+      
+      - name: Notify about release
+        run: |
+          echo "🚀 发布分支 v${{ steps.extract-version.outputs.version }} 已准备好"
+          echo "请测试并完成发布流程"
+
+  # 当 PR 合并到 main 时，自动创建标签和发布
+  create-release:
+    name: Create Release
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Check if this is a release or hotfix merge
+        id: check-branch
+        run: |
+          HEAD_BRANCH="${{ github.event.pull_request.head.ref }}"
+          
+          if [[ "$HEAD_BRANCH" == release/* ]]; then
+            VERSION="${HEAD_BRANCH#release/}"
+            TYPE="release"
+          elif [[ "$HEAD_BRANCH" == hotfix/* ]]; then
+            VERSION="${HEAD_BRANCH#hotfix/}"
+            TYPE="hotfix"
+          else
+            TYPE="other"
+          fi
+          
+          echo "type=$TYPE" >> $GITHUB_OUTPUT
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+      
+      - name: Create tag and release
+        if: steps.check-branch.outputs.type != 'other'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const type = '${{ steps.check-branch.outputs.type }}';
+            const version = '${{ steps.check-branch.outputs.version }}';
+            const tagName = `v${version}`;
+            const releaseName = type === 'release' ? `Release ${version}` : `Hotfix ${version}`;
+            
+            // Create tag
+            await github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: `refs/tags/${tagName}`,
+              sha: context.sha
+            });
+            
+            // Create release
+            await github.rest.repos.createRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag_name: tagName,
+              name: releaseName,
+              body: `${releaseName}\n\nGenerated automatically from GitFlow.`,
+              draft: false,
+              prerelease: type === 'release' ? false : false
+            });
+            
+            console.log(`✅ Created ${type} ${version} with tag ${tagName}`);

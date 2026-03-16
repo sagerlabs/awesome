@@ -1,0 +1,7 @@
+{
+  "name": "TFT Copilot",
+  "outputfilename": "tft-copilot",
+  "frontend:build": "",
+  "frontend:install": "",
+  "go:build": "desktop"
+}
