@@ -1,0 +1,43 @@
+id: "ap_carry"
+name: "法系阵容"
+version: "S11"
+tier: "S"
+champions:
+  - name: "阿狸"
+    role: "main_carry"
+    items: ["大天使之杖", "灭世者的死亡之帽", "珠光护手"]
+    priority: 1
+  - name: "拉克丝"
+    role: "sub_carry"
+    items: ["青龙刀", "大天使之杖"]
+    priority: 2
+  - name: "加里奥"
+    role: "tank"
+    items: ["狂徒铠甲", "石像鬼石板甲"]
+    priority: 3
+  - name: "佐伊"
+    role: "support"
+    items: ["蓝霸符"]
+    priority: 4
+traits:
+  - name: "灵能使"
+    count: 4
+  - name: "星之守护者"
+    count: 3
+  - name: "法师"
+    count: 2
+strategy:
+  early_game: "用低费法师过渡，如莉莉娅、阿狸，攒经济"
+  mid_game: "找阿狸和关键装备，上6人口，补灵能使羁绊"
+  late_game: "上8人口，补全羁绊，找拉克丝和加里奥"
+  economy: "保持50+经济，3-2拉6，4-1拉7，4-5拉8"
+positioning: |
+  坦克放前排中间，输出放后排角落。
+  阿狸站在最安全的位置，避免被刺客切。
+  佐伊放在阿狸旁边，提供护盾。
+meta:
+  avg_placement: 2.8
+  top4_rate: 0.72
+  win_rate: 0.18
+  play_rate: 0.15
+  difficulty: "中等"
