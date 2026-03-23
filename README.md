@@ -29,20 +29,51 @@ awesome/
 │           └── localization.json       # 英雄/装备中文名映射
 ├── tft/
 │   ├── handler.go              # HTTP 路由入口
+│   ├── middleware.go           # HTTP 中间件
+│   ├── logger.go               # 日志工具
 │   ├── data/
 │   │   ├── types.go            # 所有结构体定义
 │   │   └── loader.go           # Store 数据加载与查询
+│   ├── parser/
+│   │   └── parser.go           # 用户输入标准化（别名/中文名/ID）
 │   ├── tool/
-│   │   ├── parser.go           # 用户输入标准化（别名/中文名/ID）
-│   │   ├── hero_comps.go       # Tool1：英雄 → 推荐阵容
+│   │   ├── hero_comp.go        # Tool1：英雄 → 推荐阵容
 │   │   ├── item_fit.go         # Tool2：装备 → 适配阵容
-│   │   └── comp_tier.go        # Tool3：阵容强度 + 交集计算
-│   └── agent/
-│       ├── model.go            # LLM 初始化（多 Provider）
-│       ├── graph.go            # Eino Graph 编排
-│       └── agent.go            # 对外入口
-├── sse/                        # SSE 框架（已有）
-├── main.go
+│   │   ├── comps_tier.go       # Tool3：阵容强度 + 交集计算
+│   │   └── priority_recommend.go  # Tool4：优先级推荐
+│   ├── prompt/
+│   │   └── nlu.go              # NLU 提示词
+│   ├── knowledge/
+│   │   └── models/
+│   │       ├── knowledge.go    # 知识库基础
+│   │       ├── champion.go     # 英雄知识模型
+│   │       ├── item.go         # 装备知识模型
+│   │       ├── trait.go        # 羁绊知识模型
+│   │       └── team_comp.go    # 阵容知识模型
+│   ├── agent/
+│   │   ├── agent.go            # 对外入口
+│   │   ├── model.go            # LLM 初始化（多 Provider）
+│   │   ├── graph.go            # Eino Graph 编排
+│   │   ├── prompt.go           # Agent 提示词
+│   │   ├── context.go          # 上下文管理
+│   │   ├── trace.go            # 追踪工具
+│   │   ├── token_usage.go      # Token 使用统计
+│   │   ├── nlu_data_query.go   # NLU 数据查询
+│   │   └── agent_test.go       # Agent 测试
+│   ├── trace/
+│   │   └── trace.go            # 分布式追踪
+│   └── sse/
+│       ├── sse.go              # SSE 框架核心
+│       ├── sse_test.go         # SSE 测试
+│       └── examples/           # SSE 示例代码
+├── desktop/
+│   └── main.go                 # 桌面端入口
+├── tests/                      # 测试目录
+├── scripts/                    # 脚本目录
+├── docs/                       # 文档目录
+├── frontend/                   # 前端目录
+├── main.go                     # 主入口
+├── Makefile                    # 构建脚本
 └── go.mod
 ```
 
