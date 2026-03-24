@@ -188,6 +188,92 @@ func (s *Store) AllComps() []Comp {
 	return s.comps
 }
 
+// GetTopCompsByUnit 查询包含指定英雄的顶级阵容
+// 返回该英雄的 S/A 级阵容，按 avg_placement 升序（越强越靠前）
+func (s *Store) GetTopCompsByUnit(unitName string) []*Comp {
+	unitID := s.ResolveUnitID(unitName)
+	if unitID == "" {
+		return nil
+	}
+
+	var result []*Comp
+	for _, comp := range s.compsByUnit[unitID] {
+		if comp.Tier == "S" || comp.Tier == "A" {
+			result = append(result, comp)
+		}
+	}
+
+	// 按 avg_placement 升序（越低越强）
+	for i := 1; i < len(result); i++ {
+		for j := i; j > 0 && result[j].AvgPlacement < result[j-1].AvgPlacement; j-- {
+			result[j], result[j-1] = result[j-1], result[j]
+		}
+	}
+
+	return result
+}
+
+// GetBestItemsForUnit 查询特定阵容下某个英雄的最佳装备
+// 返回该英雄的最优装备方案（BuildInfo）
+func (s *Store) GetBestItemsForUnit(clusterID string, unitName string) *BuildInfo {
+	comp, ok := s.GetCompByClusterID(clusterID)
+	if !ok {
+		return nil
+	}
+
+	unitID := s.ResolveUnitID(unitName)
+	if unitID == "" {
+		// 如果找不到unitID，尝试直接匹配中文名
+		for _, build := range comp.AllBuilds {
+			if s.IDToCN(build.Carry) == unitName || build.Carry == unitName {
+				return &build
+			}
+		}
+		return nil
+	}
+
+	// 优先找 BestBuild
+	if comp.BestBuild.Carry == unitID || s.IDToCN(comp.BestBuild.Carry) == unitName {
+		return &comp.BestBuild
+	}
+
+	// 再找 AllBuilds
+	for _, build := range comp.AllBuilds {
+		if build.Carry == unitID || s.IDToCN(build.Carry) == unitName {
+			return &build
+		}
+	}
+
+	return nil
+}
+
+// GetCompStrategy 查询阵容的运营策略
+// 返回该阵容的升级节奏（Levelling）、推荐升3星的英雄（Stars）等信息
+type CompStrategy struct {
+	Levelling string   `json:"levelling"` // 推荐升级节点，如 "Fast 8", "lvl 7"
+	Stars     []string `json:"stars"`     // 推荐升3星的英雄（中文名）
+	Difficulty float64  `json:"difficulty"` // 操作难度
+}
+
+func (s *Store) GetCompStrategy(clusterID string) *CompStrategy {
+	comp, ok := s.GetCompByClusterID(clusterID)
+	if !ok {
+		return nil
+	}
+
+	// 把 Stars 里的英雄ID转成中文名
+	starsCN := make([]string, len(comp.Stars))
+	for i, unitID := range comp.Stars {
+		starsCN[i] = s.IDToCN(unitID)
+	}
+
+	return &CompStrategy{
+		Levelling: comp.Levelling,
+		Stars:     starsCN,
+		Difficulty: comp.Difficulty,
+	}
+}
+
 // ── 装备查询 ──────────────────────────────────────────────────────────────────
 
 // GetItemFitEntries 查询装备适配的阵容列表
