@@ -290,6 +290,17 @@ class DataParser:
                 new_dn["name"] = t.t(new_dn["name"])
             translated_display_names.append(new_dn)
 
+        # 处理 build_items：key 翻译为中文，value 里的 itemNames 也翻译为中文
+        build_items_translated = {}
+        raw_build_items = raw.get("build_items", {})
+        for item_id, item_data in raw_build_items.items():
+            cn_item_name = t.t(item_id)
+            # 复制 item_data，然后翻译 itemNames
+            item_data_translated = item_data.copy() if isinstance(item_data, dict) else item_data
+            if isinstance(item_data_translated, dict) and "itemNames" in item_data_translated:
+                item_data_translated["itemNames"] = t.t(item_data_translated["itemNames"])
+            build_items_translated[cn_item_name] = item_data_translated
+
         return Comp(
             cluster_id    = cid,
             tft_set       = "",
@@ -304,7 +315,7 @@ class DataParser:
             win_rate      = win_rate,
             tier          = self._placement_to_tier(avg_placement),
             builds        = builds,
-            build_items   = t.t_dict_keys(raw.get("build_items", {})),
+            build_items   = build_items_translated,
             trends        = self._parse_trends(raw.get("trends", [])),
             levelling     = raw.get("levelling", ""),
             difficulty    = raw.get("difficulty", 0.0),
