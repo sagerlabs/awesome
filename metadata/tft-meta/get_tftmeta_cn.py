@@ -1,20 +1,21 @@
 """
-MetaTFT 数据爬虫 (基于真实 API)
+MetaTFT 数据爬虫 (基于真实 API) - 中文版本
 ================================
 接口来源（通过抓包获得）：
   1. comps_data   - 所有阵容的完整数据（英雄/羁绊/装备构建）
   2. comps_stats  - 所有阵容的胜率/名次等统计数据
   3. comp_details - 单个阵容的详细信息（按需调用）
+  4. lookups      - 中英文对照表
 
 运行：
   pip install requests
-  python scraper.py
+  python get_tftmeta_cn.py
 """
 
 import json
 import time
 import logging
-from typing import Optional
+from typing import Optional, Any
 
 import requests
 from pathlib import Path
@@ -52,14 +53,14 @@ DAYS     = 3
 @dataclass
 class ItemBuild:
     """单个英雄的最优装备组合"""
-    unit: str                             # 英雄 ID，如 TFT16_Rumble
-    items: list[str]                      # 装备列表（顺序即优先级）
+    unit: str                             # 英雄 ID（中文）
+    items: list[str]                      # 装备列表（中文，顺序即优先级）
     avg_placement: float                  # 使用该套装备的平均名次
     count: int                            # 样本数量
     score: float                          # MetaTFT 综合评分
     place_change: float                   # 与不带装备相比的名次变化（负=更好）
     priority_scores: dict[str, int] = field(default_factory=dict)
-    # 示例：{"TFT_Item_Rabadons": 100, "TFT_Item_Shojin": 85}
+    # 示例：{"灭世者的死亡之帽": 100, "朔极之矛": 85}
 
 
 @dataclass
@@ -71,13 +72,13 @@ class Comp:
     tft_set: str          # 赛季，如 "TFTSet16"
 
     # ── 核心英雄与羁绊 ──
-    units: list[str]      # 核心英雄 ID 列表，如 ["TFT16_Rumble", "TFT16_Kennen"]
-    traits: list[str]     # 关键羁绊，如 ["TFT16_Yordle_4", "TFT16_Defender_1"]
-    stars: list[str]      # 推荐升3星的英雄（优先级从高到低）
+    units: list[str]      # 核心英雄列表（中文）
+    traits: list[str]     # 关键羁绊（中文）
+    stars: list[str]      # 推荐升3星的英雄（中文，优先级从高到低）
 
     # ── 阵容命名 ──
-    name_string: str      # 阵容标识符，如 "TFT16_Augment_RumbleCarry"
-    display_names: list[dict]  # [{"name": "TFT16_Yordle", "type": "trait", "score": 3.55}]
+    name_string: str      # 阵容标识符（中文）
+    display_names: list[dict]  # [{"name": "约德尔", "type": "trait", "score": 3.55}]  name已替换为中文
 
     # ── 统计数据 ──
     count: int            # 总场次
@@ -91,7 +92,7 @@ class Comp:
 
     # ── 装备出现频率（全阵容维度）──
     build_items: dict[str, dict] = field(default_factory=dict)
-    # {"TFT_Item_Rabadons": {"count": 14680, "avg": 3.32, "pcnt": 0.398}}
+    # {"灭世者的死亡之帽": {"count": 14680, "avg": 3.32, "pcnt": 0.398}}
 
     # ── 趋势 ──
     trends: list[dict] = field(default_factory=list)
@@ -100,6 +101,77 @@ class Comp:
     # ── 运营参数 ──
     levelling: str  = ""    # 推荐升级节点，如 "lvl 5"
     difficulty: float = 0.0 # 操作难度，负数=较难
+
+
+# ── 中文翻译器 ────────────────────────────────────────────────────────────────
+
+class Translator:
+    """翻译器：把 TFT ID 替换为中文"""
+
+    def __init__(self):
+        self.id_to_cn: dict[str, str] = {}
+        self.cn_to_id: dict[str, str] = {}
+        self.trait_translations: dict[str, str] = {}
+
+    def load_from_lookups(self, tft_set: str = "TFTSet16") -> bool:
+        """从 MetaTFT lookups 接口加载翻译"""
+        try:
+            url = f"https://data.metatft.com/lookups/{tft_set}_latest_zh_cn.json"
+            log.info(f"加载翻译表: {url}")
+            resp = requests.get(url, timeout=15)
+            resp.raise_for_status()
+            data = resp.json()
+
+            # 解析装备
+            items = data.get("items", [])
+            for item in items:
+                api_name = item.get("apiName", "")
+                name = item.get("name", "")
+                if api_name and name:
+                    self.id_to_cn[api_name] = name
+                    self.cn_to_id[name] = api_name
+
+            # 解析英雄
+            units = data.get("units", [])
+            for unit in units:
+                api_name = unit.get("apiName", "")
+                name = unit.get("name", "")
+                if api_name and name:
+                    self.id_to_cn[api_name] = name
+                    self.cn_to_id[name] = api_name
+
+            # 解析羁绊
+            traits = data.get("traits", [])
+            for trait in traits:
+                api_name = trait.get("apiName", "")
+                name = trait.get("name", "")
+                if api_name and name:
+                    self.id_to_cn[api_name] = name
+                    self.cn_to_id[name] = api_name
+                    # 也处理带数量的羁绊，比如 "TFT16_Yordle_4" -> "约德尔 (4)"
+                    for i in range(1, 10):
+                        trait_with_num = f"{api_name}_{i}"
+                        self.id_to_cn[trait_with_num] = f"{name} ({i})"
+
+            log.info(f"翻译表加载完成，共 {len(self.id_to_cn)} 条")
+            return True
+        except Exception as e:
+            log.warning(f"翻译表加载失败: {e}")
+            return False
+
+    def t(self, s: str) -> str:
+        """翻译单个字符串，如果找不到就返回原字符串"""
+        if not s:
+            return s
+        return self.id_to_cn.get(s, s)
+
+    def t_list(self, lst: list[str]) -> list[str]:
+        """翻译列表"""
+        return [self.t(item) for item in lst]
+
+    def t_dict_keys(self, d: dict) -> dict:
+        """翻译字典的 key"""
+        return {self.t(k): v for k, v in d.items()}
 
 
 # ── API 客户端 ────────────────────────────────────────────────────────────────
@@ -148,18 +220,6 @@ class MetaTFTClient:
         })
         return data.get("results", []) if data else []
 
-    def fetch_comp_details(self, comp_id: str, cluster_id: str) -> Optional[dict]:
-        """
-        接口 3: GET /comp_details?comp={comp_id}&cluster_id={cluster_id}
-        获取单个阵容详情（含强化符文推荐）
-        comp_id 规则：通常为 cluster_details 的 key，如 "393000"
-        cluster_id：顶层 cluster_id，如 "393"
-        """
-        log.info(f"Fetching comp_details: comp={comp_id} cluster={cluster_id}")
-        data = self._get("comp_details", {"comp": comp_id, "cluster_id": cluster_id})
-        time.sleep(0.5)
-        return data
-
 
 # ── 数据解析 ──────────────────────────────────────────────────────────────────
 
@@ -167,6 +227,9 @@ class DataParser:
 
     # 装备优先级评分：列表第1位=100，第2位=85，以此递减
     _PRIORITY_DECAY = [100, 85, 72, 60, 50, 42, 35]
+
+    def __init__(self, translator: Translator):
+        self.translator = translator
 
     def parse_stats(self, raw_stats: list[dict]) -> dict[str, dict]:
         """
@@ -194,19 +257,20 @@ class DataParser:
 
     def parse_comp(self, cid: str, raw: dict, stats: Optional[dict]) -> Comp:
         """解析单个阵容的完整数据"""
+        t = self.translator
 
         # 装备构建解析
         builds = []
         for b in raw.get("builds", []):
             items = b.get("buildName", [])
             builds.append(ItemBuild(
-                unit            = b.get("unit", ""),
-                items           = items,
+                unit            = t.t(b.get("unit", "")),
+                items           = t.t_list(items),
                 avg_placement   = b.get("avg", 0.0),
                 count           = b.get("count", 0),
                 score           = b.get("score", 0.0),
                 place_change    = b.get("place_change", 0.0),
-                priority_scores = self._build_priority_scores(items),
+                priority_scores = self._build_priority_scores(t.t_list(items)),
             ))
         builds.sort(key=lambda x: x.score, reverse=True)
 
@@ -217,21 +281,30 @@ class DataParser:
         top4_rate     = stats["top4_rate"]       if stats else 0.0
         win_rate      = stats["win_rate"]         if stats else 0.0
 
+        # 处理 display_names，把 name 替换为中文
+        display_names = raw.get("name", [])
+        translated_display_names = []
+        for dn in display_names:
+            new_dn = dn.copy()
+            if "name" in new_dn:
+                new_dn["name"] = t.t(new_dn["name"])
+            translated_display_names.append(new_dn)
+
         return Comp(
             cluster_id    = cid,
             tft_set       = "",
-            units         = [u.strip() for u in raw.get("units_string", "").split(",") if u.strip()],
-            traits        = [t.strip() for t in raw.get("traits_string", "").split(",") if t.strip()],
-            stars         = raw.get("stars", []),
-            name_string   = raw.get("name_string", ""),
-            display_names = raw.get("name", []),
+            units         = t.t_list([u.strip() for u in raw.get("units_string", "").split(",") if u.strip()]),
+            traits        = t.t_list([t.strip() for t in raw.get("traits_string", "").split(",") if t.strip()]),
+            stars         = t.t_list(raw.get("stars", [])),
+            name_string   = t.t(raw.get("name_string", "")),
+            display_names = translated_display_names,
             count         = count,
             avg_placement = avg_placement,
             top4_rate     = top4_rate,
             win_rate      = win_rate,
             tier          = self._placement_to_tier(avg_placement),
             builds        = builds,
-            build_items   = raw.get("build_items", {}),
+            build_items   = t.t_dict_keys(raw.get("build_items", {})),
             trends        = self._parse_trends(raw.get("trends", [])),
             levelling     = raw.get("levelling", ""),
             difficulty    = raw.get("difficulty", 0.0),
@@ -270,7 +343,10 @@ class DataParser:
 # ── 输出构建 ──────────────────────────────────────────────────────────────────
 
 class OutputBuilder:
-    """将解析后的数据构建为三个输出文件"""
+    """将解析后的数据构建为三个输出文件（全中文 value）"""
+
+    def __init__(self, translator: Translator):
+        self.translator = translator
 
     def save_all(self, comps: list[Comp], tft_set: str, cluster_id: str):
         self._save_comps_full(comps, tft_set, cluster_id)
@@ -280,10 +356,10 @@ class OutputBuilder:
 
     def _save_comps_full(self, comps: list[Comp], tft_set: str, cluster_id: str):
         """
-        comps_full.json
-        完整原始数据，用于调试和离线分析
+        comps_full_cn.json
+        完整原始数据（全中文），用于调试和离线分析
         """
-        path = OUTPUT_DIR / "comps_full.json"
+        path = OUTPUT_DIR / "comps_full_cn.json"
         data = {
             "meta": {
                 "tft_set":    tft_set,
@@ -295,33 +371,33 @@ class OutputBuilder:
             "comps": {c.cluster_id: asdict(c) for c in comps},
         }
         path.write_text(json.dumps(data, ensure_ascii=False, indent=2))
-        log.info(f"✅ comps_full.json     → {path}  ({path.stat().st_size // 1024} KB)")
+        log.info(f"✅ comps_full_cn.json     → {path}  ({path.stat().st_size // 1024} KB)")
 
     def _save_comps_for_agent(self, comps: list[Comp], tft_set: str, cluster_id: str):
         """
-        comps_for_agent.json
-        精简格式，供 Eino Tool 层直接读取
+        comps_for_agent_cn.json
+        精简格式（全中文），供 Eino Tool 层直接读取
         过滤掉样本量 <200 的阵容（数据不可靠）
         """
         valid = [c for c in comps if c.count >= 200]
-        path  = OUTPUT_DIR / "comps_for_agent.json"
+        path  = OUTPUT_DIR / "comps_for_agent_cn.json"
         data  = {
             "meta":  {"tft_set": tft_set, "cluster_id": cluster_id},
             "comps": [self._to_agent_format(c) for c in valid],
         }
         path.write_text(json.dumps(data, ensure_ascii=False, indent=2))
-        log.info(f"✅ comps_for_agent.json → {path}  ({len(valid)} 个有效阵容)")
+        log.info(f"✅ comps_for_agent_cn.json → {path}  ({len(valid)} 个有效阵容)")
 
     def _save_items_priority(self, comps: list[Comp]):
         """
-        items_priority.json
-        装备 -> 阵容映射，供 QueryItemFit Tool 使用
+        items_priority_cn.json
+        装备 -> 阵容映射（全中文），供 QueryItemFit Tool 使用
         只索引 S/A Tier 阵容，避免噪声
 
         结构：
         {
-          "TFT_Item_Rabadons": [
-            {"cluster_id": "393000", "comp_name": "...", "carry": "TFT16_Rumble",
+          "灭世者的死亡之帽": [
+            {"cluster_id": "393000", "comp_name": "兰博主C", "carry": "兰博",
              "priority_score": 100, "comp_tier": "S", "comp_avg": 3.72},
             ...
           ]
@@ -349,9 +425,9 @@ class OutputBuilder:
         for item in index:
             index[item].sort(key=lambda x: x["priority_score"], reverse=True)
 
-        path = OUTPUT_DIR / "items_priority.json"
+        path = OUTPUT_DIR / "items_priority_cn.json"
         path.write_text(json.dumps(index, ensure_ascii=False, indent=2))
-        log.info(f"✅ items_priority.json  → {path}  ({len(index)} 个装备)")
+        log.info(f"✅ items_priority_cn.json  → {path}  ({len(index)} 个装备)")
 
     def _to_agent_format(self, comp: Comp) -> dict:
         best = comp.builds[0] if comp.builds else None
@@ -393,7 +469,7 @@ class OutputBuilder:
             tiers.get(c.tier, tiers["C"]).append(c)
 
         log.info(f"\n{'='*60}")
-        log.info(f"版本强度速览 (近{DAYS}天 {RANKS})")
+        log.info(f"版本强度速览 (近{DAYS}天 {RANKS}) - 中文版本")
         log.info(f"{'='*60}")
         for tier in ["S", "A", "B", "C"]:
             cs = tiers[tier]
@@ -408,153 +484,42 @@ class OutputBuilder:
 
 # ── 主流程 ────────────────────────────────────────────────────────────────────
 
-class LocalizationBuilder:
-    """
-    从 MetaTFT 官方接口自动生成 ID ↔ 中文名 映射表
-    
-    接口来源：
-      - 中文: https://data.metatft.com/lookups/TFTSet16_latest_zh_cn.json
-      - 英文: https://data.metatft.com/lookups/TFTSet16_latest_en_us.json
-    
-    数据结构：
-      {
-        "items": [
-          {
-            "apiName": "TFT_Item_RabadonsDeathcap",
-            "name": "灭世者的死亡之帽",      // 中文接口：中文名
-            "en_name": "Rabadon's Deathcap"  // 英文名
-          }
-        ]
-      }
-    """
-
-    BASE_URL = "https://data.metatft.com/lookups"
-
-    def build(self, tft_set: str = "TFTSet16") -> bool:
-        """
-        拉取 MetaTFT 中英文数据，生成 localization.json
-        返回 True=成功  False=失败（不影响主流程）
-        """
-        try:
-            id_to_cn: dict[str, str] = {}
-            id_to_en: dict[str, str] = {}
-
-            # 拉取中文数据
-            zh_data = self._fetch_data(f"{self.BASE_URL}/{tft_set}_latest_zh_cn.json")
-            # 拉取英文数据（作为备份和验证）
-            en_data = self._fetch_data(f"{self.BASE_URL}/{tft_set}_latest_en_us.json")
-
-            if not zh_data:
-                log.warning("未获取到中文数据，请检查 MetaTFT 接口是否可用")
-                return False
-
-            # 解析中文数据
-            self._parse_items(zh_data, id_to_cn, "cn")
-            # 解析英文数据
-            if en_data:
-                self._parse_items(en_data, id_to_en, "en")
-
-            if not id_to_cn:
-                log.warning("未解析到任何映射，请检查 MetaTFT 接口结构是否变化")
-                return False
-
-            # 反向映射：中文名 → ID（供 InputParser 查表）
-            cn_to_id = {cn: tft_id for tft_id, cn in id_to_cn.items()}
-
-            output = {
-                "source":   f"MetaTFT/{tft_set}",
-                "id_to_cn": id_to_cn,   # "TFT16_LeeSin" -> "盲僧"
-                "id_to_en": id_to_en,   # "TFT16_LeeSin" -> "Lee Sin"
-                "cn_to_id": cn_to_id,   # "盲僧"         -> "TFT16_LeeSin"
-            }
-
-            path = OUTPUT_DIR / "localization.json"
-            path.write_text(json.dumps(output, ensure_ascii=False, indent=2))
-            log.info(f"✅ localization.json   → {path}  ({len(id_to_cn)} 条中文映射, {len(id_to_en)} 条英文映射)")
-            return True
-
-        except Exception as e:
-            log.warning(f"汉化表生成失败（不影响主流程）: {e}")
-            return False
-
-    def _fetch_data(self, url: str) -> Optional[dict]:
-        """拉取 MetaTFT 数据"""
-        try:
-            log.info(f"从 MetaTFT 拉取数据: {url}")
-            resp = requests.get(url, timeout=15)
-            resp.raise_for_status()
-            return resp.json()
-        except Exception as e:
-            log.warning(f"  → 拉取失败: {e}")
-            return None
-
-    def _parse_items(self, data: dict, id_map: dict[str, str], lang: str):
-        """
-        解析 MetaTFT items 数据
-        lang: "cn" 或 "en"
-        """
-        items = data.get("items", [])
-        count = 0
-        seen = set()
-
-        for item in items:
-            api_name = item.get("apiName", "")
-            if not api_name:
-                continue
-
-            # 根据语言选择名称字段
-            if lang == "cn":
-                name = item.get("name", "")
-            else:
-                name = item.get("en_name", "") or item.get("name", "")
-
-            if not name:
-                continue
-
-            # 去重：同一 ID 只取第一条
-            if api_name in seen:
-                continue
-            seen.add(api_name)
-
-            id_map[api_name] = name
-            count += 1
-
-        log.info(f"  → 新增 {count} 条{lang == 'cn' and '中文' or '英文'}映射")
-
-
 class TFTDataPipeline:
 
     def __init__(self):
         self.client   = MetaTFTClient()
-        self.parser   = DataParser()
-        self.builder  = OutputBuilder()
-        self.localizer = LocalizationBuilder()
+        self.translator = Translator()
+        self.builder  = None  # 等翻译表加载后初始化
+        self.parser   = None  # 等翻译表加载后初始化
 
     def run(self):
-        # 2. 获取两个核心接口
+        # 0. 先加载翻译表
         raw_data  = self.client.fetch_comps_data()
-        raw_stats = self.client.fetch_comps_stats()
+        tft_set = raw_data.get("tft_set", "TFTSet16") if raw_data else "TFTSet16"
+        self.translator.load_from_lookups(tft_set)
 
+        # 初始化依赖翻译表的组件
+        self.parser = DataParser(self.translator)
+        self.builder = OutputBuilder(self.translator)
+
+        # 1. 获取两个核心接口
         if not raw_data:
             log.error("comps_data 接口返回为空，终止")
             return
 
-        tft_set         = raw_data.get("tft_set", "")
+        raw_stats = self.client.fetch_comps_stats()
+
         cluster_id_top  = str(raw_data.get("cluster_id", ""))
         cluster_details = raw_data.get("cluster_details", {})
 
-        # 1. 生成汉化表（失败也继续，不阻塞主流程）
-        if tft_set:
-            self.localizer.build(tft_set)
-        else:
-            log.warning("无法获取 tft_set，使用默认值 TFTSet16")
-            self.localizer.build("TFTSet16")
+        # 保存原始的 localization.json（方便调试）
+        self._save_localization()
 
-        # 3. 解析统计数据
+        # 2. 解析统计数据
         stats_map = self.parser.parse_stats(raw_stats)
         log.info(f"TFT Set: {tft_set} | cluster: {cluster_id_top} | {len(stats_map)} 个阵容有统计数据")
 
-        # 4. 解析所有阵容
+        # 3. 解析所有阵容
         comps: list[Comp] = []
         for cid, raw_comp in cluster_details.items():
             try:
@@ -567,8 +532,20 @@ class TFTDataPipeline:
         log.info(f"共解析 {len(comps)} 个阵容")
         comps.sort(key=lambda c: c.avg_placement)
 
-        # 5. 保存阵容数据（三个文件）
+        # 4. 保存阵容数据（三个文件，全中文）
         self.builder.save_all(comps, tft_set, cluster_id_top)
+
+    def _save_localization(self):
+        """保存原始的 localization.json（方便调试）"""
+        output = {
+            "source":   "MetaTFT",
+            "id_to_cn": self.translator.id_to_cn,
+            "cn_to_id": self.translator.cn_to_id,
+        }
+
+        path = OUTPUT_DIR / "localization_cn.json"
+        path.write_text(json.dumps(output, ensure_ascii=False, indent=2))
+        log.info(f"✅ localization_cn.json   → {path}  ({len(self.translator.id_to_cn)} 条翻译)")
 
 
 if __name__ == "__main__":
