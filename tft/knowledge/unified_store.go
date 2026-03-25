@@ -7,7 +7,6 @@ import (
 
 	"github.com/sagerlabs/awesome/tft/agent"
 	"github.com/sagerlabs/awesome/tft/data"
-	"github.com/sagerlabs/awesome/tft/knowledge/models"
 	"github.com/sirupsen/logrus"
 )
 
@@ -158,7 +157,7 @@ func (s *UnifiedStore) SearchMetaComps(query string) ([]byte, error) {
 	defer s.mu.RUnlock()
 
 	if s.knowledgeStore == nil {
-		return json.Marshal([]*models.MetaComp{})
+		return json.Marshal([]interface{}{})
 	}
 
 	comps := s.knowledgeStore.SearchMetaComps(query)
@@ -171,7 +170,7 @@ func (s *UnifiedStore) GetAllMetaComps() ([]byte, error) {
 	defer s.mu.RUnlock()
 
 	if s.knowledgeStore == nil {
-		return json.Marshal([]*models.MetaComp{})
+		return json.Marshal([]interface{}{})
 	}
 
 	comps := s.knowledgeStore.GetAllMetaComps()
@@ -205,7 +204,7 @@ func (s *UnifiedStore) GetAllMetaChampions() ([]byte, error) {
 	defer s.mu.RUnlock()
 
 	if s.knowledgeStore == nil {
-		return json.Marshal([]*models.MetaChampion{})
+		return json.Marshal([]interface{}{})
 	}
 
 	champs := s.knowledgeStore.GetAllMetaChampions()
@@ -239,7 +238,7 @@ func (s *UnifiedStore) GetAllMetaItems() ([]byte, error) {
 	defer s.mu.RUnlock()
 
 	if s.knowledgeStore == nil {
-		return json.Marshal([]*models.MetaItem{})
+		return json.Marshal([]interface{}{})
 	}
 
 	items := s.knowledgeStore.GetAllMetaItems()
