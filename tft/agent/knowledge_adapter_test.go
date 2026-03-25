@@ -5,6 +5,7 @@ import (
 	"testing"
 
 	"github.com/sagerlabs/awesome/tft/data"
+	"github.com/sagerlabs/awesome/tft/knowledge"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -15,13 +16,13 @@ import (
 
 // mockTool 用于测试的mock实现
 type mockTool struct {
-	queryNLUFunc       func(req QueryRequest) (QueryResponse, error)
+	queryNLUFunc       func(req knowledge.QueryRequest) (knowledge.QueryResponse, error)
 	getCompByIDFunc    func(clusterID string) ([]byte, error)
 	getMetaCompByIDFunc func(clusterID string) ([]byte, error)
 	// 其他方法可以根据需要添加
 }
 
-func (m *mockTool) QueryNLU(req QueryRequest) (QueryResponse, error) {
+func (m *mockTool) QueryNLU(req knowledge.QueryRequest) (knowledge.QueryResponse, error) {
 	if m.queryNLUFunc != nil {
 		return m.queryNLUFunc(req)
 	}
@@ -120,7 +121,7 @@ func TestKnowledgeAdapter_QueryNLU(t *testing.T) {
 
 	// 3. 创建mock tool
 	mt := &mockTool{
-		queryNLUFunc: func(req QueryRequest) (QueryResponse, error) {
+		queryNLUFunc: func(req knowledge.QueryRequest) (knowledge.QueryResponse, error) {
 			// 验证请求是否正确序列化
 			var receivedCtx Context
 			err := json.Unmarshal([]byte(req), &receivedCtx)
@@ -132,7 +133,7 @@ func TestKnowledgeAdapter_QueryNLU(t *testing.T) {
 			// 返回模拟的响应
 			respBytes, err := json.Marshal(expectedResult)
 			assert.NoError(t, err)
-			return QueryResponse(respBytes), nil
+			return knowledge.QueryResponse(respBytes), nil
 		},
 	}
 
