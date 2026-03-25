@@ -288,7 +288,42 @@ func (s *UnifiedStore) Reload() error {
 	defer s.mu.Unlock()
 
 	s.logger.Info("Reloading data...")
-	return fmt.Errorf("reload not implemented yet")
+
+	// 1. 重新加载dataStore
+	dataDir := s.config.DataDir
+	if dataDir == "" {
+		dataDir = data.GetDataDir()
+	}
+
+	newDataStore, err := data.NewStore(dataDir)
+	if err != nil {
+		return fmt.Errorf("reload data store: %w", err)
+	}
+
+	// 2. 重新加载knowledgeStore（如果启用了）
+	var newKnowledgeStore *Store
+	if s.config.EnableMeta {
+		knowledgeDir := s.config.KnowledgeDir
+		if knowledgeDir == "" {
+			knowledgeDir = "tft/knowledge/data"
+		}
+
+		loader := NewLoader(knowledgeDir)
+		var loadErr error
+		newKnowledgeStore, loadErr = loader.LoadAll()
+		if loadErr != nil {
+			s.logger.WithError(loadErr).Warn("Reload knowledge store failed, keeping old one")
+			// 不返回错误，继续使用旧的knowledgeStore
+			newKnowledgeStore = s.knowledgeStore
+		}
+	}
+
+	// 3. 原子替换
+	s.dataStore = newDataStore
+	s.knowledgeStore = newKnowledgeStore
+
+	s.logger.Info("Data reloaded successfully")
+	return nil
 }
 
 // HealthCheck 健康检查
