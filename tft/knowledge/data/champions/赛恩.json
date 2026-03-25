@@ -1,0 +1,107 @@
+{
+  "name": "赛恩",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "tier": "S",
+      "avg_placement": 4.2031
+    },
+    {
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
+      "tier": "A",
+      "avg_placement": 4.314
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "tier": "A",
+      "avg_placement": 4.3367
+    },
+    {
+      "cluster_id": "394051",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Draven",
+      "tier": "B",
+      "avg_placement": 4.7486
+    },
+    {
+      "cluster_id": "394056",
+      "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_Brawler",
+      "tier": "C",
+      "avg_placement": 4.8979
+    },
+    {
+      "cluster_id": "394062",
+      "comp_name": "TFT16_Brawler, TFT16_Sion",
+      "tier": "D",
+      "avg_placement": 5.6158
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "items": [
+        "棘刺背心",
+        "巨龙之爪",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.9715,
+      "count": 1016,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "items": [
+        "棘刺背心",
+        "巨龙之爪",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.9757,
+      "count": 10256,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "cluster_id": "394056",
+      "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_Brawler",
+      "items": [
+        "棘刺背心",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.5,
+      "count": 12,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "cluster_id": "394062",
+      "comp_name": "TFT16_Brawler, TFT16_Sion",
+      "items": [
+        "石像鬼石板甲",
+        "日炎斗篷",
+        "振奋盔甲"
+      ],
+      "avg_placement": 5.0058,
+      "count": 514,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
+      }
+    }
+  ]
+}

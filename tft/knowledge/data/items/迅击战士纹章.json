@@ -1,0 +1,13 @@
+{
+  "name": "迅击战士纹章",
+  "priority_list": [
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.463,
+      "carry": "泰达米尔",
+      "priority_score": 100
+    }
+  ]
+}

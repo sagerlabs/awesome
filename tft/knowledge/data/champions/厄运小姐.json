@@ -1,0 +1,73 @@
+{
+  "name": "厄运小姐",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "tier": "S",
+      "avg_placement": 4.1791
+    },
+    {
+      "cluster_id": "394045",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Nautilus",
+      "tier": "D",
+      "avg_placement": 5.1393
+    },
+    {
+      "cluster_id": "394054",
+      "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_MissFortune",
+      "tier": "D",
+      "avg_placement": 5.252
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "items": [
+        "大副的燧发枪",
+        "无尽之刃",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.8299,
+      "count": 4386,
+      "priority_scores": {
+        "大副的燧发枪": 100,
+        "无尽之刃": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "394045",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Nautilus",
+      "items": [
+        "亡者的短剑",
+        "大副的燧发枪",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.86,
+      "count": 1864,
+      "priority_scores": {
+        "亡者的短剑": 100,
+        "大副的燧发枪": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "394054",
+      "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_MissFortune",
+      "items": [
+        "亡者的短剑",
+        "大副的燧发枪",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.6552,
+      "count": 29,
+      "priority_scores": {
+        "亡者的短剑": 100,
+        "大副的燧发枪": 85,
+        "朔极之矛": 72
+      }
+    }
+  ]
+}

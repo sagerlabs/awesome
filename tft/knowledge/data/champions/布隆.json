@@ -1,0 +1,157 @@
+{
+  "name": "布隆",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "tier": "S",
+      "avg_placement": 3.9968
+    },
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "tier": "S",
+      "avg_placement": 4.1324
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "tier": "S",
+      "avg_placement": 4.1348
+    },
+    {
+      "cluster_id": "394030",
+      "comp_name": "TFT16_Piltover, TFT16_Seraphine",
+      "tier": "A",
+      "avg_placement": 4.2903
+    },
+    {
+      "cluster_id": "394050",
+      "comp_name": "TFT16_Warden, TFT16_Braum",
+      "tier": "B",
+      "avg_placement": 4.7166
+    },
+    {
+      "cluster_id": "394039",
+      "comp_name": "TFT16_ShadowIsles, TFT16_Viego",
+      "tier": "C",
+      "avg_placement": 5.0278
+    },
+    {
+      "cluster_id": "394047",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Taric",
+      "tier": "C",
+      "avg_placement": 5.0748
+    },
+    {
+      "cluster_id": "394063",
+      "comp_name": "TFT16_Piltover, TFT16_THex",
+      "tier": "D",
+      "avg_placement": 5.2662
+    },
+    {
+      "cluster_id": "394059",
+      "comp_name": "TFT16_Explorer, TFT16_Lissandra",
+      "tier": "D",
+      "avg_placement": 5.3876
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "items": [
+        "棘刺背心",
+        "巨龙之爪",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.5194,
+      "count": 10939,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "items": [
+        "离子火花",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.6579,
+      "count": 1745,
+      "priority_scores": {
+        "离子火花": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "items": [
+        "日炎斗篷",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.3603,
+      "count": 2362,
+      "priority_scores": {
+        "日炎斗篷": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "394030",
+      "comp_name": "TFT16_Piltover, TFT16_Seraphine",
+      "items": [
+        "棘刺背心",
+        "巨龙之爪",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.8697,
+      "count": 1873,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "394050",
+      "comp_name": "TFT16_Warden, TFT16_Braum",
+      "items": [
+        "巨龙之爪",
+        "离子火花",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.4762,
+      "count": 21,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "离子火花": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "394063",
+      "comp_name": "TFT16_Piltover, TFT16_THex",
+      "items": [
+        "棘刺背心",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 4.2909,
+      "count": 220,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    }
+  ]
+}

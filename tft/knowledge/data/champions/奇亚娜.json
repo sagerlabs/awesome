@@ -1,0 +1,24 @@
+{
+  "name": "奇亚娜",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394059",
+      "comp_name": "TFT16_Explorer, TFT16_Lissandra",
+      "tier": "D",
+      "avg_placement": 5.3876
+    },
+    {
+      "cluster_id": "394067",
+      "comp_name": "TFT16_Explorer, TFT16_Nidalee",
+      "tier": "D",
+      "avg_placement": 5.7087
+    },
+    {
+      "cluster_id": "394068",
+      "comp_name": "TFT16_Explorer, TFT16_Bard",
+      "tier": "D",
+      "avg_placement": 6.3249
+    }
+  ],
+  "builds": []
+}

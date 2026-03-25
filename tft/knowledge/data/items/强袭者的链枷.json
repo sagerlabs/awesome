@@ -1,0 +1,61 @@
+{
+  "name": "强袭者的链枷",
+  "priority_list": [
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "comp_tier": "S",
+      "comp_avg": 3.9397,
+      "carry": "菲兹",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "comp_tier": "S",
+      "comp_avg": 3.9968,
+      "carry": "卡莉丝塔",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1393,
+      "carry": "菲兹",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.1646,
+      "carry": "奈德丽",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "S",
+      "comp_avg": 4.2398,
+      "carry": "瑟提",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "comp_tier": "A",
+      "comp_avg": 4.4303,
+      "carry": "瑟提",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "comp_tier": "A",
+      "comp_avg": 4.4303,
+      "carry": "芸阿娜",
+      "priority_score": 72
+    }
+  ]
+}

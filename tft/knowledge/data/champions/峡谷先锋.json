@@ -1,0 +1,101 @@
+{
+  "name": "峡谷先锋",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "tier": "A",
+      "avg_placement": 4.3679
+    },
+    {
+      "cluster_id": "394016",
+      "comp_name": "TFT16_Slayer, TFT16_Yone",
+      "tier": "A",
+      "avg_placement": 4.4319
+    },
+    {
+      "cluster_id": "394042",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Juggernaut",
+      "tier": "C",
+      "avg_placement": 4.8065
+    },
+    {
+      "cluster_id": "394020",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_ChoGath",
+      "tier": "C",
+      "avg_placement": 4.8302
+    },
+    {
+      "cluster_id": "394053",
+      "comp_name": "TFT16_Void, TFT16_RiftHerald",
+      "tier": "D",
+      "avg_placement": 5.1368
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "items": [
+        "巨龙之爪",
+        "日炎斗篷",
+        "薄暮法袍"
+      ],
+      "avg_placement": 3.7397,
+      "count": 292,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "日炎斗篷": 85,
+        "薄暮法袍": 72
+      }
+    },
+    {
+      "cluster_id": "394042",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Juggernaut",
+      "items": [
+        "巨龙之爪",
+        "坚定之心",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.7105,
+      "count": 38,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "坚定之心": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "394020",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_ChoGath",
+      "items": [
+        "日炎斗篷",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.171,
+      "count": 5959,
+      "priority_scores": {
+        "日炎斗篷": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "394053",
+      "comp_name": "TFT16_Void, TFT16_RiftHerald",
+      "items": [
+        "棘刺背心",
+        "日炎斗篷",
+        "薄暮法袍"
+      ],
+      "avg_placement": 2.8333,
+      "count": 12,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "日炎斗篷": 85,
+        "薄暮法袍": 72
+      }
+    }
+  ]
+}

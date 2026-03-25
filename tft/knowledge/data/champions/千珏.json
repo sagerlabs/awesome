@@ -1,0 +1,125 @@
+{
+  "name": "千珏",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "tier": "S",
+      "avg_placement": 4.1759
+    },
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "tier": "S",
+      "avg_placement": 4.1962
+    },
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "tier": "S",
+      "avg_placement": 4.2031
+    },
+    {
+      "cluster_id": "394016",
+      "comp_name": "TFT16_Slayer, TFT16_Yone",
+      "tier": "A",
+      "avg_placement": 4.4319
+    },
+    {
+      "cluster_id": "394038",
+      "comp_name": "TFT16_Ionia, TFT16_Yunara",
+      "tier": "B",
+      "avg_placement": 4.5979
+    },
+    {
+      "cluster_id": "394050",
+      "comp_name": "TFT16_Warden, TFT16_Braum",
+      "tier": "B",
+      "avg_placement": 4.7166
+    },
+    {
+      "cluster_id": "394051",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Draven",
+      "tier": "B",
+      "avg_placement": 4.7486
+    },
+    {
+      "cluster_id": "394052",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Slayer",
+      "tier": "C",
+      "avg_placement": 4.9865
+    },
+    {
+      "cluster_id": "394045",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Nautilus",
+      "tier": "D",
+      "avg_placement": 5.1393
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "items": [
+        "鬼索的狂暴之刃",
+        "最后的轻语",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.5123,
+      "count": 1216,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "最后的轻语": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "items": [
+        "鬼索的狂暴之刃",
+        "巨人杀手",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.5354,
+      "count": 15311,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "巨人杀手": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "cluster_id": "394038",
+      "comp_name": "TFT16_Ionia, TFT16_Yunara",
+      "items": [
+        "鬼索的狂暴之刃",
+        "巨人杀手",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.2455,
+      "count": 501,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "巨人杀手": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "cluster_id": "394050",
+      "comp_name": "TFT16_Warden, TFT16_Braum",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.4583,
+      "count": 24,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "海妖之怒": 72
+      }
+    }
+  ]
+}

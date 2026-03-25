@@ -1,0 +1,85 @@
+{
+  "name": "菲兹",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "tier": "S",
+      "avg_placement": 3.9397
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "tier": "S",
+      "avg_placement": 4.1393
+    },
+    {
+      "cluster_id": "394060",
+      "comp_name": "TFT16_Yordle, TFT16_Teemo",
+      "tier": "C",
+      "avg_placement": 4.8838
+    },
+    {
+      "cluster_id": "394047",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Taric",
+      "tier": "C",
+      "avg_placement": 5.0748
+    },
+    {
+      "cluster_id": "394054",
+      "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_MissFortune",
+      "tier": "D",
+      "avg_placement": 5.252
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "items": [
+        "珠光护手",
+        "强袭者的链枷",
+        "正义之手"
+      ],
+      "avg_placement": 3.3882,
+      "count": 152,
+      "priority_scores": {
+        "珠光护手": 100,
+        "强袭者的链枷": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "items": [
+        "珠光护手",
+        "强袭者的链枷",
+        "正义之手"
+      ],
+      "avg_placement": 3.8776,
+      "count": 5009,
+      "priority_scores": {
+        "珠光护手": 100,
+        "强袭者的链枷": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "cluster_id": "394045",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Nautilus",
+      "items": [
+        "黑市炸药",
+        "珠光护手",
+        "正义之手"
+      ],
+      "avg_placement": 4.6261,
+      "count": 920,
+      "priority_scores": {
+        "黑市炸药": 100,
+        "珠光护手": 85,
+        "正义之手": 72
+      }
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "name": "巴德",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "tier": "S",
+      "avg_placement": 4.1646
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "tier": "A",
+      "avg_placement": 4.3367
+    },
+    {
+      "cluster_id": "394056",
+      "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_Brawler",
+      "tier": "C",
+      "avg_placement": 4.8979
+    },
+    {
+      "cluster_id": "394062",
+      "comp_name": "TFT16_Brawler, TFT16_Sion",
+      "tier": "D",
+      "avg_placement": 5.6158
+    },
+    {
+      "cluster_id": "394068",
+      "comp_name": "TFT16_Explorer, TFT16_Bard",
+      "tier": "D",
+      "avg_placement": 6.3249
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "items": [
+        "大天使之杖",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.6461,
+      "count": 4386,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "items": [
+        "大天使之杖",
+        "珠光护手",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.0872,
+      "count": 14505,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "珠光护手": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "394056",
+      "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_Brawler",
+      "items": [
+        "大天使之杖",
+        "珠光护手",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.3916,
+      "count": 166,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "珠光护手": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "394068",
+      "comp_name": "TFT16_Explorer, TFT16_Bard",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "朔极之矛"
+      ],
+      "avg_placement": 5.7622,
+      "count": 3394,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "朔极之矛": 72
+      }
+    }
+  ]
+}

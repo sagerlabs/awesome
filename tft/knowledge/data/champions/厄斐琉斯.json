@@ -1,0 +1,73 @@
+{
+  "name": "厄斐琉斯",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "tier": "S",
+      "avg_placement": 4.1646
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "tier": "A",
+      "avg_placement": 4.3367
+    },
+    {
+      "cluster_id": "394056",
+      "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_Brawler",
+      "tier": "C",
+      "avg_placement": 4.8979
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "items": [
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 4.0416,
+      "count": 33715,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "items": [
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 4.0394,
+      "count": 33010,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "cluster_id": "394056",
+      "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_Brawler",
+      "items": [
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 4.4771,
+      "count": 262,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "海妖之怒": 72
+      }
+    }
+  ]
+}

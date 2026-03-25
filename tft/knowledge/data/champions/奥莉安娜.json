@@ -1,0 +1,24 @@
+{
+  "name": "奥莉安娜",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394030",
+      "comp_name": "TFT16_Piltover, TFT16_Seraphine",
+      "tier": "A",
+      "avg_placement": 4.2903
+    },
+    {
+      "cluster_id": "394063",
+      "comp_name": "TFT16_Piltover, TFT16_THex",
+      "tier": "D",
+      "avg_placement": 5.2662
+    },
+    {
+      "cluster_id": "394068",
+      "comp_name": "TFT16_Explorer, TFT16_Bard",
+      "tier": "D",
+      "avg_placement": 6.3249
+    }
+  ],
+  "builds": []
+}

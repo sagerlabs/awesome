@@ -1,0 +1,24 @@
+{
+  "name": "璐璐",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "tier": "S",
+      "avg_placement": 3.9397
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "tier": "S",
+      "avg_placement": 4.1393
+    },
+    {
+      "cluster_id": "394060",
+      "comp_name": "TFT16_Yordle, TFT16_Teemo",
+      "tier": "C",
+      "avg_placement": 4.8838
+    }
+  ],
+  "builds": []
+}

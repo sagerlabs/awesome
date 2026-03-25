@@ -1,0 +1,101 @@
+{
+  "name": "正义之手",
+  "priority_list": [
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "comp_tier": "S",
+      "comp_avg": 3.9397,
+      "carry": "菲兹",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394000",
+      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "comp_tier": "S",
+      "comp_avg": 4.0398,
+      "carry": "塞拉斯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 4.1303,
+      "carry": "塞拉斯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1393,
+      "carry": "菲兹",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.1646,
+      "carry": "奈德丽",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "comp_tier": "S",
+      "comp_avg": 4.2031,
+      "carry": "安蓓萨",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "S",
+      "comp_avg": 4.2398,
+      "carry": "塞拉斯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "S",
+      "comp_avg": 4.2398,
+      "carry": "瑟提",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "comp_tier": "A",
+      "comp_avg": 4.2796,
+      "carry": "塞拉斯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "comp_tier": "A",
+      "comp_avg": 4.4303,
+      "carry": "瑟提",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394016",
+      "comp_name": "TFT16_Slayer, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.4319,
+      "carry": "亚托克斯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.4713,
+      "carry": "瑟提",
+      "priority_score": 72
+    }
+  ]
+}

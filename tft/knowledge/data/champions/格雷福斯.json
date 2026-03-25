@@ -1,0 +1,12 @@
+{
+  "name": "格雷福斯",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394054",
+      "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_MissFortune",
+      "tier": "D",
+      "avg_placement": 5.252
+    }
+  ],
+  "builds": []
+}

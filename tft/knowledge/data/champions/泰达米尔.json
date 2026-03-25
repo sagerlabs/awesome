@@ -1,0 +1,51 @@
+{
+  "name": "泰达米尔",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "tier": "A",
+      "avg_placement": 4.463
+    },
+    {
+      "cluster_id": "394052",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Slayer",
+      "tier": "C",
+      "avg_placement": 4.9865
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "items": [
+        "迅击战士纹章",
+        "无尽之刃",
+        "水银"
+      ],
+      "avg_placement": 4.0415,
+      "count": 337,
+      "priority_scores": {
+        "迅击战士纹章": 100,
+        "无尽之刃": 85,
+        "水银": 72
+      }
+    },
+    {
+      "cluster_id": "394052",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Slayer",
+      "items": [
+        "饮血剑",
+        "鬼索的狂暴之刃",
+        "水银"
+      ],
+      "avg_placement": 4.6367,
+      "count": 5761,
+      "priority_scores": {
+        "饮血剑": 100,
+        "鬼索的狂暴之刃": 85,
+        "水银": 72
+      }
+    }
+  ]
+}

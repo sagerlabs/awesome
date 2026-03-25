@@ -1,0 +1,35 @@
+{
+  "name": "崔丝塔娜",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "tier": "S",
+      "avg_placement": 3.9397
+    },
+    {
+      "cluster_id": "394060",
+      "comp_name": "TFT16_Yordle, TFT16_Teemo",
+      "tier": "C",
+      "avg_placement": 4.8838
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394060",
+      "comp_name": "TFT16_Yordle, TFT16_Teemo",
+      "items": [
+        "无尽之刃",
+        "巨人杀手",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.3095,
+      "count": 1105,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "巨人杀手": 85,
+        "朔极之矛": 72
+      }
+    }
+  ]
+}

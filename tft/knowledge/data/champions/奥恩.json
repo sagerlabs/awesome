@@ -1,0 +1,59 @@
+{
+  "name": "奥恩",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "tier": "S",
+      "avg_placement": 3.9968
+    },
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "tier": "S",
+      "avg_placement": 4.1324
+    },
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "tier": "S",
+      "avg_placement": 4.1791
+    },
+    {
+      "cluster_id": "394050",
+      "comp_name": "TFT16_Warden, TFT16_Braum",
+      "tier": "B",
+      "avg_placement": 4.7166
+    },
+    {
+      "cluster_id": "394045",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Nautilus",
+      "tier": "D",
+      "avg_placement": 5.1393
+    },
+    {
+      "cluster_id": "394063",
+      "comp_name": "TFT16_Piltover, TFT16_THex",
+      "tier": "D",
+      "avg_placement": 5.2662
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "items": [
+        "棘刺背心",
+        "坚定之心",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.0574,
+      "count": 749,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "坚定之心": 85,
+        "振奋盔甲": 72
+      }
+    }
+  ]
+}

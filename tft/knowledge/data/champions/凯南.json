@@ -1,0 +1,203 @@
+{
+  "name": "凯南",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "tier": "S",
+      "avg_placement": 3.9397
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "tier": "S",
+      "avg_placement": 4.1393
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "tier": "S",
+      "avg_placement": 4.219
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "tier": "S",
+      "avg_placement": 4.2398
+    },
+    {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "tier": "A",
+      "avg_placement": 4.2977
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "tier": "A",
+      "avg_placement": 4.301
+    },
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "tier": "A",
+      "avg_placement": 4.4091
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "tier": "A",
+      "avg_placement": 4.4303
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "tier": "A",
+      "avg_placement": 4.4713
+    },
+    {
+      "cluster_id": "394017",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Defender",
+      "tier": "B",
+      "avg_placement": 4.6506
+    },
+    {
+      "cluster_id": "394060",
+      "comp_name": "TFT16_Yordle, TFT16_Teemo",
+      "tier": "C",
+      "avg_placement": 4.8838
+    },
+    {
+      "cluster_id": "394066",
+      "comp_name": "TFT16_Ionia, TFT16_Kennen",
+      "tier": "D",
+      "avg_placement": 5.3593
+    },
+    {
+      "cluster_id": "394061",
+      "comp_name": "TFT16_Demacia, TFT16_Garen",
+      "tier": "D",
+      "avg_placement": 5.3918
+    },
+    {
+      "cluster_id": "394065",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Sorcerer",
+      "tier": "D",
+      "avg_placement": 5.7216
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.6274,
+      "count": 424,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "items": [
+        "离子火花",
+        "日炎斗篷",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.8925,
+      "count": 8715,
+      "priority_scores": {
+        "离子火花": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "items": [
+        "离子火花",
+        "日炎斗篷",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.4712,
+      "count": 11387,
+      "priority_scores": {
+        "离子火花": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "394017",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Defender",
+      "items": [
+        "石像鬼石板甲",
+        "日炎斗篷",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.45,
+      "count": 20,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "394060",
+      "comp_name": "TFT16_Yordle, TFT16_Teemo",
+      "items": [
+        "圣盾使的誓约",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 4.184,
+      "count": 288,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "cluster_id": "394066",
+      "comp_name": "TFT16_Ionia, TFT16_Kennen",
+      "items": [
+        "离子火花",
+        "日炎斗篷",
+        "振奋盔甲"
+      ],
+      "avg_placement": 4.6545,
+      "count": 55,
+      "priority_scores": {
+        "离子火花": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "394065",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Sorcerer",
+      "items": [
+        "棘刺背心",
+        "离子火花",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.8205,
+      "count": 39,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "离子火花": 85,
+        "振奋盔甲": 72
+      }
+    }
+  ]
+}

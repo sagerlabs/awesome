@@ -1,0 +1,121 @@
+{
+  "name": "洛里斯",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "tier": "S",
+      "avg_placement": 3.9968
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "tier": "S",
+      "avg_placement": 4.1348
+    },
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "tier": "S",
+      "avg_placement": 4.1646
+    },
+    {
+      "cluster_id": "394030",
+      "comp_name": "TFT16_Piltover, TFT16_Seraphine",
+      "tier": "A",
+      "avg_placement": 4.2903
+    },
+    {
+      "cluster_id": "394021",
+      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Nautilus",
+      "tier": "A",
+      "avg_placement": 4.3745
+    },
+    {
+      "cluster_id": "394021",
+      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Nautilus",
+      "tier": "A",
+      "avg_placement": 4.3745
+    },
+    {
+      "cluster_id": "394035",
+      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Void",
+      "tier": "B",
+      "avg_placement": 4.5318
+    },
+    {
+      "cluster_id": "394050",
+      "comp_name": "TFT16_Warden, TFT16_Braum",
+      "tier": "B",
+      "avg_placement": 4.7166
+    },
+    {
+      "cluster_id": "394039",
+      "comp_name": "TFT16_ShadowIsles, TFT16_Viego",
+      "tier": "C",
+      "avg_placement": 5.0278
+    },
+    {
+      "cluster_id": "394063",
+      "comp_name": "TFT16_Piltover, TFT16_THex",
+      "tier": "D",
+      "avg_placement": 5.2662
+    },
+    {
+      "cluster_id": "394058",
+      "comp_name": "TFT16_Bilgewater, TFT16_Gangplank",
+      "tier": "D",
+      "avg_placement": 5.5941
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394030",
+      "comp_name": "TFT16_Piltover, TFT16_Seraphine",
+      "items": [
+        "石像鬼石板甲",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.3226,
+      "count": 124,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "394021",
+      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Nautilus",
+      "items": [
+        "石像鬼石板甲",
+        "坚定之心",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.8575,
+      "count": 463,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "坚定之心": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "394063",
+      "comp_name": "TFT16_Piltover, TFT16_THex",
+      "items": [
+        "圣盾使的誓约",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.7303,
+      "count": 178,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ]
+}

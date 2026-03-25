@@ -1,0 +1,54 @@
+{
+  "name": "费德提克",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "tier": "S",
+      "avg_placement": 3.9968
+    },
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "tier": "S",
+      "avg_placement": 4.1791
+    },
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "tier": "S",
+      "avg_placement": 4.1962
+    },
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "tier": "S",
+      "avg_placement": 4.2031
+    },
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
+      "tier": "A",
+      "avg_placement": 4.4798
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "tier": "B",
+      "avg_placement": 4.536
+    },
+    {
+      "cluster_id": "394050",
+      "comp_name": "TFT16_Warden, TFT16_Braum",
+      "tier": "B",
+      "avg_placement": 4.7166
+    },
+    {
+      "cluster_id": "394046",
+      "comp_name": "TFT16_Sorcerer, TFT16_Annie",
+      "tier": "D",
+      "avg_placement": 5.1158
+    }
+  ],
+  "builds": []
+}

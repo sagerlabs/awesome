@@ -1,0 +1,29 @@
+{
+  "name": "佛耶戈",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394039",
+      "comp_name": "TFT16_ShadowIsles, TFT16_Viego",
+      "tier": "C",
+      "avg_placement": 5.0278
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394039",
+      "comp_name": "TFT16_ShadowIsles, TFT16_Viego",
+      "items": [
+        "饮血剑",
+        "夜之锋刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.0063,
+      "count": 11903,
+      "priority_scores": {
+        "饮血剑": 100,
+        "夜之锋刃": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ]
+}

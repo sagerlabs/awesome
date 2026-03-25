@@ -1,0 +1,77 @@
+{
+  "name": "最后的轻语",
+  "priority_list": [
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "comp_tier": "S",
+      "comp_avg": 3.9968,
+      "carry": "卡莉丝塔",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1791,
+      "carry": "卢锡安与赛娜",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.1962,
+      "carry": "卢锡安与赛娜",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "comp_tier": "S",
+      "comp_avg": 4.1348,
+      "carry": "金克丝",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "comp_tier": "S",
+      "comp_avg": 4.1759,
+      "carry": "千珏",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394031",
+      "comp_name": "TFT16_Demacia, TFT16_Vayne",
+      "comp_tier": "A",
+      "comp_avg": 4.2635,
+      "carry": "卡莎",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
+      "comp_tier": "A",
+      "comp_avg": 4.314,
+      "carry": "德莱文",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "comp_tier": "A",
+      "comp_avg": 4.3841,
+      "carry": "金克丝",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.463,
+      "carry": "艾希",
+      "priority_score": 85
+    }
+  ]
+}

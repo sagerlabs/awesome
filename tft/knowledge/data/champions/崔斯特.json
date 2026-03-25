@@ -1,0 +1,18 @@
+{
+  "name": "崔斯特",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394045",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Nautilus",
+      "tier": "D",
+      "avg_placement": 5.1393
+    },
+    {
+      "cluster_id": "394058",
+      "comp_name": "TFT16_Bilgewater, TFT16_Gangplank",
+      "tier": "D",
+      "avg_placement": 5.5941
+    }
+  ],
+  "builds": []
+}

@@ -1,0 +1,13 @@
+{
+  "name": "蓝霸符",
+  "priority_list": [
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
+      "comp_tier": "A",
+      "comp_avg": 4.4798,
+      "carry": "萨勒芬妮",
+      "priority_score": 100
+    }
+  ]
+}

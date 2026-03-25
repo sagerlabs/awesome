@@ -1,0 +1,79 @@
+{
+  "name": "卑尔维斯",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "tier": "A",
+      "avg_placement": 4.4303
+    },
+    {
+      "cluster_id": "394016",
+      "comp_name": "TFT16_Slayer, TFT16_Yone",
+      "tier": "A",
+      "avg_placement": 4.4319
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "tier": "B",
+      "avg_placement": 4.536
+    },
+    {
+      "cluster_id": "394020",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_ChoGath",
+      "tier": "C",
+      "avg_placement": 4.8302
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394016",
+      "comp_name": "TFT16_Slayer, TFT16_Yone",
+      "items": [
+        "巨人杀手",
+        "水银",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.6768,
+      "count": 885,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "水银": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "items": [
+        "巨人杀手",
+        "水银",
+        "海妖之怒"
+      ],
+      "avg_placement": 4.0726,
+      "count": 3979,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "水银": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "cluster_id": "394020",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_ChoGath",
+      "items": [
+        "巨人杀手",
+        "水银",
+        "海妖之怒"
+      ],
+      "avg_placement": 4.3112,
+      "count": 1793,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "水银": 85,
+        "海妖之怒": 72
+      }
+    }
+  ]
+}

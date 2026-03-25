@@ -1,0 +1,245 @@
+{
+  "name": "振奋盔甲",
+  "priority_list": [
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "comp_tier": "A",
+      "comp_avg": 4.3841,
+      "carry": "蒙多医生",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "comp_tier": "S",
+      "comp_avg": 3.9397,
+      "carry": "凯南",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "comp_tier": "S",
+      "comp_avg": 4.1348,
+      "carry": "布隆",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.1962,
+      "carry": "斯卡纳",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "S",
+      "comp_avg": 4.2398,
+      "carry": "孙悟空",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394031",
+      "comp_name": "TFT16_Demacia, TFT16_Vayne",
+      "comp_tier": "A",
+      "comp_avg": 4.2635,
+      "carry": "斯维因",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.3367,
+      "carry": "孙悟空",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "comp_tier": "A",
+      "comp_avg": 4.4091,
+      "carry": "孙悟空",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "comp_tier": "A",
+      "comp_avg": 4.4303,
+      "carry": "孙悟空",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394016",
+      "comp_name": "TFT16_Slayer, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.4319,
+      "carry": "孙悟空",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.463,
+      "carry": "德莱厄斯",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.463,
+      "carry": "瑟庄妮",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "comp_tier": "S",
+      "comp_avg": 3.9397,
+      "carry": "可酷伯与悠米",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "comp_tier": "S",
+      "comp_avg": 3.9968,
+      "carry": "布隆",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "comp_tier": "S",
+      "comp_avg": 3.9968,
+      "carry": "奥恩",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394003",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "comp_tier": "S",
+      "comp_avg": 4.0274,
+      "carry": "斯维因",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "comp_tier": "S",
+      "comp_avg": 4.1348,
+      "carry": "瑟庄妮",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1393,
+      "carry": "凯南",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.1646,
+      "carry": "妮蔻",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "comp_tier": "S",
+      "comp_avg": 4.1759,
+      "carry": "辛吉德",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.219,
+      "carry": "孙悟空",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "comp_tier": "A",
+      "comp_avg": 4.2796,
+      "carry": "塔里克",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394030",
+      "comp_name": "TFT16_Piltover, TFT16_Seraphine",
+      "comp_tier": "A",
+      "comp_avg": 4.2903,
+      "carry": "布隆",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.301,
+      "carry": "凯南",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.301,
+      "carry": "孙悟空",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394021",
+      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Nautilus",
+      "comp_tier": "A",
+      "comp_avg": 4.3745,
+      "carry": "诺提勒斯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394021",
+      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Nautilus",
+      "comp_tier": "A",
+      "comp_avg": 4.3745,
+      "carry": "洛里斯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "comp_tier": "A",
+      "comp_avg": 4.3841,
+      "carry": "辛吉德",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.4713,
+      "carry": "孙悟空",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
+      "comp_tier": "A",
+      "comp_avg": 4.4798,
+      "carry": "斯维因",
+      "priority_score": 72
+    }
+  ]
+}

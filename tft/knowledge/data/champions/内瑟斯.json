@@ -1,0 +1,51 @@
+{
+  "name": "内瑟斯",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "tier": "A",
+      "avg_placement": 4.2768
+    },
+    {
+      "cluster_id": "394036",
+      "comp_name": "TFT16_Magus, TFT16_Nasus",
+      "tier": "B",
+      "avg_placement": 4.6315
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "items": [
+        "巨龙之爪",
+        "石像鬼石板甲",
+        "坚定之心"
+      ],
+      "avg_placement": 3.6291,
+      "count": 151,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 85,
+        "坚定之心": 72
+      }
+    },
+    {
+      "cluster_id": "394036",
+      "comp_name": "TFT16_Magus, TFT16_Nasus",
+      "items": [
+        "棘刺背心",
+        "日炎斗篷",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.8438,
+      "count": 192,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
+      }
+    }
+  ]
+}

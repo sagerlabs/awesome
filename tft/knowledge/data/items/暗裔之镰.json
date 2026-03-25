@@ -1,0 +1,13 @@
+{
+  "name": "暗裔之镰",
+  "priority_list": [
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "comp_tier": "A",
+      "comp_avg": 4.4091,
+      "carry": "赵信",
+      "priority_score": 100
+    }
+  ]
+}

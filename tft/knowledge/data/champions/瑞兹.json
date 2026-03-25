@@ -1,0 +1,266 @@
+{
+  "name": "瑞兹",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394003",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "tier": "S",
+      "avg_placement": 4.0274
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "tier": "S",
+      "avg_placement": 4.219
+    },
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "tier": "A",
+      "avg_placement": 4.2768
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "tier": "A",
+      "avg_placement": 4.2796
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "tier": "A",
+      "avg_placement": 4.4713
+    },
+    {
+      "cluster_id": "394047",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Taric",
+      "tier": "C",
+      "avg_placement": 5.0748
+    },
+    {
+      "cluster_id": "394053",
+      "comp_name": "TFT16_Void, TFT16_RiftHerald",
+      "tier": "D",
+      "avg_placement": 5.1368
+    },
+    {
+      "cluster_id": "394066",
+      "comp_name": "TFT16_Ionia, TFT16_Kennen",
+      "tier": "D",
+      "avg_placement": 5.3593
+    },
+    {
+      "cluster_id": "394061",
+      "comp_name": "TFT16_Demacia, TFT16_Garen",
+      "tier": "D",
+      "avg_placement": 5.3918
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394003",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.0225,
+      "count": 1646,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.3435,
+      "count": 294,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
+      ],
+      "avg_placement": 2.9869,
+      "count": 8717,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.0246,
+      "count": 813,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "items": [
+        "适应性头盔",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "avg_placement": 2.8132,
+      "count": 589,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "莫雷洛秘典": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.5738,
+      "count": 1159,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.6029,
+      "count": 491,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "394050",
+      "comp_name": "TFT16_Warden, TFT16_Braum",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
+      ],
+      "avg_placement": 3.9586,
+      "count": 169,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "cluster_id": "394047",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Taric",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
+      ],
+      "avg_placement": 4.1166,
+      "count": 489,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "cluster_id": "394053",
+      "comp_name": "TFT16_Void, TFT16_RiftHerald",
+      "items": [
+        "珠光护手",
+        "灭世者的死亡之帽",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.2143,
+      "count": 14,
+      "priority_scores": {
+        "珠光护手": 100,
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "394043",
+      "comp_name": "TFT16_Demacia, TFT16_Taric",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.4534,
+      "count": 483,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "394066",
+      "comp_name": "TFT16_Ionia, TFT16_Kennen",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 4.3333,
+      "count": 696,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "394061",
+      "comp_name": "TFT16_Demacia, TFT16_Garen",
+      "items": [
+        "大天使之杖",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.1923,
+      "count": 26,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    }
+  ]
+}

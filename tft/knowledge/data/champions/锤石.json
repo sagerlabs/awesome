@@ -1,0 +1,51 @@
+{
+  "name": "锤石",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "tier": "S",
+      "avg_placement": 3.9968
+    },
+    {
+      "cluster_id": "394039",
+      "comp_name": "TFT16_ShadowIsles, TFT16_Viego",
+      "tier": "C",
+      "avg_placement": 5.0278
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "items": [
+        "夜之锋刃",
+        "离子火花",
+        "莫雷洛秘典"
+      ],
+      "avg_placement": 3.6315,
+      "count": 48261,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "离子火花": 85,
+        "莫雷洛秘典": 72
+      }
+    },
+    {
+      "cluster_id": "394039",
+      "comp_name": "TFT16_ShadowIsles, TFT16_Viego",
+      "items": [
+        "夜之锋刃",
+        "离子火花",
+        "莫雷洛秘典"
+      ],
+      "avg_placement": 4.0783,
+      "count": 2351,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "离子火花": 85,
+        "莫雷洛秘典": 72
+      }
+    }
+  ]
+}

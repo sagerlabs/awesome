@@ -1,0 +1,12 @@
+{
+  "name": "雷克塞",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394020",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_ChoGath",
+      "tier": "C",
+      "avg_placement": 4.8302
+    }
+  ],
+  "builds": []
+}

@@ -1,0 +1,12 @@
+{
+  "name": "艾尼维亚",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "tier": "S",
+      "avg_placement": 4.1324
+    }
+  ],
+  "builds": []
+}

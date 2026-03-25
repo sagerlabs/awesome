@@ -1,0 +1,42 @@
+{
+  "name": "贝蕾亚",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "tier": "S",
+      "avg_placement": 4.2031
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "tier": "A",
+      "avg_placement": 4.463
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "tier": "B",
+      "avg_placement": 4.536
+    },
+    {
+      "cluster_id": "394051",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Draven",
+      "tier": "B",
+      "avg_placement": 4.7486
+    },
+    {
+      "cluster_id": "394052",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Slayer",
+      "tier": "C",
+      "avg_placement": 4.9865
+    },
+    {
+      "cluster_id": "394058",
+      "comp_name": "TFT16_Bilgewater, TFT16_Gangplank",
+      "tier": "D",
+      "avg_placement": 5.5941
+    }
+  ],
+  "builds": []
+}

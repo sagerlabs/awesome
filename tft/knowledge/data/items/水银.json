@@ -1,0 +1,29 @@
+{
+  "name": "水银",
+  "priority_list": [
+    {
+      "cluster_id": "394016",
+      "comp_name": "TFT16_Slayer, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.4319,
+      "carry": "亚托克斯",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394016",
+      "comp_name": "TFT16_Slayer, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.4319,
+      "carry": "卑尔维斯",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.463,
+      "carry": "泰达米尔",
+      "priority_score": 72
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "格温",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "tier": "S",
+      "avg_placement": 3.9968
+    },
+    {
+      "cluster_id": "394039",
+      "comp_name": "TFT16_ShadowIsles, TFT16_Viego",
+      "tier": "C",
+      "avg_placement": 5.0278
+    }
+  ],
+  "builds": []
+}

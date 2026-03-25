@@ -1,0 +1,101 @@
+{
+  "name": "吉格斯",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "tier": "S",
+      "avg_placement": 4.1393
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "tier": "S",
+      "avg_placement": 4.1759
+    },
+    {
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "tier": "A",
+      "avg_placement": 4.3679
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "tier": "A",
+      "avg_placement": 4.4713
+    },
+    {
+      "cluster_id": "394042",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Juggernaut",
+      "tier": "C",
+      "avg_placement": 4.8065
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "items": [
+        "鬼索的狂暴之刃",
+        "珠光护手",
+        "虚空之杖"
+      ],
+      "avg_placement": 2.9053,
+      "count": 5650,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "珠光护手": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "items": [
+        "大天使之杖",
+        "鬼索的狂暴之刃",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 2.9011,
+      "count": 91,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "鬼索的狂暴之刃": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "items": [
+        "鬼索的狂暴之刃",
+        "珠光护手",
+        "纳什之牙"
+      ],
+      "avg_placement": 3.7031,
+      "count": 1374,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "珠光护手": 85,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "cluster_id": "394042",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Juggernaut",
+      "items": [
+        "鬼索的狂暴之刃",
+        "珠光护手",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.7036,
+      "count": 280,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "珠光护手": 85,
+        "虚空之杖": 72
+      }
+    }
+  ]
+}

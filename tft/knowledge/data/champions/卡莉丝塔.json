@@ -1,0 +1,51 @@
+{
+  "name": "卡莉丝塔",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "tier": "S",
+      "avg_placement": 3.9968
+    },
+    {
+      "cluster_id": "394039",
+      "comp_name": "TFT16_ShadowIsles, TFT16_Viego",
+      "tier": "C",
+      "avg_placement": 5.0278
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "items": [
+        "最后的轻语",
+        "强袭者的链枷",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.9122,
+      "count": 79102,
+      "priority_scores": {
+        "最后的轻语": 100,
+        "强袭者的链枷": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "394039",
+      "comp_name": "TFT16_ShadowIsles, TFT16_Viego",
+      "items": [
+        "最后的轻语",
+        "强袭者的链枷",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.6059,
+      "count": 6620,
+      "priority_scores": {
+        "最后的轻语": 100,
+        "强袭者的链枷": 85,
+        "朔极之矛": 72
+      }
+    }
+  ]
+}

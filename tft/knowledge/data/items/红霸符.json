@@ -1,0 +1,21 @@
+{
+  "name": "红霸符",
+  "priority_list": [
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1791,
+      "carry": "卢锡安与赛娜",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.1962,
+      "carry": "卢锡安与赛娜",
+      "priority_score": 85
+    }
+  ]
+}

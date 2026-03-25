@@ -1,0 +1,18 @@
+{
+  "name": "凯特琳",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "tier": "A",
+      "avg_placement": 4.4713
+    },
+    {
+      "cluster_id": "394063",
+      "comp_name": "TFT16_Piltover, TFT16_THex",
+      "tier": "D",
+      "avg_placement": 5.2662
+    }
+  ],
+  "builds": []
+}

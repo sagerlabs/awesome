@@ -1,0 +1,71 @@
+{
+  "name": "奥瑞利安·索尔",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "tier": "S",
+      "avg_placement": 4.1303
+    },
+    {
+      "cluster_id": "394036",
+      "comp_name": "TFT16_Magus, TFT16_Nasus",
+      "tier": "B",
+      "avg_placement": 4.6315
+    },
+    {
+      "cluster_id": "394048",
+      "comp_name": "TFT16_Sorcerer, TFT16_Diana",
+      "tier": "B",
+      "avg_placement": 4.7197
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
+      ],
+      "avg_placement": 3.6402,
+      "count": 4063,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "cluster_id": "394048",
+      "comp_name": "TFT16_Sorcerer, TFT16_Diana",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
+      ],
+      "avg_placement": 4.7345,
+      "count": 17581,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "cluster_id": "394057",
+      "comp_name": "TFT16_Piltover, TFT16_Zoe",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.8716,
+      "count": 2048,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "朔极之矛": 72
+      }
+    }
+  ]
+}

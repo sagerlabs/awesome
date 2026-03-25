@@ -1,0 +1,85 @@
+{
+  "name": "海妖之怒",
+  "priority_list": [
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "comp_tier": "S",
+      "comp_avg": 4.1348,
+      "carry": "金克丝",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.1646,
+      "carry": "厄斐琉斯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "comp_tier": "S",
+      "comp_avg": 4.1759,
+      "carry": "千珏",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.1962,
+      "carry": "千珏",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394031",
+      "comp_name": "TFT16_Demacia, TFT16_Vayne",
+      "comp_tier": "A",
+      "comp_avg": 4.2635,
+      "carry": "薇恩",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
+      "comp_tier": "A",
+      "comp_avg": 4.314,
+      "carry": "德莱文",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.3367,
+      "carry": "厄斐琉斯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "comp_tier": "A",
+      "comp_avg": 4.3841,
+      "carry": "金克丝",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394016",
+      "comp_name": "TFT16_Slayer, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.4319,
+      "carry": "卑尔维斯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.463,
+      "carry": "艾希",
+      "priority_score": 72
+    }
+  ]
+}

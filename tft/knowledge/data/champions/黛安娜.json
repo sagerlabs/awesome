@@ -1,0 +1,57 @@
+{
+  "name": "黛安娜",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394048",
+      "comp_name": "TFT16_Sorcerer, TFT16_Diana",
+      "tier": "B",
+      "avg_placement": 4.7197
+    },
+    {
+      "cluster_id": "394057",
+      "comp_name": "TFT16_Piltover, TFT16_Zoe",
+      "tier": "D",
+      "avg_placement": 5.2442
+    },
+    {
+      "cluster_id": "394057",
+      "comp_name": "TFT16_Piltover, TFT16_Zoe",
+      "tier": "D",
+      "avg_placement": 5.2442
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394048",
+      "comp_name": "TFT16_Sorcerer, TFT16_Diana",
+      "items": [
+        "饮血剑",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.4482,
+      "count": 5004,
+      "priority_scores": {
+        "饮血剑": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "394057",
+      "comp_name": "TFT16_Piltover, TFT16_Zoe",
+      "items": [
+        "饮血剑",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.5242,
+      "count": 517,
+      "priority_scores": {
+        "饮血剑": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ]
+}

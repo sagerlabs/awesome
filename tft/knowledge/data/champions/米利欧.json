@@ -1,0 +1,41 @@
+{
+  "name": "米利欧",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394059",
+      "comp_name": "TFT16_Explorer, TFT16_Lissandra",
+      "tier": "D",
+      "avg_placement": 5.3876
+    },
+    {
+      "cluster_id": "394067",
+      "comp_name": "TFT16_Explorer, TFT16_Nidalee",
+      "tier": "D",
+      "avg_placement": 5.7087
+    },
+    {
+      "cluster_id": "394068",
+      "comp_name": "TFT16_Explorer, TFT16_Bard",
+      "tier": "D",
+      "avg_placement": 6.3249
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394068",
+      "comp_name": "TFT16_Explorer, TFT16_Bard",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 5.6422,
+      "count": 218,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    }
+  ]
+}

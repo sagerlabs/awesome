@@ -1,0 +1,123 @@
+{
+  "name": "安蓓萨",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "tier": "S",
+      "avg_placement": 4.1962
+    },
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "tier": "S",
+      "avg_placement": 4.2031
+    },
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
+      "tier": "A",
+      "avg_placement": 4.4798
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "tier": "B",
+      "avg_placement": 4.536
+    },
+    {
+      "cluster_id": "394051",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Draven",
+      "tier": "B",
+      "avg_placement": 4.7486
+    },
+    {
+      "cluster_id": "394058",
+      "comp_name": "TFT16_Bilgewater, TFT16_Gangplank",
+      "tier": "D",
+      "avg_placement": 5.5941
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "items": [
+        "死亡之刃",
+        "夜之锋刃",
+        "正义之手"
+      ],
+      "avg_placement": 3.946,
+      "count": 2669,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "夜之锋刃": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
+      "items": [
+        "饮血剑",
+        "夜之锋刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.902,
+      "count": 153,
+      "priority_scores": {
+        "饮血剑": 100,
+        "夜之锋刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "items": [
+        "死亡之刃",
+        "夜之锋刃",
+        "正义之手"
+      ],
+      "avg_placement": 3.8653,
+      "count": 1069,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "夜之锋刃": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "cluster_id": "394051",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Draven",
+      "items": [
+        "饮血剑",
+        "夜之锋刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.9432,
+      "count": 88,
+      "priority_scores": {
+        "饮血剑": 100,
+        "夜之锋刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "394058",
+      "comp_name": "TFT16_Bilgewater, TFT16_Gangplank",
+      "items": [
+        "水银",
+        "斯特拉克的挑战护手",
+        "正义之手"
+      ],
+      "avg_placement": 3.6829,
+      "count": 41,
+      "priority_scores": {
+        "水银": 100,
+        "斯特拉克的挑战护手": 85,
+        "正义之手": 72
+      }
+    }
+  ]
+}

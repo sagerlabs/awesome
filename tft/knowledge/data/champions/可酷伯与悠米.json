@@ -1,0 +1,107 @@
+{
+  "name": "可酷伯与悠米",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "tier": "S",
+      "avg_placement": 3.9397
+    },
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "tier": "S",
+      "avg_placement": 4.1324
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "tier": "S",
+      "avg_placement": 4.1393
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "tier": "S",
+      "avg_placement": 4.219
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "tier": "S",
+      "avg_placement": 4.2398
+    },
+    {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "tier": "A",
+      "avg_placement": 4.2977
+    },
+    {
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
+      "tier": "A",
+      "avg_placement": 4.314
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "tier": "A",
+      "avg_placement": 4.3367
+    },
+    {
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "tier": "A",
+      "avg_placement": 4.3679
+    },
+    {
+      "cluster_id": "394017",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Defender",
+      "tier": "B",
+      "avg_placement": 4.6506
+    },
+    {
+      "cluster_id": "394060",
+      "comp_name": "TFT16_Yordle, TFT16_Teemo",
+      "tier": "C",
+      "avg_placement": 4.8838
+    },
+    {
+      "cluster_id": "394056",
+      "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_Brawler",
+      "tier": "C",
+      "avg_placement": 4.8979
+    },
+    {
+      "cluster_id": "394047",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Taric",
+      "tier": "C",
+      "avg_placement": 5.0748
+    },
+    {
+      "cluster_id": "394062",
+      "comp_name": "TFT16_Brawler, TFT16_Sion",
+      "tier": "D",
+      "avg_placement": 5.6158
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "items": [
+        "巨龙之爪",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.4423,
+      "count": 52,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    }
+  ]
+}

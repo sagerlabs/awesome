@@ -1,0 +1,103 @@
+{
+  "name": "瑟庄妮",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "tier": "S",
+      "avg_placement": 4.1324
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "tier": "S",
+      "avg_placement": 4.1348
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "tier": "S",
+      "avg_placement": 4.219
+    },
+    {
+      "cluster_id": "394030",
+      "comp_name": "TFT16_Piltover, TFT16_Seraphine",
+      "tier": "A",
+      "avg_placement": 4.2903
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "tier": "A",
+      "avg_placement": 4.463
+    },
+    {
+      "cluster_id": "394050",
+      "comp_name": "TFT16_Warden, TFT16_Braum",
+      "tier": "B",
+      "avg_placement": 4.7166
+    },
+    {
+      "cluster_id": "394052",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Slayer",
+      "tier": "C",
+      "avg_placement": 4.9865
+    },
+    {
+      "cluster_id": "394059",
+      "comp_name": "TFT16_Explorer, TFT16_Lissandra",
+      "tier": "D",
+      "avg_placement": 5.3876
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "items": [
+        "圣盾使的誓约",
+        "日炎斗篷",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.6639,
+      "count": 12620,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "items": [
+        "日炎斗篷",
+        "振奋盔甲",
+        "薄暮法袍"
+      ],
+      "avg_placement": 3.8343,
+      "count": 356,
+      "priority_scores": {
+        "日炎斗篷": 100,
+        "振奋盔甲": 85,
+        "薄暮法袍": 72
+      }
+    },
+    {
+      "cluster_id": "394052",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Slayer",
+      "items": [
+        "圣盾使的誓约",
+        "日炎斗篷",
+        "薄暮法袍"
+      ],
+      "avg_placement": 4.1165,
+      "count": 635,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "日炎斗篷": 85,
+        "薄暮法袍": 72
+      }
+    }
+  ]
+}

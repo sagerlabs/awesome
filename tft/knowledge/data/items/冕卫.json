@@ -1,0 +1,13 @@
+{
+  "name": "冕卫",
+  "priority_list": [
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "comp_tier": "A",
+      "comp_avg": 4.3841,
+      "carry": "辛吉德",
+      "priority_score": 100
+    }
+  ]
+}

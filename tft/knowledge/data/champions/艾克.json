@@ -1,0 +1,35 @@
+{
+  "name": "艾克",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "tier": "A",
+      "avg_placement": 4.3841
+    },
+    {
+      "cluster_id": "394055",
+      "comp_name": "TFT16_Zaun, TFT16_Ekko",
+      "tier": "C",
+      "avg_placement": 5.0301
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394055",
+      "comp_name": "TFT16_Zaun, TFT16_Ekko",
+      "items": [
+        "饮血剑",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.7048,
+      "count": 2703,
+      "priority_scores": {
+        "饮血剑": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "亚恒",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "tier": "A",
+      "avg_placement": 4.4091
+    },
+    {
+      "cluster_id": "394034",
+      "comp_name": "TFT16_Augment_XinZhaoCarry",
+      "tier": "B",
+      "avg_placement": 4.6723
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "items": [
+        "饮血剑",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.6239,
+      "count": 6108,
+      "priority_scores": {
+        "饮血剑": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "394034",
+      "comp_name": "TFT16_Augment_XinZhaoCarry",
+      "items": [
+        "饮血剑",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.5628,
+      "count": 11166,
+      "priority_scores": {
+        "饮血剑": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ]
+}

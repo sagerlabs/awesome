@@ -1,0 +1,22 @@
+{
+  "name": "泽拉斯",
+  "appear_in_comps": [],
+  "builds": [
+    {
+      "cluster_id": "394036",
+      "comp_name": "TFT16_Magus, TFT16_Nasus",
+      "items": [
+        "珠光护手",
+        "灭世者的死亡之帽",
+        "朔极之矛"
+      ],
+      "avg_placement": 2.6,
+      "count": 40,
+      "priority_scores": {
+        "珠光护手": 100,
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
+      }
+    }
+  ]
+}

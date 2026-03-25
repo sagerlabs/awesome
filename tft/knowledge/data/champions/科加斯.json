@@ -1,0 +1,42 @@
+{
+  "name": "科加斯",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "tier": "A",
+      "avg_placement": 4.3679
+    },
+    {
+      "cluster_id": "394021",
+      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Nautilus",
+      "tier": "A",
+      "avg_placement": 4.3745
+    },
+    {
+      "cluster_id": "394035",
+      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Void",
+      "tier": "B",
+      "avg_placement": 4.5318
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "tier": "B",
+      "avg_placement": 4.536
+    },
+    {
+      "cluster_id": "394042",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Juggernaut",
+      "tier": "C",
+      "avg_placement": 4.8065
+    },
+    {
+      "cluster_id": "394020",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_ChoGath",
+      "tier": "C",
+      "avg_placement": 4.8302
+    }
+  ],
+  "builds": []
+}

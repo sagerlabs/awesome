@@ -1,0 +1,45 @@
+{
+  "name": "维迦",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "tier": "S",
+      "avg_placement": 4.1393
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "items": [
+        "狙神纹章",
+        "灭世者的死亡之帽",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.3731,
+      "count": 788,
+      "priority_scores": {
+        "狙神纹章": 100,
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "394060",
+      "comp_name": "TFT16_Yordle, TFT16_Teemo",
+      "items": [
+        "灭世者的死亡之帽",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 4.3561,
+      "count": 879,
+      "priority_scores": {
+        "灭世者的死亡之帽": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    }
+  ]
+}

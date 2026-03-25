@@ -1,0 +1,13 @@
+{
+  "name": "狙神纹章",
+  "priority_list": [
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1393,
+      "carry": "维迦",
+      "priority_score": 100
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "name": "阿兹尔",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394003",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "tier": "S",
+      "avg_placement": 4.0274
+    },
+    {
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "tier": "S",
+      "avg_placement": 4.1303
+    },
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "tier": "A",
+      "avg_placement": 4.2768
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "tier": "A",
+      "avg_placement": 4.2796
+    },
+    {
+      "cluster_id": "394030",
+      "comp_name": "TFT16_Piltover, TFT16_Seraphine",
+      "tier": "A",
+      "avg_placement": 4.2903
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "tier": "B",
+      "avg_placement": 4.5267
+    },
+    {
+      "cluster_id": "394036",
+      "comp_name": "TFT16_Magus, TFT16_Nasus",
+      "tier": "B",
+      "avg_placement": 4.6315
+    },
+    {
+      "cluster_id": "394048",
+      "comp_name": "TFT16_Sorcerer, TFT16_Diana",
+      "tier": "B",
+      "avg_placement": 4.7197
+    },
+    {
+      "cluster_id": "394061",
+      "comp_name": "TFT16_Demacia, TFT16_Garen",
+      "tier": "D",
+      "avg_placement": 5.3918
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "虚空之杖"
+      ],
+      "avg_placement": 4.0603,
+      "count": 232,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "394036",
+      "comp_name": "TFT16_Magus, TFT16_Nasus",
+      "items": [
+        "鬼索的狂暴之刃",
+        "珠光护手",
+        "巨人杀手"
+      ],
+      "avg_placement": 4.2872,
+      "count": 484,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "珠光护手": 85,
+        "巨人杀手": 72
+      }
+    },
+    {
+      "cluster_id": "394050",
+      "comp_name": "TFT16_Warden, TFT16_Braum",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.1667,
+      "count": 18,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "394053",
+      "comp_name": "TFT16_Void, TFT16_RiftHerald",
+      "items": [
+        "大天使之杖",
+        "鬼索的狂暴之刃",
+        "珠光护手"
+      ],
+      "avg_placement": 4.1818,
+      "count": 11,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "鬼索的狂暴之刃": 85,
+        "珠光护手": 72
+      }
+    },
+    {
+      "cluster_id": "394061",
+      "comp_name": "TFT16_Demacia, TFT16_Garen",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "虚空之杖"
+      ],
+      "avg_placement": 4.5833,
+      "count": 24,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "虚空之杖": 72
+      }
+    }
+  ]
+}

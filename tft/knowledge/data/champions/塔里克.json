@@ -1,0 +1,237 @@
+{
+  "name": "塔里克",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394003",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "tier": "S",
+      "avg_placement": 4.0274
+    },
+    {
+      "cluster_id": "394002",
+      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "tier": "S",
+      "avg_placement": 4.037
+    },
+    {
+      "cluster_id": "394000",
+      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "tier": "S",
+      "avg_placement": 4.0398
+    },
+    {
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "tier": "S",
+      "avg_placement": 4.1303
+    },
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "tier": "S",
+      "avg_placement": 4.1324
+    },
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "tier": "S",
+      "avg_placement": 4.1646
+    },
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "tier": "S",
+      "avg_placement": 4.1791
+    },
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "tier": "S",
+      "avg_placement": 4.1962
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "tier": "S",
+      "avg_placement": 4.219
+    },
+    {
+      "cluster_id": "394031",
+      "comp_name": "TFT16_Demacia, TFT16_Vayne",
+      "tier": "A",
+      "avg_placement": 4.2635
+    },
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "tier": "A",
+      "avg_placement": 4.2768
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "tier": "A",
+      "avg_placement": 4.2796
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "tier": "A",
+      "avg_placement": 4.4713
+    },
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
+      "tier": "A",
+      "avg_placement": 4.4798
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "tier": "B",
+      "avg_placement": 4.5267
+    },
+    {
+      "cluster_id": "394038",
+      "comp_name": "TFT16_Ionia, TFT16_Yunara",
+      "tier": "B",
+      "avg_placement": 4.5979
+    },
+    {
+      "cluster_id": "394036",
+      "comp_name": "TFT16_Magus, TFT16_Nasus",
+      "tier": "B",
+      "avg_placement": 4.6315
+    },
+    {
+      "cluster_id": "394048",
+      "comp_name": "TFT16_Sorcerer, TFT16_Diana",
+      "tier": "B",
+      "avg_placement": 4.7197
+    },
+    {
+      "cluster_id": "394047",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Taric",
+      "tier": "C",
+      "avg_placement": 5.0748
+    },
+    {
+      "cluster_id": "394046",
+      "comp_name": "TFT16_Sorcerer, TFT16_Annie",
+      "tier": "D",
+      "avg_placement": 5.1158
+    },
+    {
+      "cluster_id": "394043",
+      "comp_name": "TFT16_Demacia, TFT16_Taric",
+      "tier": "D",
+      "avg_placement": 5.1958
+    },
+    {
+      "cluster_id": "394057",
+      "comp_name": "TFT16_Piltover, TFT16_Zoe",
+      "tier": "D",
+      "avg_placement": 5.2442
+    },
+    {
+      "cluster_id": "394057",
+      "comp_name": "TFT16_Piltover, TFT16_Zoe",
+      "tier": "D",
+      "avg_placement": 5.2442
+    },
+    {
+      "cluster_id": "394066",
+      "comp_name": "TFT16_Ionia, TFT16_Kennen",
+      "tier": "D",
+      "avg_placement": 5.3593
+    },
+    {
+      "cluster_id": "394061",
+      "comp_name": "TFT16_Demacia, TFT16_Garen",
+      "tier": "D",
+      "avg_placement": 5.3918
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "items": [
+        "棘刺背心",
+        "巨龙之爪",
+        "离子火花"
+      ],
+      "avg_placement": 3.3881,
+      "count": 134,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
+        "离子火花": 72
+      }
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "items": [
+        "离子火花",
+        "日炎斗篷",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.8316,
+      "count": 475,
+      "priority_scores": {
+        "离子火花": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "394048",
+      "comp_name": "TFT16_Sorcerer, TFT16_Diana",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.3812,
+      "count": 1343,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "394047",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Taric",
+      "items": [
+        "弗雷尔卓德纹章",
+        "日炎斗篷",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.069,
+      "count": 29,
+      "priority_scores": {
+        "弗雷尔卓德纹章": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "394043",
+      "comp_name": "TFT16_Demacia, TFT16_Taric",
+      "items": [
+        "巨龙之爪",
+        "坚定之心",
+        "日炎斗篷"
+      ],
+      "avg_placement": 4.4211,
+      "count": 190,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "坚定之心": 85,
+        "日炎斗篷": 72
+      }
+    }
+  ]
+}

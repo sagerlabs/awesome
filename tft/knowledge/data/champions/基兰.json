@@ -1,0 +1,63 @@
+{
+  "name": "基兰",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "tier": "S",
+      "avg_placement": 4.1324
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "tier": "S",
+      "avg_placement": 4.2398
+    },
+    {
+      "cluster_id": "394049",
+      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Poppy",
+      "tier": "C",
+      "avg_placement": 4.8682
+    },
+    {
+      "cluster_id": "394064",
+      "comp_name": "TFT16_Demacia, TFT16_JarvanIV",
+      "tier": "D",
+      "avg_placement": 6.1148
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.3988,
+      "count": 1783,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "394049",
+      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Poppy",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.2092,
+      "count": 1171,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    }
+  ]
+}

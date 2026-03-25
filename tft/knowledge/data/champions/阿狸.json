@@ -1,0 +1,104 @@
+{
+  "name": "阿狸",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "tier": "S",
+      "avg_placement": 4.2398
+    },
+    {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "tier": "A",
+      "avg_placement": 4.2977
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "tier": "A",
+      "avg_placement": 4.301
+    },
+    {
+      "cluster_id": "394038",
+      "comp_name": "TFT16_Ionia, TFT16_Yunara",
+      "tier": "B",
+      "avg_placement": 4.5979
+    },
+    {
+      "cluster_id": "394017",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Defender",
+      "tier": "B",
+      "avg_placement": 4.6506
+    },
+    {
+      "cluster_id": "394065",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Sorcerer",
+      "tier": "D",
+      "avg_placement": 5.7216
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
+      ],
+      "avg_placement": 3.7733,
+      "count": 2903,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
+      ],
+      "avg_placement": 3.8796,
+      "count": 52049,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "cluster_id": "394017",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Defender",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
+      ],
+      "avg_placement": 4.035,
+      "count": 1515,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "cluster_id": "394065",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Sorcerer",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.5811,
+      "count": 635,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "强袭者的链枷": 72
+      }
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "name": "斯卡纳",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "tier": "S",
+      "avg_placement": 4.1962
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "tier": "B",
+      "avg_placement": 4.5267
+    },
+    {
+      "cluster_id": "394059",
+      "comp_name": "TFT16_Explorer, TFT16_Lissandra",
+      "tier": "D",
+      "avg_placement": 5.3876
+    },
+    {
+      "cluster_id": "394067",
+      "comp_name": "TFT16_Explorer, TFT16_Nidalee",
+      "tier": "D",
+      "avg_placement": 5.7087
+    },
+    {
+      "cluster_id": "394068",
+      "comp_name": "TFT16_Explorer, TFT16_Bard",
+      "tier": "D",
+      "avg_placement": 6.3249
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "items": [
+        "日炎斗篷",
+        "振奋盔甲",
+        "薄暮法袍"
+      ],
+      "avg_placement": 3.8252,
+      "count": 2866,
+      "priority_scores": {
+        "日炎斗篷": 100,
+        "振奋盔甲": 85,
+        "薄暮法袍": 72
+      }
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "items": [
+        "巨龙之爪",
+        "日炎斗篷",
+        "薄暮法袍"
+      ],
+      "avg_placement": 3.8116,
+      "count": 69,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "日炎斗篷": 85,
+        "薄暮法袍": 72
+      }
+    },
+    {
+      "cluster_id": "394059",
+      "comp_name": "TFT16_Explorer, TFT16_Lissandra",
+      "items": [
+        "巨龙之爪",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 4.5442,
+      "count": 147,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "cluster_id": "394067",
+      "comp_name": "TFT16_Explorer, TFT16_Nidalee",
+      "items": [
+        "石像鬼石板甲",
+        "日炎斗篷",
+        "振奋盔甲"
+      ],
+      "avg_placement": 5.2613,
+      "count": 1615,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
+      }
+    }
+  ]
+}

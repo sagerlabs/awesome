@@ -1,0 +1,21 @@
+{
+  "name": "巨人杀手",
+  "priority_list": [
+    {
+      "cluster_id": "394016",
+      "comp_name": "TFT16_Slayer, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.4319,
+      "carry": "卑尔维斯",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.1962,
+      "carry": "千珏",
+      "priority_score": 85
+    }
+  ]
+}

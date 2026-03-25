@@ -1,0 +1,41 @@
+{
+  "name": "普朗克",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "tier": "B",
+      "avg_placement": 4.536
+    },
+    {
+      "cluster_id": "394054",
+      "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_MissFortune",
+      "tier": "D",
+      "avg_placement": 5.252
+    },
+    {
+      "cluster_id": "394058",
+      "comp_name": "TFT16_Bilgewater, TFT16_Gangplank",
+      "tier": "D",
+      "avg_placement": 5.5941
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394058",
+      "comp_name": "TFT16_Bilgewater, TFT16_Gangplank",
+      "items": [
+        "水银",
+        "斯特拉克的挑战护手",
+        "正义之手"
+      ],
+      "avg_placement": 4.4416,
+      "count": 1182,
+      "priority_scores": {
+        "水银": 100,
+        "斯特拉克的挑战护手": 85,
+        "正义之手": 72
+      }
+    }
+  ]
+}

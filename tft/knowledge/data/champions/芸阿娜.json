@@ -1,0 +1,69 @@
+{
+  "name": "芸阿娜",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "tier": "A",
+      "avg_placement": 4.4091
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "tier": "A",
+      "avg_placement": 4.4303
+    },
+    {
+      "cluster_id": "394016",
+      "comp_name": "TFT16_Slayer, TFT16_Yone",
+      "tier": "A",
+      "avg_placement": 4.4319
+    },
+    {
+      "cluster_id": "394038",
+      "comp_name": "TFT16_Ionia, TFT16_Yunara",
+      "tier": "B",
+      "avg_placement": 4.5979
+    },
+    {
+      "cluster_id": "394065",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Sorcerer",
+      "tier": "D",
+      "avg_placement": 5.7216
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "items": [
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.0257,
+      "count": 1987,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "394038",
+      "comp_name": "TFT16_Ionia, TFT16_Yunara",
+      "items": [
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.214,
+      "count": 6882,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "强袭者的链枷": 72
+      }
+    }
+  ]
+}

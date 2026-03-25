@@ -1,0 +1,61 @@
+{
+  "name": "岩宝",
+  "appear_in_comps": [
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "tier": "B",
+      "avg_placement": 4.5267
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "items": [
+        "饮血剑",
+        "无尽之刃",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.6864,
+      "count": 995,
+      "priority_scores": {
+        "饮血剑": 100,
+        "无尽之刃": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "cluster_id": "394059",
+      "comp_name": "TFT16_Explorer, TFT16_Lissandra",
+      "items": [
+        "饮血剑",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.1143,
+      "count": 280,
+      "priority_scores": {
+        "饮血剑": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "394067",
+      "comp_name": "TFT16_Explorer, TFT16_Nidalee",
+      "items": [
+        "饮血剑",
+        "无尽之刃",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 4.6963,
+      "count": 1722,
+      "priority_scores": {
+        "饮血剑": 100,
+        "无尽之刃": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    }
+  ]
+}
