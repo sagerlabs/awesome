@@ -304,7 +304,145 @@ func (s *UnifiedStore) QueryNLU(req QueryRequest) (QueryResponse, error) {
 3. **渐进式重构** - 不需要一步到位，可以分阶段进行
 4. **权衡是必要的** - 没有完美的方案，只有最合适的方案
 
+---
+
+# 架构决策记录：移除对knowledge/models包的引用
+
+## 日期
+2026-03-25
+
+## 背景
+
+在 `knowledge/unified_store.go` 中，我们遇到了包引用问题：
+
+### 问题描述
+1. **不必要的包引用**：`knowledge/unified_store.go` 引用了 `github.com/sagerlabs/awesome/tft/knowledge/models`
+2. **实际使用场景**：只在返回空JSON数组时使用了 `models.MetaComp`、`models.MetaChampion`、`models.MetaItem`
+3. **包依赖问题**：造成了不必要的包依赖，可能导致模块解析问题
+
+### 错误信息
+```
+github.com/sagerlabs/awesome/tft/knowledge/models: module github.com/sagerlabs/awesome@latest found (v1.0.3), but does not contain package github.com/sagerlabs/awesome/tft/knowledge/models
+```
+
+## 可选方案评估
+
+### 方案A：保持引用，解决模块问题
+**设计**：
+- 保持对 `knowledge/models` 包的引用
+- 解决模块解析问题（可能需要检查目录结构、go.mod等）
+
+**优点**：
+- ✅ 类型安全
+- ✅ 代码改动最小
+
+**缺点**：
+- ❌ 模块问题可能难以定位
+- ❌ 仍然有不必要的包依赖
+- ❌ 可能需要调整目录结构
+
+**决策**：❌ 不采用
+
+---
+
+### 方案B：将models包中的类型移到knowledge包
+**设计**：
+- 将 `MetaComp`、`MetaChampion`、`MetaItem` 等类型从 `knowledge/models` 移到 `knowledge` 包
+- 移除对 `knowledge/models` 包的引用
+
+**优点**：
+- ✅ 类型安全
+- ✅ 减少包依赖层级
+
+**缺点**：
+- ❌ 需要移动和修改较多代码
+- ❌ 可能影响其他引用 `knowledge/models` 的代码
+- ❌ 类型定义分散
+
+**决策**：❌ 不采用
+
+---
+
+### 方案C：使用空interface{}代替（最终选择 ⭐）
+**设计**：
+- 移除对 `knowledge/models` 包的引用
+- 将 `[]*models.MetaComp` 改为 `[]interface{}`
+- 将 `[]*models.MetaChampion` 改为 `[]interface{}`
+- 将 `[]*models.MetaItem` 改为 `[]interface{}`
+
+**优点**：
+- ✅ 完全移除不必要的包引用
+- ✅ 代码改动最小
+- ✅ `json.Marshal()` 可以接受任何类型
+- ✅ 不影响功能（只是返回空数组）
+
+**缺点**：
+- ⚠️ 失去编译时类型检查（但只在返回空数组时使用）
+- ⚠️ 看起来不够"优雅"
+
+**权衡**：
+- 只在返回空JSON数组时使用这些类型
+- `json.Marshal()` 不关心具体类型
+- 风险很低，收益很大
+
+**决策**：✅ 采用
+
+## 实现细节
+
+### 修改的文件
+`tft/knowledge/unified_store.go`
+
+### 具体修改
+1. **移除import**：
+   ```go
+   // 移除
+   import "github.com/sagerlabs/awesome/tft/knowledge/models"
+   ```
+
+2. **修改空数组返回**：
+   ```go
+   // 修改前
+   return json.Marshal([]*models.MetaComp{})
+   
+   // 修改后
+   return json.Marshal([]interface{}{})
+   ```
+
+3. **应用到所有方法**：
+   - `SearchMetaComps()`
+   - `GetAllMetaComps()`
+   - `GetAllMetaChampions()`
+   - `GetAllMetaItems()`
+
+## 结果
+
+### 包依赖简化
+```
+knowledge包（实现层）
+    ↓ 引用
+agent包
+data包
+    ✅ 不再引用 knowledge/models包！
+```
+
+### 功能不变
+- ✅ 所有功能正常工作
+- ✅ JSON序列化不受影响
+- ✅ 空数组返回正确
+
+### 风险控制
+- ⚠️ 只在返回空数组时使用 `interface{}`
+- ⚠️ 这些方法在 `knowledgeStore == nil` 时才会被调用
+- ⚠️ 正常情况下不会走到这些分支
+
+## 经验总结
+
+1. **审视每一个import** - 问问自己：真的需要这个包吗？
+2. **json.Marshal很灵活** - 它可以接受任何类型，不一定非要用具体类型
+3. **简单就是美** - 有时候最"不优雅"的方案反而是最实用的
+4. **风险收益比** - 评估改动的风险和收益，选择平衡点
+
 ## 参考资料
 
-- https://medium.com/@cep21/prefer-accepting-interfaces-returning-structs-610b88116009
+- https://golang.org/pkg/encoding/json/#Marshal
 - https://dave.cheney.net/2016/08/20/solid-go-design
