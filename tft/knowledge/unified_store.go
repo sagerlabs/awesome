@@ -5,14 +5,13 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/sagerlabs/awesome/tft/agent"
 	"github.com/sagerlabs/awesome/tft/data"
 	"github.com/sirupsen/logrus"
 )
 
 // UnifiedStore 统一知识库实现
 // 同时持有data.Store和knowledge.Store，实现TFTKnowledgeTool接口
-// 注意：实现层可以依赖agent和data包，接口层是零依赖的
+// 注意：实现层可以依赖data包，接口层是零依赖的
 type UnifiedStore struct {
 	dataStore      *data.Store
 	knowledgeStore *Store
@@ -51,23 +50,23 @@ func (s *UnifiedStore) QueryNLU(req QueryRequest) (QueryResponse, error) {
 
 	s.logger.Debug("QueryNLU called (byte stream)")
 
-	// 1. Unmarshal请求：[]byte → agent.Context
-	var ctx agent.Context
+	// 1. Unmarshal请求：[]byte → internalContext
+	var ctx internalContext
 	if err := json.Unmarshal([]byte(req), &ctx); err != nil {
 		return nil, fmt.Errorf("unmarshal request: %w", err)
 	}
 
 	s.logger.WithField("intent", ctx.Intent).Debug("Parsed context")
 
-	// 2. 内部调用（类型安全）
-	result := agent.QueryNLUData(ctx, s.dataStore)
+	// 2. 内部调用（使用内部逻辑，避免引用agent包）
+	result := internalQueryNLUData(ctx, s.dataStore)
 
 	// 3. 如果启用Meta数据，补充Meta数据
 	if s.config.EnableMeta && s.knowledgeStore != nil {
-		s.enrichWithMetaData(result, ctx)
+		s.internalEnrichWithMetaData(result, ctx)
 	}
 
-	// 4. Marshal响应：agent.NluEnrichedContext → []byte
+	// 4. Marshal响应：internalNluEnrichedContext → []byte
 	respBytes, err := json.Marshal(result)
 	if err != nil {
 		return nil, fmt.Errorf("marshal response: %w", err)
@@ -76,8 +75,8 @@ func (s *UnifiedStore) QueryNLU(req QueryRequest) (QueryResponse, error) {
 	return QueryResponse(respBytes), nil
 }
 
-// enrichWithMetaData 用Meta数据丰富结果
-func (s *UnifiedStore) enrichWithMetaData(result *agent.NluEnrichedContext, ctx agent.Context) {
+// internalEnrichWithMetaData 用Meta数据丰富结果（内部版本）
+func (s *UnifiedStore) internalEnrichWithMetaData(result *internalNluEnrichedContext, ctx internalContext) {
 	// 补充Meta阵容数据
 	for _, comp := range result.MatchedComps {
 		if metaComp, ok := s.knowledgeStore.GetMetaCompByID(comp.ClusterID); ok {
