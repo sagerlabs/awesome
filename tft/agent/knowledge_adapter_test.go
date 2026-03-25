@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
+	"github.com/sagerlabs/awesome/tft/data"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -108,7 +109,7 @@ func TestKnowledgeAdapter_QueryNLU(t *testing.T) {
 	// 2. 创建期望的响应
 	expectedResult := NluEnrichedContext{
 		Ctx: testCtx,
-		MatchedComps: []Comp{
+		MatchedComps: []data.Comp{
 			{
 				ClusterID: "394014",
 				Name:      "约德尔人",
@@ -157,7 +158,7 @@ func TestKnowledgeAdapter_QueryNLU(t *testing.T) {
 
 func TestKnowledgeAdapter_GetCompByID(t *testing.T) {
 	// 1. 创建测试数据
-	expectedComp := Comp{
+	expectedComp := data.Comp{
 		ClusterID:    "394014",
 		Name:         "约德尔人",
 		Tier:         "S",

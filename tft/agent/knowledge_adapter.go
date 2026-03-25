@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
+	"github.com/sagerlabs/awesome/tft/data"
 	"github.com/sagerlabs/awesome/tft/knowledge"
 )
 
@@ -54,13 +55,13 @@ func (a *KnowledgeAdapter) QueryNLU(ctx Context) (*NluEnrichedContext, error) {
 // =============================================================================
 
 // GetCompByID 通过ClusterID查询阵容（类型安全）
-func (a *KnowledgeAdapter) GetCompByID(clusterID string) (*Comp, error) {
+func (a *KnowledgeAdapter) GetCompByID(clusterID string) (*data.Comp, error) {
 	respBytes, err := a.tool.GetCompByID(clusterID)
 	if err != nil {
 		return nil, err
 	}
 
-	var comp Comp
+	var comp data.Comp
 	if err := json.Unmarshal(respBytes, &comp); err != nil {
 		return nil, fmt.Errorf("unmarshal comp: %w", err)
 	}
