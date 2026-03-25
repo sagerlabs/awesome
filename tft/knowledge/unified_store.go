@@ -1,6 +1,7 @@
 package knowledge
 
 import (
+	"encoding/json"
 	"fmt"
 	"sync"
 
@@ -12,6 +13,7 @@ import (
 
 // UnifiedStore 统一知识库实现
 // 同时持有data.Store和knowledge.Store，实现TFTKnowledgeTool接口
+// 注意：实现层可以依赖agent和data包，接口层是零依赖的
 type UnifiedStore struct {
 	dataStore      *data.Store
 	knowledgeStore *Store
@@ -43,22 +45,36 @@ func NewUnifiedStore(dataStore *data.Store, knowledgeStore *Store, config *ToolC
 // NLU查询（核心方法）
 // =============================================================================
 
-// QueryNLU NLU数据查询
-func (s *UnifiedStore) QueryNLU(ctx agent.Context) (*agent.NluEnrichedContext, error) {
+// QueryNLU NLU数据查询：输入字节流，返回字节流
+func (s *UnifiedStore) QueryNLU(req QueryRequest) (QueryResponse, error) {
 	s.mu.RLock()
 	defer s.mu.RUnlock()
 
-	s.logger.WithField("intent", ctx.Intent).Debug("QueryNLU called")
+	s.logger.Debug("QueryNLU called (byte stream)")
 
-	// 1. 先用原有dataStore查询（保持兼容性）
+	// 1. Unmarshal请求：[]byte → agent.Context
+	var ctx agent.Context
+	if err := json.Unmarshal([]byte(req), &ctx); err != nil {
+		return nil, fmt.Errorf("unmarshal request: %w", err)
+	}
+
+	s.logger.WithField("intent", ctx.Intent).Debug("Parsed context")
+
+	// 2. 内部调用（类型安全）
 	result := agent.QueryNLUData(ctx, s.dataStore)
 
-	// 2. 如果启用Meta数据，补充Meta数据
+	// 3. 如果启用Meta数据，补充Meta数据
 	if s.config.EnableMeta && s.knowledgeStore != nil {
 		s.enrichWithMetaData(result, ctx)
 	}
 
-	return result, nil
+	// 4. Marshal响应：agent.NluEnrichedContext → []byte
+	respBytes, err := json.Marshal(result)
+	if err != nil {
+		return nil, fmt.Errorf("marshal response: %w", err)
+	}
+
+	return QueryResponse(respBytes), nil
 }
 
 // enrichWithMetaData 用Meta数据丰富结果
@@ -66,7 +82,6 @@ func (s *UnifiedStore) enrichWithMetaData(result *agent.NluEnrichedContext, ctx 
 	// 补充Meta阵容数据
 	for _, comp := range result.MatchedComps {
 		if metaComp, ok := s.knowledgeStore.GetMetaCompByID(comp.ClusterID); ok {
-			// 这里可以扩展NluEnrichedContext来包含Meta数据
 			s.logger.WithField("cluster_id", comp.ClusterID).Debug("Found meta comp")
 		}
 	}
@@ -87,142 +102,152 @@ func (s *UnifiedStore) enrichWithMetaData(result *agent.NluEnrichedContext, ctx 
 }
 
 // =============================================================================
-// 阵容查询
+// 阵容查询（返回JSON字节流）
 // =============================================================================
 
-// GetCompByClusterID 通过ClusterID查询阵容（原有数据格式）
-func (s *UnifiedStore) GetCompByClusterID(clusterID string) (*data.Comp, bool) {
+// GetCompByID 通过ClusterID查询阵容（返回JSON字节流）
+func (s *UnifiedStore) GetCompByID(clusterID string) ([]byte, error) {
 	s.mu.RLock()
 	defer s.mu.RUnlock()
-	return s.dataStore.GetCompByClusterID(clusterID)
-}
 
-// GetMetaCompByID 通过ClusterID查询Meta阵容（新数据格式）
-func (s *UnifiedStore) GetMetaCompByID(clusterID string) (*models.MetaComp, bool) {
-	s.mu.RLock()
-	defer s.mu.RUnlock()
-	if s.knowledgeStore == nil {
-		return nil, false
+	comp, ok := s.dataStore.GetCompByClusterID(clusterID)
+	if !ok {
+		return nil, fmt.Errorf("comp not found: %s", clusterID)
 	}
-	return s.knowledgeStore.GetMetaCompByID(clusterID)
+
+	return json.Marshal(comp)
 }
 
-// GetMetaCompByName 通过名称查询Meta阵容
-func (s *UnifiedStore) GetMetaCompByName(name string) (*models.MetaComp, bool) {
+// GetMetaCompByID 通过ClusterID查询Meta阵容（返回JSON字节流）
+func (s *UnifiedStore) GetMetaCompByID(clusterID string) ([]byte, error) {
 	s.mu.RLock()
 	defer s.mu.RUnlock()
+
 	if s.knowledgeStore == nil {
-		return nil, false
+		return nil, fmt.Errorf("knowledgeStore not enabled")
 	}
-	return s.knowledgeStore.GetMetaCompByName(name)
+
+	comp, ok := s.knowledgeStore.GetMetaCompByID(clusterID)
+	if !ok {
+		return nil, fmt.Errorf("meta comp not found: %s", clusterID)
+	}
+
+	return json.Marshal(comp)
 }
 
-// SearchMetaComps 搜索Meta阵容（关键词搜索）
-func (s *UnifiedStore) SearchMetaComps(query string) []*models.MetaComp {
+// GetMetaCompByName 通过名称查询Meta阵容（返回JSON字节流）
+func (s *UnifiedStore) GetMetaCompByName(name string) ([]byte, error) {
 	s.mu.RLock()
 	defer s.mu.RUnlock()
+
 	if s.knowledgeStore == nil {
-		return nil
+		return nil, fmt.Errorf("knowledgeStore not enabled")
 	}
-	return s.knowledgeStore.SearchMetaComps(query)
+
+	comp, ok := s.knowledgeStore.GetMetaCompByName(name)
+	if !ok {
+		return nil, fmt.Errorf("meta comp not found: %s", name)
+	}
+
+	return json.Marshal(comp)
 }
 
-// GetAllMetaComps 获取所有Meta阵容
-func (s *UnifiedStore) GetAllMetaComps() []*models.MetaComp {
+// SearchMetaComps 搜索Meta阵容（返回JSON字节流）
+func (s *UnifiedStore) SearchMetaComps(query string) ([]byte, error) {
 	s.mu.RLock()
 	defer s.mu.RUnlock()
+
 	if s.knowledgeStore == nil {
-		return nil
+		return json.Marshal([]*models.MetaComp{})
 	}
-	return s.knowledgeStore.GetAllMetaComps()
+
+	comps := s.knowledgeStore.SearchMetaComps(query)
+	return json.Marshal(comps)
 }
 
-// GetCompsByUnits 通过英雄列表查询阵容（原有数据格式）
-func (s *UnifiedStore) GetCompsByUnits(unitIDs []string) []data.CompMatch {
+// GetAllMetaComps 获取所有Meta阵容（返回JSON字节流）
+func (s *UnifiedStore) GetAllMetaComps() ([]byte, error) {
 	s.mu.RLock()
 	defer s.mu.RUnlock()
-	return s.dataStore.GetCompsByUnits(unitIDs)
-}
 
-// GetCompsByTier 通过Tier查询阵容（原有数据格式）
-func (s *UnifiedStore) GetCompsByTier(tiers ...string) []*data.Comp {
-	s.mu.RLock()
-	defer s.mu.RUnlock()
-	return s.dataStore.GetCompsByTier(tiers...)
-}
-
-// =============================================================================
-// 英雄查询
-// =============================================================================
-
-// GetMetaChampionByName 通过名称查询Meta英雄
-func (s *UnifiedStore) GetMetaChampionByName(name string) (*models.MetaChampion, bool) {
-	s.mu.RLock()
-	defer s.mu.RUnlock()
 	if s.knowledgeStore == nil {
-		return nil, false
+		return json.Marshal([]*models.MetaComp{})
 	}
-	return s.knowledgeStore.GetMetaChampionByName(name)
-}
 
-// GetAllMetaChampions 获取所有Meta英雄
-func (s *UnifiedStore) GetAllMetaChampions() []*models.MetaChampion {
-	s.mu.RLock()
-	defer s.mu.RUnlock()
-	if s.knowledgeStore == nil {
-		return nil
-	}
-	return s.knowledgeStore.GetAllMetaChampions()
-}
-
-// GetChampionBestBuild 获取英雄最佳装备（原有数据格式）
-func (s *UnifiedStore) GetChampionBestBuild(clusterID string, unitName string) (*data.BuildInfo, bool) {
-	s.mu.RLock()
-	defer s.mu.RUnlock()
-	build := s.dataStore.GetBestItemsForUnit(clusterID, unitName)
-	return build, build != nil
+	comps := s.knowledgeStore.GetAllMetaComps()
+	return json.Marshal(comps)
 }
 
 // =============================================================================
-// 装备查询
+// 英雄查询（返回JSON字节流）
 // =============================================================================
 
-// GetMetaItemByName 通过名称查询Meta装备
-func (s *UnifiedStore) GetMetaItemByName(name string) (*models.MetaItem, bool) {
+// GetMetaChampionByName 通过名称查询Meta英雄（返回JSON字节流）
+func (s *UnifiedStore) GetMetaChampionByName(name string) ([]byte, error) {
 	s.mu.RLock()
 	defer s.mu.RUnlock()
+
 	if s.knowledgeStore == nil {
-		return nil, false
+		return nil, fmt.Errorf("knowledgeStore not enabled")
 	}
-	return s.knowledgeStore.GetMetaItemByName(name)
+
+	champ, ok := s.knowledgeStore.GetMetaChampionByName(name)
+	if !ok {
+		return nil, fmt.Errorf("meta champion not found: %s", name)
+	}
+
+	return json.Marshal(champ)
 }
 
-// GetAllMetaItems 获取所有Meta装备
-func (s *UnifiedStore) GetAllMetaItems() []*models.MetaItem {
+// GetAllMetaChampions 获取所有Meta英雄（返回JSON字节流）
+func (s *UnifiedStore) GetAllMetaChampions() ([]byte, error) {
 	s.mu.RLock()
 	defer s.mu.RUnlock()
+
 	if s.knowledgeStore == nil {
-		return nil
+		return json.Marshal([]*models.MetaChampion{})
 	}
-	return s.knowledgeStore.GetAllMetaItems()
-}
 
-// GetItemFitEntries 查询装备适配的阵容（原有数据格式）
-func (s *UnifiedStore) GetItemFitEntries(itemID string) []data.ItemFitEntry {
-	s.mu.RLock()
-	defer s.mu.RUnlock()
-	return s.dataStore.GetItemFitEntries(itemID)
-}
-
-// GetItemFitByItems 批量装备查询（原有数据格式）
-func (s *UnifiedStore) GetItemFitByItems(itemIDs []string) []data.ItemFitResult {
-	s.mu.RLock()
-	defer s.mu.RUnlock()
-	return s.dataStore.GetItemFitByItems(itemIDs)
+	champs := s.knowledgeStore.GetAllMetaChampions()
+	return json.Marshal(champs)
 }
 
 // =============================================================================
-// 名称解析和转换
+// 装备查询（返回JSON字节流）
+// =============================================================================
+
+// GetMetaItemByName 通过名称查询Meta装备（返回JSON字节流）
+func (s *UnifiedStore) GetMetaItemByName(name string) ([]byte, error) {
+	s.mu.RLock()
+	defer s.mu.RUnlock()
+
+	if s.knowledgeStore == nil {
+		return nil, fmt.Errorf("knowledgeStore not enabled")
+	}
+
+	item, ok := s.knowledgeStore.GetMetaItemByName(name)
+	if !ok {
+		return nil, fmt.Errorf("meta item not found: %s", name)
+	}
+
+	return json.Marshal(item)
+}
+
+// GetAllMetaItems 获取所有Meta装备（返回JSON字节流）
+func (s *UnifiedStore) GetAllMetaItems() ([]byte, error) {
+	s.mu.RLock()
+	defer s.mu.RUnlock()
+
+	if s.knowledgeStore == nil {
+		return json.Marshal([]*models.MetaItem{})
+	}
+
+	items := s.knowledgeStore.GetAllMetaItems()
+	return json.Marshal(items)
+}
+
+// =============================================================================
+// 名称解析和转换（直接返回值，不需要JSON）
 // =============================================================================
 
 // ResolveUnitID 解析英雄输入
@@ -263,10 +288,6 @@ func (s *UnifiedStore) Reload() error {
 	defer s.mu.Unlock()
 
 	s.logger.Info("Reloading data...")
-
-	// TODO: 实现重新加载逻辑
-	// 需要重新创建dataStore和knowledgeStore
-
 	return fmt.Errorf("reload not implemented yet")
 }
 
@@ -275,12 +296,10 @@ func (s *UnifiedStore) HealthCheck() error {
 	s.mu.RLock()
 	defer s.mu.RUnlock()
 
-	// 检查dataStore
 	if s.dataStore == nil {
 		return fmt.Errorf("dataStore is nil")
 	}
 
-	// 检查knowledgeStore（如果启用了）
 	if s.config.EnableMeta && s.knowledgeStore == nil {
 		return fmt.Errorf("knowledgeStore is nil but EnableMeta is true")
 	}
@@ -289,7 +308,7 @@ func (s *UnifiedStore) HealthCheck() error {
 }
 
 // =============================================================================
-// 辅助方法
+// 辅助方法（用于兼容性，不通过接口暴露）
 // =============================================================================
 
 // GetDataStore 获取底层dataStore（用于兼容性）
