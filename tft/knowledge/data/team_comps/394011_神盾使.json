@@ -27,18 +27,18 @@
     {
       "name": "神盾使",
       "type": "trait",
-      "score": 3.43623048413726
+      "score": 3.460816473299136
     },
     {
       "name": "卡莉丝塔",
       "type": "unit",
-      "score": 4.269827568489632
+      "score": 4.220747198555798
     }
   ],
-  "count": 54946,
-  "avg_placement": 3.9968,
-  "top4_rate": 0.6009,
-  "win_rate": 0.1385,
+  "count": 224072,
+  "avg_placement": 4.0327,
+  "top4_rate": 0.6008,
+  "win_rate": 0.1206,
   "tier": "S",
   "builds": [
     {
@@ -48,10 +48,10 @@
         "离子火花",
         "莫雷洛秘典"
       ],
-      "avg_placement": 3.6315,
-      "count": 48261,
-      "score": 0.5143,
-      "place_change": -0.441,
+      "avg_placement": 3.8189,
+      "count": 27353,
+      "score": 0.4857,
+      "place_change": -0.353,
       "priority_scores": {
         "夜之锋刃": 100,
         "离子火花": 85,
@@ -65,10 +65,10 @@
         "强袭者的链枷",
         "朔极之矛"
       ],
-      "avg_placement": 3.9122,
-      "count": 79102,
-      "score": 0.4255,
-      "place_change": -0.16,
+      "avg_placement": 4.0291,
+      "count": 36033,
+      "score": 0.4078,
+      "place_change": -0.143,
       "priority_scores": {
         "最后的轻语": 100,
         "强袭者的链枷": 85,
@@ -82,10 +82,10 @@
         "巨龙之爪",
         "振奋盔甲"
       ],
-      "avg_placement": 3.5194,
-      "count": 10939,
-      "score": 0.22,
-      "place_change": -0.553,
+      "avg_placement": 3.6557,
+      "count": 5016,
+      "score": 0.1931,
+      "place_change": -0.516,
       "priority_scores": {
         "棘刺背心": 100,
         "巨龙之爪": 85,
@@ -99,10 +99,10 @@
         "坚定之心",
         "振奋盔甲"
       ],
-      "avg_placement": 3.0574,
-      "count": 749,
-      "score": 0.0854,
-      "place_change": -1.015,
+      "avg_placement": 3.2192,
+      "count": 511,
+      "score": 0.0909,
+      "place_change": -0.953,
       "priority_scores": {
         "棘刺背心": 100,
         "坚定之心": 85,
@@ -112,116 +112,116 @@
   ],
   "build_items": {
     "朔极之矛": {
-      "itemNames": "朔极之矛",
-      "count": 240272,
-      "avg": 3.94,
-      "pcnt": 0.82301
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 109372,
+      "avg": 4.0388,
+      "pcnt": 0.80262
     },
     "最后的轻语": {
-      "itemNames": "最后的轻语",
-      "count": 192128,
-      "avg": 3.9524,
-      "pcnt": 0.6581
+      "itemNames": "TFT_Item_LastWhisper",
+      "count": 89511,
+      "avg": 4.065,
+      "pcnt": 0.65687
     },
     "莫雷洛秘典": {
-      "itemNames": "莫雷洛秘典",
-      "count": 175419,
-      "avg": 3.8402,
-      "pcnt": 0.60087
-    },
-    "强袭者的链枷": {
-      "itemNames": "强袭者的链枷",
-      "count": 172960,
-      "avg": 3.9016,
-      "pcnt": 0.59245
+      "itemNames": "TFT_Item_Morellonomicon",
+      "count": 82196,
+      "avg": 3.9588,
+      "pcnt": 0.60319
     },
     "离子火花": {
-      "itemNames": "离子火花",
-      "count": 159303,
-      "avg": 3.8078,
-      "pcnt": 0.54567
+      "itemNames": "TFT_Item_IonicSpark",
+      "count": 79315,
+      "avg": 3.9517,
+      "pcnt": 0.58205
     },
-    "振奋盔甲": {
-      "itemNames": "振奋盔甲",
-      "count": 121896,
-      "avg": 3.7905,
-      "pcnt": 0.41753
+    "强袭者的链枷": {
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 77043,
+      "avg": 4.0148,
+      "pcnt": 0.56537
     },
     "夜之锋刃": {
-      "itemNames": "夜之锋刃",
-      "count": 115276,
-      "avg": 3.8164,
-      "pcnt": 0.39486
+      "itemNames": "TFT_Item_GuardianAngel",
+      "count": 59863,
+      "avg": 3.9719,
+      "pcnt": 0.4393
     },
-    "棘刺背心": {
-      "itemNames": "棘刺背心",
-      "count": 105637,
-      "avg": 3.7432,
-      "pcnt": 0.36184
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 56992,
+      "avg": 3.9056,
+      "pcnt": 0.41823
     },
     "巨龙之爪": {
-      "itemNames": "巨龙之爪",
-      "count": 105228,
-      "avg": 3.7892,
-      "pcnt": 0.36044
+      "itemNames": "TFT_Item_DragonsClaw",
+      "count": 51317,
+      "avg": 3.9061,
+      "pcnt": 0.37659
+    },
+    "棘刺背心": {
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 48771,
+      "avg": 3.8813,
+      "pcnt": 0.3579
     },
     "坚定之心": {
-      "itemNames": "坚定之心",
-      "count": 60294,
-      "avg": 3.6218,
-      "pcnt": 0.20653
+      "itemNames": "TFT_Item_NightHarvester",
+      "count": 28115,
+      "avg": 3.7547,
+      "pcnt": 0.20632
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 51682,
-      "avg": 4.1081,
-      "pick_rate": 0.051921
+      "day": "2026-04-07",
+      "count": 37082,
+      "avg": 4.1951,
+      "pick_rate": 0.048112
     },
     {
-      "day": "2026-03-18",
-      "count": 89879,
-      "avg": 4.0888,
-      "pick_rate": 0.0496
+      "day": "2026-04-08",
+      "count": 51683,
+      "avg": 4.1772,
+      "pick_rate": 0.047278
     },
     {
-      "day": "2026-03-19",
-      "count": 92098,
-      "avg": 4.0702,
-      "pick_rate": 0.05034
+      "day": "2026-04-09",
+      "count": 50442,
+      "avg": 4.1727,
+      "pick_rate": 0.046829
     },
     {
-      "day": "2026-03-20",
-      "count": 94793,
-      "avg": 4.0665,
-      "pick_rate": 0.050848
+      "day": "2026-04-10",
+      "count": 49559,
+      "avg": 4.1795,
+      "pick_rate": 0.046986
     },
     {
-      "day": "2026-03-21",
-      "count": 98979,
-      "avg": 4.0703,
-      "pick_rate": 0.050804
+      "day": "2026-04-11",
+      "count": 50171,
+      "avg": 4.167,
+      "pick_rate": 0.046673
     },
     {
-      "day": "2026-03-22",
-      "count": 100711,
-      "avg": 4.0697,
-      "pick_rate": 0.051165
+      "day": "2026-04-12",
+      "count": 50076,
+      "avg": 4.1703,
+      "pick_rate": 0.046755
     },
     {
-      "day": "2026-03-23",
-      "count": 97532,
-      "avg": 4.0711,
-      "pick_rate": 0.053226
+      "day": "2026-04-13",
+      "count": 41989,
+      "avg": 4.1851,
+      "pick_rate": 0.045091
     },
     {
-      "day": "2026-03-24",
-      "count": 33797,
-      "avg": 4.0865,
-      "pick_rate": 0.053948
+      "day": "2026-04-14",
+      "count": 11094,
+      "avg": 4.1732,
+      "pick_rate": 0.043837
     }
   ],
   "levelling": "Fast 8",
-  "difficulty": -0.022
+  "difficulty": -0.018
 }

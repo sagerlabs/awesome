@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/sagerlabs/awesome/tft/data"
 	"github.com/sagerlabs/awesome/tft/knowledge"
+	"github.com/sagerlabs/awesome/tft/knowledge/contracts"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -16,9 +16,9 @@ import (
 
 // mockTool 用于测试的mock实现
 type mockTool struct {
-	queryNLUFunc       func(req knowledge.QueryRequest) (knowledge.QueryResponse, error)
-	getCompByIDFunc    func(clusterID string) ([]byte, error)
-	getMetaCompByIDFunc func(clusterID string) ([]byte, error)
+	queryNLUFunc        func(req knowledge.QueryRequest) (knowledge.QueryResponse, error)
+	getCompByIDFunc     func(req knowledge.Request) (knowledge.Response, error)
+	getMetaCompByIDFunc func(req knowledge.Request) (knowledge.Response, error)
 	// 其他方法可以根据需要添加
 }
 
@@ -29,45 +29,45 @@ func (m *mockTool) QueryNLU(req knowledge.QueryRequest) (knowledge.QueryResponse
 	return nil, nil
 }
 
-func (m *mockTool) GetCompByID(clusterID string) ([]byte, error) {
+func (m *mockTool) GetCompByID(req knowledge.Request) (knowledge.Response, error) {
 	if m.getCompByIDFunc != nil {
-		return m.getCompByIDFunc(clusterID)
+		return m.getCompByIDFunc(req)
 	}
 	return nil, nil
 }
 
-func (m *mockTool) GetMetaCompByID(clusterID string) ([]byte, error) {
+func (m *mockTool) GetMetaCompByID(req knowledge.Request) (knowledge.Response, error) {
 	if m.getMetaCompByIDFunc != nil {
-		return m.getMetaCompByIDFunc(clusterID)
+		return m.getMetaCompByIDFunc(req)
 	}
 	return nil, nil
 }
 
-func (m *mockTool) GetMetaCompByName(name string) ([]byte, error) {
+func (m *mockTool) GetMetaCompByName(req knowledge.Request) (knowledge.Response, error) {
 	return nil, nil
 }
 
-func (m *mockTool) SearchMetaComps(query string) ([]byte, error) {
+func (m *mockTool) SearchMetaComps(req knowledge.Request) (knowledge.Response, error) {
 	return nil, nil
 }
 
-func (m *mockTool) GetAllMetaComps() ([]byte, error) {
+func (m *mockTool) GetAllMetaComps(req knowledge.Request) (knowledge.Response, error) {
 	return nil, nil
 }
 
-func (m *mockTool) GetMetaChampionByName(name string) ([]byte, error) {
+func (m *mockTool) GetMetaChampionByName(req knowledge.Request) (knowledge.Response, error) {
 	return nil, nil
 }
 
-func (m *mockTool) GetAllMetaChampions() ([]byte, error) {
+func (m *mockTool) GetAllMetaChampions(req knowledge.Request) (knowledge.Response, error) {
 	return nil, nil
 }
 
-func (m *mockTool) GetMetaItemByName(name string) ([]byte, error) {
+func (m *mockTool) GetMetaItemByName(req knowledge.Request) (knowledge.Response, error) {
 	return nil, nil
 }
 
-func (m *mockTool) GetAllMetaItems() ([]byte, error) {
+func (m *mockTool) GetAllMetaItems(req knowledge.Request) (knowledge.Response, error) {
 	return nil, nil
 }
 
@@ -110,7 +110,7 @@ func TestKnowledgeAdapter_QueryNLU(t *testing.T) {
 	// 2. 创建期望的响应
 	expectedResult := NluEnrichedContext{
 		Ctx: testCtx,
-		MatchedComps: []data.Comp{
+		MatchedComps: []contracts.CompSummary{
 			{
 				ClusterID: "394014",
 				Name:      "约德尔人",
@@ -159,7 +159,7 @@ func TestKnowledgeAdapter_QueryNLU(t *testing.T) {
 
 func TestKnowledgeAdapter_GetCompByID(t *testing.T) {
 	// 1. 创建测试数据
-	expectedComp := data.Comp{
+	expectedComp := contracts.CompSummary{
 		ClusterID:    "394014",
 		Name:         "约德尔人",
 		Tier:         "S",
@@ -168,9 +168,14 @@ func TestKnowledgeAdapter_GetCompByID(t *testing.T) {
 
 	// 2. 创建mock tool
 	mt := &mockTool{
-		getCompByIDFunc: func(clusterID string) ([]byte, error) {
-			assert.Equal(t, "394014", clusterID)
-			return json.Marshal(expectedComp)
+		getCompByIDFunc: func(req knowledge.Request) (knowledge.Response, error) {
+			var request contracts.GetCompByIDRequest
+			err := json.Unmarshal(req, &request)
+			assert.NoError(t, err)
+			assert.Equal(t, "394014", request.ClusterID)
+
+			respBytes, err := json.Marshal(contracts.GetCompByIDResponse{Comp: &expectedComp})
+			return knowledge.Response(respBytes), err
 		},
 	}
 
@@ -206,9 +211,14 @@ func TestKnowledgeAdapter_GetMetaCompByID(t *testing.T) {
 
 	// 2. 创建mock tool（使用完整的mock）
 	mt := &mockTool{
-		getMetaCompByIDFunc: func(clusterID string) ([]byte, error) {
-			assert.Equal(t, "394014", clusterID)
-			return json.Marshal(expectedComp)
+		getMetaCompByIDFunc: func(req knowledge.Request) (knowledge.Response, error) {
+			var request contracts.GetMetaCompByIDRequest
+			err := json.Unmarshal(req, &request)
+			assert.NoError(t, err)
+			assert.Equal(t, "394014", request.ClusterID)
+
+			respBytes, err := json.Marshal(contracts.GetMetaCompByIDResponse{Comp: &expectedComp})
+			return knowledge.Response(respBytes), err
 		},
 	}
 
@@ -227,7 +237,7 @@ func TestKnowledgeAdapter_GetMetaCompByID(t *testing.T) {
 	assert.Equal(t, expectedComp.Units, comp.Units)
 	assert.Equal(t, expectedComp.Description, comp.Description)
 	assert.NotNil(t, comp.Limit)
-	assert.Equal(t, 8, comp.Limit["min_level"])
+	assert.EqualValues(t, 8, comp.Limit["min_level"])
 
 	t.Log("GetMetaCompByID JSON序列化/反序列化测试通过")
 }
@@ -308,12 +318,12 @@ func TestKnowledgeAdapter_MetaTypes_JSON(t *testing.T) {
 	// 测试MetaComp的JSON序列化/反序列化
 	t.Run("MetaComp JSON", func(t *testing.T) {
 		comp := MetaComp{
-			ClusterID:   "394014",
-			NameString:  "TFT16_Augment_RumbleCarry",
-			Tier:        "S",
-			Units:       []string{"兰博", "凯南", "菲兹"},
-			Traits:      []string{"约德尔人", "护卫"},
-			Count:       4773,
+			ClusterID:    "394014",
+			NameString:   "TFT16_Augment_RumbleCarry",
+			Tier:         "S",
+			Units:        []string{"兰博", "凯南", "菲兹"},
+			Traits:       []string{"约德尔人", "护卫"},
+			Count:        4773,
 			AvgPlacement: 3.9397,
 			Top4Rate:     0.6044,
 			WinRate:      0.1758,
@@ -344,8 +354,8 @@ func TestKnowledgeAdapter_MetaTypes_JSON(t *testing.T) {
 		assert.InDelta(t, comp.Top4Rate, unmarshaled.Top4Rate, 0.0001)
 		assert.InDelta(t, comp.WinRate, unmarshaled.WinRate, 0.0001)
 		assert.Equal(t, comp.Description, unmarshaled.Description)
-		assert.Equal(t, comp.Limit["min_level"], unmarshaled.Limit["min_level"])
-		assert.Equal(t, comp.Limit["max_gold"], unmarshaled.Limit["max_gold"])
+		assert.EqualValues(t, comp.Limit["min_level"], unmarshaled.Limit["min_level"])
+		assert.EqualValues(t, comp.Limit["max_gold"], unmarshaled.Limit["max_gold"])
 	})
 
 	// 测试MetaChampion的JSON序列化/反序列化
@@ -415,7 +425,7 @@ func TestKnowledgeAdapter_MetaTypes_JSON(t *testing.T) {
 		assert.Equal(t, item.Name, unmarshaled.Name)
 		assert.Equal(t, len(item.PriorityList), len(unmarshaled.PriorityList))
 		assert.Equal(t, item.Description, unmarshaled.Description)
-		assert.Equal(t, item.Limit["max_count"], unmarshaled.Limit["max_count"])
+		assert.EqualValues(t, item.Limit["max_count"], unmarshaled.Limit["max_count"])
 	})
 
 	t.Log("Meta类型JSON序列化/反序列化测试通过")

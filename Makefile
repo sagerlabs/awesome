@@ -131,15 +131,15 @@ test-cover: ## 运行测试并生成覆盖率报告
 .PHONY: test-api
 test-api: ## 用 curl 测试本地接口（需要服务已启动）
 	@echo "--- 健康检查 ---"
-	curl -s http://localhost:8080/tft/health | jq .
+	curl -s http://localhost:8080/v1/tft/health | jq .
 	@echo ""
 	@echo "--- 普通接口 ---"
-	curl -s -X POST http://localhost:8080/tft/analyze \
+	curl -s -X POST http://localhost:8080/v1/tft/analyze \
 		-H "Content-Type: application/json" \
 		-d '{"input":"兰博 肯能 鬼索的狂暴之刃"}' | jq .
 	@echo ""
 	@echo "--- 流式接口 ---"
-	curl -X POST http://localhost:8080/tft/analyze/stream \
+	curl -X POST http://localhost:8080/v1/tft/analyze/stream \
 		-H "Content-Type: application/json" \
 		-d '{"input":"瞎子 破败 大帽子"}' \
 		--no-buffer

@@ -2,100 +2,94 @@
   "name": "妮蔻",
   "appear_in_comps": [
     {
-      "cluster_id": "394002",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "tier": "S",
-      "avg_placement": 4.037
-    },
-    {
       "cluster_id": "394000",
       "comp_name": "TFT16_Sorcerer, TFT16_Lux",
       "tier": "S",
-      "avg_placement": 4.0398
+      "avg_placement": 3.8569
     },
     {
       "cluster_id": "394008",
       "comp_name": "TFT16_Defender, TFT16_Aphelios",
       "tier": "S",
-      "avg_placement": 4.1646
+      "avg_placement": 4.0341
     },
     {
-      "cluster_id": "394013",
-      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "cluster_id": "394002",
+      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "tier": "S",
+      "avg_placement": 4.1278
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
       "tier": "A",
-      "avg_placement": 4.301
+      "avg_placement": 4.317
     },
     {
       "cluster_id": "394006",
       "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
       "tier": "A",
-      "avg_placement": 4.314
+      "avg_placement": 4.4506
     },
     {
-      "cluster_id": "394044",
-      "comp_name": "TFT16_Explorer, TFT16_Skarner",
-      "tier": "B",
-      "avg_placement": 4.5267
-    },
-    {
-      "cluster_id": "394017",
-      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Defender",
-      "tier": "B",
-      "avg_placement": 4.6506
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "tier": "A",
+      "avg_placement": 4.499
     },
     {
       "cluster_id": "394048",
       "comp_name": "TFT16_Sorcerer, TFT16_Diana",
       "tier": "B",
-      "avg_placement": 4.7197
+      "avg_placement": 4.5982
     },
     {
       "cluster_id": "394052",
       "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Slayer",
       "tier": "C",
-      "avg_placement": 4.9865
+      "avg_placement": 5.0494
     },
     {
-      "cluster_id": "394046",
-      "comp_name": "TFT16_Sorcerer, TFT16_Annie",
-      "tier": "D",
-      "avg_placement": 5.1158
-    },
-    {
-      "cluster_id": "394053",
-      "comp_name": "TFT16_Void, TFT16_RiftHerald",
-      "tier": "D",
-      "avg_placement": 5.1368
+      "cluster_id": "394059",
+      "comp_name": "TFT16_Explorer, TFT16_Lissandra",
+      "tier": "C",
+      "avg_placement": 5.0701
     },
     {
       "cluster_id": "394043",
       "comp_name": "TFT16_Demacia, TFT16_Taric",
       "tier": "D",
-      "avg_placement": 5.1958
+      "avg_placement": 5.1481
     },
     {
-      "cluster_id": "394059",
-      "comp_name": "TFT16_Explorer, TFT16_Lissandra",
+      "cluster_id": "394017",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Defender",
       "tier": "D",
-      "avg_placement": 5.3876
+      "avg_placement": 5.1967
+    },
+    {
+      "cluster_id": "394046",
+      "comp_name": "TFT16_Sorcerer, TFT16_Annie",
+      "tier": "D",
+      "avg_placement": 5.2923
     },
     {
       "cluster_id": "394067",
       "comp_name": "TFT16_Explorer, TFT16_Nidalee",
       "tier": "D",
-      "avg_placement": 5.7087
+      "avg_placement": 5.4977
     },
     {
       "cluster_id": "394065",
       "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Sorcerer",
       "tier": "D",
-      "avg_placement": 5.7216
+      "avg_placement": 5.7742
     },
     {
       "cluster_id": "394068",
       "comp_name": "TFT16_Explorer, TFT16_Bard",
       "tier": "D",
-      "avg_placement": 6.3249
+      "avg_placement": 6.167
     }
   ],
   "builds": [
@@ -107,28 +101,12 @@
         "日炎斗篷",
         "振奋盔甲"
       ],
-      "avg_placement": 3.8103,
-      "count": 6521,
+      "avg_placement": 3.7283,
+      "count": 3946,
       "priority_scores": {
         "棘刺背心": 100,
         "日炎斗篷": 85,
         "振奋盔甲": 72
-      }
-    },
-    {
-      "cluster_id": "394052",
-      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Slayer",
-      "items": [
-        "圣盾使的誓约",
-        "振奋盔甲",
-        "薄暮法袍"
-      ],
-      "avg_placement": 4.1528,
-      "count": 72,
-      "priority_scores": {
-        "圣盾使的誓约": 100,
-        "振奋盔甲": 85,
-        "薄暮法袍": 72
       }
     },
     {
@@ -139,8 +117,8 @@
         "日炎斗篷",
         "振奋盔甲"
       ],
-      "avg_placement": 4.5034,
-      "count": 292,
+      "avg_placement": 4.3116,
+      "count": 199,
       "priority_scores": {
         "离子火花": 100,
         "日炎斗篷": 85,
@@ -151,16 +129,16 @@
       "cluster_id": "394067",
       "comp_name": "TFT16_Explorer, TFT16_Nidalee",
       "items": [
+        "巨龙之爪",
         "石像鬼石板甲",
-        "日炎斗篷",
-        "振奋盔甲"
+        "日炎斗篷"
       ],
-      "avg_placement": 5.1784,
-      "count": 835,
+      "avg_placement": 4.7216,
+      "count": 255,
       "priority_scores": {
-        "石像鬼石板甲": 100,
-        "日炎斗篷": 85,
-        "振奋盔甲": 72
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
       }
     },
     {
@@ -168,15 +146,15 @@
       "comp_name": "TFT16_Explorer, TFT16_Bard",
       "items": [
         "石像鬼石板甲",
-        "离子火花",
-        "日炎斗篷"
+        "日炎斗篷",
+        "振奋盔甲"
       ],
-      "avg_placement": 5.2344,
-      "count": 529,
+      "avg_placement": 5.5211,
+      "count": 804,
       "priority_scores": {
         "石像鬼石板甲": 100,
-        "离子火花": 85,
-        "日炎斗篷": 72
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
       }
     }
   ]

@@ -5,19 +5,19 @@
       "cluster_id": "394000",
       "comp_name": "TFT16_Sorcerer, TFT16_Lux",
       "tier": "S",
-      "avg_placement": 4.0398
-    },
-    {
-      "cluster_id": "394046",
-      "comp_name": "TFT16_Sorcerer, TFT16_Annie",
-      "tier": "D",
-      "avg_placement": 5.1158
+      "avg_placement": 3.8569
     },
     {
       "cluster_id": "394043",
       "comp_name": "TFT16_Demacia, TFT16_Taric",
       "tier": "D",
-      "avg_placement": 5.1958
+      "avg_placement": 5.1481
+    },
+    {
+      "cluster_id": "394046",
+      "comp_name": "TFT16_Sorcerer, TFT16_Annie",
+      "tier": "D",
+      "avg_placement": 5.2923
     }
   ],
   "builds": [
@@ -29,10 +29,26 @@
         "朔极之矛",
         "虚空之杖"
       ],
-      "avg_placement": 3.5763,
-      "count": 48679,
+      "avg_placement": 3.2935,
+      "count": 27896,
       "priority_scores": {
         "适应性头盔": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "394043",
+      "comp_name": "TFT16_Demacia, TFT16_Taric",
+      "items": [
+        "纳什之牙",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 4.0851,
+      "count": 47,
+      "priority_scores": {
+        "纳什之牙": 100,
         "朔极之矛": 85,
         "虚空之杖": 72
       }
@@ -45,8 +61,8 @@
         "朔极之矛",
         "虚空之杖"
       ],
-      "avg_placement": 3.7838,
-      "count": 2035,
+      "avg_placement": 3.7299,
+      "count": 833,
       "priority_scores": {
         "蓝霸符": 100,
         "朔极之矛": 85,

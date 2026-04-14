@@ -1,0 +1,224 @@
+{
+  "cluster_id": "394004",
+  "tft_set": "TFTSet16",
+  "units": [
+    "艾希",
+    "贝蕾亚",
+    "德莱厄斯",
+    "德莱文",
+    "诺提勒斯",
+    "瑟庄妮",
+    "泰达米尔"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "弗雷尔卓德 (1)",
+    "主宰 (1)",
+    "诺克萨斯 (1)",
+    "迅击战士 (1)",
+    "裁决战士 (1)"
+  ],
+  "stars": [
+    "泰达米尔",
+    "艾希",
+    "德莱厄斯",
+    "德莱文",
+    "瑟庄妮",
+    "妮蔻"
+  ],
+  "name_string": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+  "display_names": [
+    {
+      "name": "弗雷尔卓德",
+      "type": "trait",
+      "score": 1.266885649763909
+    },
+    {
+      "name": "泰达米尔",
+      "type": "unit",
+      "score": 3.524738246766578
+    },
+    {
+      "name": "艾希",
+      "type": "unit",
+      "score": 3.4357421474029977
+    }
+  ],
+  "count": 7442,
+  "avg_placement": 4.5124,
+  "top4_rate": 0.5034,
+  "win_rate": 0.0798,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "艾希",
+      "items": [
+        "死亡之刃",
+        "鬼索的狂暴之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 4.0031,
+      "count": 319,
+      "score": 0.403,
+      "place_change": -0.502,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "unit": "德莱厄斯",
+      "items": [
+        "日炎斗篷",
+        "振奋盔甲",
+        "薄暮法袍"
+      ],
+      "avg_placement": 3.8438,
+      "count": 192,
+      "score": 0.3517,
+      "place_change": -0.662,
+      "priority_scores": {
+        "日炎斗篷": 100,
+        "振奋盔甲": 85,
+        "薄暮法袍": 72
+      }
+    },
+    {
+      "unit": "泰达米尔",
+      "items": [
+        "死亡之刃",
+        "鬼索的狂暴之刃",
+        "水银"
+      ],
+      "avg_placement": 3.7619,
+      "count": 21,
+      "score": 0.3228,
+      "place_change": -0.744,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "水银": 72
+      }
+    },
+    {
+      "unit": "瑟庄妮",
+      "items": [
+        "日炎斗篷",
+        "薄暮法袍",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.4839,
+      "count": 31,
+      "score": 0.2316,
+      "place_change": -1.021,
+      "priority_scores": {
+        "日炎斗篷": 100,
+        "薄暮法袍": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 6834,
+      "avg": 4.3967,
+      "pcnt": 1.403
+    },
+    "水银": {
+      "itemNames": "TFT_Item_Quicksilver",
+      "count": 3018,
+      "avg": 4.3174,
+      "pcnt": 0.61959
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 2827,
+      "avg": 4.2727,
+      "pcnt": 0.58037
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 2782,
+      "avg": 4.261,
+      "pcnt": 0.57114
+    },
+    "海妖之怒": {
+      "itemNames": "TFT_Item_RunaansHurricane",
+      "count": 2198,
+      "avg": 4.2257,
+      "pcnt": 0.45124
+    },
+    "薄暮法袍": {
+      "itemNames": "TFT_Item_SpectralGauntlet",
+      "count": 1783,
+      "avg": 3.995,
+      "pcnt": 0.36604
+    },
+    "死亡之刃": {
+      "itemNames": "TFT_Item_Deathblade",
+      "count": 1688,
+      "avg": 4.0113,
+      "pcnt": 0.34654
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 1183,
+      "avg": 4.0313,
+      "pcnt": 0.24287
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-07",
+      "count": 1259,
+      "avg": 4.5401,
+      "pick_rate": 0.001633
+    },
+    {
+      "day": "2026-04-08",
+      "count": 1812,
+      "avg": 4.5717,
+      "pick_rate": 0.001658
+    },
+    {
+      "day": "2026-04-09",
+      "count": 2122,
+      "avg": 4.6107,
+      "pick_rate": 0.00197
+    },
+    {
+      "day": "2026-04-10",
+      "count": 1886,
+      "avg": 4.5424,
+      "pick_rate": 0.001788
+    },
+    {
+      "day": "2026-04-11",
+      "count": 1823,
+      "avg": 4.5365,
+      "pick_rate": 0.001696
+    },
+    {
+      "day": "2026-04-12",
+      "count": 1778,
+      "avg": 4.5011,
+      "pick_rate": 0.00166
+    },
+    {
+      "day": "2026-04-13",
+      "count": 1527,
+      "avg": 4.4512,
+      "pick_rate": 0.00164
+    },
+    {
+      "day": "2026-04-14",
+      "count": 414,
+      "avg": 4.558,
+      "pick_rate": 0.001636
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.037
+}

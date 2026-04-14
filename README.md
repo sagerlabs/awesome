@@ -148,9 +148,9 @@ go run main.go
 ✅ TFT Copilot 初始化完成
 🚀 服务启动: http://localhost:8080
 ────────────────────────────────
-  POST /tft/analyze         普通接口
-  POST /tft/analyze/stream  流式接口（SSE）
-  GET  /tft/health          健康检查
+  POST /v1/tft/analyze         普通接口
+  POST /v1/tft/analyze/stream  流式接口（SSE）
+  GET  /v1/tft/health          健康检查
 ────────────────────────────────
 ```
 
@@ -158,7 +158,7 @@ go run main.go
 
 ## API 接口
 
-### POST /tft/analyze
+### POST /v1/tft/analyze
 
 普通接口，返回完整推荐结果。
 
@@ -196,7 +196,7 @@ go run main.go
 }
 ```
 
-### POST /tft/analyze/stream
+### POST /v1/tft/analyze/stream
 
 流式接口，SSE 格式逐 token 推送 LLM 建议。
 

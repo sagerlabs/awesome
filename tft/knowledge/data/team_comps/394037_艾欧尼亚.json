@@ -24,24 +24,27 @@
     "约德尔人 (1)",
     "祖安 (1)"
   ],
-  "stars": [],
+  "stars": [
+    "烬",
+    "兰博"
+  ],
   "name_string": "TFT16_Ionia, TFT16_Wukong",
   "display_names": [
     {
       "name": "艾欧尼亚",
       "type": "trait",
-      "score": 0.8811647552975601
+      "score": 0.8890893780825213
     },
     {
       "name": "孙悟空",
       "type": "unit",
-      "score": 3.375336259379867
+      "score": 3.3089137495488994
     }
   ],
-  "count": 3403,
-  "avg_placement": 4.4713,
-  "top4_rate": 0.5007,
-  "win_rate": 0.1378,
+  "count": 11574,
+  "avg_placement": 4.4739,
+  "top4_rate": 0.509,
+  "win_rate": 0.1147,
   "tier": "A",
   "builds": [
     {
@@ -51,10 +54,10 @@
         "朔极之矛",
         "虚空之杖"
       ],
-      "avg_placement": 3.5738,
-      "count": 1159,
-      "score": 0.5081,
-      "place_change": -0.92,
+      "avg_placement": 3.5491,
+      "count": 377,
+      "score": 0.4954,
+      "place_change": -0.98,
       "priority_scores": {
         "莫雷洛秘典": 100,
         "朔极之矛": 85,
@@ -66,171 +69,177 @@
       "items": [
         "鬼索的狂暴之刃",
         "珠光护手",
-        "纳什之牙"
+        "灭世者的死亡之帽"
       ],
-      "avg_placement": 3.7031,
-      "count": 1374,
-      "score": 0.3715,
-      "place_change": -0.79,
+      "avg_placement": 3.038,
+      "count": 79,
+      "score": 0.3772,
+      "place_change": -1.491,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
         "珠光护手": 85,
-        "纳什之牙": 72
+        "灭世者的死亡之帽": 72
       }
     },
     {
       "unit": "孙悟空",
       "items": [
-        "棘刺背心",
+        "巨龙之爪",
         "石像鬼石板甲",
-        "振奋盔甲"
+        "坚定之心"
       ],
-      "avg_placement": 3.6458,
-      "count": 144,
-      "score": 0.3169,
-      "place_change": -0.848,
+      "avg_placement": 3.3429,
+      "count": 35,
+      "score": 0.3559,
+      "place_change": -1.186,
       "priority_scores": {
-        "棘刺背心": 100,
+        "巨龙之爪": 100,
         "石像鬼石板甲": 85,
-        "振奋盔甲": 72
+        "坚定之心": 72
       }
     },
     {
       "unit": "瑟提",
       "items": [
-        "珠光护手",
-        "灭世者的死亡之帽",
+        "饮血剑",
+        "泰坦的坚决",
         "正义之手"
       ],
-      "avg_placement": 3.5714,
-      "count": 42,
-      "score": 0.0835,
-      "place_change": -0.922,
+      "avg_placement": 3.4074,
+      "count": 27,
+      "score": 0.0979,
+      "place_change": -1.122,
       "priority_scores": {
-        "珠光护手": 100,
-        "灭世者的死亡之帽": 85,
+        "饮血剑": 100,
+        "泰坦的坚决": 85,
         "正义之手": 72
       }
     }
   ],
   "build_items": {
     "珠光护手": {
-      "itemNames": "珠光护手",
-      "count": 21308,
-      "avg": 4.3075,
-      "pcnt": 1.00562
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 8056,
+      "avg": 4.3256,
+      "pcnt": 0.96908
     },
     "朔极之矛": {
-      "itemNames": "朔极之矛",
-      "count": 16513,
-      "avg": 4.3267,
-      "pcnt": 0.77932
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 6284,
+      "avg": 4.3461,
+      "pcnt": 0.75592
     },
     "鬼索的狂暴之刃": {
-      "itemNames": "鬼索的狂暴之刃",
-      "count": 12895,
-      "avg": 4.2538,
-      "pcnt": 0.60857
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 5289,
+      "avg": 4.3263,
+      "pcnt": 0.63623
     },
     "石像鬼石板甲": {
-      "itemNames": "石像鬼石板甲",
-      "count": 11697,
-      "avg": 4.3378,
-      "pcnt": 0.55203
-    },
-    "纳什之牙": {
-      "itemNames": "纳什之牙",
-      "count": 10840,
-      "avg": 4.2946,
-      "pcnt": 0.51159
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 4639,
+      "avg": 4.3718,
+      "pcnt": 0.55804
     },
     "虚空之杖": {
-      "itemNames": "虚空之杖",
-      "count": 10590,
-      "avg": 4.1589,
-      "pcnt": 0.49979
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 3855,
+      "avg": 4.1595,
+      "pcnt": 0.46373
     },
-    "振奋盔甲": {
-      "itemNames": "振奋盔甲",
-      "count": 7749,
-      "avg": 4.2087,
-      "pcnt": 0.36571
+    "巨龙之爪": {
+      "itemNames": "TFT_Item_DragonsClaw",
+      "count": 3210,
+      "avg": 4.2925,
+      "pcnt": 0.38614
     },
-    "棘刺背心": {
-      "itemNames": "棘刺背心",
-      "count": 5761,
-      "avg": 4.1625,
-      "pcnt": 0.27189
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 1940,
+      "avg": 4.2603,
+      "pcnt": 0.23337
     },
     "莫雷洛秘典": {
-      "itemNames": "莫雷洛秘典",
-      "count": 5077,
-      "avg": 4.0061,
-      "pcnt": 0.23961
+      "itemNames": "TFT_Item_Morellonomicon",
+      "count": 1776,
+      "avg": 3.9752,
+      "pcnt": 0.21364
+    },
+    "坚定之心": {
+      "itemNames": "TFT_Item_NightHarvester",
+      "count": 1744,
+      "avg": 4.0178,
+      "pcnt": 0.20979
     },
     "灭世者的死亡之帽": {
-      "itemNames": "灭世者的死亡之帽",
-      "count": 4279,
-      "avg": 3.8752,
-      "pcnt": 0.20194
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 1576,
+      "avg": 3.927,
+      "pcnt": 0.18958
     },
     "正义之手": {
-      "itemNames": "正义之手",
-      "count": 3870,
-      "avg": 3.9817,
-      "pcnt": 0.18264
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 1385,
+      "avg": 4.0491,
+      "pcnt": 0.16661
+    },
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 1042,
+      "avg": 4.1708,
+      "pcnt": 0.12535
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 4441,
-      "avg": 4.5589,
-      "pick_rate": 0.004462
+      "day": "2026-04-07",
+      "count": 2435,
+      "avg": 4.5704,
+      "pick_rate": 0.003159
     },
     {
-      "day": "2026-03-18",
-      "count": 8132,
-      "avg": 4.5076,
-      "pick_rate": 0.004488
+      "day": "2026-04-08",
+      "count": 3276,
+      "avg": 4.5693,
+      "pick_rate": 0.002997
     },
     {
-      "day": "2026-03-19",
-      "count": 7944,
-      "avg": 4.4909,
-      "pick_rate": 0.004342
+      "day": "2026-04-09",
+      "count": 3258,
+      "avg": 4.5126,
+      "pick_rate": 0.003025
     },
     {
-      "day": "2026-03-20",
-      "count": 7740,
-      "avg": 4.496,
-      "pick_rate": 0.004152
+      "day": "2026-04-10",
+      "count": 3108,
+      "avg": 4.5856,
+      "pick_rate": 0.002947
     },
     {
-      "day": "2026-03-21",
-      "count": 7666,
-      "avg": 4.5421,
-      "pick_rate": 0.003935
+      "day": "2026-04-11",
+      "count": 3171,
+      "avg": 4.52,
+      "pick_rate": 0.00295
     },
     {
-      "day": "2026-03-22",
-      "count": 7543,
-      "avg": 4.4929,
-      "pick_rate": 0.003832
+      "day": "2026-04-12",
+      "count": 2958,
+      "avg": 4.5199,
+      "pick_rate": 0.002762
     },
     {
-      "day": "2026-03-23",
-      "count": 6832,
-      "avg": 4.4614,
-      "pick_rate": 0.003728
+      "day": "2026-04-13",
+      "count": 2649,
+      "avg": 4.5236,
+      "pick_rate": 0.002845
     },
     {
-      "day": "2026-03-24",
-      "count": 2469,
-      "avg": 4.4949,
-      "pick_rate": 0.003941
+      "day": "2026-04-14",
+      "count": 749,
+      "avg": 4.5861,
+      "pick_rate": 0.00296
     }
   ],
   "levelling": "Fast 9",
-  "difficulty": -0.015
+  "difficulty": -0.063
 }

@@ -1,0 +1,8 @@
+./chat_completion_api.go
+./chatmodel.go
+./image_generation_model.go
+./message_extra.go
+./option.go
+./responses_api.go
+./types.go
+./utils.go

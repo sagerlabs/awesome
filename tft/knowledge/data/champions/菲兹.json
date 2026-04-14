@@ -5,31 +5,31 @@
       "cluster_id": "394014",
       "comp_name": "TFT16_Augment_RumbleCarry",
       "tier": "S",
-      "avg_placement": 3.9397
+      "avg_placement": 3.8451
     },
     {
       "cluster_id": "394025",
       "comp_name": "TFT16_Yordle, TFT16_Veigar",
       "tier": "S",
-      "avg_placement": 4.1393
+      "avg_placement": 4.1011
     },
     {
       "cluster_id": "394060",
       "comp_name": "TFT16_Yordle, TFT16_Teemo",
-      "tier": "C",
-      "avg_placement": 4.8838
+      "tier": "B",
+      "avg_placement": 4.7205
     },
     {
       "cluster_id": "394047",
       "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Taric",
       "tier": "C",
-      "avg_placement": 5.0748
+      "avg_placement": 4.9556
     },
     {
       "cluster_id": "394054",
       "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_MissFortune",
       "tier": "D",
-      "avg_placement": 5.252
+      "avg_placement": 5.3259
     }
   ],
   "builds": [
@@ -38,14 +38,14 @@
       "comp_name": "TFT16_Augment_RumbleCarry",
       "items": [
         "珠光护手",
-        "强袭者的链枷",
+        "水银",
         "正义之手"
       ],
-      "avg_placement": 3.3882,
-      "count": 152,
+      "avg_placement": 2.9524,
+      "count": 42,
       "priority_scores": {
         "珠光护手": 100,
-        "强袭者的链枷": 85,
+        "水银": 85,
         "正义之手": 72
       }
     },
@@ -57,8 +57,8 @@
         "强袭者的链枷",
         "正义之手"
       ],
-      "avg_placement": 3.8776,
-      "count": 5009,
+      "avg_placement": 3.8847,
+      "count": 3850,
       "priority_scores": {
         "珠光护手": 100,
         "强袭者的链枷": 85,
@@ -73,8 +73,8 @@
         "珠光护手",
         "正义之手"
       ],
-      "avg_placement": 4.6261,
-      "count": 920,
+      "avg_placement": 4.4612,
+      "count": 529,
       "priority_scores": {
         "黑市炸药": 100,
         "珠光护手": 85,

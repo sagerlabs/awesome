@@ -29,207 +29,200 @@
     {
       "name": "斗士",
       "type": "trait",
-      "score": 2.5279632721202003
+      "score": 2.5172413793103448
     },
     {
       "name": "俄洛伊",
       "type": "unit",
-      "score": 4.282762938230384
+      "score": 4.262849707221861
     }
   ],
-  "count": 568,
-  "avg_placement": 4.8979,
-  "top4_rate": 0.4489,
-  "win_rate": 0.0352,
+  "count": 3282,
+  "avg_placement": 4.89,
+  "top4_rate": 0.4278,
+  "win_rate": 0.039,
   "tier": "C",
   "builds": [
     {
       "unit": "俄洛伊",
       "items": [
-        "饮血剑",
         "无尽之刃",
-        "泰坦的坚决"
+        "斯特拉克的挑战护手",
+        "正义之手"
       ],
-      "avg_placement": 4.6913,
-      "count": 149,
-      "score": 0.456,
-      "place_change": -0.322,
+      "avg_placement": 3.1818,
+      "count": 11,
+      "score": 0.8325,
+      "place_change": -1.734,
       "priority_scores": {
-        "饮血剑": 100,
-        "无尽之刃": 85,
-        "泰坦的坚决": 72
+        "无尽之刃": 100,
+        "斯特拉克的挑战护手": 85,
+        "正义之手": 72
       }
     },
     {
       "unit": "赛恩",
       "items": [
-        "棘刺背心",
-        "石像鬼石板甲",
-        "日炎斗篷"
+        "坚定之心",
+        "日炎斗篷",
+        "振奋盔甲"
       ],
-      "avg_placement": 3.5,
-      "count": 12,
-      "score": 0.3503,
-      "place_change": -1.514,
+      "avg_placement": 3.3846,
+      "count": 13,
+      "score": 0.4267,
+      "place_change": -1.531,
       "priority_scores": {
-        "棘刺背心": 100,
-        "石像鬼石板甲": 85,
-        "日炎斗篷": 72
+        "坚定之心": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
       }
     },
     {
       "unit": "巴德",
       "items": [
         "大天使之杖",
-        "珠光护手",
+        "大天使之杖",
         "朔极之矛"
       ],
-      "avg_placement": 4.3916,
-      "count": 166,
-      "score": 0.3261,
-      "place_change": -0.622,
+      "avg_placement": 3.2222,
+      "count": 9,
+      "score": 0.3414,
+      "place_change": -1.693,
       "priority_scores": {
-        "大天使之杖": 100,
-        "珠光护手": 85,
+        "大天使之杖": 85,
         "朔极之矛": 72
       }
     },
     {
       "unit": "厄斐琉斯",
       "items": [
+        "死亡之刃",
         "鬼索的狂暴之刃",
-        "无尽之刃",
-        "海妖之怒"
+        "无尽之刃"
       ],
-      "avg_placement": 4.4771,
-      "count": 262,
-      "score": 0.2613,
-      "place_change": -0.537,
+      "avg_placement": 3.6923,
+      "count": 26,
+      "score": 0.3206,
+      "place_change": -1.223,
       "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "无尽之刃": 85,
-        "海妖之怒": 72
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "无尽之刃": 72
       }
     }
   ],
   "build_items": {
-    "饮血剑": {
-      "itemNames": "饮血剑",
-      "count": 1873,
-      "avg": 4.9546,
-      "pcnt": 0.78172
-    },
     "鬼索的狂暴之刃": {
-      "itemNames": "鬼索的狂暴之刃",
-      "count": 1659,
-      "avg": 4.8933,
-      "pcnt": 0.6924
-    },
-    "泰坦的坚决": {
-      "itemNames": "泰坦的坚决",
-      "count": 1598,
-      "avg": 5.0181,
-      "pcnt": 0.66694
-    },
-    "无尽之刃": {
-      "itemNames": "无尽之刃",
-      "count": 1317,
-      "avg": 4.7639,
-      "pcnt": 0.54967
-    },
-    "珠光护手": {
-      "itemNames": "珠光护手",
-      "count": 1317,
-      "avg": 4.7935,
-      "pcnt": 0.54967
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 1118,
+      "avg": 4.7916,
+      "pcnt": 0.72739
     },
     "日炎斗篷": {
-      "itemNames": "日炎斗篷",
-      "count": 1312,
-      "avg": 4.7073,
-      "pcnt": 0.54758
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 875,
+      "avg": 4.68,
+      "pcnt": 0.56929
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 845,
+      "avg": 4.7609,
+      "pcnt": 0.54977
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 813,
+      "avg": 4.6285,
+      "pcnt": 0.52895
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 654,
+      "avg": 4.711,
+      "pcnt": 0.4255
+    },
+    "正义之手": {
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 572,
+      "avg": 4.792,
+      "pcnt": 0.37215
     },
     "朔极之矛": {
-      "itemNames": "朔极之矛",
-      "count": 915,
-      "avg": 4.6776,
-      "pcnt": 0.38189
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 569,
+      "avg": 4.9227,
+      "pcnt": 0.3702
     },
     "大天使之杖": {
-      "itemNames": "大天使之杖",
-      "count": 832,
-      "avg": 4.6538,
-      "pcnt": 0.34725
+      "itemNames": "TFT_Item_ArchangelsStaff",
+      "count": 540,
+      "avg": 4.6519,
+      "pcnt": 0.35133
     },
-    "石像鬼石板甲": {
-      "itemNames": "石像鬼石板甲",
-      "count": 754,
-      "avg": 4.7347,
-      "pcnt": 0.31469
+    "坚定之心": {
+      "itemNames": "TFT_Item_NightHarvester",
+      "count": 192,
+      "avg": 4.4375,
+      "pcnt": 0.12492
     },
-    "海妖之怒": {
-      "itemNames": "海妖之怒",
-      "count": 728,
-      "avg": 4.5234,
-      "pcnt": 0.30384
-    },
-    "棘刺背心": {
-      "itemNames": "棘刺背心",
-      "count": 592,
-      "avg": 4.6166,
-      "pcnt": 0.24708
+    "死亡之刃": {
+      "itemNames": "TFT_Item_Deathblade",
+      "count": 183,
+      "avg": 4.1475,
+      "pcnt": 0.11906
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 451,
-      "avg": 4.8958,
-      "pick_rate": 0.000453
+      "day": "2026-04-07",
+      "count": 404,
+      "avg": 5.0297,
+      "pick_rate": 0.000524
     },
     {
-      "day": "2026-03-18",
-      "count": 768,
-      "avg": 5.0339,
-      "pick_rate": 0.000424
+      "day": "2026-04-08",
+      "count": 556,
+      "avg": 5.1583,
+      "pick_rate": 0.000509
     },
     {
-      "day": "2026-03-19",
-      "count": 805,
-      "avg": 4.8683,
-      "pick_rate": 0.00044
+      "day": "2026-04-09",
+      "count": 542,
+      "avg": 4.9668,
+      "pick_rate": 0.000503
     },
     {
-      "day": "2026-03-20",
-      "count": 815,
-      "avg": 5.0344,
-      "pick_rate": 0.000437
+      "day": "2026-04-10",
+      "count": 533,
+      "avg": 5.0281,
+      "pick_rate": 0.000505
     },
     {
-      "day": "2026-03-21",
-      "count": 886,
-      "avg": 5.0113,
-      "pick_rate": 0.000455
+      "day": "2026-04-11",
+      "count": 568,
+      "avg": 5.0352,
+      "pick_rate": 0.000528
     },
     {
-      "day": "2026-03-22",
-      "count": 827,
-      "avg": 5.0339,
-      "pick_rate": 0.00042
+      "day": "2026-04-12",
+      "count": 551,
+      "avg": 4.902,
+      "pick_rate": 0.000514
     },
     {
-      "day": "2026-03-23",
-      "count": 772,
-      "avg": 5.0272,
-      "pick_rate": 0.000421
+      "day": "2026-04-13",
+      "count": 478,
+      "avg": 4.7845,
+      "pick_rate": 0.000513
     },
     {
-      "day": "2026-03-24",
-      "count": 278,
-      "avg": 5.0324,
-      "pick_rate": 0.000444
+      "day": "2026-04-14",
+      "count": 116,
+      "avg": 5.1638,
+      "pick_rate": 0.000458
     }
   ],
   "levelling": "lvl 5",
-  "difficulty": -0.109
+  "difficulty": -0.086
 }

@@ -4,20 +4,20 @@
     {
       "cluster_id": "394030",
       "comp_name": "TFT16_Piltover, TFT16_Seraphine",
-      "tier": "A",
-      "avg_placement": 4.2903
+      "tier": "B",
+      "avg_placement": 4.6052
     },
     {
       "cluster_id": "394063",
       "comp_name": "TFT16_Piltover, TFT16_THex",
       "tier": "D",
-      "avg_placement": 5.2662
+      "avg_placement": 5.3188
     },
     {
       "cluster_id": "394068",
       "comp_name": "TFT16_Explorer, TFT16_Bard",
       "tier": "D",
-      "avg_placement": 6.3249
+      "avg_placement": 6.167
     }
   ],
   "builds": []

@@ -35,18 +35,18 @@
     {
       "name": "弗雷尔卓德",
       "type": "trait",
-      "score": 1.591835078321565
+      "score": 1.7528145931309675
     },
     {
       "name": "泰达米尔",
       "type": "unit",
-      "score": 4.015157048940833
+      "score": 3.7821718683197947
     }
   ],
-  "count": 6503,
-  "avg_placement": 4.9865,
-  "top4_rate": 0.4055,
-  "win_rate": 0.0687,
+  "count": 42679,
+  "avg_placement": 5.0494,
+  "top4_rate": 0.3959,
+  "win_rate": 0.0686,
   "tier": "C",
   "builds": [
     {
@@ -56,10 +56,10 @@
         "鬼索的狂暴之刃",
         "水银"
       ],
-      "avg_placement": 4.6367,
-      "count": 5761,
-      "score": 0.4928,
-      "place_change": -0.342,
+      "avg_placement": 4.6675,
+      "count": 2722,
+      "score": 0.5186,
+      "place_change": -0.464,
       "priority_scores": {
         "饮血剑": 100,
         "鬼索的狂暴之刃": 85,
@@ -73,10 +73,10 @@
         "巨人杀手",
         "海妖之怒"
       ],
-      "avg_placement": 4.3249,
-      "count": 1665,
-      "score": 0.4639,
-      "place_change": -0.654,
+      "avg_placement": 4.4264,
+      "count": 924,
+      "score": 0.4818,
+      "place_change": -0.705,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
         "巨人杀手": 85,
@@ -90,10 +90,10 @@
         "日炎斗篷",
         "薄暮法袍"
       ],
-      "avg_placement": 4.1165,
-      "count": 635,
-      "score": 0.2844,
-      "place_change": -0.862,
+      "avg_placement": 4.1176,
+      "count": 340,
+      "score": 0.3078,
+      "place_change": -1.014,
       "priority_scores": {
         "圣盾使的誓约": 100,
         "日炎斗篷": 85,
@@ -101,129 +101,141 @@
       }
     },
     {
-      "unit": "妮蔻",
+      "unit": "丽桑卓",
       "items": [
-        "圣盾使的誓约",
-        "振奋盔甲",
-        "薄暮法袍"
+        "蓝霸符",
+        "珠光护手",
+        "灭世者的死亡之帽"
       ],
-      "avg_placement": 4.1528,
-      "count": 72,
-      "score": 0.0502,
-      "place_change": -0.826,
+      "avg_placement": 4.1842,
+      "count": 38,
+      "score": 0.0525,
+      "place_change": -0.947,
       "priority_scores": {
-        "圣盾使的誓约": 100,
-        "振奋盔甲": 85,
-        "薄暮法袍": 72
+        "蓝霸符": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
       }
     }
   ],
   "build_items": {
     "鬼索的狂暴之刃": {
-      "itemNames": "鬼索的狂暴之刃",
-      "count": 34451,
-      "avg": 4.771,
-      "pcnt": 1.39806
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 18433,
+      "avg": 4.8502,
+      "pcnt": 1.31345
     },
     "饮血剑": {
-      "itemNames": "饮血剑",
-      "count": 17329,
-      "avg": 4.8318,
-      "pcnt": 0.70323
-    },
-    "水银": {
-      "itemNames": "水银",
-      "count": 13446,
-      "avg": 4.6288,
-      "pcnt": 0.54565
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 9434,
+      "avg": 4.9124,
+      "pcnt": 0.67222
     },
     "日炎斗篷": {
-      "itemNames": "日炎斗篷",
-      "count": 12936,
-      "avg": 4.6495,
-      "pcnt": 0.52496
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 6890,
+      "avg": 4.7946,
+      "pcnt": 0.49095
     },
-    "振奋盔甲": {
-      "itemNames": "振奋盔甲",
-      "count": 12499,
-      "avg": 4.5872,
-      "pcnt": 0.50722
+    "水银": {
+      "itemNames": "TFT_Item_Quicksilver",
+      "count": 6466,
+      "avg": 4.6587,
+      "pcnt": 0.46074
     },
     "海妖之怒": {
-      "itemNames": "海妖之怒",
-      "count": 9439,
-      "avg": 4.5207,
-      "pcnt": 0.38305
-    },
-    "圣盾使的誓约": {
-      "itemNames": "圣盾使的誓约",
-      "count": 8173,
-      "avg": 4.38,
-      "pcnt": 0.33167
+      "itemNames": "TFT_Item_RunaansHurricane",
+      "count": 5051,
+      "avg": 4.6013,
+      "pcnt": 0.35991
     },
     "巨人杀手": {
-      "itemNames": "巨人杀手",
-      "count": 7389,
-      "avg": 4.4652,
-      "pcnt": 0.29985
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 4295,
+      "avg": 4.6505,
+      "pcnt": 0.30604
+    },
+    "圣盾使的誓约": {
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 3986,
+      "avg": 4.439,
+      "pcnt": 0.28402
     },
     "薄暮法袍": {
-      "itemNames": "薄暮法袍",
-      "count": 7271,
-      "avg": 4.3268,
-      "pcnt": 0.29507
+      "itemNames": "TFT_Item_SpectralGauntlet",
+      "count": 3628,
+      "avg": 4.3346,
+      "pcnt": 0.25852
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 2804,
+      "avg": 5.4601,
+      "pcnt": 0.1998
+    },
+    "蓝霸符": {
+      "itemNames": "TFT_Item_BlueBuff",
+      "count": 1975,
+      "avg": 5.0992,
+      "pcnt": 0.14073
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 1022,
+      "avg": 5.1135,
+      "pcnt": 0.07282
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 5022,
-      "avg": 4.9255,
-      "pick_rate": 0.005045
+      "day": "2026-04-07",
+      "count": 3476,
+      "avg": 5.1062,
+      "pick_rate": 0.00451
     },
     {
-      "day": "2026-03-18",
-      "count": 9047,
-      "avg": 4.8969,
-      "pick_rate": 0.004993
+      "day": "2026-04-08",
+      "count": 4950,
+      "avg": 5.1408,
+      "pick_rate": 0.004528
     },
     {
-      "day": "2026-03-19",
-      "count": 9002,
-      "avg": 4.9446,
-      "pick_rate": 0.00492
+      "day": "2026-04-09",
+      "count": 5101,
+      "avg": 5.0837,
+      "pick_rate": 0.004736
     },
     {
-      "day": "2026-03-20",
-      "count": 8758,
-      "avg": 5.0126,
-      "pick_rate": 0.004698
+      "day": "2026-04-10",
+      "count": 4920,
+      "avg": 5.0984,
+      "pick_rate": 0.004665
     },
     {
-      "day": "2026-03-21",
-      "count": 8580,
-      "avg": 4.9956,
-      "pick_rate": 0.004404
+      "day": "2026-04-11",
+      "count": 5138,
+      "avg": 5.1302,
+      "pick_rate": 0.00478
     },
     {
-      "day": "2026-03-22",
-      "count": 8876,
-      "avg": 4.963,
-      "pick_rate": 0.004509
+      "day": "2026-04-12",
+      "count": 5099,
+      "avg": 5.1245,
+      "pick_rate": 0.004761
     },
     {
-      "day": "2026-03-23",
-      "count": 7919,
-      "avg": 4.9727,
-      "pick_rate": 0.004322
+      "day": "2026-04-13",
+      "count": 4438,
+      "avg": 5.1133,
+      "pick_rate": 0.004766
     },
     {
-      "day": "2026-03-24",
-      "count": 2617,
-      "avg": 4.9981,
-      "pick_rate": 0.004177
+      "day": "2026-04-14",
+      "count": 1170,
+      "avg": 5.1829,
+      "pick_rate": 0.004623
     }
   ],
   "levelling": "lvl 6",
-  "difficulty": -0.143
+  "difficulty": -0.178
 }

@@ -5,13 +5,19 @@
       "cluster_id": "394045",
       "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Nautilus",
       "tier": "D",
-      "avg_placement": 5.1393
+      "avg_placement": 5.2356
+    },
+    {
+      "cluster_id": "394054",
+      "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_MissFortune",
+      "tier": "D",
+      "avg_placement": 5.3259
     },
     {
       "cluster_id": "394058",
       "comp_name": "TFT16_Bilgewater, TFT16_Gangplank",
       "tier": "D",
-      "avg_placement": 5.5941
+      "avg_placement": 5.6475
     }
   ],
   "builds": []

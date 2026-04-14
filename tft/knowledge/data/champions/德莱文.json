@@ -5,43 +5,43 @@
       "cluster_id": "394009",
       "comp_name": "TFT16_Noxus, TFT16_Skarner",
       "tier": "S",
-      "avg_placement": 4.1962
+      "avg_placement": 4.003
     },
     {
       "cluster_id": "394033",
       "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
       "tier": "S",
-      "avg_placement": 4.2031
+      "avg_placement": 4.1585
     },
     {
       "cluster_id": "394006",
       "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
       "tier": "A",
-      "avg_placement": 4.314
+      "avg_placement": 4.4506
     },
     {
       "cluster_id": "394004",
       "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
       "tier": "A",
-      "avg_placement": 4.463
+      "avg_placement": 4.5124
     },
     {
       "cluster_id": "394051",
       "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Draven",
       "tier": "B",
-      "avg_placement": 4.7486
+      "avg_placement": 4.7047
     },
     {
       "cluster_id": "394052",
       "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Slayer",
       "tier": "C",
-      "avg_placement": 4.9865
+      "avg_placement": 5.0494
     },
     {
       "cluster_id": "394058",
       "comp_name": "TFT16_Bilgewater, TFT16_Gangplank",
       "tier": "D",
-      "avg_placement": 5.5941
+      "avg_placement": 5.6475
     }
   ],
   "builds": [
@@ -53,8 +53,8 @@
         "最后的轻语",
         "海妖之怒"
       ],
-      "avg_placement": 3.7033,
-      "count": 13459,
+      "avg_placement": 3.7657,
+      "count": 8050,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
         "最后的轻语": 85,
@@ -65,16 +65,16 @@
       "cluster_id": "394051",
       "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Draven",
       "items": [
+        "死亡之刃",
         "鬼索的狂暴之刃",
-        "最后的轻语",
-        "海妖之怒"
+        "最后的轻语"
       ],
-      "avg_placement": 4.2693,
-      "count": 765,
+      "avg_placement": 3.8929,
+      "count": 168,
       "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "最后的轻语": 85,
-        "海妖之怒": 72
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "最后的轻语": 72
       }
     },
     {
@@ -83,14 +83,14 @@
       "items": [
         "死亡之刃",
         "鬼索的狂暴之刃",
-        "巨人杀手"
+        "海妖之怒"
       ],
-      "avg_placement": 4,
-      "count": 104,
+      "avg_placement": 4.125,
+      "count": 160,
       "priority_scores": {
         "死亡之刃": 100,
         "鬼索的狂暴之刃": 85,
-        "巨人杀手": 72
+        "海妖之怒": 72
       }
     }
   ]

@@ -29,18 +29,18 @@
     {
       "name": "艾欧尼亚",
       "type": "trait",
-      "score": 2.0452043163891322
+      "score": 2.0806690180907954
     },
     {
       "name": "芸阿娜",
       "type": "unit",
-      "score": 3.907181200701139
+      "score": 3.9094464671748774
     }
   ],
-  "count": 13814,
-  "avg_placement": 4.5979,
-  "top4_rate": 0.4788,
-  "win_rate": 0.1196,
+  "count": 64246,
+  "avg_placement": 4.5853,
+  "top4_rate": 0.482,
+  "win_rate": 0.1077,
   "tier": "B",
   "builds": [
     {
@@ -50,10 +50,10 @@
         "无尽之刃",
         "强袭者的链枷"
       ],
-      "avg_placement": 4.214,
-      "count": 6882,
-      "score": 0.4958,
-      "place_change": -0.454,
+      "avg_placement": 4.1415,
+      "count": 3421,
+      "score": 0.5191,
+      "place_change": -0.49,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
         "无尽之刃": 85,
@@ -67,10 +67,10 @@
         "振奋盔甲",
         "薄暮法袍"
       ],
-      "avg_placement": 3.9973,
-      "count": 5262,
-      "score": 0.4947,
-      "place_change": -0.671,
+      "avg_placement": 3.9442,
+      "count": 2743,
+      "score": 0.5077,
+      "place_change": -0.687,
       "priority_scores": {
         "日炎斗篷": 100,
         "振奋盔甲": 85,
@@ -84,10 +84,10 @@
         "强袭者的链枷",
         "正义之手"
       ],
-      "avg_placement": 3.8365,
-      "count": 1376,
-      "score": 0.2431,
-      "place_change": -0.832,
+      "avg_placement": 3.6275,
+      "count": 714,
+      "score": 0.2737,
+      "place_change": -1.004,
       "priority_scores": {
         "珠光护手": 100,
         "强袭者的链枷": 85,
@@ -101,10 +101,10 @@
         "巨人杀手",
         "海妖之怒"
       ],
-      "avg_placement": 3.2455,
-      "count": 501,
-      "score": 0.1464,
-      "place_change": -1.423,
+      "avg_placement": 3.2338,
+      "count": 278,
+      "score": 0.1561,
+      "place_change": -1.398,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
         "巨人杀手": 85,
@@ -114,116 +114,116 @@
   ],
   "build_items": {
     "鬼索的狂暴之刃": {
-      "itemNames": "鬼索的狂暴之刃",
-      "count": 81144,
-      "avg": 4.508,
-      "pcnt": 1.1112
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 39829,
+      "avg": 4.4732,
+      "pcnt": 1.13292
     },
     "无尽之刃": {
-      "itemNames": "无尽之刃",
-      "count": 62575,
-      "avg": 4.4592,
-      "pcnt": 0.85691
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 30153,
+      "avg": 4.4175,
+      "pcnt": 0.85769
     },
     "日炎斗篷": {
-      "itemNames": "日炎斗篷",
-      "count": 41448,
-      "avg": 4.433,
-      "pcnt": 0.56759
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 19994,
+      "avg": 4.4018,
+      "pcnt": 0.56872
     },
     "振奋盔甲": {
-      "itemNames": "振奋盔甲",
-      "count": 39502,
-      "avg": 4.4558,
-      "pcnt": 0.54095
+      "itemNames": "TFT_Item_Redemption",
+      "count": 19349,
+      "avg": 4.4166,
+      "pcnt": 0.55038
     },
     "珠光护手": {
-      "itemNames": "珠光护手",
-      "count": 33679,
-      "avg": 4.4672,
-      "pcnt": 0.4612
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 15742,
+      "avg": 4.4245,
+      "pcnt": 0.44778
     },
     "海妖之怒": {
-      "itemNames": "海妖之怒",
-      "count": 28731,
-      "avg": 4.3779,
-      "pcnt": 0.39345
+      "itemNames": "TFT_Item_RunaansHurricane",
+      "count": 14347,
+      "avg": 4.3545,
+      "pcnt": 0.4081
     },
     "正义之手": {
-      "itemNames": "正义之手",
-      "count": 27340,
-      "avg": 4.3067,
-      "pcnt": 0.3744
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 12947,
+      "avg": 4.2358,
+      "pcnt": 0.36827
     },
     "薄暮法袍": {
-      "itemNames": "薄暮法袍",
-      "count": 27263,
-      "avg": 4.2446,
-      "pcnt": 0.37334
+      "itemNames": "TFT_Item_SpectralGauntlet",
+      "count": 12541,
+      "avg": 4.2013,
+      "pcnt": 0.35672
     },
     "巨人杀手": {
-      "itemNames": "巨人杀手",
-      "count": 20892,
-      "avg": 4.2319,
-      "pcnt": 0.2861
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 10169,
+      "avg": 4.1939,
+      "pcnt": 0.28925
     },
     "强袭者的链枷": {
-      "itemNames": "强袭者的链枷",
-      "count": 16799,
-      "avg": 4.0978,
-      "pcnt": 0.23005
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 8160,
+      "avg": 4.0591,
+      "pcnt": 0.23211
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 13082,
-      "avg": 4.6815,
-      "pick_rate": 0.013143
+      "day": "2026-04-07",
+      "count": 9016,
+      "avg": 4.6607,
+      "pick_rate": 0.011698
     },
     {
-      "day": "2026-03-18",
-      "count": 26955,
-      "avg": 4.6368,
-      "pick_rate": 0.014875
+      "day": "2026-04-08",
+      "count": 12768,
+      "avg": 4.6379,
+      "pick_rate": 0.01168
     },
     {
-      "day": "2026-03-19",
-      "count": 26897,
-      "avg": 4.6207,
-      "pick_rate": 0.014702
+      "day": "2026-04-09",
+      "count": 12486,
+      "avg": 4.6392,
+      "pick_rate": 0.011592
     },
     {
-      "day": "2026-03-20",
-      "count": 26588,
-      "avg": 4.664,
-      "pick_rate": 0.014262
+      "day": "2026-04-10",
+      "count": 12313,
+      "avg": 4.6216,
+      "pick_rate": 0.011674
     },
     {
-      "day": "2026-03-21",
-      "count": 26645,
-      "avg": 4.6776,
-      "pick_rate": 0.013676
+      "day": "2026-04-11",
+      "count": 12747,
+      "avg": 4.6463,
+      "pick_rate": 0.011858
     },
     {
-      "day": "2026-03-22",
-      "count": 26189,
-      "avg": 4.675,
-      "pick_rate": 0.013305
+      "day": "2026-04-12",
+      "count": 13111,
+      "avg": 4.6123,
+      "pick_rate": 0.012241
     },
     {
-      "day": "2026-03-23",
-      "count": 23212,
-      "avg": 4.6669,
-      "pick_rate": 0.012667
+      "day": "2026-04-13",
+      "count": 10834,
+      "avg": 4.6401,
+      "pick_rate": 0.011634
     },
     {
-      "day": "2026-03-24",
-      "count": 7863,
-      "avg": 4.6258,
-      "pick_rate": 0.012551
+      "day": "2026-04-14",
+      "count": 2895,
+      "avg": 4.6501,
+      "pick_rate": 0.011439
     }
   ],
   "levelling": "Fast 8",
-  "difficulty": -0.057
+  "difficulty": -0.08
 }

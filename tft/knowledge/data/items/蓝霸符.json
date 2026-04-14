@@ -2,11 +2,19 @@
   "name": "蓝霸符",
   "priority_list": [
     {
-      "cluster_id": "394040",
-      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
-      "comp_tier": "A",
-      "comp_avg": 4.4798,
-      "carry": "萨勒芬妮",
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1427,
+      "carry": "丽桑卓",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "comp_tier": "S",
+      "comp_avg": 4.1585,
+      "carry": "梅尔",
       "priority_score": 100
     }
   ]

@@ -5,62 +5,62 @@
       "cluster_id": "394003",
       "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
       "tier": "S",
-      "avg_placement": 4.0274
+      "avg_placement": 3.94
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "tier": "S",
+      "avg_placement": 4.0712
     },
     {
       "cluster_id": "394033",
       "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
       "tier": "S",
-      "avg_placement": 4.2031
+      "avg_placement": 4.1585
     },
     {
       "cluster_id": "394012",
       "comp_name": "TFT16_Noxus, TFT16_Nasus",
       "tier": "A",
-      "avg_placement": 4.2768
-    },
-    {
-      "cluster_id": "394005",
-      "comp_name": "TFT16_Noxus, TFT16_Taric",
-      "tier": "A",
-      "avg_placement": 4.2796
-    },
-    {
-      "cluster_id": "394023",
-      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
-      "tier": "A",
-      "avg_placement": 4.2977
+      "avg_placement": 4.3413
     },
     {
       "cluster_id": "394006",
       "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
       "tier": "A",
-      "avg_placement": 4.314
+      "avg_placement": 4.4506
+    },
+    {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "tier": "A",
+      "avg_placement": 4.4818
     },
     {
       "cluster_id": "394004",
       "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
       "tier": "A",
-      "avg_placement": 4.463
+      "avg_placement": 4.5124
     },
     {
       "cluster_id": "394051",
       "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Draven",
       "tier": "B",
-      "avg_placement": 4.7486
+      "avg_placement": 4.7047
     }
   ],
   "builds": [
     {
-      "cluster_id": "394023",
-      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
       "items": [
         "适应性头盔",
         "斯特拉克的挑战护手",
         "泰坦的坚决"
       ],
-      "avg_placement": 4.0231,
-      "count": 8503,
+      "avg_placement": 3.9871,
+      "count": 40933,
       "priority_scores": {
         "适应性头盔": 100,
         "斯特拉克的挑战护手": 85,
@@ -68,15 +68,15 @@
       }
     },
     {
-      "cluster_id": "394006",
-      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
       "items": [
         "适应性头盔",
         "斯特拉克的挑战护手",
         "泰坦的坚决"
       ],
-      "avg_placement": 3.9399,
-      "count": 84032,
+      "avg_placement": 4.2007,
+      "count": 1774,
       "priority_scores": {
         "适应性头盔": 100,
         "斯特拉克的挑战护手": 85,
@@ -91,8 +91,8 @@
         "振奋盔甲",
         "薄暮法袍"
       ],
-      "avg_placement": 3.7309,
-      "count": 431,
+      "avg_placement": 3.8438,
+      "count": 192,
       "priority_scores": {
         "日炎斗篷": 100,
         "振奋盔甲": 85,
@@ -107,8 +107,8 @@
         "斯特拉克的挑战护手",
         "泰坦的坚决"
       ],
-      "avg_placement": 4.2436,
-      "count": 4730,
+      "avg_placement": 4.2342,
+      "count": 2054,
       "priority_scores": {
         "适应性头盔": 100,
         "斯特拉克的挑战护手": 85,

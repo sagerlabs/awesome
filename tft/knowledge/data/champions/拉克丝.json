@@ -5,43 +5,43 @@
       "cluster_id": "394000",
       "comp_name": "TFT16_Sorcerer, TFT16_Lux",
       "tier": "S",
-      "avg_placement": 4.0398
+      "avg_placement": 3.8569
+    },
+    {
+      "cluster_id": "394049",
+      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Poppy",
+      "tier": "B",
+      "avg_placement": 4.6104
     },
     {
       "cluster_id": "394034",
       "comp_name": "TFT16_Augment_XinZhaoCarry",
       "tier": "B",
-      "avg_placement": 4.6723
-    },
-    {
-      "cluster_id": "394041",
-      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Lissandra",
-      "tier": "B",
-      "avg_placement": 4.726
-    },
-    {
-      "cluster_id": "394049",
-      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Poppy",
-      "tier": "C",
-      "avg_placement": 4.8682
-    },
-    {
-      "cluster_id": "394046",
-      "comp_name": "TFT16_Sorcerer, TFT16_Annie",
-      "tier": "D",
-      "avg_placement": 5.1158
+      "avg_placement": 4.7227
     },
     {
       "cluster_id": "394043",
       "comp_name": "TFT16_Demacia, TFT16_Taric",
       "tier": "D",
-      "avg_placement": 5.1958
+      "avg_placement": 5.1481
+    },
+    {
+      "cluster_id": "394041",
+      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Lissandra",
+      "tier": "D",
+      "avg_placement": 5.2556
+    },
+    {
+      "cluster_id": "394046",
+      "comp_name": "TFT16_Sorcerer, TFT16_Annie",
+      "tier": "D",
+      "avg_placement": 5.2923
     },
     {
       "cluster_id": "394064",
       "comp_name": "TFT16_Demacia, TFT16_JarvanIV",
       "tier": "D",
-      "avg_placement": 6.1148
+      "avg_placement": 6.079
     }
   ],
   "builds": [
@@ -53,42 +53,11 @@
         "纳什之牙",
         "纳什之牙"
       ],
-      "avg_placement": 3.7718,
-      "count": 12426,
+      "avg_placement": 3.4897,
+      "count": 11127,
       "priority_scores": {
         "珠光护手": 100,
         "纳什之牙": 72
-      }
-    },
-    {
-      "cluster_id": "394034",
-      "comp_name": "TFT16_Augment_XinZhaoCarry",
-      "items": [
-        "大天使之杖",
-        "大天使之杖",
-        "海克斯科技枪刃"
-      ],
-      "avg_placement": 3.8238,
-      "count": 579,
-      "priority_scores": {
-        "大天使之杖": 85,
-        "海克斯科技枪刃": 72
-      }
-    },
-    {
-      "cluster_id": "394041",
-      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Lissandra",
-      "items": [
-        "珠光护手",
-        "纳什之牙",
-        "强袭者的链枷"
-      ],
-      "avg_placement": 4.214,
-      "count": 285,
-      "priority_scores": {
-        "珠光护手": 100,
-        "纳什之牙": 85,
-        "强袭者的链枷": 72
       }
     },
     {
@@ -99,8 +68,8 @@
         "珠光护手",
         "纳什之牙"
       ],
-      "avg_placement": 4.3066,
-      "count": 6174,
+      "avg_placement": 4.0624,
+      "count": 4054,
       "priority_scores": {
         "海克斯科技枪刃": 100,
         "珠光护手": 85,
@@ -108,34 +77,66 @@
       }
     },
     {
+      "cluster_id": "394034",
+      "comp_name": "TFT16_Augment_XinZhaoCarry",
+      "items": [
+        "海克斯科技枪刃",
+        "珠光护手",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.7857,
+      "count": 14,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "珠光护手": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
       "cluster_id": "394043",
       "comp_name": "TFT16_Demacia, TFT16_Taric",
       "items": [
-        "珠光护手",
-        "纳什之牙",
-        "强袭者的链枷"
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
       ],
-      "avg_placement": 4.8235,
-      "count": 136,
+      "avg_placement": 4.1429,
+      "count": 56,
       "priority_scores": {
-        "珠光护手": 100,
-        "纳什之牙": 85,
-        "强袭者的链枷": 72
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "394041",
+      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Lissandra",
+      "items": [
+        "海克斯科技枪刃",
+        "珠光护手",
+        "纳什之牙"
+      ],
+      "avg_placement": 4.8212,
+      "count": 923,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "珠光护手": 85,
+        "纳什之牙": 72
       }
     },
     {
       "cluster_id": "394064",
       "comp_name": "TFT16_Demacia, TFT16_JarvanIV",
       "items": [
+        "蓝霸符",
         "珠光护手",
-        "灭世者的死亡之帽",
         "朔极之矛"
       ],
-      "avg_placement": 4.9688,
-      "count": 96,
+      "avg_placement": 4.9167,
+      "count": 36,
       "priority_scores": {
-        "珠光护手": 100,
-        "灭世者的死亡之帽": 85,
+        "蓝霸符": 100,
+        "珠光护手": 85,
         "朔极之矛": 72
       }
     }

@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/sagerlabs/awesome/sse"
+	"github.com/sagerlabs/awesome/tft/sse"
 )
 
 // Stock represents a stock price update

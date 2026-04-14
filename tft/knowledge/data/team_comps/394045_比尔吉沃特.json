@@ -33,18 +33,18 @@
     {
       "name": "比尔吉沃特",
       "type": "trait",
-      "score": 2.3621228572368635
+      "score": 2.453201526937482
     },
     {
       "name": "厄运小姐",
       "type": "unit",
-      "score": 3.959375044065598
+      "score": 3.895648768366465
     }
   ],
-  "count": 42194,
-  "avg_placement": 5.1393,
-  "top4_rate": 0.3648,
-  "win_rate": 0.1174,
+  "count": 221226,
+  "avg_placement": 5.2356,
+  "top4_rate": 0.3508,
+  "win_rate": 0.091,
   "tier": "D",
   "builds": [
     {
@@ -52,16 +52,16 @@
       "items": [
         "亡者的短剑",
         "大副的燧发枪",
-        "朔极之矛"
+        "无尽之刃"
       ],
-      "avg_placement": 3.86,
-      "count": 1864,
-      "score": 0.6433,
-      "place_change": -1.23,
+      "avg_placement": 3.882,
+      "count": 966,
+      "score": 0.6439,
+      "place_change": -1.271,
       "priority_scores": {
         "亡者的短剑": 100,
         "大副的燧发枪": 85,
-        "朔极之矛": 72
+        "无尽之刃": 72
       }
     },
     {
@@ -71,10 +71,10 @@
         "成堆柑橘",
         "振奋盔甲"
       ],
-      "avg_placement": 3.2053,
-      "count": 750,
-      "score": 0.4777,
-      "place_change": -1.885,
+      "avg_placement": 3.26,
+      "count": 350,
+      "score": 0.4491,
+      "place_change": -1.893,
       "priority_scores": {
         "酒吧指虎": 100,
         "成堆柑橘": 85,
@@ -88,10 +88,10 @@
         "棘刺背心",
         "巨龙之爪"
       ],
-      "avg_placement": 4.0398,
-      "count": 1633,
-      "score": 0.3722,
-      "place_change": -1.051,
+      "avg_placement": 4.245,
+      "count": 853,
+      "score": 0.3313,
+      "place_change": -0.908,
       "priority_scores": {
         "酒吧指虎": 100,
         "棘刺背心": 85,
@@ -105,10 +105,10 @@
         "珠光护手",
         "正义之手"
       ],
-      "avg_placement": 4.6261,
-      "count": 920,
-      "score": 0.1035,
-      "place_change": -0.464,
+      "avg_placement": 4.4612,
+      "count": 529,
+      "score": 0.1475,
+      "place_change": -0.692,
       "priority_scores": {
         "黑市炸药": 100,
         "珠光护手": 85,
@@ -117,123 +117,123 @@
     }
   ],
   "build_items": {
-    "朔极之矛": {
-      "itemNames": "朔极之矛",
-      "count": 139657,
-      "avg": 4.8909,
-      "pcnt": 0.65643
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 84532,
+      "avg": 4.9011,
+      "pcnt": 0.76106
     },
     "振奋盔甲": {
-      "itemNames": "振奋盔甲",
-      "count": 98638,
-      "avg": 4.7551,
-      "pcnt": 0.46363
+      "itemNames": "TFT_Item_Redemption",
+      "count": 51101,
+      "avg": 4.8286,
+      "pcnt": 0.46007
     },
     "巨龙之爪": {
-      "itemNames": "巨龙之爪",
-      "count": 71319,
-      "avg": 4.7115,
-      "pcnt": 0.33522
-    },
-    "成堆柑橘": {
-      "itemNames": "成堆柑橘",
-      "count": 61814,
-      "avg": 4.2241,
-      "pcnt": 0.29055
-    },
-    "棘刺背心": {
-      "itemNames": "棘刺背心",
-      "count": 60322,
-      "avg": 4.6691,
-      "pcnt": 0.28353
+      "itemNames": "TFT_Item_DragonsClaw",
+      "count": 39248,
+      "avg": 4.7388,
+      "pcnt": 0.35336
     },
     "珠光护手": {
-      "itemNames": "珠光护手",
-      "count": 58327,
-      "avg": 5.0766,
-      "pcnt": 0.27416
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 32930,
+      "avg": 5.0659,
+      "pcnt": 0.29647
     },
-    "大副的燧发枪": {
-      "itemNames": "大副的燧发枪",
-      "count": 54460,
-      "avg": 4.4326,
-      "pcnt": 0.25598
+    "棘刺背心": {
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 31315,
+      "avg": 4.7664,
+      "pcnt": 0.28193
     },
-    "酒吧指虎": {
-      "itemNames": "酒吧指虎",
-      "count": 52100,
-      "avg": 4.2081,
-      "pcnt": 0.24489
+    "成堆柑橘": {
+      "itemNames": "TFT16_Item_Bilgewater_PileOCitrus",
+      "count": 30848,
+      "avg": 4.3007,
+      "pcnt": 0.27773
     },
     "正义之手": {
-      "itemNames": "正义之手",
-      "count": 48157,
-      "avg": 4.7348,
-      "pcnt": 0.22635
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 27375,
+      "avg": 4.8248,
+      "pcnt": 0.24646
+    },
+    "大副的燧发枪": {
+      "itemNames": "TFT16_Item_Bilgewater_FirstMatesFlintlock",
+      "count": 27361,
+      "avg": 4.5031,
+      "pcnt": 0.24634
+    },
+    "酒吧指虎": {
+      "itemNames": "TFT16_Item_Bilgewater_FreebootersFrock",
+      "count": 26307,
+      "avg": 4.2891,
+      "pcnt": 0.23685
     },
     "亡者的短剑": {
-      "itemNames": "亡者的短剑",
-      "count": 48070,
-      "avg": 4.4821,
-      "pcnt": 0.22594
+      "itemNames": "TFT16_Item_Bilgewater_DeadmansDagger",
+      "count": 23160,
+      "avg": 4.5027,
+      "pcnt": 0.20851
     },
     "黑市炸药": {
-      "itemNames": "黑市炸药",
-      "count": 16386,
-      "avg": 4.4796,
-      "pcnt": 0.07702
+      "itemNames": "TFT16_Item_Bilgewater_BlackmarketExplosives",
+      "count": 9194,
+      "avg": 4.5238,
+      "pcnt": 0.08278
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 39751,
-      "avg": 5.0651,
-      "pick_rate": 0.039935
+      "day": "2026-04-07",
+      "count": 28146,
+      "avg": 5.145,
+      "pick_rate": 0.036518
     },
     {
-      "day": "2026-03-18",
-      "count": 71576,
-      "avg": 5.0662,
-      "pick_rate": 0.039499
+      "day": "2026-04-08",
+      "count": 39881,
+      "avg": 5.106,
+      "pick_rate": 0.036482
     },
     {
-      "day": "2026-03-19",
-      "count": 72348,
-      "avg": 5.0669,
-      "pick_rate": 0.039545
+      "day": "2026-04-09",
+      "count": 39270,
+      "avg": 5.1488,
+      "pick_rate": 0.036458
     },
     {
-      "day": "2026-03-20",
-      "count": 72447,
-      "avg": 5.0681,
-      "pick_rate": 0.038861
+      "day": "2026-04-10",
+      "count": 38587,
+      "avg": 5.1591,
+      "pick_rate": 0.036584
     },
     {
-      "day": "2026-03-21",
-      "count": 74564,
-      "avg": 5.0838,
-      "pick_rate": 0.038272
+      "day": "2026-04-11",
+      "count": 40065,
+      "avg": 5.1565,
+      "pick_rate": 0.037271
     },
     {
-      "day": "2026-03-22",
-      "count": 75266,
-      "avg": 5.0974,
-      "pick_rate": 0.038238
+      "day": "2026-04-12",
+      "count": 40440,
+      "avg": 5.1628,
+      "pick_rate": 0.037758
     },
     {
-      "day": "2026-03-23",
-      "count": 69459,
-      "avg": 5.0998,
-      "pick_rate": 0.037906
+      "day": "2026-04-13",
+      "count": 34876,
+      "avg": 5.1506,
+      "pick_rate": 0.037452
     },
     {
-      "day": "2026-03-24",
-      "count": 23296,
-      "avg": 5.0336,
-      "pick_rate": 0.037186
+      "day": "2026-04-14",
+      "count": 9456,
+      "avg": 5.1295,
+      "pick_rate": 0.037365
     }
   ],
   "levelling": "Fast 9",
-  "difficulty": 0.01
+  "difficulty": -0.015
 }

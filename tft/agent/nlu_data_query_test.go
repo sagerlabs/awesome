@@ -3,6 +3,8 @@ package agent_test
 import (
 	"context"
 	"fmt"
+	"path/filepath"
+	"runtime"
 	"testing"
 
 	"github.com/sagerlabs/awesome/tft/agent"
@@ -11,7 +13,15 @@ import (
 
 func setupTestStore(t *testing.T) *data.Store {
 	t.Helper()
-	store, err := data.NewStore(data.GetDataDir())
+	_, file, _, ok := runtime.Caller(0)
+	if !ok {
+		t.Fatal("无法定位测试文件路径")
+	}
+
+	projectRoot := filepath.Clean(filepath.Join(filepath.Dir(file), "..", ".."))
+	dataDir := filepath.Join(projectRoot, "metadata", "tft-meta", "data")
+
+	store, err := data.NewStore(dataDir)
 	if err != nil {
 		t.Fatalf("初始化Store失败: %v", err)
 	}
@@ -53,7 +63,7 @@ func TestQueryNLUData_Basic(t *testing.T) {
 			inputCtx: agent.Context{
 				Intent:    "lineup_recommend",
 				Champions: map[string]int8{"金克丝": 1},
-				Items:     []string{"羊刀"},
+				Items:     []string{"鬼索的狂暴之刃"},
 			},
 			expectHero: true,
 			expectItem: true,

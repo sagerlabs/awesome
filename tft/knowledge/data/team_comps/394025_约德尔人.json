@@ -20,9 +20,9 @@
   ],
   "stars": [
     "兰博",
+    "璐璐",
     "凯南",
     "波比",
-    "璐璐",
     "提莫",
     "可酷伯与悠米",
     "崔丝塔娜",
@@ -33,37 +33,20 @@
     {
       "name": "约德尔人",
       "type": "trait",
-      "score": 3.795290798442443
+      "score": 3.859859179888242
     },
     {
       "name": "维迦",
       "type": "unit",
-      "score": 4.132575021567972
+      "score": 4.108391319243446
     }
   ],
-  "count": 50797,
-  "avg_placement": 4.1393,
-  "top4_rate": 0.5514,
-  "win_rate": 0.1798,
+  "count": 301409,
+  "avg_placement": 4.1011,
+  "top4_rate": 0.5622,
+  "win_rate": 0.176,
   "tier": "S",
   "builds": [
-    {
-      "unit": "维迦",
-      "items": [
-        "狙神纹章",
-        "灭世者的死亡之帽",
-        "朔极之矛"
-      ],
-      "avg_placement": 3.3731,
-      "count": 788,
-      "score": 0.3858,
-      "place_change": -0.856,
-      "priority_scores": {
-        "狙神纹章": 100,
-        "灭世者的死亡之帽": 85,
-        "朔极之矛": 72
-      }
-    },
     {
       "unit": "吉格斯",
       "items": [
@@ -71,14 +54,31 @@
         "珠光护手",
         "虚空之杖"
       ],
-      "avg_placement": 2.9053,
-      "count": 5650,
-      "score": 0.3646,
-      "place_change": -1.323,
+      "avg_placement": 2.8724,
+      "count": 3824,
+      "score": 0.3729,
+      "place_change": -1.336,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
         "珠光护手": 85,
         "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "维迦",
+      "items": [
+        "海克斯科技枪刃",
+        "灭世者的死亡之帽",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.113,
+      "count": 24133,
+      "score": 0.3593,
+      "place_change": -0.095,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
       }
     },
     {
@@ -88,10 +88,10 @@
         "日炎斗篷",
         "振奋盔甲"
       ],
-      "avg_placement": 3.8925,
-      "count": 8715,
-      "score": 0.3191,
-      "place_change": -0.336,
+      "avg_placement": 3.9269,
+      "count": 6290,
+      "score": 0.3044,
+      "place_change": -0.282,
       "priority_scores": {
         "离子火花": 100,
         "日炎斗篷": 85,
@@ -105,10 +105,10 @@
         "强袭者的链枷",
         "正义之手"
       ],
-      "avg_placement": 3.8776,
-      "count": 5009,
-      "score": 0.1398,
-      "place_change": -0.351,
+      "avg_placement": 3.8847,
+      "count": 3850,
+      "score": 0.1454,
+      "place_change": -0.324,
       "priority_scores": {
         "珠光护手": 100,
         "强袭者的链枷": 85,
@@ -118,122 +118,122 @@
   ],
   "build_items": {
     "灭世者的死亡之帽": {
-      "itemNames": "灭世者的死亡之帽",
-      "count": 302509,
-      "avg": 4.0965,
-      "pcnt": 1.17559
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 195060,
+      "avg": 4.0855,
+      "pcnt": 1.1522
     },
     "朔极之矛": {
-      "itemNames": "朔极之矛",
-      "count": 220490,
-      "avg": 4.0159,
-      "pcnt": 0.85685
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 144544,
+      "avg": 4.0003,
+      "pcnt": 0.8538
     },
     "珠光护手": {
-      "itemNames": "珠光护手",
-      "count": 179742,
-      "avg": 3.9566,
-      "pcnt": 0.6985
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 120549,
+      "avg": 3.9285,
+      "pcnt": 0.71207
     },
     "日炎斗篷": {
-      "itemNames": "日炎斗篷",
-      "count": 150578,
-      "avg": 4.0652,
-      "pcnt": 0.58516
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 96387,
+      "avg": 4.0263,
+      "pcnt": 0.56935
     },
     "鬼索的狂暴之刃": {
-      "itemNames": "鬼索的狂暴之刃",
-      "count": 126229,
-      "avg": 3.8536,
-      "pcnt": 0.49054
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 85007,
+      "avg": 3.848,
+      "pcnt": 0.50213
     },
     "虚空之杖": {
-      "itemNames": "虚空之杖",
-      "count": 114816,
-      "avg": 3.8369,
-      "pcnt": 0.44619
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 72758,
+      "avg": 3.8014,
+      "pcnt": 0.42977
     },
     "振奋盔甲": {
-      "itemNames": "振奋盔甲",
-      "count": 106859,
-      "avg": 3.9839,
-      "pcnt": 0.41527
+      "itemNames": "TFT_Item_Redemption",
+      "count": 69244,
+      "avg": 3.9625,
+      "pcnt": 0.40902
     },
-    "离子火花": {
-      "itemNames": "离子火花",
-      "count": 70387,
-      "avg": 3.8049,
-      "pcnt": 0.27353
+    "海克斯科技枪刃": {
+      "itemNames": "TFT_Item_HextechGunblade",
+      "count": 56809,
+      "avg": 3.9233,
+      "pcnt": 0.33556
     },
     "正义之手": {
-      "itemNames": "正义之手",
-      "count": 68144,
-      "avg": 3.9804,
-      "pcnt": 0.26482
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 47023,
+      "avg": 3.9923,
+      "pcnt": 0.27776
+    },
+    "离子火花": {
+      "itemNames": "TFT_Item_IonicSpark",
+      "count": 45159,
+      "avg": 3.7903,
+      "pcnt": 0.26675
     },
     "强袭者的链枷": {
-      "itemNames": "强袭者的链枷",
-      "count": 38707,
-      "avg": 3.8178,
-      "pcnt": 0.15042
-    },
-    "狙神纹章": {
-      "itemNames": "狙神纹章",
-      "count": 4683,
-      "avg": 3.3795,
-      "pcnt": 0.0182
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 24173,
+      "avg": 3.8046,
+      "pcnt": 0.14279
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 46345,
-      "avg": 4.3242,
-      "pick_rate": 0.046559
+      "day": "2026-04-07",
+      "count": 42075,
+      "avg": 4.2236,
+      "pick_rate": 0.05459
     },
     {
-      "day": "2026-03-18",
-      "count": 86411,
-      "avg": 4.2378,
-      "pick_rate": 0.047686
+      "day": "2026-04-08",
+      "count": 60216,
+      "avg": 4.2057,
+      "pick_rate": 0.055084
     },
     {
-      "day": "2026-03-19",
-      "count": 87024,
-      "avg": 4.227,
-      "pick_rate": 0.047567
+      "day": "2026-04-09",
+      "count": 59546,
+      "avg": 4.2111,
+      "pick_rate": 0.055281
     },
     {
-      "day": "2026-03-20",
-      "count": 86077,
-      "avg": 4.2181,
-      "pick_rate": 0.046172
+      "day": "2026-04-10",
+      "count": 58744,
+      "avg": 4.2069,
+      "pick_rate": 0.055694
     },
     {
-      "day": "2026-03-21",
-      "count": 89098,
-      "avg": 4.2247,
-      "pick_rate": 0.045733
+      "day": "2026-04-11",
+      "count": 59974,
+      "avg": 4.1863,
+      "pick_rate": 0.055792
     },
     {
-      "day": "2026-03-22",
-      "count": 91279,
-      "avg": 4.2344,
-      "pick_rate": 0.046373
+      "day": "2026-04-12",
+      "count": 61181,
+      "avg": 4.2187,
+      "pick_rate": 0.057123
     },
     {
-      "day": "2026-03-23",
-      "count": 83866,
-      "avg": 4.2395,
-      "pick_rate": 0.045768
+      "day": "2026-04-13",
+      "count": 53943,
+      "avg": 4.2074,
+      "pick_rate": 0.057928
     },
     {
-      "day": "2026-03-24",
-      "count": 28814,
-      "avg": 4.1792,
-      "pick_rate": 0.045994
+      "day": "2026-04-14",
+      "count": 14741,
+      "avg": 4.2043,
+      "pick_rate": 0.058248
     }
   ],
   "levelling": "Standard",
-  "difficulty": -0.062
+  "difficulty": -0.058
 }

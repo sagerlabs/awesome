@@ -26,220 +26,200 @@
     "征服者 (1)"
   ],
   "stars": [
-    "厄斐琉斯"
+    "巴德"
   ],
   "name_string": "TFT16_Noxus, TFT16_Seraphine",
   "display_names": [
     {
       "name": "耀光使",
       "type": "trait",
-      "score": 0.9872933396315541
+      "score": 0.9542689898019847
     },
     {
-      "name": "梅尔",
+      "name": "萨勒芬妮",
       "type": "unit",
-      "score": 3.3354983467170527
+      "score": 3.0406091370558377
     }
   ],
-  "count": 6650,
-  "avg_placement": 4.4798,
-  "top4_rate": 0.4907,
-  "win_rate": 0.1529,
+  "count": 28078,
+  "avg_placement": 4.283,
+  "top4_rate": 0.5269,
+  "win_rate": 0.1663,
   "tier": "A",
   "builds": [
+    {
+      "unit": "萨勒芬妮",
+      "items": [
+        "红霸符",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.1061,
+      "count": 66,
+      "score": 0.3057,
+      "place_change": -1.238,
+      "priority_scores": {
+        "红霸符": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
     {
       "unit": "梅尔",
       "items": [
         "征服者纹章",
-        "珠光护手",
+        "纳什之牙",
         "纳什之牙"
       ],
-      "avg_placement": 3.8673,
-      "count": 422,
-      "score": 0.3662,
-      "place_change": -0.717,
+      "avg_placement": 3.8947,
+      "count": 361,
+      "score": 0.2578,
+      "place_change": -0.45,
       "priority_scores": {
         "征服者纹章": 100,
-        "珠光护手": 85,
         "纳什之牙": 72
-      }
-    },
-    {
-      "unit": "萨勒芬妮",
-      "items": [
-        "蓝霸符",
-        "莫雷洛秘典",
-        "虚空之杖"
-      ],
-      "avg_placement": 3.4453,
-      "count": 137,
-      "score": 0.2479,
-      "place_change": -1.139,
-      "priority_scores": {
-        "蓝霸符": 100,
-        "莫雷洛秘典": 85,
-        "虚空之杖": 72
       }
     },
     {
       "unit": "斯维因",
       "items": [
-        "圣盾使的誓约",
-        "日炎斗篷",
-        "振奋盔甲"
+        "棘刺背心",
+        "巨龙之爪",
+        "圣盾使的誓约"
       ],
-      "avg_placement": 3.7935,
-      "count": 184,
-      "score": 0.2163,
-      "place_change": -0.791,
+      "avg_placement": 3.5068,
+      "count": 73,
+      "score": 0.2256,
+      "place_change": -0.838,
       "priority_scores": {
-        "圣盾使的誓约": 100,
-        "日炎斗篷": 85,
-        "振奋盔甲": 72
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
+        "圣盾使的誓约": 72
       }
     },
     {
-      "unit": "安蓓萨",
+      "unit": "奥瑞利安·索尔",
       "items": [
-        "饮血剑",
-        "夜之锋刃",
-        "泰坦的坚决"
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
       ],
-      "avg_placement": 3.902,
-      "count": 153,
-      "score": 0.0564,
-      "place_change": -0.683,
+      "avg_placement": 3.8863,
+      "count": 2111,
+      "score": 0.1328,
+      "place_change": -0.458,
       "priority_scores": {
-        "饮血剑": 100,
-        "夜之锋刃": 85,
-        "泰坦的坚决": 72
+        "珠光护手": 100,
+        "纳什之牙": 72
       }
     }
   ],
   "build_items": {
     "珠光护手": {
-      "itemNames": "珠光护手",
-      "count": 45064,
-      "avg": 4.4428,
-      "pcnt": 1.06434
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 24358,
+      "avg": 4.2024,
+      "pcnt": 1.11392
     },
     "纳什之牙": {
-      "itemNames": "纳什之牙",
-      "count": 38341,
-      "avg": 4.4748,
-      "pcnt": 0.90555
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 23041,
+      "avg": 4.1868,
+      "pcnt": 1.05369
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 14616,
+      "avg": 4.1664,
+      "pcnt": 0.6684
     },
     "虚空之杖": {
-      "itemNames": "虚空之杖",
-      "count": 18458,
-      "avg": 4.269,
-      "pcnt": 0.43595
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 9126,
+      "avg": 4.0155,
+      "pcnt": 0.41734
     },
-    "日炎斗篷": {
-      "itemNames": "日炎斗篷",
-      "count": 17430,
-      "avg": 4.3485,
-      "pcnt": 0.41167
-    },
-    "饮血剑": {
-      "itemNames": "饮血剑",
-      "count": 14335,
-      "avg": 4.1699,
-      "pcnt": 0.33857
-    },
-    "振奋盔甲": {
-      "itemNames": "振奋盔甲",
-      "count": 13855,
-      "avg": 4.2868,
-      "pcnt": 0.32723
+    "巨龙之爪": {
+      "itemNames": "TFT_Item_DragonsClaw",
+      "count": 8493,
+      "avg": 4.0828,
+      "pcnt": 0.38839
     },
     "圣盾使的誓约": {
-      "itemNames": "圣盾使的誓约",
-      "count": 11217,
-      "avg": 4.164,
-      "pcnt": 0.26493
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 5874,
+      "avg": 3.8641,
+      "pcnt": 0.26862
     },
-    "莫雷洛秘典": {
-      "itemNames": "莫雷洛秘典",
-      "count": 9958,
-      "avg": 4.2563,
-      "pcnt": 0.23519
+    "棘刺背心": {
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 5334,
+      "avg": 4.1226,
+      "pcnt": 0.24393
     },
-    "蓝霸符": {
-      "itemNames": "蓝霸符",
-      "count": 8988,
-      "avg": 4.1871,
-      "pcnt": 0.21228
-    },
-    "泰坦的坚决": {
-      "itemNames": "泰坦的坚决",
-      "count": 8080,
-      "avg": 4.1828,
-      "pcnt": 0.19084
-    },
-    "夜之锋刃": {
-      "itemNames": "夜之锋刃",
-      "count": 6488,
-      "avg": 3.9593,
-      "pcnt": 0.15324
+    "红霸符": {
+      "itemNames": "TFT_Item_RapidFireCannon",
+      "count": 2821,
+      "avg": 3.9334,
+      "pcnt": 0.12901
     },
     "征服者纹章": {
-      "itemNames": "征服者纹章",
-      "count": 3786,
-      "avg": 4.0578,
-      "pcnt": 0.08942
+      "itemNames": "TFT16_Item_VanquisherEmblemItem",
+      "count": 2149,
+      "avg": 4.0279,
+      "pcnt": 0.09828
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 8990,
-      "avg": 4.5863,
-      "pick_rate": 0.009032
+      "day": "2026-04-07",
+      "count": 5575,
+      "avg": 4.4631,
+      "pick_rate": 0.007233
     },
     {
-      "day": "2026-03-18",
-      "count": 15932,
-      "avg": 4.5431,
-      "pick_rate": 0.008792
+      "day": "2026-04-08",
+      "count": 7780,
+      "avg": 4.3721,
+      "pick_rate": 0.007117
     },
     {
-      "day": "2026-03-19",
-      "count": 14652,
-      "avg": 4.552,
-      "pick_rate": 0.008009
+      "day": "2026-04-09",
+      "count": 7666,
+      "avg": 4.3742,
+      "pick_rate": 0.007117
     },
     {
-      "day": "2026-03-20",
-      "count": 14376,
-      "avg": 4.5965,
-      "pick_rate": 0.007711
+      "day": "2026-04-10",
+      "count": 7681,
+      "avg": 4.3674,
+      "pick_rate": 0.007282
     },
     {
-      "day": "2026-03-21",
-      "count": 14850,
-      "avg": 4.5937,
-      "pick_rate": 0.007622
+      "day": "2026-04-11",
+      "count": 7755,
+      "avg": 4.3605,
+      "pick_rate": 0.007214
     },
     {
-      "day": "2026-03-22",
-      "count": 14914,
-      "avg": 4.5839,
-      "pick_rate": 0.007577
+      "day": "2026-04-12",
+      "count": 7597,
+      "avg": 4.3741,
+      "pick_rate": 0.007093
     },
     {
-      "day": "2026-03-23",
-      "count": 13717,
-      "avg": 4.5877,
-      "pick_rate": 0.007486
+      "day": "2026-04-13",
+      "count": 7258,
+      "avg": 4.3216,
+      "pick_rate": 0.007794
     },
     {
-      "day": "2026-03-24",
-      "count": 4938,
-      "avg": 4.5502,
-      "pick_rate": 0.007882
+      "day": "2026-04-14",
+      "count": 2101,
+      "avg": 4.3165,
+      "pick_rate": 0.008302
     }
   ],
   "levelling": "Fast 9",
-  "difficulty": -0.034
+  "difficulty": 0.008
 }

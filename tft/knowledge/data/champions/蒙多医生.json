@@ -5,49 +5,49 @@
       "cluster_id": "394024",
       "comp_name": "TFT16_Zaun, TFT16_Warwick",
       "tier": "S",
-      "avg_placement": 4.1759
+      "avg_placement": 4.0701
     },
     {
       "cluster_id": "394029",
       "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
       "tier": "A",
-      "avg_placement": 4.3841
+      "avg_placement": 4.2663
     },
     {
       "cluster_id": "394037",
       "comp_name": "TFT16_Ionia, TFT16_Wukong",
       "tier": "A",
-      "avg_placement": 4.4713
+      "avg_placement": 4.4739
     },
     {
       "cluster_id": "394042",
       "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Juggernaut",
-      "tier": "C",
-      "avg_placement": 4.8065
+      "tier": "B",
+      "avg_placement": 4.67
     },
     {
       "cluster_id": "394056",
       "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_Brawler",
       "tier": "C",
-      "avg_placement": 4.8979
+      "avg_placement": 4.89
+    },
+    {
+      "cluster_id": "394053",
+      "comp_name": "TFT16_Void, TFT16_RiftHerald",
+      "tier": "C",
+      "avg_placement": 5.0226
     },
     {
       "cluster_id": "394055",
       "comp_name": "TFT16_Zaun, TFT16_Ekko",
       "tier": "C",
-      "avg_placement": 5.0301
-    },
-    {
-      "cluster_id": "394053",
-      "comp_name": "TFT16_Void, TFT16_RiftHerald",
-      "tier": "D",
-      "avg_placement": 5.1368
+      "avg_placement": 5.0249
     },
     {
       "cluster_id": "394062",
       "comp_name": "TFT16_Brawler, TFT16_Sion",
       "tier": "D",
-      "avg_placement": 5.6158
+      "avg_placement": 5.5815
     }
   ],
   "builds": [
@@ -55,15 +55,15 @@
       "cluster_id": "394029",
       "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
       "items": [
+        "石像鬼石板甲",
         "振奋盔甲",
-        "薄暮法袍",
         "狂徒铠甲"
       ],
-      "avg_placement": 3.6798,
-      "count": 509,
+      "avg_placement": 4.0256,
+      "count": 2383,
       "priority_scores": {
-        "振奋盔甲": 100,
-        "薄暮法袍": 85,
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
         "狂徒铠甲": 72
       }
     }

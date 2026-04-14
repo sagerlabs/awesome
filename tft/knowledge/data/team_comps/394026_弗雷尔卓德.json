@@ -3,12 +3,12 @@
   "tft_set": "TFTSet16",
   "units": [
     "艾尼维亚",
+    "艾希",
     "布隆",
     "可酷伯与悠米",
     "丽桑卓",
     "奥恩",
     "瑟庄妮",
-    "塔里克",
     "沃利贝尔",
     "基兰"
   ],
@@ -16,32 +16,28 @@
     "山隐之焰 (1)",
     "斗士 (1)",
     "时光守护者 (1)",
-    "弗雷尔卓德 (2)",
+    "弗雷尔卓德 (3)",
     "神谕者 (2)",
-    "巨神峰 (1)",
     "神盾使 (1)"
   ],
-  "stars": [
-    "巴德",
-    "厄斐琉斯"
-  ],
+  "stars": [],
   "name_string": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
   "display_names": [
     {
       "name": "弗雷尔卓德",
       "type": "trait",
-      "score": 2.0135986164814907
+      "score": 2.3595624531668844
     },
     {
       "name": "丽桑卓",
       "type": "unit",
-      "score": 4.091087073564681
+      "score": 4.12966689584315
     }
   ],
-  "count": 24461,
-  "avg_placement": 4.1324,
-  "top4_rate": 0.5684,
-  "win_rate": 0.1519,
+  "count": 398701,
+  "avg_placement": 3.8968,
+  "top4_rate": 0.6018,
+  "win_rate": 0.2148,
   "tier": "S",
   "builds": [
     {
@@ -51,10 +47,10 @@
         "纳什之牙",
         "纳什之牙"
       ],
-      "avg_placement": 4.0553,
-      "count": 14442,
-      "score": 0.4092,
-      "place_change": -0.186,
+      "avg_placement": 3.7025,
+      "count": 52122,
+      "score": 0.4711,
+      "place_change": -0.274,
       "priority_scores": {
         "珠光护手": 100,
         "纳什之牙": 72
@@ -63,18 +59,35 @@
     {
       "unit": "布隆",
       "items": [
-        "离子火花",
-        "日炎斗篷",
-        "狂徒铠甲"
+        "棘刺背心",
+        "巨龙之爪",
+        "日炎斗篷"
       ],
-      "avg_placement": 3.6579,
-      "count": 1745,
-      "score": 0.3305,
-      "place_change": -0.584,
+      "avg_placement": 3.5559,
+      "count": 11275,
+      "score": 0.3048,
+      "place_change": -0.421,
       "priority_scores": {
-        "离子火花": 100,
-        "日炎斗篷": 85,
-        "狂徒铠甲": 72
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "unit": "基兰",
+      "items": [
+        "灭世者的死亡之帽",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 2.947,
+      "count": 4947,
+      "score": 0.2826,
+      "place_change": -1.03,
+      "priority_scores": {
+        "灭世者的死亡之帽": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
       }
     },
     {
@@ -84,152 +97,135 @@
         "斯特拉克的挑战护手",
         "泰坦的坚决"
       ],
-      "avg_placement": 3.5003,
-      "count": 3554,
-      "score": 0.2406,
-      "place_change": -0.741,
+      "avg_placement": 3.1249,
+      "count": 7560,
+      "score": 0.2469,
+      "place_change": -0.852,
       "priority_scores": {
         "饮血剑": 100,
         "斯特拉克的挑战护手": 85,
         "泰坦的坚决": 72
       }
-    },
-    {
-      "unit": "基兰",
-      "items": [
-        "莫雷洛秘典",
-        "朔极之矛",
-        "虚空之杖"
-      ],
-      "avg_placement": 3.3988,
-      "count": 1783,
-      "score": 0.1992,
-      "place_change": -0.843,
-      "priority_scores": {
-        "莫雷洛秘典": 100,
-        "朔极之矛": 85,
-        "虚空之杖": 72
-      }
     }
   ],
   "build_items": {
     "珠光护手": {
-      "itemNames": "珠光护手",
-      "count": 121448,
-      "avg": 4.1408,
-      "pcnt": 0.99072
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 277959,
+      "avg": 3.8643,
+      "pcnt": 1.07362
     },
     "纳什之牙": {
-      "itemNames": "纳什之牙",
-      "count": 91514,
-      "avg": 4.1175,
-      "pcnt": 0.74653
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 259497,
+      "avg": 3.8221,
+      "pcnt": 1.00231
     },
     "朔极之矛": {
-      "itemNames": "朔极之矛",
-      "count": 88947,
-      "avg": 4.0781,
-      "pcnt": 0.72559
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 204557,
+      "avg": 3.8019,
+      "pcnt": 0.79011
     },
-    "狂徒铠甲": {
-      "itemNames": "狂徒铠甲",
-      "count": 58647,
-      "avg": 3.903,
-      "pcnt": 0.47842
-    },
-    "日炎斗篷": {
-      "itemNames": "日炎斗篷",
-      "count": 57442,
-      "avg": 4.0167,
-      "pcnt": 0.46859
+    "巨龙之爪": {
+      "itemNames": "TFT_Item_DragonsClaw",
+      "count": 135873,
+      "avg": 3.7514,
+      "pcnt": 0.52481
     },
     "虚空之杖": {
-      "itemNames": "虚空之杖",
-      "count": 50143,
-      "avg": 3.9379,
-      "pcnt": 0.40904
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 115817,
+      "avg": 3.6225,
+      "pcnt": 0.44735
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 115260,
+      "avg": 3.7042,
+      "pcnt": 0.44519
+    },
+    "棘刺背心": {
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 109281,
+      "avg": 3.7986,
+      "pcnt": 0.4221
     },
     "饮血剑": {
-      "itemNames": "饮血剑",
-      "count": 45547,
-      "avg": 3.9305,
-      "pcnt": 0.37155
-    },
-    "离子火花": {
-      "itemNames": "离子火花",
-      "count": 31312,
-      "avg": 3.7798,
-      "pcnt": 0.25543
-    },
-    "泰坦的坚决": {
-      "itemNames": "泰坦的坚决",
-      "count": 29589,
-      "avg": 3.9356,
-      "pcnt": 0.24137
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 97881,
+      "avg": 3.6072,
+      "pcnt": 0.37807
     },
     "斯特拉克的挑战护手": {
-      "itemNames": "斯特拉克的挑战护手",
-      "count": 28244,
-      "avg": 3.6789,
-      "pcnt": 0.2304
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 62239,
+      "avg": 3.3696,
+      "pcnt": 0.2404
     },
-    "莫雷洛秘典": {
-      "itemNames": "莫雷洛秘典",
-      "count": 23943,
-      "avg": 3.9119,
-      "pcnt": 0.19532
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 58732,
+      "avg": 3.5749,
+      "pcnt": 0.22685
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 52669,
+      "avg": 3.6655,
+      "pcnt": 0.20344
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 24088,
-      "avg": 4.254,
-      "pick_rate": 0.024199
+      "day": "2026-04-07",
+      "count": 60747,
+      "avg": 3.9555,
+      "pick_rate": 0.078816
     },
     {
-      "day": "2026-03-18",
-      "count": 41012,
-      "avg": 4.2214,
-      "pick_rate": 0.022633
+      "day": "2026-04-08",
+      "count": 86687,
+      "avg": 3.982,
+      "pick_rate": 0.079299
     },
     {
-      "day": "2026-03-19",
-      "count": 40485,
-      "avg": 4.2508,
-      "pick_rate": 0.022129
+      "day": "2026-04-09",
+      "count": 88643,
+      "avg": 3.9878,
+      "pick_rate": 0.082295
     },
     {
-      "day": "2026-03-20",
-      "count": 40299,
-      "avg": 4.2369,
-      "pick_rate": 0.021617
+      "day": "2026-04-10",
+      "count": 87856,
+      "avg": 3.9806,
+      "pick_rate": 0.083295
     },
     {
-      "day": "2026-03-21",
-      "count": 42357,
-      "avg": 4.2412,
-      "pick_rate": 0.021741
+      "day": "2026-04-11",
+      "count": 91719,
+      "avg": 3.9788,
+      "pick_rate": 0.085324
     },
     {
-      "day": "2026-03-22",
-      "count": 43039,
-      "avg": 4.236,
-      "pick_rate": 0.021865
+      "day": "2026-04-12",
+      "count": 93706,
+      "avg": 3.9769,
+      "pick_rate": 0.087491
     },
     {
-      "day": "2026-03-23",
-      "count": 39983,
-      "avg": 4.2482,
-      "pick_rate": 0.02182
+      "day": "2026-04-13",
+      "count": 82607,
+      "avg": 3.9838,
+      "pick_rate": 0.08871
     },
     {
-      "day": "2026-03-24",
-      "count": 13684,
-      "avg": 4.242,
-      "pick_rate": 0.021843
+      "day": "2026-04-14",
+      "count": 22100,
+      "avg": 3.9665,
+      "pick_rate": 0.087327
     }
   ],
   "levelling": "Fast 8",
-  "difficulty": -0.034
+  "difficulty": 0.024
 }

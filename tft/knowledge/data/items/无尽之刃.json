@@ -5,47 +5,39 @@
       "cluster_id": "394031",
       "comp_name": "TFT16_Demacia, TFT16_Vayne",
       "comp_tier": "A",
-      "comp_avg": 4.2635,
+      "comp_avg": 4.3035,
       "carry": "卡莎",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394004",
-      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
-      "comp_tier": "A",
-      "comp_avg": 4.463,
-      "carry": "艾希",
       "priority_score": 100
     },
     {
       "cluster_id": "394008",
       "comp_name": "TFT16_Defender, TFT16_Aphelios",
       "comp_tier": "S",
-      "comp_avg": 4.1646,
+      "comp_avg": 4.0341,
       "carry": "厄斐琉斯",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394019",
-      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 4.1791,
-      "carry": "厄运小姐",
       "priority_score": 85
     },
     {
       "cluster_id": "394032",
       "comp_name": "TFT16_Brawler, TFT16_Aphelios",
       "comp_tier": "A",
-      "comp_avg": 4.3367,
+      "comp_avg": 4.3158,
       "carry": "厄斐琉斯",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "comp_tier": "A",
+      "comp_avg": 4.317,
+      "carry": "岩宝",
       "priority_score": 85
     },
     {
       "cluster_id": "394018",
       "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
       "comp_tier": "A",
-      "comp_avg": 4.3679,
+      "comp_avg": 4.3637,
       "carry": "纳什男爵",
       "priority_score": 85
     },
@@ -53,17 +45,17 @@
       "cluster_id": "394007",
       "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
       "comp_tier": "A",
-      "comp_avg": 4.4303,
+      "comp_avg": 4.3786,
       "carry": "芸阿娜",
       "priority_score": 85
     },
     {
-      "cluster_id": "394004",
-      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
-      "comp_tier": "A",
-      "comp_avg": 4.463,
-      "carry": "泰达米尔",
-      "priority_score": 85
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "comp_tier": "S",
+      "comp_avg": 4.1585,
+      "carry": "安蓓萨",
+      "priority_score": 72
     }
   ]
 }

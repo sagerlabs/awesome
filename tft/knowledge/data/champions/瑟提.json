@@ -4,62 +4,56 @@
     {
       "cluster_id": "394015",
       "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
-      "tier": "S",
-      "avg_placement": 4.2398
-    },
-    {
-      "cluster_id": "394013",
-      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
       "tier": "A",
-      "avg_placement": 4.301
-    },
-    {
-      "cluster_id": "394028",
-      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
-      "tier": "A",
-      "avg_placement": 4.4091
+      "avg_placement": 4.3658
     },
     {
       "cluster_id": "394007",
       "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
       "tier": "A",
-      "avg_placement": 4.4303
-    },
-    {
-      "cluster_id": "394016",
-      "comp_name": "TFT16_Slayer, TFT16_Yone",
-      "tier": "A",
-      "avg_placement": 4.4319
+      "avg_placement": 4.3786
     },
     {
       "cluster_id": "394037",
       "comp_name": "TFT16_Ionia, TFT16_Wukong",
       "tier": "A",
-      "avg_placement": 4.4713
+      "avg_placement": 4.4739
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "tier": "A",
+      "avg_placement": 4.499
     },
     {
       "cluster_id": "394038",
       "comp_name": "TFT16_Ionia, TFT16_Yunara",
       "tier": "B",
-      "avg_placement": 4.5979
+      "avg_placement": 4.5853
     },
     {
-      "cluster_id": "394066",
-      "comp_name": "TFT16_Ionia, TFT16_Kennen",
-      "tier": "D",
-      "avg_placement": 5.3593
+      "cluster_id": "394016",
+      "comp_name": "TFT16_Slayer, TFT16_Yone",
+      "tier": "B",
+      "avg_placement": 4.6189
     },
     {
       "cluster_id": "394061",
       "comp_name": "TFT16_Demacia, TFT16_Garen",
       "tier": "D",
-      "avg_placement": 5.3918
+      "avg_placement": 5.4167
+    },
+    {
+      "cluster_id": "394066",
+      "comp_name": "TFT16_Ionia, TFT16_Kennen",
+      "tier": "D",
+      "avg_placement": 5.5308
     },
     {
       "cluster_id": "394065",
       "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Sorcerer",
       "tier": "D",
-      "avg_placement": 5.7216
+      "avg_placement": 5.7742
     }
   ],
   "builds": [
@@ -67,15 +61,15 @@
       "cluster_id": "394015",
       "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
       "items": [
+        "裁决战士纹章",
         "珠光护手",
-        "强袭者的链枷",
         "正义之手"
       ],
-      "avg_placement": 4.1583,
-      "count": 2337,
+      "avg_placement": 3.4474,
+      "count": 76,
       "priority_scores": {
-        "珠光护手": 100,
-        "强袭者的链枷": 85,
+        "裁决战士纹章": 100,
+        "珠光护手": 85,
         "正义之手": 72
       }
     },
@@ -87,8 +81,8 @@
         "强袭者的链枷",
         "正义之手"
       ],
-      "avg_placement": 3.8164,
-      "count": 414,
+      "avg_placement": 3.5152,
+      "count": 561,
       "priority_scores": {
         "珠光护手": 100,
         "强袭者的链枷": 85,
@@ -99,15 +93,15 @@
       "cluster_id": "394037",
       "comp_name": "TFT16_Ionia, TFT16_Wukong",
       "items": [
-        "珠光护手",
-        "灭世者的死亡之帽",
+        "饮血剑",
+        "泰坦的坚决",
         "正义之手"
       ],
-      "avg_placement": 3.5714,
-      "count": 42,
+      "avg_placement": 3.4074,
+      "count": 27,
       "priority_scores": {
-        "珠光护手": 100,
-        "灭世者的死亡之帽": 85,
+        "饮血剑": 100,
+        "泰坦的坚决": 85,
         "正义之手": 72
       }
     },
@@ -119,8 +113,8 @@
         "强袭者的链枷",
         "正义之手"
       ],
-      "avg_placement": 3.8365,
-      "count": 1376,
+      "avg_placement": 3.6275,
+      "count": 714,
       "priority_scores": {
         "珠光护手": 100,
         "强袭者的链枷": 85,
@@ -131,16 +125,16 @@
       "cluster_id": "394066",
       "comp_name": "TFT16_Ionia, TFT16_Kennen",
       "items": [
+        "饮血剑",
         "珠光护手",
-        "强袭者的链枷",
-        "正义之手"
+        "泰坦的坚决"
       ],
-      "avg_placement": 4.2647,
-      "count": 68,
+      "avg_placement": 4.5333,
+      "count": 60,
       "priority_scores": {
-        "珠光护手": 100,
-        "强袭者的链枷": 85,
-        "正义之手": 72
+        "饮血剑": 100,
+        "珠光护手": 85,
+        "泰坦的坚决": 72
       }
     },
     {
@@ -149,14 +143,14 @@
       "items": [
         "饮血剑",
         "珠光护手",
-        "泰坦的坚决"
+        "正义之手"
       ],
-      "avg_placement": 4.7463,
-      "count": 67,
+      "avg_placement": 4.9615,
+      "count": 26,
       "priority_scores": {
         "饮血剑": 100,
         "珠光护手": 85,
-        "泰坦的坚决": 72
+        "正义之手": 72
       }
     }
   ]

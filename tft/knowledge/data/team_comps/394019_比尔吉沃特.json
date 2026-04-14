@@ -31,25 +31,42 @@
     {
       "name": "比尔吉沃特",
       "type": "trait",
-      "score": 1.4424204616344354
+      "score": 1.4774218313791179
     },
     {
       "name": "厄运小姐",
       "type": "unit",
-      "score": 4.163155021834061
+      "score": 4.155517169179229
     },
     {
       "name": "塔姆",
       "type": "unit",
-      "score": 3.485277604491578
+      "score": 3.457757537688442
     }
   ],
-  "count": 10312,
-  "avg_placement": 4.1791,
-  "top4_rate": 0.5437,
-  "win_rate": 0.186,
+  "count": 40318,
+  "avg_placement": 4.1515,
+  "top4_rate": 0.5553,
+  "win_rate": 0.1737,
   "tier": "S",
   "builds": [
+    {
+      "unit": "厄运小姐",
+      "items": [
+        "亡者的短剑",
+        "大副的燧发枪",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.3676,
+      "count": 672,
+      "score": 0.6074,
+      "place_change": -0.809,
+      "priority_scores": {
+        "亡者的短剑": 100,
+        "大副的燧发枪": 85,
+        "朔极之矛": 72
+      }
+    },
     {
       "unit": "塔姆",
       "items": [
@@ -57,31 +74,14 @@
         "成堆柑橘",
         "圣盾使的誓约"
       ],
-      "avg_placement": 3.1525,
-      "count": 1049,
-      "score": 0.521,
-      "place_change": -1.063,
+      "avg_placement": 3.1673,
+      "count": 526,
+      "score": 0.5164,
+      "place_change": -1.01,
       "priority_scores": {
         "酒吧指虎": 100,
         "成堆柑橘": 85,
         "圣盾使的誓约": 72
-      }
-    },
-    {
-      "unit": "厄运小姐",
-      "items": [
-        "大副的燧发枪",
-        "无尽之刃",
-        "朔极之矛"
-      ],
-      "avg_placement": 3.8299,
-      "count": 4386,
-      "score": 0.5037,
-      "place_change": -0.386,
-      "priority_scores": {
-        "大副的燧发枪": 100,
-        "无尽之刃": 85,
-        "朔极之矛": 72
       }
     },
     {
@@ -91,10 +91,10 @@
         "红霸符",
         "朔极之矛"
       ],
-      "avg_placement": 3.5472,
-      "count": 2343,
-      "score": 0.3173,
-      "place_change": -0.669,
+      "avg_placement": 3.3045,
+      "count": 1156,
+      "score": 0.3841,
+      "place_change": -0.872,
       "priority_scores": {
         "最后的轻语": 100,
         "红霸符": 85,
@@ -104,139 +104,139 @@
     {
       "unit": "孙悟空",
       "items": [
-        "坚定之心",
-        "日炎斗篷",
-        "薄暮法袍"
+        "石像鬼石板甲",
+        "薄暮法袍",
+        "狂徒铠甲"
       ],
-      "avg_placement": 4,
-      "count": 286,
-      "score": 0.1129,
-      "place_change": -0.216,
+      "avg_placement": 3.9551,
+      "count": 89,
+      "score": 0.1077,
+      "place_change": -0.222,
       "priority_scores": {
-        "坚定之心": 100,
-        "日炎斗篷": 85,
-        "薄暮法袍": 72
+        "石像鬼石板甲": 100,
+        "薄暮法袍": 85,
+        "狂徒铠甲": 72
       }
     }
   ],
   "build_items": {
-    "无尽之刃": {
-      "itemNames": "无尽之刃",
-      "count": 55542,
-      "avg": 4.0484,
-      "pcnt": 0.86622
-    },
     "朔极之矛": {
-      "itemNames": "朔极之矛",
-      "count": 51454,
-      "avg": 4.0356,
-      "pcnt": 0.80246
-    },
-    "日炎斗篷": {
-      "itemNames": "日炎斗篷",
-      "count": 31855,
-      "avg": 4.0406,
-      "pcnt": 0.4968
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 24977,
+      "avg": 3.9878,
+      "pcnt": 0.87162
     },
     "最后的轻语": {
-      "itemNames": "最后的轻语",
-      "count": 30777,
-      "avg": 4.0469,
-      "pcnt": 0.47999
+      "itemNames": "TFT_Item_LastWhisper",
+      "count": 14157,
+      "avg": 4.0078,
+      "pcnt": 0.49403
     },
     "圣盾使的誓约": {
-      "itemNames": "圣盾使的誓约",
-      "count": 30278,
-      "avg": 3.8624,
-      "pcnt": 0.47221
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 13157,
+      "avg": 3.8168,
+      "pcnt": 0.45914
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 13150,
+      "avg": 3.9886,
+      "pcnt": 0.45889
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 11336,
+      "avg": 3.8798,
+      "pcnt": 0.39559
     },
     "薄暮法袍": {
-      "itemNames": "薄暮法袍",
-      "count": 25485,
-      "avg": 3.9086,
-      "pcnt": 0.39746
+      "itemNames": "TFT_Item_SpectralGauntlet",
+      "count": 10790,
+      "avg": 3.8567,
+      "pcnt": 0.37654
     },
     "成堆柑橘": {
-      "itemNames": "成堆柑橘",
-      "count": 20597,
-      "avg": 3.6445,
-      "pcnt": 0.32123
+      "itemNames": "TFT16_Item_Bilgewater_PileOCitrus",
+      "count": 9251,
+      "avg": 3.637,
+      "pcnt": 0.32283
     },
     "红霸符": {
-      "itemNames": "红霸符",
-      "count": 19126,
-      "avg": 3.8723,
-      "pcnt": 0.29828
+      "itemNames": "TFT_Item_RapidFireCannon",
+      "count": 9027,
+      "avg": 3.8578,
+      "pcnt": 0.31501
     },
     "大副的燧发枪": {
-      "itemNames": "大副的燧发枪",
-      "count": 18641,
-      "avg": 3.7975,
-      "pcnt": 0.29072
+      "itemNames": "TFT16_Item_Bilgewater_FirstMatesFlintlock",
+      "count": 8621,
+      "avg": 3.7532,
+      "pcnt": 0.30084
+    },
+    "亡者的短剑": {
+      "itemNames": "TFT16_Item_Bilgewater_DeadmansDagger",
+      "count": 7738,
+      "avg": 3.875,
+      "pcnt": 0.27003
     },
     "酒吧指虎": {
-      "itemNames": "酒吧指虎",
-      "count": 15834,
-      "avg": 3.6761,
-      "pcnt": 0.24694
-    },
-    "坚定之心": {
-      "itemNames": "坚定之心",
-      "count": 12946,
-      "avg": 3.6811,
-      "pcnt": 0.2019
+      "itemNames": "TFT16_Item_Bilgewater_FreebootersFrock",
+      "count": 7041,
+      "avg": 3.6476,
+      "pcnt": 0.24571
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 12064,
-      "avg": 4.19,
-      "pick_rate": 0.01212
+      "day": "2026-04-07",
+      "count": 7661,
+      "avg": 4.1921,
+      "pick_rate": 0.00994
     },
     {
-      "day": "2026-03-18",
-      "count": 21550,
-      "avg": 4.1617,
-      "pick_rate": 0.011892
+      "day": "2026-04-08",
+      "count": 10633,
+      "avg": 4.1857,
+      "pick_rate": 0.009727
     },
     {
-      "day": "2026-03-19",
-      "count": 21905,
-      "avg": 4.1904,
-      "pick_rate": 0.011973
+      "day": "2026-04-09",
+      "count": 10416,
+      "avg": 4.1429,
+      "pick_rate": 0.00967
     },
     {
-      "day": "2026-03-20",
-      "count": 22086,
-      "avg": 4.2046,
-      "pick_rate": 0.011847
+      "day": "2026-04-10",
+      "count": 10217,
+      "avg": 4.237,
+      "pick_rate": 0.009687
     },
     {
-      "day": "2026-03-21",
-      "count": 22470,
-      "avg": 4.1983,
-      "pick_rate": 0.011533
+      "day": "2026-04-11",
+      "count": 10438,
+      "avg": 4.1989,
+      "pick_rate": 0.00971
     },
     {
-      "day": "2026-03-22",
-      "count": 22314,
-      "avg": 4.2118,
-      "pick_rate": 0.011336
+      "day": "2026-04-12",
+      "count": 10419,
+      "avg": 4.1468,
+      "pick_rate": 0.009728
     },
     {
-      "day": "2026-03-23",
-      "count": 20904,
-      "avg": 4.2332,
-      "pick_rate": 0.011408
+      "day": "2026-04-13",
+      "count": 9018,
+      "avg": 4.1911,
+      "pick_rate": 0.009684
     },
     {
-      "day": "2026-03-24",
-      "count": 7130,
-      "avg": 4.1792,
-      "pick_rate": 0.011381
+      "day": "2026-04-14",
+      "count": 2337,
+      "avg": 4.1553,
+      "pick_rate": 0.009235
     }
   ],
   "levelling": "Fast 9",
-  "difficulty": 0.006
+  "difficulty": -0.024
 }

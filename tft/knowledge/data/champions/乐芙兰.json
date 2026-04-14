@@ -2,35 +2,19 @@
   "name": "乐芙兰",
   "appear_in_comps": [
     {
-      "cluster_id": "394023",
-      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
-      "tier": "A",
-      "avg_placement": 4.2977
-    },
-    {
       "cluster_id": "394006",
       "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
       "tier": "A",
-      "avg_placement": 4.314
-    }
-  ],
-  "builds": [
+      "avg_placement": 4.4506
+    },
     {
       "cluster_id": "394023",
       "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
-      "items": [
-        "莫雷洛秘典",
-        "朔极之矛",
-        "虚空之杖"
-      ],
-      "avg_placement": 3.552,
-      "count": 741,
-      "priority_scores": {
-        "莫雷洛秘典": 100,
-        "朔极之矛": 85,
-        "虚空之杖": 72
-      }
-    },
+      "tier": "A",
+      "avg_placement": 4.4818
+    }
+  ],
+  "builds": [
     {
       "cluster_id": "394006",
       "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
@@ -39,8 +23,8 @@
         "朔极之矛",
         "虚空之杖"
       ],
-      "avg_placement": 3.8941,
-      "count": 22076,
+      "avg_placement": 3.933,
+      "count": 12972,
       "priority_scores": {
         "珠光护手": 100,
         "朔极之矛": 85,
@@ -48,17 +32,32 @@
       }
     },
     {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
+      ],
+      "avg_placement": 3.9361,
+      "count": 610,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 72
+      }
+    },
+    {
       "cluster_id": "394062",
       "comp_name": "TFT16_Brawler, TFT16_Sion",
       "items": [
-        "大天使之杖",
+        "鬼索的狂暴之刃",
         "珠光护手",
         "朔极之矛"
       ],
-      "avg_placement": 5.0299,
-      "count": 67,
+      "avg_placement": 5.0968,
+      "count": 31,
       "priority_scores": {
-        "大天使之杖": 100,
+        "鬼索的狂暴之刃": 100,
         "珠光护手": 85,
         "朔极之矛": 72
       }

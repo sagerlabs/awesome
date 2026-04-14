@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/sagerlabs/awesome/sse"
+	"github.com/sagerlabs/awesome/tft/sse"
 )
 
 func main() {

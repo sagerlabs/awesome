@@ -25,29 +25,26 @@
     "凯南",
     "洛里斯",
     "巴德",
-    "诺提勒斯",
-    "蒙多医生",
-    "玛尔扎哈",
-    "德莱厄斯"
+    "米利欧"
   ],
   "name_string": "TFT16_Ionia, TFT16_Ahri, TFT16_Defender",
   "display_names": [
     {
       "name": "法师",
       "type": "trait",
-      "score": 1.0247793092767539
+      "score": 1.010752688172043
     },
     {
       "name": "阿狸",
       "type": "unit",
-      "score": 4.200325228434258
+      "score": 3.9949596774193545
     }
   ],
-  "count": 1076,
-  "avg_placement": 4.6506,
-  "top4_rate": 0.4749,
-  "win_rate": 0.092,
-  "tier": "B",
+  "count": 2959,
+  "avg_placement": 5.1967,
+  "top4_rate": 0.3772,
+  "win_rate": 0.0561,
+  "tier": "D",
   "builds": [
     {
       "unit": "阿狸",
@@ -56,10 +53,10 @@
         "纳什之牙",
         "纳什之牙"
       ],
-      "avg_placement": 4.035,
-      "count": 1515,
-      "score": 0.6286,
-      "place_change": -0.516,
+      "avg_placement": 4.4259,
+      "count": 263,
+      "score": 0.6552,
+      "place_change": -0.633,
       "priority_scores": {
         "珠光护手": 100,
         "纳什之牙": 72
@@ -69,153 +66,148 @@
       "unit": "佐伊",
       "items": [
         "珠光护手",
-        "纳什之牙",
-        "纳什之牙"
+        "灭世者的死亡之帽",
+        "朔极之矛"
       ],
-      "avg_placement": 3.733,
-      "count": 367,
-      "score": 0.5141,
-      "place_change": -0.818,
+      "avg_placement": 3.25,
+      "count": 12,
+      "score": 0.5788,
+      "place_change": -1.809,
       "priority_scores": {
         "珠光护手": 100,
-        "纳什之牙": 72
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
       }
     },
     {
       "unit": "蕾欧娜",
       "items": [
-        "适应性头盔",
         "棘刺背心",
-        "巨龙之爪"
+        "巨龙之爪",
+        "振奋盔甲"
       ],
-      "avg_placement": 2.8125,
-      "count": 16,
-      "score": 0.3716,
-      "place_change": -1.738,
+      "avg_placement": 3.4737,
+      "count": 19,
+      "score": 0.4194,
+      "place_change": -1.585,
       "priority_scores": {
-        "适应性头盔": 100,
-        "棘刺背心": 85,
-        "巨龙之爪": 72
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
+        "振奋盔甲": 72
       }
     },
     {
       "unit": "凯南",
       "items": [
-        "石像鬼石板甲",
-        "日炎斗篷",
+        "棘刺背心",
+        "巨龙之爪",
         "振奋盔甲"
       ],
-      "avg_placement": 3.45,
-      "count": 20,
-      "score": 0.0851,
-      "place_change": -1.101,
+      "avg_placement": 3.7143,
+      "count": 7,
+      "score": 0.0494,
+      "place_change": -1.345,
       "priority_scores": {
-        "石像鬼石板甲": 100,
-        "日炎斗篷": 85,
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
         "振奋盔甲": 72
       }
     }
   ],
   "build_items": {
     "珠光护手": {
-      "itemNames": "珠光护手",
-      "count": 9043,
-      "avg": 4.3194,
-      "pcnt": 1.4005
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 1956,
+      "avg": 4.7648,
+      "pcnt": 1.31452
     },
     "纳什之牙": {
-      "itemNames": "纳什之牙",
-      "count": 8339,
-      "avg": 4.2392,
-      "pcnt": 1.29147
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 1791,
+      "avg": 4.7348,
+      "pcnt": 1.20363
     },
-    "石像鬼石板甲": {
-      "itemNames": "石像鬼石板甲",
-      "count": 5272,
-      "avg": 4.2934,
-      "pcnt": 0.81648
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 1215,
+      "avg": 4.7827,
+      "pcnt": 0.81653
     },
     "振奋盔甲": {
-      "itemNames": "振奋盔甲",
-      "count": 2965,
-      "avg": 4.1086,
-      "pcnt": 0.45919
+      "itemNames": "TFT_Item_Redemption",
+      "count": 643,
+      "avg": 4.4806,
+      "pcnt": 0.43212
     },
     "巨龙之爪": {
-      "itemNames": "巨龙之爪",
-      "count": 2899,
-      "avg": 4.1918,
-      "pcnt": 0.44897
+      "itemNames": "TFT_Item_DragonsClaw",
+      "count": 634,
+      "avg": 4.5852,
+      "pcnt": 0.42608
     },
     "棘刺背心": {
-      "itemNames": "棘刺背心",
-      "count": 2145,
-      "avg": 4.1632,
-      "pcnt": 0.3322
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 437,
+      "avg": 4.8696,
+      "pcnt": 0.29368
     },
-    "日炎斗篷": {
-      "itemNames": "日炎斗篷",
-      "count": 1800,
-      "avg": 4.2989,
-      "pcnt": 0.27877
-    },
-    "适应性头盔": {
-      "itemNames": "适应性头盔",
-      "count": 1745,
-      "avg": 4.047,
-      "pcnt": 0.27025
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 331,
+      "avg": 4.5529,
+      "pcnt": 0.22245
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 1639,
-      "avg": 4.4448,
-      "pick_rate": 0.001647
+      "day": "2026-04-07",
+      "count": 438,
+      "avg": 4.9863,
+      "pick_rate": 0.000568
     },
     {
-      "day": "2026-03-18",
-      "count": 3317,
-      "avg": 4.4121,
-      "pick_rate": 0.00183
+      "day": "2026-04-08",
+      "count": 622,
+      "avg": 4.9148,
+      "pick_rate": 0.000569
     },
     {
-      "day": "2026-03-19",
-      "count": 2683,
-      "avg": 4.4994,
-      "pick_rate": 0.001467
+      "day": "2026-04-09",
+      "count": 608,
+      "avg": 5.1776,
+      "pick_rate": 0.000564
     },
     {
-      "day": "2026-03-20",
-      "count": 2790,
-      "avg": 4.5703,
-      "pick_rate": 0.001497
+      "day": "2026-04-10",
+      "count": 559,
+      "avg": 5.0197,
+      "pick_rate": 0.00053
     },
     {
-      "day": "2026-03-21",
-      "count": 2558,
-      "avg": 4.4937,
-      "pick_rate": 0.001313
+      "day": "2026-04-11",
+      "count": 571,
+      "avg": 4.9089,
+      "pick_rate": 0.000531
     },
     {
-      "day": "2026-03-22",
-      "count": 2371,
-      "avg": 4.5529,
-      "pick_rate": 0.001205
+      "day": "2026-04-12",
+      "count": 540,
+      "avg": 5.0444,
+      "pick_rate": 0.000504
     },
     {
-      "day": "2026-03-23",
-      "count": 2021,
-      "avg": 4.6155,
-      "pick_rate": 0.001103
+      "day": "2026-04-13",
+      "count": 451,
+      "avg": 4.9379,
+      "pick_rate": 0.000484
     },
     {
-      "day": "2026-03-24",
-      "count": 652,
-      "avg": 4.5613,
-      "pick_rate": 0.001041
+      "day": "2026-04-14",
+      "count": 142,
+      "avg": 5.4225,
+      "pick_rate": 0.000561
     }
   ],
   "levelling": "lvl 7",
-  "difficulty": -0.016
+  "difficulty": -0.056
 }

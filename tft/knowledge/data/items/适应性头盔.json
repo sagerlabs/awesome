@@ -5,39 +5,31 @@
       "cluster_id": "394000",
       "comp_name": "TFT16_Sorcerer, TFT16_Lux",
       "comp_tier": "S",
-      "comp_avg": 4.0398,
+      "comp_avg": 3.8569,
       "carry": "安妮",
       "priority_score": 100
     },
     {
-      "cluster_id": "394001",
-      "comp_name": "TFT16_Brawler, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 4.219,
-      "carry": "丽桑卓",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394005",
-      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "cluster_id": "394031",
+      "comp_name": "TFT16_Demacia, TFT16_Vayne",
       "comp_tier": "A",
-      "comp_avg": 4.2796,
-      "carry": "瑞兹",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394023",
-      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
-      "comp_tier": "A",
-      "comp_avg": 4.2977,
-      "carry": "德莱厄斯",
+      "comp_avg": 4.3035,
+      "carry": "加里奥",
       "priority_score": 100
     },
     {
       "cluster_id": "394006",
       "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
       "comp_tier": "A",
-      "comp_avg": 4.314,
+      "comp_avg": 4.4506,
+      "carry": "德莱厄斯",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "comp_tier": "A",
+      "comp_avg": 4.4818,
       "carry": "德莱厄斯",
       "priority_score": 100
     }

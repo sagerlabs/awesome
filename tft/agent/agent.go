@@ -8,13 +8,15 @@ import (
 	"time"
 
 	"github.com/cloudwego/eino-ext/components/model/ark"
-	arkModel "github.com/volcengine/volcengine-go-sdk/service/arkruntime/model"
 	"github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
 	"github.com/sagerlabs/awesome/tft/data"
+	"github.com/sagerlabs/awesome/tft/parser"
+	"github.com/sagerlabs/awesome/tft/tool"
 	"github.com/sagerlabs/awesome/tft/trace"
 	"github.com/sirupsen/logrus"
+	arkModel "github.com/volcengine/volcengine-go-sdk/service/arkruntime/model"
 )
 
 // AgentConfig Agent 运行时配置，通过 NewAgentWithConfig 传入
@@ -39,13 +41,13 @@ func defaultLLMTimeout() time.Duration {
 
 // Agent TFT Copilot 的对外入口
 type Agent struct {
-	runnable         compose.Runnable[*GraphInput, *schema.Message]
-	nluRunnable      compose.Runnable[*NluContext, *NluEnrichedContext]
+	runnable          compose.Runnable[*GraphInput, *schema.Message]
+	nluRunnable       compose.Runnable[*NluContext, *NluEnrichedContext]
 	nluStreamRunnable compose.Runnable[*NluContext, *schema.Message]
-	store            *data.Store
-	llmTimeout       time.Duration
-	logger           *logrus.Logger
-	traceOpts        []compose.Option // 链路追踪 callback，每次调用时注入
+	store             *data.Store
+	llmTimeout        time.Duration
+	logger            *logrus.Logger
+	traceOpts         []compose.Option // 链路追踪 callback，每次调用时注入
 }
 
 // NewAgent 使用默认配置初始化 Agent
@@ -100,24 +102,29 @@ func NewAgentWithConfig(ctx context.Context, store *data.Store, cfg *AgentConfig
 		return nil, fmt.Errorf("build graph: %w", err)
 	}
 
-	nluRunnable, err := BuildNluGraph(ctx, chatModel, store)
+	knowledgeAdapter, err := newKnowledgeAdapterFromStore(store, logger)
+	if err != nil {
+		return nil, fmt.Errorf("init knowledge adapter: %w", err)
+	}
+
+	nluRunnable, err := BuildNluGraph(ctx, chatModel, knowledgeAdapter)
 	if err != nil {
 		return nil, fmt.Errorf("build nlu graph: %w", err)
 	}
 
-	nluStreamRunnable, err := BuildNluStreamGraph(ctx, chatModel, store)
+	nluStreamRunnable, err := BuildNluStreamGraph(ctx, chatModel, knowledgeAdapter)
 	if err != nil {
 		return nil, fmt.Errorf("build nlu stream graph: %w", err)
 	}
 
 	return &Agent{
-		nluRunnable:      nluRunnable,
+		nluRunnable:       nluRunnable,
 		nluStreamRunnable: nluStreamRunnable,
-		runnable:         runnable,
-		store:            store,
-		llmTimeout:       llmTimeout,
-		logger:           logger,
-		traceOpts:        traceOpts,
+		runnable:          runnable,
+		store:             store,
+		llmTimeout:        llmTimeout,
+		logger:            logger,
+		traceOpts:         traceOpts,
 	}, nil
 }
 
@@ -150,6 +157,15 @@ func (a *Agent) Analyze(ctx context.Context, rawInput string) (*GraphOutput, err
 		"input":    rawInput,
 	}).Debug("开始推理")
 
+	recommendations, err := a.computeRecommendations(ctx, rawInput)
+	if err != nil {
+		a.logger.WithError(err).WithFields(logrus.Fields{
+			"trace_id": traceID,
+			"elapsed":  time.Since(start).String(),
+		}).Error("结构化推荐计算失败")
+		return nil, fmt.Errorf("compute recommendations: %w", err)
+	}
+
 	opts := append(a.traceOpts, compose.WithChatModelOption(model.WithMaxTokens(a.maxTokens())))
 	msg, err := a.runnable.Invoke(llmCtx, &GraphInput{RawInput: rawInput}, opts...)
 	if err != nil {
@@ -166,7 +182,10 @@ func (a *Agent) Analyze(ctx context.Context, rawInput string) (*GraphOutput, err
 		"output_chars": len([]rune(msg.Content)),
 	}).Debug("推理完成")
 
-	return &GraphOutput{LLMAdvice: msg.Content}, nil
+	return &GraphOutput{
+		Recommendations: recommendations,
+		LLMAdvice:       msg.Content,
+	}, nil
 }
 
 // AnalyzeStream 流式接口：返回 StreamReader，由 handler 逐 chunk 推送
@@ -201,11 +220,7 @@ func (a *Agent) AnalyzeStream(ctx context.Context, rawInput string) (
 		},
 	)
 
-	// 包一层：流关闭时取消 LLM timeout context
-	//wrapped := wrapStreamWithCleanup(converted, func() {
-	//	cancel()
-	//})
-
+	_ = cancel
 	return converted, nil
 }
 
@@ -274,27 +289,48 @@ func (a *Agent) NluAnalyzeStream(ctx context.Context, rawInput string) (
 		},
 	)
 
-	// 注意：不使用 wrapStreamWithCleanup，保持与 AnalyzeStream 一致
-	// cancel 在 handler 层管理
+	_ = cancel
 	return converted, nil
 }
 
-// wrapStreamWithCleanup 包装 StreamReader，在 Close 时执行 cleanup
-func wrapStreamWithCleanup(sr *schema.StreamReader[*GraphOutput], cleanup func()) *schema.StreamReader[*GraphOutput] {
-	pr, pw := schema.Pipe[*GraphOutput](32)
-	go func() {
-		defer pw.Close()
-		defer cleanup()
-		defer sr.Close()
-		for {
-			out, err := sr.Recv()
-			if err != nil {
-				return
-			}
-			if err := pw.Send(out, nil); !err {
-				return
-			}
-		}
-	}()
-	return pr
+func (a *Agent) computeRecommendations(ctx context.Context, rawInput string) ([]data.Recommendation, error) {
+	inputParser := parser.NewInputParser(a.store)
+	userInput, err := inputParser.Parse(rawInput)
+	if err != nil {
+		return nil, fmt.Errorf("parse input: %w", err)
+	}
+
+	heroCompsTool := tool.NewHeroCompsTool(a.store)
+	heroComps, err := heroCompsTool.Query(ctx, &data.HeroCompsInput{
+		Heroes: userInput.Heroes,
+		TopN:   5,
+	})
+	if err != nil {
+		return nil, fmt.Errorf("hero comps query: %w", err)
+	}
+
+	itemFitTool := tool.NewItemFitTool(a.store)
+	itemFits, err := itemFitTool.Query(ctx, &data.ItemFitInput{Items: userInput.Items})
+	if err != nil {
+		return nil, fmt.Errorf("item fit query: %w", err)
+	}
+
+	compTierTool := tool.NewCompTierTool(a.store)
+	compTiers, err := compTierTool.QueryTopTier(ctx)
+	if err != nil {
+		return nil, fmt.Errorf("comp tier query: %w", err)
+	}
+
+	intersectionCalc := tool.NewIntersectionCalc(a.store)
+	out, err := intersectionCalc.Compute(&data.IntersectionInput{
+		HeroComps: *heroComps,
+		ItemFits:  *itemFits,
+		CompTiers: *compTiers,
+		UserInput: *userInput,
+	})
+	if err != nil {
+		return nil, fmt.Errorf("intersection compute: %w", err)
+	}
+
+	return out.Recommendations, nil
 }

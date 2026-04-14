@@ -5,31 +5,31 @@
       "cluster_id": "394002",
       "comp_name": "TFT16_Void, TFT16_Malzahar",
       "tier": "S",
-      "avg_placement": 4.037
+      "avg_placement": 4.1278
     },
     {
       "cluster_id": "394031",
       "comp_name": "TFT16_Demacia, TFT16_Vayne",
       "tier": "A",
-      "avg_placement": 4.2635
+      "avg_placement": 4.3035
     },
     {
       "cluster_id": "394018",
       "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
       "tier": "A",
-      "avg_placement": 4.3679
+      "avg_placement": 4.3637
     },
     {
       "cluster_id": "394042",
       "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Juggernaut",
-      "tier": "C",
-      "avg_placement": 4.8065
+      "tier": "B",
+      "avg_placement": 4.67
     },
     {
       "cluster_id": "394020",
       "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_ChoGath",
       "tier": "C",
-      "avg_placement": 4.8302
+      "avg_placement": 4.8547
     }
   ],
   "builds": []

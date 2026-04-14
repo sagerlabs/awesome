@@ -1,95 +1,47 @@
 package knowledge
 
-import "github.com/sagerlabs/awesome/tft/data"
+import (
+	"strings"
 
-// =============================================================================
-// 内部类型（避免引用agent包）
-// =============================================================================
+	"github.com/sagerlabs/awesome/tft/data"
+	"github.com/sagerlabs/awesome/tft/knowledge/contracts"
+)
 
-// internalContext 内部使用的Context类型（避免引用agent包）
-type internalContext struct {
-	Intent          string              `json:"intent"`
-	Champions       map[string]int8     `json:"champions"`
-	Items           []string            `json:"items"`
-	Traits          []string            `json:"traits"`
-	Augments        []string            `json:"augments"`
-	ExplicitLineup  *string             `json:"explicit_lineup"`
-	InferredLineup  string              `json:"inferred_lineup"`
-	Playstyle       string              `json:"playstyle"`
-	GameStage       *string             `json:"game_stage"`
-	Gold            *int                `json:"gold"`
-	Level           *int                `json:"level"`
-	HP              *int                `json:"hp"`
-}
-
-// internalNluEnrichedContext 内部使用的NluEnrichedContext类型
-type internalNluEnrichedContext struct {
-	UserInput    string                `json:"user_input"`
-	Ctx          internalContext       `json:"ctx"`
-	MatchedComps []data.Comp           `json:"matched_comps"`
-	MatchedItems []internalMatchedItemInfo `json:"matched_items"`
-}
-
-// internalMatchedItemInfo 内部使用的MatchedItemInfo类型
-type internalMatchedItemInfo struct {
-	ItemID    string                `json:"item_id"`
-	ItemName  string                `json:"item_name"`
-	CompInfos []internalItemFitCompInfo `json:"comp_infos"`
-}
-
-// internalItemFitCompInfo 内部使用的ItemFitCompInfo类型
-type internalItemFitCompInfo struct {
-	ClusterID    string  `json:"cluster_id"`
-	CompName     string  `json:"comp_name"`
-	CompTier     string  `json:"comp_tier"`
-	CompAvg      float64 `json:"comp_avg"`
-	Carry        string  `json:"carry"`
-	CarryName    string  `json:"carry_name"`
-	PriorityScore int    `json:"priority_score"`
-}
-
-// =============================================================================
-// 内部查询逻辑（避免引用agent包）
-// =============================================================================
-
-// internalQueryNLUData 内部NLU数据查询逻辑
-func internalQueryNLUData(ctx internalContext, store *data.Store) *internalNluEnrichedContext {
-	result := &internalNluEnrichedContext{
+// internalQueryNLUData 使用共享 contract 作为 knowledge 内部 service 的输入输出。
+// 这样 knowledge 仍然是强类型实现，但不再维护一份与 agent 平行演进的镜像 schema。
+func internalQueryNLUData(ctx contracts.QueryNLURequest, store *data.Store) *contracts.QueryNLUResponse {
+	result := &contracts.QueryNLUResponse{
 		Ctx: ctx,
 	}
 
 	hasHeroes := len(ctx.Champions) > 0
 	hasItems := len(ctx.Items) > 0
 
-	// 1. 处理装备查询
 	if hasItems {
 		for _, itemName := range ctx.Items {
 			if itemID := store.ResolveItemID(itemName); itemID != "" {
-				itemInfo := internalMatchedItemInfo{
+				itemInfo := contracts.MatchedItemInfo{
 					ItemID:   itemID,
 					ItemName: store.IDToCN(itemID),
 				}
 				entries := store.GetItemFitEntries(itemID)
 				for _, entry := range entries {
-					compInfo := internalItemFitCompInfo{
-						ClusterID:    entry.ClusterID,
-						CompName:     entry.CompName,
-						CompTier:     entry.CompTier,
-						CompAvg:      entry.CompAvg,
-						Carry:        entry.Carry,
-						CarryName:    store.IDToCN(entry.Carry),
+					itemInfo.CompInfos = append(itemInfo.CompInfos, contracts.ItemFitCompInfo{
+						ClusterID:     entry.ClusterID,
+						CompName:      localizeCompName(entry.CompName, store),
+						CompTier:      entry.CompTier,
+						CompAvg:       entry.CompAvg,
+						Carry:         entry.Carry,
+						CarryName:     store.IDToCN(entry.Carry),
 						PriorityScore: entry.PriorityScore,
-					}
-					itemInfo.CompInfos = append(itemInfo.CompInfos, compInfo)
+					})
 				}
 				result.MatchedItems = append(result.MatchedItems, itemInfo)
 			}
 		}
 	}
 
-	// 2. 处理阵容查询
 	if hasHeroes {
-		// 有英雄输入：根据英雄查询阵容
 		heroIDs := make([]string, 0, len(ctx.Champions))
 		for name := range ctx.Champions {
 			if id := store.ResolveUnitID(name); id != "" {
@@ -98,16 +50,14 @@ func internalQueryNLUData(ctx internalContext, store *data.Store) *internalNluEn
 		}
 		if len(heroIDs) > 0 {
 			matches := store.GetCompsByUnits(heroIDs)
-			// 最多取3个阵容
 			for i, match := range matches {
 				if i >= 3 {
 					break
 				}
-				result.MatchedComps = append(result.MatchedComps, match.Comp)
+				result.MatchedComps = append(result.MatchedComps, toCompSummary(match.Comp, store))
 			}
 		}
 	} else if hasItems {
-		// 没有英雄输入，但有装备输入：根据装备查询最强三套阵容
 		clusterIDSet := make(map[string]bool)
 		var compsToAdd []data.Comp
 
@@ -122,25 +72,44 @@ func internalQueryNLUData(ctx internalContext, store *data.Store) *internalNluEn
 			}
 		}
 
-		// 按平均排名升序排序（越小越强）
 		internalSortCompsByAvgPlacement(compsToAdd)
 
-		// 取前3个
 		for i, comp := range compsToAdd {
 			if i >= 3 {
 				break
 			}
-			result.MatchedComps = append(result.MatchedComps, comp)
+			result.MatchedComps = append(result.MatchedComps, toCompSummary(comp, store))
+		}
+	} else if shouldReturnTopComps(ctx) {
+		topComps := store.GetCompsByTier("S", "A")
+		internalSortCompPointersByAvgPlacement(topComps)
+		for i, comp := range topComps {
+			if i >= 3 {
+				break
+			}
+			result.MatchedComps = append(result.MatchedComps, toCompSummary(*comp, store))
 		}
 	}
 
-	// 3. 将Context中的名称转换为中文（用于展示给LLM）
 	result.Ctx = internalNormalizeContext(ctx, store)
-
 	return result
 }
 
-// internalSortCompsByAvgPlacement 按平均排名升序排序阵容
+func shouldReturnTopComps(ctx contracts.QueryNLURequest) bool {
+	if len(ctx.Traits) > 0 || len(ctx.Augments) > 0 {
+		return false
+	}
+	if ctx.ExplicitLineup != nil && strings.TrimSpace(*ctx.ExplicitLineup) != "" {
+		return false
+	}
+	switch ctx.Intent {
+	case "", "lineup_recommend", "playstyle_query":
+		return true
+	default:
+		return false
+	}
+}
+
 func internalSortCompsByAvgPlacement(comps []data.Comp) {
 	for i := 1; i < len(comps); i++ {
 		for j := i; j > 0 && comps[j].AvgPlacement < comps[j-1].AvgPlacement; j-- {
@@ -149,11 +118,17 @@ func internalSortCompsByAvgPlacement(comps []data.Comp) {
 	}
 }
 
-// internalNormalizeContext 尝试将Context中的黑话/昵称转换为标准名称
-func internalNormalizeContext(ctx internalContext, store *data.Store) internalContext {
+func internalSortCompPointersByAvgPlacement(comps []*data.Comp) {
+	for i := 1; i < len(comps); i++ {
+		for j := i; j > 0 && comps[j].AvgPlacement < comps[j-1].AvgPlacement; j-- {
+			comps[j], comps[j-1] = comps[j-1], comps[j]
+		}
+	}
+}
+
+func internalNormalizeContext(ctx contracts.QueryNLURequest, store *data.Store) contracts.QueryNLURequest {
 	result := ctx
 
-	// 规范化英雄名称（尝试用store.ResolveUnitID解析）
 	if len(ctx.Champions) > 0 {
 		normalizedChampions := make(map[string]int8)
 		for name, star := range ctx.Champions {
@@ -166,7 +141,6 @@ func internalNormalizeContext(ctx internalContext, store *data.Store) internalCo
 		result.Champions = normalizedChampions
 	}
 
-	// 规范化装备名称
 	if len(ctx.Items) > 0 {
 		normalizedItems := make([]string, 0, len(ctx.Items))
 		for _, item := range ctx.Items {
@@ -179,7 +153,6 @@ func internalNormalizeContext(ctx internalContext, store *data.Store) internalCo
 		result.Items = normalizedItems
 	}
 
-	// 规范化羁绊名称
 	if len(ctx.Traits) > 0 {
 		normalizedTraits := make([]string, 0, len(ctx.Traits))
 		for _, trait := range ctx.Traits {
@@ -189,4 +162,108 @@ func internalNormalizeContext(ctx internalContext, store *data.Store) internalCo
 	}
 
 	return result
+}
+
+func toCompSummary(comp data.Comp, store *data.Store) contracts.CompSummary {
+	return contracts.CompSummary{
+		ClusterID:    comp.ClusterID,
+		Name:         localizeCompName(comp.Name, store),
+		Tier:         comp.Tier,
+		AvgPlacement: comp.AvgPlacement,
+		Top4Rate:     comp.Top4Rate,
+		WinRate:      comp.WinRate,
+		Count:        comp.Count,
+		Units:        localizeStrings(comp.Units, store),
+		Traits:       localizeStrings(comp.Traits, store),
+		Stars:        localizeStrings(comp.Stars, store),
+		Levelling:    comp.Levelling,
+		Difficulty:   comp.Difficulty,
+		BestBuild:    toBuildInfo(comp.BestBuild, store),
+		AllBuilds:    toBuildInfos(comp.AllBuilds, store),
+	}
+}
+
+func ptrCompSummary(comp data.Comp, store *data.Store) *contracts.CompSummary {
+	summary := toCompSummary(comp, store)
+	return &summary
+}
+
+func toBuildInfo(build data.BuildInfo, store *data.Store) contracts.BuildInfo {
+	return contracts.BuildInfo{
+		Carry:          store.IDToCN(build.Carry),
+		Items:          localizeStrings(build.Items, store),
+		PriorityScores: localizePriorityScores(build.PriorityScores, store),
+		AvgPlacement:   build.AvgPlacement,
+		PlaceChange:    build.PlaceChange,
+		Score:          build.Score,
+	}
+}
+
+func toBuildInfos(builds []data.BuildInfo, store *data.Store) []contracts.BuildInfo {
+	if len(builds) == 0 {
+		return nil
+	}
+
+	out := make([]contracts.BuildInfo, 0, len(builds))
+	for _, build := range builds {
+		out = append(out, toBuildInfo(build, store))
+	}
+	return out
+}
+
+func localizeCompName(name string, store *data.Store) string {
+	if store == nil || name == "" {
+		return name
+	}
+	parts := strings.Split(name, ",")
+	out := make([]string, 0, len(parts))
+	changed := false
+	for _, part := range parts {
+		trimmed := strings.TrimSpace(part)
+		localized := store.IDToCN(trimmed)
+		if localized != trimmed {
+			changed = true
+		}
+		out = append(out, localized)
+	}
+	if !changed {
+		return name
+	}
+	return strings.Join(out, "、")
+}
+
+func localizeStrings(values []string, store *data.Store) []string {
+	if len(values) == 0 {
+		return nil
+	}
+
+	out := make([]string, 0, len(values))
+	for _, value := range values {
+		out = append(out, store.IDToCN(value))
+	}
+	return out
+}
+
+func localizePriorityScores(in map[string]int, store *data.Store) map[string]int {
+	if len(in) == 0 {
+		return nil
+	}
+
+	out := make(map[string]int, len(in))
+	for key, value := range in {
+		out[store.IDToCN(key)] = value
+	}
+	return out
+}
+
+func clonePriorityScores(in map[string]int) map[string]int {
+	if len(in) == 0 {
+		return nil
+	}
+
+	out := make(map[string]int, len(in))
+	for k, v := range in {
+		out[k] = v
+	}
+	return out
 }

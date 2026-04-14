@@ -21,7 +21,6 @@
     "神盾使 (2)"
   ],
   "stars": [
-    "格雷福斯",
     "嘉文四世",
     "厄斐琉斯"
   ],
@@ -30,33 +29,33 @@
     {
       "name": "皮尔特沃夫",
       "type": "trait",
-      "score": 2.548413091114724
+      "score": 2.5791267367685182
     },
     {
       "name": "海克斯霸龙",
       "type": "unit",
-      "score": 3.9461228529016754
+      "score": 3.7539978445137048
     }
   ],
-  "count": 15587,
-  "avg_placement": 5.2662,
-  "top4_rate": 0.3462,
-  "win_rate": 0.0577,
+  "count": 77346,
+  "avg_placement": 5.3188,
+  "top4_rate": 0.3395,
+  "win_rate": 0.0493,
   "tier": "D",
   "builds": [
     {
       "unit": "海克斯霸龙",
       "items": [
-        "蓝霸符",
+        "死亡之刃",
         "无尽之刃",
         "强袭者的链枷"
       ],
-      "avg_placement": 5.12,
-      "count": 9848,
-      "score": 0.4073,
-      "place_change": -0.199,
+      "avg_placement": 4.769,
+      "count": 1013,
+      "score": 0.4666,
+      "place_change": -0.59,
       "priority_scores": {
-        "蓝霸符": 100,
+        "死亡之刃": 100,
         "无尽之刃": 85,
         "强袭者的链枷": 72
       }
@@ -64,173 +63,173 @@
     {
       "unit": "萨勒芬妮",
       "items": [
+        "蓝霸符",
         "珠光护手",
-        "朔极之矛",
         "虚空之杖"
       ],
-      "avg_placement": 4.6686,
-      "count": 507,
-      "score": 0.1753,
-      "place_change": -0.651,
+      "avg_placement": 4.6184,
+      "count": 152,
+      "score": 0.1885,
+      "place_change": -0.741,
       "priority_scores": {
-        "珠光护手": 100,
-        "朔极之矛": 85,
+        "蓝霸符": 100,
+        "珠光护手": 85,
         "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "洛里斯",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.9598,
+      "count": 423,
+      "score": 0.1655,
+      "place_change": -0.399,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
       }
     },
     {
       "unit": "布隆",
       "items": [
         "棘刺背心",
-        "石像鬼石板甲",
-        "振奋盔甲"
+        "巨龙之爪",
+        "石像鬼石板甲"
       ],
-      "avg_placement": 4.2909,
-      "count": 220,
-      "score": 0.133,
-      "place_change": -1.029,
+      "avg_placement": 4.1739,
+      "count": 92,
+      "score": 0.1223,
+      "place_change": -1.185,
       "priority_scores": {
         "棘刺背心": 100,
-        "石像鬼石板甲": 85,
-        "振奋盔甲": 72
-      }
-    },
-    {
-      "unit": "洛里斯",
-      "items": [
-        "圣盾使的誓约",
-        "石像鬼石板甲",
-        "狂徒铠甲"
-      ],
-      "avg_placement": 4.7303,
-      "count": 178,
-      "score": 0.1264,
-      "place_change": -0.589,
-      "priority_scores": {
-        "圣盾使的誓约": 100,
-        "石像鬼石板甲": 85,
-        "狂徒铠甲": 72
+        "巨龙之爪": 85,
+        "石像鬼石板甲": 72
       }
     }
   ],
   "build_items": {
     "无尽之刃": {
-      "itemNames": "无尽之刃",
-      "count": 59318,
-      "avg": 5.1255,
-      "pcnt": 0.83859
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 26566,
+      "avg": 5.1756,
+      "pcnt": 0.77382
     },
     "石像鬼石板甲": {
-      "itemNames": "石像鬼石板甲",
-      "count": 39285,
-      "avg": 5.11,
-      "pcnt": 0.55538
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 19693,
+      "avg": 5.1242,
+      "pcnt": 0.57362
     },
     "蓝霸符": {
-      "itemNames": "蓝霸符",
-      "count": 34982,
-      "avg": 5.1488,
-      "pcnt": 0.49455
-    },
-    "朔极之矛": {
-      "itemNames": "朔极之矛",
-      "count": 29277,
-      "avg": 4.9805,
-      "pcnt": 0.4139
-    },
-    "强袭者的链枷": {
-      "itemNames": "强袭者的链枷",
-      "count": 27490,
-      "avg": 5.077,
-      "pcnt": 0.38863
+      "itemNames": "TFT_Item_BlueBuff",
+      "count": 14679,
+      "avg": 5.1697,
+      "pcnt": 0.42757
     },
     "珠光护手": {
-      "itemNames": "珠光护手",
-      "count": 27342,
-      "avg": 5.1309,
-      "pcnt": 0.38654
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 14623,
+      "avg": 5.2075,
+      "pcnt": 0.42594
     },
     "振奋盔甲": {
-      "itemNames": "振奋盔甲",
-      "count": 24756,
-      "avg": 4.9681,
-      "pcnt": 0.34998
+      "itemNames": "TFT_Item_Redemption",
+      "count": 12421,
+      "avg": 4.9806,
+      "pcnt": 0.3618
     },
     "狂徒铠甲": {
-      "itemNames": "狂徒铠甲",
-      "count": 24651,
-      "avg": 4.9791,
-      "pcnt": 0.3485
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 12151,
+      "avg": 5.035,
+      "pcnt": 0.35394
+    },
+    "巨龙之爪": {
+      "itemNames": "TFT_Item_DragonsClaw",
+      "count": 11624,
+      "avg": 5.092,
+      "pcnt": 0.33859
+    },
+    "强袭者的链枷": {
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 11107,
+      "avg": 5.0875,
+      "pcnt": 0.32353
     },
     "棘刺背心": {
-      "itemNames": "棘刺背心",
-      "count": 19890,
-      "avg": 4.9867,
-      "pcnt": 0.28119
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 9633,
+      "avg": 5.1205,
+      "pcnt": 0.28059
+    },
+    "死亡之刃": {
+      "itemNames": "TFT_Item_Deathblade",
+      "count": 8520,
+      "avg": 4.9596,
+      "pcnt": 0.24817
     },
     "虚空之杖": {
-      "itemNames": "虚空之杖",
-      "count": 11507,
-      "avg": 4.9166,
-      "pcnt": 0.16268
-    },
-    "圣盾使的誓约": {
-      "itemNames": "圣盾使的誓约",
-      "count": 10794,
-      "avg": 4.7352,
-      "pcnt": 0.1526
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 5570,
+      "avg": 4.9314,
+      "pcnt": 0.16224
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 11686,
-      "avg": 5.534,
-      "pick_rate": 0.01174
+      "day": "2026-04-07",
+      "count": 8826,
+      "avg": 5.3363,
+      "pick_rate": 0.011451
     },
     {
-      "day": "2026-03-18",
-      "count": 26194,
-      "avg": 5.3764,
-      "pick_rate": 0.014455
+      "day": "2026-04-08",
+      "count": 12448,
+      "avg": 5.3816,
+      "pick_rate": 0.011387
     },
     {
-      "day": "2026-03-19",
-      "count": 25917,
-      "avg": 5.2955,
-      "pick_rate": 0.014166
+      "day": "2026-04-09",
+      "count": 12354,
+      "avg": 5.3517,
+      "pick_rate": 0.011469
     },
     {
-      "day": "2026-03-20",
-      "count": 25429,
-      "avg": 5.2985,
-      "pick_rate": 0.01364
+      "day": "2026-04-10",
+      "count": 12257,
+      "avg": 5.3767,
+      "pick_rate": 0.011621
     },
     {
-      "day": "2026-03-21",
-      "count": 26190,
-      "avg": 5.3118,
-      "pick_rate": 0.013443
+      "day": "2026-04-11",
+      "count": 12580,
+      "avg": 5.3498,
+      "pick_rate": 0.011703
     },
     {
-      "day": "2026-03-22",
-      "count": 25445,
-      "avg": 5.332,
-      "pick_rate": 0.012927
+      "day": "2026-04-12",
+      "count": 12525,
+      "avg": 5.3626,
+      "pick_rate": 0.011694
     },
     {
-      "day": "2026-03-23",
-      "count": 22350,
-      "avg": 5.3042,
-      "pick_rate": 0.012197
+      "day": "2026-04-13",
+      "count": 10780,
+      "avg": 5.3685,
+      "pick_rate": 0.011576
     },
     {
-      "day": "2026-03-24",
-      "count": 7591,
-      "avg": 5.32,
-      "pick_rate": 0.012117
+      "day": "2026-04-14",
+      "count": 2899,
+      "avg": 5.3311,
+      "pick_rate": 0.011455
     }
   ],
   "levelling": "Fast 9",
-  "difficulty": -0.118
+  "difficulty": -0.093
 }

@@ -1,0 +1,13 @@
+# test log
+getenv RUN_LLM_TESTS
+getenv RUN_LLM_TESTS
+getenv RUN_LLM_TESTS
+open /Users/cokecola/GolandProjects/awesome/metadata/tft-meta/data/comps_for_agent.json
+open /Users/cokecola/GolandProjects/awesome/metadata/tft-meta/data/items_priority.json
+open /Users/cokecola/GolandProjects/awesome/metadata/tft-meta/data/localization.json
+open /Users/cokecola/GolandProjects/awesome/metadata/tft-meta/data/comps_for_agent.json
+open /Users/cokecola/GolandProjects/awesome/metadata/tft-meta/data/items_priority.json
+open /Users/cokecola/GolandProjects/awesome/metadata/tft-meta/data/localization.json
+open /Users/cokecola/GolandProjects/awesome/metadata/tft-meta/data/comps_for_agent.json
+open /Users/cokecola/GolandProjects/awesome/metadata/tft-meta/data/items_priority.json
+open /Users/cokecola/GolandProjects/awesome/metadata/tft-meta/data/localization.json

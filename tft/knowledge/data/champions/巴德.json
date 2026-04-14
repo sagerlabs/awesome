@@ -5,31 +5,31 @@
       "cluster_id": "394008",
       "comp_name": "TFT16_Defender, TFT16_Aphelios",
       "tier": "S",
-      "avg_placement": 4.1646
+      "avg_placement": 4.0341
     },
     {
       "cluster_id": "394032",
       "comp_name": "TFT16_Brawler, TFT16_Aphelios",
       "tier": "A",
-      "avg_placement": 4.3367
+      "avg_placement": 4.3158
     },
     {
       "cluster_id": "394056",
       "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_Brawler",
       "tier": "C",
-      "avg_placement": 4.8979
+      "avg_placement": 4.89
     },
     {
       "cluster_id": "394062",
       "comp_name": "TFT16_Brawler, TFT16_Sion",
       "tier": "D",
-      "avg_placement": 5.6158
+      "avg_placement": 5.5815
     },
     {
       "cluster_id": "394068",
       "comp_name": "TFT16_Explorer, TFT16_Bard",
       "tier": "D",
-      "avg_placement": 6.3249
+      "avg_placement": 6.167
     }
   ],
   "builds": [
@@ -41,8 +41,8 @@
         "朔极之矛",
         "虚空之杖"
       ],
-      "avg_placement": 3.6461,
-      "count": 4386,
+      "avg_placement": 3.5742,
+      "count": 3147,
       "priority_scores": {
         "大天使之杖": 100,
         "朔极之矛": 85,
@@ -57,8 +57,8 @@
         "珠光护手",
         "朔极之矛"
       ],
-      "avg_placement": 4.0872,
-      "count": 14505,
+      "avg_placement": 4.0515,
+      "count": 9724,
       "priority_scores": {
         "大天使之杖": 100,
         "珠光护手": 85,
@@ -70,14 +70,13 @@
       "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_Brawler",
       "items": [
         "大天使之杖",
-        "珠光护手",
+        "大天使之杖",
         "朔极之矛"
       ],
-      "avg_placement": 4.3916,
-      "count": 166,
+      "avg_placement": 3.2222,
+      "count": 9,
       "priority_scores": {
-        "大天使之杖": 100,
-        "珠光护手": 85,
+        "大天使之杖": 85,
         "朔极之矛": 72
       }
     },
@@ -89,8 +88,8 @@
         "纳什之牙",
         "朔极之矛"
       ],
-      "avg_placement": 5.7622,
-      "count": 3394,
+      "avg_placement": 5.6012,
+      "count": 1903,
       "priority_scores": {
         "珠光护手": 100,
         "纳什之牙": 85,

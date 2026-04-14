@@ -4,49 +4,43 @@
     {
       "cluster_id": "394015",
       "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
-      "tier": "S",
-      "avg_placement": 4.2398
+      "tier": "A",
+      "avg_placement": 4.3658
     },
     {
       "cluster_id": "394007",
       "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
       "tier": "A",
-      "avg_placement": 4.4303
-    },
-    {
-      "cluster_id": "394016",
-      "comp_name": "TFT16_Slayer, TFT16_Yone",
-      "tier": "A",
-      "avg_placement": 4.4319
+      "avg_placement": 4.3786
     },
     {
       "cluster_id": "394022",
       "comp_name": "TFT16_Slayer, TFT16_BelVeth",
-      "tier": "B",
-      "avg_placement": 4.536
+      "tier": "A",
+      "avg_placement": 4.4885
     },
     {
-      "cluster_id": "394034",
-      "comp_name": "TFT16_Augment_XinZhaoCarry",
+      "cluster_id": "394016",
+      "comp_name": "TFT16_Slayer, TFT16_Yone",
       "tier": "B",
-      "avg_placement": 4.6723
+      "avg_placement": 4.6189
     }
   ],
   "builds": [
     {
-      "cluster_id": "394016",
-      "comp_name": "TFT16_Slayer, TFT16_Yone",
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
       "items": [
-        "水银",
+        "饮血剑",
         "斯特拉克的挑战护手",
-        "正义之手"
+        "泰坦的坚决"
       ],
-      "avg_placement": 3.3218,
-      "count": 87,
+      "avg_placement": 3.845,
+      "count": 471,
       "priority_scores": {
-        "水银": 100,
+        "饮血剑": 100,
         "斯特拉克的挑战护手": 85,
-        "正义之手": 72
+        "泰坦的坚决": 72
       }
     },
     {
@@ -57,12 +51,28 @@
         "斯特拉克的挑战护手",
         "泰坦的坚决"
       ],
-      "avg_placement": 3.9515,
-      "count": 2145,
+      "avg_placement": 3.9819,
+      "count": 1381,
       "priority_scores": {
         "饮血剑": 100,
         "斯特拉克的挑战护手": 85,
         "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "394016",
+      "comp_name": "TFT16_Slayer, TFT16_Yone",
+      "items": [
+        "饮血剑",
+        "夜之锋刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 3.4783,
+      "count": 46,
+      "priority_scores": {
+        "饮血剑": 100,
+        "夜之锋刃": 85,
+        "无尽之刃": 72
       }
     }
   ]

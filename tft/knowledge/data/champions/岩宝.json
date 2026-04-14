@@ -4,8 +4,8 @@
     {
       "cluster_id": "394044",
       "comp_name": "TFT16_Explorer, TFT16_Skarner",
-      "tier": "B",
-      "avg_placement": 4.5267
+      "tier": "A",
+      "avg_placement": 4.317
     }
   ],
   "builds": [
@@ -17,8 +17,8 @@
         "无尽之刃",
         "斯特拉克的挑战护手"
       ],
-      "avg_placement": 3.6864,
-      "count": 995,
+      "avg_placement": 3.4016,
+      "count": 508,
       "priority_scores": {
         "饮血剑": 100,
         "无尽之刃": 85,
@@ -33,8 +33,8 @@
         "斯特拉克的挑战护手",
         "泰坦的坚决"
       ],
-      "avg_placement": 4.1143,
-      "count": 280,
+      "avg_placement": 3.9778,
+      "count": 225,
       "priority_scores": {
         "饮血剑": 100,
         "斯特拉克的挑战护手": 85,
@@ -46,15 +46,15 @@
       "comp_name": "TFT16_Explorer, TFT16_Nidalee",
       "items": [
         "饮血剑",
-        "无尽之刃",
-        "斯特拉克的挑战护手"
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
       ],
-      "avg_placement": 4.6963,
-      "count": 1722,
+      "avg_placement": 4.1561,
+      "count": 807,
       "priority_scores": {
         "饮血剑": 100,
-        "无尽之刃": 85,
-        "斯特拉克的挑战护手": 72
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
       }
     }
   ]
