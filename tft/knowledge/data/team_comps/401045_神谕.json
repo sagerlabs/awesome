@@ -1,0 +1,217 @@
+{
+  "cluster_id": "401045",
+  "tft_set": "TFTSet17",
+  "units": [
+    "俄洛伊",
+    "俄洛伊",
+    "厄运小姐",
+    "厄运小姐",
+    "莫德凯撒",
+    "维克托",
+    "维克托"
+  ],
+  "traits": [
+    "神谕 (2)",
+    "武装战姬 (1)",
+    "重装战士 (1)"
+  ],
+  "stars": [
+    "厄运小姐",
+    "维克托",
+    "俄洛伊",
+    "拉亚斯特",
+    "黛安娜",
+    "卡莎",
+    "阿萝拉"
+  ],
+  "name_string": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_PsyOps",
+  "display_names": [
+    {
+      "name": "神谕",
+      "type": "trait",
+      "score": 2.231270358306189
+    },
+    {
+      "name": "维克托",
+      "type": "unit",
+      "score": 3.594695207073057
+    }
+  ],
+  "count": 2189,
+  "avg_placement": 5.5217,
+  "top4_rate": 0.2942,
+  "win_rate": 0.026,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "维克托",
+      "items": [
+        "珠光护手",
+        "灭世者的死亡之帽",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.5385,
+      "count": 13,
+      "score": 0.8226,
+      "place_change": -1.987,
+      "priority_scores": {
+        "珠光护手": 100,
+        "灭世者的死亡之帽": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "厄运小姐",
+      "items": [
+        "死亡之刃",
+        "巨人杀手",
+        "朔极之矛"
+      ],
+      "avg_placement": 4,
+      "count": 13,
+      "score": 0.6031,
+      "place_change": -1.526,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "巨人杀手": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "俄洛伊",
+      "items": [
+        "棘刺背心",
+        "巨龙之爪",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.3333,
+      "count": 15,
+      "score": 0.2489,
+      "place_change": -1.192,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "拉亚斯特",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.8,
+      "count": 15,
+      "score": 0.1108,
+      "place_change": -0.726,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 1508,
+      "avg": 5.3329,
+      "pcnt": 0.70172
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 1385,
+      "avg": 5.2736,
+      "pcnt": 0.64449
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 1038,
+      "avg": 5.1349,
+      "pcnt": 0.48302
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 983,
+      "avg": 5.1292,
+      "pcnt": 0.45742
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 912,
+      "avg": 5.4397,
+      "pcnt": 0.42438
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 745,
+      "avg": 5.1342,
+      "pcnt": 0.34667
+    },
+    "巨龙之爪": {
+      "itemNames": "TFT_Item_DragonsClaw",
+      "count": 657,
+      "avg": 5.1659,
+      "pcnt": 0.30572
+    },
+    "虚空之杖": {
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 604,
+      "avg": 5.0414,
+      "pcnt": 0.28106
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 419,
+      "avg": 5.074,
+      "pcnt": 0.19497
+    },
+    "棘刺背心": {
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 408,
+      "avg": 4.8554,
+      "pcnt": 0.18986
+    },
+    "死亡之刃": {
+      "itemNames": "TFT_Item_Deathblade",
+      "count": 370,
+      "avg": 4.9838,
+      "pcnt": 0.17217
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 122,
+      "avg": 5.1475,
+      "pick_rate": 0.000839
+    },
+    {
+      "day": "2026-04-18",
+      "count": 368,
+      "avg": 5.6168,
+      "pick_rate": 0.000923
+    },
+    {
+      "day": "2026-04-19",
+      "count": 495,
+      "avg": 5.4384,
+      "pick_rate": 0.000903
+    },
+    {
+      "day": "2026-04-20",
+      "count": 1094,
+      "avg": 5.5878,
+      "pick_rate": 0.000995
+    },
+    {
+      "day": "2026-04-21",
+      "count": 261,
+      "avg": 5.3218,
+      "pick_rate": 0.001054
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.048
+}

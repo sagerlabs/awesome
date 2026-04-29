@@ -2,44 +2,20 @@
   "name": "坚定之心",
   "priority_list": [
     {
-      "cluster_id": "394018",
-      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
-      "comp_tier": "A",
-      "comp_avg": 4.3637,
-      "carry": "峡谷先锋",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394027",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
       "comp_tier": "S",
-      "comp_avg": 3.6638,
-      "carry": "塔里克",
+      "comp_avg": 3.9764,
+      "carry": "俄洛伊",
       "priority_score": 85
     },
     {
-      "cluster_id": "394011",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "S",
-      "comp_avg": 4.0327,
-      "carry": "奥恩",
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "拉莫斯",
       "priority_score": 85
-    },
-    {
-      "cluster_id": "394044",
-      "comp_name": "TFT16_Explorer, TFT16_Skarner",
-      "comp_tier": "A",
-      "comp_avg": 4.317,
-      "carry": "斯卡纳",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "394037",
-      "comp_name": "TFT16_Ionia, TFT16_Wukong",
-      "comp_tier": "A",
-      "comp_avg": 4.4739,
-      "carry": "孙悟空",
-      "priority_score": 72
     }
   ]
 }

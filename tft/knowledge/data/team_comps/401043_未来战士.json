@@ -1,0 +1,219 @@
+{
+  "cluster_id": "401043",
+  "tft_set": "TFTSet17",
+  "units": [
+    "科加斯",
+    "伊泽瑞尔",
+    "茂凯",
+    "米利欧",
+    "潘森",
+    "锐雯",
+    "塔姆",
+    "霞"
+  ],
+  "traits": [
+    "斗士 (2)",
+    "狙神 (1)",
+    "命运祭司 (1)",
+    "未来战士 (3)"
+  ],
+  "stars": [
+    "伊泽瑞尔",
+    "潘森",
+    "米利欧",
+    "古拉加斯",
+    "雷克塞",
+    "贝蕾亚",
+    "泰隆",
+    "崔斯特",
+    "纳尔",
+    "卑尔维斯",
+    "贾克斯",
+    "金克丝",
+    "波比"
+  ],
+  "name_string": "TFT17_Timebreaker, TFT17_Ezreal",
+  "display_names": [
+    {
+      "name": "未来战士",
+      "type": "trait",
+      "score": 2.441168728612793
+    },
+    {
+      "name": "潘森",
+      "type": "unit",
+      "score": 2.8582521716241116
+    }
+  ],
+  "count": 3860,
+  "avg_placement": 5.414,
+  "top4_rate": 0.3383,
+  "win_rate": 0.0549,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "潘森",
+      "items": [
+        "石像鬼石板甲",
+        "坚定之心",
+        "薄暮法袍"
+      ],
+      "avg_placement": 3.4167,
+      "count": 12,
+      "score": 0.5146,
+      "place_change": -1.992,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "坚定之心": 85,
+        "薄暮法袍": 72
+      }
+    },
+    {
+      "unit": "伊泽瑞尔",
+      "items": [
+        "无尽之刃",
+        "强袭者的链枷",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.2979,
+      "count": 94,
+      "score": 0.4077,
+      "place_change": -1.111,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "强袭者的链枷": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "锐雯",
+      "items": [
+        "饮血剑",
+        "珠光护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.8,
+      "count": 15,
+      "score": 0.3489,
+      "place_change": -1.609,
+      "priority_scores": {
+        "饮血剑": 100,
+        "珠光护手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "米利欧",
+      "items": [
+        "珠光护手",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 4.2,
+      "count": 10,
+      "score": 0.1314,
+      "place_change": -1.209,
+      "priority_scores": {
+        "珠光护手": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    }
+  ],
+  "build_items": {
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 2323,
+      "avg": 4.9354,
+      "pcnt": 0.61148
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 2010,
+      "avg": 5.008,
+      "pcnt": 0.52909
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 1713,
+      "avg": 4.9089,
+      "pcnt": 0.45091
+    },
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 1272,
+      "avg": 5.0566,
+      "pcnt": 0.33482
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 970,
+      "avg": 5.1134,
+      "pcnt": 0.25533
+    },
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 968,
+      "avg": 5.0723,
+      "pcnt": 0.2548
+    },
+    "薄暮法袍": {
+      "itemNames": "TFT_Item_SpectralGauntlet",
+      "count": 949,
+      "avg": 4.8588,
+      "pcnt": 0.2498
+    },
+    "强袭者的链枷": {
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 759,
+      "avg": 4.7404,
+      "pcnt": 0.19979
+    },
+    "坚定之心": {
+      "itemNames": "TFT_Item_NightHarvester",
+      "count": 565,
+      "avg": 4.6389,
+      "pcnt": 0.14872
+    },
+    "虚空之杖": {
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 362,
+      "avg": 5.0359,
+      "pcnt": 0.09529
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 221,
+      "avg": 5.362,
+      "pick_rate": 0.00152
+    },
+    {
+      "day": "2026-04-18",
+      "count": 603,
+      "avg": 5.4328,
+      "pick_rate": 0.001513
+    },
+    {
+      "day": "2026-04-19",
+      "count": 907,
+      "avg": 5.4068,
+      "pick_rate": 0.001655
+    },
+    {
+      "day": "2026-04-20",
+      "count": 1951,
+      "avg": 5.4121,
+      "pick_rate": 0.001774
+    },
+    {
+      "day": "2026-04-21",
+      "count": 443,
+      "avg": 5.4131,
+      "pick_rate": 0.001788
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.206
+}

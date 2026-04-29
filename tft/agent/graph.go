@@ -7,13 +7,11 @@ import (
 	"github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
-	"github.com/sagerlabs/awesome/tft/parser"
 	"github.com/sagerlabs/awesome/tft/prompt"
 	"github.com/sirupsen/logrus"
 	"strings"
 
 	"github.com/sagerlabs/awesome/tft/data"
-	"github.com/sagerlabs/awesome/tft/tool"
 )
 
 // ── 节点 key 常量，避免魔法字符串 ─────────────────────────────────────────────
@@ -50,6 +48,16 @@ type GraphOutput struct {
 func BuildGraph(ctx context.Context, chatModel model.ChatModel, store *data.Store) (
 	compose.Runnable[*GraphInput, *schema.Message], error,
 ) {
+	return BuildGraphWithRuntime(ctx, chatModel, NewDefaultGraphRuntime(store))
+}
+
+func BuildGraphWithRuntime(ctx context.Context, chatModel model.ChatModel, runtime *GraphRuntime) (
+	compose.Runnable[*GraphInput, *schema.Message], error,
+) {
+	if err := runtime.Validate(); err != nil {
+		return nil, fmt.Errorf("validate graph runtime: %w", err)
+	}
+
 	// NewGraph[输入类型, 输出类型]
 	g := compose.NewGraph[*GraphInput, *schema.Message]()
 
@@ -57,8 +65,7 @@ func BuildGraph(ctx context.Context, chatModel model.ChatModel, store *data.Stor
 	// 把用户原始输入标准化为 UserInput{Heroes, Items}
 	parserFn := compose.InvokableLambda(
 		func(ctx context.Context, in *GraphInput) (*data.UserInput, error) {
-			inputParser := parser.NewInputParser(store)
-			return inputParser.Parse(in.RawInput)
+			return runtime.Parser.Parse(in.RawInput)
 		},
 	)
 	if err := g.AddLambdaNode(nodeParser, parserFn); err != nil {
@@ -72,8 +79,7 @@ func BuildGraph(ctx context.Context, chatModel model.ChatModel, store *data.Stor
 	// Tool1: 英雄 → 推荐阵容
 	heroCompsFn := compose.InvokableLambda(
 		func(ctx context.Context, in *data.UserInput) (*data.HeroCompsOutput, error) {
-			t := tool.NewHeroCompsTool(store)
-			return t.Query(ctx, &data.HeroCompsInput{
+			return runtime.Tools.HeroComps.Query(ctx, &data.HeroCompsInput{
 				Heroes: in.Heroes,
 				TopN:   5,
 			})
@@ -88,8 +94,7 @@ func BuildGraph(ctx context.Context, chatModel model.ChatModel, store *data.Stor
 	// Tool2: 装备 → 适配阵容
 	itemFitFn := compose.InvokableLambda(
 		func(ctx context.Context, in *data.UserInput) (*data.ItemFitOutput, error) {
-			t := tool.NewItemFitTool(store)
-			return t.Query(ctx, &data.ItemFitInput{
+			return runtime.Tools.ItemFit.Query(ctx, &data.ItemFitInput{
 				Items: in.Items,
 			})
 		},
@@ -105,8 +110,7 @@ func BuildGraph(ctx context.Context, chatModel model.ChatModel, store *data.Stor
 	// 简化写法：直接查全部 S/A Tier 作为参考基准
 	compTierFn := compose.InvokableLambda(
 		func(ctx context.Context, in *data.UserInput) (*data.CompTierOutput, error) {
-			t := tool.NewCompTierTool(store)
-			return t.QueryTopTier(ctx)
+			return runtime.Tools.CompTier.QueryTopTier(ctx)
 		},
 	)
 	if err := g.AddLambdaNode(nodeCompTier, compTierFn,
@@ -135,8 +139,7 @@ func BuildGraph(ctx context.Context, chatModel model.ChatModel, store *data.Stor
 				compTier = &data.CompTierOutput{}
 			}
 
-			calc := tool.NewIntersectionCalc(store)
-			return calc.Compute(&data.IntersectionInput{
+			return runtime.Tools.Intersection.Compute(&data.IntersectionInput{
 				HeroComps: *heroComps,
 				ItemFits:  *itemFit,
 				CompTiers: *compTier,
@@ -151,7 +154,7 @@ func BuildGraph(ctx context.Context, chatModel model.ChatModel, store *data.Stor
 	// 把交集结果转成 []*schema.Message 喂给 ChatModel
 	llmInputFn := compose.InvokableLambda(
 		func(ctx context.Context, in *data.IntersectionOutput) ([]*schema.Message, error) {
-			prompt := BuildPrompt(in)
+			prompt := runtime.PromptBuilder.BuildRecommendationPrompt(in)
 			return []*schema.Message{
 				schema.SystemMessage(systemPrompt),
 				schema.UserMessage(prompt),
@@ -229,10 +232,18 @@ func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, knowledgeAdap
 	compose.Runnable[*NluContext, *NluEnrichedContext], error,
 ) {
 	g := compose.NewGraph[*NluContext, *NluEnrichedContext]()
+	fastNLU := NewFastNLUExtractor(knowledgeAdapter)
 
 	// Node 1: NLU提取
 	nluExtract := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluContext, err error) {
 		logrus.Println("用户输入:", input.UserInput)
+		if c, ok := fastNLU.TryParse(input.UserInput); ok {
+			input.Ctx = c
+			if jsonBytes, err := json.MarshalIndent(input.Ctx, "", "  "); err == nil {
+				logrus.Println("fast nlu 提取的内容为:\n" + string(jsonBytes))
+			}
+			return input, nil
+		}
 		fullPrompt, err := prompt.BuildNLUPrompt(input.UserInput)
 		if err != nil {
 			return nil, fmt.Errorf("build nlu prompt: %w", err)
@@ -306,10 +317,18 @@ func BuildNluStreamGraph(ctx context.Context, chatModel model.ChatModel, knowled
 	compose.Runnable[*NluContext, *schema.Message], error,
 ) {
 	g := compose.NewGraph[*NluContext, *schema.Message]()
+	fastNLU := NewFastNLUExtractor(knowledgeAdapter)
 
 	// Node 1: NLU提取
 	nluExtract := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluContext, err error) {
 		logrus.Println("用户输入:", input.UserInput)
+		if c, ok := fastNLU.TryParse(input.UserInput); ok {
+			input.Ctx = c
+			if jsonBytes, err := json.MarshalIndent(input.Ctx, "", "  "); err == nil {
+				logrus.Println("fast nlu 提取的内容为:\n" + string(jsonBytes))
+			}
+			return input, nil
+		}
 		fullPrompt, err := prompt.BuildNLUPrompt(input.UserInput)
 		if err != nil {
 			return nil, fmt.Errorf("build nlu prompt: %w", err)

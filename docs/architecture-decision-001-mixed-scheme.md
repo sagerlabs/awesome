@@ -3,6 +3,24 @@
 ## 日期
 2026-03-25
 
+## Implementation Status（实现状态）
+
+Status: Superseded（已被后续方案替代） / Historical（历史记录）
+
+Checklist:
+
+- [x] `knowledge` 对外保持字节流 transport（传输）接口。
+- [x] `agent` 侧通过 adapter（适配器）调用 `knowledge`。
+- [x] 后续 ADR002 已将共享语义进一步收敛到 `contracts`（公共协议）。
+- [ ] 本 ADR 中“agent 自己持有类型再转换”的做法不再作为最新推荐方案。
+
+Evidence（证据）:
+
+- `tft/knowledge/tool.go`
+- `tft/agent/knowledge_adapter.go`
+- `tft/knowledge/contracts/query_nlu.go`
+- `docs/architecture-decision-002-knowledge-mcp-contract-boundary.md`
+
 ## 背景
 
 在设计TFT Knowledge Tool时，我们遇到了包依赖的问题：

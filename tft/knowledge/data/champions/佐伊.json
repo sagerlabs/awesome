@@ -2,105 +2,45 @@
   "name": "佐伊",
   "appear_in_comps": [
     {
-      "cluster_id": "394002",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "tier": "S",
-      "avg_placement": 4.1278
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "tier": "A",
+      "avg_placement": 4.3079
     },
     {
-      "cluster_id": "394035",
-      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Void",
-      "tier": "B",
-      "avg_placement": 4.6383
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "tier": "A",
+      "avg_placement": 4.4022
     },
     {
-      "cluster_id": "394057",
-      "comp_name": "TFT16_Piltover, TFT16_Zoe",
+      "cluster_id": "401039",
+      "comp_name": "TFT17_ShieldTank, TFT17_Zoe",
       "tier": "C",
-      "avg_placement": 5.097
+      "avg_placement": 5.0501
     },
     {
-      "cluster_id": "394057",
-      "comp_name": "TFT16_Piltover, TFT16_Zoe",
+      "cluster_id": "401044",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
       "tier": "C",
-      "avg_placement": 5.097
-    },
-    {
-      "cluster_id": "394017",
-      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Defender",
-      "tier": "D",
-      "avg_placement": 5.1967
-    },
-    {
-      "cluster_id": "394062",
-      "comp_name": "TFT16_Brawler, TFT16_Sion",
-      "tier": "D",
-      "avg_placement": 5.5815
+      "avg_placement": 5.0546
     }
   ],
   "builds": [
     {
-      "cluster_id": "394002",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "cluster_id": "401039",
+      "comp_name": "TFT17_ShieldTank, TFT17_Zoe",
       "items": [
-        "海克斯科技枪刃",
-        "珠光护手",
-        "朔极之矛"
-      ],
-      "avg_placement": 3.6994,
-      "count": 17675,
-      "priority_scores": {
-        "海克斯科技枪刃": 100,
-        "珠光护手": 85,
-        "朔极之矛": 72
-      }
-    },
-    {
-      "cluster_id": "394035",
-      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Void",
-      "items": [
-        "珠光护手",
-        "莫雷洛秘典",
-        "朔极之矛"
-      ],
-      "avg_placement": 3.6162,
-      "count": 99,
-      "priority_scores": {
-        "珠光护手": 100,
-        "莫雷洛秘典": 85,
-        "朔极之矛": 72
-      }
-    },
-    {
-      "cluster_id": "394057",
-      "comp_name": "TFT16_Piltover, TFT16_Zoe",
-      "items": [
-        "大天使之杖",
-        "鬼索的狂暴之刃",
-        "朔极之矛"
-      ],
-      "avg_placement": 3.9091,
-      "count": 55,
-      "priority_scores": {
-        "大天使之杖": 100,
-        "鬼索的狂暴之刃": 85,
-        "朔极之矛": 72
-      }
-    },
-    {
-      "cluster_id": "394017",
-      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Defender",
-      "items": [
-        "珠光护手",
         "灭世者的死亡之帽",
-        "朔极之矛"
+        "朔极之矛",
+        "虚空之杖"
       ],
-      "avg_placement": 3.25,
-      "count": 12,
+      "avg_placement": 3.8667,
+      "count": 45,
       "priority_scores": {
-        "珠光护手": 100,
-        "灭世者的死亡之帽": 85,
-        "朔极之矛": 72
+        "灭世者的死亡之帽": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
       }
     }
   ]

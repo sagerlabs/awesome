@@ -2,45 +2,89 @@
   "name": "娑娜",
   "appear_in_comps": [
     {
-      "cluster_id": "394049",
-      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Poppy",
-      "tier": "B",
-      "avg_placement": 4.6104
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "tier": "A",
+      "avg_placement": 4.4447
     },
     {
-      "cluster_id": "394034",
-      "comp_name": "TFT16_Augment_XinZhaoCarry",
-      "tier": "B",
-      "avg_placement": 4.7227
+      "cluster_id": "401040",
+      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
+      "tier": "C",
+      "avg_placement": 4.8334
     },
     {
-      "cluster_id": "394041",
-      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Lissandra",
+      "cluster_id": "401044",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
+      "tier": "C",
+      "avg_placement": 5.0546
+    },
+    {
+      "cluster_id": "401052",
+      "comp_name": "TFT17_ShieldTank, TFT17_Illaoi",
       "tier": "D",
-      "avg_placement": 5.2556
-    },
-    {
-      "cluster_id": "394064",
-      "comp_name": "TFT16_Demacia, TFT16_JarvanIV",
-      "tier": "D",
-      "avg_placement": 6.079
+      "avg_placement": 5.2599
     }
   ],
   "builds": [
     {
-      "cluster_id": "394064",
-      "comp_name": "TFT16_Demacia, TFT16_JarvanIV",
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
       "items": [
-        "大天使之杖",
-        "珠光护手",
-        "纳什之牙"
+        "红霸符",
+        "朔极之矛",
+        "虚空之杖"
       ],
-      "avg_placement": 5.4194,
-      "count": 248,
+      "avg_placement": 3.1892,
+      "count": 37,
       "priority_scores": {
-        "大天使之杖": 100,
-        "珠光护手": 85,
-        "纳什之牙": 72
+        "红霸符": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "401040",
+      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
+      "items": [
+        "莫雷洛秘典"
+      ],
+      "avg_placement": 4.5192,
+      "count": 52,
+      "priority_scores": {
+        "莫雷洛秘典": 100
+      }
+    },
+    {
+      "cluster_id": "401044",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "虚空之杖"
+      ],
+      "avg_placement": 2.8571,
+      "count": 21,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "401052",
+      "comp_name": "TFT17_ShieldTank, TFT17_Illaoi",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.7895,
+      "count": 19,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "虚空之杖": 72
       }
     }
   ]

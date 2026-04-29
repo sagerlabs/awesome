@@ -61,12 +61,15 @@ func (s *UnifiedStore) QueryNLU(req QueryRequest) (QueryResponse, error) {
 
 	s.logger.WithField("intent", ctx.Intent).Debug("Parsed context")
 
+	normalizedCtx, normalizedTerms := s.normalizeQueryContext(ctx)
+
 	// 2. 内部调用（使用内部逻辑，避免引用agent包）
-	result := internalQueryNLUData(ctx, s.dataStore)
+	result := internalQueryNLUData(normalizedCtx, s.dataStore)
+	result.NormalizedTerms = normalizedTerms
 
 	// 3. 如果启用Meta数据，补充Meta数据
 	if s.config.EnableMeta && s.knowledgeStore != nil {
-		s.internalEnrichWithMetaData(result, ctx)
+		s.internalEnrichWithMetaData(result, normalizedCtx)
 	}
 
 	// 4. Marshal响应：contract response → []byte
@@ -76,6 +79,68 @@ func (s *UnifiedStore) QueryNLU(req QueryRequest) (QueryResponse, error) {
 	}
 
 	return QueryResponse(respBytes), nil
+}
+
+func (s *UnifiedStore) normalizeQueryContext(ctx contracts.QueryNLURequest) (contracts.QueryNLURequest, []contracts.NormalizedTerm) {
+	result := ctx
+	if s.knowledgeStore == nil {
+		return result, nil
+	}
+
+	var terms []contracts.NormalizedTerm
+	addTerm := func(kind string, raw string, normalized string) {
+		raw = strings.TrimSpace(raw)
+		normalized = strings.TrimSpace(normalized)
+		if raw == "" || normalized == "" || raw == normalized {
+			return
+		}
+		terms = append(terms, contracts.NormalizedTerm{
+			Type:       kind,
+			Raw:        raw,
+			Normalized: normalized,
+		})
+	}
+
+	if len(ctx.Champions) > 0 {
+		normalizedChampions := make(map[string]int8, len(ctx.Champions))
+		for raw, star := range ctx.Champions {
+			name := raw
+			if normalized, ok := s.knowledgeStore.ResolveAlias("champion", raw); ok {
+				name = normalized
+				addTerm("champion", raw, normalized)
+			}
+			normalizedChampions[name] = star
+		}
+		result.Champions = normalizedChampions
+	}
+
+	if len(ctx.Items) > 0 {
+		normalizedItems := make([]string, 0, len(ctx.Items))
+		for _, raw := range ctx.Items {
+			name := raw
+			if normalized, ok := s.knowledgeStore.ResolveAlias("item", raw); ok {
+				name = normalized
+				addTerm("item", raw, normalized)
+			}
+			normalizedItems = append(normalizedItems, name)
+		}
+		result.Items = normalizedItems
+	}
+
+	if len(ctx.Traits) > 0 {
+		normalizedTraits := make([]string, 0, len(ctx.Traits))
+		for _, raw := range ctx.Traits {
+			name := raw
+			if normalized, ok := s.knowledgeStore.ResolveAlias("trait", raw); ok {
+				name = normalized
+				addTerm("trait", raw, normalized)
+			}
+			normalizedTraits = append(normalizedTraits, name)
+		}
+		result.Traits = normalizedTraits
+	}
+
+	return result, terms
 }
 
 // internalEnrichWithMetaData 用Meta数据丰富结果（内部版本）
@@ -111,6 +176,9 @@ func (s *UnifiedStore) internalEnrichWithMetaData(result *contracts.QueryNLUResp
 			s.logger.WithField("item", itemName).Debug("Found meta item")
 		}
 	}
+
+	s.enrichVerticalAndTraitQueries(result, ctx)
+	result.PatchNotes = s.buildPatchNoteInsights(ctx)
 }
 
 func enrichCompSummaryWithMeta(summary contracts.CompSummary, metaComp *models.MetaComp) contracts.CompSummary {

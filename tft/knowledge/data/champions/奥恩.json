@@ -2,78 +2,204 @@
   "name": "奥恩",
   "appear_in_comps": [
     {
-      "cluster_id": "394026",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "tier": "S",
-      "avg_placement": 3.8968
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
+      "tier": "A",
+      "avg_placement": 4.3717
     },
     {
-      "cluster_id": "394011",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "tier": "S",
-      "avg_placement": 4.0327
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
+      "tier": "A",
+      "avg_placement": 4.3717
     },
     {
-      "cluster_id": "394019",
-      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
-      "tier": "S",
-      "avg_placement": 4.1515
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "tier": "A",
+      "avg_placement": 4.3744
     },
     {
-      "cluster_id": "394050",
-      "comp_name": "TFT16_Warden, TFT16_Braum",
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "tier": "A",
+      "avg_placement": 4.4707
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "tier": "A",
+      "avg_placement": 4.4761
+    },
+    {
+      "cluster_id": "401026",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Nunu",
       "tier": "B",
-      "avg_placement": 4.5298
+      "avg_placement": 4.7662
     },
     {
-      "cluster_id": "394045",
-      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Nautilus",
-      "tier": "D",
-      "avg_placement": 5.2356
+      "cluster_id": "401021",
+      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
+      "tier": "C",
+      "avg_placement": 4.7878
     },
     {
-      "cluster_id": "394063",
-      "comp_name": "TFT16_Piltover, TFT16_THex",
-      "tier": "D",
-      "avg_placement": 5.3188
+      "cluster_id": "401032",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Ornn",
+      "tier": "C",
+      "avg_placement": 4.9238
     },
     {
-      "cluster_id": "394061",
-      "comp_name": "TFT16_Demacia, TFT16_Garen",
+      "cluster_id": "401042",
+      "comp_name": "TFT17_ResistTank, TFT17_Poppy",
+      "tier": "C",
+      "avg_placement": 5.0771
+    },
+    {
+      "cluster_id": "401048",
+      "comp_name": "TFT17_APTrait, TFT17_Lulu, TFT17_ResistTank",
       "tier": "D",
-      "avg_placement": 5.4167
+      "avg_placement": 5.1697
+    },
+    {
+      "cluster_id": "401047",
+      "comp_name": "TFT17_DRX, TFT17_Aatrox",
+      "tier": "D",
+      "avg_placement": 5.239
+    },
+    {
+      "cluster_id": "401051",
+      "comp_name": "TFT17_ResistTank, TFT17_Ornn",
+      "tier": "D",
+      "avg_placement": 5.6756
     }
   ],
   "builds": [
     {
-      "cluster_id": "394011",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
+      "items": [
+        "巨龙之爪",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.5614,
+      "count": 513,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "items": [
+        "巨龙之爪",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.275,
+      "count": 40,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "items": [
+        "离子火花",
+        "日炎斗篷",
+        "薄暮法袍"
+      ],
+      "avg_placement": 3.593,
+      "count": 344,
+      "priority_scores": {
+        "离子火花": 100,
+        "日炎斗篷": 85,
+        "薄暮法袍": 72
+      }
+    },
+    {
+      "cluster_id": "401021",
+      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
       "items": [
         "棘刺背心",
-        "坚定之心",
+        "巨龙之爪",
         "振奋盔甲"
       ],
-      "avg_placement": 3.2192,
-      "count": 511,
+      "avg_placement": 3.8725,
+      "count": 102,
       "priority_scores": {
         "棘刺背心": 100,
-        "坚定之心": 85,
+        "巨龙之爪": 85,
         "振奋盔甲": 72
       }
     },
     {
-      "cluster_id": "394050",
-      "comp_name": "TFT16_Warden, TFT16_Braum",
+      "cluster_id": "401032",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Ornn",
       "items": [
         "石像鬼石板甲",
-        "日炎斗篷",
-        "振奋盔甲"
+        "振奋盔甲",
+        "狂徒铠甲"
       ],
-      "avg_placement": 4.2222,
-      "count": 18,
+      "avg_placement": 4.2344,
+      "count": 384,
       "priority_scores": {
         "石像鬼石板甲": 100,
-        "日炎斗篷": 85,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "401042",
+      "comp_name": "TFT17_ResistTank, TFT17_Poppy",
+      "items": [
+        "日炎斗篷",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.4167,
+      "count": 36,
+      "priority_scores": {
+        "日炎斗篷": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "401048",
+      "comp_name": "TFT17_APTrait, TFT17_Lulu, TFT17_ResistTank",
+      "items": [
+        "巨龙之爪",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.8333,
+      "count": 24,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "401051",
+      "comp_name": "TFT17_ResistTank, TFT17_Ornn",
+      "items": [
+        "巨龙之爪",
+        "坚定之心",
+        "振奋盔甲"
+      ],
+      "avg_placement": 4.2,
+      "count": 10,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "坚定之心": 85,
         "振奋盔甲": 72
       }
     }

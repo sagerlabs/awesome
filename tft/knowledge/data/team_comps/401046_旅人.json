@@ -1,0 +1,205 @@
+{
+  "cluster_id": "401046",
+  "tft_set": "TFTSet17",
+  "units": [
+    "巴德",
+    "布里茨",
+    "超级机甲",
+    "小木灵",
+    "卡尔玛",
+    "莫德凯撒",
+    "拉莫斯",
+    "慎",
+    "薇古丝"
+  ],
+  "traits": [
+    "木灵族 (1)",
+    "汪星机器人 (1)",
+    "暗星 (1)",
+    "旅人 (2)",
+    "神谕 (1)",
+    "堡垒卫士 (1)",
+    "暮光铁壁 (1)",
+    "重装战士 (1)",
+    "太空律动 (1)",
+    "末日使者 (1)"
+  ],
+  "stars": [
+    "金克丝",
+    "厄运小姐"
+  ],
+  "name_string": "TFT17_FlexTrait, TFT17_Galio",
+  "display_names": [
+    {
+      "name": "旅人",
+      "type": "trait",
+      "score": 1.8945664899111632
+    },
+    {
+      "name": "超级机甲",
+      "type": "unit",
+      "score": 4.196405206253013
+    }
+  ],
+  "count": 14752,
+  "avg_placement": 5.2739,
+  "top4_rate": 0.3511,
+  "win_rate": 0.079,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "超级机甲",
+      "items": [
+        "雌狮之怨",
+        "石像鬼石板甲",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.12,
+      "count": 25,
+      "score": 0.8056,
+      "place_change": -2.159,
+      "priority_scores": {
+        "雌狮之怨": 100,
+        "石像鬼石板甲": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "卡尔玛",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 4.1667,
+      "count": 36,
+      "score": 0.2169,
+      "place_change": -1.112,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "薇古丝",
+      "items": [
+        "鬼索的狂暴之刃",
+        "珠光护手",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.6016,
+      "count": 123,
+      "score": 0.1689,
+      "place_change": -0.677,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "珠光护手": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "布里茨",
+      "items": [
+        "冕卫"
+      ],
+      "avg_placement": 4.1081,
+      "count": 37,
+      "score": 0.0072,
+      "place_change": -1.171,
+      "priority_scores": {
+        "冕卫": 100
+      }
+    }
+  ],
+  "build_items": {
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 9123,
+      "avg": 5.1018,
+      "pcnt": 0.62826
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 8949,
+      "avg": 5.1369,
+      "pcnt": 0.61628
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 8033,
+      "avg": 5.3772,
+      "pcnt": 0.5532
+    },
+    "纳什之牙": {
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 3342,
+      "avg": 4.9485,
+      "pcnt": 0.23015
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 3158,
+      "avg": 4.9417,
+      "pcnt": 0.21748
+    },
+    "强袭者的链枷": {
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 2387,
+      "avg": 4.9497,
+      "pcnt": 0.16438
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 2326,
+      "avg": 4.8078,
+      "pcnt": 0.16018
+    },
+    "冕卫": {
+      "itemNames": "TFT_Item_Crownguard",
+      "count": 1638,
+      "avg": 4.6954,
+      "pcnt": 0.1128
+    },
+    "雌狮之怨": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier2_LionessLament",
+      "count": 285,
+      "avg": 4.3088,
+      "pcnt": 0.01963
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 747,
+      "avg": 5.2142,
+      "pick_rate": 0.005139
+    },
+    {
+      "day": "2026-04-18",
+      "count": 2275,
+      "avg": 5.2932,
+      "pick_rate": 0.005708
+    },
+    {
+      "day": "2026-04-19",
+      "count": 3104,
+      "avg": 5.2577,
+      "pick_rate": 0.005665
+    },
+    {
+      "day": "2026-04-20",
+      "count": 7803,
+      "avg": 5.2821,
+      "pick_rate": 0.007097
+    },
+    {
+      "day": "2026-04-21",
+      "count": 1714,
+      "avg": 5.2905,
+      "pick_rate": 0.006918
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.023
+}

@@ -2,91 +2,27 @@
   "name": "棘刺背心",
   "priority_list": [
     {
-      "cluster_id": "394014",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "S",
-      "comp_avg": 3.8451,
-      "carry": "可酷伯与悠米",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394000",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
-      "comp_tier": "S",
-      "comp_avg": 3.8569,
-      "carry": "提伯斯",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394026",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "S",
-      "comp_avg": 3.8968,
-      "carry": "布隆",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394011",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "S",
-      "comp_avg": 4.0327,
-      "carry": "布隆",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394011",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "S",
-      "comp_avg": 4.0327,
-      "carry": "奥恩",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394008",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "S",
-      "comp_avg": 4.0341,
-      "carry": "妮蔻",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394005",
-      "comp_name": "TFT16_Noxus, TFT16_Taric",
-      "comp_tier": "S",
-      "comp_avg": 4.0712,
-      "carry": "塔里克",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394040",
-      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
       "comp_tier": "A",
-      "comp_avg": 4.283,
-      "carry": "斯维因",
+      "comp_avg": 4.4656,
+      "carry": "拉莫斯",
       "priority_score": 100
     },
     {
-      "cluster_id": "394032",
-      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
       "comp_tier": "A",
-      "comp_avg": 4.3158,
-      "carry": "赛恩",
+      "comp_avg": 4.4852,
+      "carry": "塔姆",
       "priority_score": 100
     },
     {
-      "cluster_id": "394044",
-      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
       "comp_tier": "A",
-      "comp_avg": 4.317,
-      "carry": "斯卡纳",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394028",
-      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
-      "comp_tier": "A",
-      "comp_avg": 4.3576,
-      "carry": "赵信",
+      "comp_avg": 4.5139,
+      "carry": "拉莫斯",
       "priority_score": 100
     }
   ]

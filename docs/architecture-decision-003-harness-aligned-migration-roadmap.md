@@ -4,6 +4,30 @@
 
 Accepted
 
+## Implementation Status（实现状态）
+
+Status: Done for current MVP stage（当前 MVP 阶段已完成） / Roadmap remains（长期路线继续保留）
+
+Checklist:
+
+- [x] 阶段一的 `contracts`（公共协议）已落地。
+- [x] `knowledge` 已更像独立查询能力，agent 通过 adapter 调用。
+- [x] 已具备基础 MCP adapter（模型上下文协议适配器）。
+- [x] 已新增轻量 `ToolRegistry`（工具注册表），集中登记 baseline graph（基础执行图）使用的工具。
+- [x] 已新增 `StaticToolPlanner`（静态规划器），把“当前固定调用哪些工具”显式表达出来。
+- [x] 已新增 `RecommendationExecutor`（推荐执行器），让非 Graph 路径也复用同一套 runtime（运行时）依赖。
+- [ ] `memory`（记忆）、`checkpoint`（检查点）、`replay`（回放）属于后续高阶路线，不纳入当前 MVP 完成标准。
+
+Evidence（证据）:
+
+- `tft/knowledge/contracts/query_nlu.go`
+- `tft/agent/knowledge_adapter.go`
+- `tft/knowledge/mcp/adapter.go`
+- `tft/knowledge/internal_query.go`
+- `tft/knowledge/internal_query_test.go`
+- `tft/agent/runtime.go`
+- `tft/agent/runtime_test.go`
+
 ## 背景
 
 当前项目 `awesome` 的目标，不只是完成一个单点的 TFT AI 助手，而是逐步演进为一个可持续扩展的 AI Agent 学习项目。

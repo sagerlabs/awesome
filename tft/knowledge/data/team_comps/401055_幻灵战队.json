@@ -1,0 +1,225 @@
+{
+  "cluster_id": "401055",
+  "tft_set": "TFTSet17",
+  "units": [
+    "阿萝拉",
+    "卑尔维斯",
+    "贝蕾亚",
+    "菲奥娜",
+    "俄洛伊",
+    "金克丝",
+    "雷克塞",
+    "塔姆"
+  ],
+  "traits": [
+    "挑战者 (1)",
+    "幻灵战队 (1)",
+    "斗神 (1)",
+    "斗士 (1)",
+    "狂战士 (1)",
+    "海魔人 (2)",
+    "命运祭司 (1)"
+  ],
+  "stars": [
+    "金克丝",
+    "雷克塞",
+    "格温",
+    "卡莎"
+  ],
+  "name_string": "TFT17_AnimaSquad, TFT17_Jinx",
+  "display_names": [
+    {
+      "name": "幻灵战队",
+      "type": "trait",
+      "score": 1.1828501094091903
+    },
+    {
+      "name": "金克丝",
+      "type": "unit",
+      "score": 3.160010940919037
+    }
+  ],
+  "count": 7447,
+  "avg_placement": 6.2252,
+  "top4_rate": 0.2175,
+  "win_rate": 0.0885,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "金克丝",
+      "items": [
+        "火箭狂潮",
+        "OwO魔爆炮",
+        "鬼索的狂暴之刃"
+      ],
+      "avg_placement": 2.6032,
+      "count": 63,
+      "score": 1.1617,
+      "place_change": -3.612,
+      "priority_scores": {
+        "火箭狂潮": 100,
+        "OwO魔爆炮": 85,
+        "鬼索的狂暴之刃": 72
+      }
+    },
+    {
+      "unit": "俄洛伊",
+      "items": [
+        "触手重击",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.5,
+      "count": 16,
+      "score": 0.5596,
+      "place_change": -2.715,
+      "priority_scores": {
+        "触手重击": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "unit": "菲奥娜",
+      "items": [
+        "挑战者纹章",
+        "饮血剑",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.2609,
+      "count": 23,
+      "score": 0.4057,
+      "place_change": -2.954,
+      "priority_scores": {
+        "挑战者纹章": 100,
+        "饮血剑": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "阿萝拉",
+      "items": [
+        "蓝霸符",
+        "珠光护手",
+        "纳什之牙"
+      ],
+      "avg_placement": 4.2273,
+      "count": 22,
+      "score": 0.163,
+      "place_change": -1.988,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "珠光护手": 85,
+        "纳什之牙": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 6516,
+      "avg": 5.8797,
+      "pcnt": 0.89114
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 3305,
+      "avg": 5.7891,
+      "pcnt": 0.452
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 3002,
+      "avg": 5.8358,
+      "pcnt": 0.41056
+    },
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 2604,
+      "avg": 5.6659,
+      "pcnt": 0.35613
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 2083,
+      "avg": 5.8949,
+      "pcnt": 0.28487
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 1670,
+      "avg": 5.4946,
+      "pcnt": 0.22839
+    },
+    "挑战者纹章": {
+      "itemNames": "TFT17_Item_ASTraitEmblemItem",
+      "count": 988,
+      "avg": 4.2874,
+      "pcnt": 0.13512
+    },
+    "纳什之牙": {
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 827,
+      "avg": 5.6566,
+      "pcnt": 0.1131
+    },
+    "火箭狂潮": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier1_RocketSwarm",
+      "count": 682,
+      "avg": 5.0264,
+      "pcnt": 0.09327
+    },
+    "蓝霸符": {
+      "itemNames": "TFT_Item_BlueBuff",
+      "count": 596,
+      "avg": 5.5906,
+      "pcnt": 0.08151
+    },
+    "触手重击": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier1_TentacleSlam",
+      "count": 594,
+      "avg": 5.4916,
+      "pcnt": 0.08124
+    },
+    "OwO魔爆炮": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier3_UwuBlaster",
+      "count": 178,
+      "avg": 3.2191,
+      "pcnt": 0.02434
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 342,
+      "avg": 6.2135,
+      "pick_rate": 0.002353
+    },
+    {
+      "day": "2026-04-18",
+      "count": 1123,
+      "avg": 6.1576,
+      "pick_rate": 0.002818
+    },
+    {
+      "day": "2026-04-19",
+      "count": 1630,
+      "avg": 6.1975,
+      "pick_rate": 0.002975
+    },
+    {
+      "day": "2026-04-20",
+      "count": 3822,
+      "avg": 6.2436,
+      "pick_rate": 0.003476
+    },
+    {
+      "day": "2026-04-21",
+      "count": 921,
+      "avg": 6.2899,
+      "pick_rate": 0.003718
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.172
+}

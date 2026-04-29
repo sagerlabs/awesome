@@ -1,0 +1,21 @@
+{
+  "name": "冕卫",
+  "priority_list": [
+    {
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "comp_tier": "S",
+      "comp_avg": 4.2264,
+      "carry": "波比",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "comp_tier": "A",
+      "comp_avg": 4.3245,
+      "carry": "贾克斯",
+      "priority_score": 100
+    }
+  ]
+}

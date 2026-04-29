@@ -1,0 +1,213 @@
+{
+  "cluster_id": "401050",
+  "tft_set": "TFTSet17",
+  "units": [
+    "阿卡丽",
+    "阿萝拉",
+    "超级机甲",
+    "茂凯",
+    "拉亚斯特",
+    "厄加特"
+  ],
+  "traits": [
+    "新星特攻队 (1)",
+    "旅人 (1)",
+    "斗士 (1)",
+    "霸天机甲 (2)",
+    "狂战士 (1)",
+    "救世主 (1)"
+  ],
+  "stars": [
+    "厄加特",
+    "阿萝拉",
+    "茂凯",
+    "拉亚斯特",
+    "科加斯",
+    "雷克塞",
+    "厄运小姐",
+    "维克托",
+    "金克丝",
+    "黛安娜",
+    "卡莎",
+    "奥恩",
+    "丽桑卓",
+    "莎弥拉"
+  ],
+  "name_string": "TFT17_HPTank, TFT17_Urgot",
+  "display_names": [
+    {
+      "name": "斗士",
+      "type": "trait",
+      "score": 1.249185437030741
+    },
+    {
+      "name": "厄加特",
+      "type": "unit",
+      "score": 4.332554186145346
+    }
+  ],
+  "count": 7282,
+  "avg_placement": 4.8738,
+  "top4_rate": 0.4378,
+  "win_rate": 0.0706,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "厄加特",
+      "items": [
+        "无尽之刃",
+        "巨人杀手",
+        "水银"
+      ],
+      "avg_placement": 3.8799,
+      "count": 483,
+      "score": 0.9686,
+      "place_change": -1.006,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "巨人杀手": 85,
+        "水银": 72
+      }
+    },
+    {
+      "unit": "茂凯",
+      "items": [
+        "石像鬼石板甲",
+        "坚定之心",
+        "薄暮法袍"
+      ],
+      "avg_placement": 2.7143,
+      "count": 14,
+      "score": 0.4471,
+      "place_change": -2.172,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "坚定之心": 85,
+        "薄暮法袍": 72
+      }
+    },
+    {
+      "unit": "阿萝拉",
+      "items": [
+        "蓝霸符",
+        "珠光护手",
+        "巨人杀手"
+      ],
+      "avg_placement": 2.7692,
+      "count": 13,
+      "score": 0.3822,
+      "place_change": -2.117,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "珠光护手": 85,
+        "巨人杀手": 72
+      }
+    },
+    {
+      "unit": "超级机甲",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 4.3347,
+      "count": 251,
+      "score": 0.2327,
+      "place_change": -0.551,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 4555,
+      "avg": 4.6623,
+      "pcnt": 0.64528
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 3455,
+      "avg": 4.3737,
+      "pcnt": 0.48945
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 3031,
+      "avg": 4.7667,
+      "pcnt": 0.42938
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 2696,
+      "avg": 4.6039,
+      "pcnt": 0.38192
+    },
+    "水银": {
+      "itemNames": "TFT_Item_Quicksilver",
+      "count": 2650,
+      "avg": 4.2879,
+      "pcnt": 0.37541
+    },
+    "薄暮法袍": {
+      "itemNames": "TFT_Item_SpectralGauntlet",
+      "count": 2341,
+      "avg": 4.2294,
+      "pcnt": 0.33163
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 2228,
+      "avg": 4.6993,
+      "pcnt": 0.31563
+    },
+    "坚定之心": {
+      "itemNames": "TFT_Item_NightHarvester",
+      "count": 1208,
+      "avg": 4.0406,
+      "pcnt": 0.17113
+    },
+    "蓝霸符": {
+      "itemNames": "TFT_Item_BlueBuff",
+      "count": 729,
+      "avg": 4.3992,
+      "pcnt": 0.10327
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 199,
+      "avg": 5.603,
+      "pick_rate": 0.001369
+    },
+    {
+      "day": "2026-04-18",
+      "count": 617,
+      "avg": 5.3776,
+      "pick_rate": 0.001548
+    },
+    {
+      "day": "2026-04-19",
+      "count": 1186,
+      "avg": 5.1847,
+      "pick_rate": 0.002164
+    },
+    {
+      "day": "2026-04-20",
+      "count": 3945,
+      "avg": 4.851,
+      "pick_rate": 0.003588
+    },
+    {
+      "day": "2026-04-21",
+      "count": 1402,
+      "avg": 4.5599,
+      "pick_rate": 0.005659
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": 0.058
+}

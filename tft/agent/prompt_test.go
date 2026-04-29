@@ -59,6 +59,28 @@ func TestBuildNluFormatPromptUsesKnowledgeFriendlyFields(t *testing.T) {
 	}
 }
 
+func TestBuildNluFormatPromptShowsNormalizedTerms(t *testing.T) {
+	prompt, err := BuildNluFormatPrompt(&NluEnrichedContext{
+		UserInput: "羊刀给谁？",
+		Ctx: contracts.QueryNLURequest{
+			Intent: "item_query",
+			Items:  []string{"鬼索的狂暴之刃"},
+		},
+		NormalizedTerms: []contracts.NormalizedTerm{
+			{Type: "item", Raw: "羊刀", Normalized: "鬼索的狂暴之刃"},
+		},
+	})
+	if err != nil {
+		t.Fatalf("BuildNluFormatPrompt failed: %v", err)
+	}
+
+	for _, text := range []string{"已识别黑话", "羊刀 => 鬼索的狂暴之刃", "装备：鬼索的狂暴之刃"} {
+		if !strings.Contains(prompt, text) {
+			t.Fatalf("prompt should contain %q, got:\n%s", text, prompt)
+		}
+	}
+}
+
 func TestBuildNluFormatPromptSeparatesItemCarrierFromCompCore(t *testing.T) {
 	prompt, err := BuildNluFormatPrompt(&NluEnrichedContext{
 		UserInput: "我有珠光护手，可以玩什么阵容？",
@@ -106,6 +128,144 @@ func TestBuildNluFormatPromptSeparatesItemCarrierFromCompCore(t *testing.T) {
 		"本次装备适配：珠光护手可给菲兹（优先级100/100）",
 		"不要说成“核心英雄”",
 	} {
+		if !strings.Contains(prompt, text) {
+			t.Fatalf("prompt should contain %q, got:\n%s", text, prompt)
+		}
+	}
+}
+
+func TestBuildNluFormatPromptIncludesVerticalChampionData(t *testing.T) {
+	cost := 4
+	prompt, err := BuildNluFormatPrompt(&NluEnrichedContext{
+		UserInput: "四费卡谁最厉害，谁能C，谁能抗？",
+		Ctx: contracts.QueryNLURequest{
+			Intent:    "vertical_query",
+			UnitCost:  &cost,
+			RoleQuery: "all",
+		},
+		MatchedChampions: []contracts.ChampionInsight{
+			{
+				Name:             "拉克丝",
+				Cost:             4,
+				Role:             "主C",
+				Tags:             []string{"能C"},
+				BestAvgPlacement: 3.10,
+				BestComps: []contracts.CompSummary{
+					{Name: "法师拉克丝", Tier: "S", AvgPlacement: 3.20, Top4Rate: 0.66, WinRate: 0.22},
+				},
+				BestBuilds: []contracts.BuildInfo{
+					{Items: []string{"珠光护手", "朔极之矛"}},
+				},
+			},
+		},
+	})
+	if err != nil {
+		t.Fatalf("BuildNluFormatPrompt failed: %v", err)
+	}
+
+	for _, text := range []string{"查询费用：4费卡", "垂直英雄数据", "拉克丝（4费，主C）", "定位判断：能C", "不能把未命中的英雄塞进答案"} {
+		if !strings.Contains(prompt, text) {
+			t.Fatalf("prompt should contain %q, got:\n%s", text, prompt)
+		}
+	}
+}
+
+func TestBuildNluFormatPromptTreatsWorkQueryAsTransition(t *testing.T) {
+	prompt, err := BuildNluFormatPrompt(&NluEnrichedContext{
+		UserInput: "剑魔打工强吗？",
+		Ctx: contracts.QueryNLURequest{
+			Intent:    "champion_query",
+			Champions: map[string]int8{"亚托克斯": 1},
+			RoleQuery: "work",
+		},
+		NormalizedTerms: []contracts.NormalizedTerm{
+			{Type: "champion", Raw: "剑魔", Normalized: "亚托克斯"},
+		},
+		MatchedChampions: []contracts.ChampionInsight{
+			{
+				Name:             "亚托克斯",
+				Cost:             1,
+				Role:             "主C",
+				Tags:             []string{"能C"},
+				BestAvgPlacement: 4.18,
+				BestComps: []contracts.CompSummary{
+					{Name: "海魔人卑尔维斯", Tier: "S", AvgPlacement: 4.18, Top4Rate: 0.58, WinRate: 0.10},
+				},
+				BestBuilds: []contracts.BuildInfo{
+					{Items: []string{"饮血剑", "泰坦的坚决"}},
+				},
+			},
+		},
+	})
+	if err != nil {
+		t.Fatalf("BuildNluFormatPrompt failed: %v", err)
+	}
+
+	for _, text := range []string{"查询定位：打工/过渡", "打工问题说明", "亚托克斯（1费）", "可携带装备数据", "不要默认说能当主C"} {
+		if !strings.Contains(prompt, text) {
+			t.Fatalf("prompt should contain %q, got:\n%s", text, prompt)
+		}
+	}
+	for _, text := range []string{"亚托克斯（1费，主C）", "定位判断：能C", "推荐装备："} {
+		if strings.Contains(prompt, text) {
+			t.Fatalf("prompt should not contain %q, got:\n%s", text, prompt)
+		}
+	}
+}
+
+func TestBuildNluFormatPromptIncludesTraitData(t *testing.T) {
+	prompt, err := BuildNluFormatPrompt(&NluEnrichedContext{
+		UserInput: "法师羁绊现在能玩吗？",
+		Ctx: contracts.QueryNLURequest{
+			Intent: "trait_query",
+			Traits: []string{"法师"},
+		},
+		MatchedTraits: []contracts.TraitInsight{
+			{
+				Name:        "法师",
+				Activations: []string{"法师 (3)", "法师 (5)"},
+				Units:       []string{"拉克丝", "安妮"},
+				BestComps: []contracts.CompSummary{
+					{Name: "法师拉克丝", Tier: "S", AvgPlacement: 3.20, Top4Rate: 0.66, WinRate: 0.22},
+				},
+			},
+		},
+	})
+	if err != nil {
+		t.Fatalf("BuildNluFormatPrompt failed: %v", err)
+	}
+
+	for _, text := range []string{"羁绊数据", "命中档位：法师 (3)、法师 (5)", "代表阵容：法师拉克丝", "不要编造解锁规则"} {
+		if !strings.Contains(prompt, text) {
+			t.Fatalf("prompt should contain %q, got:\n%s", text, prompt)
+		}
+	}
+}
+
+func TestBuildNluFormatPromptIncludesPatchNotes(t *testing.T) {
+	prompt, err := BuildNluFormatPrompt(&NluEnrichedContext{
+		UserInput: "现在坦克装备还强吗？",
+		Ctx: contracts.QueryNLURequest{
+			Intent: "item_query",
+			Items:  []string{"棘刺背心"},
+		},
+		PatchNotes: []contracts.PatchNoteInsight{
+			{
+				Patch:        "17.1",
+				Source:       "Tencent LOL",
+				PublishedAt:  "2026-04-15 19:04:36",
+				SectionTitle: "装备",
+				Summary:      "坦克装备整体削弱",
+				ImpactTags:   []string{"itemization", "frontline"},
+				Details:      []string{"【棘刺背心】额外生命值：9%->6%"},
+			},
+		},
+	})
+	if err != nil {
+		t.Fatalf("BuildNluFormatPrompt failed: %v", err)
+	}
+
+	for _, text := range []string{"官方版本环境", "17.1 - 装备", "坦克装备整体削弱", "版本原因可以引用官方版本环境"} {
 		if !strings.Contains(prompt, text) {
 			t.Fatalf("prompt should contain %q, got:\n%s", text, prompt)
 		}

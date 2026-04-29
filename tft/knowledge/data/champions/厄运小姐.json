@@ -2,71 +2,93 @@
   "name": "厄运小姐",
   "appear_in_comps": [
     {
-      "cluster_id": "394019",
-      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
-      "tier": "S",
-      "avg_placement": 4.1515
+      "cluster_id": "401021",
+      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
+      "tier": "C",
+      "avg_placement": 4.7878
     },
     {
-      "cluster_id": "394045",
-      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Nautilus",
-      "tier": "D",
-      "avg_placement": 5.2356
+      "cluster_id": "401038",
+      "comp_name": "TFT17_HPTank, TFT17_MissFortune",
+      "tier": "C",
+      "avg_placement": 5.075
     },
     {
-      "cluster_id": "394054",
-      "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_MissFortune",
+      "cluster_id": "401045",
+      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_PsyOps",
       "tier": "D",
-      "avg_placement": 5.3259
+      "avg_placement": 5.5217
+    },
+    {
+      "cluster_id": "401045",
+      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_PsyOps",
+      "tier": "D",
+      "avg_placement": 5.5217
     }
   ],
   "builds": [
     {
-      "cluster_id": "394019",
-      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "cluster_id": "401021",
+      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
       "items": [
-        "亡者的短剑",
-        "大副的燧发枪",
+        "无尽之刃",
+        "巨人杀手",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.0751,
+      "count": 586,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "巨人杀手": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "401038",
+      "comp_name": "TFT17_HPTank, TFT17_MissFortune",
+      "items": [
+        "无尽之刃",
+        "红霸符",
         "朔极之矛"
       ],
-      "avg_placement": 3.3676,
-      "count": 672,
+      "avg_placement": 4.1017,
+      "count": 59,
       "priority_scores": {
-        "亡者的短剑": 100,
-        "大副的燧发枪": 85,
+        "无尽之刃": 100,
+        "红霸符": 85,
         "朔极之矛": 72
       }
     },
     {
-      "cluster_id": "394045",
-      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Nautilus",
+      "cluster_id": "401045",
+      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_PsyOps",
       "items": [
-        "亡者的短剑",
-        "大副的燧发枪",
-        "无尽之刃"
+        "死亡之刃",
+        "巨人杀手",
+        "朔极之矛"
       ],
-      "avg_placement": 3.882,
-      "count": 966,
+      "avg_placement": 4,
+      "count": 13,
       "priority_scores": {
-        "亡者的短剑": 100,
-        "大副的燧发枪": 85,
-        "无尽之刃": 72
+        "死亡之刃": 100,
+        "巨人杀手": 85,
+        "朔极之矛": 72
       }
     },
     {
-      "cluster_id": "394054",
-      "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_MissFortune",
+      "cluster_id": "401054",
+      "comp_name": "TFT17_ADMIN, TFT17_Diana",
       "items": [
-        "亡者的短剑",
-        "大副的燧发枪",
-        "无尽之刃"
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "朔极之矛"
       ],
-      "avg_placement": 3.5385,
-      "count": 13,
+      "avg_placement": 3.913,
+      "count": 23,
       "priority_scores": {
-        "亡者的短剑": 100,
-        "大副的燧发枪": 85,
-        "无尽之刃": 72
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "朔极之矛": 72
       }
     }
   ]

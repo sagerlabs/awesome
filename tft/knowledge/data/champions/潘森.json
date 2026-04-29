@@ -1,0 +1,109 @@
+{
+  "name": "潘森",
+  "appear_in_comps": [
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "tier": "A",
+      "avg_placement": 4.3744
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "tier": "A",
+      "avg_placement": 4.4068
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "tier": "A",
+      "avg_placement": 4.4852
+    },
+    {
+      "cluster_id": "401018",
+      "comp_name": "TFT17_APTrait, TFT17_Lulu, TFT17_Maokai",
+      "tier": "B",
+      "avg_placement": 4.7021
+    },
+    {
+      "cluster_id": "401027",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Riven",
+      "tier": "B",
+      "avg_placement": 4.7637
+    },
+    {
+      "cluster_id": "401024",
+      "comp_name": "TFT17_HPTank, TFT17_Chogath",
+      "tier": "C",
+      "avg_placement": 4.79
+    },
+    {
+      "cluster_id": "401041",
+      "comp_name": "TFT17_DarkStar, TFT17_Chogath",
+      "tier": "C",
+      "avg_placement": 5.0087
+    },
+    {
+      "cluster_id": "401038",
+      "comp_name": "TFT17_HPTank, TFT17_MissFortune",
+      "tier": "C",
+      "avg_placement": 5.075
+    },
+    {
+      "cluster_id": "401043",
+      "comp_name": "TFT17_Timebreaker, TFT17_Ezreal",
+      "tier": "D",
+      "avg_placement": 5.414
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "items": [
+        "圣盾使的誓约",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.5854,
+      "count": 41,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "401024",
+      "comp_name": "TFT17_HPTank, TFT17_Chogath",
+      "items": [
+        "坚定之心",
+        "日炎斗篷",
+        "薄暮法袍"
+      ],
+      "avg_placement": 3.4775,
+      "count": 111,
+      "priority_scores": {
+        "坚定之心": 100,
+        "日炎斗篷": 85,
+        "薄暮法袍": 72
+      }
+    },
+    {
+      "cluster_id": "401043",
+      "comp_name": "TFT17_Timebreaker, TFT17_Ezreal",
+      "items": [
+        "石像鬼石板甲",
+        "坚定之心",
+        "薄暮法袍"
+      ],
+      "avg_placement": 3.4167,
+      "count": 12,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "坚定之心": 85,
+        "薄暮法袍": 72
+      }
+    }
+  ]
+}

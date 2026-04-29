@@ -1,0 +1,211 @@
+{
+  "cluster_id": "401054",
+  "tft_set": "TFTSet17",
+  "units": [
+    "黛安娜",
+    "俄洛伊",
+    "千珏",
+    "乐芙兰",
+    "蕾欧娜",
+    "茂凯",
+    "拉亚斯特",
+    "塔姆"
+  ],
+  "traits": [
+    "法官 (2)",
+    "挑战者 (1)",
+    "新星特攻队 (1)",
+    "斗士 (1)",
+    "救世主 (1)",
+    "重装战士 (1)",
+    "命运祭司 (1)"
+  ],
+  "stars": [
+    "黛安娜",
+    "蕾欧娜",
+    "厄运小姐",
+    "金克丝",
+    "拉亚斯特",
+    "奥恩",
+    "贝蕾亚",
+    "雷克塞",
+    "卡莎"
+  ],
+  "name_string": "TFT17_ADMIN, TFT17_Diana",
+  "display_names": [
+    {
+      "name": "挑战者",
+      "type": "trait",
+      "score": 1.8428689883913765
+    },
+    {
+      "name": "黛安娜",
+      "type": "unit",
+      "score": 4.112873134328358
+    }
+  ],
+  "count": 4918,
+  "avg_placement": 5.5805,
+  "top4_rate": 0.2879,
+  "win_rate": 0.0313,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "黛安娜",
+      "items": [
+        "重装战士纹章",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.76,
+      "count": 25,
+      "score": 0.6597,
+      "place_change": -1.817,
+      "priority_scores": {
+        "重装战士纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "厄运小姐",
+      "items": [
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.913,
+      "count": 23,
+      "score": 0.2345,
+      "place_change": -1.664,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "蕾欧娜",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 4.2941,
+      "count": 17,
+      "score": 0.1104,
+      "place_change": -1.283,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "unit": "千珏",
+      "items": [
+        "鬼索的狂暴之刃",
+        "巨人杀手",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.7778,
+      "count": 9,
+      "score": 0.0873,
+      "place_change": -1.799,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "巨人杀手": 85,
+        "强袭者的链枷": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 5306,
+      "avg": 5.4078,
+      "pcnt": 1.09992
+    },
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 2592,
+      "avg": 5.429,
+      "pcnt": 0.53731
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 2236,
+      "avg": 5.3412,
+      "pcnt": 0.46352
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 1903,
+      "avg": 5.2223,
+      "pcnt": 0.39449
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 1868,
+      "avg": 5.2361,
+      "pcnt": 0.38723
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 1390,
+      "avg": 5.1144,
+      "pcnt": 0.28814
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 945,
+      "avg": 5.3069,
+      "pcnt": 0.1959
+    },
+    "强袭者的链枷": {
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 832,
+      "avg": 5.1298,
+      "pcnt": 0.17247
+    },
+    "重装战士纹章": {
+      "itemNames": "TFT17_Item_ShieldTankEmblemItem",
+      "count": 268,
+      "avg": 4.6567,
+      "pcnt": 0.05556
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 207,
+      "avg": 5.6522,
+      "pick_rate": 0.001424
+    },
+    {
+      "day": "2026-04-18",
+      "count": 657,
+      "avg": 5.5251,
+      "pick_rate": 0.001649
+    },
+    {
+      "day": "2026-04-19",
+      "count": 1029,
+      "avg": 5.6229,
+      "pick_rate": 0.001878
+    },
+    {
+      "day": "2026-04-20",
+      "count": 2663,
+      "avg": 5.5494,
+      "pick_rate": 0.002422
+    },
+    {
+      "day": "2026-04-21",
+      "count": 575,
+      "avg": 5.6696,
+      "pick_rate": 0.002321
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.087
+}

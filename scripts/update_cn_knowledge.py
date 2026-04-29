@@ -17,12 +17,14 @@
 from __future__ import annotations
 
 import argparse
+import html as html_lib
 import importlib.util
 import json
 import os
 import re
 import sys
 import time
+import urllib.request
 from pathlib import Path
 from types import ModuleType
 from typing import Any
@@ -32,6 +34,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_FETCH_SCRIPT = REPO_ROOT / "metadata" / "tft-meta" / "get_tftmeta_cn.py"
 DEFAULT_METADATA_DIR = REPO_ROOT / "metadata" / "tft-meta" / "data"
 DEFAULT_KNOWLEDGE_DIR = REPO_ROOT / "tft" / "knowledge" / "data"
+DEFAULT_PATCH_NOTE_SOURCE = "Tencent LOL"
 
 
 def load_json(path: Path) -> Any:
@@ -51,6 +54,40 @@ def write_json(path: Path, data: Any) -> None:
 def sanitize_filename(name: str) -> str:
     name = re.sub(r'[<>:"/\\|?*]', "_", name)
     return name.replace(" ", "_")
+
+
+def normalize_text(value: str) -> str:
+    value = html_lib.unescape(value)
+    value = value.replace("\u3000", " ").replace("\xa0", " ")
+    value = re.sub(r"[ \t\r\f\v]+", " ", value)
+    value = re.sub(r"\n\s+", "\n", value)
+    value = re.sub(r"\n{3,}", "\n\n", value)
+    return value.strip()
+
+
+def html_fragment_to_text(fragment: str) -> str:
+    fragment = re.sub(r"(?i)<br\s*/?>", "\n", fragment)
+    fragment = re.sub(r"(?i)</p\s*>", "\n", fragment)
+    fragment = re.sub(r"(?i)</div\s*>", "\n", fragment)
+    fragment = re.sub(r"(?is)<script.*?</script>", "", fragment)
+    fragment = re.sub(r"(?is)<style.*?</style>", "", fragment)
+    fragment = re.sub(r"(?s)<[^>]+>", "", fragment)
+    return normalize_text(fragment)
+
+
+def decode_html(content: bytes) -> str:
+    sample = content[:2048].decode("ascii", errors="ignore")
+    match = re.search(r"charset=[\"']?([a-zA-Z0-9_-]+)", sample, flags=re.IGNORECASE)
+    encodings = []
+    if match:
+        encodings.append(match.group(1))
+    encodings.extend(["utf-8", "gbk", "gb18030"])
+    for encoding in encodings:
+        try:
+            return content.decode(encoding)
+        except UnicodeDecodeError:
+            continue
+    return content.decode("utf-8", errors="replace")
 
 
 def load_fetch_module(script_path: Path) -> ModuleType:
@@ -76,7 +113,7 @@ def load_fetch_module(script_path: Path) -> ModuleType:
 
 
 def run_fetch(fetch_script: Path, metadata_dir: Path) -> None:
-    print("阶段 1/3: 获取 MetaTFT 中文源数据")
+    print("阶段 1/4: 获取 MetaTFT 中文源数据")
     started_at = time.time()
     module = load_fetch_module(fetch_script)
     module.OUTPUT_DIR = metadata_dir
@@ -224,7 +261,7 @@ def translate_items_priority(metadata_dir: Path, id_to_cn: dict[str, str]) -> in
 
 
 def generate_cn_json(metadata_dir: Path) -> None:
-    print("阶段 2/3: 生成中文版 JSON")
+    print("阶段 2/4: 生成中文版 JSON")
     localization = load_json(metadata_dir / "localization.json")
     id_to_cn = localization.get("id_to_cn", {})
     if not isinstance(id_to_cn, dict) or not id_to_cn:
@@ -334,6 +371,85 @@ def split_champions(comps: dict[str, dict[str, Any]], output_dir: Path) -> None:
     print(f"    完成: {len(champions)} 个英雄文件")
 
 
+def split_champion_profiles(comps: dict[str, dict[str, Any]], metadata_dir: Path, output_dir: Path) -> None:
+    print("  生成英雄费用画像")
+    localization = load_json(metadata_dir / "localization.json")
+    id_to_cn = localization.get("id_to_cn", {})
+    raw_profiles = localization.get("unit_profiles", {})
+    if not isinstance(raw_profiles, dict) or not raw_profiles:
+        print("    跳过: localization.json 中没有 unit_profiles")
+        return
+
+    used_champions: set[str] = set()
+    for comp_data in comps.values():
+        if not isinstance(comp_data, dict):
+            continue
+        for unit in comp_data.get("units", []):
+            if isinstance(unit, str) and unit.strip():
+                used_champions.add(unit)
+        for build in comp_data.get("builds", []):
+            if not isinstance(build, dict):
+                continue
+            unit = build.get("unit")
+            if isinstance(unit, str) and unit.strip():
+                used_champions.add(unit)
+
+    profiles_by_name: dict[str, dict[str, Any]] = {}
+    for api_name, profile in raw_profiles.items():
+        if not isinstance(profile, dict):
+            continue
+        name = profile.get("name") or id_to_cn.get(api_name)
+        if isinstance(name, str) and name:
+            profiles_by_name[name] = profile
+
+    generated: dict[str, dict[str, Any]] = {}
+    missing: list[str] = []
+    skipped_non_shop: list[str] = []
+    for champion_name in sorted(used_champions):
+        profile = profiles_by_name.get(champion_name)
+        if not profile:
+            missing.append(champion_name)
+            continue
+        cost = profile.get("cost")
+        if not isinstance(cost, int) or cost <= 0:
+            missing.append(champion_name)
+            continue
+        if cost > 7:
+            skipped_non_shop.append(champion_name)
+            continue
+
+        traits = profile.get("traits", [])
+        if isinstance(traits, list):
+            traits = [id_to_cn.get(trait, trait) for trait in traits if isinstance(trait, str)]
+        else:
+            traits = []
+
+        generated[champion_name] = {
+            "name": champion_name,
+            "api_name": profile.get("api_name", ""),
+            "cost": cost,
+            "traits": traits,
+        }
+
+    meta = {}
+    comps_full = load_json(metadata_dir / "comps_full.json")
+    if isinstance(comps_full, dict):
+        meta = comps_full.get("meta", {})
+
+    write_json(output_dir / "champion_profiles.json", {
+        "version": meta.get("tft_set", ""),
+        "source": "MetaTFT lookup",
+        "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+        "champions": generated,
+    })
+
+    print(f"    完成: {len(generated)} 个英雄画像")
+    if skipped_non_shop:
+        print(f"    跳过: {len(skipped_non_shop)} 个非商店单位，示例: {', '.join(skipped_non_shop[:5])}")
+    if missing:
+        print(f"    提醒: {len(missing)} 个英雄缺少费用画像，示例: {', '.join(missing[:5])}")
+
+
 def split_items(input_path: Path, output_dir: Path) -> None:
     print(f"  拆分装备数据: {input_path}")
     data = load_json(input_path)
@@ -351,11 +467,165 @@ def split_items(input_path: Path, output_dir: Path) -> None:
     print(f"    完成: {count} 个装备文件")
 
 
+def extract_article_html(page_html: str) -> str:
+    match = re.search(
+        r'(?is)<div\s+class=["\']article["\']\s+id=["\']article["\']\s*>(.*?)<div\s+class=["\']clearfix\s+verleft["\']',
+        page_html,
+    )
+    if match:
+        return match.group(1)
+
+    match = re.search(r'(?is)<div\s+class=["\']article["\']\s+id=["\']article["\']\s*>(.*)</body>', page_html)
+    if match:
+        return match.group(1)
+    raise RuntimeError("没有在版本公告页面中找到正文 article 区块")
+
+
+def infer_patch_note_type(title: str, text: str) -> str:
+    joined = title + "\n" + text
+    if title == "更新总览":
+        return "general"
+    if any(keyword in title for keyword in ("系统", "商店", "战利品", "目标选择", "投降", "关键词", "赛季机制", "奇遇")):
+        return "system"
+    if any(keyword in title for keyword in ("排位", "天梯", "胜点")):
+        return "ranked"
+    if "强化符文" in title or "海克斯" in title:
+        return "augment"
+    if any(keyword in title for keyword in ("装备", "神器", "光明")):
+        return "item"
+    if any(keyword in joined for keyword in ("装备", "神器", "光明")):
+        return "item"
+    if "强化符文" in joined or "海克斯" in joined:
+        return "augment"
+    if any(keyword in joined for keyword in ("羁绊", "职业", "特质")):
+        return "trait"
+    if any(keyword in joined for keyword in ("英雄", "弈子", "4星")):
+        return "champion"
+    if any(keyword in joined for keyword in ("排位", "天梯", "胜点")):
+        return "ranked"
+    if any(keyword in joined for keyword in ("系统", "商店", "战利品", "目标选择", "投降", "关键词", "赛季机制", "奇遇")):
+        return "system"
+    return "general"
+
+
+def infer_patch_note_tags(title: str, text: str) -> list[str]:
+    joined = title + "\n" + text
+    candidates = [
+        ("shop_odds", ("商店概率", "7级", "概率")),
+        ("loot", ("战利品", "掉落", "锻造器")),
+        ("itemization", ("装备", "神器", "光明装备", "坦克装备", "主C")),
+        ("frontline", ("坦克", "前排", "肉盾", "伤害减免", "双抗")),
+        ("augment", ("强化符文", "白银阶", "黄金阶", "棱彩阶")),
+        ("ranked", ("排位", "天梯", "定级赛", "最强王者", "傲世宗师")),
+        ("mechanic", ("赛季机制", "诸神的领域", "星神", "选秀", "恩赐")),
+        ("positioning", ("目标选择", "移动", "攻击距离")),
+        ("combat", ("技能暴击", "附伤", "4星", "伤害")),
+        ("future_patch", ("17.2", "后续版本", "暂未生效", "暂未删除")),
+    ]
+
+    tags = []
+    for tag, keywords in candidates:
+        if any(keyword in joined for keyword in keywords):
+            tags.append(tag)
+    return tags
+
+
+def split_patch_note_details(text: str, limit: int = 40) -> list[str]:
+    details = []
+    for line in text.splitlines():
+        line = normalize_text(line)
+        if not line:
+            continue
+        details.append(line)
+        if len(details) >= limit:
+            break
+    return details
+
+
+def parse_patch_note_page(page_html: str, source_url: str) -> dict[str, Any]:
+    title_match = re.search(r'(?is)<h1[^>]*class=["\']art-tit["\'][^>]*>(.*?)</h1>', page_html)
+    time_match = re.search(r'(?is)<span[^>]*class=["\']art-time["\'][^>]*data=["\']([^"\']+)["\'][^>]*>(.*?)</span>', page_html)
+    title = html_fragment_to_text(title_match.group(1)) if title_match else "云顶之弈版本更新公告"
+    published_at = html_fragment_to_text(time_match.group(2)) if time_match else ""
+    patch_match = re.search(r"(\d+\.\d+)", title)
+    patch = patch_match.group(1) if patch_match else "unknown"
+
+    article_html = extract_article_html(page_html)
+    tokens = re.split(r"(?is)(<h[34][^>]*>.*?</h[34]>)", article_html)
+    sections: list[dict[str, Any]] = []
+    current_title = "更新总览"
+    current_chunks: list[str] = []
+
+    def flush_current() -> None:
+        nonlocal current_chunks
+        text = html_fragment_to_text("".join(current_chunks))
+        if not text:
+            current_chunks = []
+            return
+        details = split_patch_note_details(text)
+        summary = details[0] if details else text[:180]
+        sections.append({
+            "type": infer_patch_note_type(current_title, text),
+            "title": current_title,
+            "summary": summary[:240],
+            "impact_tags": infer_patch_note_tags(current_title, text),
+            "details": details,
+        })
+        current_chunks = []
+
+    for token in tokens:
+        if not token:
+            continue
+        if re.match(r"(?is)<h[34]", token):
+            flush_current()
+            current_title = html_fragment_to_text(token)
+            continue
+        current_chunks.append(token)
+    flush_current()
+
+    return {
+        "patch": patch,
+        "title": title,
+        "source": DEFAULT_PATCH_NOTE_SOURCE,
+        "source_url": source_url,
+        "published_at": published_at,
+        "fetched_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+        "sections": sections,
+    }
+
+
+def fetch_patch_note_page(url: str) -> str:
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": (
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/124.0.0.0 Safari/537.36"
+            ),
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=20) as response:
+        return decode_html(response.read())
+
+
+def update_patch_notes(url: str, knowledge_dir: Path) -> None:
+    print("阶段 4/4: 获取并结构化官方版本公告")
+    page_html = fetch_patch_note_page(url)
+    patch_note = parse_patch_note_page(page_html, url)
+    patch = sanitize_filename(patch_note.get("patch") or "unknown")
+    output_path = knowledge_dir / "patch_notes" / f"{patch}.json"
+    write_json(output_path, patch_note)
+    print(f"  生成 {output_path}: {len(patch_note.get('sections', []))} 个章节")
+
+
 def split_cn_json(metadata_dir: Path, knowledge_dir: Path, clean: bool) -> None:
-    print("阶段 3/3: 拆分中文版 JSON 到 knowledge")
+    print("阶段 3/4: 拆分中文版 JSON 到 knowledge")
     prepare_split_dirs(knowledge_dir, clean)
     comps = split_comps(metadata_dir / "comps_full_cn.json", knowledge_dir)
     split_champions(comps, knowledge_dir)
+    split_champion_profiles(comps, metadata_dir, knowledge_dir)
     split_items(metadata_dir / "items_priority_cn.json", knowledge_dir)
 
 
@@ -389,6 +659,11 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_KNOWLEDGE_DIR,
         help="knowledge 单文件 JSON 输出目录",
     )
+    parser.add_argument(
+        "--patch-note-url",
+        default="",
+        help="官方版本公告 URL。传入后会生成 knowledge/data/patch_notes/<patch>.json",
+    )
     return parser.parse_args()
 
 
@@ -407,10 +682,12 @@ def main() -> None:
     if not args.skip_fetch:
         run_fetch(fetch_script, metadata_dir)
     else:
-        print("阶段 1/3: 已跳过 MetaTFT 网络获取")
+        print("阶段 1/4: 已跳过 MetaTFT 网络获取")
 
     generate_cn_json(metadata_dir)
     split_cn_json(metadata_dir, knowledge_dir, clean=not args.no_clean)
+    if args.patch_note_url:
+        update_patch_notes(args.patch_note_url, knowledge_dir)
 
     print("=" * 60)
     print("中文版 TFT knowledge 数据更新完成")

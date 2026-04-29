@@ -1,0 +1,227 @@
+{
+  "cluster_id": "401022",
+  "tft_set": "TFTSet17",
+  "units": [
+    "阿萝拉",
+    "黛安娜",
+    "俄洛伊",
+    "小木灵",
+    "金克丝",
+    "乐芙兰",
+    "蕾欧娜",
+    "羊咩咩 & 咩咩羊"
+  ],
+  "traits": [
+    "法官 (2)",
+    "挑战者 (1)",
+    "幻灵战队 (1)",
+    "旅人 (1)",
+    "重装战士 (1)",
+    "牧羊人 (1)"
+  ],
+  "stars": [
+    "阿萝拉",
+    "黛安娜",
+    "俄洛伊",
+    "金克丝",
+    "拉亚斯特",
+    "厄运小姐",
+    "维克托"
+  ],
+  "name_string": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_Diana",
+  "display_names": [
+    {
+      "name": "法官",
+      "type": "trait",
+      "score": 1.7245701158744637
+    },
+    {
+      "name": "俄洛伊",
+      "type": "unit",
+      "score": 4.027870680044593
+    }
+  ],
+  "count": 29782,
+  "avg_placement": 4.8216,
+  "top4_rate": 0.4395,
+  "win_rate": 0.1513,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "阿萝拉",
+      "items": [
+        "进化余烬射击",
+        "珠光护手",
+        "纳什之牙"
+      ],
+      "avg_placement": 1.4118,
+      "count": 136,
+      "score": 1.0721,
+      "place_change": -3.411,
+      "priority_scores": {
+        "进化余烬射击": 100,
+        "珠光护手": 85,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "unit": "黛安娜",
+      "items": [
+        "旋风切割器",
+        "饮血剑",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.6446,
+      "count": 543,
+      "score": 0.498,
+      "place_change": -1.178,
+      "priority_scores": {
+        "旋风切割器": 100,
+        "饮血剑": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "俄洛伊",
+      "items": [
+        "耀光力场",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.7161,
+      "count": 236,
+      "score": 0.495,
+      "place_change": -1.107,
+      "priority_scores": {
+        "耀光力场": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "乐芙兰",
+      "items": [
+        "闪光原型",
+        "鬼索的狂暴之刃",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.0818,
+      "count": 110,
+      "score": 0.1967,
+      "place_change": -1.741,
+      "priority_scores": {
+        "闪光原型": 100,
+        "鬼索的狂暴之刃": 85,
+        "虚空之杖": 72
+      }
+    }
+  ],
+  "build_items": {
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 25923,
+      "avg": 4.6211,
+      "pcnt": 0.87575
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 23968,
+      "avg": 4.4763,
+      "pcnt": 0.8097
+    },
+    "纳什之牙": {
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 18872,
+      "avg": 4.5741,
+      "pcnt": 0.63755
+    },
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 17795,
+      "avg": 4.5898,
+      "pcnt": 0.60116
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 14099,
+      "avg": 4.5321,
+      "pcnt": 0.4763
+    },
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 12999,
+      "avg": 4.585,
+      "pcnt": 0.43914
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 11548,
+      "avg": 4.3429,
+      "pcnt": 0.39012
+    },
+    "虚空之杖": {
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 7381,
+      "avg": 4.2257,
+      "pcnt": 0.24935
+    },
+    "闪光原型": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier0_SparkingPrototype",
+      "count": 6592,
+      "avg": 3.8485,
+      "pcnt": 0.2227
+    },
+    "耀光力场": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier2_RadiantField",
+      "count": 3294,
+      "avg": 4.1199,
+      "pcnt": 0.11128
+    },
+    "旋风切割器": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier2_CyclonicSlicers",
+      "count": 2821,
+      "avg": 4.0812,
+      "pcnt": 0.0953
+    },
+    "进化余烬射击": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier3_SearingShortbow",
+      "count": 355,
+      "avg": 1.4789,
+      "pcnt": 0.01199
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 2215,
+      "avg": 4.9558,
+      "pick_rate": 0.015237
+    },
+    {
+      "day": "2026-04-18",
+      "count": 5645,
+      "avg": 4.8229,
+      "pick_rate": 0.014164
+    },
+    {
+      "day": "2026-04-19",
+      "count": 7734,
+      "avg": 4.7512,
+      "pick_rate": 0.014114
+    },
+    {
+      "day": "2026-04-20",
+      "count": 14053,
+      "avg": 4.8509,
+      "pick_rate": 0.012781
+    },
+    {
+      "day": "2026-04-21",
+      "count": 2984,
+      "avg": 4.936,
+      "pick_rate": 0.012045
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.062
+}

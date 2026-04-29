@@ -12,8 +12,6 @@ import (
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
 	"github.com/sagerlabs/awesome/tft/data"
-	"github.com/sagerlabs/awesome/tft/parser"
-	"github.com/sagerlabs/awesome/tft/tool"
 	"github.com/sagerlabs/awesome/tft/trace"
 	"github.com/sirupsen/logrus"
 	arkModel "github.com/volcengine/volcengine-go-sdk/service/arkruntime/model"
@@ -27,6 +25,8 @@ type AgentConfig struct {
 	Logger *logrus.Logger
 	// EnableTrace 是否开启节点级链路追踪日志（Debug 级别）
 	EnableTrace bool
+	// GraphRuntime 注入静态 Graph 的可变依赖，nil 时使用默认 runtime
+	GraphRuntime *GraphRuntime
 }
 
 // defaultLLMTimeout 从环境变量读超时，兜底 60s
@@ -48,6 +48,7 @@ type Agent struct {
 	llmTimeout        time.Duration
 	logger            *logrus.Logger
 	traceOpts         []compose.Option // 链路追踪 callback，每次调用时注入
+	graphRuntime      *GraphRuntime
 }
 
 // NewAgent 使用默认配置初始化 Agent
@@ -96,8 +97,13 @@ func NewAgentWithConfig(ctx context.Context, store *data.Store, cfg *AgentConfig
 		logger.Info("链路追踪已开启（节点级耗时日志）")
 	}
 
+	graphRuntime := cfg.GraphRuntime
+	if graphRuntime == nil {
+		graphRuntime = NewDefaultGraphRuntime(store)
+	}
+
 	// ── 编译 Graph ────────────────────────────────────────────────────
-	runnable, err := BuildGraph(ctx, chatModel, store)
+	runnable, err := BuildGraphWithRuntime(ctx, chatModel, graphRuntime)
 	if err != nil {
 		return nil, fmt.Errorf("build graph: %w", err)
 	}
@@ -125,6 +131,7 @@ func NewAgentWithConfig(ctx context.Context, store *data.Store, cfg *AgentConfig
 		llmTimeout:        llmTimeout,
 		logger:            logger,
 		traceOpts:         traceOpts,
+		graphRuntime:      graphRuntime,
 	}, nil
 }
 
@@ -294,42 +301,9 @@ func (a *Agent) NluAnalyzeStream(ctx context.Context, rawInput string) (
 }
 
 func (a *Agent) computeRecommendations(ctx context.Context, rawInput string) ([]data.Recommendation, error) {
-	inputParser := parser.NewInputParser(a.store)
-	userInput, err := inputParser.Parse(rawInput)
+	out, err := a.graphRuntime.Executor.Execute(ctx, rawInput)
 	if err != nil {
-		return nil, fmt.Errorf("parse input: %w", err)
-	}
-
-	heroCompsTool := tool.NewHeroCompsTool(a.store)
-	heroComps, err := heroCompsTool.Query(ctx, &data.HeroCompsInput{
-		Heroes: userInput.Heroes,
-		TopN:   5,
-	})
-	if err != nil {
-		return nil, fmt.Errorf("hero comps query: %w", err)
-	}
-
-	itemFitTool := tool.NewItemFitTool(a.store)
-	itemFits, err := itemFitTool.Query(ctx, &data.ItemFitInput{Items: userInput.Items})
-	if err != nil {
-		return nil, fmt.Errorf("item fit query: %w", err)
-	}
-
-	compTierTool := tool.NewCompTierTool(a.store)
-	compTiers, err := compTierTool.QueryTopTier(ctx)
-	if err != nil {
-		return nil, fmt.Errorf("comp tier query: %w", err)
-	}
-
-	intersectionCalc := tool.NewIntersectionCalc(a.store)
-	out, err := intersectionCalc.Compute(&data.IntersectionInput{
-		HeroComps: *heroComps,
-		ItemFits:  *itemFits,
-		CompTiers: *compTiers,
-		UserInput: *userInput,
-	})
-	if err != nil {
-		return nil, fmt.Errorf("intersection compute: %w", err)
+		return nil, err
 	}
 
 	return out.Recommendations, nil

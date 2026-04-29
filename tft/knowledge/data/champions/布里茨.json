@@ -2,17 +2,164 @@
   "name": "布里茨",
   "appear_in_comps": [
     {
-      "cluster_id": "394029",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
       "tier": "A",
-      "avg_placement": 4.2663
+      "avg_placement": 4.3717
     },
     {
-      "cluster_id": "394055",
-      "comp_name": "TFT16_Zaun, TFT16_Ekko",
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "tier": "A",
+      "avg_placement": 4.3744
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "tier": "A",
+      "avg_placement": 4.5082
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "tier": "A",
+      "avg_placement": 4.5139
+    },
+    {
+      "cluster_id": "401030",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu",
+      "tier": "B",
+      "avg_placement": 4.5516
+    },
+    {
+      "cluster_id": "401026",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Nunu",
+      "tier": "B",
+      "avg_placement": 4.7662
+    },
+    {
+      "cluster_id": "401032",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Ornn",
       "tier": "C",
-      "avg_placement": 5.0249
+      "avg_placement": 4.9238
+    },
+    {
+      "cluster_id": "401044",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
+      "tier": "C",
+      "avg_placement": 5.0546
+    },
+    {
+      "cluster_id": "401048",
+      "comp_name": "TFT17_APTrait, TFT17_Lulu, TFT17_ResistTank",
+      "tier": "D",
+      "avg_placement": 5.1697
+    },
+    {
+      "cluster_id": "401052",
+      "comp_name": "TFT17_ShieldTank, TFT17_Illaoi",
+      "tier": "D",
+      "avg_placement": 5.2599
+    },
+    {
+      "cluster_id": "401046",
+      "comp_name": "TFT17_FlexTrait, TFT17_Galio",
+      "tier": "D",
+      "avg_placement": 5.2739
     }
   ],
-  "builds": []
+  "builds": [
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "items": [
+        "珠光护手",
+        "强袭者的链枷",
+        "正义之手"
+      ],
+      "avg_placement": 2.8101,
+      "count": 416,
+      "priority_scores": {
+        "珠光护手": 100,
+        "强袭者的链枷": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "items": [
+        "珠光护手",
+        "强袭者的链枷",
+        "正义之手"
+      ],
+      "avg_placement": 2.8896,
+      "count": 480,
+      "priority_scores": {
+        "珠光护手": 100,
+        "强袭者的链枷": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "cluster_id": "401034",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nami",
+      "items": [
+        "饮血剑",
+        "珠光护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.8095,
+      "count": 21,
+      "priority_scores": {
+        "饮血剑": 100,
+        "珠光护手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "401032",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Ornn",
+      "items": [
+        "离子火花",
+        "珠光护手",
+        "正义之手"
+      ],
+      "avg_placement": 3.587,
+      "count": 46,
+      "priority_scores": {
+        "离子火花": 100,
+        "珠光护手": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "cluster_id": "401052",
+      "comp_name": "TFT17_ShieldTank, TFT17_Illaoi",
+      "items": [
+        "珠光护手",
+        "灭世者的死亡之帽",
+        "正义之手"
+      ],
+      "avg_placement": 4,
+      "count": 28,
+      "priority_scores": {
+        "珠光护手": 100,
+        "灭世者的死亡之帽": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "cluster_id": "401046",
+      "comp_name": "TFT17_FlexTrait, TFT17_Galio",
+      "items": [
+        "冕卫"
+      ],
+      "avg_placement": 4.1081,
+      "count": 37,
+      "priority_scores": {
+        "冕卫": 100
+      }
+    }
+  ]
 }

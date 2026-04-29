@@ -2,51 +2,51 @@
   "name": "强袭者的链枷",
   "priority_list": [
     {
-      "cluster_id": "394011",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
       "comp_tier": "S",
-      "comp_avg": 4.0327,
-      "carry": "卡莉丝塔",
+      "comp_avg": 4.183,
+      "carry": "阿卡丽",
       "priority_score": 85
     },
     {
-      "cluster_id": "394008",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "S",
-      "comp_avg": 4.0341,
-      "carry": "奈德丽",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394025",
-      "comp_name": "TFT16_Yordle, TFT16_Veigar",
-      "comp_tier": "S",
-      "comp_avg": 4.1011,
-      "carry": "菲兹",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394007",
-      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
       "comp_tier": "A",
-      "comp_avg": 4.3786,
-      "carry": "瑟提",
+      "comp_avg": 4.3744,
+      "carry": "布里茨",
       "priority_score": 85
     },
     {
-      "cluster_id": "394012",
-      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
       "comp_tier": "A",
-      "comp_avg": 4.3413,
-      "carry": "阿兹尔",
+      "comp_avg": 4.5139,
+      "carry": "布里茨",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401006",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.3396,
+      "carry": "烬",
       "priority_score": 72
     },
     {
-      "cluster_id": "394012",
-      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
       "comp_tier": "A",
-      "comp_avg": 4.3413,
-      "carry": "梅尔",
+      "comp_avg": 4.4707,
+      "carry": "卡莎",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.5082,
+      "carry": "烬",
       "priority_score": 72
     }
   ]

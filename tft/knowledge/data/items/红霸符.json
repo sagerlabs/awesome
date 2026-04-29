@@ -2,28 +2,28 @@
   "name": "红霸符",
   "priority_list": [
     {
-      "cluster_id": "394040",
-      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
       "comp_tier": "A",
-      "comp_avg": 4.283,
-      "carry": "萨勒芬妮",
+      "comp_avg": 4.4447,
+      "carry": "娑娜",
       "priority_score": 100
     },
     {
-      "cluster_id": "394009",
-      "comp_name": "TFT16_Noxus, TFT16_Skarner",
-      "comp_tier": "S",
-      "comp_avg": 4.003,
-      "carry": "卢锡安与赛娜",
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "comp_tier": "A",
+      "comp_avg": 4.2811,
+      "carry": "卡尔玛",
       "priority_score": 85
     },
     {
-      "cluster_id": "394019",
-      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 4.1515,
-      "carry": "卢锡安与赛娜",
-      "priority_score": 85
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.3717,
+      "carry": "霞",
+      "priority_score": 72
     }
   ]
 }

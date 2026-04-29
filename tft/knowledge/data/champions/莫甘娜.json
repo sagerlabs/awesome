@@ -1,0 +1,24 @@
+{
+  "name": "莫甘娜",
+  "appear_in_comps": [
+    {
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "tier": "A",
+      "avg_placement": 4.4447
+    },
+    {
+      "cluster_id": "401030",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu",
+      "tier": "B",
+      "avg_placement": 4.5516
+    },
+    {
+      "cluster_id": "401037",
+      "comp_name": "TFT17_HPTank, TFT17_TahmKench",
+      "tier": "C",
+      "avg_placement": 4.7974
+    }
+  ],
+  "builds": []
+}

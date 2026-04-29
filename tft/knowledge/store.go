@@ -8,40 +8,89 @@ import (
 
 // Store 知识库内存存储和索引
 type Store struct {
-	champions        map[string]*models.Champion     // id -> Champion
-	championsByName  map[string]*models.Champion     // name -> Champion
-	items            map[string]*models.Item         // id -> Item
-	itemsByName      map[string]*models.Item         // name -> Item
-	traits           map[string]*models.Trait        // id -> Trait
-	traitsByName     map[string]*models.Trait        // name -> Trait
-	teamComps        map[string]*models.TeamComp     // id -> TeamComp
-	teamCompsByName  map[string]*models.TeamComp     // name -> TeamComp
-	knowledgeDocs    map[string]*models.KnowledgeDoc // id -> KnowledgeDoc
-	
+	champions       map[string]*models.Champion     // id -> Champion
+	championsByName map[string]*models.Champion     // name -> Champion
+	items           map[string]*models.Item         // id -> Item
+	itemsByName     map[string]*models.Item         // name -> Item
+	traits          map[string]*models.Trait        // id -> Trait
+	traitsByName    map[string]*models.Trait        // name -> Trait
+	teamComps       map[string]*models.TeamComp     // id -> TeamComp
+	teamCompsByName map[string]*models.TeamComp     // name -> TeamComp
+	knowledgeDocs   map[string]*models.KnowledgeDoc // id -> KnowledgeDoc
+	patchNotes      map[string]*models.PatchNote    // patch -> PatchNote
+	aliases         map[string]map[string]string    // type -> raw lower -> normalized
+
 	// Meta数据
 	metaComps        map[string]*models.MetaComp     // cluster_id -> MetaComp
 	metaCompsByName  map[string]*models.MetaComp     // name -> MetaComp
 	metaChampions    map[string]*models.MetaChampion // name -> MetaChampion
 	metaItems        map[string]*models.MetaItem     // name -> MetaItem
+	championProfiles map[string]*models.ChampionProfile
 }
 
 // NewStore 创建空的 Store
 func NewStore() *Store {
 	return &Store{
-		champions:       make(map[string]*models.Champion),
-		championsByName: make(map[string]*models.Champion),
-		items:           make(map[string]*models.Item),
-		itemsByName:     make(map[string]*models.Item),
-		traits:          make(map[string]*models.Trait),
-		traitsByName:    make(map[string]*models.Trait),
-		teamComps:       make(map[string]*models.TeamComp),
-		teamCompsByName: make(map[string]*models.TeamComp),
-		knowledgeDocs:   make(map[string]*models.KnowledgeDoc),
-		metaComps:       make(map[string]*models.MetaComp),
-		metaCompsByName: make(map[string]*models.MetaComp),
-		metaChampions:   make(map[string]*models.MetaChampion),
-		metaItems:       make(map[string]*models.MetaItem),
+		champions:        make(map[string]*models.Champion),
+		championsByName:  make(map[string]*models.Champion),
+		items:            make(map[string]*models.Item),
+		itemsByName:      make(map[string]*models.Item),
+		traits:           make(map[string]*models.Trait),
+		traitsByName:     make(map[string]*models.Trait),
+		teamComps:        make(map[string]*models.TeamComp),
+		teamCompsByName:  make(map[string]*models.TeamComp),
+		knowledgeDocs:    make(map[string]*models.KnowledgeDoc),
+		patchNotes:       make(map[string]*models.PatchNote),
+		aliases:          make(map[string]map[string]string),
+		metaComps:        make(map[string]*models.MetaComp),
+		metaCompsByName:  make(map[string]*models.MetaComp),
+		metaChampions:    make(map[string]*models.MetaChampion),
+		metaItems:        make(map[string]*models.MetaItem),
+		championProfiles: make(map[string]*models.ChampionProfile),
 	}
+}
+
+// AddAliases merges player slang aliases into the store.
+func (s *Store) AddAliases(file models.AliasesFile) {
+	s.addAliasGroup("champion", file.Heroes)
+	s.addAliasGroup("item", file.Items)
+	s.addAliasGroup("trait", file.Traits)
+}
+
+func (s *Store) addAliasGroup(kind string, entries map[string]string) {
+	if len(entries) == 0 {
+		return
+	}
+	group := s.aliases[kind]
+	if group == nil {
+		group = make(map[string]string, len(entries))
+		s.aliases[kind] = group
+	}
+	for raw, normalized := range entries {
+		raw = normalizeAliasKey(raw)
+		normalized = strings.TrimSpace(normalized)
+		if raw == "" || normalized == "" {
+			continue
+		}
+		group[raw] = normalized
+	}
+}
+
+// ResolveAlias returns a normalized knowledge term for a player slang term.
+func (s *Store) ResolveAlias(kind string, raw string) (string, bool) {
+	if s == nil {
+		return "", false
+	}
+	group := s.aliases[kind]
+	if len(group) == 0 {
+		return "", false
+	}
+	normalized, ok := group[normalizeAliasKey(raw)]
+	return normalized, ok
+}
+
+func normalizeAliasKey(raw string) string {
+	return strings.ToLower(strings.TrimSpace(raw))
 }
 
 // AddChampion 添加英雄到 Store
@@ -71,6 +120,14 @@ func (s *Store) AddTeamComp(tc *models.TeamComp) {
 // AddKnowledgeDoc 添加知识文档到 Store
 func (s *Store) AddKnowledgeDoc(doc *models.KnowledgeDoc) {
 	s.knowledgeDocs[doc.ID] = doc
+}
+
+// AddPatchNote 添加版本公告到 Store。
+func (s *Store) AddPatchNote(note *models.PatchNote) {
+	if note == nil || strings.TrimSpace(note.Patch) == "" {
+		return
+	}
+	s.patchNotes[strings.ToLower(strings.TrimSpace(note.Patch))] = note
 }
 
 // GetChampionByID 通过 ID 查询英雄
@@ -172,6 +229,15 @@ func (s *Store) GetAllKnowledgeDocs() []*models.KnowledgeDoc {
 	return docs
 }
 
+// GetAllPatchNotes 获取所有版本公告。
+func (s *Store) GetAllPatchNotes() []*models.PatchNote {
+	notes := make([]*models.PatchNote, 0, len(s.patchNotes))
+	for _, note := range s.patchNotes {
+		notes = append(notes, note)
+	}
+	return notes
+}
+
 // SearchChampions 搜索英雄（简单的关键词搜索）
 func (s *Store) SearchChampions(query string) []*models.Champion {
 	var results []*models.Champion
@@ -232,6 +298,39 @@ func (s *Store) AddMetaChampion(mc *models.MetaChampion) {
 // AddMetaItem 添加Meta装备到 Store
 func (s *Store) AddMetaItem(mi *models.MetaItem) {
 	s.metaItems[strings.ToLower(mi.Name)] = mi
+}
+
+// AddChampionProfile 添加英雄画像到 Store。
+func (s *Store) AddChampionProfile(name string, profile *models.ChampionProfile) {
+	if profile == nil {
+		return
+	}
+	trimmed := strings.TrimSpace(name)
+	if trimmed == "" {
+		trimmed = strings.TrimSpace(profile.Name)
+	}
+	if trimmed == "" {
+		return
+	}
+	if profile.Name == "" {
+		profile.Name = trimmed
+	}
+	s.championProfiles[strings.ToLower(trimmed)] = profile
+}
+
+// GetChampionProfileByName 通过名称查询英雄画像。
+func (s *Store) GetChampionProfileByName(name string) (*models.ChampionProfile, bool) {
+	profile, ok := s.championProfiles[strings.ToLower(strings.TrimSpace(name))]
+	return profile, ok
+}
+
+// GetAllChampionProfiles 获取所有英雄画像。
+func (s *Store) GetAllChampionProfiles() []*models.ChampionProfile {
+	profiles := make([]*models.ChampionProfile, 0, len(s.championProfiles))
+	for _, profile := range s.championProfiles {
+		profiles = append(profiles, profile)
+	}
+	return profiles
 }
 
 // GetMetaCompByID 通过ClusterID查询Meta阵容
