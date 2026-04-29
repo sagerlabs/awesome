@@ -1,0 +1,214 @@
+{
+  "cluster_id": "401029",
+  "tft_set": "TFTSet17",
+  "units": [
+    "亚托克斯",
+    "阿卡丽",
+    "卑尔维斯",
+    "菲奥娜",
+    "千珏",
+    "茂凯",
+    "易",
+    "慎",
+    "塔姆"
+  ],
+  "traits": [
+    "挑战者 (1)",
+    "新星特攻队 (1)",
+    "斗神 (1)",
+    "斗士 (1)",
+    "狂战士 (2)",
+    "堡垒卫士 (1)",
+    "暮光铁壁 (1)",
+    "命运祭司 (1)"
+  ],
+  "stars": [
+    "雷克塞",
+    "金克丝",
+    "科加斯"
+  ],
+  "name_string": "TFT17_DRX, TFT17_Kindred",
+  "display_names": [
+    {
+      "name": "新星特攻队",
+      "type": "trait",
+      "score": 1.7692197958959728
+    },
+    {
+      "name": "千珏",
+      "type": "unit",
+      "score": 4.067134862284648
+    }
+  ],
+  "count": 91533,
+  "avg_placement": 4.4845,
+  "top4_rate": 0.5023,
+  "win_rate": 0.113,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "千珏",
+      "items": [
+        "狂战士纹章",
+        "鬼索的狂暴之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.6759,
+      "count": 2101,
+      "score": 0.5801,
+      "place_change": -0.808,
+      "priority_scores": {
+        "狂战士纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "unit": "易",
+      "items": [
+        "夜之锋刃",
+        "巨人杀手",
+        "正义之手"
+      ],
+      "avg_placement": 3.8465,
+      "count": 1166,
+      "score": 0.3375,
+      "place_change": -0.637,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "巨人杀手": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "unit": "塔姆",
+      "items": [
+        "圣盾使的誓约",
+        "日炎斗篷",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.7405,
+      "count": 898,
+      "score": 0.2487,
+      "place_change": -0.743,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "unit": "茂凯",
+      "items": [
+        "圣盾使的誓约",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0128,
+      "count": 235,
+      "score": 0.1229,
+      "place_change": -0.471,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 91314,
+      "avg": 4.4318,
+      "pcnt": 1.00202
+    },
+    "夜之锋刃": {
+      "itemNames": "TFT_Item_GuardianAngel",
+      "count": 58150,
+      "avg": 4.0954,
+      "pcnt": 0.6381
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 57273,
+      "avg": 4.1427,
+      "pcnt": 0.62848
+    },
+    "海妖之怒": {
+      "itemNames": "TFT_Item_RunaansHurricane",
+      "count": 49513,
+      "avg": 4.2734,
+      "pcnt": 0.54332
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 46411,
+      "avg": 4.313,
+      "pcnt": 0.50928
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 44166,
+      "avg": 4.2811,
+      "pcnt": 0.48465
+    },
+    "正义之手": {
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 42112,
+      "avg": 4.094,
+      "pcnt": 0.46211
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 34119,
+      "avg": 4.1301,
+      "pcnt": 0.3744
+    },
+    "圣盾使的誓约": {
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 26780,
+      "avg": 4.1011,
+      "pcnt": 0.29387
+    },
+    "狂战士纹章": {
+      "itemNames": "TFT17_Item_MeleeTraitEmblemItem",
+      "count": 9034,
+      "avg": 3.8312,
+      "pcnt": 0.09913
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 9043,
+      "avg": 4.448,
+      "pick_rate": 0.062208
+    },
+    {
+      "day": "2026-04-18",
+      "count": 21321,
+      "avg": 4.4798,
+      "pick_rate": 0.053498
+    },
+    {
+      "day": "2026-04-19",
+      "count": 23896,
+      "avg": 4.5042,
+      "pick_rate": 0.043609
+    },
+    {
+      "day": "2026-04-20",
+      "count": 41419,
+      "avg": 4.4721,
+      "pick_rate": 0.03767
+    },
+    {
+      "day": "2026-04-21",
+      "count": 8674,
+      "avg": 4.4563,
+      "pick_rate": 0.035012
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.001
+}

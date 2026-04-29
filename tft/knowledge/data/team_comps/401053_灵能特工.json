@@ -1,0 +1,216 @@
+{
+  "cluster_id": "401053",
+  "tft_set": "TFTSet17",
+  "units": [
+    "阿卡丽",
+    "古拉加斯",
+    "茂凯",
+    "易",
+    "派克",
+    "塔姆",
+    "厄加特",
+    "维克托"
+  ],
+  "traits": [
+    "新星特攻队 (1)",
+    "斗士 (2)",
+    "狂战士 (1)",
+    "灵能特工 (2)",
+    "命运祭司 (1)"
+  ],
+  "stars": [
+    "维克托",
+    "科加斯",
+    "拉亚斯特",
+    "厄运小姐",
+    "蕾欧娜",
+    "雷克塞",
+    "金克丝",
+    "黛安娜",
+    "卡莎"
+  ],
+  "name_string": "TFT17_PsyOps, TFT17_Viktor",
+  "display_names": [
+    {
+      "name": "灵能特工",
+      "type": "trait",
+      "score": 1.913123228280807
+    },
+    {
+      "name": "维克托",
+      "type": "unit",
+      "score": 4.139319659829916
+    }
+  ],
+  "count": 6097,
+  "avg_placement": 5.5278,
+  "top4_rate": 0.2878,
+  "win_rate": 0.0272,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "易",
+      "items": [
+        "饮血剑",
+        "巨人杀手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.3333,
+      "count": 15,
+      "score": 0.4022,
+      "place_change": -1.204,
+      "priority_scores": {
+        "饮血剑": 100,
+        "巨人杀手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "维克托",
+      "items": [
+        "无人机上行链路",
+        "大天使之杖",
+        "珠光护手"
+      ],
+      "avg_placement": 5.6071,
+      "count": 28,
+      "score": 0.1364,
+      "place_change": 0.07,
+      "priority_scores": {
+        "无人机上行链路": 100,
+        "大天使之杖": 85,
+        "珠光护手": 72
+      }
+    },
+    {
+      "unit": "古拉加斯",
+      "items": [
+        "巨龙之爪",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 4.5455,
+      "count": 11,
+      "score": 0.1206,
+      "place_change": -0.991,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "unit": "塔姆",
+      "items": [
+        "巨龙之爪",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.5882,
+      "count": 17,
+      "score": 0.1026,
+      "place_change": -0.949,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 4199,
+      "avg": 5.4782,
+      "pcnt": 0.70018
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 2868,
+      "avg": 5.3281,
+      "pcnt": 0.47824
+    },
+    "大天使之杖": {
+      "itemNames": "TFT_Item_ArchangelsStaff",
+      "count": 2826,
+      "avg": 5.4066,
+      "pcnt": 0.47124
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 2590,
+      "avg": 5.2834,
+      "pcnt": 0.43188
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 2583,
+      "avg": 5.4328,
+      "pcnt": 0.43072
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 2403,
+      "avg": 5.248,
+      "pcnt": 0.4007
+    },
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 2395,
+      "avg": 5.4263,
+      "pcnt": 0.39937
+    },
+    "巨龙之爪": {
+      "itemNames": "TFT_Item_DragonsClaw",
+      "count": 1624,
+      "avg": 5.3584,
+      "pcnt": 0.2708
+    },
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 1592,
+      "avg": 5.4158,
+      "pcnt": 0.26547
+    },
+    "无人机上行链路": {
+      "itemNames": "TFT17_Item_PsyOps_DroneMod",
+      "count": 252,
+      "avg": 5.8532,
+      "pcnt": 0.04202
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 331,
+      "avg": 5.4683,
+      "pick_rate": 0.002277
+    },
+    {
+      "day": "2026-04-18",
+      "count": 981,
+      "avg": 5.6116,
+      "pick_rate": 0.002462
+    },
+    {
+      "day": "2026-04-19",
+      "count": 1407,
+      "avg": 5.6055,
+      "pick_rate": 0.002568
+    },
+    {
+      "day": "2026-04-20",
+      "count": 3079,
+      "avg": 5.5382,
+      "pick_rate": 0.0028
+    },
+    {
+      "day": "2026-04-21",
+      "count": 722,
+      "avg": 5.3227,
+      "pick_rate": 0.002914
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.133
+}

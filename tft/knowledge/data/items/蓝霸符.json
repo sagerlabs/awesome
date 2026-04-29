@@ -1,0 +1,37 @@
+{
+  "name": "蓝霸符",
+  "priority_list": [
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "comp_tier": "A",
+      "comp_avg": 4.2811,
+      "carry": "卡尔玛",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3079,
+      "carry": "丽桑卓",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.4761,
+      "carry": "卡莎",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.5082,
+      "carry": "卡尔玛",
+      "priority_score": 100
+    }
+  ]
+}

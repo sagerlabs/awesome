@@ -1,0 +1,190 @@
+# ADR-005: 为 Knowledge Query 增加黑话与别名归一化
+
+## 状态
+
+Proposed
+
+## Implementation Status（实现状态）
+
+Status: Done for MVP（最小可用版本已完成）
+
+Checklist:
+
+- [x] `tft/knowledge/data/aliases.json` 已建立，可边测试边补充。
+- [x] `knowledge` 层 alias loader（别名加载器）已实现。
+- [x] `QueryNLU` 查询前置归一化已支持玩家黑话，例如“羊刀 -> 鬼索的狂暴之刃”。
+- [x] `normalized_terms`（归一化词记录）已进入 contract（公共协议）。
+- [x] Agent prompt（提示词）已展示“已识别黑话”，最终回答可说明“我按 A=B 理解”。
+- [x] 已补充回归测试，覆盖别名映射命中和 prompt 展示。
+- [x] 旧 `parser` 中存在局部 aliases（别名）机制，但它不等于本 ADR 要求的 knowledge query 统一归一化。
+
+Evidence（证据）:
+
+- `tft/knowledge/data/aliases.json`
+- `tft/knowledge/models/alias.go`
+- `tft/knowledge/loader.go`
+- `tft/knowledge/store.go`
+- `tft/knowledge/unified_store.go`
+- `tft/knowledge/contracts/query_nlu.go`
+- `tft/parser/parser.go`
+- `tft/knowledge/internal_query.go`
+- `tft/knowledge/internal_query_test.go`
+- `tft/agent/prompt.go`
+- `tft/agent/prompt_test.go`
+
+## 日期
+
+2026-04-14
+
+## 背景
+
+当前 `agent`（智能体）已经可以通过 `NLU`（Natural Language Understanding，自然语言理解）把用户问题解析成结构化字段，再交给 `knowledge`（知识库）查询阵容、英雄、装备数据。
+
+最近测试中出现了一个典型失败：
+
+> 用户问：“炸弹人能玩吗”
+
+当前知识库里实际存在英雄 `吉格斯`，并且 `localization.json` 中存在：
+
+- `TFT16_Ziggs` -> `吉格斯`
+- `吉格斯` -> `TFT16_Ziggs`
+
+但用户使用的是英雄黑话 `炸弹人`。如果 `NLU` 只提取原话 `炸弹人`，而 `knowledge` 查询层只认识官方中文名和 TFT ID，就会出现“当前知识库没有命中”的错误回答。
+
+这说明问题不是数据缺失，而是缺少 `alias normalization`（别名归一化，大概意思：把玩家黑话、简称、外号转成官方名或内部 ID）。
+
+## 问题
+
+云顶玩家输入天然不稳定：
+
+- 英雄会用外号，例如 `炸弹人` -> `吉格斯`、`女枪` -> `厄运小姐`
+- 装备会用简称，例如 `羊刀` -> `鬼索的狂暴之刃`、`青龙刀` -> `朔极之矛`
+- 阵容会用社区叫法，例如 `约德尔兰博`、`法师安妮`
+- 同一个词在不同 set（赛季，大概意思：版本主题）里可能映射不同单位或阵容
+
+如果只靠 `NLU prompt`（自然语言理解提示词）要求模型猜官方名，会带来几个问题：
+
+1. 模型可能猜错，尤其是版本更新后
+2. 同一个黑话在不同上下文下不稳定
+3. `knowledge` 无法解释为什么没命中
+4. 后续接入 `MCP`（模型上下文协议）后，外部调用方也会遇到同样问题
+
+因此，黑话归一化不能只放在 `agent prompt` 中，必须成为 `knowledge query`（知识库查询）能力的一部分。
+
+## 决策
+
+后续新增一层显式的 `Slang/Alias Normalizer`（黑话/别名归一化器），优先放在 `knowledge` 查询边界内，作为 `QueryNLU` 前置标准化步骤。
+
+推荐位置：
+
+1. `knowledge` 层负责最终归一化，保证所有调用方行为一致
+2. `agent` 层可以继续让 `NLU` 保留用户原话，避免模型过度推断
+3. `data.Store` 或 `knowledge.Store` 提供别名解析能力，但不要让 prompt 承担核心映射职责
+
+也就是说：
+
+```text
+用户原话
+  -> NLU 提取原词
+  -> knowledge alias normalization
+  -> 官方中文名 / TFT ID
+  -> knowledge query
+  -> agent format response
+```
+
+## 初始范围
+
+先解决最常见、收益最高的别名：
+
+### 英雄
+
+- `炸弹人` -> `吉格斯`
+- `女枪` -> `厄运小姐`
+- `寒冰` -> `艾希`
+- `龙王` -> `奥瑞利安·索尔`
+- `猴子` -> `孙悟空`
+- `鳄鱼` -> `雷克顿`
+
+### 装备
+
+- `羊刀` -> `鬼索的狂暴之刃`
+- `青龙刀` -> `朔极之矛`
+- `法爆` -> `珠光护手`
+- `帽子` -> `灭世者的死亡之帽`
+- `板甲` -> `石像鬼石板甲`
+- `反甲` -> `棘刺背心`
+
+### 阵容
+
+- `约德尔兰博` -> 优先搜索 `约德尔人` + `兰博`
+- `法师安妮` -> 优先搜索 `法师` + `安妮`
+- `巨神峰塔里克` -> 优先搜索 `巨神峰` + `塔里克`
+
+## 设计原则
+
+1. `NLU` 只负责提取，不负责最终纠错
+2. `knowledge` 必须能独立处理别名，否则 MCP 调用时仍会失败
+3. 别名映射需要可配置，不能全部写死在 prompt
+4. 归一化结果要可观测，日志里能看到 `炸弹人 -> 吉格斯`
+5. 映射失败时，回答要说“当前知识库未识别该别名”，而不是直接说“没有这个英雄”
+
+## 数据文件建议
+
+可以新增：
+
+```text
+tft/knowledge/data/aliases.json
+```
+
+示例：
+
+```json
+{
+  "version": "1.0",
+  "heroes": {
+    "炸弹人": "吉格斯",
+    "女枪": "厄运小姐",
+    "寒冰": "艾希"
+  },
+  "items": {
+    "羊刀": "鬼索的狂暴之刃",
+    "青龙刀": "朔极之矛",
+    "法爆": "珠光护手"
+  },
+  "lineups": {
+    "约德尔兰博": ["约德尔人", "兰博"],
+    "法师安妮": ["法师", "安妮"]
+  }
+}
+```
+
+## 后续任务
+
+1. 在 `knowledge/contracts` 中评估是否需要暴露 `normalized_terms`（归一化词，大概意思：原词到标准词的映射记录）
+2. 在 `knowledge` 层新增 alias loader（别名加载器）
+3. 在 `QueryNLU` 内部查询前执行归一化
+4. 给 `炸弹人能玩吗` 增加回归测试，期望命中 `吉格斯`
+5. 给 `羊刀/青龙刀/法爆` 增加装备别名回归测试
+6. 输出中适度说明“已按炸弹人=吉格斯理解”，帮助用户建立信任
+
+## 取舍
+
+不建议只改 `prompt_nlu.tmpl`：
+
+- prompt 可以辅助，但不能保证稳定
+- 模型对新旧版本黑话可能混淆
+- knowledge 作为独立能力时仍需要自己解决别名问题
+
+也不建议把所有别名硬编码进 Go 代码：
+
+- 版本更新时维护成本高
+- 黑话会持续增加
+- 数据和逻辑耦合过重
+
+更合理的方式是：先用小型 JSON 映射表满足当前项目，再根据真实测试用例持续补充。
+
+## 结论
+
+`炸弹人能玩吗` 的失败应记录为 alias normalization 缺失，而不是知识库缺失。
+
+后续实现时，优先在 `knowledge query` 边界增加黑话归一化能力，让 `agent`、MCP、测试工具都共享同一套稳定行为。

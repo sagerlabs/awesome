@@ -1,0 +1,213 @@
+{
+  "cluster_id": "401041",
+  "tft_set": "TFTSet17",
+  "units": [
+    "科加斯",
+    "伊泽瑞尔",
+    "烬",
+    "卡莎",
+    "卡尔玛",
+    "丽桑卓",
+    "莫德凯撒",
+    "潘森",
+    "锐雯"
+  ],
+  "traits": [
+    "魔术师 (1)",
+    "游侠 (1)",
+    "暗星 (3)",
+    "斗士 (1)",
+    "灭星尊 (1)",
+    "狙神 (1)",
+    "未来战士 (2)"
+  ],
+  "stars": [
+    "丽桑卓",
+    "科加斯",
+    "卡莎",
+    "雷克塞",
+    "贝蕾亚",
+    "蕾欧娜",
+    "泰隆",
+    "卑尔维斯",
+    "厄运小姐",
+    "提莫"
+  ],
+  "name_string": "TFT17_DarkStar, TFT17_Chogath",
+  "display_names": [
+    {
+      "name": "暗星",
+      "type": "trait",
+      "score": 2.533785868559087
+    },
+    {
+      "name": "科加斯",
+      "type": "unit",
+      "score": 2.819037334156125
+    }
+  ],
+  "count": 6578,
+  "avg_placement": 5.0087,
+  "top4_rate": 0.4024,
+  "win_rate": 0.0901,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "卡莎",
+      "items": [
+        "蓝霸符",
+        "无尽之刃",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.7549,
+      "count": 102,
+      "score": 0.3886,
+      "place_change": -1.253,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "无尽之刃": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "科加斯",
+      "items": [
+        "振奋盔甲",
+        "狂徒铠甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.7778,
+      "count": 18,
+      "score": 0.3557,
+      "place_change": -1.23,
+      "priority_scores": {
+        "振奋盔甲": 100,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "烬",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "巨人杀手"
+      ],
+      "avg_placement": 3.6,
+      "count": 45,
+      "score": 0.2882,
+      "place_change": -1.408,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "巨人杀手": 72
+      }
+    },
+    {
+      "unit": "莫德凯撒",
+      "items": [
+        "棘刺背心",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.5833,
+      "count": 24,
+      "score": 0.213,
+      "place_change": -1.425,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 4173,
+      "avg": 4.6664,
+      "pcnt": 0.64378
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 3725,
+      "avg": 4.7997,
+      "pcnt": 0.57467
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 3102,
+      "avg": 4.7031,
+      "pcnt": 0.47856
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 2660,
+      "avg": 4.5256,
+      "pcnt": 0.41037
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 2644,
+      "avg": 4.657,
+      "pcnt": 0.4079
+    },
+    "强袭者的链枷": {
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 1526,
+      "avg": 4.346,
+      "pcnt": 0.23542
+    },
+    "蓝霸符": {
+      "itemNames": "TFT_Item_BlueBuff",
+      "count": 1487,
+      "avg": 4.4855,
+      "pcnt": 0.2294
+    },
+    "死亡之刃": {
+      "itemNames": "TFT_Item_Deathblade",
+      "count": 1338,
+      "avg": 4.4223,
+      "pcnt": 0.20642
+    },
+    "棘刺背心": {
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 1209,
+      "avg": 4.5418,
+      "pcnt": 0.18652
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 269,
+      "avg": 5.2193,
+      "pick_rate": 0.00185
+    },
+    {
+      "day": "2026-04-18",
+      "count": 836,
+      "avg": 5.0036,
+      "pick_rate": 0.002098
+    },
+    {
+      "day": "2026-04-19",
+      "count": 1468,
+      "avg": 4.9939,
+      "pick_rate": 0.002679
+    },
+    {
+      "day": "2026-04-20",
+      "count": 3430,
+      "avg": 5.0163,
+      "pick_rate": 0.00312
+    },
+    {
+      "day": "2026-04-21",
+      "count": 857,
+      "avg": 5.0047,
+      "pick_rate": 0.003459
+    }
+  ],
+  "levelling": "lvl 5",
+  "difficulty": -0.289
+}

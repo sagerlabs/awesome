@@ -1,0 +1,109 @@
+{
+  "name": "珠光护手",
+  "priority_list": [
+    {
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "S",
+      "comp_avg": 3.9764,
+      "carry": "娜美",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "comp_tier": "S",
+      "comp_avg": 4.2264,
+      "carry": "维迦",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "comp_tier": "S",
+      "comp_avg": 4.2264,
+      "carry": "丽桑卓",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "comp_tier": "A",
+      "comp_avg": 4.3744,
+      "carry": "娜美",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "comp_tier": "A",
+      "comp_avg": 4.3744,
+      "carry": "布里茨",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "comp_tier": "A",
+      "comp_avg": 4.4022,
+      "carry": "卡尔玛",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "comp_tier": "A",
+      "comp_avg": 4.4707,
+      "carry": "菲兹",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.4761,
+      "carry": "菲兹",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "布里茨",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "comp_tier": "A",
+      "comp_avg": 4.2811,
+      "carry": "小木灵",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "comp_tier": "A",
+      "comp_avg": 4.4068,
+      "carry": "格温",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.5082,
+      "carry": "卡尔玛",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "S",
+      "comp_avg": 3.9764,
+      "carry": "维克托",
+      "priority_score": 72
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "cluster_id": "401027",
+  "tft_set": "TFTSet17",
+  "units": [
+    "伊泽瑞尔",
+    "菲兹",
+    "格温",
+    "卡莎",
+    "米利欧",
+    "潘森",
+    "锐雯",
+    "泰隆"
+  ],
+  "traits": [
+    "游侠 (4)",
+    "太空律动 (1)",
+    "未来战士 (3)"
+  ],
+  "stars": [
+    "卡莎",
+    "菲兹",
+    "泰隆",
+    "贝蕾亚",
+    "雷克塞",
+    "卑尔维斯",
+    "派克",
+    "黛安娜",
+    "厄运小姐"
+  ],
+  "name_string": "TFT17_AssassinTrait, TFT17_Riven",
+  "display_names": [
+    {
+      "name": "游侠",
+      "type": "trait",
+      "score": 2.7813006248553576
+    },
+    {
+      "name": "锐雯",
+      "type": "unit",
+      "score": 3.5759083545475585
+    }
+  ],
+  "count": 4380,
+  "avg_placement": 4.7637,
+  "top4_rate": 0.4514,
+  "win_rate": 0.0763,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "锐雯",
+      "items": [
+        "太空律动纹章",
+        "饮血剑",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.2,
+      "count": 10,
+      "score": 0.5701,
+      "place_change": -1.565,
+      "priority_scores": {
+        "太空律动纹章": 100,
+        "饮血剑": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "卡莎",
+      "items": [
+        "无尽之刃",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.6923,
+      "count": 26,
+      "score": 0.4666,
+      "place_change": -1.073,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "菲兹",
+      "items": [
+        "珠光护手",
+        "强袭者的链枷",
+        "正义之手"
+      ],
+      "avg_placement": 3.5,
+      "count": 10,
+      "score": 0.1343,
+      "place_change": -1.265,
+      "priority_scores": {
+        "珠光护手": 100,
+        "强袭者的链枷": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "unit": "塔姆",
+      "items": [
+        "巨龙之爪",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.6667,
+      "count": 18,
+      "score": 0.105,
+      "place_change": -1.099,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 2672,
+      "avg": 4.4824,
+      "pcnt": 0.61838
+    },
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 2476,
+      "avg": 4.6284,
+      "pcnt": 0.57302
+    },
+    "正义之手": {
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 2319,
+      "avg": 4.5748,
+      "pcnt": 0.53668
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 1749,
+      "avg": 4.5597,
+      "pcnt": 0.40477
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 1706,
+      "avg": 4.5369,
+      "pcnt": 0.39482
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 1493,
+      "avg": 4.3014,
+      "pcnt": 0.34552
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 1477,
+      "avg": 4.6513,
+      "pcnt": 0.34182
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 1252,
+      "avg": 4.3834,
+      "pcnt": 0.28975
+    },
+    "强袭者的链枷": {
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 1065,
+      "avg": 4.4047,
+      "pcnt": 0.24647
+    },
+    "巨龙之爪": {
+      "itemNames": "TFT_Item_DragonsClaw",
+      "count": 855,
+      "avg": 4.2854,
+      "pcnt": 0.19787
+    },
+    "红霸符": {
+      "itemNames": "TFT_Item_RapidFireCannon",
+      "count": 608,
+      "avg": 4.1793,
+      "pcnt": 0.14071
+    },
+    "太空律动纹章": {
+      "itemNames": "TFT17_Item_SpaceGrooveEmblemItem",
+      "count": 116,
+      "avg": 5.1034,
+      "pcnt": 0.02685
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 227,
+      "avg": 4.5815,
+      "pick_rate": 0.001562
+    },
+    {
+      "day": "2026-04-18",
+      "count": 621,
+      "avg": 4.62,
+      "pick_rate": 0.001558
+    },
+    {
+      "day": "2026-04-19",
+      "count": 1001,
+      "avg": 4.7832,
+      "pick_rate": 0.001827
+    },
+    {
+      "day": "2026-04-20",
+      "count": 2286,
+      "avg": 4.7743,
+      "pick_rate": 0.002079
+    },
+    {
+      "day": "2026-04-21",
+      "count": 509,
+      "avg": 4.8291,
+      "pick_rate": 0.002055
+    }
+  ],
+  "levelling": "Standard",
+  "difficulty": -0.202
+}

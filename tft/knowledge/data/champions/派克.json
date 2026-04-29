@@ -1,0 +1,91 @@
+{
+  "name": "派克",
+  "appear_in_comps": [
+    {
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "tier": "S",
+      "avg_placement": 3.9764
+    },
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "tier": "A",
+      "avg_placement": 4.2811
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "tier": "A",
+      "avg_placement": 4.4068
+    },
+    {
+      "cluster_id": "401036",
+      "comp_name": "TFT17_PsyOps, TFT17_Pyke",
+      "tier": "C",
+      "avg_placement": 4.8839
+    },
+    {
+      "cluster_id": "401049",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_FlexTrait",
+      "tier": "D",
+      "avg_placement": 5.1832
+    },
+    {
+      "cluster_id": "401053",
+      "comp_name": "TFT17_PsyOps, TFT17_Viktor",
+      "tier": "D",
+      "avg_placement": 5.5278
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "items": [
+        "锁敌光学设备",
+        "夜之锋刃",
+        "正义之手"
+      ],
+      "avg_placement": 3.3176,
+      "count": 85,
+      "priority_scores": {
+        "锁敌光学设备": 100,
+        "夜之锋刃": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "items": [
+        "锁敌光学设备",
+        "夜之锋刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 4.2045,
+      "count": 1291,
+      "priority_scores": {
+        "锁敌光学设备": 100,
+        "夜之锋刃": 85,
+        "无尽之刃": 72
+      }
+    },
+    {
+      "cluster_id": "401036",
+      "comp_name": "TFT17_PsyOps, TFT17_Pyke",
+      "items": [
+        "夜之锋刃",
+        "无尽之刃",
+        "正义之手"
+      ],
+      "avg_placement": 4.8783,
+      "count": 1701,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "无尽之刃": 85,
+        "正义之手": 72
+      }
+    }
+  ]
+}

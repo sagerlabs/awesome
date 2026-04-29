@@ -1,0 +1,13 @@
+{
+  "name": "无人机上行链路",
+  "priority_list": [
+    {
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "S",
+      "comp_avg": 3.9764,
+      "carry": "维克托",
+      "priority_score": 100
+    }
+  ]
+}

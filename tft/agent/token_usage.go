@@ -2,7 +2,6 @@ package agent
 
 import (
 	"context"
-	"fmt"
 	"sync"
 	"time"
 )
@@ -45,8 +44,8 @@ func (s *TokenUsageStore) StartRequest(requestID string, model string) *TokenUsa
 	defer s.mu.Unlock()
 
 	usage := &TokenUsage{
-		RequestID: requestID,
-		Model:     model,
+		RequestID:  requestID,
+		Model:      model,
 		NodeUsages: make([]NodeUsage, 0),
 	}
 	s.usages[requestID] = usage

@@ -249,10 +249,11 @@ class DataParser:
         return scores
 
     def _placement_to_tier(self, avg: float) -> str:
-        if avg <= 3.8: return "S"
-        if avg <= 4.1: return "A"
-        if avg <= 4.4: return "B"
-        return "C"
+        if avg <= 4.25: return "S"
+        if avg <= 4.52: return "A"
+        if avg <= 4.78: return "B"
+        if avg <= 5.10: return "C"
+        return "D"
 
     def _parse_trends(self, raw: list[dict]) -> list[dict]:
         return [
@@ -409,125 +410,116 @@ class OutputBuilder:
 
 class LocalizationBuilder:
     """
-    从 Community Dragon 自动生成 ID ↔ 中文名 映射表
-
-    真实数据结构（通过 debug_localization.py 确认）：
-
-    tftchampions.json 每条结构：
-    {
-      "name": "TFT16_LeeSin",               <- 顶层 name 是英雄 ID，不是中文名
-      "character_record": {
-        "character_id": "TFT16_LeeSin",
-        "display_name": "盲僧",             <- 中文名在这里
-        ...
+    从 MetaTFT 官方接口自动生成 ID ↔ 中文名 映射表
+    
+    接口来源：
+      - 中文: https://data.metatft.com/lookups/TFTSet16_latest_zh_cn.json
+      - 英文: https://data.metatft.com/lookups/TFTSet16_latest_en_us.json
+    
+    数据结构：
+      {
+        "items": [
+          {
+            "apiName": "TFT_Item_RabadonsDeathcap",
+            "name": "灭世者的死亡之帽",      // 中文接口：中文名
+            "en_name": "Rabadon's Deathcap"  // 英文名
+          }
+        ]
       }
-    }
-
-    tftitems.json 每条结构：
-    {
-      "name": "鬼索的狂暴之刃",             <- 中文名
-      "nameId": "TFTTutorial_Item_GuinsoosRageblade",  <- 前缀是 TFTTutorial_Item_
-      ...
-    }
-    装备 nameId 前缀是 TFTTutorial_Item_，需替换为 TFT_Item_ 与 metatft 数据对齐
     """
 
-    BASE = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/zh_cn/v1"
+    BASE_URL = "https://data.metatft.com/lookups"
 
-    CHAMPION_URL = f"{BASE}/tftchampions.json"
-    ITEM_URL     = f"{BASE}/tftitems.json"
-
-    def build(self) -> bool:
+    def build(self, tft_set: str = "TFTSet16") -> bool:
         """
-        拉取 CDragon 中文数据，生成 localization.json
+        拉取 MetaTFT 中英文数据，生成 localization.json
         返回 True=成功  False=失败（不影响主流程）
         """
         try:
             id_to_cn: dict[str, str] = {}
+            id_to_en: dict[str, str] = {}
 
-            self._parse_champions(id_to_cn)
-            self._parse_items(id_to_cn)
+            # 拉取中文数据
+            zh_data = self._fetch_data(f"{self.BASE_URL}/{tft_set}_latest_zh_cn.json")
+            # 拉取英文数据（作为备份和验证）
+            en_data = self._fetch_data(f"{self.BASE_URL}/{tft_set}_latest_en_us.json")
+
+            if not zh_data:
+                log.warning("未获取到中文数据，请检查 MetaTFT 接口是否可用")
+                return False
+
+            # 解析中文数据
+            self._parse_items(zh_data, id_to_cn, "cn")
+            # 解析英文数据
+            if en_data:
+                self._parse_items(en_data, id_to_en, "en")
 
             if not id_to_cn:
-                log.warning("未解析到任何映射，请检查 CDragon 接口结构是否变化")
+                log.warning("未解析到任何映射，请检查 MetaTFT 接口结构是否变化")
                 return False
 
             # 反向映射：中文名 → ID（供 InputParser 查表）
             cn_to_id = {cn: tft_id for tft_id, cn in id_to_cn.items()}
 
             output = {
-                "source":   "CommunityDragon/latest",
+                "source":   f"MetaTFT/{tft_set}",
                 "id_to_cn": id_to_cn,   # "TFT16_LeeSin" -> "盲僧"
+                "id_to_en": id_to_en,   # "TFT16_LeeSin" -> "Lee Sin"
                 "cn_to_id": cn_to_id,   # "盲僧"         -> "TFT16_LeeSin"
             }
 
             path = OUTPUT_DIR / "localization.json"
             path.write_text(json.dumps(output, ensure_ascii=False, indent=2))
-            log.info(f"✅ localization.json   → {path}  ({len(id_to_cn)} 条有效映射)")
+            log.info(f"✅ localization.json   → {path}  ({len(id_to_cn)} 条中文映射, {len(id_to_en)} 条英文映射)")
             return True
 
         except Exception as e:
             log.warning(f"汉化表生成失败（不影响主流程）: {e}")
             return False
 
-    def _parse_champions(self, id_to_cn: dict):
-        """
-        英雄：中文名在 character_record.display_name
-        只保留 TFT16_ 开头的当前赛季英雄
-        """
-        log.info(f"从 CDragon 拉取英雄数据: {self.CHAMPION_URL}")
-        resp = requests.get(self.CHAMPION_URL, timeout=15)
-        resp.raise_for_status()
+    def _fetch_data(self, url: str) -> Optional[dict]:
+        """拉取 MetaTFT 数据"""
+        try:
+            log.info(f"从 MetaTFT 拉取数据: {url}")
+            resp = requests.get(url, timeout=15)
+            resp.raise_for_status()
+            return resp.json()
+        except Exception as e:
+            log.warning(f"  → 拉取失败: {e}")
+            return None
 
+    def _parse_items(self, data: dict, id_map: dict[str, str], lang: str):
+        """
+        解析 MetaTFT items 数据
+        lang: "cn" 或 "en"
+        """
+        items = data.get("items", [])
         count = 0
-        for entry in resp.json():
-            record   = entry.get("character_record", {})
-            tft_id   = record.get("character_id", "")
-            cn_name  = record.get("display_name", "").strip()
+        seen = set()
 
-            if not tft_id or not cn_name:
-                continue
-            # 只取当前赛季 TFT16_ 开头的英雄，过滤历史赛季和系统单位
-            if not tft_id.startswith("TFT16_"):
+        for item in items:
+            api_name = item.get("apiName", "")
+            if not api_name:
                 continue
 
-            id_to_cn[tft_id] = cn_name
-            count += 1
+            # 根据语言选择名称字段
+            if lang == "cn":
+                name = item.get("name", "")
+            else:
+                name = item.get("en_name", "") or item.get("name", "")
 
-        log.info(f"  → 新增 {count} 条英雄映射")
-
-    def _parse_items(self, id_to_cn: dict):
-        """
-        装备：nameId 前缀是 TFTTutorial_Item_，替换为 TFT_Item_ 与 metatft 对齐
-        过滤掉重复条目（同名装备可能出现多次，取第一条）
-        """
-        log.info(f"从 CDragon 拉取装备数据: {self.ITEM_URL}")
-        resp = requests.get(self.ITEM_URL, timeout=15)
-        resp.raise_for_status()
-
-        count = 0
-        seen  = set()
-        for entry in resp.json():
-            raw_id  = entry.get("nameId", "")
-            cn_name = entry.get("name", "").strip()
-
-            if not raw_id or not cn_name:
+            if not name:
                 continue
-            # 只处理 TFT 相关装备
-            if not raw_id.startswith("TFT"):
-                continue
-            # TFTTutorial_Item_GuinsoosRageblade -> TFT_Item_GuinsoosRageblade
-            tft_id = raw_id.replace("TFTTutorial_Item_", "TFT_Item_")
 
             # 去重：同一 ID 只取第一条
-            if tft_id in seen:
+            if api_name in seen:
                 continue
-            seen.add(tft_id)
+            seen.add(api_name)
 
-            id_to_cn[tft_id] = cn_name
+            id_map[api_name] = name
             count += 1
 
-        log.info(f"  → 新增 {count} 条装备映射")
+        log.info(f"  → 新增 {count} 条{lang == 'cn' and '中文' or '英文'}映射")
 
 
 class TFTDataPipeline:
@@ -539,9 +531,6 @@ class TFTDataPipeline:
         self.localizer = LocalizationBuilder()
 
     def run(self):
-        # 1. 生成汉化表（失败也继续，不阻塞主流程）
-        self.localizer.build()
-
         # 2. 获取两个核心接口
         raw_data  = self.client.fetch_comps_data()
         raw_stats = self.client.fetch_comps_stats()
@@ -553,6 +542,13 @@ class TFTDataPipeline:
         tft_set         = raw_data.get("tft_set", "")
         cluster_id_top  = str(raw_data.get("cluster_id", ""))
         cluster_details = raw_data.get("cluster_details", {})
+
+        # 1. 生成汉化表（失败也继续，不阻塞主流程）
+        if tft_set:
+            self.localizer.build(tft_set)
+        else:
+            log.warning("无法获取 tft_set，使用默认值 TFTSet16")
+            self.localizer.build("TFTSet16")
 
         # 3. 解析统计数据
         stats_map = self.parser.parse_stats(raw_stats)

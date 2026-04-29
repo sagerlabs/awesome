@@ -1,0 +1,214 @@
+{
+  "cluster_id": "401051",
+  "tft_set": "TFTSet17",
+  "units": [
+    "亚托克斯",
+    "贾克斯",
+    "努努和威朗普",
+    "奥恩",
+    "波比",
+    "拉莫斯",
+    "慎",
+    "霞"
+  ],
+  "traits": [
+    "堡垒卫士 (3)",
+    "暮光铁壁 (1)",
+    "太空律动 (1)",
+    "观星者 (1)"
+  ],
+  "stars": [
+    "贾克斯",
+    "泰隆",
+    "阿卡丽",
+    "格温",
+    "厄运小姐",
+    "米利欧",
+    "黛安娜",
+    "金克丝"
+  ],
+  "name_string": "TFT17_ResistTank, TFT17_Ornn",
+  "display_names": [
+    {
+      "name": "堡垒卫士",
+      "type": "trait",
+      "score": 1.7884057971014493
+    },
+    {
+      "name": "贾克斯",
+      "type": "unit",
+      "score": 3.3034161490683234
+    }
+  ],
+  "count": 4917,
+  "avg_placement": 5.6756,
+  "top4_rate": 0.2817,
+  "win_rate": 0.0264,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "贾克斯",
+      "items": [
+        "饮血剑",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 5.0585,
+      "count": 837,
+      "score": 0.5318,
+      "place_change": -0.621,
+      "priority_scores": {
+        "饮血剑": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "奥恩",
+      "items": [
+        "巨龙之爪",
+        "坚定之心",
+        "振奋盔甲"
+      ],
+      "avg_placement": 4.2,
+      "count": 10,
+      "score": 0.3338,
+      "place_change": -1.479,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "坚定之心": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "unit": "霞",
+      "items": [
+        "鬼索的狂暴之刃",
+        "最后的轻语",
+        "巨人杀手"
+      ],
+      "avg_placement": 3.8571,
+      "count": 14,
+      "score": 0.1681,
+      "place_change": -1.822,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "最后的轻语": 85,
+        "巨人杀手": 72
+      }
+    },
+    {
+      "unit": "拉莫斯",
+      "items": [
+        "石像鬼石板甲",
+        "日炎斗篷",
+        "振奋盔甲"
+      ],
+      "avg_placement": 4,
+      "count": 16,
+      "score": 0.1184,
+      "place_change": -1.679,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 4360,
+      "avg": 5.5261,
+      "pcnt": 0.90269
+    },
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 2504,
+      "avg": 5.2871,
+      "pcnt": 0.51843
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 2171,
+      "avg": 5.5394,
+      "pcnt": 0.44948
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 2155,
+      "avg": 5.322,
+      "pcnt": 0.44617
+    },
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 2133,
+      "avg": 5.1622,
+      "pcnt": 0.44161
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 2011,
+      "avg": 5.5117,
+      "pcnt": 0.41636
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 1197,
+      "avg": 5.4169,
+      "pcnt": 0.24783
+    },
+    "巨龙之爪": {
+      "itemNames": "TFT_Item_DragonsClaw",
+      "count": 1137,
+      "avg": 5.1653,
+      "pcnt": 0.2354
+    },
+    "坚定之心": {
+      "itemNames": "TFT_Item_NightHarvester",
+      "count": 824,
+      "avg": 5.0061,
+      "pcnt": 0.1706
+    },
+    "最后的轻语": {
+      "itemNames": "TFT_Item_LastWhisper",
+      "count": 463,
+      "avg": 5.3909,
+      "pcnt": 0.09586
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 212,
+      "avg": 5.9623,
+      "pick_rate": 0.001458
+    },
+    {
+      "day": "2026-04-18",
+      "count": 737,
+      "avg": 5.8331,
+      "pick_rate": 0.001849
+    },
+    {
+      "day": "2026-04-19",
+      "count": 1064,
+      "avg": 5.6898,
+      "pick_rate": 0.001942
+    },
+    {
+      "day": "2026-04-20",
+      "count": 2527,
+      "avg": 5.6411,
+      "pick_rate": 0.002298
+    },
+    {
+      "day": "2026-04-21",
+      "count": 630,
+      "avg": 5.6714,
+      "pick_rate": 0.002543
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.127
+}

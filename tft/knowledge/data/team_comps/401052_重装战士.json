@@ -1,0 +1,217 @@
+{
+  "cluster_id": "401052",
+  "tft_set": "TFTSet17",
+  "units": [
+    "巴德",
+    "布里茨",
+    "俄洛伊",
+    "小木灵",
+    "卡尔玛",
+    "莫德凯撒",
+    "努努和威朗普",
+    "娑娜",
+    "羊咩咩 & 咩咩羊",
+    "薇古丝"
+  ],
+  "traits": [
+    "汪星机器人 (1)",
+    "暗星 (1)",
+    "旅人 (1)",
+    "神谕 (1)",
+    "重装战士 (2)",
+    "最高指挥官 (1)",
+    "太空律动 (1)",
+    "牧羊人 (1)",
+    "末日使者 (1)"
+  ],
+  "stars": [
+    "卡莎",
+    "璐璐",
+    "格温",
+    "厄运小姐"
+  ],
+  "name_string": "TFT17_ShieldTank, TFT17_Illaoi",
+  "display_names": [
+    {
+      "name": "重装战士",
+      "type": "trait",
+      "score": 1.4255486664698356
+    },
+    {
+      "name": "俄洛伊",
+      "type": "unit",
+      "score": 4.097578978447004
+    }
+  ],
+  "count": 10358,
+  "avg_placement": 5.2599,
+  "top4_rate": 0.3638,
+  "win_rate": 0.1109,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "俄洛伊",
+      "items": [
+        "棘刺背心",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.6538,
+      "count": 26,
+      "score": 0.5783,
+      "place_change": -1.598,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "薇古丝",
+      "items": [
+        "鬼索的狂暴之刃",
+        "珠光护手",
+        "巨人杀手"
+      ],
+      "avg_placement": 4.329,
+      "count": 459,
+      "score": 0.4024,
+      "place_change": -0.923,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "珠光护手": 85,
+        "巨人杀手": 72
+      }
+    },
+    {
+      "unit": "娑娜",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.7895,
+      "count": 19,
+      "score": 0.1066,
+      "place_change": -1.462,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "布里茨",
+      "items": [
+        "珠光护手",
+        "灭世者的死亡之帽",
+        "正义之手"
+      ],
+      "avg_placement": 4,
+      "count": 28,
+      "score": 0.0927,
+      "place_change": -1.252,
+      "priority_scores": {
+        "珠光护手": 100,
+        "灭世者的死亡之帽": 85,
+        "正义之手": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 7496,
+      "avg": 5.1311,
+      "pcnt": 0.73772
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 5505,
+      "avg": 4.7517,
+      "pcnt": 0.54178
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 4894,
+      "avg": 5.0309,
+      "pcnt": 0.48165
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 4585,
+      "avg": 4.7158,
+      "pcnt": 0.45124
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 4042,
+      "avg": 4.807,
+      "pcnt": 0.3978
+    },
+    "虚空之杖": {
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 3452,
+      "avg": 4.5976,
+      "pcnt": 0.33973
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 1829,
+      "avg": 4.2887,
+      "pcnt": 0.18
+    },
+    "正义之手": {
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 1790,
+      "avg": 4.7944,
+      "pcnt": 0.17616
+    },
+    "纳什之牙": {
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 1583,
+      "avg": 4.5692,
+      "pcnt": 0.15579
+    },
+    "棘刺背心": {
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 1498,
+      "avg": 4.6375,
+      "pcnt": 0.14743
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 497,
+      "avg": 5.0624,
+      "pick_rate": 0.003419
+    },
+    {
+      "day": "2026-04-18",
+      "count": 1595,
+      "avg": 5.0915,
+      "pick_rate": 0.004002
+    },
+    {
+      "day": "2026-04-19",
+      "count": 2207,
+      "avg": 5.2474,
+      "pick_rate": 0.004028
+    },
+    {
+      "day": "2026-04-20",
+      "count": 5180,
+      "avg": 5.3039,
+      "pick_rate": 0.004711
+    },
+    {
+      "day": "2026-04-21",
+      "count": 1431,
+      "avg": 5.2159,
+      "pick_rate": 0.005776
+    }
+  ],
+  "levelling": "Fast 9",
+  "difficulty": 0.038
+}

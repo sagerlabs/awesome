@@ -1,0 +1,51 @@
+{
+  "name": "黛安娜",
+  "appear_in_comps": [
+    {
+      "cluster_id": "401022",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_Diana",
+      "tier": "C",
+      "avg_placement": 4.8216
+    },
+    {
+      "cluster_id": "401054",
+      "comp_name": "TFT17_ADMIN, TFT17_Diana",
+      "tier": "D",
+      "avg_placement": 5.5805
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "401022",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_Diana",
+      "items": [
+        "旋风切割器",
+        "饮血剑",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.6446,
+      "count": 543,
+      "priority_scores": {
+        "旋风切割器": 100,
+        "饮血剑": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "401054",
+      "comp_name": "TFT17_ADMIN, TFT17_Diana",
+      "items": [
+        "重装战士纹章",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.76,
+      "count": 25,
+      "priority_scores": {
+        "重装战士纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ]
+}

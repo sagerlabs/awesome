@@ -1,0 +1,75 @@
+{
+  "name": "凯特琳",
+  "appear_in_comps": [
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "tier": "S",
+      "avg_placement": 4.183
+    },
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "tier": "A",
+      "avg_placement": 4.3245
+    },
+    {
+      "cluster_id": "401025",
+      "comp_name": "TFT17_ResistTank, TFT17_TwistedFate",
+      "tier": "B",
+      "avg_placement": 4.565
+    },
+    {
+      "cluster_id": "401016",
+      "comp_name": "TFT17_DRX, TFT17_Rammus",
+      "tier": "B",
+      "avg_placement": 4.6407
+    },
+    {
+      "cluster_id": "401042",
+      "comp_name": "TFT17_ResistTank, TFT17_Poppy",
+      "tier": "C",
+      "avg_placement": 5.0771
+    },
+    {
+      "cluster_id": "401047",
+      "comp_name": "TFT17_DRX, TFT17_Aatrox",
+      "tier": "D",
+      "avg_placement": 5.239
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "items": [
+        "死亡之刃",
+        "鬼索的狂暴之刃",
+        "巨人杀手"
+      ],
+      "avg_placement": 3.6751,
+      "count": 2250,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "巨人杀手": 72
+      }
+    },
+    {
+      "cluster_id": "401047",
+      "comp_name": "TFT17_DRX, TFT17_Aatrox",
+      "items": [
+        "死亡之刃",
+        "鬼索的狂暴之刃",
+        "巨人杀手"
+      ],
+      "avg_placement": 4.3793,
+      "count": 29,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "巨人杀手": 72
+      }
+    }
+  ]
+}

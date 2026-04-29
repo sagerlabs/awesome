@@ -1,0 +1,21 @@
+{
+  "name": "坚定之心",
+  "priority_list": [
+    {
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "S",
+      "comp_avg": 3.9764,
+      "carry": "俄洛伊",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "拉莫斯",
+      "priority_score": 85
+    }
+  ]
+}

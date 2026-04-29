@@ -1,0 +1,37 @@
+{
+  "name": "巨龙之爪",
+  "priority_list": [
+    {
+      "cluster_id": "401006",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.3396,
+      "carry": "拉莫斯",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.3717,
+      "carry": "奥恩",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "comp_tier": "A",
+      "comp_avg": 4.4707,
+      "carry": "奥恩",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "comp_tier": "A",
+      "comp_avg": 4.4852,
+      "carry": "塔姆",
+      "priority_score": 85
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "name": "菲兹",
+  "appear_in_comps": [
+    {
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
+      "tier": "A",
+      "avg_placement": 4.4656
+    },
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "tier": "A",
+      "avg_placement": 4.4707
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "tier": "A",
+      "avg_placement": 4.4761
+    },
+    {
+      "cluster_id": "401019",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Corki",
+      "tier": "B",
+      "avg_placement": 4.6649
+    },
+    {
+      "cluster_id": "401027",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Riven",
+      "tier": "B",
+      "avg_placement": 4.7637
+    },
+    {
+      "cluster_id": "401033",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Gnar",
+      "tier": "C",
+      "avg_placement": 4.8675
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "items": [
+        "珠光护手",
+        "虚空之杖",
+        "正义之手"
+      ],
+      "avg_placement": 3.381,
+      "count": 42,
+      "priority_scores": {
+        "珠光护手": 100,
+        "虚空之杖": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "正义之手"
+      ],
+      "avg_placement": 4.012,
+      "count": 11890,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "cluster_id": "401027",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Riven",
+      "items": [
+        "珠光护手",
+        "强袭者的链枷",
+        "正义之手"
+      ],
+      "avg_placement": 3.5,
+      "count": 10,
+      "priority_scores": {
+        "珠光护手": 100,
+        "强袭者的链枷": 85,
+        "正义之手": 72
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "强袭者的链枷",
+  "priority_list": [
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "comp_tier": "S",
+      "comp_avg": 4.183,
+      "carry": "阿卡丽",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "comp_tier": "A",
+      "comp_avg": 4.3744,
+      "carry": "布里茨",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "布里茨",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401006",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.3396,
+      "carry": "烬",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "comp_tier": "A",
+      "comp_avg": 4.4707,
+      "carry": "卡莎",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.5082,
+      "carry": "烬",
+      "priority_score": 72
+    }
+  ]
+}

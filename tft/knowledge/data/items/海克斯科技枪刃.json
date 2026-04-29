@@ -1,0 +1,13 @@
+{
+  "name": "海克斯科技枪刃",
+  "priority_list": [
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "comp_tier": "A",
+      "comp_avg": 4.3245,
+      "carry": "泰隆",
+      "priority_score": 85
+    }
+  ]
+}

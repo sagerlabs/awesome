@@ -1,0 +1,207 @@
+{
+  "cluster_id": "401031",
+  "tft_set": "TFTSet17",
+  "units": [
+    "奥瑞利安·索尔",
+    "超级机甲",
+    "易",
+    "塔姆",
+    "厄加特",
+    "维克托"
+  ],
+  "traits": [
+    "斗士 (1)",
+    "神谕 (1)",
+    "霸天机甲 (3)",
+    "狂战士 (1)",
+    "灵能特工 (1)",
+    "命运祭司 (1)"
+  ],
+  "stars": [
+    "金克丝",
+    "娜美"
+  ],
+  "name_string": "TFT17_Mecha, TFT17_Galio",
+  "display_names": [
+    {
+      "name": "霸天机甲",
+      "type": "trait",
+      "score": 2.7902005601519493
+    },
+    {
+      "name": "超级机甲",
+      "type": "unit",
+      "score": 4.302015259311721
+    },
+    {
+      "name": "奥瑞利安·索尔",
+      "type": "unit",
+      "score": 4.137205034929015
+    }
+  ],
+  "count": 31233,
+  "avg_placement": 4.8089,
+  "top4_rate": 0.4289,
+  "win_rate": 0.1361,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "超级机甲",
+      "items": [
+        "雌狮之怨",
+        "石像鬼石板甲",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.6119,
+      "count": 420,
+      "score": 0.6565,
+      "place_change": -1.201,
+      "priority_scores": {
+        "雌狮之怨": 100,
+        "石像鬼石板甲": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "奥瑞利安·索尔",
+      "items": [
+        "炽烈短弓",
+        "大天使之杖",
+        "珠光护手"
+      ],
+      "avg_placement": 3.8286,
+      "count": 175,
+      "score": 0.4597,
+      "place_change": -0.985,
+      "priority_scores": {
+        "炽烈短弓": 100,
+        "大天使之杖": 85,
+        "珠光护手": 72
+      }
+    },
+    {
+      "unit": "易",
+      "items": [
+        "饮血剑",
+        "水银",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.3793,
+      "count": 87,
+      "score": 0.312,
+      "place_change": -1.434,
+      "priority_scores": {
+        "饮血剑": 100,
+        "水银": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "厄加特",
+      "items": [
+        "饮血剑",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.2661,
+      "count": 109,
+      "score": 0.0599,
+      "place_change": -0.547,
+      "priority_scores": {
+        "饮血剑": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 27332,
+      "avg": 4.6062,
+      "pcnt": 0.87989
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 24986,
+      "avg": 4.6381,
+      "pcnt": 0.80437
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 24342,
+      "avg": 4.5327,
+      "pcnt": 0.78363
+    },
+    "大天使之杖": {
+      "itemNames": "TFT_Item_ArchangelsStaff",
+      "count": 16422,
+      "avg": 4.6695,
+      "pcnt": 0.52867
+    },
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 15793,
+      "avg": 4.6885,
+      "pcnt": 0.50842
+    },
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 10093,
+      "avg": 4.5174,
+      "pcnt": 0.32492
+    },
+    "水银": {
+      "itemNames": "TFT_Item_Quicksilver",
+      "count": 4546,
+      "avg": 4.2393,
+      "pcnt": 0.14635
+    },
+    "雌狮之怨": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier2_LionessLament",
+      "count": 1181,
+      "avg": 3.6418,
+      "pcnt": 0.03802
+    },
+    "炽烈短弓": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier2_SearingShortbow",
+      "count": 928,
+      "avg": 4.3341,
+      "pcnt": 0.02987
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 2951,
+      "avg": 4.5334,
+      "pick_rate": 0.0203
+    },
+    {
+      "day": "2026-04-18",
+      "count": 7120,
+      "avg": 4.9431,
+      "pick_rate": 0.017865
+    },
+    {
+      "day": "2026-04-19",
+      "count": 7786,
+      "avg": 4.7811,
+      "pick_rate": 0.014209
+    },
+    {
+      "day": "2026-04-20",
+      "count": 14434,
+      "avg": 4.7652,
+      "pick_rate": 0.013127
+    },
+    {
+      "day": "2026-04-21",
+      "count": 3099,
+      "avg": 4.847,
+      "pick_rate": 0.012509
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.1
+}

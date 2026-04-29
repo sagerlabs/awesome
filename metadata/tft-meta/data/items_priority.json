@@ -1,989 +1,1853 @@
 {
-  "TFT16_Item_GunslingerEmblemItem": [
+  "TFT17_Item_PsyOps_DroneMod": [
     {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
       "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Warwick",
+      "comp_avg": 3.9764,
+      "carry": "TFT17_Viktor",
       "priority_score": 100
     }
   ],
-  "TFT_Item_Bloodthirster": [
+  "TFT_Item_ArchangelsStaff": [
     {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Volibear",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Warwick",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
       "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Warwick",
+      "comp_avg": 3.9764,
+      "carry": "TFT17_Viktor",
       "priority_score": 85
-    }
-  ],
-  "TFT_Item_TitansResolve": [
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Warwick",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Volibear",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Warwick",
-      "priority_score": 72
-    }
-  ],
-  "TFT_Item_GuinsoosRageblade": [
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Jinx",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Rumble",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Aphelios",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Jinx",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
-      "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Kindred",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_LastWhisper": [
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Kalista",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Jinx",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Jinx",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_RunaansHurricane": [
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Jinx",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Aphelios",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Jinx",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
-      "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Kindred",
-      "priority_score": 72
-    }
-  ],
-  "TFT16_Item_ZaunEmblemItem": [
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Wukong",
-      "priority_score": 100
-    }
-  ],
-  "TFT_Item_RedBuff": [
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Braum",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Wukong",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Neeko",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Braum",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Sejuani",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
-      "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Swain",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_WarmogsArmor": [
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Wukong",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Kennen",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Kobuko",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Braum",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Braum",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
-      "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_AnnieTibbers",
-      "priority_score": 72
-    }
-  ],
-  "TFT_Item_Crownguard": [
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Singed",
-      "priority_score": 100
-    }
-  ],
-  "TFT_Item_Morellonomicon": [
-    {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Seraphine",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Ryze",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Zilean",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Singed",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Thresh",
-      "priority_score": 72
-    }
-  ],
-  "TFT_Item_Redemption": [
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Kennen",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Kobuko",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Braum",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Singed",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Braum",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Ornn",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Neeko",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Leona",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Sejuani",
-      "priority_score": 72
-    }
-  ],
-  "TFT_Item_RabadonsDeathcap": [
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Rumble",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_StatikkShiv": [
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Rumble",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Bard",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Seraphine",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Ryze",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Zilean",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
-      "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Mel",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
-      "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_Annie",
-      "priority_score": 72
-    }
-  ],
-  "TFT_Item_BrambleVest": [
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Kennen",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Braum",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Ornn",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Neeko",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Taric",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
-      "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_AnnieTibbers",
-      "priority_score": 100
     }
   ],
   "TFT_Item_JeweledGauntlet": [
     {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Fizz",
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "S",
+      "comp_avg": 3.9764,
+      "carry": "TFT17_Nami",
       "priority_score": 100
     },
     {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Nidalee",
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "comp_tier": "S",
+      "comp_avg": 4.2264,
+      "carry": "TFT17_Veigar",
       "priority_score": 100
     },
     {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Malzahar",
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "comp_tier": "S",
+      "comp_avg": 4.2264,
+      "carry": "TFT17_Lissandra",
       "priority_score": 100
     },
     {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
       "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Mel",
+      "comp_avg": 4.3744,
+      "carry": "TFT17_Nami",
       "priority_score": 100
     },
     {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
       "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Lissandra",
+      "comp_avg": 4.3744,
+      "carry": "TFT17_Blitzcrank",
       "priority_score": 100
     },
     {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
       "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Mel",
+      "comp_avg": 4.4022,
+      "carry": "TFT17_Karma",
       "priority_score": 100
     },
     {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
       "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_Lux",
+      "comp_avg": 4.4707,
+      "carry": "TFT17_Fizz",
       "priority_score": 100
     },
     {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
       "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Zoe",
+      "comp_avg": 4.4761,
+      "carry": "TFT17_Fizz",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "TFT17_Blitzcrank",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "comp_tier": "A",
+      "comp_avg": 4.2811,
+      "carry": "TFT17_IvernMinion",
       "priority_score": 85
     },
     {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
       "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Sylas",
+      "comp_avg": 4.4068,
+      "carry": "TFT17_Gwen",
       "priority_score": 85
     },
     {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
       "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_Sylas",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_PowerGauntlet": [
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Fizz",
+      "comp_avg": 4.5082,
+      "carry": "TFT17_Karma",
       "priority_score": 85
     },
     {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Kalista",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Nidalee",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_UnstableConcoction": [
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Fizz",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Nidalee",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Sylas",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
-      "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Ambessa",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
-      "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_Sylas",
-      "priority_score": 72
-    }
-  ],
-  "TFT_Item_GargoyleStoneplate": [
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Kobuko",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Leona",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_GuardianAngel": [
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Thresh",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Sylas",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
-      "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Ambessa",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_IonicSpark": [
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Braum",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Thresh",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Taric",
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "S",
+      "comp_avg": 3.9764,
+      "carry": "TFT17_Viktor",
       "priority_score": 72
     }
   ],
   "TFT_Item_SpearOfShojin": [
     {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Bard",
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "S",
+      "comp_avg": 3.9764,
+      "carry": "TFT17_Nami",
       "priority_score": 85
     },
     {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Seraphine",
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "comp_tier": "S",
+      "comp_avg": 4.2264,
+      "carry": "TFT17_Lissandra",
       "priority_score": 85
     },
     {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
       "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Ryze",
+      "comp_avg": 4.4022,
+      "carry": "TFT17_Karma",
       "priority_score": 85
     },
     {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
       "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Zilean",
+      "comp_avg": 4.4068,
+      "carry": "TFT17_Milio",
       "priority_score": 85
     },
     {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
       "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Mel",
+      "comp_avg": 4.4447,
+      "carry": "TFT17_Sona",
       "priority_score": 85
     },
     {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
       "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_Annie",
+      "comp_avg": 4.4656,
+      "carry": "TFT17_Bard",
       "priority_score": 85
     },
     {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
       "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Kalista",
+      "comp_avg": 4.5139,
+      "carry": "TFT17_Bard",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "comp_tier": "A",
+      "comp_avg": 4.3245,
+      "carry": "TFT17_Talon",
       "priority_score": 72
     },
     {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
       "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Zoe",
+      "comp_avg": 4.3717,
+      "carry": "TFT17_Samira",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
+      "comp_tier": "A",
+      "comp_avg": 4.4656,
+      "carry": "TFT17_Corki",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_StatikkShiv": [
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "comp_tier": "A",
+      "comp_avg": 4.4707,
+      "carry": "TFT17_Fizz",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "S",
+      "comp_avg": 3.9764,
+      "carry": "TFT17_Nami",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "comp_tier": "S",
+      "comp_avg": 4.2264,
+      "carry": "TFT17_Lissandra",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "comp_tier": "A",
+      "comp_avg": 4.2811,
+      "carry": "TFT17_Karma",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3079,
+      "carry": "TFT17_Lissandra",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "comp_tier": "A",
+      "comp_avg": 4.4022,
+      "carry": "TFT17_Karma",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "comp_tier": "A",
+      "comp_avg": 4.4068,
+      "carry": "TFT17_Milio",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "comp_tier": "A",
+      "comp_avg": 4.4447,
+      "carry": "TFT17_Karma",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "comp_tier": "A",
+      "comp_avg": 4.4447,
+      "carry": "TFT17_Sona",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
+      "comp_tier": "A",
+      "comp_avg": 4.4656,
+      "carry": "TFT17_Bard",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "TFT17_Vex",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "TFT17_Bard",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_GargoyleStoneplate": [
+    {
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "S",
+      "comp_avg": 3.9764,
+      "carry": "TFT17_Illaoi",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.4761,
+      "carry": "TFT17_Rhaast",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.5082,
+      "carry": "TFT17_Galio",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "S",
+      "comp_avg": 3.9764,
+      "carry": "TFT17_Rhaast",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "comp_tier": "S",
+      "comp_avg": 4.2264,
+      "carry": "TFT17_Rammus",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "comp_tier": "A",
+      "comp_avg": 4.2811,
+      "carry": "TFT17_Rammus",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3079,
+      "carry": "TFT17_Leona",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "comp_tier": "A",
+      "comp_avg": 4.4022,
+      "carry": "TFT17_Nunu",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "comp_tier": "A",
+      "comp_avg": 4.4068,
+      "carry": "TFT17_Pantheon",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "comp_tier": "A",
+      "comp_avg": 4.4447,
+      "carry": "TFT17_Galio",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
+      "comp_tier": "A",
+      "comp_avg": 4.4656,
+      "carry": "TFT17_Rammus",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "comp_tier": "A",
+      "comp_avg": 4.4707,
+      "carry": "TFT17_Maokai",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.5082,
+      "carry": "TFT17_TahmKench",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "comp_tier": "A",
+      "comp_avg": 4.3245,
+      "carry": "TFT17_Jax",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_NightHarvester": [
+    {
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "S",
+      "comp_avg": 3.9764,
+      "carry": "TFT17_Illaoi",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "TFT17_Rammus",
+      "priority_score": 85
+    }
+  ],
+  "TFT_Item_WarmogsArmor": [
+    {
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "S",
+      "comp_avg": 3.9764,
+      "carry": "TFT17_Illaoi",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "comp_tier": "S",
+      "comp_avg": 4.183,
+      "carry": "TFT17_RekSai",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "comp_tier": "S",
+      "comp_avg": 4.2264,
+      "carry": "TFT17_Rammus",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "comp_tier": "A",
+      "comp_avg": 4.2811,
+      "carry": "TFT17_Rammus",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3079,
+      "carry": "TFT17_Leona",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3079,
+      "carry": "TFT17_Nasus",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.3717,
+      "carry": "TFT17_Ornn",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "comp_tier": "A",
+      "comp_avg": 4.3744,
+      "carry": "TFT17_TahmKench",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "comp_tier": "A",
+      "comp_avg": 4.4022,
+      "carry": "TFT17_Nunu",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "comp_tier": "A",
+      "comp_avg": 4.4447,
+      "carry": "TFT17_Galio",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "comp_tier": "A",
+      "comp_avg": 4.4707,
+      "carry": "TFT17_Ornn",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "comp_tier": "A",
+      "comp_avg": 4.4707,
+      "carry": "TFT17_Maokai",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "comp_tier": "A",
+      "comp_avg": 4.4845,
+      "carry": "TFT17_Maokai",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.5082,
+      "carry": "TFT17_TahmKench",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "TFT17_Rammus",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_FrozenHeart": [
+    {
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "S",
+      "comp_avg": 3.9764,
+      "carry": "TFT17_Rhaast",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "comp_tier": "S",
+      "comp_avg": 4.183,
+      "carry": "TFT17_RekSai",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "comp_tier": "S",
+      "comp_avg": 4.2264,
+      "carry": "TFT17_Rammus",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "comp_tier": "A",
+      "comp_avg": 4.2811,
+      "carry": "TFT17_Rammus",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "comp_tier": "A",
+      "comp_avg": 4.4022,
+      "carry": "TFT17_Nunu",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "comp_tier": "A",
+      "comp_avg": 4.4068,
+      "carry": "TFT17_Pantheon",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "comp_tier": "A",
+      "comp_avg": 4.4447,
+      "carry": "TFT17_Galio",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "comp_tier": "A",
+      "comp_avg": 4.4845,
+      "carry": "TFT17_TahmKench",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "comp_tier": "A",
+      "comp_avg": 4.4845,
+      "carry": "TFT17_Maokai",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "comp_tier": "A",
+      "comp_avg": 4.4852,
+      "carry": "TFT17_Nunu",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.5082,
+      "carry": "TFT17_TahmKench",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "comp_tier": "S",
+      "comp_avg": 4.2264,
+      "carry": "TFT17_Poppy",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "comp_tier": "A",
+      "comp_avg": 4.3245,
+      "carry": "TFT17_Jax",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401006",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.3396,
+      "carry": "TFT17_Nunu",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.3717,
+      "carry": "TFT17_Nunu",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_Redemption": [
+    {
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.3717,
+      "carry": "TFT17_Ornn",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "comp_tier": "A",
+      "comp_avg": 4.3744,
+      "carry": "TFT17_TahmKench",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "comp_tier": "A",
+      "comp_avg": 4.4707,
+      "carry": "TFT17_Ornn",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "comp_tier": "A",
+      "comp_avg": 4.4845,
+      "carry": "TFT17_Maokai",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "S",
+      "comp_avg": 3.9764,
+      "carry": "TFT17_Rhaast",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "comp_tier": "A",
+      "comp_avg": 4.4022,
+      "carry": "TFT17_Illaoi",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "comp_tier": "A",
+      "comp_avg": 4.4068,
+      "carry": "TFT17_Pantheon",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
+      "comp_tier": "A",
+      "comp_avg": 4.4656,
+      "carry": "TFT17_Rammus",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.4761,
+      "carry": "TFT17_Rhaast",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "comp_tier": "A",
+      "comp_avg": 4.4845,
+      "carry": "TFT17_TahmKench",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_MadredsBloodrazor": [
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "comp_tier": "S",
+      "comp_avg": 4.183,
+      "carry": "TFT17_Belveth",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "comp_tier": "S",
+      "comp_avg": 4.183,
+      "carry": "TFT17_Kindred",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3079,
+      "carry": "TFT17_Teemo",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "comp_tier": "A",
+      "comp_avg": 4.4022,
+      "carry": "TFT17_Leblanc",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "comp_tier": "A",
+      "comp_avg": 4.4447,
+      "carry": "TFT17_Leblanc",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "comp_tier": "A",
+      "comp_avg": 4.4845,
+      "carry": "TFT17_MasterYi",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.5082,
+      "carry": "TFT17_Jhin",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "TFT17_Vex",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "comp_tier": "A",
+      "comp_avg": 4.3245,
+      "carry": "TFT17_Caitlyn",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_Quicksilver": [
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "comp_tier": "S",
+      "comp_avg": 4.183,
+      "carry": "TFT17_Belveth",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
+      "comp_tier": "A",
+      "comp_avg": 4.4656,
+      "carry": "TFT17_Riven",
+      "priority_score": 85
+    }
+  ],
+  "TFT_Item_RunaansHurricane": [
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "comp_tier": "S",
+      "comp_avg": 4.183,
+      "carry": "TFT17_Belveth",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "comp_tier": "S",
+      "comp_avg": 4.183,
+      "carry": "TFT17_Kindred",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "comp_tier": "A",
+      "comp_avg": 4.4845,
+      "carry": "TFT17_Kindred",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_GuinsoosRageblade": [
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "comp_tier": "S",
+      "comp_avg": 4.183,
+      "carry": "TFT17_Kindred",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3079,
+      "carry": "TFT17_Teemo",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.3717,
+      "carry": "TFT17_Xayah",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "comp_tier": "A",
+      "comp_avg": 4.4022,
+      "carry": "TFT17_Leblanc",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "comp_tier": "A",
+      "comp_avg": 4.4447,
+      "carry": "TFT17_Leblanc",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "TFT17_Vex",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "comp_tier": "A",
+      "comp_avg": 4.3245,
+      "carry": "TFT17_Caitlyn",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401006",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.3396,
+      "carry": "TFT17_Xayah",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "comp_tier": "A",
+      "comp_avg": 4.4845,
+      "carry": "TFT17_Kindred",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "comp_tier": "A",
+      "comp_avg": 4.4852,
+      "carry": "TFT17_Xayah",
+      "priority_score": 85
+    }
+  ],
+  "TFT_Item_GuardianAngel": [
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "comp_tier": "S",
+      "comp_avg": 4.183,
+      "carry": "TFT17_Akali",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "comp_tier": "A",
+      "comp_avg": 4.2811,
+      "carry": "TFT17_IvernMinion",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "comp_tier": "A",
+      "comp_avg": 4.3245,
+      "carry": "TFT17_Talon",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "comp_tier": "A",
+      "comp_avg": 4.4845,
+      "carry": "TFT17_MasterYi",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "comp_tier": "A",
+      "comp_avg": 4.2811,
+      "carry": "TFT17_Pyke",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "comp_tier": "A",
+      "comp_avg": 4.4068,
+      "carry": "TFT17_Pyke",
+      "priority_score": 85
+    }
+  ],
+  "TFT_Item_PowerGauntlet": [
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "comp_tier": "S",
+      "comp_avg": 4.183,
+      "carry": "TFT17_Akali",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "comp_tier": "A",
+      "comp_avg": 4.3744,
+      "carry": "TFT17_Blitzcrank",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "TFT17_Blitzcrank",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401006",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.3396,
+      "carry": "TFT17_Jhin",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "comp_tier": "A",
+      "comp_avg": 4.4707,
+      "carry": "TFT17_Kaisa",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.5082,
+      "carry": "TFT17_Jhin",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_UnstableConcoction": [
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "comp_tier": "S",
+      "comp_avg": 4.183,
+      "carry": "TFT17_Akali",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "comp_tier": "A",
+      "comp_avg": 4.2811,
+      "carry": "TFT17_IvernMinion",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "comp_tier": "A",
+      "comp_avg": 4.2811,
+      "carry": "TFT17_Pyke",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "comp_tier": "A",
+      "comp_avg": 4.3744,
+      "carry": "TFT17_Blitzcrank",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "comp_tier": "A",
+      "comp_avg": 4.4068,
+      "carry": "TFT17_Gwen",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
+      "comp_tier": "A",
+      "comp_avg": 4.4656,
+      "carry": "TFT17_Riven",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "comp_tier": "A",
+      "comp_avg": 4.4707,
+      "carry": "TFT17_Fizz",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.4761,
+      "carry": "TFT17_Fizz",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "comp_tier": "A",
+      "comp_avg": 4.4845,
+      "carry": "TFT17_MasterYi",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "TFT17_Blitzcrank",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_RedBuff": [
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "comp_tier": "A",
+      "comp_avg": 4.3744,
+      "carry": "TFT17_TahmKench",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "comp_tier": "S",
+      "comp_avg": 4.183,
+      "carry": "TFT17_RekSai",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3079,
+      "carry": "TFT17_Nasus",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401006",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.3396,
+      "carry": "TFT17_Rammus",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "comp_tier": "A",
+      "comp_avg": 4.4022,
+      "carry": "TFT17_Illaoi",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.4761,
+      "carry": "TFT17_Ornn",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.4761,
+      "carry": "TFT17_Rhaast",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "comp_tier": "A",
+      "comp_avg": 4.4845,
+      "carry": "TFT17_TahmKench",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "comp_tier": "A",
+      "comp_avg": 4.4852,
+      "carry": "TFT17_Nunu",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.5082,
+      "carry": "TFT17_Galio",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "comp_tier": "A",
+      "comp_avg": 4.4852,
+      "carry": "TFT17_TahmKench",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_Leviathan": [
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "comp_tier": "A",
+      "comp_avg": 4.3245,
+      "carry": "TFT17_TwistedFate",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.4761,
+      "carry": "TFT17_Fizz",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "comp_tier": "S",
+      "comp_avg": 4.2264,
+      "carry": "TFT17_Veigar",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "comp_tier": "A",
+      "comp_avg": 4.3744,
+      "carry": "TFT17_Nami",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.5082,
+      "carry": "TFT17_Karma",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_Crownguard": [
+    {
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "comp_tier": "S",
+      "comp_avg": 4.2264,
+      "carry": "TFT17_Poppy",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "comp_tier": "A",
+      "comp_avg": 4.3245,
+      "carry": "TFT17_Jax",
+      "priority_score": 100
+    }
+  ],
+  "TFT_Item_IonicSpark": [
+    {
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3079,
+      "carry": "TFT17_Nasus",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "comp_tier": "A",
+      "comp_avg": 4.4022,
+      "carry": "TFT17_Illaoi",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.4761,
+      "carry": "TFT17_Ornn",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "comp_tier": "S",
+      "comp_avg": 4.2264,
+      "carry": "TFT17_Poppy",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_BlueBuff": [
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "comp_tier": "A",
+      "comp_avg": 4.2811,
+      "carry": "TFT17_Karma",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3079,
+      "carry": "TFT17_Lissandra",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.4761,
+      "carry": "TFT17_Kaisa",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.5082,
+      "carry": "TFT17_Karma",
+      "priority_score": 100
+    }
+  ],
+  "TFT_Item_RapidFireCannon": [
+    {
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "comp_tier": "A",
+      "comp_avg": 4.4447,
+      "carry": "TFT17_Sona",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "comp_tier": "A",
+      "comp_avg": 4.2811,
+      "carry": "TFT17_Karma",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.3717,
+      "carry": "TFT17_Xayah",
+      "priority_score": 72
+    }
+  ],
+  "TFT17_Item_PsyOps_TargetlockMod": [
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "comp_tier": "A",
+      "comp_avg": 4.2811,
+      "carry": "TFT17_Pyke",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "comp_tier": "A",
+      "comp_avg": 4.4068,
+      "carry": "TFT17_Pyke",
+      "priority_score": 100
+    }
+  ],
+  "TFT_Item_RabadonsDeathcap": [
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "comp_tier": "A",
+      "comp_avg": 4.4068,
+      "carry": "TFT17_Milio",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
+      "comp_tier": "A",
+      "comp_avg": 4.4656,
+      "carry": "TFT17_Bard",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3079,
+      "carry": "TFT17_Teemo",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "comp_tier": "A",
+      "comp_avg": 4.3245,
+      "carry": "TFT17_TwistedFate",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "comp_tier": "A",
+      "comp_avg": 4.4022,
+      "carry": "TFT17_Leblanc",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "comp_tier": "A",
+      "comp_avg": 4.4447,
+      "carry": "TFT17_Leblanc",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_Morellonomicon": [
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "TFT17_Bard",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3079,
+      "carry": "TFT17_Lissandra",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "comp_tier": "A",
+      "comp_avg": 4.4447,
+      "carry": "TFT17_Karma",
+      "priority_score": 85
+    }
+  ],
+  "TFT_Item_Deathblade": [
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "comp_tier": "A",
+      "comp_avg": 4.3245,
+      "carry": "TFT17_Caitlyn",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401006",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.3396,
+      "carry": "TFT17_Jhin",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.3717,
+      "carry": "TFT17_Samira",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
+      "comp_tier": "A",
+      "comp_avg": 4.4656,
+      "carry": "TFT17_Corki",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "comp_tier": "A",
+      "comp_avg": 4.4707,
+      "carry": "TFT17_Kaisa",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "comp_tier": "A",
+      "comp_avg": 4.4852,
+      "carry": "TFT17_Jhin",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.4761,
+      "carry": "TFT17_Kaisa",
+      "priority_score": 85
+    }
+  ],
+  "TFT_Item_HextechGunblade": [
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "comp_tier": "A",
+      "comp_avg": 4.3245,
+      "carry": "TFT17_Talon",
+      "priority_score": 85
+    }
+  ],
+  "TFT17_AnimaSquadItem_Tier2_BattleBunnyCrossbow": [
+    {
+      "cluster_id": "401006",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.3396,
+      "carry": "TFT17_Xayah",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "comp_tier": "A",
+      "comp_avg": 4.4852,
+      "carry": "TFT17_Xayah",
+      "priority_score": 100
+    }
+  ],
+  "TFT_Item_InfinityEdge": [
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.5082,
+      "carry": "TFT17_Jhin",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401006",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.3396,
+      "carry": "TFT17_Jhin",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.3717,
+      "carry": "TFT17_Samira",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "comp_tier": "A",
+      "comp_avg": 4.4707,
+      "carry": "TFT17_Kaisa",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "comp_tier": "A",
+      "comp_avg": 4.4852,
+      "carry": "TFT17_Jhin",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401006",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.3396,
+      "carry": "TFT17_Xayah",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "comp_tier": "A",
+      "comp_avg": 4.4068,
+      "carry": "TFT17_Pyke",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.4761,
+      "carry": "TFT17_Kaisa",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "comp_tier": "A",
+      "comp_avg": 4.4852,
+      "carry": "TFT17_Xayah",
       "priority_score": 72
     }
   ],
   "TFT_Item_DragonsClaw": [
     {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "cluster_id": "401006",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
       "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Braum",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Taric",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
-      "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_AnnieTibbers",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_NightHarvester": [
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Ornn",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_InfinityEdge": [
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Aphelios",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_ArchangelsStaff": [
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Bard",
-      "priority_score": 100
-    }
-  ],
-  "TFT_Item_Leviathan": [
-    {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Malzahar",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Mel",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Lissandra",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
-      "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_Lux",
-      "priority_score": 72
-    }
-  ],
-  "TFT_Item_HextechGunblade": [
-    {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Zoe",
+      "comp_avg": 4.3396,
+      "carry": "TFT17_Rammus",
       "priority_score": 100
     },
     {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
       "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_Sylas",
-      "priority_score": 100
-    }
-  ],
-  "TFT_Item_SteraksGage": [
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Volibear",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Warwick",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_FrozenHeart": [
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Sejuani",
+      "comp_avg": 4.3717,
+      "carry": "TFT17_Ornn",
       "priority_score": 100
     },
     {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
       "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Swain",
+      "comp_avg": 4.4707,
+      "carry": "TFT17_Ornn",
       "priority_score": 100
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "comp_tier": "A",
+      "comp_avg": 4.4852,
+      "carry": "TFT17_TahmKench",
+      "priority_score": 85
     }
   ],
   "TFT_Item_SpectralGauntlet": [
     {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
+      "cluster_id": "401006",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
       "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Swain",
+      "comp_avg": 4.3396,
+      "carry": "TFT17_Rammus",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.4761,
+      "carry": "TFT17_Ornn",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "comp_tier": "A",
+      "comp_avg": 4.4852,
+      "carry": "TFT17_Nunu",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.5082,
+      "carry": "TFT17_Galio",
       "priority_score": 72
     }
   ],
-  "TFT_Item_Deathblade": [
+  "TFT_Item_LastWhisper": [
     {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
       "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Ambessa",
-      "priority_score": 100
-    }
-  ],
-  "TFT16_Item_NoxusEmblemItem": [
+      "comp_avg": 4.3717,
+      "carry": "TFT17_Xayah",
+      "priority_score": 85
+    },
     {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
       "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Kindred",
-      "priority_score": 100
+      "comp_avg": 4.4656,
+      "carry": "TFT17_Corki",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "comp_tier": "A",
+      "comp_avg": 4.4852,
+      "carry": "TFT17_Jhin",
+      "priority_score": 72
     }
   ],
   "TFT_Item_AdaptiveHelm": [
     {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
       "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_Annie",
+      "comp_avg": 4.3717,
+      "carry": "TFT17_Nunu",
+      "priority_score": 100
+    }
+  ],
+  "TFT17_Item_SpaceGrooveEmblemItem": [
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "comp_tier": "A",
+      "comp_avg": 4.3744,
+      "carry": "TFT17_Riven",
+      "priority_score": 100
+    }
+  ],
+  "TFT_Item_Bloodthirster": [
+    {
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
+      "comp_tier": "A",
+      "comp_avg": 4.4656,
+      "carry": "TFT17_Riven",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "comp_tier": "A",
+      "comp_avg": 4.3744,
+      "carry": "TFT17_Riven",
+      "priority_score": 85
+    }
+  ],
+  "TFT_Item_TitansResolve": [
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "comp_tier": "A",
+      "comp_avg": 4.3744,
+      "carry": "TFT17_Riven",
+      "priority_score": 72
+    }
+  ],
+  "TFT17_Item_PulsefireEmblemItem": [
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "comp_tier": "A",
+      "comp_avg": 4.4068,
+      "carry": "TFT17_Gwen",
+      "priority_score": 100
+    }
+  ],
+  "TFT17_Item_SummonTraitEmblemItem": [
+    {
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "comp_tier": "A",
+      "comp_avg": 4.4447,
+      "carry": "TFT17_Karma",
+      "priority_score": 100
+    }
+  ],
+  "TFT_Item_BrambleVest": [
+    {
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
+      "comp_tier": "A",
+      "comp_avg": 4.4656,
+      "carry": "TFT17_Rammus",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "comp_tier": "A",
+      "comp_avg": 4.4852,
+      "carry": "TFT17_TahmKench",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "TFT17_Rammus",
+      "priority_score": 100
+    }
+  ],
+  "TFT17_EkkoOffering_AnomalyItem": [
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "comp_tier": "A",
+      "comp_avg": 4.4707,
+      "carry": "TFT17_Maokai",
+      "priority_score": 100
+    }
+  ],
+  "TFT17_Item_MeleeTraitEmblemItem": [
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "comp_tier": "A",
+      "comp_avg": 4.4845,
+      "carry": "TFT17_Kindred",
       "priority_score": 100
     }
   ]

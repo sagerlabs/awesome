@@ -1,0 +1,185 @@
+{
+  "name": "锐雯",
+  "appear_in_comps": [
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "tier": "A",
+      "avg_placement": 4.3245
+    },
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "tier": "A",
+      "avg_placement": 4.3744
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "tier": "A",
+      "avg_placement": 4.4068
+    },
+    {
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
+      "tier": "A",
+      "avg_placement": 4.4656
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "tier": "A",
+      "avg_placement": 4.4852
+    },
+    {
+      "cluster_id": "401028",
+      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Xayah",
+      "tier": "B",
+      "avg_placement": 4.7262
+    },
+    {
+      "cluster_id": "401027",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Riven",
+      "tier": "B",
+      "avg_placement": 4.7637
+    },
+    {
+      "cluster_id": "401024",
+      "comp_name": "TFT17_HPTank, TFT17_Chogath",
+      "tier": "C",
+      "avg_placement": 4.79
+    },
+    {
+      "cluster_id": "401041",
+      "comp_name": "TFT17_DarkStar, TFT17_Chogath",
+      "tier": "C",
+      "avg_placement": 5.0087
+    },
+    {
+      "cluster_id": "401038",
+      "comp_name": "TFT17_HPTank, TFT17_MissFortune",
+      "tier": "C",
+      "avg_placement": 5.075
+    },
+    {
+      "cluster_id": "401043",
+      "comp_name": "TFT17_Timebreaker, TFT17_Ezreal",
+      "tier": "D",
+      "avg_placement": 5.414
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "items": [
+        "太空律动纹章",
+        "饮血剑",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.968,
+      "count": 28122,
+      "priority_scores": {
+        "太空律动纹章": 100,
+        "饮血剑": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
+      "items": [
+        "饮血剑",
+        "水银",
+        "正义之手"
+      ],
+      "avg_placement": 3.5056,
+      "count": 178,
+      "priority_scores": {
+        "饮血剑": 100,
+        "水银": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "cluster_id": "401028",
+      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Xayah",
+      "items": [
+        "观星者纹章",
+        "饮血剑",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 4.0238,
+      "count": 2097,
+      "priority_scores": {
+        "观星者纹章": 100,
+        "饮血剑": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "cluster_id": "401027",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Riven",
+      "items": [
+        "太空律动纹章",
+        "饮血剑",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.2,
+      "count": 10,
+      "priority_scores": {
+        "太空律动纹章": 100,
+        "饮血剑": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "cluster_id": "401024",
+      "comp_name": "TFT17_HPTank, TFT17_Chogath",
+      "items": [
+        "饮血剑",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.5455,
+      "count": 451,
+      "priority_scores": {
+        "饮血剑": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "401038",
+      "comp_name": "TFT17_HPTank, TFT17_MissFortune",
+      "items": [
+        "饮血剑",
+        "巨人杀手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 2.1667,
+      "count": 12,
+      "priority_scores": {
+        "饮血剑": 100,
+        "巨人杀手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "401043",
+      "comp_name": "TFT17_Timebreaker, TFT17_Ezreal",
+      "items": [
+        "饮血剑",
+        "珠光护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.8,
+      "count": 15,
+      "priority_scores": {
+        "饮血剑": 100,
+        "珠光护手": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ]
+}

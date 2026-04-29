@@ -1,0 +1,219 @@
+{
+  "cluster_id": "401012",
+  "tft_set": "TFTSet17",
+  "units": [
+    "布里茨",
+    "科加斯",
+    "超级机甲",
+    "烬",
+    "卡莎",
+    "卡尔玛",
+    "丽桑卓",
+    "莫德凯撒",
+    "塔姆"
+  ],
+  "traits": [
+    "汪星机器人 (1)",
+    "暗星 (3)",
+    "旅人 (1)",
+    "斗士 (1)",
+    "灭星尊 (1)",
+    "重装战士 (1)",
+    "太空律动 (1)",
+    "命运祭司 (1)"
+  ],
+  "stars": [
+    "蕾欧娜",
+    "雷克塞"
+  ],
+  "name_string": "TFT17_DarkStar, TFT17_Karma",
+  "display_names": [
+    {
+      "name": "暗星",
+      "type": "trait",
+      "score": 2.731922607085156
+    },
+    {
+      "name": "卡尔玛",
+      "type": "unit",
+      "score": 3.6300981203451945
+    }
+  ],
+  "count": 25747,
+  "avg_placement": 4.5082,
+  "top4_rate": 0.5002,
+  "win_rate": 0.1088,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "烬",
+      "items": [
+        "无尽之刃",
+        "巨人杀手",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.4976,
+      "count": 840,
+      "score": 0.5543,
+      "place_change": -1.018,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "巨人杀手": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "卡尔玛",
+      "items": [
+        "蓝霸符",
+        "珠光护手",
+        "纳什之牙"
+      ],
+      "avg_placement": 4.1565,
+      "count": 428,
+      "score": 0.3377,
+      "place_change": -0.359,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "珠光护手": 85,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "unit": "塔姆",
+      "items": [
+        "圣盾使的誓约",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.8614,
+      "count": 166,
+      "score": 0.247,
+      "place_change": -0.654,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "超级机甲",
+      "items": [
+        "石像鬼石板甲",
+        "日炎斗篷",
+        "薄暮法袍"
+      ],
+      "avg_placement": 3.9691,
+      "count": 97,
+      "score": 0.1446,
+      "place_change": -0.546,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "日炎斗篷": 85,
+        "薄暮法袍": 72
+      }
+    }
+  ],
+  "build_items": {
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 16461,
+      "avg": 4.4423,
+      "pcnt": 0.64866
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 16095,
+      "avg": 4.4047,
+      "pcnt": 0.63424
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 14999,
+      "avg": 4.1924,
+      "pcnt": 0.59105
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 12336,
+      "avg": 4.3782,
+      "pcnt": 0.48611
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 12165,
+      "avg": 4.1073,
+      "pcnt": 0.47937
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 11615,
+      "avg": 4.2371,
+      "pcnt": 0.4577
+    },
+    "强袭者的链枷": {
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 7492,
+      "avg": 4.0132,
+      "pcnt": 0.29523
+    },
+    "圣盾使的誓约": {
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 6476,
+      "avg": 4.0468,
+      "pcnt": 0.25519
+    },
+    "纳什之牙": {
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 6411,
+      "avg": 4.3499,
+      "pcnt": 0.25263
+    },
+    "蓝霸符": {
+      "itemNames": "TFT_Item_BlueBuff",
+      "count": 5597,
+      "avg": 4.2278,
+      "pcnt": 0.22055
+    },
+    "薄暮法袍": {
+      "itemNames": "TFT_Item_SpectralGauntlet",
+      "count": 4311,
+      "avg": 4.0916,
+      "pcnt": 0.16988
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 1071,
+      "avg": 4.7908,
+      "pick_rate": 0.007368
+    },
+    {
+      "day": "2026-04-18",
+      "count": 3212,
+      "avg": 4.5579,
+      "pick_rate": 0.008059
+    },
+    {
+      "day": "2026-04-19",
+      "count": 5885,
+      "avg": 4.4797,
+      "pick_rate": 0.01074
+    },
+    {
+      "day": "2026-04-20",
+      "count": 13863,
+      "avg": 4.5362,
+      "pick_rate": 0.012608
+    },
+    {
+      "day": "2026-04-21",
+      "count": 2939,
+      "avg": 4.4427,
+      "pick_rate": 0.011863
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.192
+}

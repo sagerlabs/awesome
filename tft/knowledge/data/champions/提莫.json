@@ -1,0 +1,35 @@
+{
+  "name": "提莫",
+  "appear_in_comps": [
+    {
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "tier": "A",
+      "avg_placement": 4.3079
+    },
+    {
+      "cluster_id": "401032",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Ornn",
+      "tier": "C",
+      "avg_placement": 4.9238
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "items": [
+        "鬼索的狂暴之刃",
+        "巨人杀手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.8952,
+      "count": 5733,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "巨人杀手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    }
+  ]
+}

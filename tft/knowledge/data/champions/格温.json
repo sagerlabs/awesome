@@ -1,0 +1,53 @@
+{
+  "name": "格温",
+  "appear_in_comps": [
+    {
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "tier": "A",
+      "avg_placement": 4.3744
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "tier": "A",
+      "avg_placement": 4.4068
+    },
+    {
+      "cluster_id": "401027",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Riven",
+      "tier": "B",
+      "avg_placement": 4.7637
+    },
+    {
+      "cluster_id": "401032",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Ornn",
+      "tier": "C",
+      "avg_placement": 4.9238
+    },
+    {
+      "cluster_id": "401038",
+      "comp_name": "TFT17_HPTank, TFT17_MissFortune",
+      "tier": "C",
+      "avg_placement": 5.075
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "items": [
+        "未来战士纹章",
+        "珠光护手",
+        "正义之手"
+      ],
+      "avg_placement": 3.6275,
+      "count": 51,
+      "priority_scores": {
+        "未来战士纹章": 100,
+        "珠光护手": 85,
+        "正义之手": 72
+      }
+    }
+  ]
+}

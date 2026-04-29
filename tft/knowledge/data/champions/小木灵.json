@@ -1,0 +1,159 @@
+{
+  "name": "小木灵",
+  "appear_in_comps": [
+    {
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "tier": "S",
+      "avg_placement": 3.9764
+    },
+    {
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "tier": "S",
+      "avg_placement": 4.2264
+    },
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "tier": "A",
+      "avg_placement": 4.2811
+    },
+    {
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "tier": "A",
+      "avg_placement": 4.4022
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "tier": "A",
+      "avg_placement": 4.4068
+    },
+    {
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "tier": "A",
+      "avg_placement": 4.4447
+    },
+    {
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
+      "tier": "A",
+      "avg_placement": 4.4656
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "tier": "A",
+      "avg_placement": 4.4761
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "tier": "A",
+      "avg_placement": 4.5139
+    },
+    {
+      "cluster_id": "401019",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Corki",
+      "tier": "B",
+      "avg_placement": 4.6649
+    },
+    {
+      "cluster_id": "401022",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_Diana",
+      "tier": "C",
+      "avg_placement": 4.8216
+    },
+    {
+      "cluster_id": "401033",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Gnar",
+      "tier": "C",
+      "avg_placement": 4.8675
+    },
+    {
+      "cluster_id": "401036",
+      "comp_name": "TFT17_PsyOps, TFT17_Pyke",
+      "tier": "C",
+      "avg_placement": 4.8839
+    },
+    {
+      "cluster_id": "401034",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nami",
+      "tier": "C",
+      "avg_placement": 4.9237
+    },
+    {
+      "cluster_id": "401039",
+      "comp_name": "TFT17_ShieldTank, TFT17_Zoe",
+      "tier": "C",
+      "avg_placement": 5.0501
+    },
+    {
+      "cluster_id": "401044",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
+      "tier": "C",
+      "avg_placement": 5.0546
+    },
+    {
+      "cluster_id": "401052",
+      "comp_name": "TFT17_ShieldTank, TFT17_Illaoi",
+      "tier": "D",
+      "avg_placement": 5.2599
+    },
+    {
+      "cluster_id": "401046",
+      "comp_name": "TFT17_FlexTrait, TFT17_Galio",
+      "tier": "D",
+      "avg_placement": 5.2739
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "items": [
+        "夜之锋刃",
+        "珠光护手",
+        "正义之手"
+      ],
+      "avg_placement": 4.1281,
+      "count": 8243,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "珠光护手": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "cluster_id": "401033",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Gnar",
+      "items": [
+        "夜之锋刃",
+        "珠光护手",
+        "正义之手"
+      ],
+      "avg_placement": 4.2101,
+      "count": 395,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "珠光护手": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "cluster_id": "401044",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
+      "items": [
+        "冕卫"
+      ],
+      "avg_placement": 3.3158,
+      "count": 19,
+      "priority_scores": {
+        "冕卫": 100
+      }
+    }
+  ]
+}

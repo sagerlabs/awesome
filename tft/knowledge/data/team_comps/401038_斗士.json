@@ -1,0 +1,232 @@
+{
+  "cluster_id": "401038",
+  "tft_set": "TFTSet17",
+  "units": [
+    "亚托克斯",
+    "格温",
+    "茂凯",
+    "厄运小姐",
+    "潘森",
+    "拉亚斯特",
+    "锐雯",
+    "慎"
+  ],
+  "traits": [
+    "魔术师 (1)",
+    "游侠 (1)",
+    "新星特攻队 (1)",
+    "斗士 (1)",
+    "武装战姬 (1)",
+    "堡垒卫士 (1)",
+    "救世主 (1)",
+    "暮光铁壁 (1)",
+    "太空律动 (1)",
+    "未来战士 (1)"
+  ],
+  "stars": [
+    "厄运小姐",
+    "茂凯",
+    "拉亚斯特",
+    "奥恩",
+    "璐璐",
+    "黛安娜",
+    "莎弥拉",
+    "卡莎"
+  ],
+  "name_string": "TFT17_HPTank, TFT17_MissFortune",
+  "display_names": [
+    {
+      "name": "斗士",
+      "type": "trait",
+      "score": 1.1006369426751592
+    },
+    {
+      "name": "厄运小姐",
+      "type": "unit",
+      "score": 4.109235668789809
+    }
+  ],
+  "count": 3187,
+  "avg_placement": 5.075,
+  "top4_rate": 0.3859,
+  "win_rate": 0.0606,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "厄运小姐",
+      "items": [
+        "无尽之刃",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.1017,
+      "count": 59,
+      "score": 0.6392,
+      "place_change": -0.964,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "茂凯",
+      "items": [
+        "棘刺背心",
+        "日炎斗篷",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.0833,
+      "count": 12,
+      "score": 0.4654,
+      "place_change": -1.983,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "unit": "锐雯",
+      "items": [
+        "饮血剑",
+        "巨人杀手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 2.1667,
+      "count": 12,
+      "score": 0.3848,
+      "place_change": -2.899,
+      "priority_scores": {
+        "饮血剑": 100,
+        "巨人杀手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "拉亚斯特",
+      "items": [
+        "石像鬼石板甲",
+        "坚定之心",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4,
+      "count": 10,
+      "score": 0.1992,
+      "place_change": -1.066,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "坚定之心": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 2575,
+      "avg": 4.9542,
+      "pcnt": 0.82006
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 1981,
+      "avg": 4.9172,
+      "pcnt": 0.63089
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 1876,
+      "avg": 4.7942,
+      "pcnt": 0.59745
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 1599,
+      "avg": 4.9018,
+      "pcnt": 0.50924
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 1411,
+      "avg": 4.7179,
+      "pcnt": 0.44936
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 1346,
+      "avg": 4.7355,
+      "pcnt": 0.42866
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 1099,
+      "avg": 4.7061,
+      "pcnt": 0.35
+    },
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 874,
+      "avg": 4.4554,
+      "pcnt": 0.27834
+    },
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 789,
+      "avg": 4.5944,
+      "pcnt": 0.25127
+    },
+    "棘刺背心": {
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 608,
+      "avg": 4.5247,
+      "pcnt": 0.19363
+    },
+    "坚定之心": {
+      "itemNames": "TFT_Item_NightHarvester",
+      "count": 590,
+      "avg": 4.3424,
+      "pcnt": 0.1879
+    },
+    "红霸符": {
+      "itemNames": "TFT_Item_RapidFireCannon",
+      "count": 387,
+      "avg": 4.5943,
+      "pcnt": 0.12325
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 140,
+      "avg": 5.4786,
+      "pick_rate": 0.000963
+    },
+    {
+      "day": "2026-04-18",
+      "count": 456,
+      "avg": 5.2412,
+      "pick_rate": 0.001144
+    },
+    {
+      "day": "2026-04-19",
+      "count": 758,
+      "avg": 5.1517,
+      "pick_rate": 0.001383
+    },
+    {
+      "day": "2026-04-20",
+      "count": 1625,
+      "avg": 4.9766,
+      "pick_rate": 0.001478
+    },
+    {
+      "day": "2026-04-21",
+      "count": 381,
+      "avg": 5.1102,
+      "pick_rate": 0.001538
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.063
+}

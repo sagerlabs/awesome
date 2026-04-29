@@ -1,0 +1,206 @@
+{
+  "cluster_id": "401025",
+  "tft_set": "TFTSet17",
+  "units": [
+    "亚托克斯",
+    "凯特琳",
+    "库奇",
+    "贾克斯",
+    "米利欧",
+    "波比",
+    "拉莫斯",
+    "崔斯特"
+  ],
+  "traits": [
+    "木灵族 (1)",
+    "新星特攻队 (1)",
+    "织命人 (2)",
+    "堡垒卫士 (2)"
+  ],
+  "stars": [
+    "崔斯特",
+    "贾克斯",
+    "亚托克斯",
+    "凯特琳",
+    "波比",
+    "泰隆",
+    "维迦",
+    "蕾欧娜"
+  ],
+  "name_string": "TFT17_ResistTank, TFT17_TwistedFate",
+  "display_names": [
+    {
+      "name": "堡垒卫士",
+      "type": "trait",
+      "score": 1.808456750375617
+    },
+    {
+      "name": "崔斯特",
+      "type": "unit",
+      "score": 4.153831294269156
+    }
+  ],
+  "count": 23394,
+  "avg_placement": 4.565,
+  "top4_rate": 0.4905,
+  "win_rate": 0.0978,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "崔斯特",
+      "items": [
+        "纳什之牙",
+        "纳什之牙",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 4.5674,
+      "count": 5051,
+      "score": 0.3114,
+      "place_change": 0.003,
+      "priority_scores": {
+        "纳什之牙": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "贾克斯",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 3.8119,
+      "count": 218,
+      "score": 0.2767,
+      "place_change": -0.753,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 72
+      }
+    },
+    {
+      "unit": "库奇",
+      "items": [
+        "死亡之刃",
+        "巨人杀手",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.3621,
+      "count": 174,
+      "score": 0.2281,
+      "place_change": -1.203,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "巨人杀手": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "拉莫斯",
+      "items": [
+        "圣盾使的誓约",
+        "石像鬼石板甲",
+        "坚定之心"
+      ],
+      "avg_placement": 3.4464,
+      "count": 56,
+      "score": 0.1308,
+      "place_change": -1.118,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "石像鬼石板甲": 85,
+        "坚定之心": 72
+      }
+    }
+  ],
+  "build_items": {
+    "纳什之牙": {
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 28686,
+      "avg": 4.5446,
+      "pcnt": 1.23142
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 18605,
+      "avg": 4.3512,
+      "pcnt": 0.79867
+    },
+    "圣盾使的誓约": {
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 10314,
+      "avg": 4.1891,
+      "pcnt": 0.44276
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 10002,
+      "avg": 4.5412,
+      "pcnt": 0.42936
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 9275,
+      "avg": 4.0935,
+      "pcnt": 0.39815
+    },
+    "死亡之刃": {
+      "itemNames": "TFT_Item_Deathblade",
+      "count": 7226,
+      "avg": 4.0938,
+      "pcnt": 0.3102
+    },
+    "强袭者的链枷": {
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 6819,
+      "avg": 3.9913,
+      "pcnt": 0.29272
+    },
+    "坚定之心": {
+      "itemNames": "TFT_Item_NightHarvester",
+      "count": 5221,
+      "avg": 4.0653,
+      "pcnt": 0.22413
+    },
+    "冕卫": {
+      "itemNames": "TFT_Item_Crownguard",
+      "count": 5196,
+      "avg": 4.0658,
+      "pcnt": 0.22305
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 1580,
+      "avg": 4.6494,
+      "pick_rate": 0.010869
+    },
+    {
+      "day": "2026-04-18",
+      "count": 5022,
+      "avg": 4.5157,
+      "pick_rate": 0.012601
+    },
+    {
+      "day": "2026-04-19",
+      "count": 6516,
+      "avg": 4.5781,
+      "pick_rate": 0.011891
+    },
+    {
+      "day": "2026-04-20",
+      "count": 10771,
+      "avg": 4.5856,
+      "pick_rate": 0.009796
+    },
+    {
+      "day": "2026-04-21",
+      "count": 1815,
+      "avg": 4.4689,
+      "pick_rate": 0.007326
+    }
+  ],
+  "levelling": "lvl 5",
+  "difficulty": 0.01
+}

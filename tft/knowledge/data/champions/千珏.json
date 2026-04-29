@@ -1,0 +1,117 @@
+{
+  "name": "千珏",
+  "appear_in_comps": [
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "tier": "S",
+      "avg_placement": 4.183
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "tier": "A",
+      "avg_placement": 4.4845
+    },
+    {
+      "cluster_id": "401016",
+      "comp_name": "TFT17_DRX, TFT17_Rammus",
+      "tier": "B",
+      "avg_placement": 4.6407
+    },
+    {
+      "cluster_id": "401047",
+      "comp_name": "TFT17_DRX, TFT17_Aatrox",
+      "tier": "D",
+      "avg_placement": 5.239
+    },
+    {
+      "cluster_id": "401054",
+      "comp_name": "TFT17_ADMIN, TFT17_Diana",
+      "tier": "D",
+      "avg_placement": 5.5805
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "items": [
+        "鬼索的狂暴之刃",
+        "巨人杀手",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.5624,
+      "count": 4310,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "巨人杀手": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "items": [
+        "狂战士纹章",
+        "鬼索的狂暴之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.6759,
+      "count": 2101,
+      "priority_scores": {
+        "狂战士纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "cluster_id": "401016",
+      "comp_name": "TFT17_DRX, TFT17_Rammus",
+      "items": [
+        "狂战士纹章",
+        "鬼索的狂暴之刃",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.3857,
+      "count": 70,
+      "priority_scores": {
+        "狂战士纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "401047",
+      "comp_name": "TFT17_DRX, TFT17_Aatrox",
+      "items": [
+        "无尽之刃",
+        "巨人杀手",
+        "海妖之怒"
+      ],
+      "avg_placement": 3,
+      "count": 10,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "巨人杀手": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "cluster_id": "401054",
+      "comp_name": "TFT17_ADMIN, TFT17_Diana",
+      "items": [
+        "鬼索的狂暴之刃",
+        "巨人杀手",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.7778,
+      "count": 9,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "巨人杀手": 85,
+        "强袭者的链枷": 72
+      }
+    }
+  ]
+}

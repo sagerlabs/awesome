@@ -13,8 +13,16 @@
 - item_query: 用户问装备给谁/适合哪个英雄/出装建议
 - trait_query: 用户问羁绊相关
 - champion_query: 用户问英雄相关
+- vertical_query: 用户按费用、定位或强度纵向比较英雄，例如“四费谁最强/谁能C/谁能抗”
 - playstyle_query: 用户明确表达玩法倾向（高费/赌狗/连胜/连败）
 - augment_query: 用户问海克斯/强化符文选择
+
+# Vertical Query Rules
+1. 用户提到“一费/二费/三费/四费/五费/七费”时，提取为 unit_cost: 1/2/3/4/5/7。
+2. 用户问“谁能C/主C/输出”时，role_query 输出 "carry"。
+3. 用户问“谁能抗/前排/坦克/肉”时，role_query 输出 "tank"。
+4. 用户问“打工/过渡/前期能不能用/二阶段强不强”时，role_query 输出 "work"。
+5. 用户同时问“谁最强、谁能C、谁能抗”时，role_query 输出 "all"。
 
 # Output Schema
 {
@@ -25,6 +33,8 @@
   "augments": ["海克斯原话"],
   "explicit_lineup": "阵容名(无则\"\")",
   "playstyle": "玩法倾向(无则\"\")",
+  "unit_cost": 费用数字或null,
+  "role_query": "carry/tank/work/all/无则\"\"",
   "game_stage": "游戏阶段如4-2(无则null)",
   "gold": 金币数字或null,
   "level": 等级数字或null,
@@ -59,6 +69,15 @@
 
 用户: "兰博带什么装备？"
 输出: {"intent":"item_query","champions":{"兰博":1},"items":[],"traits":[],"augments":[],"explicit_lineup":"","playstyle":"","game_stage":null,"gold":null,"level":null,"hp":null}
+
+用户: "四费卡谁最厉害，谁能C，谁能抗？"
+输出: {"intent":"vertical_query","champions":{},"items":[],"traits":[],"augments":[],"explicit_lineup":"","playstyle":"","unit_cost":4,"role_query":"all","game_stage":null,"gold":null,"level":null,"hp":null}
+
+用户: "法师羁绊现在能玩吗？"
+输出: {"intent":"trait_query","champions":{},"items":[],"traits":["法师"],"augments":[],"explicit_lineup":"","playstyle":"","unit_cost":null,"role_query":"","game_stage":null,"gold":null,"level":null,"hp":null}
+
+用户: "剑魔打工强吗？"
+输出: {"intent":"champion_query","champions":{"剑魔":1},"items":[],"traits":[],"augments":[],"explicit_lineup":"","playstyle":"","unit_cost":null,"role_query":"work","game_stage":null,"gold":null,"level":null,"hp":null}
 
 ---
 现在，请解析以下用户输入：

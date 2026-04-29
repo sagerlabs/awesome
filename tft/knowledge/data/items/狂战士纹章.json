@@ -1,0 +1,13 @@
+{
+  "name": "狂战士纹章",
+  "priority_list": [
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "comp_tier": "A",
+      "comp_avg": 4.4845,
+      "carry": "千珏",
+      "priority_score": 100
+    }
+  ]
+}

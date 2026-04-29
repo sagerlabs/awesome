@@ -1,0 +1,29 @@
+{
+  "id": "astral",
+  "name": "星之守护者",
+  "description": "星之守护者们获得额外法术强度，并且在施放技能后会获得护盾。",
+  "breaks": [
+    {
+      "count": 3,
+      "effect": "+20法术强度，施放技能后获得150护盾",
+      "is_major": true
+    },
+    {
+      "count": 5,
+      "effect": "+40法术强度，施放技能后获得300护盾",
+      "is_major": true
+    },
+    {
+      "count": 7,
+      "effect": "+70法术强度，施放技能后获得500护盾",
+      "is_major": true
+    }
+  ],
+  "best_heroes": ["阿狸", "拉克丝", "佐伊"],
+  "analysis": {
+    "strengths": ["提供大量AP", "护盾增加生存", "适合法系阵容"],
+    "weaknesses": ["需要高人口", "英雄较贵"],
+    "synergies": ["灵能使", "法师"]
+  },
+  "version": "S11"
+}

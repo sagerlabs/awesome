@@ -1,0 +1,29 @@
+{
+  "name": "棘刺背心",
+  "priority_list": [
+    {
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
+      "comp_tier": "A",
+      "comp_avg": 4.4656,
+      "carry": "拉莫斯",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "comp_tier": "A",
+      "comp_avg": 4.4852,
+      "carry": "塔姆",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "拉莫斯",
+      "priority_score": 100
+    }
+  ]
+}

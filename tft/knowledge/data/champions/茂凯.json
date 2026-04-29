@@ -1,0 +1,209 @@
+{
+  "name": "茂凯",
+  "appear_in_comps": [
+    {
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "tier": "S",
+      "avg_placement": 4.183
+    },
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "tier": "A",
+      "avg_placement": 4.4707
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "tier": "A",
+      "avg_placement": 4.4845
+    },
+    {
+      "cluster_id": "401016",
+      "comp_name": "TFT17_DRX, TFT17_Rammus",
+      "tier": "B",
+      "avg_placement": 4.6407
+    },
+    {
+      "cluster_id": "401018",
+      "comp_name": "TFT17_APTrait, TFT17_Lulu, TFT17_Maokai",
+      "tier": "B",
+      "avg_placement": 4.7021
+    },
+    {
+      "cluster_id": "401021",
+      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
+      "tier": "C",
+      "avg_placement": 4.7878
+    },
+    {
+      "cluster_id": "401024",
+      "comp_name": "TFT17_HPTank, TFT17_Chogath",
+      "tier": "C",
+      "avg_placement": 4.79
+    },
+    {
+      "cluster_id": "401037",
+      "comp_name": "TFT17_HPTank, TFT17_TahmKench",
+      "tier": "C",
+      "avg_placement": 4.7974
+    },
+    {
+      "cluster_id": "401040",
+      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
+      "tier": "C",
+      "avg_placement": 4.8334
+    },
+    {
+      "cluster_id": "401050",
+      "comp_name": "TFT17_HPTank, TFT17_Urgot",
+      "tier": "C",
+      "avg_placement": 4.8738
+    },
+    {
+      "cluster_id": "401038",
+      "comp_name": "TFT17_HPTank, TFT17_MissFortune",
+      "tier": "C",
+      "avg_placement": 5.075
+    },
+    {
+      "cluster_id": "401047",
+      "comp_name": "TFT17_DRX, TFT17_Aatrox",
+      "tier": "D",
+      "avg_placement": 5.239
+    },
+    {
+      "cluster_id": "401043",
+      "comp_name": "TFT17_Timebreaker, TFT17_Ezreal",
+      "tier": "D",
+      "avg_placement": 5.414
+    },
+    {
+      "cluster_id": "401053",
+      "comp_name": "TFT17_PsyOps, TFT17_Viktor",
+      "tier": "D",
+      "avg_placement": 5.5278
+    },
+    {
+      "cluster_id": "401054",
+      "comp_name": "TFT17_ADMIN, TFT17_Diana",
+      "tier": "D",
+      "avg_placement": 5.5805
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "items": [
+        "异常突变",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 2.8148,
+      "count": 27,
+      "priority_scores": {
+        "异常突变": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "items": [
+        "圣盾使的誓约",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0128,
+      "count": 235,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "401018",
+      "comp_name": "TFT17_APTrait, TFT17_Lulu, TFT17_Maokai",
+      "items": [
+        "圣盾使的誓约",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.3409,
+      "count": 44,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "401021",
+      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
+      "items": [
+        "日炎斗篷",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.4,
+      "count": 50,
+      "priority_scores": {
+        "日炎斗篷": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "401050",
+      "comp_name": "TFT17_HPTank, TFT17_Urgot",
+      "items": [
+        "石像鬼石板甲",
+        "坚定之心",
+        "薄暮法袍"
+      ],
+      "avg_placement": 2.7143,
+      "count": 14,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "坚定之心": 85,
+        "薄暮法袍": 72
+      }
+    },
+    {
+      "cluster_id": "401038",
+      "comp_name": "TFT17_HPTank, TFT17_MissFortune",
+      "items": [
+        "棘刺背心",
+        "日炎斗篷",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.0833,
+      "count": 12,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "401047",
+      "comp_name": "TFT17_DRX, TFT17_Aatrox",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.1034,
+      "count": 29,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "cluster_id": "401044",
+  "tft_set": "TFTSet17",
+  "units": [
+    "布里茨",
+    "俄洛伊",
+    "小木灵",
+    "乐芙兰",
+    "蕾欧娜",
+    "丽桑卓",
+    "莫德凯撒",
+    "娑娜",
+    "羊咩咩 & 咩咩羊",
+    "佐伊"
+  ],
+  "traits": [
+    "法官 (2)",
+    "汪星机器人 (1)",
+    "暗星 (1)",
+    "神谕 (1)",
+    "重装战士 (2)",
+    "最高指挥官 (1)",
+    "太空律动 (1)",
+    "牧羊人 (2)"
+  ],
+  "stars": [
+    "羊咩咩 & 咩咩羊",
+    "厄运小姐"
+  ],
+  "name_string": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
+  "display_names": [
+    {
+      "name": "牧羊人",
+      "type": "trait",
+      "score": 1.8348150272440493
+    },
+    {
+      "name": "乐芙兰",
+      "type": "unit",
+      "score": 4.053484370519071
+    }
+  ],
+  "count": 10576,
+  "avg_placement": 5.0546,
+  "top4_rate": 0.3947,
+  "win_rate": 0.0769,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "乐芙兰",
+      "items": [
+        "暗星纹章",
+        "鬼索的狂暴之刃",
+        "珠光护手"
+      ],
+      "avg_placement": 3.4643,
+      "count": 28,
+      "score": 0.5944,
+      "place_change": -1.591,
+      "priority_scores": {
+        "暗星纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "珠光护手": 72
+      }
+    },
+    {
+      "unit": "俄洛伊",
+      "items": [
+        "离子火花",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.7429,
+      "count": 35,
+      "score": 0.3804,
+      "place_change": -1.312,
+      "priority_scores": {
+        "离子火花": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "娑娜",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "虚空之杖"
+      ],
+      "avg_placement": 2.8571,
+      "count": 21,
+      "score": 0.2168,
+      "place_change": -2.198,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "小木灵",
+      "items": [
+        "冕卫"
+      ],
+      "avg_placement": 3.3158,
+      "count": 19,
+      "score": 0.011,
+      "place_change": -1.739,
+      "priority_scores": {
+        "冕卫": 100
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 10244,
+      "avg": 4.9515,
+      "pcnt": 0.97926
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 7220,
+      "avg": 4.7576,
+      "pcnt": 0.69018
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 5020,
+      "avg": 4.8811,
+      "pcnt": 0.47988
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 4567,
+      "avg": 4.6952,
+      "pcnt": 0.43657
+    },
+    "虚空之杖": {
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 3922,
+      "avg": 4.6188,
+      "pcnt": 0.37492
+    },
+    "纳什之牙": {
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 2104,
+      "avg": 4.7614,
+      "pcnt": 0.20113
+    },
+    "离子火花": {
+      "itemNames": "TFT_Item_IonicSpark",
+      "count": 1828,
+      "avg": 4.4623,
+      "pcnt": 0.17474
+    },
+    "冕卫": {
+      "itemNames": "TFT_Item_Crownguard",
+      "count": 1186,
+      "avg": 4.2454,
+      "pcnt": 0.11337
+    },
+    "暗星纹章": {
+      "itemNames": "TFT17_Item_DarkStarEmblemItem",
+      "count": 413,
+      "avg": 4.3366,
+      "pcnt": 0.03948
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 702,
+      "avg": 5,
+      "pick_rate": 0.004829
+    },
+    {
+      "day": "2026-04-18",
+      "count": 1842,
+      "avg": 5.1303,
+      "pick_rate": 0.004622
+    },
+    {
+      "day": "2026-04-19",
+      "count": 2646,
+      "avg": 5.0813,
+      "pick_rate": 0.004829
+    },
+    {
+      "day": "2026-04-20",
+      "count": 5122,
+      "avg": 5.0303,
+      "pick_rate": 0.004658
+    },
+    {
+      "day": "2026-04-21",
+      "count": 1186,
+      "avg": 4.9713,
+      "pick_rate": 0.004787
+    }
+  ],
+  "levelling": "Standard",
+  "difficulty": -0.19
+}

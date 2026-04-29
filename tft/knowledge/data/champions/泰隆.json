@@ -1,0 +1,53 @@
+{
+  "name": "泰隆",
+  "appear_in_comps": [
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "tier": "A",
+      "avg_placement": 4.3245
+    },
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "tier": "A",
+      "avg_placement": 4.4852
+    },
+    {
+      "cluster_id": "401028",
+      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Xayah",
+      "tier": "B",
+      "avg_placement": 4.7262
+    },
+    {
+      "cluster_id": "401027",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Riven",
+      "tier": "B",
+      "avg_placement": 4.7637
+    },
+    {
+      "cluster_id": "401048",
+      "comp_name": "TFT17_APTrait, TFT17_Lulu, TFT17_ResistTank",
+      "tier": "D",
+      "avg_placement": 5.1697
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "items": [
+        "夜之锋刃",
+        "海克斯科技枪刃",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.7906,
+      "count": 4041,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "海克斯科技枪刃": 85,
+        "朔极之矛": 72
+      }
+    }
+  ]
+}

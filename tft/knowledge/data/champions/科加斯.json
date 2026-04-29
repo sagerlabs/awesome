@@ -1,0 +1,74 @@
+{
+  "name": "科加斯",
+  "appear_in_comps": [
+    {
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "tier": "A",
+      "avg_placement": 4.4707
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "tier": "A",
+      "avg_placement": 4.5082
+    },
+    {
+      "cluster_id": "401013",
+      "comp_name": "TFT17_DarkStar, TFT17_Nunu",
+      "tier": "B",
+      "avg_placement": 4.5209
+    },
+    {
+      "cluster_id": "401024",
+      "comp_name": "TFT17_HPTank, TFT17_Chogath",
+      "tier": "C",
+      "avg_placement": 4.79
+    },
+    {
+      "cluster_id": "401041",
+      "comp_name": "TFT17_DarkStar, TFT17_Chogath",
+      "tier": "C",
+      "avg_placement": 5.0087
+    },
+    {
+      "cluster_id": "401043",
+      "comp_name": "TFT17_Timebreaker, TFT17_Ezreal",
+      "tier": "D",
+      "avg_placement": 5.414
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "401024",
+      "comp_name": "TFT17_HPTank, TFT17_Chogath",
+      "items": [
+        "巨龙之爪",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 4.4024,
+      "count": 1342,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "401041",
+      "comp_name": "TFT17_DarkStar, TFT17_Chogath",
+      "items": [
+        "振奋盔甲",
+        "狂徒铠甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.7778,
+      "count": 18,
+      "priority_scores": {
+        "振奋盔甲": 100,
+        "狂徒铠甲": 72
+      }
+    }
+  ]
+}

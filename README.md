@@ -21,28 +21,60 @@
 awesome/
 ├── metadata/
 │   └── tft-meta/
-│       ├── scraper.py              # MetaTFT + CDragon 数据爬虫
-│       ├── debug_localization.py   # 汉化数据调试工具
+│       ├── get_tftmeta.py         # MetaTFT 数据爬虫
+│       ├── test.py                 # 汉化数据调试工具
 │       └── data/
+│           ├── comps_full.json         # 完整原始数据（调试用）
 │           ├── comps_for_agent.json    # 阵容数据（Eino Tool 使用）
 │           ├── items_priority.json     # 装备优先级索引
-│           └── localization.json       # 英雄/装备中文名映射
+│           └── localization.json       # 英雄/装备中英文映射
 ├── tft/
 │   ├── handler.go              # HTTP 路由入口
+│   ├── middleware.go           # HTTP 中间件
+│   ├── logger.go               # 日志工具
 │   ├── data/
 │   │   ├── types.go            # 所有结构体定义
 │   │   └── loader.go           # Store 数据加载与查询
+│   ├── parser/
+│   │   └── parser.go           # 用户输入标准化（别名/中文名/ID）
 │   ├── tool/
-│   │   ├── parser.go           # 用户输入标准化（别名/中文名/ID）
-│   │   ├── hero_comps.go       # Tool1：英雄 → 推荐阵容
+│   │   ├── hero_comp.go        # Tool1：英雄 → 推荐阵容
 │   │   ├── item_fit.go         # Tool2：装备 → 适配阵容
-│   │   └── comp_tier.go        # Tool3：阵容强度 + 交集计算
-│   └── agent/
-│       ├── model.go            # LLM 初始化（多 Provider）
-│       ├── graph.go            # Eino Graph 编排
-│       └── agent.go            # 对外入口
-├── sse/                        # SSE 框架（已有）
-├── main.go
+│   │   ├── comps_tier.go       # Tool3：阵容强度 + 交集计算
+│   │   └── priority_recommend.go  # Tool4：优先级推荐
+│   ├── prompt/
+│   │   └── nlu.go              # NLU 提示词
+│   ├── knowledge/
+│   │   └── models/
+│   │       ├── knowledge.go    # 知识库基础
+│   │       ├── champion.go     # 英雄知识模型
+│   │       ├── item.go         # 装备知识模型
+│   │       ├── trait.go        # 羁绊知识模型
+│   │       └── team_comp.go    # 阵容知识模型
+│   ├── agent/
+│   │   ├── agent.go            # 对外入口
+│   │   ├── model.go            # LLM 初始化（多 Provider）
+│   │   ├── graph.go            # Eino Graph 编排
+│   │   ├── prompt.go           # Agent 提示词
+│   │   ├── context.go          # 上下文管理
+│   │   ├── trace.go            # 追踪工具
+│   │   ├── token_usage.go      # Token 使用统计
+│   │   ├── nlu_data_query.go   # NLU 数据查询
+│   │   └── agent_test.go       # Agent 测试
+│   ├── trace/
+│   │   └── trace.go            # 分布式追踪
+│   └── sse/
+│       ├── sse.go              # SSE 框架核心
+│       ├── sse_test.go         # SSE 测试
+│       └── examples/           # SSE 示例代码
+├── desktop/
+│   └── main.go                 # 桌面端入口
+├── tests/                      # 测试目录
+├── scripts/                    # 脚本目录
+├── docs/                       # 文档目录
+├── frontend/                   # 前端目录
+├── main.go                     # 主入口
+├── Makefile                    # 构建脚本
 └── go.mod
 ```
 
@@ -59,7 +91,7 @@ cd metadata/tft-meta
 pip install requests
 
 # 拉取最新阵容数据 + 生成汉化表（每个版本跑一次）
-python scraper.py
+python get_tftmeta.py
 ```
 
 运行后 `data/` 目录会生成四个文件：
@@ -116,9 +148,9 @@ go run main.go
 ✅ TFT Copilot 初始化完成
 🚀 服务启动: http://localhost:8080
 ────────────────────────────────
-  POST /tft/analyze         普通接口
-  POST /tft/analyze/stream  流式接口（SSE）
-  GET  /tft/health          健康检查
+  POST /v1/tft/analyze         普通接口
+  POST /v1/tft/analyze/stream  流式接口（SSE）
+  GET  /v1/tft/health          健康检查
 ────────────────────────────────
 ```
 
@@ -126,7 +158,7 @@ go run main.go
 
 ## API 接口
 
-### POST /tft/analyze
+### POST /v1/tft/analyze
 
 普通接口，返回完整推荐结果。
 
@@ -164,7 +196,7 @@ go run main.go
 }
 ```
 
-### POST /tft/analyze/stream
+### POST /v1/tft/analyze/stream
 
 流式接口，SSE 格式逐 token 推送 LLM 建议。
 
@@ -265,14 +297,130 @@ while (true) {
 
 ```bash
 cd metadata/tft-meta
-python scraper.py
+python get_tftmeta.py
 ```
 
 爬虫会自动：
-1. 从 MetaTFT API 拉取最新阵容数据（胜率/名次/装备优先级）
-2. 从 Community Dragon 拉取最新英雄/装备中文名
+1. 从 MetaTFT API 拉取最新阵容数据（comps_data + comps_stats）
+2. 从 MetaTFT lookups 接口拉取最新英雄/装备中英文对照
 3. 过滤样本数 < 200 的低质量阵容
 4. 生成 Eino 所需的四个 JSON 文件
+
+---
+
+## API 数据结构说明
+
+### 1. comps_data 接口
+**URL**: `https://api-hc.metatft.com/tft-comps-api/comps_data?queue=1100`
+
+返回所有阵容的完整信息：
+
+```json
+{
+  "results": {
+    "data": {
+      "cluster_id": 394,
+      "tft_set": "TFTSet16",
+      "cluster_details": {
+        "394000": {
+          "Cluster": 394000,
+          "units_string": "TFT16_Annie, TFT16_Galio, ...",
+          "traits_string": "TFT16_Sorcerer_3, TFT16_Demacia_1, ...",
+          "name_string": "TFT16_Sorcerer, TFT16_Lux",
+          "overall": {
+            "count": 238856,
+            "avg": 4.0918
+          },
+          "stars": ["TFT16_Aphelios"],
+          "builds": [
+            {
+              "unit": "TFT16_Annie",
+              "buildName": ["TFT_Item_AdaptiveHelm", ...],
+              "count": 49133,
+              "avg": 3.5717,
+              "score": 0.5768,
+              "place_change": -0.52
+            }
+          ],
+          "build_items": {
+            "TFT_Item_JeweledGauntlet": {
+              "count": 254607,
+              "avg": 3.9272,
+              "pcnt": 1.06594
+            }
+          },
+          "trends": [
+            {
+              "day": "2026-03-17T00:00:00.000Z",
+              "count": 60149,
+              "avg": 3.9079,
+              "pick": 0.05251
+            }
+          ],
+          "levelling": "Fast 9",
+          "difficulty": 0.024
+        }
+      }
+    }
+  }
+}
+```
+
+### 2. comps_stats 接口
+**URL**: `https://api-hc.metatft.com/tft-comps-api/comps_stats?queue=1100&patch=current&days=3&rank=...`
+
+返回所有阵容的名次分布（用于计算胜率/进4率）：
+
+```json
+{
+  "results": [
+    {
+      "cluster": "394000",
+      "places": [202150, 120672, 107877, 102715, 101085, 101090, 99162, 82410, 917161],
+      "count": 917161
+    }
+  ],
+  "updated": 1774339522336,
+  "tft_set": "TFTSet16",
+  "queue_id": 1100,
+  "cluster_id": 394
+}
+```
+
+**places 数组说明**：索引 0-7 分别对应第 1-8 名的场次，索引 8 是总场次
+
+### 3. lookups 接口（中英文对照）
+**URL**: `https://data.metatft.com/lookups/TFTSet16_latest_zh_cn.json`
+
+返回所有英雄/装备的中英文对照：
+
+```json
+{
+  "items": [
+    {
+      "apiName": "TFT_Item_RabadonsDeathcap",
+      "name": "灭世者的死亡之帽",
+      "en_name": "Rabadon's Deathcap",
+      "desc": "这顶不起眼的帽子可以帮助你创造...",
+      "effects": {
+        "AP": 50,
+        "BonusDamage": 0.15
+      }
+    }
+  ]
+}
+```
+
+### Tier 计算规则
+Tier 不再由 API 返回，而是根据 `avg_placement` 动态计算（基于 MetaTFT 官网规则）：
+
+| avg_placement | Tier |
+|---|---|
+| ≤ 4.25 | S |
+| ≤ 4.52 | A |
+| ≤ 4.78 | B |
+| ≤ 5.10 | C |
+| > 5.10 | D |
 
 ---
 
