@@ -5,7 +5,7 @@
       "cluster_id": "394008",
       "comp_name": "TFT16_Defender, TFT16_Aphelios",
       "comp_tier": "S",
-      "comp_avg": 4.1646,
+      "comp_avg": 4.0341,
       "carry": "巴德",
       "priority_score": 100
     },
@@ -13,7 +13,7 @@
       "cluster_id": "394024",
       "comp_name": "TFT16_Zaun, TFT16_Warwick",
       "comp_tier": "S",
-      "comp_avg": 4.1759,
+      "comp_avg": 4.0701,
       "carry": "吉格斯",
       "priority_score": 100
     },
@@ -21,7 +21,7 @@
       "cluster_id": "394032",
       "comp_name": "TFT16_Brawler, TFT16_Aphelios",
       "comp_tier": "A",
-      "comp_avg": 4.3367,
+      "comp_avg": 4.3158,
       "carry": "巴德",
       "priority_score": 100
     }

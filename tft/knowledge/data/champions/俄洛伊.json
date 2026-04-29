@@ -5,31 +5,31 @@
       "cluster_id": "394032",
       "comp_name": "TFT16_Brawler, TFT16_Aphelios",
       "tier": "A",
-      "avg_placement": 4.3367
+      "avg_placement": 4.3158
     },
     {
       "cluster_id": "394056",
       "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_Brawler",
       "tier": "C",
-      "avg_placement": 4.8979
+      "avg_placement": 4.89
     },
     {
       "cluster_id": "394047",
       "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Taric",
       "tier": "C",
-      "avg_placement": 5.0748
+      "avg_placement": 4.9556
     },
     {
       "cluster_id": "394045",
       "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Nautilus",
       "tier": "D",
-      "avg_placement": 5.1393
+      "avg_placement": 5.2356
     },
     {
       "cluster_id": "394054",
       "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_MissFortune",
       "tier": "D",
-      "avg_placement": 5.252
+      "avg_placement": 5.3259
     }
   ],
   "builds": [
@@ -37,32 +37,32 @@
       "cluster_id": "394056",
       "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_Brawler",
       "items": [
-        "饮血剑",
         "无尽之刃",
-        "泰坦的坚决"
+        "斯特拉克的挑战护手",
+        "正义之手"
       ],
-      "avg_placement": 4.6913,
-      "count": 149,
+      "avg_placement": 3.1818,
+      "count": 11,
       "priority_scores": {
-        "饮血剑": 100,
-        "无尽之刃": 85,
-        "泰坦的坚决": 72
+        "无尽之刃": 100,
+        "斯特拉克的挑战护手": 85,
+        "正义之手": 72
       }
     },
     {
       "cluster_id": "394054",
       "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_MissFortune",
       "items": [
-        "饮血剑",
-        "斯特拉克的挑战护手",
-        "泰坦的坚决"
+        "无尽之刃",
+        "巨人杀手",
+        "正义之手"
       ],
-      "avg_placement": 5.1128,
-      "count": 1923,
+      "avg_placement": 3.9091,
+      "count": 11,
       "priority_scores": {
-        "饮血剑": 100,
-        "斯特拉克的挑战护手": 85,
-        "泰坦的坚决": 72
+        "无尽之刃": 100,
+        "巨人杀手": 85,
+        "正义之手": 72
       }
     }
   ]

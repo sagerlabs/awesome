@@ -2,11 +2,19 @@
   "name": "死亡之刃",
   "priority_list": [
     {
-      "cluster_id": "394033",
-      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
-      "comp_tier": "S",
-      "comp_avg": 4.2031,
-      "carry": "安蓓萨",
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.5124,
+      "carry": "艾希",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.5124,
+      "carry": "泰达米尔",
       "priority_score": 100
     }
   ]

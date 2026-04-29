@@ -1,0 +1,6 @@
+./champion.go
+./item.go
+./knowledge.go
+./meta.go
+./team_comp.go
+./trait.go

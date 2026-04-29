@@ -5,43 +5,43 @@
       "cluster_id": "394026",
       "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
       "tier": "S",
-      "avg_placement": 4.1324
+      "avg_placement": 3.8968
     },
     {
       "cluster_id": "394001",
       "comp_name": "TFT16_Brawler, TFT16_Wukong",
       "tier": "S",
-      "avg_placement": 4.219
+      "avg_placement": 4.1427
     },
     {
       "cluster_id": "394032",
       "comp_name": "TFT16_Brawler, TFT16_Aphelios",
       "tier": "A",
-      "avg_placement": 4.3367
+      "avg_placement": 4.3158
     },
     {
       "cluster_id": "394018",
       "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
       "tier": "A",
-      "avg_placement": 4.3679
+      "avg_placement": 4.3637
     },
     {
       "cluster_id": "394020",
       "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_ChoGath",
       "tier": "C",
-      "avg_placement": 4.8302
+      "avg_placement": 4.8547
     },
     {
       "cluster_id": "394047",
       "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Taric",
       "tier": "C",
-      "avg_placement": 5.0748
+      "avg_placement": 4.9556
     },
     {
       "cluster_id": "394062",
       "comp_name": "TFT16_Brawler, TFT16_Sion",
       "tier": "D",
-      "avg_placement": 5.6158
+      "avg_placement": 5.5815
     }
   ],
   "builds": [
@@ -53,8 +53,8 @@
         "斯特拉克的挑战护手",
         "泰坦的坚决"
       ],
-      "avg_placement": 3.5003,
-      "count": 3554,
+      "avg_placement": 3.1249,
+      "count": 7560,
       "priority_scores": {
         "饮血剑": 100,
         "斯特拉克的挑战护手": 85,
@@ -66,43 +66,11 @@
       "comp_name": "TFT16_Brawler, TFT16_Wukong",
       "items": [
         "饮血剑",
-        "斯特拉克的挑战护手",
-        "泰坦的坚决"
-      ],
-      "avg_placement": 3.4056,
-      "count": 5543,
-      "priority_scores": {
-        "饮血剑": 100,
-        "斯特拉克的挑战护手": 85,
-        "泰坦的坚决": 72
-      }
-    },
-    {
-      "cluster_id": "394018",
-      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
-      "items": [
-        "饮血剑",
-        "斯特拉克的挑战护手",
-        "泰坦的坚决"
-      ],
-      "avg_placement": 4.1993,
-      "count": 873,
-      "priority_scores": {
-        "饮血剑": 100,
-        "斯特拉克的挑战护手": 85,
-        "泰坦的坚决": 72
-      }
-    },
-    {
-      "cluster_id": "394047",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Taric",
-      "items": [
-        "饮血剑",
         "夜之锋刃",
         "斯特拉克的挑战护手"
       ],
-      "avg_placement": 3.5846,
-      "count": 65,
+      "avg_placement": 3.021,
+      "count": 713,
       "priority_scores": {
         "饮血剑": 100,
         "夜之锋刃": 85,
@@ -110,19 +78,51 @@
       }
     },
     {
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "items": [
+        "饮血剑",
+        "水银",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 4,
+      "count": 237,
+      "priority_scores": {
+        "饮血剑": 100,
+        "水银": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "cluster_id": "394047",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Taric",
+      "items": [
+        "饮血剑",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.9225,
+      "count": 258,
+      "priority_scores": {
+        "饮血剑": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
       "cluster_id": "394062",
       "comp_name": "TFT16_Brawler, TFT16_Sion",
       "items": [
+        "饮血剑",
         "斯特拉克的挑战护手",
-        "泰坦的坚决",
-        "正义之手"
+        "泰坦的坚决"
       ],
-      "avg_placement": 4.1563,
-      "count": 64,
+      "avg_placement": 4.7179,
+      "count": 156,
       "priority_scores": {
-        "斯特拉克的挑战护手": 100,
-        "泰坦的坚决": 85,
-        "正义之手": 72
+        "饮血剑": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
       }
     }
   ]

@@ -5,13 +5,13 @@
       "cluster_id": "394028",
       "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
       "tier": "A",
-      "avg_placement": 4.4091
+      "avg_placement": 4.3576
     },
     {
       "cluster_id": "394034",
       "comp_name": "TFT16_Augment_XinZhaoCarry",
       "tier": "B",
-      "avg_placement": 4.6723
+      "avg_placement": 4.7227
     }
   ],
   "builds": [
@@ -19,16 +19,16 @@
       "cluster_id": "394028",
       "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
       "items": [
-        "饮血剑",
-        "斯特拉克的挑战护手",
-        "泰坦的坚决"
+        "鬼索的狂暴之刃",
+        "泰坦的坚决",
+        "正义之手"
       ],
-      "avg_placement": 3.6239,
-      "count": 6108,
+      "avg_placement": 3.2222,
+      "count": 9,
       "priority_scores": {
-        "饮血剑": 100,
-        "斯特拉克的挑战护手": 85,
-        "泰坦的坚决": 72
+        "鬼索的狂暴之刃": 100,
+        "泰坦的坚决": 85,
+        "正义之手": 72
       }
     },
     {
@@ -36,15 +36,15 @@
       "comp_name": "TFT16_Augment_XinZhaoCarry",
       "items": [
         "饮血剑",
-        "斯特拉克的挑战护手",
-        "泰坦的坚决"
+        "夜之锋刃",
+        "斯特拉克的挑战护手"
       ],
-      "avg_placement": 3.5628,
-      "count": 11166,
+      "avg_placement": 3.25,
+      "count": 12,
       "priority_scores": {
         "饮血剑": 100,
-        "斯特拉克的挑战护手": 85,
-        "泰坦的坚决": 72
+        "夜之锋刃": 85,
+        "斯特拉克的挑战护手": 72
       }
     }
   ]

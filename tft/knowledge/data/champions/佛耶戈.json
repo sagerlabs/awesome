@@ -5,7 +5,7 @@
       "cluster_id": "394039",
       "comp_name": "TFT16_ShadowIsles, TFT16_Viego",
       "tier": "C",
-      "avg_placement": 5.0278
+      "avg_placement": 5.0231
     }
   ],
   "builds": [
@@ -17,8 +17,8 @@
         "夜之锋刃",
         "泰坦的坚决"
       ],
-      "avg_placement": 4.0063,
-      "count": 11903,
+      "avg_placement": 4.0433,
+      "count": 5986,
       "priority_scores": {
         "饮血剑": 100,
         "夜之锋刃": 85,

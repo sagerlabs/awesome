@@ -24,18 +24,18 @@
     {
       "name": "以绪塔尔",
       "type": "trait",
-      "score": 1.8281576655052265
+      "score": 1.8469964256889195
     },
     {
       "name": "奈德丽",
       "type": "unit",
-      "score": 3.347168989547038
+      "score": 3.3493024328375416
     }
   ],
-  "count": 19476,
-  "avg_placement": 5.7087,
-  "top4_rate": 0.2674,
-  "win_rate": 0.0841,
+  "count": 100764,
+  "avg_placement": 5.4977,
+  "top4_rate": 0.3059,
+  "win_rate": 0.0931,
   "tier": "D",
   "builds": [
     {
@@ -45,10 +45,10 @@
         "灭世者的死亡之帽",
         "正义之手"
       ],
-      "avg_placement": 5.0796,
-      "count": 854,
-      "score": 0.3459,
-      "place_change": -0.688,
+      "avg_placement": 4.7435,
+      "count": 421,
+      "score": 0.364,
+      "place_change": -0.792,
       "priority_scores": {
         "珠光护手": 100,
         "灭世者的死亡之帽": 85,
@@ -59,160 +59,160 @@
       "unit": "岩宝",
       "items": [
         "饮血剑",
-        "无尽之刃",
-        "斯特拉克的挑战护手"
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
       ],
-      "avg_placement": 4.6963,
-      "count": 1722,
-      "score": 0.3011,
-      "place_change": -1.072,
+      "avg_placement": 4.1561,
+      "count": 807,
+      "score": 0.34,
+      "place_change": -1.379,
       "priority_scores": {
         "饮血剑": 100,
-        "无尽之刃": 85,
-        "斯特拉克的挑战护手": 72
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
       }
     },
     {
       "unit": "斯卡纳",
       "items": [
+        "巨龙之爪",
         "石像鬼石板甲",
-        "日炎斗篷",
-        "振奋盔甲"
+        "日炎斗篷"
       ],
-      "avg_placement": 5.2613,
-      "count": 1615,
-      "score": 0.2463,
-      "place_change": -0.507,
+      "avg_placement": 4.785,
+      "count": 507,
+      "score": 0.2745,
+      "place_change": -0.75,
       "priority_scores": {
-        "石像鬼石板甲": 100,
-        "日炎斗篷": 85,
-        "振奋盔甲": 72
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
       }
     },
     {
       "unit": "妮蔻",
       "items": [
+        "巨龙之爪",
         "石像鬼石板甲",
-        "日炎斗篷",
-        "振奋盔甲"
+        "日炎斗篷"
       ],
-      "avg_placement": 5.1784,
-      "count": 835,
-      "score": 0.121,
-      "place_change": -0.59,
+      "avg_placement": 4.7216,
+      "count": 255,
+      "score": 0.1337,
+      "place_change": -0.814,
       "priority_scores": {
-        "石像鬼石板甲": 100,
-        "日炎斗篷": 85,
-        "振奋盔甲": 72
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
       }
     }
   ],
   "build_items": {
     "珠光护手": {
-      "itemNames": "珠光护手",
-      "count": 76555,
-      "avg": 5.534,
-      "pcnt": 0.83357
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 44909,
+      "avg": 5.295,
+      "pcnt": 0.863
     },
     "石像鬼石板甲": {
-      "itemNames": "石像鬼石板甲",
-      "count": 56199,
-      "avg": 5.5802,
-      "pcnt": 0.61192
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 32739,
+      "avg": 5.3288,
+      "pcnt": 0.62914
     },
     "饮血剑": {
-      "itemNames": "饮血剑",
-      "count": 52427,
-      "avg": 5.5084,
-      "pcnt": 0.57085
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 30251,
+      "avg": 5.2708,
+      "pcnt": 0.58133
     },
     "日炎斗篷": {
-      "itemNames": "日炎斗篷",
-      "count": 39891,
-      "avg": 5.476,
-      "pcnt": 0.43435
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 22750,
+      "avg": 5.2427,
+      "pcnt": 0.43718
     },
     "正义之手": {
-      "itemNames": "正义之手",
-      "count": 39822,
-      "avg": 5.3721,
-      "pcnt": 0.4336
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 22595,
+      "avg": 5.122,
+      "pcnt": 0.4342
     },
-    "振奋盔甲": {
-      "itemNames": "振奋盔甲",
-      "count": 32725,
-      "avg": 5.3656,
-      "pcnt": 0.35633
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 16827,
+      "avg": 5.2462,
+      "pcnt": 0.32336
     },
     "斯特拉克的挑战护手": {
-      "itemNames": "斯特拉克的挑战护手",
-      "count": 27450,
-      "avg": 5.3816,
-      "pcnt": 0.29889
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 15235,
+      "avg": 5.1004,
+      "pcnt": 0.29277
     },
-    "无尽之刃": {
-      "itemNames": "无尽之刃",
-      "count": 27186,
-      "avg": 5.5374,
-      "pcnt": 0.29601
+    "巨龙之爪": {
+      "itemNames": "TFT_Item_DragonsClaw",
+      "count": 14703,
+      "avg": 5.0906,
+      "pcnt": 0.28254
     },
     "灭世者的死亡之帽": {
-      "itemNames": "灭世者的死亡之帽",
-      "count": 17875,
-      "avg": 5.2228,
-      "pcnt": 0.19463
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 10181,
+      "avg": 5.0038,
+      "pcnt": 0.19565
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 16219,
-      "avg": 5.815,
-      "pick_rate": 0.016294
+      "day": "2026-04-07",
+      "count": 13270,
+      "avg": 5.5488,
+      "pick_rate": 0.017217
     },
     {
-      "day": "2026-03-18",
-      "count": 31831,
-      "avg": 5.7348,
-      "pick_rate": 0.017566
+      "day": "2026-04-08",
+      "count": 18875,
+      "avg": 5.5292,
+      "pick_rate": 0.017266
     },
     {
-      "day": "2026-03-19",
-      "count": 31281,
-      "avg": 5.7256,
-      "pick_rate": 0.017098
+      "day": "2026-04-09",
+      "count": 18840,
+      "avg": 5.5686,
+      "pick_rate": 0.017491
     },
     {
-      "day": "2026-03-20",
-      "count": 31802,
-      "avg": 5.7446,
-      "pick_rate": 0.017059
+      "day": "2026-04-10",
+      "count": 18548,
+      "avg": 5.5721,
+      "pick_rate": 0.017585
     },
     {
-      "day": "2026-03-21",
-      "count": 32212,
-      "avg": 5.7542,
-      "pick_rate": 0.016534
+      "day": "2026-04-11",
+      "count": 18865,
+      "avg": 5.5513,
+      "pick_rate": 0.01755
     },
     {
-      "day": "2026-03-22",
-      "count": 32172,
-      "avg": 5.7564,
-      "pick_rate": 0.016345
+      "day": "2026-04-12",
+      "count": 18822,
+      "avg": 5.532,
+      "pick_rate": 0.017574
     },
     {
-      "day": "2026-03-23",
-      "count": 30463,
-      "avg": 5.7882,
-      "pick_rate": 0.016624
+      "day": "2026-04-13",
+      "count": 16579,
+      "avg": 5.534,
+      "pick_rate": 0.017804
     },
     {
-      "day": "2026-03-24",
-      "count": 10624,
-      "avg": 5.754,
-      "pick_rate": 0.016958
+      "day": "2026-04-14",
+      "count": 4704,
+      "avg": 5.524,
+      "pick_rate": 0.018588
     }
   ],
   "levelling": "Standard",
-  "difficulty": -0.045
+  "difficulty": -0.05
 }

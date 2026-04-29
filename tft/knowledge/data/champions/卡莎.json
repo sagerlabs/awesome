@@ -5,25 +5,25 @@
       "cluster_id": "394031",
       "comp_name": "TFT16_Demacia, TFT16_Vayne",
       "tier": "A",
-      "avg_placement": 4.2635
+      "avg_placement": 4.3035
     },
     {
       "cluster_id": "394018",
       "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
       "tier": "A",
-      "avg_placement": 4.3679
+      "avg_placement": 4.3637
     },
     {
       "cluster_id": "394042",
       "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Juggernaut",
-      "tier": "C",
-      "avg_placement": 4.8065
+      "tier": "B",
+      "avg_placement": 4.67
     },
     {
       "cluster_id": "394020",
       "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_ChoGath",
       "tier": "C",
-      "avg_placement": 4.8302
+      "avg_placement": 4.8547
     }
   ],
   "builds": [
@@ -35,8 +35,8 @@
         "最后的轻语",
         "朔极之矛"
       ],
-      "avg_placement": 3.4445,
-      "count": 87533,
+      "avg_placement": 3.6413,
+      "count": 13177,
       "priority_scores": {
         "无尽之刃": 100,
         "最后的轻语": 85,
@@ -51,8 +51,8 @@
         "珠光护手",
         "虚空之杖"
       ],
-      "avg_placement": 4.2842,
-      "count": 6432,
+      "avg_placement": 4.1761,
+      "count": 2947,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
         "珠光护手": 85,
@@ -63,16 +63,16 @@
       "cluster_id": "394042",
       "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Juggernaut",
       "items": [
-        "无尽之刃",
-        "最后的轻语",
-        "朔极之矛"
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "珠光护手"
       ],
-      "avg_placement": 4.4611,
-      "count": 822,
+      "avg_placement": 4.4091,
+      "count": 787,
       "priority_scores": {
-        "无尽之刃": 100,
-        "最后的轻语": 85,
-        "朔极之矛": 72
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "珠光护手": 72
       }
     },
     {
@@ -83,8 +83,8 @@
         "珠光护手",
         "虚空之杖"
       ],
-      "avg_placement": 4.3954,
-      "count": 21500,
+      "avg_placement": 4.3653,
+      "count": 11815,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
         "珠光护手": 85,

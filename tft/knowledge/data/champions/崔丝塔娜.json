@@ -5,13 +5,13 @@
       "cluster_id": "394014",
       "comp_name": "TFT16_Augment_RumbleCarry",
       "tier": "S",
-      "avg_placement": 3.9397
+      "avg_placement": 3.8451
     },
     {
       "cluster_id": "394060",
       "comp_name": "TFT16_Yordle, TFT16_Teemo",
-      "tier": "C",
-      "avg_placement": 4.8838
+      "tier": "B",
+      "avg_placement": 4.7205
     }
   ],
   "builds": [
@@ -20,15 +20,15 @@
       "comp_name": "TFT16_Yordle, TFT16_Teemo",
       "items": [
         "无尽之刃",
-        "巨人杀手",
-        "朔极之矛"
+        "最后的轻语",
+        "巨人杀手"
       ],
-      "avg_placement": 4.3095,
-      "count": 1105,
+      "avg_placement": 3.9182,
+      "count": 269,
       "priority_scores": {
         "无尽之刃": 100,
-        "巨人杀手": 85,
-        "朔极之矛": 72
+        "最后的轻语": 85,
+        "巨人杀手": 72
       }
     }
   ]

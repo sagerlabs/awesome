@@ -25,6 +25,9 @@ import (
 
 func skipIfNoLLM(t *testing.T) {
 	t.Helper()
+	if os.Getenv("RUN_LLM_TESTS") != "1" {
+		t.Skip("未设置 RUN_LLM_TESTS=1，跳过外部 LLM 联调测试")
+	}
 	if os.Getenv("OPENAI_API_KEY") == "" && os.Getenv("ARK_API_KEY") == "" {
 		t.Skip("未设置 OPENAI_API_KEY / ARK_API_KEY，跳过")
 	}

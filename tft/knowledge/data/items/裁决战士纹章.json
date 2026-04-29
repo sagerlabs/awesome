@@ -1,0 +1,21 @@
+{
+  "name": "裁决战士纹章",
+  "priority_list": [
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3658,
+      "carry": "瑟提",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "comp_tier": "A",
+      "comp_avg": 4.4885,
+      "carry": "安蓓萨",
+      "priority_score": 100
+    }
+  ]
+}

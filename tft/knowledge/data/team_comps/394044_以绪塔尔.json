@@ -23,28 +23,43 @@
     "法师 (1)",
     "巨神峰 (1)"
   ],
-  "stars": [
-    "厄斐琉斯"
-  ],
+  "stars": [],
   "name_string": "TFT16_Explorer, TFT16_Skarner",
   "display_names": [
     {
       "name": "以绪塔尔",
       "type": "trait",
-      "score": 0.9561622974001958
+      "score": 0.9678592685668937
     },
     {
       "name": "斯卡纳",
       "type": "unit",
-      "score": 3.9673120852822805
+      "score": 3.994874677600688
     }
   ],
-  "count": 4475,
-  "avg_placement": 4.5267,
-  "top4_rate": 0.4744,
-  "win_rate": 0.2107,
-  "tier": "B",
+  "count": 19273,
+  "avg_placement": 4.317,
+  "top4_rate": 0.5143,
+  "win_rate": 0.2201,
+  "tier": "A",
   "builds": [
+    {
+      "unit": "斯卡纳",
+      "items": [
+        "棘刺背心",
+        "巨龙之爪",
+        "坚定之心"
+      ],
+      "avg_placement": 3.3816,
+      "count": 76,
+      "score": 0.5077,
+      "place_change": -0.97,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
+        "坚定之心": 72
+      }
+    },
     {
       "unit": "岩宝",
       "items": [
@@ -52,10 +67,10 @@
         "无尽之刃",
         "斯特拉克的挑战护手"
       ],
-      "avg_placement": 3.6864,
-      "count": 995,
-      "score": 0.4277,
-      "place_change": -0.948,
+      "avg_placement": 3.4016,
+      "count": 508,
+      "score": 0.4299,
+      "place_change": -0.95,
       "priority_scores": {
         "饮血剑": 100,
         "无尽之刃": 85,
@@ -63,20 +78,19 @@
       }
     },
     {
-      "unit": "斯卡纳",
+      "unit": "萨勒芬妮",
       "items": [
-        "巨龙之爪",
-        "日炎斗篷",
-        "薄暮法袍"
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
       ],
-      "avg_placement": 3.8116,
-      "count": 69,
-      "score": 0.3941,
-      "place_change": -0.823,
+      "avg_placement": 4.0319,
+      "count": 251,
+      "score": 0.186,
+      "place_change": -0.319,
       "priority_scores": {
-        "巨龙之爪": 100,
-        "日炎斗篷": 85,
-        "薄暮法袍": 72
+        "珠光护手": 100,
+        "纳什之牙": 72
       }
     },
     {
@@ -86,152 +100,123 @@
         "纳什之牙",
         "朔极之矛"
       ],
-      "avg_placement": 3.6029,
-      "count": 491,
-      "score": 0.1866,
-      "place_change": -1.032,
+      "avg_placement": 3.4327,
+      "count": 312,
+      "score": 0.1706,
+      "place_change": -0.919,
       "priority_scores": {
         "珠光护手": 100,
         "纳什之牙": 85,
         "朔极之矛": 72
       }
-    },
-    {
-      "unit": "萨勒芬妮",
-      "items": [
-        "灭世者的死亡之帽",
-        "朔极之矛",
-        "虚空之杖"
-      ],
-      "avg_placement": 4.1765,
-      "count": 85,
-      "score": 0.1359,
-      "place_change": -0.458,
-      "priority_scores": {
-        "灭世者的死亡之帽": 100,
-        "朔极之矛": 85,
-        "虚空之杖": 72
-      }
     }
   ],
   "build_items": {
     "珠光护手": {
-      "itemNames": "珠光护手",
-      "count": 22996,
-      "avg": 4.4362,
-      "pcnt": 0.83382
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 13601,
+      "avg": 4.1437,
+      "pcnt": 0.89948
     },
     "朔极之矛": {
-      "itemNames": "朔极之矛",
-      "count": 15804,
-      "avg": 4.4252,
-      "pcnt": 0.57304
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 8983,
+      "avg": 4.1658,
+      "pcnt": 0.59407
     },
     "纳什之牙": {
-      "itemNames": "纳什之牙",
-      "count": 13821,
-      "avg": 4.3681,
-      "pcnt": 0.50114
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 8788,
+      "avg": 4.1398,
+      "pcnt": 0.58118
     },
     "饮血剑": {
-      "itemNames": "饮血剑",
-      "count": 13278,
-      "avg": 4.1795,
-      "pcnt": 0.48145
-    },
-    "日炎斗篷": {
-      "itemNames": "日炎斗篷",
-      "count": 12587,
-      "avg": 4.4262,
-      "pcnt": 0.4564
-    },
-    "虚空之杖": {
-      "itemNames": "虚空之杖",
-      "count": 11884,
-      "avg": 4.3515,
-      "pcnt": 0.43091
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 7456,
+      "avg": 3.9266,
+      "pcnt": 0.49309
     },
     "斯特拉克的挑战护手": {
-      "itemNames": "斯特拉克的挑战护手",
-      "count": 10123,
-      "avg": 4.1689,
-      "pcnt": 0.36705
-    },
-    "无尽之刃": {
-      "itemNames": "无尽之刃",
-      "count": 9354,
-      "avg": 4.2954,
-      "pcnt": 0.33917
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 5386,
+      "avg": 3.8849,
+      "pcnt": 0.35619
     },
     "巨龙之爪": {
-      "itemNames": "巨龙之爪",
-      "count": 8925,
-      "avg": 4.3389,
-      "pcnt": 0.32362
+      "itemNames": "TFT_Item_DragonsClaw",
+      "count": 5240,
+      "avg": 4.091,
+      "pcnt": 0.34654
     },
-    "灭世者的死亡之帽": {
-      "itemNames": "灭世者的死亡之帽",
-      "count": 4955,
-      "avg": 4.0365,
-      "pcnt": 0.17967
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 4972,
+      "avg": 3.9998,
+      "pcnt": 0.32881
     },
-    "薄暮法袍": {
-      "itemNames": "薄暮法袍",
-      "count": 3662,
-      "avg": 3.852,
-      "pcnt": 0.13278
+    "棘刺背心": {
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 4164,
+      "avg": 4.0812,
+      "pcnt": 0.27538
+    },
+    "坚定之心": {
+      "itemNames": "TFT_Item_NightHarvester",
+      "count": 3271,
+      "avg": 4.0232,
+      "pcnt": 0.21632
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 5030,
-      "avg": 4.7083,
-      "pick_rate": 0.005053
+      "day": "2026-04-07",
+      "count": 3837,
+      "avg": 4.355,
+      "pick_rate": 0.004978
     },
     {
-      "day": "2026-03-18",
-      "count": 9676,
-      "avg": 4.6088,
-      "pick_rate": 0.00534
+      "day": "2026-04-08",
+      "count": 5866,
+      "avg": 4.3014,
+      "pick_rate": 0.005366
     },
     {
-      "day": "2026-03-19",
-      "count": 9550,
-      "avg": 4.5703,
-      "pick_rate": 0.00522
+      "day": "2026-04-09",
+      "count": 5816,
+      "avg": 4.3738,
+      "pick_rate": 0.005399
     },
     {
-      "day": "2026-03-20",
-      "count": 9680,
-      "avg": 4.6219,
-      "pick_rate": 0.005192
+      "day": "2026-04-10",
+      "count": 5489,
+      "avg": 4.4405,
+      "pick_rate": 0.005204
     },
     {
-      "day": "2026-03-21",
-      "count": 9729,
-      "avg": 4.6581,
-      "pick_rate": 0.004994
+      "day": "2026-04-11",
+      "count": 5458,
+      "avg": 4.3772,
+      "pick_rate": 0.005077
     },
     {
-      "day": "2026-03-22",
-      "count": 9489,
-      "avg": 4.6436,
-      "pick_rate": 0.004821
+      "day": "2026-04-12",
+      "count": 5414,
+      "avg": 4.3639,
+      "pick_rate": 0.005055
     },
     {
-      "day": "2026-03-23",
-      "count": 9249,
-      "avg": 4.6328,
-      "pick_rate": 0.005047
+      "day": "2026-04-13",
+      "count": 4903,
+      "avg": 4.2892,
+      "pick_rate": 0.005265
     },
     {
-      "day": "2026-03-24",
-      "count": 3282,
-      "avg": 4.5957,
-      "pick_rate": 0.005239
+      "day": "2026-04-14",
+      "count": 1399,
+      "avg": 4.331,
+      "pick_rate": 0.005528
     }
   ],
-  "levelling": "Fast 8",
-  "difficulty": -0.012
+  "levelling": "Standard",
+  "difficulty": -0.028
 }

@@ -2,58 +2,50 @@
   "name": "夜之锋刃",
   "priority_list": [
     {
-      "cluster_id": "394011",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
       "comp_tier": "S",
-      "comp_avg": 3.9968,
-      "carry": "锤石",
+      "comp_avg": 3.6638,
+      "carry": "塞拉斯",
       "priority_score": 100
     },
     {
       "cluster_id": "394003",
       "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
       "comp_tier": "S",
-      "comp_avg": 4.0274,
+      "comp_avg": 3.94,
       "carry": "塞拉斯",
       "priority_score": 100
     },
     {
-      "cluster_id": "394027",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
       "comp_tier": "S",
-      "comp_avg": 4.1303,
-      "carry": "塞拉斯",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394015",
-      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
-      "comp_tier": "S",
-      "comp_avg": 4.2398,
-      "carry": "塞拉斯",
+      "comp_avg": 4.0327,
+      "carry": "锤石",
       "priority_score": 100
     },
     {
       "cluster_id": "394005",
       "comp_name": "TFT16_Noxus, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.2796,
+      "comp_tier": "S",
+      "comp_avg": 4.0712,
       "carry": "塞拉斯",
       "priority_score": 100
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1427,
+      "carry": "沃利贝尔",
+      "priority_score": 85
     },
     {
       "cluster_id": "394033",
       "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
       "comp_tier": "S",
-      "comp_avg": 4.2031,
-      "carry": "安蓓萨",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394040",
-      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
-      "comp_tier": "A",
-      "comp_avg": 4.4798,
+      "comp_avg": 4.1585,
       "carry": "安蓓萨",
       "priority_score": 85
     }

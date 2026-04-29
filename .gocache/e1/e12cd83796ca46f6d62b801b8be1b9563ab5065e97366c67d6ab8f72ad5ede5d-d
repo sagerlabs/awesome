@@ -1,0 +1,3 @@
+./contextmanagement.pb.go
+./enum.go
+./oneof.go

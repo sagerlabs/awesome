@@ -4,13 +4,21 @@ package knowledge
 // 接口层（零依赖！）
 // =============================================================================
 
+// Request 通用传输请求（字节流）
+// 用于：contracts.*Request → JSON → Request
+type Request []byte
+
+// Response 通用传输响应（字节流）
+// 用于：Response → JSON → contracts.*Response
+type Response []byte
+
 // QueryRequest 查询请求（字节流）
-// 用于：agent.Context → JSON → QueryRequest
-type QueryRequest []byte
+// 用于：contracts.QueryNLURequest → JSON → QueryRequest
+type QueryRequest = Request
 
 // QueryResponse 查询响应（字节流）
-// 用于：QueryResponse → JSON → agent.NluEnrichedContext
-type QueryResponse []byte
+// 用于：QueryResponse → JSON → contracts.QueryNLUResponse
+type QueryResponse = Response
 
 // TFTKnowledgeTool TFT知识库Tool接口
 // 设计目标：作为独立tool/skill使用，接口清晰，可分割部署
@@ -21,48 +29,50 @@ type TFTKnowledgeTool interface {
 	// =========================================================================
 
 	// QueryNLU NLU数据查询：输入字节流，返回字节流
-	// 输入格式：JSON序列化的 agent.Context
-	// 输出格式：JSON序列化的 agent.NluEnrichedContext
+	// 输入格式：JSON序列化的 contracts.QueryNLURequest
+	// 输出格式：JSON序列化的 contracts.QueryNLUResponse
 	QueryNLU(req QueryRequest) (QueryResponse, error)
 
 	// =========================================================================
 	// 阵容查询
 	// =========================================================================
 
-	// GetCompByID 通过ClusterID查询阵容（返回JSON字节流）
-	GetCompByID(clusterID string) ([]byte, error)
+	// GetCompByID 通过ClusterID查询阵容
+	// 输入格式：JSON序列化的 contracts.GetCompByIDRequest
+	// 输出格式：JSON序列化的 contracts.GetCompByIDResponse
+	GetCompByID(req Request) (Response, error)
 
-	// GetMetaCompByID 通过ClusterID查询Meta阵容（返回JSON字节流）
-	GetMetaCompByID(clusterID string) ([]byte, error)
+	// GetMetaCompByID 通过ClusterID查询Meta阵容
+	GetMetaCompByID(req Request) (Response, error)
 
-	// GetMetaCompByName 通过名称查询Meta阵容（返回JSON字节流）
-	GetMetaCompByName(name string) ([]byte, error)
+	// GetMetaCompByName 通过名称查询Meta阵容
+	GetMetaCompByName(req Request) (Response, error)
 
-	// SearchMetaComps 搜索Meta阵容（返回JSON字节流）
-	SearchMetaComps(query string) ([]byte, error)
+	// SearchMetaComps 搜索Meta阵容
+	SearchMetaComps(req Request) (Response, error)
 
-	// GetAllMetaComps 获取所有Meta阵容（返回JSON字节流）
-	GetAllMetaComps() ([]byte, error)
+	// GetAllMetaComps 获取所有Meta阵容
+	GetAllMetaComps(req Request) (Response, error)
 
 	// =========================================================================
 	// 英雄查询
 	// =========================================================================
 
-	// GetMetaChampionByName 通过名称查询Meta英雄（返回JSON字节流）
-	GetMetaChampionByName(name string) ([]byte, error)
+	// GetMetaChampionByName 通过名称查询Meta英雄
+	GetMetaChampionByName(req Request) (Response, error)
 
-	// GetAllMetaChampions 获取所有Meta英雄（返回JSON字节流）
-	GetAllMetaChampions() ([]byte, error)
+	// GetAllMetaChampions 获取所有Meta英雄
+	GetAllMetaChampions(req Request) (Response, error)
 
 	// =========================================================================
 	// 装备查询
 	// =========================================================================
 
-	// GetMetaItemByName 通过名称查询Meta装备（返回JSON字节流）
-	GetMetaItemByName(name string) ([]byte, error)
+	// GetMetaItemByName 通过名称查询Meta装备
+	GetMetaItemByName(req Request) (Response, error)
 
-	// GetAllMetaItems 获取所有Meta装备（返回JSON字节流）
-	GetAllMetaItems() ([]byte, error)
+	// GetAllMetaItems 获取所有Meta装备
+	GetAllMetaItems(req Request) (Response, error)
 
 	// =========================================================================
 	// 名称解析和转换
@@ -101,7 +111,7 @@ type CompSearchQuery struct {
 	Keywords string `json:"keywords"`
 
 	// 过滤条件
-	Tiers     []string `json:"tiers,omitempty"`     // 只返回指定Tier的阵容
+	Tiers       []string `json:"tiers,omitempty"`         // 只返回指定Tier的阵容
 	MinTop4Rate float64  `json:"min_top4_rate,omitempty"` // 最低前4率
 	MaxAvgPlace float64  `json:"max_avg_place,omitempty"` // 最高平均名次
 
@@ -112,15 +122,15 @@ type CompSearchQuery struct {
 
 // ChampionQuery 英雄查询参数
 type ChampionQuery struct {
-	Name     string   `json:"name"`     // 英雄名称
+	Name     string   `json:"name"`               // 英雄名称
 	Clusters []string `json:"clusters,omitempty"` // 限定在某些阵容中查询
 }
 
 // ItemQuery 装备查询参数
 type ItemQuery struct {
-	Name       string   `json:"name"`       // 装备名称
-	MinScore   int      `json:"min_score,omitempty"`  // 最低优先级分数
-	Clusters   []string `json:"clusters,omitempty"`   // 限定在某些阵容中查询
+	Name     string   `json:"name"`                // 装备名称
+	MinScore int      `json:"min_score,omitempty"` // 最低优先级分数
+	Clusters []string `json:"clusters,omitempty"`  // 限定在某些阵容中查询
 }
 
 // =============================================================================
@@ -137,8 +147,8 @@ type ToolConfig struct {
 	EnableMeta bool `json:"enable_meta"`
 
 	// 日志配置
-	EnableLog  bool   `json:"enable_log"`
-	LogLevel   string `json:"log_level"`
+	EnableLog bool   `json:"enable_log"`
+	LogLevel  string `json:"log_level"`
 }
 
 // DefaultToolConfig 默认配置

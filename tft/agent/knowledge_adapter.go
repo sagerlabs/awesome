@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/sagerlabs/awesome/tft/data"
 	"github.com/sagerlabs/awesome/tft/knowledge"
+	"github.com/sagerlabs/awesome/tft/knowledge/contracts"
 )
 
 // KnowledgeAdapter knowledge的适配器
@@ -29,8 +29,7 @@ func NewKnowledgeAdapter(tool knowledge.TFTKnowledgeTool) *KnowledgeAdapter {
 // 输入：agent.Context（类型安全）
 // 输出：*agent.NluEnrichedContext（类型安全）
 func (a *KnowledgeAdapter) QueryNLU(ctx Context) (*NluEnrichedContext, error) {
-	// 1. Marshal: agent.Context → []byte
-	reqBytes, err := json.Marshal(ctx)
+	reqBytes, err := marshalKnowledgeRequest(ctx)
 	if err != nil {
 		return nil, fmt.Errorf("marshal context: %w", err)
 	}
@@ -41,8 +40,8 @@ func (a *KnowledgeAdapter) QueryNLU(ctx Context) (*NluEnrichedContext, error) {
 		return nil, fmt.Errorf("query knowledge: %w", err)
 	}
 
-	// 3. Unmarshal: []byte → agent.NluEnrichedContext
-	var result NluEnrichedContext
+	// 3. Unmarshal: []byte → shared contract response
+	var result contracts.QueryNLUResponse
 	if err := json.Unmarshal([]byte(respBytes), &result); err != nil {
 		return nil, fmt.Errorf("unmarshal result: %w", err)
 	}
@@ -55,138 +54,191 @@ func (a *KnowledgeAdapter) QueryNLU(ctx Context) (*NluEnrichedContext, error) {
 // =============================================================================
 
 // GetCompByID 通过ClusterID查询阵容（类型安全）
-func (a *KnowledgeAdapter) GetCompByID(clusterID string) (*data.Comp, error) {
-	respBytes, err := a.tool.GetCompByID(clusterID)
+func (a *KnowledgeAdapter) GetCompByID(clusterID string) (*contracts.CompSummary, error) {
+	reqBytes, err := marshalKnowledgeRequest(contracts.GetCompByIDRequest{ClusterID: clusterID})
+	if err != nil {
+		return nil, fmt.Errorf("marshal get comp request: %w", err)
+	}
+
+	respBytes, err := a.tool.GetCompByID(reqBytes)
 	if err != nil {
 		return nil, err
 	}
 
-	var comp data.Comp
-	if err := json.Unmarshal(respBytes, &comp); err != nil {
-		return nil, fmt.Errorf("unmarshal comp: %w", err)
+	var resp contracts.GetCompByIDResponse
+	if err := json.Unmarshal(respBytes, &resp); err != nil {
+		return nil, fmt.Errorf("unmarshal get comp response: %w", err)
 	}
 
-	return &comp, nil
+	return resp.Comp, nil
 }
 
 // GetMetaCompByID 通过ClusterID查询Meta阵容（类型安全）
 func (a *KnowledgeAdapter) GetMetaCompByID(clusterID string) (*MetaComp, error) {
-	respBytes, err := a.tool.GetMetaCompByID(clusterID)
+	reqBytes, err := marshalKnowledgeRequest(contracts.GetMetaCompByIDRequest{ClusterID: clusterID})
+	if err != nil {
+		return nil, fmt.Errorf("marshal get meta comp request: %w", err)
+	}
+
+	respBytes, err := a.tool.GetMetaCompByID(reqBytes)
 	if err != nil {
 		return nil, err
 	}
 
-	var comp MetaComp
-	if err := json.Unmarshal(respBytes, &comp); err != nil {
-		return nil, fmt.Errorf("unmarshal meta comp: %w", err)
+	var resp contracts.GetMetaCompByIDResponse
+	if err := json.Unmarshal(respBytes, &resp); err != nil {
+		return nil, fmt.Errorf("unmarshal get meta comp response: %w", err)
 	}
 
-	return &comp, nil
+	return resp.Comp, nil
 }
 
 // GetMetaCompByName 通过名称查询Meta阵容（类型安全）
 func (a *KnowledgeAdapter) GetMetaCompByName(name string) (*MetaComp, error) {
-	respBytes, err := a.tool.GetMetaCompByName(name)
+	reqBytes, err := marshalKnowledgeRequest(contracts.GetMetaCompByNameRequest{Name: name})
+	if err != nil {
+		return nil, fmt.Errorf("marshal get meta comp by name request: %w", err)
+	}
+
+	respBytes, err := a.tool.GetMetaCompByName(reqBytes)
 	if err != nil {
 		return nil, err
 	}
 
-	var comp MetaComp
-	if err := json.Unmarshal(respBytes, &comp); err != nil {
-		return nil, fmt.Errorf("unmarshal meta comp: %w", err)
+	var resp contracts.GetMetaCompByNameResponse
+	if err := json.Unmarshal(respBytes, &resp); err != nil {
+		return nil, fmt.Errorf("unmarshal get meta comp by name response: %w", err)
 	}
 
-	return &comp, nil
+	return resp.Comp, nil
 }
 
 // SearchMetaComps 搜索Meta阵容（类型安全）
 func (a *KnowledgeAdapter) SearchMetaComps(query string) ([]*MetaComp, error) {
-	respBytes, err := a.tool.SearchMetaComps(query)
+	reqBytes, err := marshalKnowledgeRequest(contracts.SearchMetaCompsRequest{Query: query})
+	if err != nil {
+		return nil, fmt.Errorf("marshal search meta comps request: %w", err)
+	}
+
+	respBytes, err := a.tool.SearchMetaComps(reqBytes)
 	if err != nil {
 		return nil, err
 	}
 
-	var comps []*MetaComp
-	if err := json.Unmarshal(respBytes, &comps); err != nil {
-		return nil, fmt.Errorf("unmarshal meta comps: %w", err)
+	var resp contracts.SearchMetaCompsResponse
+	if err := json.Unmarshal(respBytes, &resp); err != nil {
+		return nil, fmt.Errorf("unmarshal search meta comps response: %w", err)
 	}
 
-	return comps, nil
+	return resp.Comps, nil
 }
 
 // GetAllMetaComps 获取所有Meta阵容（类型安全）
 func (a *KnowledgeAdapter) GetAllMetaComps() ([]*MetaComp, error) {
-	respBytes, err := a.tool.GetAllMetaComps()
+	reqBytes, err := marshalKnowledgeRequest(contracts.GetAllMetaCompsRequest{})
+	if err != nil {
+		return nil, fmt.Errorf("marshal get all meta comps request: %w", err)
+	}
+
+	respBytes, err := a.tool.GetAllMetaComps(reqBytes)
 	if err != nil {
 		return nil, err
 	}
 
-	var comps []*MetaComp
-	if err := json.Unmarshal(respBytes, &comps); err != nil {
-		return nil, fmt.Errorf("unmarshal meta comps: %w", err)
+	var resp contracts.GetAllMetaCompsResponse
+	if err := json.Unmarshal(respBytes, &resp); err != nil {
+		return nil, fmt.Errorf("unmarshal get all meta comps response: %w", err)
 	}
 
-	return comps, nil
+	return resp.Comps, nil
 }
 
 // GetMetaChampionByName 通过名称查询Meta英雄（类型安全）
 func (a *KnowledgeAdapter) GetMetaChampionByName(name string) (*MetaChampion, error) {
-	respBytes, err := a.tool.GetMetaChampionByName(name)
+	reqBytes, err := marshalKnowledgeRequest(contracts.GetMetaChampionByNameRequest{Name: name})
+	if err != nil {
+		return nil, fmt.Errorf("marshal get meta champion request: %w", err)
+	}
+
+	respBytes, err := a.tool.GetMetaChampionByName(reqBytes)
 	if err != nil {
 		return nil, err
 	}
 
-	var champ MetaChampion
-	if err := json.Unmarshal(respBytes, &champ); err != nil {
-		return nil, fmt.Errorf("unmarshal meta champion: %w", err)
+	var resp contracts.GetMetaChampionByNameResponse
+	if err := json.Unmarshal(respBytes, &resp); err != nil {
+		return nil, fmt.Errorf("unmarshal get meta champion response: %w", err)
 	}
 
-	return &champ, nil
+	return resp.Champion, nil
 }
 
 // GetAllMetaChampions 获取所有Meta英雄（类型安全）
 func (a *KnowledgeAdapter) GetAllMetaChampions() ([]*MetaChampion, error) {
-	respBytes, err := a.tool.GetAllMetaChampions()
+	reqBytes, err := marshalKnowledgeRequest(contracts.GetAllMetaChampionsRequest{})
+	if err != nil {
+		return nil, fmt.Errorf("marshal get all meta champions request: %w", err)
+	}
+
+	respBytes, err := a.tool.GetAllMetaChampions(reqBytes)
 	if err != nil {
 		return nil, err
 	}
 
-	var champs []*MetaChampion
-	if err := json.Unmarshal(respBytes, &champs); err != nil {
-		return nil, fmt.Errorf("unmarshal meta champions: %w", err)
+	var resp contracts.GetAllMetaChampionsResponse
+	if err := json.Unmarshal(respBytes, &resp); err != nil {
+		return nil, fmt.Errorf("unmarshal get all meta champions response: %w", err)
 	}
 
-	return champs, nil
+	return resp.Champions, nil
 }
 
 // GetMetaItemByName 通过名称查询Meta装备（类型安全）
 func (a *KnowledgeAdapter) GetMetaItemByName(name string) (*MetaItem, error) {
-	respBytes, err := a.tool.GetMetaItemByName(name)
+	reqBytes, err := marshalKnowledgeRequest(contracts.GetMetaItemByNameRequest{Name: name})
+	if err != nil {
+		return nil, fmt.Errorf("marshal get meta item request: %w", err)
+	}
+
+	respBytes, err := a.tool.GetMetaItemByName(reqBytes)
 	if err != nil {
 		return nil, err
 	}
 
-	var item MetaItem
-	if err := json.Unmarshal(respBytes, &item); err != nil {
-		return nil, fmt.Errorf("unmarshal meta item: %w", err)
+	var resp contracts.GetMetaItemByNameResponse
+	if err := json.Unmarshal(respBytes, &resp); err != nil {
+		return nil, fmt.Errorf("unmarshal get meta item response: %w", err)
 	}
 
-	return &item, nil
+	return resp.Item, nil
 }
 
 // GetAllMetaItems 获取所有Meta装备（类型安全）
 func (a *KnowledgeAdapter) GetAllMetaItems() ([]*MetaItem, error) {
-	respBytes, err := a.tool.GetAllMetaItems()
+	reqBytes, err := marshalKnowledgeRequest(contracts.GetAllMetaItemsRequest{})
+	if err != nil {
+		return nil, fmt.Errorf("marshal get all meta items request: %w", err)
+	}
+
+	respBytes, err := a.tool.GetAllMetaItems(reqBytes)
 	if err != nil {
 		return nil, err
 	}
 
-	var items []*MetaItem
-	if err := json.Unmarshal(respBytes, &items); err != nil {
-		return nil, fmt.Errorf("unmarshal meta items: %w", err)
+	var resp contracts.GetAllMetaItemsResponse
+	if err := json.Unmarshal(respBytes, &resp); err != nil {
+		return nil, fmt.Errorf("unmarshal get all meta items response: %w", err)
 	}
 
-	return items, nil
+	return resp.Items, nil
+}
+
+func marshalKnowledgeRequest(req any) (knowledge.Request, error) {
+	reqBytes, err := json.Marshal(req)
+	if err != nil {
+		return nil, err
+	}
+	return knowledge.Request(reqBytes), nil
 }
 
 // =============================================================================

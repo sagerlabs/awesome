@@ -5,49 +5,49 @@
       "cluster_id": "394026",
       "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
       "tier": "S",
-      "avg_placement": 4.1324
-    },
-    {
-      "cluster_id": "394010",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
-      "tier": "S",
-      "avg_placement": 4.1348
+      "avg_placement": 3.8968
     },
     {
       "cluster_id": "394001",
       "comp_name": "TFT16_Brawler, TFT16_Wukong",
       "tier": "S",
-      "avg_placement": 4.219
+      "avg_placement": 4.1427
     },
     {
-      "cluster_id": "394030",
-      "comp_name": "TFT16_Piltover, TFT16_Seraphine",
-      "tier": "A",
-      "avg_placement": 4.2903
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "tier": "S",
+      "avg_placement": 4.2473
     },
     {
       "cluster_id": "394004",
       "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
       "tier": "A",
-      "avg_placement": 4.463
+      "avg_placement": 4.5124
     },
     {
       "cluster_id": "394050",
       "comp_name": "TFT16_Warden, TFT16_Braum",
       "tier": "B",
-      "avg_placement": 4.7166
+      "avg_placement": 4.5298
+    },
+    {
+      "cluster_id": "394030",
+      "comp_name": "TFT16_Piltover, TFT16_Seraphine",
+      "tier": "B",
+      "avg_placement": 4.6052
     },
     {
       "cluster_id": "394052",
       "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Slayer",
       "tier": "C",
-      "avg_placement": 4.9865
+      "avg_placement": 5.0494
     },
     {
       "cluster_id": "394059",
       "comp_name": "TFT16_Explorer, TFT16_Lissandra",
-      "tier": "D",
-      "avg_placement": 5.3876
+      "tier": "C",
+      "avg_placement": 5.0701
     }
   ],
   "builds": [
@@ -59,8 +59,8 @@
         "日炎斗篷",
         "振奋盔甲"
       ],
-      "avg_placement": 3.6639,
-      "count": 12620,
+      "avg_placement": 3.8602,
+      "count": 3583,
       "priority_scores": {
         "圣盾使的誓约": 100,
         "日炎斗篷": 85,
@@ -72,15 +72,15 @@
       "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
       "items": [
         "日炎斗篷",
-        "振奋盔甲",
-        "薄暮法袍"
+        "薄暮法袍",
+        "狂徒铠甲"
       ],
-      "avg_placement": 3.8343,
-      "count": 356,
+      "avg_placement": 3.4839,
+      "count": 31,
       "priority_scores": {
         "日炎斗篷": 100,
-        "振奋盔甲": 85,
-        "薄暮法袍": 72
+        "薄暮法袍": 85,
+        "狂徒铠甲": 72
       }
     },
     {
@@ -91,8 +91,8 @@
         "日炎斗篷",
         "薄暮法袍"
       ],
-      "avg_placement": 4.1165,
-      "count": 635,
+      "avg_placement": 4.1176,
+      "count": 340,
       "priority_scores": {
         "圣盾使的誓约": 100,
         "日炎斗篷": 85,

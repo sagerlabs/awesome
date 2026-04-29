@@ -2,35 +2,43 @@
   "name": "坚定之心",
   "priority_list": [
     {
-      "cluster_id": "394019",
-      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 4.1791,
-      "carry": "孙悟空",
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.3637,
+      "carry": "峡谷先锋",
       "priority_score": 100
+    },
+    {
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 3.6638,
+      "carry": "塔里克",
+      "priority_score": 85
     },
     {
       "cluster_id": "394011",
       "comp_name": "TFT16_Warden, TFT16_Kalista",
       "comp_tier": "S",
-      "comp_avg": 3.9968,
+      "comp_avg": 4.0327,
       "carry": "奥恩",
       "priority_score": 85
     },
     {
-      "cluster_id": "394021",
-      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Nautilus",
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
       "comp_tier": "A",
-      "comp_avg": 4.3745,
-      "carry": "洛里斯",
-      "priority_score": 85
+      "comp_avg": 4.317,
+      "carry": "斯卡纳",
+      "priority_score": 72
     },
     {
-      "cluster_id": "394012",
-      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
       "comp_tier": "A",
-      "comp_avg": 4.2768,
-      "carry": "内瑟斯",
+      "comp_avg": 4.4739,
+      "carry": "孙悟空",
       "priority_score": 72
     }
   ]

@@ -5,13 +5,13 @@
       "cluster_id": "394012",
       "comp_name": "TFT16_Noxus, TFT16_Nasus",
       "tier": "A",
-      "avg_placement": 4.2768
+      "avg_placement": 4.3413
     },
     {
       "cluster_id": "394036",
       "comp_name": "TFT16_Magus, TFT16_Nasus",
       "tier": "B",
-      "avg_placement": 4.6315
+      "avg_placement": 4.5673
     }
   ],
   "builds": [
@@ -20,15 +20,15 @@
       "comp_name": "TFT16_Noxus, TFT16_Nasus",
       "items": [
         "巨龙之爪",
-        "石像鬼石板甲",
-        "坚定之心"
+        "圣盾使的誓约",
+        "石像鬼石板甲"
       ],
-      "avg_placement": 3.6291,
-      "count": 151,
+      "avg_placement": 3.44,
+      "count": 50,
       "priority_scores": {
         "巨龙之爪": 100,
-        "石像鬼石板甲": 85,
-        "坚定之心": 72
+        "圣盾使的誓约": 85,
+        "石像鬼石板甲": 72
       }
     },
     {
@@ -39,8 +39,8 @@
         "日炎斗篷",
         "振奋盔甲"
       ],
-      "avg_placement": 3.8438,
-      "count": 192,
+      "avg_placement": 3.6471,
+      "count": 136,
       "priority_scores": {
         "棘刺背心": 100,
         "日炎斗篷": 85,

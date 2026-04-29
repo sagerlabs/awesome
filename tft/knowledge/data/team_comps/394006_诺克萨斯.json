@@ -22,25 +22,26 @@
     "乐芙兰",
     "德莱厄斯",
     "德莱文",
-    "厄塔汗"
+    "厄塔汗",
+    "巴德"
   ],
   "name_string": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
   "display_names": [
     {
       "name": "诺克萨斯",
       "type": "trait",
-      "score": 2.395192114262724
+      "score": 2.4664799868225993
     },
     {
       "name": "乐芙兰",
       "type": "unit",
-      "score": 4.117121303560651
+      "score": 4.074729733244328
     }
   ],
-  "count": 47397,
-  "avg_placement": 4.314,
-  "top4_rate": 0.5278,
-  "win_rate": 0.1476,
+  "count": 218475,
+  "avg_placement": 4.4506,
+  "top4_rate": 0.5092,
+  "win_rate": 0.1154,
   "tier": "A",
   "builds": [
     {
@@ -50,10 +51,10 @@
         "斯特拉克的挑战护手",
         "泰坦的坚决"
       ],
-      "avg_placement": 3.9399,
-      "count": 84032,
-      "score": 0.507,
-      "place_change": -0.376,
+      "avg_placement": 3.9871,
+      "count": 40933,
+      "score": 0.5097,
+      "place_change": -0.438,
       "priority_scores": {
         "适应性头盔": 100,
         "斯特拉克的挑战护手": 85,
@@ -67,10 +68,10 @@
         "朔极之矛",
         "虚空之杖"
       ],
-      "avg_placement": 3.8941,
-      "count": 22076,
-      "score": 0.4154,
-      "place_change": -0.422,
+      "avg_placement": 3.933,
+      "count": 12972,
+      "score": 0.4533,
+      "place_change": -0.492,
       "priority_scores": {
         "珠光护手": 100,
         "朔极之矛": 85,
@@ -84,10 +85,10 @@
         "最后的轻语",
         "海妖之怒"
       ],
-      "avg_placement": 3.7033,
-      "count": 13459,
-      "score": 0.2648,
-      "place_change": -0.613,
+      "avg_placement": 3.7657,
+      "count": 8050,
+      "score": 0.292,
+      "place_change": -0.66,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
         "最后的轻语": 85,
@@ -101,10 +102,10 @@
         "离子火花",
         "日炎斗篷"
       ],
-      "avg_placement": 3.2087,
-      "count": 1332,
-      "score": 0.1137,
-      "place_change": -1.107,
+      "avg_placement": 3.095,
+      "count": 400,
+      "score": 0.1153,
+      "place_change": -1.33,
       "priority_scores": {
         "圣盾使的誓约": 100,
         "离子火花": 85,
@@ -114,128 +115,128 @@
   ],
   "build_items": {
     "珠光护手": {
-      "itemNames": "珠光护手",
-      "count": 211295,
-      "avg": 4.2014,
-      "pcnt": 0.85011
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 97494,
+      "avg": 4.3003,
+      "pcnt": 0.84521
     },
     "适应性头盔": {
-      "itemNames": "适应性头盔",
-      "count": 185779,
-      "avg": 3.9648,
-      "pcnt": 0.74745
+      "itemNames": "TFT_Item_AdaptiveHelm",
+      "count": 84863,
+      "avg": 4.039,
+      "pcnt": 0.73571
     },
     "泰坦的坚决": {
-      "itemNames": "泰坦的坚决",
-      "count": 169683,
-      "avg": 4.0791,
-      "pcnt": 0.68269
-    },
-    "斯特拉克的挑战护手": {
-      "itemNames": "斯特拉克的挑战护手",
-      "count": 162382,
-      "avg": 4.0215,
-      "pcnt": 0.65332
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 73996,
+      "avg": 4.1533,
+      "pcnt": 0.6415
     },
     "鬼索的狂暴之刃": {
-      "itemNames": "鬼索的狂暴之刃",
-      "count": 149145,
-      "avg": 4.1355,
-      "pcnt": 0.60006
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 73826,
+      "avg": 4.2573,
+      "pcnt": 0.64002
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 72114,
+      "avg": 4.1003,
+      "pcnt": 0.62518
     },
     "朔极之矛": {
-      "itemNames": "朔极之矛",
-      "count": 132040,
-      "avg": 4.0729,
-      "pcnt": 0.53124
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 62603,
+      "avg": 4.1717,
+      "pcnt": 0.54273
     },
     "日炎斗篷": {
-      "itemNames": "日炎斗篷",
-      "count": 101118,
-      "avg": 4.0174,
-      "pcnt": 0.40683
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 46796,
+      "avg": 4.1367,
+      "pcnt": 0.40569
     },
     "海妖之怒": {
-      "itemNames": "海妖之怒",
-      "count": 70711,
-      "avg": 3.9046,
-      "pcnt": 0.28449
+      "itemNames": "TFT_Item_RunaansHurricane",
+      "count": 35414,
+      "avg": 4.0346,
+      "pcnt": 0.30702
     },
     "虚空之杖": {
-      "itemNames": "虚空之杖",
-      "count": 68435,
-      "avg": 3.9148,
-      "pcnt": 0.27534
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 32842,
+      "avg": 4.0175,
+      "pcnt": 0.28472
     },
     "最后的轻语": {
-      "itemNames": "最后的轻语",
-      "count": 54637,
-      "avg": 3.7997,
-      "pcnt": 0.21982
+      "itemNames": "TFT_Item_LastWhisper",
+      "count": 27402,
+      "avg": 3.9202,
+      "pcnt": 0.23756
     },
     "圣盾使的誓约": {
-      "itemNames": "圣盾使的誓约",
-      "count": 47951,
-      "avg": 3.7192,
-      "pcnt": 0.19292
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 19644,
+      "avg": 3.8249,
+      "pcnt": 0.1703
     },
     "离子火花": {
-      "itemNames": "离子火花",
-      "count": 40526,
-      "avg": 3.7236,
-      "pcnt": 0.16305
+      "itemNames": "TFT_Item_IonicSpark",
+      "count": 16800,
+      "avg": 3.8262,
+      "pcnt": 0.14564
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 44398,
-      "avg": 4.2468,
-      "pick_rate": 0.044603
+      "day": "2026-04-07",
+      "count": 32832,
+      "avg": 4.3915,
+      "pick_rate": 0.042598
     },
     {
-      "day": "2026-03-18",
-      "count": 78968,
-      "avg": 4.2463,
-      "pick_rate": 0.043579
+      "day": "2026-04-08",
+      "count": 45788,
+      "avg": 4.3901,
+      "pick_rate": 0.041886
     },
     {
-      "day": "2026-03-19",
-      "count": 80802,
-      "avg": 4.274,
-      "pick_rate": 0.044166
+      "day": "2026-04-09",
+      "count": 43719,
+      "avg": 4.3865,
+      "pick_rate": 0.040588
     },
     {
-      "day": "2026-03-20",
-      "count": 83557,
-      "avg": 4.2916,
-      "pick_rate": 0.044821
+      "day": "2026-04-10",
+      "count": 42484,
+      "avg": 4.4062,
+      "pick_rate": 0.040278
     },
     {
-      "day": "2026-03-21",
-      "count": 86446,
-      "avg": 4.2911,
-      "pick_rate": 0.044371
+      "day": "2026-04-11",
+      "count": 42269,
+      "avg": 4.4169,
+      "pick_rate": 0.039322
     },
     {
-      "day": "2026-03-22",
-      "count": 87813,
-      "avg": 4.3281,
-      "pick_rate": 0.044612
+      "day": "2026-04-12",
+      "count": 41516,
+      "avg": 4.4404,
+      "pick_rate": 0.038762
     },
     {
-      "day": "2026-03-23",
-      "count": 80962,
-      "avg": 4.3223,
-      "pick_rate": 0.044183
+      "day": "2026-04-13",
+      "count": 36352,
+      "avg": 4.4138,
+      "pick_rate": 0.039037
     },
     {
-      "day": "2026-03-24",
-      "count": 28084,
-      "avg": 4.2828,
-      "pick_rate": 0.044829
+      "day": "2026-04-14",
+      "count": 9601,
+      "avg": 4.4164,
+      "pick_rate": 0.037938
     }
   ],
   "levelling": "lvl 7",
-  "difficulty": -0.011
+  "difficulty": -0.088
 }

@@ -4,20 +4,20 @@
     {
       "cluster_id": "394022",
       "comp_name": "TFT16_Slayer, TFT16_BelVeth",
-      "tier": "B",
-      "avg_placement": 4.536
+      "tier": "A",
+      "avg_placement": 4.4885
     },
     {
       "cluster_id": "394054",
       "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_MissFortune",
       "tier": "D",
-      "avg_placement": 5.252
+      "avg_placement": 5.3259
     },
     {
       "cluster_id": "394058",
       "comp_name": "TFT16_Bilgewater, TFT16_Gangplank",
       "tier": "D",
-      "avg_placement": 5.5941
+      "avg_placement": 5.6475
     }
   ],
   "builds": [
@@ -29,8 +29,8 @@
         "斯特拉克的挑战护手",
         "正义之手"
       ],
-      "avg_placement": 4.4416,
-      "count": 1182,
+      "avg_placement": 4.3359,
+      "count": 637,
       "priority_scores": {
         "水银": 100,
         "斯特拉克的挑战护手": 85,

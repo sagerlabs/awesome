@@ -5,13 +5,13 @@
       "cluster_id": "394029",
       "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
       "tier": "A",
-      "avg_placement": 4.3841
+      "avg_placement": 4.2663
     },
     {
       "cluster_id": "394055",
       "comp_name": "TFT16_Zaun, TFT16_Ekko",
       "tier": "C",
-      "avg_placement": 5.0301
+      "avg_placement": 5.0249
     }
   ],
   "builds": []

@@ -2,34 +2,34 @@
   "name": "灭世者的死亡之帽",
   "priority_list": [
     {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "comp_tier": "S",
+      "comp_avg": 3.8968,
+      "carry": "基兰",
+      "priority_score": 100
+    },
+    {
       "cluster_id": "394025",
       "comp_name": "TFT16_Yordle, TFT16_Veigar",
       "comp_tier": "S",
-      "comp_avg": 4.1393,
+      "comp_avg": 4.1011,
       "carry": "维迦",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394037",
-      "comp_name": "TFT16_Ionia, TFT16_Wukong",
-      "comp_tier": "A",
-      "comp_avg": 4.4713,
-      "carry": "瑟提",
       "priority_score": 85
     },
     {
       "cluster_id": "394014",
       "comp_name": "TFT16_Augment_RumbleCarry",
       "comp_tier": "S",
-      "comp_avg": 3.9397,
+      "comp_avg": 3.8451,
       "carry": "兰博",
       "priority_score": 72
     },
     {
-      "cluster_id": "394024",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick",
-      "comp_tier": "S",
-      "comp_avg": 4.1759,
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.4739,
       "carry": "吉格斯",
       "priority_score": 72
     }

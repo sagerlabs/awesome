@@ -5,25 +5,25 @@
       "cluster_id": "394019",
       "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
       "tier": "S",
-      "avg_placement": 4.1791
+      "avg_placement": 4.1515
     },
     {
       "cluster_id": "394047",
       "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Taric",
       "tier": "C",
-      "avg_placement": 5.0748
+      "avg_placement": 4.9556
     },
     {
       "cluster_id": "394045",
       "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Nautilus",
       "tier": "D",
-      "avg_placement": 5.1393
+      "avg_placement": 5.2356
     },
     {
       "cluster_id": "394054",
       "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_MissFortune",
       "tier": "D",
-      "avg_placement": 5.252
+      "avg_placement": 5.3259
     }
   ],
   "builds": [
@@ -35,8 +35,8 @@
         "成堆柑橘",
         "圣盾使的誓约"
       ],
-      "avg_placement": 3.1525,
-      "count": 1049,
+      "avg_placement": 3.1673,
+      "count": 526,
       "priority_scores": {
         "酒吧指虎": 100,
         "成堆柑橘": 85,
@@ -51,8 +51,8 @@
         "成堆柑橘",
         "振奋盔甲"
       ],
-      "avg_placement": 3.2053,
-      "count": 750,
+      "avg_placement": 3.26,
+      "count": 350,
       "priority_scores": {
         "酒吧指虎": 100,
         "成堆柑橘": 85,
@@ -63,16 +63,16 @@
       "cluster_id": "394054",
       "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_MissFortune",
       "items": [
-        "成堆柑橘",
-        "适应性头盔",
-        "圣盾使的誓约"
+        "酒吧指虎",
+        "圣盾使的誓约",
+        "振奋盔甲"
       ],
-      "avg_placement": 3.2414,
-      "count": 29,
+      "avg_placement": 3.4545,
+      "count": 11,
       "priority_scores": {
-        "成堆柑橘": 100,
-        "适应性头盔": 85,
-        "圣盾使的誓约": 72
+        "酒吧指虎": 100,
+        "圣盾使的誓约": 85,
+        "振奋盔甲": 72
       }
     }
   ]

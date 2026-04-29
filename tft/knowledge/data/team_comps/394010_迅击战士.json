@@ -33,18 +33,18 @@
     {
       "name": "迅击战士",
       "type": "trait",
-      "score": 1.084033373199472
+      "score": 1.0604892454851946
     },
     {
       "name": "金克丝",
       "type": "unit",
-      "score": 4.341358180579314
+      "score": 4.310750594569166
     }
   ],
-  "count": 38193,
-  "avg_placement": 4.1348,
-  "top4_rate": 0.5796,
-  "win_rate": 0.1288,
+  "count": 120026,
+  "avg_placement": 4.2473,
+  "top4_rate": 0.5616,
+  "win_rate": 0.1069,
   "tier": "S",
   "builds": [
     {
@@ -54,10 +54,10 @@
         "斯特拉克的挑战护手",
         "泰坦的坚决"
       ],
-      "avg_placement": 3.6115,
-      "count": 40244,
-      "score": 0.5132,
-      "place_change": -0.546,
+      "avg_placement": 3.7398,
+      "count": 15149,
+      "score": 0.5163,
+      "place_change": -0.542,
       "priority_scores": {
         "饮血剑": 100,
         "斯特拉克的挑战护手": 85,
@@ -71,10 +71,10 @@
         "最后的轻语",
         "海妖之怒"
       ],
-      "avg_placement": 3.8825,
-      "count": 56141,
-      "score": 0.509,
-      "place_change": -0.275,
+      "avg_placement": 4.0183,
+      "count": 18529,
+      "score": 0.4971,
+      "place_change": -0.263,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
         "最后的轻语": 85,
@@ -88,10 +88,10 @@
         "日炎斗篷",
         "振奋盔甲"
       ],
-      "avg_placement": 3.6639,
-      "count": 12620,
-      "score": 0.2825,
-      "place_change": -0.493,
+      "avg_placement": 3.8602,
+      "count": 3583,
+      "score": 0.2294,
+      "place_change": -0.422,
       "priority_scores": {
         "圣盾使的誓约": 100,
         "日炎斗篷": 85,
@@ -105,10 +105,10 @@
         "振奋盔甲",
         "狂徒铠甲"
       ],
-      "avg_placement": 3.3603,
-      "count": 2362,
-      "score": 0.1299,
-      "place_change": -0.797,
+      "avg_placement": 3.5169,
+      "count": 1478,
+      "score": 0.1446,
+      "place_change": -0.765,
       "priority_scores": {
         "日炎斗篷": 100,
         "振奋盔甲": 85,
@@ -118,116 +118,116 @@
   ],
   "build_items": {
     "鬼索的狂暴之刃": {
-      "itemNames": "鬼索的狂暴之刃",
-      "count": 237954,
-      "avg": 4.0868,
-      "pcnt": 1.13382
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 88327,
+      "avg": 4.2076,
+      "pcnt": 1.15421
     },
     "振奋盔甲": {
-      "itemNames": "振奋盔甲",
-      "count": 143675,
-      "avg": 3.8964,
-      "pcnt": 0.68459
+      "itemNames": "TFT_Item_Redemption",
+      "count": 52876,
+      "avg": 4.0384,
+      "pcnt": 0.69095
     },
     "海妖之怒": {
-      "itemNames": "海妖之怒",
-      "count": 138450,
-      "avg": 3.958,
-      "pcnt": 0.6597
+      "itemNames": "TFT_Item_RunaansHurricane",
+      "count": 50784,
+      "avg": 4.0754,
+      "pcnt": 0.66362
     },
     "饮血剑": {
-      "itemNames": "饮血剑",
-      "count": 138312,
-      "avg": 3.9964,
-      "pcnt": 0.65904
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 50576,
+      "avg": 4.1181,
+      "pcnt": 0.6609
     },
     "日炎斗篷": {
-      "itemNames": "日炎斗篷",
-      "count": 125588,
-      "avg": 3.9167,
-      "pcnt": 0.59841
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 45691,
+      "avg": 4.0618,
+      "pcnt": 0.59707
     },
     "最后的轻语": {
-      "itemNames": "最后的轻语",
-      "count": 115304,
-      "avg": 3.9335,
-      "pcnt": 0.54941
-    },
-    "斯特拉克的挑战护手": {
-      "itemNames": "斯特拉克的挑战护手",
-      "count": 108490,
-      "avg": 3.8428,
-      "pcnt": 0.51694
+      "itemNames": "TFT_Item_LastWhisper",
+      "count": 39689,
+      "avg": 4.0482,
+      "pcnt": 0.51863
     },
     "泰坦的坚决": {
-      "itemNames": "泰坦的坚决",
-      "count": 108424,
-      "avg": 3.8142,
-      "pcnt": 0.51663
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 39041,
+      "avg": 3.931,
+      "pcnt": 0.51017
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 38858,
+      "avg": 3.962,
+      "pcnt": 0.50778
     },
     "圣盾使的誓约": {
-      "itemNames": "圣盾使的誓约",
-      "count": 83405,
-      "avg": 3.8012,
-      "pcnt": 0.39741
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 26281,
+      "avg": 3.9147,
+      "pcnt": 0.34343
     },
     "狂徒铠甲": {
-      "itemNames": "狂徒铠甲",
-      "count": 62114,
-      "avg": 3.6904,
-      "pcnt": 0.29597
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 23818,
+      "avg": 3.8227,
+      "pcnt": 0.31124
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 34644,
-      "avg": 4.1673,
-      "pick_rate": 0.034804
+      "day": "2026-04-07",
+      "count": 23596,
+      "avg": 4.2622,
+      "pick_rate": 0.030615
     },
     {
-      "day": "2026-03-18",
-      "count": 62448,
-      "avg": 4.1544,
-      "pick_rate": 0.034462
+      "day": "2026-04-08",
+      "count": 33008,
+      "avg": 4.273,
+      "pick_rate": 0.030195
     },
     {
-      "day": "2026-03-19",
-      "count": 63806,
-      "avg": 4.1524,
-      "pick_rate": 0.034876
+      "day": "2026-04-09",
+      "count": 31509,
+      "avg": 4.2674,
+      "pick_rate": 0.029252
     },
     {
-      "day": "2026-03-20",
-      "count": 66372,
-      "avg": 4.1333,
-      "pick_rate": 0.035602
+      "day": "2026-04-10",
+      "count": 29832,
+      "avg": 4.2484,
+      "pick_rate": 0.028283
     },
     {
-      "day": "2026-03-21",
-      "count": 70683,
-      "avg": 4.1532,
-      "pick_rate": 0.03628
+      "day": "2026-04-11",
+      "count": 28581,
+      "avg": 4.2908,
+      "pick_rate": 0.026588
     },
     {
-      "day": "2026-03-22",
-      "count": 72103,
-      "avg": 4.15,
-      "pick_rate": 0.036631
+      "day": "2026-04-12",
+      "count": 27577,
+      "avg": 4.2707,
+      "pick_rate": 0.025748
     },
     {
-      "day": "2026-03-23",
-      "count": 70170,
-      "avg": 4.174,
-      "pick_rate": 0.038294
+      "day": "2026-04-13",
+      "count": 23897,
+      "avg": 4.2633,
+      "pick_rate": 0.025662
     },
     {
-      "day": "2026-03-24",
-      "count": 25155,
-      "avg": 4.1506,
-      "pick_rate": 0.040153
+      "day": "2026-04-14",
+      "count": 6362,
+      "avg": 4.3257,
+      "pick_rate": 0.025139
     }
   ],
   "levelling": "lvl 7",
-  "difficulty": 0.046
+  "difficulty": -0.018
 }

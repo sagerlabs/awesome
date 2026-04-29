@@ -2,71 +2,65 @@
   "name": "卢锡安与赛娜",
   "appear_in_comps": [
     {
-      "cluster_id": "394010",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
       "tier": "S",
-      "avg_placement": 4.1348
+      "avg_placement": 4.003
     },
     {
       "cluster_id": "394024",
       "comp_name": "TFT16_Zaun, TFT16_Warwick",
       "tier": "S",
-      "avg_placement": 4.1759
+      "avg_placement": 4.0701
     },
     {
       "cluster_id": "394019",
       "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
       "tier": "S",
-      "avg_placement": 4.1791
+      "avg_placement": 4.1515
     },
     {
-      "cluster_id": "394009",
-      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
       "tier": "S",
-      "avg_placement": 4.1962
+      "avg_placement": 4.2473
     },
     {
       "cluster_id": "394029",
       "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
       "tier": "A",
-      "avg_placement": 4.3841
-    },
-    {
-      "cluster_id": "394050",
-      "comp_name": "TFT16_Warden, TFT16_Braum",
-      "tier": "B",
-      "avg_placement": 4.7166
+      "avg_placement": 4.2663
     },
     {
       "cluster_id": "394045",
       "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Nautilus",
       "tier": "D",
-      "avg_placement": 5.1393
+      "avg_placement": 5.2356
     },
     {
       "cluster_id": "394063",
       "comp_name": "TFT16_Piltover, TFT16_THex",
       "tier": "D",
-      "avg_placement": 5.2662
+      "avg_placement": 5.3188
     },
     {
       "cluster_id": "394066",
       "comp_name": "TFT16_Ionia, TFT16_Kennen",
       "tier": "D",
-      "avg_placement": 5.3593
+      "avg_placement": 5.5308
     }
   ],
   "builds": [
     {
-      "cluster_id": "394019",
-      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
       "items": [
         "最后的轻语",
         "红霸符",
         "朔极之矛"
       ],
-      "avg_placement": 3.5472,
-      "count": 2343,
+      "avg_placement": 2.9392,
+      "count": 937,
       "priority_scores": {
         "最后的轻语": 100,
         "红霸符": 85,
@@ -74,15 +68,15 @@
       }
     },
     {
-      "cluster_id": "394009",
-      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
       "items": [
         "最后的轻语",
         "红霸符",
         "朔极之矛"
       ],
-      "avg_placement": 3.0181,
-      "count": 1270,
+      "avg_placement": 3.3045,
+      "count": 1156,
       "priority_scores": {
         "最后的轻语": 100,
         "红霸符": 85,

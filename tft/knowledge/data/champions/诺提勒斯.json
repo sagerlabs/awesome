@@ -5,49 +5,49 @@
       "cluster_id": "394019",
       "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
       "tier": "S",
-      "avg_placement": 4.1791
-    },
-    {
-      "cluster_id": "394021",
-      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Nautilus",
-      "tier": "A",
-      "avg_placement": 4.3745
-    },
-    {
-      "cluster_id": "394021",
-      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Nautilus",
-      "tier": "A",
-      "avg_placement": 4.3745
+      "avg_placement": 4.1515
     },
     {
       "cluster_id": "394004",
       "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
       "tier": "A",
-      "avg_placement": 4.463
+      "avg_placement": 4.5124
+    },
+    {
+      "cluster_id": "394021",
+      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Nautilus",
+      "tier": "B",
+      "avg_placement": 4.5508
+    },
+    {
+      "cluster_id": "394021",
+      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Nautilus",
+      "tier": "B",
+      "avg_placement": 4.5508
     },
     {
       "cluster_id": "394035",
       "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Void",
       "tier": "B",
-      "avg_placement": 4.5318
+      "avg_placement": 4.6383
     },
     {
       "cluster_id": "394045",
       "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Nautilus",
       "tier": "D",
-      "avg_placement": 5.1393
+      "avg_placement": 5.2356
     },
     {
       "cluster_id": "394054",
       "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_MissFortune",
       "tier": "D",
-      "avg_placement": 5.252
+      "avg_placement": 5.3259
     },
     {
       "cluster_id": "394058",
       "comp_name": "TFT16_Bilgewater, TFT16_Gangplank",
       "tier": "D",
-      "avg_placement": 5.5941
+      "avg_placement": 5.6475
     }
   ],
   "builds": [
@@ -59,8 +59,8 @@
         "巨龙之爪",
         "振奋盔甲"
       ],
-      "avg_placement": 3.5987,
-      "count": 1348,
+      "avg_placement": 3.6206,
+      "count": 543,
       "priority_scores": {
         "棘刺背心": 100,
         "巨龙之爪": 85,
@@ -73,14 +73,14 @@
       "items": [
         "棘刺背心",
         "巨龙之爪",
-        "石像鬼石板甲"
+        "振奋盔甲"
       ],
-      "avg_placement": 3.5916,
-      "count": 262,
+      "avg_placement": 3.4565,
+      "count": 92,
       "priority_scores": {
         "棘刺背心": 100,
         "巨龙之爪": 85,
-        "石像鬼石板甲": 72
+        "振奋盔甲": 72
       }
     },
     {
@@ -91,8 +91,8 @@
         "棘刺背心",
         "巨龙之爪"
       ],
-      "avg_placement": 4.0398,
-      "count": 1633,
+      "avg_placement": 4.245,
+      "count": 853,
       "priority_scores": {
         "酒吧指虎": 100,
         "棘刺背心": 85,
@@ -104,14 +104,14 @@
       "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_MissFortune",
       "items": [
         "酒吧指虎",
-        "日炎斗篷",
+        "石像鬼石板甲",
         "薄暮法袍"
       ],
-      "avg_placement": 3.3871,
-      "count": 31,
+      "avg_placement": 3.9091,
+      "count": 11,
       "priority_scores": {
         "酒吧指虎": 100,
-        "日炎斗篷": 85,
+        "石像鬼石板甲": 85,
         "薄暮法袍": 72
       }
     },
@@ -120,15 +120,15 @@
       "comp_name": "TFT16_Bilgewater, TFT16_Gangplank",
       "items": [
         "日炎斗篷",
-        "薄暮法袍",
-        "狂徒铠甲"
+        "振奋盔甲",
+        "薄暮法袍"
       ],
-      "avg_placement": 4.0521,
-      "count": 192,
+      "avg_placement": 3.8121,
+      "count": 149,
       "priority_scores": {
         "日炎斗篷": 100,
-        "薄暮法袍": 85,
-        "狂徒铠甲": 72
+        "振奋盔甲": 85,
+        "薄暮法袍": 72
       }
     }
   ]

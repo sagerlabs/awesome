@@ -2,40 +2,46 @@
   "name": "赵信",
   "appear_in_comps": [
     {
-      "cluster_id": "394041",
-      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Lissandra",
-      "tier": "B",
-      "avg_placement": 4.726
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "tier": "A",
+      "avg_placement": 4.3576
     },
     {
       "cluster_id": "394049",
       "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Poppy",
-      "tier": "C",
-      "avg_placement": 4.8682
+      "tier": "B",
+      "avg_placement": 4.6104
     },
     {
-      "cluster_id": "394066",
-      "comp_name": "TFT16_Ionia, TFT16_Kennen",
+      "cluster_id": "394034",
+      "comp_name": "TFT16_Augment_XinZhaoCarry",
+      "tier": "B",
+      "avg_placement": 4.7227
+    },
+    {
+      "cluster_id": "394041",
+      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Lissandra",
       "tier": "D",
-      "avg_placement": 5.3593
+      "avg_placement": 5.2556
     },
     {
       "cluster_id": "394061",
       "comp_name": "TFT16_Demacia, TFT16_Garen",
       "tier": "D",
-      "avg_placement": 5.3918
+      "avg_placement": 5.4167
     },
     {
-      "cluster_id": "394065",
-      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Sorcerer",
+      "cluster_id": "394066",
+      "comp_name": "TFT16_Ionia, TFT16_Kennen",
       "tier": "D",
-      "avg_placement": 5.7216
+      "avg_placement": 5.5308
     },
     {
       "cluster_id": "394064",
       "comp_name": "TFT16_Demacia, TFT16_JarvanIV",
       "tier": "D",
-      "avg_placement": 6.1148
+      "avg_placement": 6.079
     }
   ],
   "builds": [
@@ -43,32 +49,32 @@
       "cluster_id": "394028",
       "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
       "items": [
-        "暗裔之镰",
-        "饮血剑",
-        "泰坦的坚决"
+        "棘刺背心",
+        "巨龙之爪",
+        "狂徒铠甲"
       ],
-      "avg_placement": 6.7813,
-      "count": 64,
+      "avg_placement": 3.5833,
+      "count": 12,
       "priority_scores": {
-        "暗裔之镰": 100,
-        "饮血剑": 85,
-        "泰坦的坚决": 72
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
+        "狂徒铠甲": 72
       }
     },
     {
       "cluster_id": "394034",
       "comp_name": "TFT16_Augment_XinZhaoCarry",
       "items": [
-        "暗裔之镰",
-        "饮血剑",
-        "泰坦的坚决"
+        "棘刺背心",
+        "石像鬼石板甲",
+        "振奋盔甲"
       ],
-      "avg_placement": 6.8889,
-      "count": 153,
+      "avg_placement": 3.5556,
+      "count": 9,
       "priority_scores": {
-        "暗裔之镰": 100,
-        "饮血剑": 85,
-        "泰坦的坚决": 72
+        "棘刺背心": 100,
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
       }
     }
   ]

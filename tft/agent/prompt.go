@@ -61,10 +61,19 @@ func BuildPrompt(in *data.IntersectionOutput) string {
 }
 
 const FormatSystemPrompt = `你是云顶之弈顶级教练，根据玩家当前局面数据给出简洁精准的建议。
+硬性事实边界：
+- 只能使用用户消息中“装备适配数据”和“推荐阵容数据”出现的阵容、英雄、装备、强度、平均排名、前四率、吃鸡率。
+- 不要使用模型记忆、旧版本攻略、外部榜单或用户自己声称的版本信息来补充事实。
+- 不要编造 T0/T0.5、版本号、赛区、高场次、平均排名、前四率、吃鸡率、运营节奏。
+- 如果数据里没有某个阵容或数值，必须明确说“当前知识库没有命中”，不要硬给具体结论。
 输出要求：
 - 使用 Markdown 格式
 - 语气简洁直接，像教练喊话
-- 不要废话，直接给结论和操作建议`
+- 第一句话先回答玩家最关心的结论，例如“能冲”“别硬冲”“优先玩X”
+- 输出风格贴近国服云顶老玩家：把 S Tier/A Tier 说成“S级/A级”“版本强势/可玩”，可以使用“保底分”“上限吃鸡”“成型有鸡”“锁血”“稳血”“别硬冲”等自然说法
+- 使用老玩家话术时不能夸大数据：只有吃鸡率和强度都明显靠前时才说“上限吃鸡/成型有鸡”，不要把所有阵容都说成“必鸡”
+- 不要废话，直接给结论和操作建议
+- 数据来源说明放在回答末尾一句轻提示，不要放在开头`
 
 // BuildNluFormatPrompt 把 NluEnrichedContext 打包成排版 Prompt
 func BuildNluFormatPrompt(input *NluEnrichedContext) (string, error) {
@@ -73,6 +82,7 @@ func BuildNluFormatPrompt(input *NluEnrichedContext) (string, error) {
 	}
 
 	var sb strings.Builder
+	itemMatchIndex := buildItemMatchIndex(input.MatchedItems)
 
 	// ── 1. 玩家当前局面 ──────────────────────────────────
 	sb.WriteString("## 玩家当前局面\n")
@@ -115,15 +125,15 @@ func BuildNluFormatPrompt(input *NluEnrichedContext) (string, error) {
 	if len(input.MatchedItems) > 0 {
 		sb.WriteString("\n## 装备适配数据\n")
 		for _, item := range input.MatchedItems {
-			sb.WriteString(fmt.Sprintf("\n**%s** 适合以下阵容：\n", item.ItemName))
+			sb.WriteString(fmt.Sprintf("\n**%s** 命中的装备携带点（装备携带者不一定等于阵容名里的主核心）：\n", item.ItemName))
 			for i, comp := range item.CompInfos {
 				if i >= 3 {
 					break // 最多展示3个
 				}
 				sb.WriteString(fmt.Sprintf(
-					"- %s（%s Tier，平均排名%.2f）→ 给 **%s**，优先级%d/100\n",
+					"- %s（%s，平均排名%.2f）里可给 **%s**，优先级%d/100\n",
 					comp.CompName,
-					comp.CompTier,
+					formatTier(comp.CompTier),
 					comp.CompAvg,
 					comp.CarryName,
 					comp.PriorityScore,
@@ -139,12 +149,21 @@ func BuildNluFormatPrompt(input *NluEnrichedContext) (string, error) {
 			if i >= 3 {
 				break // 最多展示3个
 			}
-			sb.WriteString(fmt.Sprintf("\n### %d. %s（%s Tier）\n", i+1, comp.Name, comp.Tier))
+			sb.WriteString(fmt.Sprintf("\n### %d. %s（%s）\n", i+1, comp.Name, formatTier(comp.Tier)))
 			sb.WriteString(fmt.Sprintf("- 平均排名：%.2f｜前四率：%.0f%%｜吃鸡率：%.0f%%\n",
 				comp.AvgPlacement,
 				comp.Top4Rate*100,
 				comp.WinRate*100,
 			))
+			if comp.Count > 0 {
+				sb.WriteString(fmt.Sprintf("- 样本场次：%d\n", comp.Count))
+			}
+			if comp.Levelling != "" {
+				sb.WriteString(fmt.Sprintf("- 运营节奏：%s\n", formatLevelling(comp.Levelling)))
+			}
+			if matches := itemMatchIndex[comp.ClusterID]; len(matches) > 0 {
+				sb.WriteString(fmt.Sprintf("- 本次装备适配：%s\n", strings.Join(matches, "；")))
+			}
 			if len(comp.Stars) > 0 {
 				sb.WriteString(fmt.Sprintf("- 追3星：%s\n", strings.Join(comp.Stars, "、")))
 			}
@@ -160,11 +179,12 @@ func BuildNluFormatPrompt(input *NluEnrichedContext) (string, error) {
 	// ── 4. 没有匹配到任何数据 ────────────────────────────
 	if len(input.MatchedComps) == 0 && len(input.MatchedItems) == 0 {
 		sb.WriteString("\n## 数据说明\n")
-		sb.WriteString("当前条件未匹配到具体阵容数据，请根据玩家描述给出通用建议。\n")
+		sb.WriteString("当前条件未匹配到具体阵容数据。不要编造具体阵容、版本、数值或运营节奏，只能说明当前知识库没有命中，并提示玩家补充英雄、装备、羁绊或重新更新知识库。\n")
 	}
 
 	// ── 5. 输出指令 ──────────────────────────────────────
 	sb.WriteString("\n## 你的任务\n")
+	sb.WriteString("先给玩家明确结论，再给理由和操作；所有阵容、装备、数值必须逐项对应上方数据。")
 	sb.WriteString(buildInstruction(ctx.Intent))
 
 	return sb.String(), nil
@@ -174,7 +194,7 @@ func BuildNluFormatPrompt(input *NluEnrichedContext) (string, error) {
 func buildInstruction(intent string) string {
 	switch intent {
 	case "item_query":
-		return "根据以上装备适配数据，告诉玩家这个装备优先给哪个英雄、对应什么阵容，给出明确结论。"
+		return "根据以上装备适配数据推荐阵容；如果装备携带者和阵容名主核心不同，只能说“这件装备可给某英雄/副C/功能位”，不要说成“核心英雄”。"
 	case "lineup_recommend":
 		return "根据以上阵容数据，推荐1~3个最适合当前局面的阵容，说明推荐理由、运营节奏和装备方向。"
 	case "trait_query":
@@ -188,4 +208,65 @@ func buildInstruction(intent string) string {
 	default:
 		return "根据以上所有数据，给出最适合当前局面的建议。"
 	}
+}
+
+func formatTier(tier string) string {
+	trimmed := strings.TrimSpace(tier)
+	if trimmed == "" {
+		return "未知强度"
+	}
+
+	upper := strings.ToUpper(trimmed)
+	switch upper {
+	case "S":
+		return "S级"
+	case "A":
+		return "A级"
+	case "B":
+		return "B级"
+	case "C":
+		return "C级"
+	case "D":
+		return "D级"
+	}
+
+	if strings.HasSuffix(upper, " TIER") {
+		return strings.TrimSpace(strings.TrimSuffix(upper, " TIER")) + "级"
+	}
+	return trimmed
+}
+
+func buildItemMatchIndex(items []MatchedItemInfo) map[string][]string {
+	index := make(map[string][]string)
+	for _, item := range items {
+		for _, comp := range item.CompInfos {
+			if item.ItemName == "" || comp.CarryName == "" || comp.ClusterID == "" {
+				continue
+			}
+			text := fmt.Sprintf("%s可给%s（优先级%d/100）", item.ItemName, comp.CarryName, comp.PriorityScore)
+			index[comp.ClusterID] = append(index[comp.ClusterID], text)
+		}
+	}
+	return index
+}
+
+func formatLevelling(levelling string) string {
+	trimmed := strings.TrimSpace(levelling)
+	switch strings.ToLower(trimmed) {
+	case "fast 9":
+		return "快速上9"
+	case "fast 8":
+		return "快速上8"
+	case "slow roll":
+		return "慢D追三"
+	}
+
+	lower := strings.ToLower(trimmed)
+	if strings.HasPrefix(lower, "lvl ") {
+		level := strings.TrimSpace(trimmed[4:])
+		if level != "" {
+			return level + "级节奏"
+		}
+	}
+	return trimmed
 }

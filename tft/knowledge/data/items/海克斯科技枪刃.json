@@ -2,26 +2,34 @@
   "name": "海克斯科技枪刃",
   "priority_list": [
     {
-      "cluster_id": "394002",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "S",
-      "comp_avg": 4.037,
-      "carry": "佐伊",
-      "priority_score": 100
-    },
-    {
       "cluster_id": "394000",
       "comp_name": "TFT16_Sorcerer, TFT16_Lux",
       "comp_tier": "S",
-      "comp_avg": 4.0398,
+      "comp_avg": 3.8569,
       "carry": "塞拉斯",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1011,
+      "carry": "维迦",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394002",
+      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "comp_tier": "S",
+      "comp_avg": 4.1278,
+      "carry": "佐伊",
       "priority_score": 100
     },
     {
       "cluster_id": "394031",
       "comp_name": "TFT16_Demacia, TFT16_Vayne",
       "comp_tier": "A",
-      "comp_avg": 4.2635,
+      "comp_avg": 4.3035,
       "carry": "薇恩",
       "priority_score": 100
     },
@@ -29,16 +37,8 @@
       "cluster_id": "394003",
       "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
       "comp_tier": "S",
-      "comp_avg": 4.0274,
+      "comp_avg": 3.94,
       "carry": "塞拉斯",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394012",
-      "comp_name": "TFT16_Noxus, TFT16_Nasus",
-      "comp_tier": "A",
-      "comp_avg": 4.2768,
-      "carry": "阿兹尔",
       "priority_score": 85
     }
   ]

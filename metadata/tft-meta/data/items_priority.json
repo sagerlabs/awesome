@@ -1,989 +1,3001 @@
 {
-  "TFT16_Item_GunslingerEmblemItem": [
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Warwick",
-      "priority_score": 100
-    }
-  ],
-  "TFT_Item_Bloodthirster": [
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Volibear",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Warwick",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Warwick",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_TitansResolve": [
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Warwick",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Volibear",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Warwick",
-      "priority_score": 72
-    }
-  ],
-  "TFT_Item_GuinsoosRageblade": [
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Jinx",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Rumble",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Aphelios",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Jinx",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
-      "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Kindred",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_LastWhisper": [
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Kalista",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Jinx",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Jinx",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_RunaansHurricane": [
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Jinx",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Aphelios",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Jinx",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
-      "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Kindred",
-      "priority_score": 72
-    }
-  ],
-  "TFT16_Item_ZaunEmblemItem": [
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Wukong",
-      "priority_score": 100
-    }
-  ],
-  "TFT_Item_RedBuff": [
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Braum",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Wukong",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Neeko",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Braum",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Sejuani",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
-      "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Swain",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_WarmogsArmor": [
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Wukong",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Kennen",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Kobuko",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Braum",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Braum",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
-      "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_AnnieTibbers",
-      "priority_score": 72
-    }
-  ],
-  "TFT_Item_Crownguard": [
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Singed",
-      "priority_score": 100
-    }
-  ],
-  "TFT_Item_Morellonomicon": [
-    {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Seraphine",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Ryze",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Zilean",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Singed",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Thresh",
-      "priority_score": 72
-    }
-  ],
-  "TFT_Item_Redemption": [
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Kennen",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Kobuko",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Braum",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393003",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 3.7264,
-      "carry": "TFT16_Singed",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Braum",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Ornn",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Neeko",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Leona",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Sejuani",
-      "priority_score": 72
-    }
-  ],
-  "TFT_Item_RabadonsDeathcap": [
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Rumble",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_StatikkShiv": [
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Rumble",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Bard",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Seraphine",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Ryze",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Zilean",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
-      "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Mel",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
-      "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_Annie",
-      "priority_score": 72
-    }
-  ],
-  "TFT_Item_BrambleVest": [
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Kennen",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Braum",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Ornn",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Neeko",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Taric",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
-      "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_AnnieTibbers",
-      "priority_score": 100
-    }
-  ],
   "TFT_Item_JeweledGauntlet": [
     {
-      "cluster_id": "393000",
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 3.6638,
+      "carry": "TFT16_AurelionSol",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394014",
       "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
+      "comp_tier": "S",
+      "comp_avg": 3.8451,
       "carry": "TFT16_Fizz",
       "priority_score": 100
     },
     {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Nidalee",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Malzahar",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Mel",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Lissandra",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
-      "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Mel",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393035",
+      "cluster_id": "394000",
       "comp_name": "TFT16_Sorcerer, TFT16_Lux",
-      "comp_tier": "A",
-      "comp_avg": 4.0933,
+      "comp_tier": "S",
+      "comp_avg": 3.8569,
       "carry": "TFT16_Lux",
       "priority_score": 100
     },
     {
-      "cluster_id": "393017",
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "comp_tier": "S",
+      "comp_avg": 3.8968,
+      "carry": "TFT16_Lissandra",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394003",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "comp_tier": "S",
+      "comp_avg": 3.94,
+      "carry": "TFT16_Mel",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.0341,
+      "carry": "TFT16_Nidalee",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 4.0712,
+      "carry": "TFT16_Mel",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1011,
+      "carry": "TFT16_Fizz",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394002",
       "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "comp_tier": "S",
+      "comp_avg": 4.1278,
+      "carry": "TFT16_Malzahar",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1427,
+      "carry": "TFT16_Ryze",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
       "comp_tier": "A",
-      "comp_avg": 3.9698,
+      "comp_avg": 4.283,
+      "carry": "TFT16_AurelionSol",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "comp_tier": "A",
+      "comp_avg": 4.317,
+      "carry": "TFT16_Seraphine",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "comp_tier": "A",
+      "comp_avg": 4.317,
+      "carry": "TFT16_Ryze",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "comp_tier": "A",
+      "comp_avg": 4.3413,
+      "carry": "TFT16_Mel",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "comp_tier": "A",
+      "comp_avg": 4.3576,
+      "carry": "TFT16_Ahri",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "comp_tier": "A",
+      "comp_avg": 4.3786,
+      "carry": "TFT16_Sett",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
+      "comp_tier": "A",
+      "comp_avg": 4.4506,
+      "carry": "TFT16_Leblanc",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "comp_tier": "A",
+      "comp_avg": 4.4818,
+      "carry": "TFT16_Leblanc",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "comp_tier": "A",
+      "comp_avg": 4.4818,
+      "carry": "TFT16_Ahri",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.499,
+      "carry": "TFT16_Ahri",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 3.6638,
+      "carry": "TFT16_Sylas",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394000",
+      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "comp_tier": "S",
+      "comp_avg": 3.8569,
+      "carry": "TFT16_Sylas",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 4.0712,
+      "carry": "TFT16_Sylas",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1011,
+      "carry": "TFT16_Ziggs",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394002",
+      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "comp_tier": "S",
+      "comp_avg": 4.1278,
       "carry": "TFT16_Zoe",
       "priority_score": 85
     },
     {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Sylas",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
-      "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_Sylas",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_PowerGauntlet": [
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Fizz",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Kalista",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Nidalee",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_UnstableConcoction": [
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Fizz",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Nidalee",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Sylas",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
-      "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Ambessa",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
-      "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_Sylas",
-      "priority_score": 72
-    }
-  ],
-  "TFT_Item_GargoyleStoneplate": [
-    {
-      "cluster_id": "393000",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "A",
-      "comp_avg": 3.8595,
-      "carry": "TFT16_Kobuko",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Leona",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_GuardianAngel": [
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Thresh",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Sylas",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
-      "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Ambessa",
-      "priority_score": 85
-    }
-  ],
-  "TFT_Item_IonicSpark": [
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Braum",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
-      "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Thresh",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Taric",
-      "priority_score": 72
-    }
-  ],
-  "TFT_Item_SpearOfShojin": [
-    {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Bard",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Seraphine",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Ryze",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393021",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
-      "carry": "TFT16_Zilean",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
-      "comp_tier": "A",
-      "comp_avg": 4.0559,
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "comp_tier": "S",
+      "comp_avg": 4.1585,
       "carry": "TFT16_Mel",
       "priority_score": 85
     },
     {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
       "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_Annie",
+      "comp_avg": 4.3158,
+      "carry": "TFT16_Bard",
       "priority_score": 85
     },
     {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
       "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Kalista",
-      "priority_score": 72
+      "comp_avg": 4.3413,
+      "carry": "TFT16_Azir",
+      "priority_score": 85
     },
     {
-      "cluster_id": "393017",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
       "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Zoe",
+      "comp_avg": 4.3637,
+      "carry": "TFT16_Kaisa",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3658,
+      "carry": "TFT16_Sett",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.4739,
+      "carry": "TFT16_Ziggs",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394003",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "comp_tier": "S",
+      "comp_avg": 3.94,
+      "carry": "TFT16_Sylas",
       "priority_score": 72
     }
   ],
-  "TFT_Item_DragonsClaw": [
+  "TFT_Item_Leviathan": [
     {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
       "comp_tier": "A",
-      "comp_avg": 3.9636,
-      "carry": "TFT16_Braum",
+      "comp_avg": 4.317,
+      "carry": "TFT16_Ryze",
       "priority_score": 85
     },
     {
-      "cluster_id": "393039",
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "comp_tier": "A",
+      "comp_avg": 4.3413,
+      "carry": "TFT16_Mel",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "comp_tier": "A",
+      "comp_avg": 4.3576,
+      "carry": "TFT16_Ahri",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394027",
       "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 3.6638,
+      "carry": "TFT16_AurelionSol",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394000",
+      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "comp_tier": "S",
+      "comp_avg": 3.8569,
+      "carry": "TFT16_Lux",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "comp_tier": "S",
+      "comp_avg": 3.8968,
+      "carry": "TFT16_Lissandra",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394003",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "comp_tier": "S",
+      "comp_avg": 3.94,
+      "carry": "TFT16_Mel",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 4.0712,
+      "carry": "TFT16_Mel",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394002",
+      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "comp_tier": "S",
+      "comp_avg": 4.1278,
+      "carry": "TFT16_Malzahar",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1427,
+      "carry": "TFT16_Ryze",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
       "comp_tier": "A",
-      "comp_avg": 4.0141,
+      "comp_avg": 4.283,
+      "carry": "TFT16_Mel",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
+      "comp_tier": "A",
+      "comp_avg": 4.283,
+      "carry": "TFT16_AurelionSol",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "comp_tier": "A",
+      "comp_avg": 4.317,
+      "carry": "TFT16_Seraphine",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "comp_tier": "A",
+      "comp_avg": 4.4818,
+      "carry": "TFT16_Leblanc",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "comp_tier": "A",
+      "comp_avg": 4.4818,
+      "carry": "TFT16_Ahri",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.499,
+      "carry": "TFT16_Ahri",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_IonicSpark": [
+    {
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 3.6638,
       "carry": "TFT16_Taric",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394003",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "comp_tier": "S",
+      "comp_avg": 3.94,
+      "carry": "TFT16_Swain",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "comp_tier": "S",
+      "comp_avg": 4.0701,
+      "carry": "TFT16_Singed",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1011,
+      "carry": "TFT16_Kennen",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1427,
+      "carry": "TFT16_Wukong",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.499,
+      "carry": "TFT16_Kennen",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.499,
+      "carry": "TFT16_Wukong",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "comp_tier": "S",
+      "comp_avg": 4.0327,
+      "carry": "TFT16_Thresh",
       "priority_score": 85
     },
     {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 4.0712,
+      "carry": "TFT16_Swain",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "comp_tier": "S",
+      "comp_avg": 4.1585,
+      "carry": "TFT16_Sion",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
       "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_AnnieTibbers",
+      "comp_avg": 4.4506,
+      "carry": "TFT16_Swain",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "comp_tier": "A",
+      "comp_avg": 4.4818,
+      "carry": "TFT16_Swain",
       "priority_score": 85
     }
   ],
   "TFT_Item_NightHarvester": [
     {
-      "cluster_id": "393009",
-      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
       "comp_tier": "A",
-      "comp_avg": 3.9636,
+      "comp_avg": 4.3637,
+      "carry": "TFT16_RiftHerald",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 3.6638,
+      "carry": "TFT16_Taric",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "comp_tier": "S",
+      "comp_avg": 4.0327,
       "carry": "TFT16_Ornn",
       "priority_score": 85
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "comp_tier": "A",
+      "comp_avg": 4.317,
+      "carry": "TFT16_Skarner",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.4739,
+      "carry": "TFT16_Wukong",
+      "priority_score": 72
     }
   ],
-  "TFT_Item_InfinityEdge": [
+  "TFT_Item_RedBuff": [
     {
-      "cluster_id": "393004",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.003,
+      "carry": "TFT16_Skarner",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "comp_tier": "S",
+      "comp_avg": 4.2473,
+      "carry": "TFT16_Braum",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
       "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Aphelios",
+      "comp_avg": 4.2663,
+      "carry": "TFT16_Singed",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394031",
+      "comp_name": "TFT16_Demacia, TFT16_Vayne",
+      "comp_tier": "A",
+      "comp_avg": 4.3035,
+      "carry": "TFT16_Garen",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3658,
+      "carry": "TFT16_Wukong",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "comp_tier": "A",
+      "comp_avg": 4.3786,
+      "carry": "TFT16_Wukong",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.5124,
+      "carry": "TFT16_Darius",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.5124,
+      "carry": "TFT16_Sejuani",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394003",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "comp_tier": "S",
+      "comp_avg": 3.94,
+      "carry": "TFT16_Swain",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.0341,
+      "carry": "TFT16_Neeko",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1011,
+      "carry": "TFT16_Kennen",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1427,
+      "carry": "TFT16_Wukong",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "comp_tier": "S",
+      "comp_avg": 4.1585,
+      "carry": "TFT16_Swain",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "comp_tier": "S",
+      "comp_avg": 4.2473,
+      "carry": "TFT16_Sejuani",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.3158,
+      "carry": "TFT16_Wukong",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.3637,
+      "carry": "TFT16_RiftHerald",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "comp_tier": "A",
+      "comp_avg": 4.4885,
+      "carry": "TFT16_Swain",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.499,
+      "carry": "TFT16_Kennen",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.499,
+      "carry": "TFT16_Wukong",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 3.6638,
+      "carry": "TFT16_Taric",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "comp_tier": "S",
+      "comp_avg": 3.8968,
+      "carry": "TFT16_Braum",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 4.0712,
+      "carry": "TFT16_Taric",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 4.0712,
+      "carry": "TFT16_Swain",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "comp_tier": "S",
+      "comp_avg": 4.1585,
+      "carry": "TFT16_Sion",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.3158,
+      "carry": "TFT16_Sion",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
+      "comp_tier": "A",
+      "comp_avg": 4.4506,
+      "carry": "TFT16_Swain",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "comp_tier": "A",
+      "comp_avg": 4.4818,
+      "carry": "TFT16_Swain",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_GuardianAngel": [
+    {
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 3.6638,
+      "carry": "TFT16_Sylas",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394003",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "comp_tier": "S",
+      "comp_avg": 3.94,
+      "carry": "TFT16_Sylas",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "comp_tier": "S",
+      "comp_avg": 4.0327,
+      "carry": "TFT16_Thresh",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 4.0712,
+      "carry": "TFT16_Sylas",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1427,
+      "carry": "TFT16_Volibear",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "comp_tier": "S",
+      "comp_avg": 4.1585,
+      "carry": "TFT16_Ambessa",
       "priority_score": 85
     }
   ],
-  "TFT_Item_ArchangelsStaff": [
+  "TFT_Item_UnstableConcoction": [
     {
-      "cluster_id": "393004",
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 3.6638,
+      "carry": "TFT16_Sylas",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "comp_tier": "S",
+      "comp_avg": 3.8451,
+      "carry": "TFT16_Fizz",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394000",
+      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "comp_tier": "S",
+      "comp_avg": 3.8569,
+      "carry": "TFT16_Sylas",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394008",
       "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.0341,
+      "carry": "TFT16_Nidalee",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 4.0712,
+      "carry": "TFT16_Sylas",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1011,
+      "carry": "TFT16_Fizz",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
       "comp_tier": "A",
-      "comp_avg": 3.965,
-      "carry": "TFT16_Bard",
+      "comp_avg": 4.3576,
+      "carry": "TFT16_Zaahen",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3658,
+      "carry": "TFT16_Sett",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "comp_tier": "A",
+      "comp_avg": 4.3786,
+      "carry": "TFT16_Sett",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.4739,
+      "carry": "TFT16_Sett",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_FrozenHeart": [
+    {
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 3.6638,
+      "carry": "TFT16_Swain",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "comp_tier": "S",
+      "comp_avg": 3.8451,
+      "carry": "TFT16_Kennen",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 4.0712,
+      "carry": "TFT16_Swain",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "comp_tier": "S",
+      "comp_avg": 4.2473,
+      "carry": "TFT16_Sejuani",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
+      "comp_tier": "A",
+      "comp_avg": 4.4506,
+      "carry": "TFT16_Swain",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "comp_tier": "A",
+      "comp_avg": 4.4885,
+      "carry": "TFT16_Swain",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "comp_tier": "A",
+      "comp_avg": 4.3413,
+      "carry": "TFT16_Nasus",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1515,
+      "carry": "TFT16_TahmKench",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
+      "comp_tier": "A",
+      "comp_avg": 4.283,
+      "carry": "TFT16_Swain",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_GuinsoosRageblade": [
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.003,
+      "carry": "TFT16_Kindred",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.0341,
+      "carry": "TFT16_Aphelios",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "comp_tier": "S",
+      "comp_avg": 4.0701,
+      "carry": "TFT16_Kindred",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1011,
+      "carry": "TFT16_Ziggs",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "comp_tier": "S",
+      "comp_avg": 4.2473,
+      "carry": "TFT16_Jinx",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "comp_tier": "A",
+      "comp_avg": 4.2663,
+      "carry": "TFT16_Jinx",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.3158,
+      "carry": "TFT16_Aphelios",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "comp_tier": "A",
+      "comp_avg": 4.3413,
+      "carry": "TFT16_Azir",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "comp_tier": "A",
+      "comp_avg": 4.3576,
+      "carry": "TFT16_Zaahen",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.3637,
+      "carry": "TFT16_Kaisa",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "comp_tier": "A",
+      "comp_avg": 4.3786,
+      "carry": "TFT16_Yunara",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
+      "comp_tier": "A",
+      "comp_avg": 4.4506,
+      "carry": "TFT16_Draven",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.4739,
+      "carry": "TFT16_Ziggs",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "comp_tier": "S",
+      "comp_avg": 3.8451,
+      "carry": "TFT16_Rumble",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "comp_tier": "S",
+      "comp_avg": 4.0701,
+      "carry": "TFT16_Ziggs",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "comp_tier": "A",
+      "comp_avg": 4.3576,
+      "carry": "TFT16_Yone",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3658,
+      "carry": "TFT16_Yone",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "comp_tier": "A",
+      "comp_avg": 4.3786,
+      "carry": "TFT16_Yone",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.499,
+      "carry": "TFT16_Yone",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.5124,
+      "carry": "TFT16_Ashe",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.5124,
+      "carry": "TFT16_Tryndamere",
+      "priority_score": 85
+    }
+  ],
+  "TFT_Item_RabadonsDeathcap": [
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "comp_tier": "S",
+      "comp_avg": 3.8968,
+      "carry": "TFT16_Zilean",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1011,
+      "carry": "TFT16_Veigar",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "comp_tier": "S",
+      "comp_avg": 3.8451,
+      "carry": "TFT16_Rumble",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.4739,
+      "carry": "TFT16_Ziggs",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_GargoyleStoneplate": [
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1515,
+      "carry": "TFT16_Wukong",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "comp_tier": "S",
+      "comp_avg": 4.1585,
+      "carry": "TFT16_Sion",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "comp_tier": "A",
+      "comp_avg": 4.2663,
+      "carry": "TFT16_DrMundo",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.3158,
+      "carry": "TFT16_Wukong",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "comp_tier": "A",
+      "comp_avg": 4.4818,
+      "carry": "TFT16_Swain",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "comp_tier": "S",
+      "comp_avg": 3.8451,
+      "carry": "TFT16_Kennen",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 4.0712,
+      "carry": "TFT16_Taric",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394002",
+      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "comp_tier": "S",
+      "comp_avg": 4.1278,
+      "carry": "TFT16_Leona",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.4739,
+      "carry": "TFT16_Wukong",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "comp_tier": "A",
+      "comp_avg": 4.3413,
+      "carry": "TFT16_Nasus",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_Redemption": [
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.003,
+      "carry": "TFT16_Skarner",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "comp_tier": "S",
+      "comp_avg": 4.2473,
+      "carry": "TFT16_Braum",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "comp_tier": "A",
+      "comp_avg": 4.2663,
+      "carry": "TFT16_DrMundo",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "comp_tier": "A",
+      "comp_avg": 4.2663,
+      "carry": "TFT16_Singed",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394031",
+      "comp_name": "TFT16_Demacia, TFT16_Vayne",
+      "comp_tier": "A",
+      "comp_avg": 4.3035,
+      "carry": "TFT16_Garen",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3658,
+      "carry": "TFT16_Wukong",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "comp_tier": "A",
+      "comp_avg": 4.3786,
+      "carry": "TFT16_Wukong",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.5124,
+      "carry": "TFT16_Darius",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "comp_tier": "S",
+      "comp_avg": 3.8451,
+      "carry": "TFT16_Kennen",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "comp_tier": "S",
+      "comp_avg": 3.8451,
+      "carry": "TFT16_Kobuko",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "comp_tier": "S",
+      "comp_avg": 4.0327,
+      "carry": "TFT16_Braum",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "comp_tier": "S",
+      "comp_avg": 4.0327,
+      "carry": "TFT16_Ornn",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.0341,
+      "carry": "TFT16_Neeko",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "comp_tier": "S",
+      "comp_avg": 4.0701,
+      "carry": "TFT16_Singed",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1011,
+      "carry": "TFT16_Kennen",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394002",
+      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "comp_tier": "S",
+      "comp_avg": 4.1278,
+      "carry": "TFT16_Leona",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1427,
+      "carry": "TFT16_Wukong",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "comp_tier": "S",
+      "comp_avg": 4.2473,
+      "carry": "TFT16_Sejuani",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.3158,
+      "carry": "TFT16_Wukong",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.499,
+      "carry": "TFT16_Kennen",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.499,
+      "carry": "TFT16_Wukong",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_Quicksilver": [
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "comp_tier": "S",
+      "comp_avg": 3.8451,
+      "carry": "TFT16_Fizz",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.3637,
+      "carry": "TFT16_Volibear",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "comp_tier": "A",
+      "comp_avg": 4.4885,
+      "carry": "TFT16_BelVeth",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "comp_tier": "A",
+      "comp_avg": 4.3576,
+      "carry": "TFT16_Yone",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.5124,
+      "carry": "TFT16_Tryndamere",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_BrambleVest": [
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "comp_tier": "S",
+      "comp_avg": 3.8451,
+      "carry": "TFT16_Kobuko",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394000",
+      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "comp_tier": "S",
+      "comp_avg": 3.8569,
+      "carry": "TFT16_AnnieTibbers",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "comp_tier": "S",
+      "comp_avg": 3.8968,
+      "carry": "TFT16_Braum",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "comp_tier": "S",
+      "comp_avg": 4.0327,
+      "carry": "TFT16_Braum",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "comp_tier": "S",
+      "comp_avg": 4.0327,
+      "carry": "TFT16_Ornn",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.0341,
+      "carry": "TFT16_Neeko",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 4.0712,
+      "carry": "TFT16_Taric",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
+      "comp_tier": "A",
+      "comp_avg": 4.283,
+      "carry": "TFT16_Swain",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.3158,
+      "carry": "TFT16_Sion",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "comp_tier": "A",
+      "comp_avg": 4.317,
+      "carry": "TFT16_Skarner",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "comp_tier": "A",
+      "comp_avg": 4.3576,
+      "carry": "TFT16_XinZhao",
       "priority_score": 100
     }
   ],
-  "TFT_Item_Leviathan": [
+  "TFT_Item_DragonsClaw": [
     {
-      "cluster_id": "393017",
+      "cluster_id": "394002",
       "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "A",
-      "comp_avg": 3.9698,
-      "carry": "TFT16_Malzahar",
-      "priority_score": 72
+      "comp_tier": "S",
+      "comp_avg": 4.1278,
+      "carry": "TFT16_Leona",
+      "priority_score": 100
     },
     {
-      "cluster_id": "393039",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "A",
-      "comp_avg": 4.0141,
-      "carry": "TFT16_Mel",
-      "priority_score": 72
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "comp_tier": "S",
+      "comp_avg": 4.1585,
+      "carry": "TFT16_Swain",
+      "priority_score": 100
     },
     {
-      "cluster_id": "393021",
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "comp_tier": "A",
+      "comp_avg": 4.3413,
+      "carry": "TFT16_Nasus",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.4739,
+      "carry": "TFT16_Wukong",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "comp_tier": "S",
+      "comp_avg": 3.8451,
+      "carry": "TFT16_Kobuko",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394000",
+      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "comp_tier": "S",
+      "comp_avg": 3.8569,
+      "carry": "TFT16_AnnieTibbers",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394026",
       "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "comp_tier": "S",
+      "comp_avg": 3.8968,
+      "carry": "TFT16_Braum",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "comp_tier": "S",
+      "comp_avg": 4.0327,
+      "carry": "TFT16_Braum",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
       "comp_tier": "A",
-      "comp_avg": 4.0313,
+      "comp_avg": 4.283,
+      "carry": "TFT16_Swain",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.3158,
+      "carry": "TFT16_Sion",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "comp_tier": "A",
+      "comp_avg": 4.317,
+      "carry": "TFT16_Skarner",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "comp_tier": "A",
+      "comp_avg": 4.3576,
+      "carry": "TFT16_XinZhao",
+      "priority_score": 85
+    }
+  ],
+  "TFT_Item_AdaptiveHelm": [
+    {
+      "cluster_id": "394000",
+      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "comp_tier": "S",
+      "comp_avg": 3.8569,
+      "carry": "TFT16_Annie",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394031",
+      "comp_name": "TFT16_Demacia, TFT16_Vayne",
+      "comp_tier": "A",
+      "comp_avg": 4.3035,
+      "carry": "TFT16_Galio",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
+      "comp_tier": "A",
+      "comp_avg": 4.4506,
+      "carry": "TFT16_Darius",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "comp_tier": "A",
+      "comp_avg": 4.4818,
+      "carry": "TFT16_Darius",
+      "priority_score": 100
+    }
+  ],
+  "TFT_Item_SpearOfShojin": [
+    {
+      "cluster_id": "394000",
+      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "comp_tier": "S",
+      "comp_avg": 3.8569,
+      "carry": "TFT16_Annie",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "comp_tier": "S",
+      "comp_avg": 3.8968,
+      "carry": "TFT16_Zilean",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394003",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "comp_tier": "S",
+      "comp_avg": 3.94,
+      "carry": "TFT16_Ryze",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.0341,
+      "carry": "TFT16_Bard",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394002",
+      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "comp_tier": "S",
+      "comp_avg": 4.1278,
+      "carry": "TFT16_Seraphine",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
+      "comp_tier": "A",
+      "comp_avg": 4.283,
+      "carry": "TFT16_Seraphine",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "comp_tier": "A",
+      "comp_avg": 4.3413,
+      "carry": "TFT16_Ryze",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
+      "comp_tier": "A",
+      "comp_avg": 4.4506,
+      "carry": "TFT16_Leblanc",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.4739,
+      "carry": "TFT16_Ryze",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.003,
+      "carry": "TFT16_Lucian",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "comp_tier": "S",
+      "comp_avg": 4.0327,
+      "carry": "TFT16_Kalista",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1011,
+      "carry": "TFT16_Veigar",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394002",
+      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "comp_tier": "S",
+      "comp_avg": 4.1278,
+      "carry": "TFT16_Zoe",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1515,
+      "carry": "TFT16_MissFortune",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1515,
+      "carry": "TFT16_Lucian",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394031",
+      "comp_name": "TFT16_Demacia, TFT16_Vayne",
+      "comp_tier": "A",
+      "comp_avg": 4.3035,
+      "carry": "TFT16_Kaisa",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.3158,
+      "carry": "TFT16_Bard",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "comp_tier": "A",
+      "comp_avg": 4.317,
+      "carry": "TFT16_Ryze",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_StatikkShiv": [
+    {
+      "cluster_id": "394000",
+      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "comp_tier": "S",
+      "comp_avg": 3.8569,
+      "carry": "TFT16_Annie",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "comp_tier": "S",
+      "comp_avg": 3.8968,
+      "carry": "TFT16_Zilean",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394003",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "comp_tier": "S",
+      "comp_avg": 3.94,
+      "carry": "TFT16_Ryze",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.0341,
+      "carry": "TFT16_Bard",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "comp_tier": "S",
+      "comp_avg": 4.0701,
+      "carry": "TFT16_Ziggs",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1011,
+      "carry": "TFT16_Ziggs",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394002",
+      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "comp_tier": "S",
+      "comp_avg": 4.1278,
+      "carry": "TFT16_Seraphine",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1427,
       "carry": "TFT16_Lissandra",
       "priority_score": 72
     },
     {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "comp_tier": "S",
+      "comp_avg": 4.1585,
+      "carry": "TFT16_Mel",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
       "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_Lux",
+      "comp_avg": 4.283,
+      "carry": "TFT16_Seraphine",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "comp_tier": "A",
+      "comp_avg": 4.3413,
+      "carry": "TFT16_Ryze",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "comp_tier": "A",
+      "comp_avg": 4.3576,
+      "carry": "TFT16_Ahri",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.3637,
+      "carry": "TFT16_Kaisa",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
+      "comp_tier": "A",
+      "comp_avg": 4.4506,
+      "carry": "TFT16_Leblanc",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.4739,
+      "carry": "TFT16_Ryze",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_WarmogsArmor": [
+    {
+      "cluster_id": "394000",
+      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "comp_tier": "S",
+      "comp_avg": 3.8569,
+      "carry": "TFT16_AnnieTibbers",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394003",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "comp_tier": "S",
+      "comp_avg": 3.94,
+      "carry": "TFT16_Swain",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1515,
+      "carry": "TFT16_Wukong",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "comp_tier": "S",
+      "comp_avg": 4.1585,
+      "carry": "TFT16_Swain",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "comp_tier": "S",
+      "comp_avg": 4.2473,
+      "carry": "TFT16_Braum",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "comp_tier": "A",
+      "comp_avg": 4.2663,
+      "carry": "TFT16_DrMundo",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394031",
+      "comp_name": "TFT16_Demacia, TFT16_Vayne",
+      "comp_tier": "A",
+      "comp_avg": 4.3035,
+      "carry": "TFT16_Garen",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "comp_tier": "A",
+      "comp_avg": 4.3576,
+      "carry": "TFT16_XinZhao",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.5124,
+      "carry": "TFT16_Sejuani",
       "priority_score": 72
     }
   ],
   "TFT_Item_HextechGunblade": [
     {
-      "cluster_id": "393017",
+      "cluster_id": "394000",
+      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "comp_tier": "S",
+      "comp_avg": 3.8569,
+      "carry": "TFT16_Sylas",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1011,
+      "carry": "TFT16_Veigar",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394002",
       "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "A",
-      "comp_avg": 3.9698,
+      "comp_tier": "S",
+      "comp_avg": 4.1278,
       "carry": "TFT16_Zoe",
       "priority_score": 100
     },
     {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "cluster_id": "394031",
+      "comp_name": "TFT16_Demacia, TFT16_Vayne",
       "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_Sylas",
+      "comp_avg": 4.3035,
+      "carry": "TFT16_Vayne",
       "priority_score": 100
+    },
+    {
+      "cluster_id": "394003",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "comp_tier": "S",
+      "comp_avg": 3.94,
+      "carry": "TFT16_Sylas",
+      "priority_score": 85
+    }
+  ],
+  "TFT_Item_Bloodthirster": [
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "comp_tier": "S",
+      "comp_avg": 3.8968,
+      "carry": "TFT16_Volibear",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.003,
+      "carry": "TFT16_Shyvana",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "comp_tier": "S",
+      "comp_avg": 4.0701,
+      "carry": "TFT16_Warwick",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1427,
+      "carry": "TFT16_Volibear",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "comp_tier": "S",
+      "comp_avg": 4.1585,
+      "carry": "TFT16_Ambessa",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "comp_tier": "S",
+      "comp_avg": 4.2473,
+      "carry": "TFT16_Warwick",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "comp_tier": "A",
+      "comp_avg": 4.2663,
+      "carry": "TFT16_Warwick",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "comp_tier": "A",
+      "comp_avg": 4.317,
+      "carry": "TFT16_Brock",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "comp_tier": "A",
+      "comp_avg": 4.3576,
+      "carry": "TFT16_Yone",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.3637,
+      "carry": "TFT16_BaronNashor",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.3637,
+      "carry": "TFT16_Volibear",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3658,
+      "carry": "TFT16_Yone",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3658,
+      "carry": "TFT16_Aatrox",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "comp_tier": "A",
+      "comp_avg": 4.3786,
+      "carry": "TFT16_Yone",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.4739,
+      "carry": "TFT16_Sett",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "comp_tier": "A",
+      "comp_avg": 4.4885,
+      "carry": "TFT16_Aatrox",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.499,
+      "carry": "TFT16_Yone",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "comp_tier": "A",
+      "comp_avg": 4.4885,
+      "carry": "TFT16_Ambessa",
+      "priority_score": 85
     }
   ],
   "TFT_Item_SteraksGage": [
     {
-      "cluster_id": "393021",
+      "cluster_id": "394026",
       "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0313,
+      "comp_tier": "S",
+      "comp_avg": 3.8968,
       "carry": "TFT16_Volibear",
       "priority_score": 85
     },
     {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
-      "comp_tier": "A",
-      "comp_avg": 4.0546,
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.003,
+      "carry": "TFT16_Shyvana",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "comp_tier": "S",
+      "comp_avg": 4.0701,
       "carry": "TFT16_Warwick",
       "priority_score": 85
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "comp_tier": "S",
+      "comp_avg": 4.2473,
+      "carry": "TFT16_Warwick",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "comp_tier": "A",
+      "comp_avg": 4.2663,
+      "carry": "TFT16_Warwick",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3658,
+      "carry": "TFT16_Aatrox",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
+      "comp_tier": "A",
+      "comp_avg": 4.4506,
+      "carry": "TFT16_Darius",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "comp_tier": "A",
+      "comp_avg": 4.4818,
+      "carry": "TFT16_Darius",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "comp_tier": "A",
+      "comp_avg": 4.4885,
+      "carry": "TFT16_Aatrox",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1427,
+      "carry": "TFT16_Volibear",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "comp_tier": "A",
+      "comp_avg": 4.317,
+      "carry": "TFT16_Brock",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.3637,
+      "carry": "TFT16_BaronNashor",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.3637,
+      "carry": "TFT16_Volibear",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "comp_tier": "A",
+      "comp_avg": 4.4885,
+      "carry": "TFT16_Ambessa",
+      "priority_score": 72
     }
   ],
-  "TFT_Item_FrozenHeart": [
+  "TFT_Item_TitansResolve": [
     {
-      "cluster_id": "393025",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Braum",
+      "cluster_id": "394028",
+      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
       "comp_tier": "A",
-      "comp_avg": 4.0546,
-      "carry": "TFT16_Sejuani",
+      "comp_avg": 4.3576,
+      "carry": "TFT16_Zaahen",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.4739,
+      "carry": "TFT16_Sett",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394026",
+      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "comp_tier": "S",
+      "comp_avg": 3.8968,
+      "carry": "TFT16_Volibear",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.003,
+      "carry": "TFT16_Shyvana",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "comp_tier": "S",
+      "comp_avg": 4.0701,
+      "carry": "TFT16_Warwick",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "comp_tier": "S",
+      "comp_avg": 4.2473,
+      "carry": "TFT16_Warwick",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "comp_tier": "A",
+      "comp_avg": 4.2663,
+      "carry": "TFT16_Warwick",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3658,
+      "carry": "TFT16_Yone",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3658,
+      "carry": "TFT16_Aatrox",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "comp_tier": "A",
+      "comp_avg": 4.3786,
+      "carry": "TFT16_Yone",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
+      "comp_tier": "A",
+      "comp_avg": 4.4506,
+      "carry": "TFT16_Darius",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394023",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
+      "comp_tier": "A",
+      "comp_avg": 4.4818,
+      "carry": "TFT16_Darius",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "comp_tier": "A",
+      "comp_avg": 4.4885,
+      "carry": "TFT16_Aatrox",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394013",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
+      "comp_tier": "A",
+      "comp_avg": 4.499,
+      "carry": "TFT16_Yone",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_Morellonomicon": [
+    {
+      "cluster_id": "394003",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "comp_tier": "S",
+      "comp_avg": 3.94,
+      "carry": "TFT16_Ryze",
       "priority_score": 100
     },
     {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
-      "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Swain",
+      "cluster_id": "394002",
+      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "comp_tier": "S",
+      "comp_avg": 4.1278,
+      "carry": "TFT16_Seraphine",
       "priority_score": 100
+    },
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "comp_tier": "A",
+      "comp_avg": 4.3413,
+      "carry": "TFT16_Ryze",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394037",
+      "comp_name": "TFT16_Ionia, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.4739,
+      "carry": "TFT16_Ryze",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "comp_tier": "S",
+      "comp_avg": 4.0701,
+      "carry": "TFT16_Singed",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1427,
+      "carry": "TFT16_Lissandra",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "comp_tier": "S",
+      "comp_avg": 4.0327,
+      "carry": "TFT16_Thresh",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_MadredsBloodrazor": [
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "comp_tier": "A",
+      "comp_avg": 4.4885,
+      "carry": "TFT16_BelVeth",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.003,
+      "carry": "TFT16_Kindred",
+      "priority_score": 85
+    }
+  ],
+  "TFT_Item_RunaansHurricane": [
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.003,
+      "carry": "TFT16_Kindred",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.0341,
+      "carry": "TFT16_Aphelios",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "comp_tier": "S",
+      "comp_avg": 4.0701,
+      "carry": "TFT16_Kindred",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "comp_tier": "S",
+      "comp_avg": 4.2473,
+      "carry": "TFT16_Jinx",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "comp_tier": "A",
+      "comp_avg": 4.2663,
+      "carry": "TFT16_Jinx",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394031",
+      "comp_name": "TFT16_Demacia, TFT16_Vayne",
+      "comp_tier": "A",
+      "comp_avg": 4.3035,
+      "carry": "TFT16_Vayne",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.3158,
+      "carry": "TFT16_Aphelios",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
+      "comp_tier": "A",
+      "comp_avg": 4.4506,
+      "carry": "TFT16_Draven",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "comp_tier": "A",
+      "comp_avg": 4.4885,
+      "carry": "TFT16_BelVeth",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.5124,
+      "carry": "TFT16_Ashe",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_LastWhisper": [
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.003,
+      "carry": "TFT16_Lucian",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "comp_tier": "S",
+      "comp_avg": 4.0327,
+      "carry": "TFT16_Kalista",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1515,
+      "carry": "TFT16_Lucian",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "comp_tier": "S",
+      "comp_avg": 4.0701,
+      "carry": "TFT16_Kindred",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394010",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "comp_tier": "S",
+      "comp_avg": 4.2473,
+      "carry": "TFT16_Jinx",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "comp_tier": "A",
+      "comp_avg": 4.2663,
+      "carry": "TFT16_Jinx",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394031",
+      "comp_name": "TFT16_Demacia, TFT16_Vayne",
+      "comp_tier": "A",
+      "comp_avg": 4.3035,
+      "carry": "TFT16_Kaisa",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394006",
+      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
+      "comp_tier": "A",
+      "comp_avg": 4.4506,
+      "carry": "TFT16_Draven",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "comp_tier": "A",
+      "comp_avg": 4.3786,
+      "carry": "TFT16_Yunara",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_RapidFireCannon": [
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
+      "comp_tier": "A",
+      "comp_avg": 4.283,
+      "carry": "TFT16_Seraphine",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.003,
+      "carry": "TFT16_Lucian",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1515,
+      "carry": "TFT16_Lucian",
+      "priority_score": 85
     }
   ],
   "TFT_Item_SpectralGauntlet": [
     {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1515,
+      "carry": "TFT16_Wukong",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
       "comp_tier": "A",
-      "comp_avg": 4.0559,
+      "comp_avg": 4.5124,
+      "carry": "TFT16_Sejuani",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394009",
+      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "comp_tier": "S",
+      "comp_avg": 4.003,
+      "carry": "TFT16_Skarner",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394029",
+      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "comp_tier": "A",
+      "comp_avg": 4.2663,
+      "carry": "TFT16_Singed",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.3637,
+      "carry": "TFT16_RiftHerald",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3658,
+      "carry": "TFT16_Wukong",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "comp_tier": "A",
+      "comp_avg": 4.3786,
+      "carry": "TFT16_Wukong",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "comp_tier": "A",
+      "comp_avg": 4.4885,
       "carry": "TFT16_Swain",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "comp_tier": "A",
+      "comp_avg": 4.5124,
+      "carry": "TFT16_Darius",
       "priority_score": 72
     }
   ],
-  "TFT_Item_Deathblade": [
+  "TFT_Item_PowerGauntlet": [
     {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
+      "cluster_id": "394011",
+      "comp_name": "TFT16_Warden, TFT16_Kalista",
+      "comp_tier": "S",
+      "comp_avg": 4.0327,
+      "carry": "TFT16_Kalista",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.0341,
+      "carry": "TFT16_Nidalee",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394025",
+      "comp_name": "TFT16_Yordle, TFT16_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.1011,
+      "carry": "TFT16_Fizz",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
       "comp_tier": "A",
-      "comp_avg": 4.0559,
+      "comp_avg": 4.3786,
+      "carry": "TFT16_Sett",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "comp_tier": "A",
+      "comp_avg": 4.3413,
+      "carry": "TFT16_Azir",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "comp_tier": "A",
+      "comp_avg": 4.3413,
+      "carry": "TFT16_Mel",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_InfinityEdge": [
+    {
+      "cluster_id": "394031",
+      "comp_name": "TFT16_Demacia, TFT16_Vayne",
+      "comp_tier": "A",
+      "comp_avg": 4.3035,
+      "carry": "TFT16_Kaisa",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.0341,
+      "carry": "TFT16_Aphelios",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.3158,
+      "carry": "TFT16_Aphelios",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394044",
+      "comp_name": "TFT16_Explorer, TFT16_Skarner",
+      "comp_tier": "A",
+      "comp_avg": 4.317,
+      "carry": "TFT16_Brock",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394018",
+      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "comp_tier": "A",
+      "comp_avg": 4.3637,
+      "carry": "TFT16_BaronNashor",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394007",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "comp_tier": "A",
+      "comp_avg": 4.3786,
+      "carry": "TFT16_Yunara",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "comp_tier": "S",
+      "comp_avg": 4.1585,
+      "carry": "TFT16_Ambessa",
+      "priority_score": 72
+    }
+  ],
+  "TFT_Item_ArchangelsStaff": [
+    {
+      "cluster_id": "394008",
+      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.0341,
+      "carry": "TFT16_Bard",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394024",
+      "comp_name": "TFT16_Zaun, TFT16_Warwick",
+      "comp_tier": "S",
+      "comp_avg": 4.0701,
+      "carry": "TFT16_Ziggs",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394032",
+      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.3158,
+      "carry": "TFT16_Bard",
+      "priority_score": 100
+    }
+  ],
+  "TFT_Item_BlueBuff": [
+    {
+      "cluster_id": "394001",
+      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1427,
+      "carry": "TFT16_Lissandra",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "comp_tier": "S",
+      "comp_avg": 4.1585,
+      "carry": "TFT16_Mel",
+      "priority_score": 100
+    }
+  ],
+  "TFT16_Item_Bilgewater_DeadmansDagger": [
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1515,
+      "carry": "TFT16_MissFortune",
+      "priority_score": 100
+    }
+  ],
+  "TFT16_Item_Bilgewater_FirstMatesFlintlock": [
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1515,
+      "carry": "TFT16_MissFortune",
+      "priority_score": 85
+    }
+  ],
+  "TFT16_Item_Bilgewater_FreebootersFrock": [
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1515,
+      "carry": "TFT16_TahmKench",
+      "priority_score": 100
+    }
+  ],
+  "TFT16_Item_Bilgewater_PileOCitrus": [
+    {
+      "cluster_id": "394019",
+      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
+      "comp_tier": "S",
+      "comp_avg": 4.1515,
+      "carry": "TFT16_TahmKench",
+      "priority_score": 85
+    }
+  ],
+  "TFT16_Item_VanquisherEmblemItem": [
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
+      "comp_tier": "A",
+      "comp_avg": 4.283,
+      "carry": "TFT16_Mel",
+      "priority_score": 100
+    }
+  ],
+  "TFT16_Item_SlayerEmblemItem": [
+    {
+      "cluster_id": "394015",
+      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3658,
+      "carry": "TFT16_Sett",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "comp_tier": "A",
+      "comp_avg": 4.4885,
       "carry": "TFT16_Ambessa",
       "priority_score": 100
     }
   ],
-  "TFT16_Item_NoxusEmblemItem": [
+  "TFT_Item_Deathblade": [
     {
-      "cluster_id": "393016",
-      "comp_name": "TFT16_Noxus, TFT16_Swain",
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
       "comp_tier": "A",
-      "comp_avg": 4.0559,
-      "carry": "TFT16_Kindred",
+      "comp_avg": 4.5124,
+      "carry": "TFT16_Ashe",
       "priority_score": 100
-    }
-  ],
-  "TFT_Item_AdaptiveHelm": [
+    },
     {
-      "cluster_id": "393035",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "cluster_id": "394004",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
       "comp_tier": "A",
-      "comp_avg": 4.0933,
-      "carry": "TFT16_Annie",
+      "comp_avg": 4.5124,
+      "carry": "TFT16_Tryndamere",
       "priority_score": 100
     }
   ]

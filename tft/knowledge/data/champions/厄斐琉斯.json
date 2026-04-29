@@ -5,19 +5,19 @@
       "cluster_id": "394008",
       "comp_name": "TFT16_Defender, TFT16_Aphelios",
       "tier": "S",
-      "avg_placement": 4.1646
+      "avg_placement": 4.0341
     },
     {
       "cluster_id": "394032",
       "comp_name": "TFT16_Brawler, TFT16_Aphelios",
       "tier": "A",
-      "avg_placement": 4.3367
+      "avg_placement": 4.3158
     },
     {
       "cluster_id": "394056",
       "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_Brawler",
       "tier": "C",
-      "avg_placement": 4.8979
+      "avg_placement": 4.89
     }
   ],
   "builds": [
@@ -29,8 +29,8 @@
         "无尽之刃",
         "海妖之怒"
       ],
-      "avg_placement": 4.0416,
-      "count": 33715,
+      "avg_placement": 3.8948,
+      "count": 17691,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
         "无尽之刃": 85,
@@ -45,8 +45,8 @@
         "无尽之刃",
         "海妖之怒"
       ],
-      "avg_placement": 4.0394,
-      "count": 33010,
+      "avg_placement": 4.0001,
+      "count": 20304,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
         "无尽之刃": 85,
@@ -57,16 +57,16 @@
       "cluster_id": "394056",
       "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_Brawler",
       "items": [
+        "死亡之刃",
         "鬼索的狂暴之刃",
-        "无尽之刃",
-        "海妖之怒"
+        "无尽之刃"
       ],
-      "avg_placement": 4.4771,
-      "count": 262,
+      "avg_placement": 3.6923,
+      "count": 26,
       "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "无尽之刃": 85,
-        "海妖之怒": 72
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "无尽之刃": 72
       }
     }
   ]

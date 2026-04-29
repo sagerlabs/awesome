@@ -225,7 +225,7 @@ func BuildGraph(ctx context.Context, chatModel model.ChatModel, store *data.Stor
 	return runnable, nil
 }
 
-func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, store *data.Store) (
+func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, knowledgeAdapter *KnowledgeAdapter) (
 	compose.Runnable[*NluContext, *NluEnrichedContext], error,
 ) {
 	g := compose.NewGraph[*NluContext, *NluEnrichedContext]()
@@ -269,7 +269,10 @@ func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, store *data.S
 
 	// Node 2: 数据查询和中文转换
 	dataLookup := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluEnrichedContext, err error) {
-		result := QueryNLUData(input.Ctx, store)
+		result, err := knowledgeAdapter.QueryNLU(input.Ctx)
+		if err != nil {
+			return nil, fmt.Errorf("knowledge query nlu: %w", err)
+		}
 		result.UserInput = input.UserInput
 		return result, nil
 	})
@@ -299,7 +302,7 @@ func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, store *data.S
 }
 
 // BuildNluStreamGraph 构建支持流式输出的NLU Graph，包含LLM润色节点
-func BuildNluStreamGraph(ctx context.Context, chatModel model.ChatModel, store *data.Store) (
+func BuildNluStreamGraph(ctx context.Context, chatModel model.ChatModel, knowledgeAdapter *KnowledgeAdapter) (
 	compose.Runnable[*NluContext, *schema.Message], error,
 ) {
 	g := compose.NewGraph[*NluContext, *schema.Message]()
@@ -343,7 +346,10 @@ func BuildNluStreamGraph(ctx context.Context, chatModel model.ChatModel, store *
 
 	// Node 2: 数据查询和中文转换
 	dataLookup := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluEnrichedContext, err error) {
-		result := QueryNLUData(input.Ctx, store)
+		result, err := knowledgeAdapter.QueryNLU(input.Ctx)
+		if err != nil {
+			return nil, fmt.Errorf("knowledge query nlu: %w", err)
+		}
 		result.UserInput = input.UserInput
 		return result, nil
 	})

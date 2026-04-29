@@ -5,19 +5,25 @@
       "cluster_id": "394014",
       "comp_name": "TFT16_Augment_RumbleCarry",
       "tier": "S",
-      "avg_placement": 3.9397
+      "avg_placement": 3.8451
     },
     {
       "cluster_id": "394025",
       "comp_name": "TFT16_Yordle, TFT16_Veigar",
       "tier": "S",
-      "avg_placement": 4.1393
+      "avg_placement": 4.1011
     },
     {
       "cluster_id": "394060",
       "comp_name": "TFT16_Yordle, TFT16_Teemo",
-      "tier": "C",
-      "avg_placement": 4.8838
+      "tier": "B",
+      "avg_placement": 4.7205
+    },
+    {
+      "cluster_id": "394065",
+      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Sorcerer",
+      "tier": "D",
+      "avg_placement": 5.7742
     }
   ],
   "builds": []

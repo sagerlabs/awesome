@@ -10,7 +10,7 @@ out/
 bin/
 *.exe
 *.test
-
+.gocache
 # Go local cache
 vendor/
 

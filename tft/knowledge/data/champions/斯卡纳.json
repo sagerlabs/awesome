@@ -5,31 +5,31 @@
       "cluster_id": "394009",
       "comp_name": "TFT16_Noxus, TFT16_Skarner",
       "tier": "S",
-      "avg_placement": 4.1962
+      "avg_placement": 4.003
     },
     {
       "cluster_id": "394044",
       "comp_name": "TFT16_Explorer, TFT16_Skarner",
-      "tier": "B",
-      "avg_placement": 4.5267
+      "tier": "A",
+      "avg_placement": 4.317
     },
     {
       "cluster_id": "394059",
       "comp_name": "TFT16_Explorer, TFT16_Lissandra",
-      "tier": "D",
-      "avg_placement": 5.3876
+      "tier": "C",
+      "avg_placement": 5.0701
     },
     {
       "cluster_id": "394067",
       "comp_name": "TFT16_Explorer, TFT16_Nidalee",
       "tier": "D",
-      "avg_placement": 5.7087
+      "avg_placement": 5.4977
     },
     {
       "cluster_id": "394068",
       "comp_name": "TFT16_Explorer, TFT16_Bard",
       "tier": "D",
-      "avg_placement": 6.3249
+      "avg_placement": 6.167
     }
   ],
   "builds": [
@@ -41,8 +41,8 @@
         "振奋盔甲",
         "薄暮法袍"
       ],
-      "avg_placement": 3.8252,
-      "count": 2866,
+      "avg_placement": 3.6585,
+      "count": 2290,
       "priority_scores": {
         "日炎斗篷": 100,
         "振奋盔甲": 85,
@@ -53,16 +53,16 @@
       "cluster_id": "394044",
       "comp_name": "TFT16_Explorer, TFT16_Skarner",
       "items": [
+        "棘刺背心",
         "巨龙之爪",
-        "日炎斗篷",
-        "薄暮法袍"
+        "坚定之心"
       ],
-      "avg_placement": 3.8116,
-      "count": 69,
+      "avg_placement": 3.3816,
+      "count": 76,
       "priority_scores": {
-        "巨龙之爪": 100,
-        "日炎斗篷": 85,
-        "薄暮法袍": 72
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
+        "坚定之心": 72
       }
     },
     {
@@ -70,14 +70,14 @@
       "comp_name": "TFT16_Explorer, TFT16_Lissandra",
       "items": [
         "巨龙之爪",
-        "石像鬼石板甲",
+        "坚定之心",
         "日炎斗篷"
       ],
-      "avg_placement": 4.5442,
-      "count": 147,
+      "avg_placement": 4,
+      "count": 34,
       "priority_scores": {
         "巨龙之爪": 100,
-        "石像鬼石板甲": 85,
+        "坚定之心": 85,
         "日炎斗篷": 72
       }
     },
@@ -85,16 +85,16 @@
       "cluster_id": "394067",
       "comp_name": "TFT16_Explorer, TFT16_Nidalee",
       "items": [
+        "巨龙之爪",
         "石像鬼石板甲",
-        "日炎斗篷",
-        "振奋盔甲"
+        "日炎斗篷"
       ],
-      "avg_placement": 5.2613,
-      "count": 1615,
+      "avg_placement": 4.785,
+      "count": 507,
       "priority_scores": {
-        "石像鬼石板甲": 100,
-        "日炎斗篷": 85,
-        "振奋盔甲": 72
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
       }
     }
   ]

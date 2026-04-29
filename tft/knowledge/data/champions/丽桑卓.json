@@ -5,37 +5,43 @@
       "cluster_id": "394026",
       "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
       "tier": "S",
-      "avg_placement": 4.1324
+      "avg_placement": 3.8968
     },
     {
       "cluster_id": "394001",
       "comp_name": "TFT16_Brawler, TFT16_Wukong",
       "tier": "S",
-      "avg_placement": 4.219
+      "avg_placement": 4.1427
     },
     {
       "cluster_id": "394030",
       "comp_name": "TFT16_Piltover, TFT16_Seraphine",
-      "tier": "A",
-      "avg_placement": 4.2903
-    },
-    {
-      "cluster_id": "394041",
-      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Lissandra",
       "tier": "B",
-      "avg_placement": 4.726
+      "avg_placement": 4.6052
     },
     {
       "cluster_id": "394047",
       "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Taric",
       "tier": "C",
-      "avg_placement": 5.0748
+      "avg_placement": 4.9556
     },
     {
       "cluster_id": "394059",
       "comp_name": "TFT16_Explorer, TFT16_Lissandra",
+      "tier": "C",
+      "avg_placement": 5.0701
+    },
+    {
+      "cluster_id": "394041",
+      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Lissandra",
       "tier": "D",
-      "avg_placement": 5.3876
+      "avg_placement": 5.2556
+    },
+    {
+      "cluster_id": "394061",
+      "comp_name": "TFT16_Demacia, TFT16_Garen",
+      "tier": "D",
+      "avg_placement": 5.4167
     }
   ],
   "builds": [
@@ -47,8 +53,8 @@
         "纳什之牙",
         "纳什之牙"
       ],
-      "avg_placement": 4.0553,
-      "count": 14442,
+      "avg_placement": 3.7025,
+      "count": 52122,
       "priority_scores": {
         "珠光护手": 100,
         "纳什之牙": 72
@@ -58,14 +64,14 @@
       "cluster_id": "394001",
       "comp_name": "TFT16_Brawler, TFT16_Wukong",
       "items": [
-        "适应性头盔",
+        "蓝霸符",
         "莫雷洛秘典",
         "虚空之杖"
       ],
-      "avg_placement": 2.9856,
-      "count": 347,
+      "avg_placement": 2.7341,
+      "count": 173,
       "priority_scores": {
-        "适应性头盔": 100,
+        "蓝霸符": 100,
         "莫雷洛秘典": 85,
         "虚空之杖": 72
       }
@@ -78,24 +84,8 @@
         "朔极之矛",
         "虚空之杖"
       ],
-      "avg_placement": 3.6424,
-      "count": 1801,
-      "priority_scores": {
-        "莫雷洛秘典": 100,
-        "朔极之矛": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "394041",
-      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Lissandra",
-      "items": [
-        "莫雷洛秘典",
-        "朔极之矛",
-        "虚空之杖"
-      ],
-      "avg_placement": 4.2054,
-      "count": 521,
+      "avg_placement": 3.7004,
+      "count": 454,
       "priority_scores": {
         "莫雷洛秘典": 100,
         "朔极之矛": 85,
@@ -110,8 +100,8 @@
         "朔极之矛",
         "虚空之杖"
       ],
-      "avg_placement": 3.871,
-      "count": 31,
+      "avg_placement": 3.7188,
+      "count": 32,
       "priority_scores": {
         "红霸符": 100,
         "朔极之矛": 85,
@@ -119,19 +109,51 @@
       }
     },
     {
+      "cluster_id": "394052",
+      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Slayer",
+      "items": [
+        "蓝霸符",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 4.1842,
+      "count": 38,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
       "cluster_id": "394059",
       "comp_name": "TFT16_Explorer, TFT16_Lissandra",
       "items": [
+        "蓝霸符",
         "珠光护手",
-        "纳什之牙",
-        "巨人杀手"
+        "灭世者的死亡之帽"
       ],
-      "avg_placement": 4.5652,
-      "count": 46,
+      "avg_placement": 4.3148,
+      "count": 54,
       "priority_scores": {
-        "珠光护手": 100,
-        "纳什之牙": 85,
-        "巨人杀手": 72
+        "蓝霸符": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "cluster_id": "394041",
+      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Lissandra",
+      "items": [
+        "大天使之杖",
+        "珠光护手",
+        "虚空之杖"
+      ],
+      "avg_placement": 4.175,
+      "count": 40,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "珠光护手": 85,
+        "虚空之杖": 72
       }
     }
   ]

@@ -25,25 +25,26 @@
   ],
   "stars": [
     "薇恩",
-    "德莱厄斯"
+    "德莱厄斯",
+    "厄斐琉斯"
   ],
   "name_string": "TFT16_Demacia, TFT16_Vayne",
   "display_names": [
     {
       "name": "德玛西亚",
       "type": "trait",
-      "score": 2.0915701914082536
+      "score": 2.2383428107229895
     },
     {
       "name": "薇恩",
       "type": "unit",
-      "score": 4.047964715703926
+      "score": 3.8668399675060927
     }
   ],
-  "count": 87732,
-  "avg_placement": 4.2635,
-  "top4_rate": 0.5595,
-  "win_rate": 0.1099,
+  "count": 176864,
+  "avg_placement": 4.3035,
+  "top4_rate": 0.5538,
+  "win_rate": 0.0975,
   "tier": "A",
   "builds": [
     {
@@ -53,10 +54,10 @@
         "最后的轻语",
         "朔极之矛"
       ],
-      "avg_placement": 3.4445,
-      "count": 87533,
-      "score": 0.5426,
-      "place_change": -0.629,
+      "avg_placement": 3.6413,
+      "count": 13177,
+      "score": 0.5339,
+      "place_change": -0.65,
       "priority_scores": {
         "无尽之刃": 100,
         "最后的轻语": 85,
@@ -70,10 +71,10 @@
         "海妖之怒",
         "海妖之怒"
       ],
-      "avg_placement": 3.8392,
-      "count": 161611,
-      "score": 0.4319,
-      "place_change": -0.235,
+      "avg_placement": 3.9004,
+      "count": 18873,
+      "score": 0.4872,
+      "place_change": -0.391,
       "priority_scores": {
         "海克斯科技枪刃": 100,
         "海妖之怒": 72
@@ -82,148 +83,140 @@
     {
       "unit": "盖伦",
       "items": [
-        "棘刺背心",
-        "巨龙之爪",
-        "日炎斗篷"
+        "日炎斗篷",
+        "振奋盔甲",
+        "狂徒铠甲"
       ],
-      "avg_placement": 3.413,
-      "count": 21997,
-      "score": 0.3883,
-      "place_change": -0.661,
+      "avg_placement": 3.5816,
+      "count": 2744,
+      "score": 0.403,
+      "place_change": -0.71,
       "priority_scores": {
-        "棘刺背心": 100,
-        "巨龙之爪": 85,
-        "日炎斗篷": 72
+        "日炎斗篷": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
       }
     },
     {
-      "unit": "斯维因",
+      "unit": "加里奥",
       "items": [
-        "圣盾使的誓约",
-        "振奋盔甲"
+        "适应性头盔"
       ],
-      "avg_placement": 3.4559,
-      "count": 1112,
-      "score": 0.0118,
-      "place_change": -0.618,
+      "avg_placement": 3.3929,
+      "count": 1326,
+      "score": 0.0116,
+      "place_change": -0.899,
       "priority_scores": {
-        "圣盾使的誓约": 100,
-        "振奋盔甲": 85
+        "适应性头盔": 100
       }
     }
   ],
   "build_items": {
     "海妖之怒": {
-      "itemNames": "海妖之怒",
-      "count": 624683,
-      "avg": 3.9553,
-      "pcnt": 1.25664
-    },
-    "海克斯科技枪刃": {
-      "itemNames": "海克斯科技枪刃",
-      "count": 383191,
-      "avg": 3.8516,
-      "pcnt": 0.77085
+      "itemNames": "TFT_Item_RunaansHurricane",
+      "count": 90929,
+      "avg": 4.0886,
+      "pcnt": 0.98488
     },
     "无尽之刃": {
-      "itemNames": "无尽之刃",
-      "count": 342842,
-      "avg": 3.8228,
-      "pcnt": 0.68968
-    },
-    "日炎斗篷": {
-      "itemNames": "日炎斗篷",
-      "count": 315913,
-      "avg": 3.8646,
-      "pcnt": 0.63551
-    },
-    "朔极之矛": {
-      "itemNames": "朔极之矛",
-      "count": 292935,
-      "avg": 3.8399,
-      "pcnt": 0.58928
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 64041,
+      "avg": 4.0695,
+      "pcnt": 0.69365
     },
     "振奋盔甲": {
-      "itemNames": "振奋盔甲",
-      "count": 291908,
-      "avg": 3.7809,
-      "pcnt": 0.58722
+      "itemNames": "TFT_Item_Redemption",
+      "count": 57490,
+      "avg": 3.9782,
+      "pcnt": 0.62269
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "TFT_Item_HextechGunblade",
+      "count": 55170,
+      "avg": 3.9651,
+      "pcnt": 0.59756
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 55028,
+      "avg": 4.0559,
+      "pcnt": 0.59602
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 51235,
+      "avg": 4.0832,
+      "pcnt": 0.55494
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 40668,
+      "avg": 4.0281,
+      "pcnt": 0.44049
     },
     "最后的轻语": {
-      "itemNames": "最后的轻语",
-      "count": 195820,
-      "avg": 3.7176,
-      "pcnt": 0.39392
+      "itemNames": "TFT_Item_LastWhisper",
+      "count": 32635,
+      "avg": 3.927,
+      "pcnt": 0.35348
     },
-    "棘刺背心": {
-      "itemNames": "棘刺背心",
-      "count": 185274,
-      "avg": 3.7542,
-      "pcnt": 0.37271
-    },
-    "巨龙之爪": {
-      "itemNames": "巨龙之爪",
-      "count": 182253,
-      "avg": 3.6438,
-      "pcnt": 0.36663
-    },
-    "圣盾使的誓约": {
-      "itemNames": "圣盾使的誓约",
-      "count": 124204,
-      "avg": 3.5549,
-      "pcnt": 0.24985
+    "适应性头盔": {
+      "itemNames": "TFT_Item_AdaptiveHelm",
+      "count": 18034,
+      "avg": 3.6601,
+      "pcnt": 0.19533
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 9905,
-      "avg": 4.5097,
-      "pick_rate": 0.009951
+      "day": "2026-04-07",
+      "count": 25587,
+      "avg": 4.292,
+      "pick_rate": 0.033198
     },
     {
-      "day": "2026-03-18",
-      "count": 34210,
-      "avg": 4.3075,
-      "pick_rate": 0.018879
+      "day": "2026-04-08",
+      "count": 35824,
+      "avg": 4.2973,
+      "pick_rate": 0.032771
     },
     {
-      "day": "2026-03-19",
-      "count": 61370,
-      "avg": 4.2116,
-      "pick_rate": 0.033544
+      "day": "2026-04-09",
+      "count": 34651,
+      "avg": 4.3291,
+      "pick_rate": 0.032169
     },
     {
-      "day": "2026-03-20",
-      "count": 102401,
-      "avg": 4.092,
-      "pick_rate": 0.054929
+      "day": "2026-04-10",
+      "count": 33782,
+      "avg": 4.2998,
+      "pick_rate": 0.032028
     },
     {
-      "day": "2026-03-21",
-      "count": 149084,
-      "avg": 4.0524,
-      "pick_rate": 0.076522
+      "day": "2026-04-11",
+      "count": 33631,
+      "avg": 4.307,
+      "pick_rate": 0.031286
     },
     {
-      "day": "2026-03-22",
-      "count": 174280,
-      "avg": 4.0383,
-      "pick_rate": 0.088541
+      "day": "2026-04-12",
+      "count": 33500,
+      "avg": 4.2681,
+      "pick_rate": 0.031278
     },
     {
-      "day": "2026-03-23",
-      "count": 174737,
-      "avg": 4.0536,
-      "pick_rate": 0.095359
+      "day": "2026-04-13",
+      "count": 29024,
+      "avg": 4.3068,
+      "pick_rate": 0.031168
     },
     {
-      "day": "2026-03-24",
-      "count": 54359,
-      "avg": 4.2959,
-      "pick_rate": 0.08677
+      "day": "2026-04-14",
+      "count": 7710,
+      "avg": 4.3071,
+      "pick_rate": 0.030466
     }
   ],
   "levelling": "lvl 7",
-  "difficulty": 0.011
+  "difficulty": -0.046
 }

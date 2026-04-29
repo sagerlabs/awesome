@@ -5,19 +5,19 @@
       "cluster_id": "394048",
       "comp_name": "TFT16_Sorcerer, TFT16_Diana",
       "tier": "B",
-      "avg_placement": 4.7197
+      "avg_placement": 4.5982
     },
     {
       "cluster_id": "394057",
       "comp_name": "TFT16_Piltover, TFT16_Zoe",
-      "tier": "D",
-      "avg_placement": 5.2442
+      "tier": "C",
+      "avg_placement": 5.097
     },
     {
       "cluster_id": "394057",
       "comp_name": "TFT16_Piltover, TFT16_Zoe",
-      "tier": "D",
-      "avg_placement": 5.2442
+      "tier": "C",
+      "avg_placement": 5.097
     }
   ],
   "builds": [
@@ -29,8 +29,8 @@
         "鬼索的狂暴之刃",
         "泰坦的坚决"
       ],
-      "avg_placement": 4.4482,
-      "count": 5004,
+      "avg_placement": 4.1364,
+      "count": 13090,
       "priority_scores": {
         "饮血剑": 100,
         "鬼索的狂暴之刃": 85,
@@ -42,15 +42,15 @@
       "comp_name": "TFT16_Piltover, TFT16_Zoe",
       "items": [
         "饮血剑",
-        "鬼索的狂暴之刃",
-        "泰坦的坚决"
+        "珠光护手",
+        "正义之手"
       ],
-      "avg_placement": 4.5242,
-      "count": 517,
+      "avg_placement": 3.8788,
+      "count": 66,
       "priority_scores": {
         "饮血剑": 100,
-        "鬼索的狂暴之刃": 85,
-        "泰坦的坚决": 72
+        "珠光护手": 85,
+        "正义之手": 72
       }
     }
   ]

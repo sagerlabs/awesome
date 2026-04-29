@@ -2,10 +2,26 @@
   "name": "圣盾使的誓约",
   "priority_list": [
     {
-      "cluster_id": "394003",
-      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
+      "cluster_id": "394027",
+      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
       "comp_tier": "S",
-      "comp_avg": 4.0274,
+      "comp_avg": 3.6638,
+      "carry": "斯维因",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394014",
+      "comp_name": "TFT16_Augment_RumbleCarry",
+      "comp_tier": "S",
+      "comp_avg": 3.8451,
+      "carry": "凯南",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "comp_tier": "S",
+      "comp_avg": 4.0712,
       "carry": "斯维因",
       "priority_score": 100
     },
@@ -13,48 +29,48 @@
       "cluster_id": "394010",
       "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
       "comp_tier": "S",
-      "comp_avg": 4.1348,
+      "comp_avg": 4.2473,
       "carry": "瑟庄妮",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394031",
-      "comp_name": "TFT16_Demacia, TFT16_Vayne",
-      "comp_tier": "A",
-      "comp_avg": 4.2635,
-      "carry": "斯维因",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394023",
-      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
-      "comp_tier": "A",
-      "comp_avg": 4.2977,
-      "carry": "斯维因",
       "priority_score": 100
     },
     {
       "cluster_id": "394006",
       "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
       "comp_tier": "A",
-      "comp_avg": 4.314,
+      "comp_avg": 4.4506,
       "carry": "斯维因",
       "priority_score": 100
     },
     {
-      "cluster_id": "394040",
-      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
+      "cluster_id": "394022",
+      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
       "comp_tier": "A",
-      "comp_avg": 4.4798,
+      "comp_avg": 4.4885,
       "carry": "斯维因",
       "priority_score": 100
+    },
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "comp_tier": "A",
+      "comp_avg": 4.3413,
+      "carry": "内瑟斯",
+      "priority_score": 85
     },
     {
       "cluster_id": "394019",
       "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
       "comp_tier": "S",
-      "comp_avg": 4.1791,
+      "comp_avg": 4.1515,
       "carry": "塔姆",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "394040",
+      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
+      "comp_tier": "A",
+      "comp_avg": 4.283,
+      "carry": "斯维因",
       "priority_score": 72
     }
   ]

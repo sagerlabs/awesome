@@ -8,15 +8,14 @@
     "俄洛伊",
     "厄运小姐",
     "诺提勒斯",
-    "斯维因",
-    "塔姆"
+    "塔姆",
+    "崔斯特"
   ],
   "traits": [
     "比尔吉沃特 (3)",
     "斗士 (1)",
     "河流之王 (1)",
-    "枪手 (1)",
-    "主宰 (1)"
+    "枪手 (1)"
   ],
   "stars": [
     "俄洛伊"
@@ -26,35 +25,35 @@
     {
       "name": "比尔吉沃特",
       "type": "trait",
-      "score": 2.3464585550431596
+      "score": 2.4356002624097965
     },
     {
       "name": "俄洛伊",
       "type": "unit",
-      "score": 4.439162823696346
+      "score": 4.4239011589766015
     }
   ],
-  "count": 1905,
-  "avg_placement": 5.252,
-  "top4_rate": 0.3564,
-  "win_rate": 0.0588,
+  "count": 10026,
+  "avg_placement": 5.3259,
+  "top4_rate": 0.3421,
+  "win_rate": 0.0432,
   "tier": "D",
   "builds": [
     {
       "unit": "俄洛伊",
       "items": [
-        "饮血剑",
-        "斯特拉克的挑战护手",
-        "泰坦的坚决"
+        "无尽之刃",
+        "巨人杀手",
+        "正义之手"
       ],
-      "avg_placement": 5.1128,
-      "count": 1923,
-      "score": 0.4131,
-      "place_change": -0.09,
+      "avg_placement": 3.9091,
+      "count": 11,
+      "score": 0.5552,
+      "place_change": -1.45,
       "priority_scores": {
-        "饮血剑": 100,
-        "斯特拉克的挑战护手": 85,
-        "泰坦的坚决": 72
+        "无尽之刃": 100,
+        "巨人杀手": 85,
+        "正义之手": 72
       }
     },
     {
@@ -62,177 +61,165 @@
       "items": [
         "亡者的短剑",
         "大副的燧发枪",
-        "朔极之矛"
+        "无尽之刃"
       ],
-      "avg_placement": 3.6552,
-      "count": 29,
-      "score": 0.3273,
-      "place_change": -1.548,
+      "avg_placement": 3.5385,
+      "count": 13,
+      "score": 0.3455,
+      "place_change": -1.82,
       "priority_scores": {
         "亡者的短剑": 100,
         "大副的燧发枪": 85,
-        "朔极之矛": 72
+        "无尽之刃": 72
       }
     },
     {
       "unit": "塔姆",
       "items": [
-        "成堆柑橘",
-        "适应性头盔",
-        "圣盾使的誓约"
+        "酒吧指虎",
+        "圣盾使的誓约",
+        "振奋盔甲"
       ],
-      "avg_placement": 3.2414,
-      "count": 29,
-      "score": 0.2735,
-      "place_change": -1.962,
+      "avg_placement": 3.4545,
+      "count": 11,
+      "score": 0.2222,
+      "place_change": -1.904,
       "priority_scores": {
-        "成堆柑橘": 100,
-        "适应性头盔": 85,
-        "圣盾使的誓约": 72
+        "酒吧指虎": 100,
+        "圣盾使的誓约": 85,
+        "振奋盔甲": 72
       }
     },
     {
       "unit": "诺提勒斯",
       "items": [
         "酒吧指虎",
-        "日炎斗篷",
+        "石像鬼石板甲",
         "薄暮法袍"
       ],
-      "avg_placement": 3.3871,
-      "count": 31,
-      "score": 0.199,
-      "place_change": -1.816,
+      "avg_placement": 3.9091,
+      "count": 11,
+      "score": 0.1646,
+      "place_change": -1.45,
       "priority_scores": {
         "酒吧指虎": 100,
-        "日炎斗篷": 85,
+        "石像鬼石板甲": 85,
         "薄暮法袍": 72
       }
     }
   ],
   "build_items": {
-    "饮血剑": {
-      "itemNames": "饮血剑",
-      "count": 7463,
-      "avg": 5.1026,
-      "pcnt": 0.88246
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 3160,
+      "avg": 5.2513,
+      "pcnt": 0.69101
     },
-    "泰坦的坚决": {
-      "itemNames": "泰坦的坚决",
-      "count": 6773,
-      "avg": 5.1503,
-      "pcnt": 0.80088
+    "正义之手": {
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 2515,
+      "avg": 5.1877,
+      "pcnt": 0.54997
     },
-    "斯特拉克的挑战护手": {
-      "itemNames": "斯特拉克的挑战护手",
-      "count": 4650,
-      "avg": 4.9376,
-      "pcnt": 0.54984
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 1567,
+      "avg": 5.1366,
+      "pcnt": 0.34266
     },
-    "朔极之矛": {
-      "itemNames": "朔极之矛",
-      "count": 3330,
-      "avg": 4.8955,
-      "pcnt": 0.39376
-    },
-    "日炎斗篷": {
-      "itemNames": "日炎斗篷",
-      "count": 2909,
-      "avg": 4.8976,
-      "pcnt": 0.34398
-    },
-    "薄暮法袍": {
-      "itemNames": "薄暮法袍",
-      "count": 2233,
-      "avg": 4.6717,
-      "pcnt": 0.26404
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 1321,
+      "avg": 4.8486,
+      "pcnt": 0.28887
     },
     "圣盾使的誓约": {
-      "itemNames": "圣盾使的誓约",
-      "count": 2203,
-      "avg": 4.6714,
-      "pcnt": 0.26049
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 1111,
+      "avg": 4.8821,
+      "pcnt": 0.24295
     },
-    "成堆柑橘": {
-      "itemNames": "成堆柑橘",
-      "count": 1753,
-      "avg": 4.2356,
-      "pcnt": 0.20728
+    "薄暮法袍": {
+      "itemNames": "TFT_Item_SpectralGauntlet",
+      "count": 1047,
+      "avg": 4.7268,
+      "pcnt": 0.22895
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 808,
+      "avg": 4.7611,
+      "pcnt": 0.17669
     },
     "酒吧指虎": {
-      "itemNames": "酒吧指虎",
-      "count": 1499,
-      "avg": 4.2909,
-      "pcnt": 0.17725
-    },
-    "亡者的短剑": {
-      "itemNames": "亡者的短剑",
-      "count": 1437,
-      "avg": 4.4175,
-      "pcnt": 0.16992
+      "itemNames": "TFT16_Item_Bilgewater_FreebootersFrock",
+      "count": 781,
+      "avg": 4.4789,
+      "pcnt": 0.17079
     },
     "大副的燧发枪": {
-      "itemNames": "大副的燧发枪",
-      "count": 1332,
-      "avg": 4.4069,
-      "pcnt": 0.1575
+      "itemNames": "TFT16_Item_Bilgewater_FirstMatesFlintlock",
+      "count": 702,
+      "avg": 4.5712,
+      "pcnt": 0.15351
     },
-    "适应性头盔": {
-      "itemNames": "适应性头盔",
-      "count": 1163,
-      "avg": 4.4574,
-      "pcnt": 0.13752
+    "亡者的短剑": {
+      "itemNames": "TFT16_Item_Bilgewater_DeadmansDagger",
+      "count": 695,
+      "avg": 4.4547,
+      "pcnt": 0.15198
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 1539,
-      "avg": 5.1228,
-      "pick_rate": 0.001546
+      "day": "2026-04-07",
+      "count": 1155,
+      "avg": 5.2961,
+      "pick_rate": 0.001499
     },
     {
-      "day": "2026-03-18",
-      "count": 2898,
-      "avg": 5.1756,
-      "pick_rate": 0.001599
+      "day": "2026-04-08",
+      "count": 1695,
+      "avg": 5.3121,
+      "pick_rate": 0.001551
     },
     {
-      "day": "2026-03-19",
-      "count": 2886,
-      "avg": 5.15,
-      "pick_rate": 0.001577
+      "day": "2026-04-09",
+      "count": 1696,
+      "avg": 5.3467,
+      "pick_rate": 0.001575
     },
     {
-      "day": "2026-03-20",
-      "count": 2833,
-      "avg": 5.1839,
-      "pick_rate": 0.00152
+      "day": "2026-04-10",
+      "count": 1593,
+      "avg": 5.3484,
+      "pick_rate": 0.00151
     },
     {
-      "day": "2026-03-21",
-      "count": 2845,
-      "avg": 5.2102,
-      "pick_rate": 0.00146
+      "day": "2026-04-11",
+      "count": 1603,
+      "avg": 5.3256,
+      "pick_rate": 0.001491
     },
     {
-      "day": "2026-03-22",
-      "count": 3045,
-      "avg": 5.18,
-      "pick_rate": 0.001547
+      "day": "2026-04-12",
+      "count": 1769,
+      "avg": 5.3782,
+      "pick_rate": 0.001652
     },
     {
-      "day": "2026-03-23",
-      "count": 2760,
-      "avg": 5.2007,
-      "pick_rate": 0.001506
+      "day": "2026-04-13",
+      "count": 1391,
+      "avg": 5.3357,
+      "pick_rate": 0.001494
     },
     {
-      "day": "2026-03-24",
-      "count": 1003,
-      "avg": 5.2253,
-      "pick_rate": 0.001601
+      "day": "2026-04-14",
+      "count": 367,
+      "avg": 5.4387,
+      "pick_rate": 0.00145
     }
   ],
   "levelling": "lvl 5",
-  "difficulty": -0.061
+  "difficulty": -0.037
 }

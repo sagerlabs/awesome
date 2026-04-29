@@ -1,0 +1,241 @@
+{
+  "cluster_id": "394066",
+  "tft_set": "TFTSet16",
+  "units": [
+    "加里奥",
+    "凯南",
+    "卢锡安与赛娜",
+    "波比",
+    "瑞兹",
+    "瑟提",
+    "斯维因",
+    "塞拉斯",
+    "塔里克",
+    "赵信"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "德玛西亚 (1)",
+    "正义巨像 (1)",
+    "艾欧尼亚 (1)",
+    "主宰 (1)",
+    "符文法师 (1)",
+    "法师 (1)",
+    "系魂圣枪 (1)",
+    "解脱者 (1)",
+    "巨神峰 (1)",
+    "腕豪 (1)",
+    "约德尔人 (1)"
+  ],
+  "stars": [
+    "烬"
+  ],
+  "name_string": "TFT16_Ionia, TFT16_Kennen",
+  "display_names": [
+    {
+      "name": "约德尔人",
+      "type": "trait",
+      "score": 0.94372574385511
+    },
+    {
+      "name": "瑞兹",
+      "type": "unit",
+      "score": 2.823738680465718
+    }
+  ],
+  "count": 15181,
+  "avg_placement": 5.5308,
+  "top4_rate": 0.3004,
+  "win_rate": 0.0704,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "瑞兹",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 4.0988,
+      "count": 172,
+      "score": 0.5733,
+      "place_change": -1.483,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "凯南",
+      "items": [
+        "圣盾使的誓约",
+        "日炎斗篷",
+        "振奋盔甲"
+      ],
+      "avg_placement": 4.4,
+      "count": 15,
+      "score": 0.2003,
+      "place_change": -1.181,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "unit": "塞拉斯",
+      "items": [
+        "夜之锋刃",
+        "珠光护手",
+        "正义之手"
+      ],
+      "avg_placement": 2.8929,
+      "count": 28,
+      "score": 0.1247,
+      "place_change": -2.689,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "珠光护手": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "unit": "瑟提",
+      "items": [
+        "饮血剑",
+        "珠光护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.5333,
+      "count": 60,
+      "score": 0.0974,
+      "place_change": -1.048,
+      "priority_scores": {
+        "饮血剑": 100,
+        "珠光护手": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ],
+  "build_items": {
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 8470,
+      "avg": 5.3524,
+      "pcnt": 0.91311
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 5978,
+      "avg": 5.3531,
+      "pcnt": 0.64446
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 3689,
+      "avg": 5.2158,
+      "pcnt": 0.39769
+    },
+    "虚空之杖": {
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 3355,
+      "avg": 5.2882,
+      "pcnt": 0.36169
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 3303,
+      "avg": 5.3236,
+      "pcnt": 0.35608
+    },
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 2323,
+      "avg": 4.941,
+      "pcnt": 0.25043
+    },
+    "正义之手": {
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 1624,
+      "avg": 4.7555,
+      "pcnt": 0.17508
+    },
+    "莫雷洛秘典": {
+      "itemNames": "TFT_Item_Morellonomicon",
+      "count": 1582,
+      "avg": 5.0398,
+      "pcnt": 0.17055
+    },
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 1358,
+      "avg": 4.8785,
+      "pcnt": 0.1464
+    },
+    "圣盾使的誓约": {
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 1279,
+      "avg": 4.8053,
+      "pcnt": 0.13788
+    },
+    "夜之锋刃": {
+      "itemNames": "TFT_Item_GuardianAngel",
+      "count": 868,
+      "avg": 4.6071,
+      "pcnt": 0.09357
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-07",
+      "count": 2540,
+      "avg": 5.5075,
+      "pick_rate": 0.003296
+    },
+    {
+      "day": "2026-04-08",
+      "count": 3627,
+      "avg": 5.5109,
+      "pick_rate": 0.003318
+    },
+    {
+      "day": "2026-04-09",
+      "count": 3441,
+      "avg": 5.6051,
+      "pick_rate": 0.003195
+    },
+    {
+      "day": "2026-04-10",
+      "count": 3426,
+      "avg": 5.596,
+      "pick_rate": 0.003248
+    },
+    {
+      "day": "2026-04-11",
+      "count": 3402,
+      "avg": 5.5905,
+      "pick_rate": 0.003165
+    },
+    {
+      "day": "2026-04-12",
+      "count": 3394,
+      "avg": 5.5689,
+      "pick_rate": 0.003169
+    },
+    {
+      "day": "2026-04-13",
+      "count": 2889,
+      "avg": 5.5469,
+      "pick_rate": 0.003102
+    },
+    {
+      "day": "2026-04-14",
+      "count": 823,
+      "avg": 5.6318,
+      "pick_rate": 0.003252
+    }
+  ],
+  "levelling": "Fast 9",
+  "difficulty": -0.051
+}

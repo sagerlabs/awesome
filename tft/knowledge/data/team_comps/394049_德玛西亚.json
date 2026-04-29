@@ -9,6 +9,7 @@
     "波比",
     "娑娜",
     "斯维因",
+    "塔里克",
     "赵信",
     "基兰"
   ],
@@ -19,30 +20,30 @@
     "正义巨像 (1)",
     "神谕者 (1)",
     "主宰 (1)",
-    "法师 (1)"
+    "法师 (1)",
+    "巨神峰 (1)"
   ],
   "stars": [
-    "厄斐琉斯",
-    "巴德"
+    "厄斐琉斯"
   ],
   "name_string": "TFT16_Demacia, TFT16_Lux, TFT16_Poppy",
   "display_names": [
     {
       "name": "德玛西亚",
       "type": "trait",
-      "score": 2.5017375056014477
+      "score": 2.5182964439917948
     },
     {
       "name": "拉克丝",
       "type": "unit",
-      "score": 4.087665823983496
+      "score": 4.077087487269233
     }
   ],
-  "count": 23272,
-  "avg_placement": 4.8682,
-  "top4_rate": 0.4291,
-  "win_rate": 0.085,
-  "tier": "C",
+  "count": 129533,
+  "avg_placement": 4.6104,
+  "top4_rate": 0.4818,
+  "win_rate": 0.1009,
+  "tier": "B",
   "builds": [
     {
       "unit": "拉克丝",
@@ -51,10 +52,10 @@
         "珠光护手",
         "纳什之牙"
       ],
-      "avg_placement": 4.3066,
-      "count": 6174,
-      "score": 0.5932,
-      "place_change": -0.694,
+      "avg_placement": 4.0624,
+      "count": 4054,
+      "score": 0.629,
+      "place_change": -0.754,
       "priority_scores": {
         "海克斯科技枪刃": 100,
         "珠光护手": 85,
@@ -68,10 +69,10 @@
         "巨龙之爪",
         "振奋盔甲"
       ],
-      "avg_placement": 4.4884,
-      "count": 5622,
-      "score": 0.4224,
-      "place_change": -0.513,
+      "avg_placement": 4.1683,
+      "count": 3649,
+      "score": 0.4879,
+      "place_change": -0.648,
       "priority_scores": {
         "棘刺背心": 100,
         "巨龙之爪": 85,
@@ -85,10 +86,10 @@
         "朔极之矛",
         "虚空之杖"
       ],
-      "avg_placement": 3.2092,
-      "count": 1171,
-      "score": 0.153,
-      "place_change": -1.792,
+      "avg_placement": 2.9544,
+      "count": 701,
+      "score": 0.1821,
+      "place_change": -1.862,
       "priority_scores": {
         "莫雷洛秘典": 100,
         "朔极之矛": 85,
@@ -101,10 +102,10 @@
         "德玛西亚纹章",
         "圣盾使的誓约"
       ],
-      "avg_placement": 4.2775,
-      "count": 227,
-      "score": 0.0138,
-      "place_change": -0.724,
+      "avg_placement": 4.0313,
+      "count": 128,
+      "score": 0.0142,
+      "place_change": -0.785,
       "priority_scores": {
         "德玛西亚纹章": 100,
         "圣盾使的誓约": 85
@@ -113,143 +114,135 @@
     {
       "unit": "加里奥",
       "items": [
-        "适应性头盔",
         "巨龙之爪"
       ],
-      "avg_placement": 3.8541,
-      "count": 233,
-      "score": 0.0128,
-      "place_change": -1.147,
+      "avg_placement": 4.1841,
+      "count": 929,
+      "score": 0.0124,
+      "place_change": -0.633,
       "priority_scores": {
-        "适应性头盔": 100,
-        "巨龙之爪": 85
+        "巨龙之爪": 100
       }
     }
   ],
   "build_items": {
     "珠光护手": {
-      "itemNames": "珠光护手",
-      "count": 109051,
-      "avg": 4.9121,
-      "pcnt": 0.92203
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 66421,
+      "avg": 4.7332,
+      "pcnt": 0.95278
     },
     "朔极之矛": {
-      "itemNames": "朔极之矛",
-      "count": 79309,
-      "avg": 4.9503,
-      "pcnt": 0.67056
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 48800,
+      "avg": 4.7277,
+      "pcnt": 0.70001
     },
     "纳什之牙": {
-      "itemNames": "纳什之牙",
-      "count": 67070,
-      "avg": 4.8908,
-      "pcnt": 0.56708
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 45133,
+      "avg": 4.7352,
+      "pcnt": 0.64741
     },
     "巨龙之爪": {
-      "itemNames": "巨龙之爪",
-      "count": 57685,
-      "avg": 4.7273,
-      "pcnt": 0.48773
+      "itemNames": "TFT_Item_DragonsClaw",
+      "count": 36631,
+      "avg": 4.5175,
+      "pcnt": 0.52545
     },
     "振奋盔甲": {
-      "itemNames": "振奋盔甲",
-      "count": 54617,
-      "avg": 4.5882,
-      "pcnt": 0.46179
+      "itemNames": "TFT_Item_Redemption",
+      "count": 32382,
+      "avg": 4.3991,
+      "pcnt": 0.4645
     },
     "虚空之杖": {
-      "itemNames": "虚空之杖",
-      "count": 47624,
-      "avg": 4.896,
-      "pcnt": 0.40266
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 27561,
+      "avg": 4.6548,
+      "pcnt": 0.39535
     },
     "棘刺背心": {
-      "itemNames": "棘刺背心",
-      "count": 41824,
-      "avg": 4.7815,
-      "pcnt": 0.35362
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 25133,
+      "avg": 4.6123,
+      "pcnt": 0.36052
     },
     "海克斯科技枪刃": {
-      "itemNames": "海克斯科技枪刃",
-      "count": 41413,
-      "avg": 4.5817,
-      "pcnt": 0.35015
-    },
-    "适应性头盔": {
-      "itemNames": "适应性头盔",
-      "count": 39723,
-      "avg": 4.8266,
-      "pcnt": 0.33586
+      "itemNames": "TFT_Item_HextechGunblade",
+      "count": 23669,
+      "avg": 4.3156,
+      "pcnt": 0.33952
     },
     "德玛西亚纹章": {
-      "itemNames": "德玛西亚纹章",
-      "count": 26525,
-      "avg": 4.5177,
-      "pcnt": 0.22427
+      "itemNames": "TFT16_Item_DemaciaEmblemItem",
+      "count": 15306,
+      "avg": 4.3954,
+      "pcnt": 0.21956
     },
     "圣盾使的誓约": {
-      "itemNames": "圣盾使的誓约",
-      "count": 19821,
-      "avg": 4.3089,
-      "pcnt": 0.16759
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 11137,
+      "avg": 4.0747,
+      "pcnt": 0.15975
     },
     "莫雷洛秘典": {
-      "itemNames": "莫雷洛秘典",
-      "count": 17238,
-      "avg": 4.3583,
-      "pcnt": 0.14575
+      "itemNames": "TFT_Item_Morellonomicon",
+      "count": 9121,
+      "avg": 4.0049,
+      "pcnt": 0.13084
     }
   },
   "trends": [
     {
-      "day": "2026-03-17",
-      "count": 27744,
-      "avg": 4.8657,
-      "pick_rate": 0.027872
+      "day": "2026-04-07",
+      "count": 17348,
+      "avg": 4.8748,
+      "pick_rate": 0.022508
     },
     {
-      "day": "2026-03-18",
-      "count": 49325,
-      "avg": 4.886,
-      "pick_rate": 0.02722
+      "day": "2026-04-08",
+      "count": 25069,
+      "avg": 4.8581,
+      "pick_rate": 0.022932
     },
     {
-      "day": "2026-03-19",
-      "count": 47443,
-      "avg": 4.9398,
-      "pick_rate": 0.025932
+      "day": "2026-04-09",
+      "count": 24729,
+      "avg": 4.8266,
+      "pick_rate": 0.022958
     },
     {
-      "day": "2026-03-20",
-      "count": 45232,
-      "avg": 4.9548,
-      "pick_rate": 0.024263
+      "day": "2026-04-10",
+      "count": 24631,
+      "avg": 4.8446,
+      "pick_rate": 0.023352
     },
     {
-      "day": "2026-03-21",
-      "count": 44023,
-      "avg": 4.9965,
-      "pick_rate": 0.022596
+      "day": "2026-04-11",
+      "count": 25328,
+      "avg": 4.8001,
+      "pick_rate": 0.023562
     },
     {
-      "day": "2026-03-22",
-      "count": 41687,
-      "avg": 4.9863,
-      "pick_rate": 0.021179
+      "day": "2026-04-12",
+      "count": 25295,
+      "avg": 4.8212,
+      "pick_rate": 0.023617
     },
     {
-      "day": "2026-03-23",
-      "count": 37583,
-      "avg": 5.0065,
-      "pick_rate": 0.02051
+      "day": "2026-04-13",
+      "count": 21930,
+      "avg": 4.8363,
+      "pick_rate": 0.02355
     },
     {
-      "day": "2026-03-24",
-      "count": 12830,
-      "avg": 5.05,
-      "pick_rate": 0.02048
+      "day": "2026-04-14",
+      "count": 5997,
+      "avg": 4.8057,
+      "pick_rate": 0.023697
     }
   ],
   "levelling": "Fast 8",
-  "difficulty": -0.081
+  "difficulty": -0.048
 }

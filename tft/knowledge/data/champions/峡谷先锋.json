@@ -5,31 +5,31 @@
       "cluster_id": "394018",
       "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
       "tier": "A",
-      "avg_placement": 4.3679
+      "avg_placement": 4.3637
     },
     {
       "cluster_id": "394016",
       "comp_name": "TFT16_Slayer, TFT16_Yone",
-      "tier": "A",
-      "avg_placement": 4.4319
+      "tier": "B",
+      "avg_placement": 4.6189
     },
     {
       "cluster_id": "394042",
       "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Juggernaut",
-      "tier": "C",
-      "avg_placement": 4.8065
+      "tier": "B",
+      "avg_placement": 4.67
     },
     {
       "cluster_id": "394020",
       "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_ChoGath",
       "tier": "C",
-      "avg_placement": 4.8302
+      "avg_placement": 4.8547
     },
     {
       "cluster_id": "394053",
       "comp_name": "TFT16_Void, TFT16_RiftHerald",
-      "tier": "D",
-      "avg_placement": 5.1368
+      "tier": "C",
+      "avg_placement": 5.0226
     }
   ],
   "builds": [
@@ -37,14 +37,14 @@
       "cluster_id": "394018",
       "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
       "items": [
-        "巨龙之爪",
+        "坚定之心",
         "日炎斗篷",
         "薄暮法袍"
       ],
-      "avg_placement": 3.7397,
-      "count": 292,
+      "avg_placement": 3.6369,
+      "count": 157,
       "priority_scores": {
-        "巨龙之爪": 100,
+        "坚定之心": 100,
         "日炎斗篷": 85,
         "薄暮法袍": 72
       }
@@ -53,16 +53,16 @@
       "cluster_id": "394042",
       "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Juggernaut",
       "items": [
-        "巨龙之爪",
-        "坚定之心",
-        "狂徒铠甲"
+        "离子火花",
+        "日炎斗篷",
+        "振奋盔甲"
       ],
-      "avg_placement": 3.7105,
-      "count": 38,
+      "avg_placement": 3.45,
+      "count": 20,
       "priority_scores": {
-        "巨龙之爪": 100,
-        "坚定之心": 85,
-        "狂徒铠甲": 72
+        "离子火花": 100,
+        "日炎斗篷": 85,
+        "振奋盔甲": 72
       }
     },
     {
@@ -71,30 +71,30 @@
       "items": [
         "日炎斗篷",
         "振奋盔甲",
-        "狂徒铠甲"
+        "薄暮法袍"
       ],
-      "avg_placement": 4.171,
-      "count": 5959,
+      "avg_placement": 3.9015,
+      "count": 1056,
       "priority_scores": {
         "日炎斗篷": 100,
         "振奋盔甲": 85,
-        "狂徒铠甲": 72
+        "薄暮法袍": 72
       }
     },
     {
       "cluster_id": "394053",
       "comp_name": "TFT16_Void, TFT16_RiftHerald",
       "items": [
-        "棘刺背心",
+        "圣盾使的誓约",
         "日炎斗篷",
-        "薄暮法袍"
+        "振奋盔甲"
       ],
-      "avg_placement": 2.8333,
-      "count": 12,
+      "avg_placement": 3,
+      "count": 10,
       "priority_scores": {
-        "棘刺背心": 100,
+        "圣盾使的誓约": 100,
         "日炎斗篷": 85,
-        "薄暮法袍": 72
+        "振奋盔甲": 72
       }
     }
   ]

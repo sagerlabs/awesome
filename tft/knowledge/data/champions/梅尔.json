@@ -5,37 +5,37 @@
       "cluster_id": "394003",
       "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
       "tier": "S",
-      "avg_placement": 4.0274
+      "avg_placement": 3.94
+    },
+    {
+      "cluster_id": "394005",
+      "comp_name": "TFT16_Noxus, TFT16_Taric",
+      "tier": "S",
+      "avg_placement": 4.0712
     },
     {
       "cluster_id": "394033",
       "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
       "tier": "S",
-      "avg_placement": 4.2031
-    },
-    {
-      "cluster_id": "394012",
-      "comp_name": "TFT16_Noxus, TFT16_Nasus",
-      "tier": "A",
-      "avg_placement": 4.2768
-    },
-    {
-      "cluster_id": "394005",
-      "comp_name": "TFT16_Noxus, TFT16_Taric",
-      "tier": "A",
-      "avg_placement": 4.2796
+      "avg_placement": 4.1585
     },
     {
       "cluster_id": "394040",
       "comp_name": "TFT16_Noxus, TFT16_Seraphine",
       "tier": "A",
-      "avg_placement": 4.4798
+      "avg_placement": 4.283
+    },
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "tier": "A",
+      "avg_placement": 4.3413
     },
     {
       "cluster_id": "394051",
       "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Draven",
       "tier": "B",
-      "avg_placement": 4.7486
+      "avg_placement": 4.7047
     }
   ],
   "builds": [
@@ -47,39 +47,8 @@
         "纳什之牙",
         "纳什之牙"
       ],
-      "avg_placement": 4.0816,
-      "count": 15392,
-      "priority_scores": {
-        "珠光护手": 100,
-        "纳什之牙": 72
-      }
-    },
-    {
-      "cluster_id": "394033",
-      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
-      "items": [
-        "珠光护手",
-        "朔极之矛",
-        "虚空之杖"
-      ],
-      "avg_placement": 3.9275,
-      "count": 6660,
-      "priority_scores": {
-        "珠光护手": 100,
-        "朔极之矛": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "394012",
-      "comp_name": "TFT16_Noxus, TFT16_Nasus",
-      "items": [
-        "珠光护手",
-        "纳什之牙",
-        "纳什之牙"
-      ],
-      "avg_placement": 3.972,
-      "count": 3714,
+      "avg_placement": 3.8835,
+      "count": 5312,
       "priority_scores": {
         "珠光护手": 100,
         "纳什之牙": 72
@@ -93,11 +62,27 @@
         "纳什之牙",
         "纳什之牙"
       ],
-      "avg_placement": 4.2771,
-      "count": 12655,
+      "avg_placement": 3.9573,
+      "count": 4356,
       "priority_scores": {
         "珠光护手": 100,
         "纳什之牙": 72
+      }
+    },
+    {
+      "cluster_id": "394033",
+      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
+      "items": [
+        "蓝霸符",
+        "珠光护手",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.7599,
+      "count": 1445,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "珠光护手": 85,
+        "虚空之杖": 72
       }
     },
     {
@@ -105,47 +90,62 @@
       "comp_name": "TFT16_Noxus, TFT16_Seraphine",
       "items": [
         "征服者纹章",
-        "珠光护手",
+        "纳什之牙",
         "纳什之牙"
       ],
-      "avg_placement": 3.8673,
-      "count": 422,
+      "avg_placement": 3.8947,
+      "count": 361,
       "priority_scores": {
         "征服者纹章": 100,
-        "珠光护手": 85,
         "纳什之牙": 72
+      }
+    },
+    {
+      "cluster_id": "394012",
+      "comp_name": "TFT16_Noxus, TFT16_Nasus",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.4,
+      "count": 35,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "强袭者的链枷": 72
       }
     },
     {
       "cluster_id": "394051",
       "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Draven",
       "items": [
+        "适应性头盔",
         "蓝霸符",
-        "珠光护手",
-        "莫雷洛秘典"
+        "珠光护手"
       ],
-      "avg_placement": 3.4719,
-      "count": 89,
+      "avg_placement": 3.9194,
+      "count": 124,
       "priority_scores": {
-        "蓝霸符": 100,
-        "珠光护手": 85,
-        "莫雷洛秘典": 72
+        "适应性头盔": 100,
+        "蓝霸符": 85,
+        "珠光护手": 72
       }
     },
     {
       "cluster_id": "394061",
       "comp_name": "TFT16_Demacia, TFT16_Garen",
       "items": [
-        "蓝霸符",
         "珠光护手",
-        "纳什之牙"
+        "纳什之牙",
+        "虚空之杖"
       ],
-      "avg_placement": 5.8077,
-      "count": 52,
+      "avg_placement": 4.7,
+      "count": 20,
       "priority_scores": {
-        "蓝霸符": 100,
-        "珠光护手": 85,
-        "纳什之牙": 72
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "虚空之杖": 72
       }
     }
   ]

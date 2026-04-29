@@ -4,20 +4,20 @@
     {
       "cluster_id": "394059",
       "comp_name": "TFT16_Explorer, TFT16_Lissandra",
-      "tier": "D",
-      "avg_placement": 5.3876
+      "tier": "C",
+      "avg_placement": 5.0701
     },
     {
       "cluster_id": "394067",
       "comp_name": "TFT16_Explorer, TFT16_Nidalee",
       "tier": "D",
-      "avg_placement": 5.7087
+      "avg_placement": 5.4977
     },
     {
       "cluster_id": "394068",
       "comp_name": "TFT16_Explorer, TFT16_Bard",
       "tier": "D",
-      "avg_placement": 6.3249
+      "avg_placement": 6.167
     }
   ],
   "builds": [
@@ -29,8 +29,8 @@
         "朔极之矛",
         "虚空之杖"
       ],
-      "avg_placement": 5.6422,
-      "count": 218,
+      "avg_placement": 5.243,
+      "count": 107,
       "priority_scores": {
         "莫雷洛秘典": 100,
         "朔极之矛": 85,
