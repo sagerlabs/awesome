@@ -2,259 +2,107 @@
   "name": "珠光护手",
   "priority_list": [
     {
-      "cluster_id": "394027",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
       "comp_tier": "S",
-      "comp_avg": 3.6638,
-      "carry": "奥瑞利安·索尔",
+      "comp_avg": 3.9764,
+      "carry": "娜美",
       "priority_score": 100
     },
     {
-      "cluster_id": "394014",
-      "comp_name": "TFT16_Augment_RumbleCarry",
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
       "comp_tier": "S",
-      "comp_avg": 3.8451,
-      "carry": "菲兹",
+      "comp_avg": 4.2264,
+      "carry": "维迦",
       "priority_score": 100
     },
     {
-      "cluster_id": "394000",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
       "comp_tier": "S",
-      "comp_avg": 3.8569,
-      "carry": "拉克丝",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394026",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
-      "comp_tier": "S",
-      "comp_avg": 3.8968,
+      "comp_avg": 4.2264,
       "carry": "丽桑卓",
       "priority_score": 100
     },
     {
-      "cluster_id": "394003",
-      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
-      "comp_tier": "S",
-      "comp_avg": 3.94,
-      "carry": "梅尔",
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "comp_tier": "A",
+      "comp_avg": 4.3744,
+      "carry": "娜美",
       "priority_score": 100
     },
     {
-      "cluster_id": "394008",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "S",
-      "comp_avg": 4.0341,
-      "carry": "奈德丽",
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "comp_tier": "A",
+      "comp_avg": 4.3744,
+      "carry": "布里茨",
       "priority_score": 100
     },
     {
-      "cluster_id": "394005",
-      "comp_name": "TFT16_Noxus, TFT16_Taric",
-      "comp_tier": "S",
-      "comp_avg": 4.0712,
-      "carry": "梅尔",
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "comp_tier": "A",
+      "comp_avg": 4.4022,
+      "carry": "卡尔玛",
       "priority_score": 100
     },
     {
-      "cluster_id": "394025",
-      "comp_name": "TFT16_Yordle, TFT16_Veigar",
-      "comp_tier": "S",
-      "comp_avg": 4.1011,
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "comp_tier": "A",
+      "comp_avg": 4.4707,
       "carry": "菲兹",
       "priority_score": 100
     },
     {
-      "cluster_id": "394002",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.4761,
+      "carry": "菲兹",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "布里茨",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "comp_tier": "A",
+      "comp_avg": 4.2811,
+      "carry": "小木灵",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "comp_tier": "A",
+      "comp_avg": 4.4068,
+      "carry": "格温",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.5082,
+      "carry": "卡尔玛",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
       "comp_tier": "S",
-      "comp_avg": 4.1278,
-      "carry": "玛尔扎哈",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394001",
-      "comp_name": "TFT16_Brawler, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 4.1427,
-      "carry": "瑞兹",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394040",
-      "comp_name": "TFT16_Noxus, TFT16_Seraphine",
-      "comp_tier": "A",
-      "comp_avg": 4.283,
-      "carry": "奥瑞利安·索尔",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394044",
-      "comp_name": "TFT16_Explorer, TFT16_Skarner",
-      "comp_tier": "A",
-      "comp_avg": 4.317,
-      "carry": "萨勒芬妮",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394044",
-      "comp_name": "TFT16_Explorer, TFT16_Skarner",
-      "comp_tier": "A",
-      "comp_avg": 4.317,
-      "carry": "瑞兹",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394012",
-      "comp_name": "TFT16_Noxus, TFT16_Nasus",
-      "comp_tier": "A",
-      "comp_avg": 4.3413,
-      "carry": "梅尔",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394028",
-      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
-      "comp_tier": "A",
-      "comp_avg": 4.3576,
-      "carry": "阿狸",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394007",
-      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
-      "comp_tier": "A",
-      "comp_avg": 4.3786,
-      "carry": "瑟提",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394006",
-      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
-      "comp_tier": "A",
-      "comp_avg": 4.4506,
-      "carry": "乐芙兰",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394023",
-      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
-      "comp_tier": "A",
-      "comp_avg": 4.4818,
-      "carry": "乐芙兰",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394023",
-      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
-      "comp_tier": "A",
-      "comp_avg": 4.4818,
-      "carry": "阿狸",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394013",
-      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
-      "comp_tier": "A",
-      "comp_avg": 4.499,
-      "carry": "阿狸",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394027",
-      "comp_name": "TFT16_Sorcerer, TFT16_Taric",
-      "comp_tier": "S",
-      "comp_avg": 3.6638,
-      "carry": "塞拉斯",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394000",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
-      "comp_tier": "S",
-      "comp_avg": 3.8569,
-      "carry": "塞拉斯",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394005",
-      "comp_name": "TFT16_Noxus, TFT16_Taric",
-      "comp_tier": "S",
-      "comp_avg": 4.0712,
-      "carry": "塞拉斯",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394025",
-      "comp_name": "TFT16_Yordle, TFT16_Veigar",
-      "comp_tier": "S",
-      "comp_avg": 4.1011,
-      "carry": "吉格斯",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394002",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "comp_tier": "S",
-      "comp_avg": 4.1278,
-      "carry": "佐伊",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394033",
-      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Darius",
-      "comp_tier": "S",
-      "comp_avg": 4.1585,
-      "carry": "梅尔",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394032",
-      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3158,
-      "carry": "巴德",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394012",
-      "comp_name": "TFT16_Noxus, TFT16_Nasus",
-      "comp_tier": "A",
-      "comp_avg": 4.3413,
-      "carry": "阿兹尔",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394018",
-      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
-      "comp_tier": "A",
-      "comp_avg": 4.3637,
-      "carry": "卡莎",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394015",
-      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
-      "comp_tier": "A",
-      "comp_avg": 4.3658,
-      "carry": "瑟提",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394037",
-      "comp_name": "TFT16_Ionia, TFT16_Wukong",
-      "comp_tier": "A",
-      "comp_avg": 4.4739,
-      "carry": "吉格斯",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394003",
-      "comp_name": "TFT16_Noxus, TFT16_Swain, TFT16_Sylas",
-      "comp_tier": "S",
-      "comp_avg": 3.94,
-      "carry": "塞拉斯",
+      "comp_avg": 3.9764,
+      "carry": "维克托",
       "priority_score": 72
     }
   ]

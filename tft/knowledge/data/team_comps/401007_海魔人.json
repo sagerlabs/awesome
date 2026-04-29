@@ -1,0 +1,223 @@
+{
+  "cluster_id": "401007",
+  "tft_set": "TFTSet17",
+  "units": [
+    "亚托克斯",
+    "阿卡丽",
+    "卑尔维斯",
+    "贝蕾亚",
+    "凯特琳",
+    "千珏",
+    "茂凯",
+    "雷克塞"
+  ],
+  "traits": [
+    "挑战者 (1)",
+    "新星特攻队 (2)",
+    "斗士 (1)",
+    "狂战士 (1)",
+    "海魔人 (2)"
+  ],
+  "stars": [
+    "卑尔维斯",
+    "亚托克斯",
+    "雷克塞",
+    "贝蕾亚",
+    "阿卡丽",
+    "金克丝",
+    "格温",
+    "科加斯",
+    "古拉加斯",
+    "泰隆",
+    "米利欧",
+    "派克",
+    "崔斯特",
+    "丽桑卓",
+    "佐伊",
+    "璐璐"
+  ],
+  "name_string": "TFT17_DRX, TFT17_Belveth",
+  "display_names": [
+    {
+      "name": "海魔人",
+      "type": "trait",
+      "score": 1.9600278009912377
+    },
+    {
+      "name": "卑尔维斯",
+      "type": "unit",
+      "score": 4.263542640597722
+    }
+  ],
+  "count": 122612,
+  "avg_placement": 4.183,
+  "top4_rate": 0.5776,
+  "win_rate": 0.0954,
+  "tier": "S",
+  "builds": [
+    {
+      "unit": "卑尔维斯",
+      "items": [
+        "巨人杀手",
+        "水银",
+        "海妖之怒"
+      ],
+      "avg_placement": 4.016,
+      "count": 37187,
+      "score": 0.4296,
+      "place_change": -0.167,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "水银": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "unit": "千珏",
+      "items": [
+        "鬼索的狂暴之刃",
+        "巨人杀手",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.5624,
+      "count": 4310,
+      "score": 0.2333,
+      "place_change": -0.62,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "巨人杀手": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "unit": "阿卡丽",
+      "items": [
+        "夜之锋刃",
+        "强袭者的链枷",
+        "正义之手"
+      ],
+      "avg_placement": 3.8971,
+      "count": 12110,
+      "score": 0.2252,
+      "place_change": -0.285,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "强袭者的链枷": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "unit": "雷克塞",
+      "items": [
+        "圣盾使的誓约",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.8151,
+      "count": 2023,
+      "score": 0.1928,
+      "place_change": -0.367,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 113876,
+      "avg": 3.9418,
+      "pcnt": 0.94222
+    },
+    "海妖之怒": {
+      "itemNames": "TFT_Item_RunaansHurricane",
+      "count": 103790,
+      "avg": 3.9977,
+      "pcnt": 0.85877
+    },
+    "水银": {
+      "itemNames": "TFT_Item_Quicksilver",
+      "count": 95233,
+      "avg": 4.0625,
+      "pcnt": 0.78797
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 87958,
+      "avg": 4.0877,
+      "pcnt": 0.72777
+    },
+    "正义之手": {
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 75586,
+      "avg": 3.9835,
+      "pcnt": 0.62541
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 71734,
+      "avg": 4.0688,
+      "pcnt": 0.59353
+    },
+    "夜之锋刃": {
+      "itemNames": "TFT_Item_GuardianAngel",
+      "count": 59084,
+      "avg": 3.9403,
+      "pcnt": 0.48887
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 46106,
+      "avg": 3.8216,
+      "pcnt": 0.38149
+    },
+    "强袭者的链枷": {
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 42348,
+      "avg": 3.7911,
+      "pcnt": 0.35039
+    },
+    "圣盾使的誓约": {
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 37475,
+      "avg": 3.7871,
+      "pcnt": 0.31007
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 5472,
+      "avg": 4.3518,
+      "pick_rate": 0.037642
+    },
+    {
+      "day": "2026-04-18",
+      "count": 18157,
+      "avg": 4.1589,
+      "pick_rate": 0.045559
+    },
+    {
+      "day": "2026-04-19",
+      "count": 28498,
+      "avg": 4.1747,
+      "pick_rate": 0.052008
+    },
+    {
+      "day": "2026-04-20",
+      "count": 62793,
+      "avg": 4.1991,
+      "pick_rate": 0.057109
+    },
+    {
+      "day": "2026-04-21",
+      "count": 14330,
+      "avg": 4.1495,
+      "pick_rate": 0.057842
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.034
+}

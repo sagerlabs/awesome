@@ -2,114 +2,90 @@
   "name": "蕾欧娜",
   "appear_in_comps": [
     {
-      "cluster_id": "394002",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
-      "tier": "S",
-      "avg_placement": 4.1278
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "tier": "A",
+      "avg_placement": 4.3079
     },
     {
-      "cluster_id": "394035",
-      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Void",
-      "tier": "B",
-      "avg_placement": 4.6383
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "tier": "A",
+      "avg_placement": 4.4022
     },
     {
-      "cluster_id": "394057",
-      "comp_name": "TFT16_Piltover, TFT16_Zoe",
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "tier": "A",
+      "avg_placement": 4.4447
+    },
+    {
+      "cluster_id": "401022",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_Diana",
       "tier": "C",
-      "avg_placement": 5.097
+      "avg_placement": 4.8216
     },
     {
-      "cluster_id": "394057",
-      "comp_name": "TFT16_Piltover, TFT16_Zoe",
+      "cluster_id": "401039",
+      "comp_name": "TFT17_ShieldTank, TFT17_Zoe",
       "tier": "C",
-      "avg_placement": 5.097
+      "avg_placement": 5.0501
     },
     {
-      "cluster_id": "394017",
-      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Defender",
+      "cluster_id": "401044",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
+      "tier": "C",
+      "avg_placement": 5.0546
+    },
+    {
+      "cluster_id": "401054",
+      "comp_name": "TFT17_ADMIN, TFT17_Diana",
       "tier": "D",
-      "avg_placement": 5.1967
+      "avg_placement": 5.5805
     }
   ],
   "builds": [
     {
-      "cluster_id": "394002",
-      "comp_name": "TFT16_Void, TFT16_Malzahar",
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
       "items": [
-        "巨龙之爪",
         "石像鬼石板甲",
-        "振奋盔甲"
+        "石像鬼石板甲",
+        "狂徒铠甲"
       ],
-      "avg_placement": 3.5973,
-      "count": 7174,
+      "avg_placement": 3.8222,
+      "count": 7504,
       "priority_scores": {
-        "巨龙之爪": 100,
         "石像鬼石板甲": 85,
-        "振奋盔甲": 72
-      }
-    },
-    {
-      "cluster_id": "394048",
-      "comp_name": "TFT16_Sorcerer, TFT16_Diana",
-      "items": [
-        "石像鬼石板甲",
-        "振奋盔甲",
-        "狂徒铠甲"
-      ],
-      "avg_placement": 4.3776,
-      "count": 882,
-      "priority_scores": {
-        "石像鬼石板甲": 100,
-        "振奋盔甲": 85,
         "狂徒铠甲": 72
       }
     },
     {
-      "cluster_id": "394035",
-      "comp_name": "TFT16_Warden, TFT16_Malzahar, TFT16_Void",
+      "cluster_id": "401039",
+      "comp_name": "TFT17_ShieldTank, TFT17_Zoe",
       "items": [
         "石像鬼石板甲",
-        "离子火花",
-        "狂徒铠甲"
+        "石像鬼石板甲",
+        "石像鬼石板甲"
       ],
-      "avg_placement": 3.3793,
-      "count": 29,
+      "avg_placement": 3.9615,
+      "count": 260,
       "priority_scores": {
-        "石像鬼石板甲": 100,
-        "离子火花": 85,
-        "狂徒铠甲": 72
+        "石像鬼石板甲": 72
       }
     },
     {
-      "cluster_id": "394057",
-      "comp_name": "TFT16_Piltover, TFT16_Zoe",
+      "cluster_id": "401054",
+      "comp_name": "TFT17_ADMIN, TFT17_Diana",
       "items": [
         "石像鬼石板甲",
-        "振奋盔甲",
-        "狂徒铠甲"
-      ],
-      "avg_placement": 4.6252,
-      "count": 595,
-      "priority_scores": {
-        "石像鬼石板甲": 100,
-        "振奋盔甲": 85,
-        "狂徒铠甲": 72
-      }
-    },
-    {
-      "cluster_id": "394017",
-      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Defender",
-      "items": [
-        "棘刺背心",
-        "巨龙之爪",
+        "石像鬼石板甲",
         "振奋盔甲"
       ],
-      "avg_placement": 3.4737,
-      "count": 19,
+      "avg_placement": 4.2941,
+      "count": 17,
       "priority_scores": {
-        "棘刺背心": 100,
-        "巨龙之爪": 85,
+        "石像鬼石板甲": 85,
         "振奋盔甲": 72
       }
     }

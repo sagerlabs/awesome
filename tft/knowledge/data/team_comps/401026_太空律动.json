@@ -1,0 +1,203 @@
+{
+  "cluster_id": "401026",
+  "tft_set": "TFTSet17",
+  "units": [
+    "布里茨",
+    "贾克斯",
+    "努努和威朗普",
+    "努努和威朗普",
+    "奥恩",
+    "莎弥拉",
+    "莎弥拉",
+    "霞"
+  ],
+  "traits": [
+    "汪星机器人 (1)",
+    "狙神 (1)",
+    "堡垒卫士 (1)",
+    "重装战士 (1)",
+    "太空律动 (2)",
+    "观星者 (1)"
+  ],
+  "stars": [
+    "莎弥拉",
+    "拉亚斯特"
+  ],
+  "name_string": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Nunu",
+  "display_names": [
+    {
+      "name": "太空律动",
+      "type": "trait",
+      "score": 2.173143251322143
+    },
+    {
+      "name": "努努和威朗普",
+      "type": "unit",
+      "score": 4.121292251092205
+    }
+  ],
+  "count": 8790,
+  "avg_placement": 4.7662,
+  "top4_rate": 0.4435,
+  "win_rate": 0.0985,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "努努和威朗普",
+      "items": [
+        "圣盾使的誓约",
+        "圣盾使的誓约",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 3.125,
+      "count": 32,
+      "score": 0.6971,
+      "place_change": -1.641,
+      "priority_scores": {
+        "圣盾使的誓约": 85,
+        "石像鬼石板甲": 72
+      }
+    },
+    {
+      "unit": "莎弥拉",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.1478,
+      "count": 460,
+      "score": 0.522,
+      "place_change": -0.618,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "霞",
+      "items": [
+        "战兔十字弩",
+        "鬼索的狂暴之刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 3.0357,
+      "count": 28,
+      "score": 0.3229,
+      "place_change": -1.73,
+      "priority_scores": {
+        "战兔十字弩": 100,
+        "鬼索的狂暴之刃": 85,
+        "无尽之刃": 72
+      }
+    },
+    {
+      "unit": "烬",
+      "items": [
+        "无尽之刃",
+        "最后的轻语",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.0909,
+      "count": 22,
+      "score": 0.1325,
+      "place_change": -1.675,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "最后的轻语": 85,
+        "强袭者的链枷": 72
+      }
+    }
+  ],
+  "build_items": {
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 7630,
+      "avg": 4.6494,
+      "pcnt": 0.87721
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 6225,
+      "avg": 4.6705,
+      "pcnt": 0.71568
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 4766,
+      "avg": 4.6005,
+      "pcnt": 0.54794
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 4620,
+      "avg": 4.4734,
+      "pcnt": 0.53116
+    },
+    "圣盾使的誓约": {
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 4071,
+      "avg": 4.3662,
+      "pcnt": 0.46804
+    },
+    "最后的轻语": {
+      "itemNames": "TFT_Item_LastWhisper",
+      "count": 3225,
+      "avg": 4.485,
+      "pcnt": 0.37077
+    },
+    "死亡之刃": {
+      "itemNames": "TFT_Item_Deathblade",
+      "count": 2886,
+      "avg": 4.3306,
+      "pcnt": 0.3318
+    },
+    "强袭者的链枷": {
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 2398,
+      "avg": 4.4675,
+      "pcnt": 0.2757
+    },
+    "战兔十字弩": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier2_BattleBunnyCrossbow",
+      "count": 67,
+      "avg": 3.5075,
+      "pcnt": 0.0077
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 644,
+      "avg": 4.7904,
+      "pick_rate": 0.00443
+    },
+    {
+      "day": "2026-04-18",
+      "count": 1633,
+      "avg": 4.7863,
+      "pick_rate": 0.004097
+    },
+    {
+      "day": "2026-04-19",
+      "count": 2023,
+      "avg": 4.7266,
+      "pick_rate": 0.003692
+    },
+    {
+      "day": "2026-04-20",
+      "count": 4331,
+      "avg": 4.768,
+      "pick_rate": 0.003939
+    },
+    {
+      "day": "2026-04-21",
+      "count": 1004,
+      "avg": 4.7689,
+      "pick_rate": 0.004053
+    }
+  ],
+  "levelling": "Standard",
+  "difficulty": -0.143
+}

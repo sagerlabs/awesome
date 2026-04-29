@@ -2,35 +2,11 @@
   "name": "适应性头盔",
   "priority_list": [
     {
-      "cluster_id": "394000",
-      "comp_name": "TFT16_Sorcerer, TFT16_Lux",
-      "comp_tier": "S",
-      "comp_avg": 3.8569,
-      "carry": "安妮",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394031",
-      "comp_name": "TFT16_Demacia, TFT16_Vayne",
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
       "comp_tier": "A",
-      "comp_avg": 4.3035,
-      "carry": "加里奥",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394006",
-      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
-      "comp_tier": "A",
-      "comp_avg": 4.4506,
-      "carry": "德莱厄斯",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394023",
-      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Kobuko",
-      "comp_tier": "A",
-      "comp_avg": 4.4818,
-      "carry": "德莱厄斯",
+      "comp_avg": 4.3717,
+      "carry": "努努和威朗普",
       "priority_score": 100
     }
   ]

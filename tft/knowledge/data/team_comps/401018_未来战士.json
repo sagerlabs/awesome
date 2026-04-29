@@ -1,0 +1,214 @@
+{
+  "cluster_id": "401018",
+  "tft_set": "TFTSet17",
+  "units": [
+    "亚托克斯",
+    "贾克斯",
+    "璐璐",
+    "茂凯",
+    "米利欧",
+    "潘森",
+    "拉亚斯特",
+    "崔斯特"
+  ],
+  "traits": [
+    "魔术师 (1)",
+    "新星特攻队 (1)",
+    "织命人 (1)",
+    "斗士 (1)",
+    "堡垒卫士 (1)",
+    "救世主 (1)",
+    "观星者 (1)",
+    "未来战士 (1)"
+  ],
+  "stars": [
+    "璐璐",
+    "茂凯",
+    "潘森",
+    "贾克斯",
+    "米利欧",
+    "拉亚斯特",
+    "凯特琳",
+    "奥恩",
+    "厄运小姐",
+    "古拉加斯",
+    "波比"
+  ],
+  "name_string": "TFT17_APTrait, TFT17_Lulu, TFT17_Maokai",
+  "display_names": [
+    {
+      "name": "未来战士",
+      "type": "trait",
+      "score": 1.0265159747880896
+    },
+    {
+      "name": "璐璐",
+      "type": "unit",
+      "score": 4.240273853510107
+    }
+  ],
+  "count": 13979,
+  "avg_placement": 4.7021,
+  "top4_rate": 0.4608,
+  "win_rate": 0.1209,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "璐璐",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
+      ],
+      "avg_placement": 4.5404,
+      "count": 3251,
+      "score": 0.422,
+      "place_change": -0.155,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "unit": "茂凯",
+      "items": [
+        "圣盾使的誓约",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.3409,
+      "count": 44,
+      "score": 0.3251,
+      "place_change": -1.355,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "米利欧",
+      "items": [
+        "珠光护手",
+        "强袭者的链枷",
+        "朔极之矛"
+      ],
+      "avg_placement": 2.8205,
+      "count": 39,
+      "score": 0.2423,
+      "place_change": -1.875,
+      "priority_scores": {
+        "珠光护手": 100,
+        "强袭者的链枷": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "贾克斯",
+      "items": [
+        "石像鬼石板甲",
+        "坚定之心",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.2069,
+      "count": 29,
+      "score": 0.1428,
+      "place_change": -1.489,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "坚定之心": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "纳什之牙": {
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 14010,
+      "avg": 4.5988,
+      "pcnt": 1.015
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 12727,
+      "avg": 4.5184,
+      "pcnt": 0.92205
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 10131,
+      "avg": 4.4743,
+      "pcnt": 0.73397
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 9688,
+      "avg": 4.4016,
+      "pcnt": 0.70188
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 6464,
+      "avg": 4.1719,
+      "pcnt": 0.4683
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 6386,
+      "avg": 4.5117,
+      "pcnt": 0.46265
+    },
+    "圣盾使的誓约": {
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 4544,
+      "avg": 4.009,
+      "pcnt": 0.3292
+    },
+    "坚定之心": {
+      "itemNames": "TFT_Item_NightHarvester",
+      "count": 3977,
+      "avg": 4.1157,
+      "pcnt": 0.28813
+    },
+    "强袭者的链枷": {
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 1646,
+      "avg": 4.2205,
+      "pcnt": 0.11925
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 739,
+      "avg": 4.7727,
+      "pick_rate": 0.005084
+    },
+    {
+      "day": "2026-04-18",
+      "count": 2368,
+      "avg": 4.7297,
+      "pick_rate": 0.005942
+    },
+    {
+      "day": "2026-04-19",
+      "count": 3429,
+      "avg": 4.6985,
+      "pick_rate": 0.006258
+    },
+    {
+      "day": "2026-04-20",
+      "count": 6908,
+      "avg": 4.694,
+      "pick_rate": 0.006283
+    },
+    {
+      "day": "2026-04-21",
+      "count": 1463,
+      "avg": 4.6794,
+      "pick_rate": 0.005905
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.018
+}

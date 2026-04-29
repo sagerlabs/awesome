@@ -2,28 +2,12 @@
   "name": "大天使之杖",
   "priority_list": [
     {
-      "cluster_id": "394008",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
       "comp_tier": "S",
-      "comp_avg": 4.0341,
-      "carry": "巴德",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394024",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick",
-      "comp_tier": "S",
-      "comp_avg": 4.0701,
-      "carry": "吉格斯",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394032",
-      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3158,
-      "carry": "巴德",
-      "priority_score": 100
+      "comp_avg": 3.9764,
+      "carry": "维克托",
+      "priority_score": 85
     }
   ]
 }

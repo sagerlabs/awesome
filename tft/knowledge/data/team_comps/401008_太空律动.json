@@ -1,0 +1,214 @@
+{
+  "cluster_id": "401008",
+  "tft_set": "TFTSet17",
+  "units": [
+    "布里茨",
+    "格温",
+    "娜美",
+    "内瑟斯",
+    "奥恩",
+    "潘森",
+    "锐雯",
+    "慎",
+    "塔姆"
+  ],
+  "traits": [
+    "魔术师 (1)",
+    "游侠 (1)",
+    "汪星机器人 (1)",
+    "斗士 (1)",
+    "堡垒卫士 (1)",
+    "暮光铁壁 (1)",
+    "重装战士 (1)",
+    "太空律动 (3)",
+    "命运祭司 (1)",
+    "未来战士 (1)"
+  ],
+  "stars": [
+    "蕾欧娜",
+    "金克丝"
+  ],
+  "name_string": "TFT17_SpaceGroove, TFT17_Nami",
+  "display_names": [
+    {
+      "name": "太空律动",
+      "type": "trait",
+      "score": 3.0970937061334403
+    },
+    {
+      "name": "娜美",
+      "type": "unit",
+      "score": 4.250948950067322
+    }
+  ],
+  "count": 141074,
+  "avg_placement": 4.3744,
+  "top4_rate": 0.5228,
+  "win_rate": 0.1506,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "锐雯",
+      "items": [
+        "太空律动纹章",
+        "饮血剑",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.968,
+      "count": 28122,
+      "score": 0.5228,
+      "place_change": -0.407,
+      "priority_scores": {
+        "太空律动纹章": 100,
+        "饮血剑": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "娜美",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
+      ],
+      "avg_placement": 3.9739,
+      "count": 13925,
+      "score": 0.4947,
+      "place_change": -0.401,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "unit": "布里茨",
+      "items": [
+        "珠光护手",
+        "强袭者的链枷",
+        "正义之手"
+      ],
+      "avg_placement": 2.8101,
+      "count": 416,
+      "score": 0.2064,
+      "place_change": -1.565,
+      "priority_scores": {
+        "珠光护手": 100,
+        "强袭者的链枷": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "unit": "塔姆",
+      "items": [
+        "日炎斗篷",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.6778,
+      "count": 748,
+      "score": 0.1752,
+      "place_change": -0.697,
+      "priority_scores": {
+        "日炎斗篷": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 134645,
+      "avg": 4.1816,
+      "pcnt": 0.96431
+    },
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 106185,
+      "avg": 4.1674,
+      "pcnt": 0.76049
+    },
+    "太空律动纹章": {
+      "itemNames": "TFT17_Item_SpaceGrooveEmblemItem",
+      "count": 105474,
+      "avg": 4.0346,
+      "pcnt": 0.75539
+    },
+    "纳什之牙": {
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 98800,
+      "avg": 4.2114,
+      "pcnt": 0.70759
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 58587,
+      "avg": 4.1975,
+      "pcnt": 0.41959
+    },
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 56908,
+      "avg": 4.1871,
+      "pcnt": 0.40757
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 50272,
+      "avg": 3.9016,
+      "pcnt": 0.36004
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 45032,
+      "avg": 4.0401,
+      "pcnt": 0.32251
+    },
+    "正义之手": {
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 37338,
+      "avg": 3.7954,
+      "pcnt": 0.26741
+    },
+    "强袭者的链枷": {
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 27862,
+      "avg": 4.0171,
+      "pcnt": 0.19954
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 9262,
+      "avg": 4.3243,
+      "pick_rate": 0.063714
+    },
+    {
+      "day": "2026-04-18",
+      "count": 25203,
+      "avg": 4.3368,
+      "pick_rate": 0.063239
+    },
+    {
+      "day": "2026-04-19",
+      "count": 35095,
+      "avg": 4.3981,
+      "pick_rate": 0.064047
+    },
+    {
+      "day": "2026-04-20",
+      "count": 68326,
+      "avg": 4.3797,
+      "pick_rate": 0.062141
+    },
+    {
+      "day": "2026-04-21",
+      "count": 15378,
+      "avg": 4.3509,
+      "pick_rate": 0.062072
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": 0.028
+}

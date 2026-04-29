@@ -2,77 +2,105 @@
   "name": "亚托克斯",
   "appear_in_comps": [
     {
-      "cluster_id": "394015",
-      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
-      "tier": "A",
-      "avg_placement": 4.3658
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "tier": "S",
+      "avg_placement": 4.183
     },
     {
-      "cluster_id": "394007",
-      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
       "tier": "A",
-      "avg_placement": 4.3786
+      "avg_placement": 4.3245
     },
     {
-      "cluster_id": "394022",
-      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
       "tier": "A",
-      "avg_placement": 4.4885
+      "avg_placement": 4.4707
     },
     {
-      "cluster_id": "394016",
-      "comp_name": "TFT16_Slayer, TFT16_Yone",
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "tier": "A",
+      "avg_placement": 4.4845
+    },
+    {
+      "cluster_id": "401030",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu",
       "tier": "B",
-      "avg_placement": 4.6189
+      "avg_placement": 4.5516
+    },
+    {
+      "cluster_id": "401025",
+      "comp_name": "TFT17_ResistTank, TFT17_TwistedFate",
+      "tier": "B",
+      "avg_placement": 4.565
+    },
+    {
+      "cluster_id": "401016",
+      "comp_name": "TFT17_DRX, TFT17_Rammus",
+      "tier": "B",
+      "avg_placement": 4.6407
+    },
+    {
+      "cluster_id": "401018",
+      "comp_name": "TFT17_APTrait, TFT17_Lulu, TFT17_Maokai",
+      "tier": "B",
+      "avg_placement": 4.7021
+    },
+    {
+      "cluster_id": "401021",
+      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
+      "tier": "C",
+      "avg_placement": 4.7878
+    },
+    {
+      "cluster_id": "401037",
+      "comp_name": "TFT17_HPTank, TFT17_TahmKench",
+      "tier": "C",
+      "avg_placement": 4.7974
+    },
+    {
+      "cluster_id": "401038",
+      "comp_name": "TFT17_HPTank, TFT17_MissFortune",
+      "tier": "C",
+      "avg_placement": 5.075
+    },
+    {
+      "cluster_id": "401042",
+      "comp_name": "TFT17_ResistTank, TFT17_Poppy",
+      "tier": "C",
+      "avg_placement": 5.0771
+    },
+    {
+      "cluster_id": "401047",
+      "comp_name": "TFT17_DRX, TFT17_Aatrox",
+      "tier": "D",
+      "avg_placement": 5.239
+    },
+    {
+      "cluster_id": "401051",
+      "comp_name": "TFT17_ResistTank, TFT17_Ornn",
+      "tier": "D",
+      "avg_placement": 5.6756
     }
   ],
   "builds": [
     {
-      "cluster_id": "394015",
-      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "cluster_id": "401047",
+      "comp_name": "TFT17_DRX, TFT17_Aatrox",
       "items": [
         "饮血剑",
         "斯特拉克的挑战护手",
         "泰坦的坚决"
       ],
-      "avg_placement": 3.845,
-      "count": 471,
+      "avg_placement": 4.9002,
+      "count": 962,
       "priority_scores": {
         "饮血剑": 100,
         "斯特拉克的挑战护手": 85,
         "泰坦的坚决": 72
-      }
-    },
-    {
-      "cluster_id": "394022",
-      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
-      "items": [
-        "饮血剑",
-        "斯特拉克的挑战护手",
-        "泰坦的坚决"
-      ],
-      "avg_placement": 3.9819,
-      "count": 1381,
-      "priority_scores": {
-        "饮血剑": 100,
-        "斯特拉克的挑战护手": 85,
-        "泰坦的坚决": 72
-      }
-    },
-    {
-      "cluster_id": "394016",
-      "comp_name": "TFT16_Slayer, TFT16_Yone",
-      "items": [
-        "饮血剑",
-        "夜之锋刃",
-        "无尽之刃"
-      ],
-      "avg_placement": 3.4783,
-      "count": 46,
-      "priority_scores": {
-        "饮血剑": 100,
-        "夜之锋刃": 85,
-        "无尽之刃": 72
       }
     }
   ]

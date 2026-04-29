@@ -2,75 +2,35 @@
   "name": "薄暮法袍",
   "priority_list": [
     {
-      "cluster_id": "394019",
-      "comp_name": "TFT16_Bilgewater, TFT16_MissFortune, TFT16_Wukong",
-      "comp_tier": "S",
-      "comp_avg": 4.1515,
-      "carry": "孙悟空",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394004",
-      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "cluster_id": "401006",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
       "comp_tier": "A",
-      "comp_avg": 4.5124,
-      "carry": "瑟庄妮",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394009",
-      "comp_name": "TFT16_Noxus, TFT16_Skarner",
-      "comp_tier": "S",
-      "comp_avg": 4.003,
-      "carry": "斯卡纳",
+      "comp_avg": 4.3396,
+      "carry": "拉莫斯",
       "priority_score": 72
     },
     {
-      "cluster_id": "394029",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
       "comp_tier": "A",
-      "comp_avg": 4.2663,
-      "carry": "辛吉德",
+      "comp_avg": 4.4761,
+      "carry": "奥恩",
       "priority_score": 72
     },
     {
-      "cluster_id": "394018",
-      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
       "comp_tier": "A",
-      "comp_avg": 4.3637,
-      "carry": "峡谷先锋",
+      "comp_avg": 4.4852,
+      "carry": "努努和威朗普",
       "priority_score": 72
     },
     {
-      "cluster_id": "394015",
-      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
       "comp_tier": "A",
-      "comp_avg": 4.3658,
-      "carry": "孙悟空",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "394007",
-      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
-      "comp_tier": "A",
-      "comp_avg": 4.3786,
-      "carry": "孙悟空",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "394022",
-      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
-      "comp_tier": "A",
-      "comp_avg": 4.4885,
-      "carry": "斯维因",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "394004",
-      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
-      "comp_tier": "A",
-      "comp_avg": 4.5124,
-      "carry": "德莱厄斯",
+      "comp_avg": 4.5082,
+      "carry": "超级机甲",
       "priority_score": 72
     }
   ]

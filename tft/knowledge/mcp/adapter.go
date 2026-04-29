@@ -99,6 +99,8 @@ func defaultToolDefinitions() []ToolDefinition {
 				"gold":            nullableIntegerSchema(),
 				"level":           nullableIntegerSchema(),
 				"hp":              nullableIntegerSchema(),
+				"unit_cost":       nullableIntegerSchema(),
+				"role_query":      stringSchema(),
 			}, nil),
 		},
 		{

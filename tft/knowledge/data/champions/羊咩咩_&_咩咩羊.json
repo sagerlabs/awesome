@@ -1,0 +1,66 @@
+{
+  "name": "羊咩咩 & 咩咩羊",
+  "appear_in_comps": [
+    {
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "tier": "S",
+      "avg_placement": 3.9764
+    },
+    {
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "tier": "S",
+      "avg_placement": 4.2264
+    },
+    {
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "tier": "A",
+      "avg_placement": 4.3079
+    },
+    {
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "tier": "A",
+      "avg_placement": 4.4022
+    },
+    {
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "tier": "A",
+      "avg_placement": 4.4447
+    },
+    {
+      "cluster_id": "401022",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_Diana",
+      "tier": "C",
+      "avg_placement": 4.8216
+    },
+    {
+      "cluster_id": "401034",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nami",
+      "tier": "C",
+      "avg_placement": 4.9237
+    },
+    {
+      "cluster_id": "401039",
+      "comp_name": "TFT17_ShieldTank, TFT17_Zoe",
+      "tier": "C",
+      "avg_placement": 5.0501
+    },
+    {
+      "cluster_id": "401044",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
+      "tier": "C",
+      "avg_placement": 5.0546
+    },
+    {
+      "cluster_id": "401052",
+      "comp_name": "TFT17_ShieldTank, TFT17_Illaoi",
+      "tier": "D",
+      "avg_placement": 5.2599
+    }
+  ],
+  "builds": []
+}

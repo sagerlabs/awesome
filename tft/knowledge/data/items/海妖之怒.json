@@ -2,83 +2,27 @@
   "name": "海妖之怒",
   "priority_list": [
     {
-      "cluster_id": "394009",
-      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
       "comp_tier": "S",
-      "comp_avg": 4.003,
-      "carry": "千珏",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "394008",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "S",
-      "comp_avg": 4.0341,
-      "carry": "厄斐琉斯",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "394024",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick",
-      "comp_tier": "S",
-      "comp_avg": 4.0701,
-      "carry": "千珏",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "394010",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
-      "comp_tier": "S",
-      "comp_avg": 4.2473,
-      "carry": "金克丝",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "394029",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
-      "comp_tier": "A",
-      "comp_avg": 4.2663,
-      "carry": "金克丝",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "394031",
-      "comp_name": "TFT16_Demacia, TFT16_Vayne",
-      "comp_tier": "A",
-      "comp_avg": 4.3035,
-      "carry": "薇恩",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "394032",
-      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3158,
-      "carry": "厄斐琉斯",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "394006",
-      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
-      "comp_tier": "A",
-      "comp_avg": 4.4506,
-      "carry": "德莱文",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "394022",
-      "comp_name": "TFT16_Slayer, TFT16_BelVeth",
-      "comp_tier": "A",
-      "comp_avg": 4.4885,
+      "comp_avg": 4.183,
       "carry": "卑尔维斯",
       "priority_score": 72
     },
     {
-      "cluster_id": "394004",
-      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "comp_tier": "S",
+      "comp_avg": 4.183,
+      "carry": "千珏",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
       "comp_tier": "A",
-      "comp_avg": 4.5124,
-      "carry": "艾希",
+      "comp_avg": 4.4845,
+      "carry": "千珏",
       "priority_score": 72
     }
   ]

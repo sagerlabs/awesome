@@ -2,58 +2,64 @@
   "name": "慎",
   "appear_in_comps": [
     {
-      "cluster_id": "394001",
-      "comp_name": "TFT16_Brawler, TFT16_Wukong",
-      "tier": "S",
-      "avg_placement": 4.1427
-    },
-    {
-      "cluster_id": "394032",
-      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
+      "cluster_id": "401008",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
       "tier": "A",
-      "avg_placement": 4.3158
+      "avg_placement": 4.3744
     },
     {
-      "cluster_id": "394028",
-      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
       "tier": "A",
-      "avg_placement": 4.3576
+      "avg_placement": 4.4845
     },
     {
-      "cluster_id": "394007",
-      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
       "tier": "A",
-      "avg_placement": 4.3786
+      "avg_placement": 4.5139
     },
     {
-      "cluster_id": "394013",
-      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
-      "tier": "A",
-      "avg_placement": 4.499
-    },
-    {
-      "cluster_id": "394038",
-      "comp_name": "TFT16_Ionia, TFT16_Yunara",
+      "cluster_id": "401030",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu",
       "tier": "B",
-      "avg_placement": 4.5853
+      "avg_placement": 4.5516
     },
     {
-      "cluster_id": "394056",
-      "comp_name": "TFT16_Augment_IllaoiCarry, TFT16_Brawler",
+      "cluster_id": "401028",
+      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Xayah",
+      "tier": "B",
+      "avg_placement": 4.7262
+    },
+    {
+      "cluster_id": "401037",
+      "comp_name": "TFT17_HPTank, TFT17_TahmKench",
       "tier": "C",
-      "avg_placement": 4.89
+      "avg_placement": 4.7974
     },
     {
-      "cluster_id": "394062",
-      "comp_name": "TFT16_Brawler, TFT16_Sion",
-      "tier": "D",
-      "avg_placement": 5.5815
+      "cluster_id": "401038",
+      "comp_name": "TFT17_HPTank, TFT17_MissFortune",
+      "tier": "C",
+      "avg_placement": 5.075
     },
     {
-      "cluster_id": "394065",
-      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Sorcerer",
+      "cluster_id": "401042",
+      "comp_name": "TFT17_ResistTank, TFT17_Poppy",
+      "tier": "C",
+      "avg_placement": 5.0771
+    },
+    {
+      "cluster_id": "401046",
+      "comp_name": "TFT17_FlexTrait, TFT17_Galio",
       "tier": "D",
-      "avg_placement": 5.7742
+      "avg_placement": 5.2739
+    },
+    {
+      "cluster_id": "401051",
+      "comp_name": "TFT17_ResistTank, TFT17_Ornn",
+      "tier": "D",
+      "avg_placement": 5.6756
     }
   ],
   "builds": []

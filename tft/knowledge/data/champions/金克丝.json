@@ -2,61 +2,33 @@
   "name": "金克丝",
   "appear_in_comps": [
     {
-      "cluster_id": "394024",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick",
-      "tier": "S",
-      "avg_placement": 4.0701
-    },
-    {
-      "cluster_id": "394010",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
-      "tier": "S",
-      "avg_placement": 4.2473
-    },
-    {
-      "cluster_id": "394029",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
-      "tier": "A",
-      "avg_placement": 4.2663
-    },
-    {
-      "cluster_id": "394055",
-      "comp_name": "TFT16_Zaun, TFT16_Ekko",
+      "cluster_id": "401022",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_Diana",
       "tier": "C",
-      "avg_placement": 5.0249
+      "avg_placement": 4.8216
+    },
+    {
+      "cluster_id": "401055",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Jinx",
+      "tier": "D",
+      "avg_placement": 6.2252
     }
   ],
   "builds": [
     {
-      "cluster_id": "394010",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
+      "cluster_id": "401055",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Jinx",
       "items": [
-        "鬼索的狂暴之刃",
-        "最后的轻语",
-        "海妖之怒"
+        "火箭狂潮",
+        "OwO魔爆炮",
+        "鬼索的狂暴之刃"
       ],
-      "avg_placement": 4.0183,
-      "count": 18529,
+      "avg_placement": 2.6032,
+      "count": 63,
       "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "最后的轻语": 85,
-        "海妖之怒": 72
-      }
-    },
-    {
-      "cluster_id": "394029",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
-      "items": [
-        "鬼索的狂暴之刃",
-        "最后的轻语",
-        "海妖之怒"
-      ],
-      "avg_placement": 3.9763,
-      "count": 10392,
-      "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "最后的轻语": 85,
-        "海妖之怒": 72
+        "火箭狂潮": 100,
+        "OwO魔爆炮": 85,
+        "鬼索的狂暴之刃": 72
       }
     }
   ]

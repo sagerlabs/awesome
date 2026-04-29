@@ -4,6 +4,34 @@
 
 Proposed
 
+## Implementation Status（实现状态）
+
+Status: Done for MVP（最小可用版本已完成）
+
+Checklist:
+
+- [x] `tft/knowledge/data/aliases.json` 已建立，可边测试边补充。
+- [x] `knowledge` 层 alias loader（别名加载器）已实现。
+- [x] `QueryNLU` 查询前置归一化已支持玩家黑话，例如“羊刀 -> 鬼索的狂暴之刃”。
+- [x] `normalized_terms`（归一化词记录）已进入 contract（公共协议）。
+- [x] Agent prompt（提示词）已展示“已识别黑话”，最终回答可说明“我按 A=B 理解”。
+- [x] 已补充回归测试，覆盖别名映射命中和 prompt 展示。
+- [x] 旧 `parser` 中存在局部 aliases（别名）机制，但它不等于本 ADR 要求的 knowledge query 统一归一化。
+
+Evidence（证据）:
+
+- `tft/knowledge/data/aliases.json`
+- `tft/knowledge/models/alias.go`
+- `tft/knowledge/loader.go`
+- `tft/knowledge/store.go`
+- `tft/knowledge/unified_store.go`
+- `tft/knowledge/contracts/query_nlu.go`
+- `tft/parser/parser.go`
+- `tft/knowledge/internal_query.go`
+- `tft/knowledge/internal_query_test.go`
+- `tft/agent/prompt.go`
+- `tft/agent/prompt_test.go`
+
 ## 日期
 
 2026-04-14

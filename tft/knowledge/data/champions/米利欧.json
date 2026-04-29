@@ -2,37 +2,99 @@
   "name": "米利欧",
   "appear_in_comps": [
     {
-      "cluster_id": "394059",
-      "comp_name": "TFT16_Explorer, TFT16_Lissandra",
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "tier": "A",
+      "avg_placement": 4.3245
+    },
+    {
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "tier": "A",
+      "avg_placement": 4.4068
+    },
+    {
+      "cluster_id": "401005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
+      "tier": "A",
+      "avg_placement": 4.4656
+    },
+    {
+      "cluster_id": "401025",
+      "comp_name": "TFT17_ResistTank, TFT17_TwistedFate",
+      "tier": "B",
+      "avg_placement": 4.565
+    },
+    {
+      "cluster_id": "401018",
+      "comp_name": "TFT17_APTrait, TFT17_Lulu, TFT17_Maokai",
+      "tier": "B",
+      "avg_placement": 4.7021
+    },
+    {
+      "cluster_id": "401027",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Riven",
+      "tier": "B",
+      "avg_placement": 4.7637
+    },
+    {
+      "cluster_id": "401024",
+      "comp_name": "TFT17_HPTank, TFT17_Chogath",
       "tier": "C",
-      "avg_placement": 5.0701
+      "avg_placement": 4.79
     },
     {
-      "cluster_id": "394067",
-      "comp_name": "TFT16_Explorer, TFT16_Nidalee",
+      "cluster_id": "401043",
+      "comp_name": "TFT17_Timebreaker, TFT17_Ezreal",
       "tier": "D",
-      "avg_placement": 5.4977
-    },
-    {
-      "cluster_id": "394068",
-      "comp_name": "TFT16_Explorer, TFT16_Bard",
-      "tier": "D",
-      "avg_placement": 6.167
+      "avg_placement": 5.414
     }
   ],
   "builds": [
     {
-      "cluster_id": "394068",
-      "comp_name": "TFT16_Explorer, TFT16_Bard",
+      "cluster_id": "401011",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
       "items": [
-        "莫雷洛秘典",
+        "灭世者的死亡之帽",
         "朔极之矛",
         "虚空之杖"
       ],
-      "avg_placement": 5.243,
-      "count": 107,
+      "avg_placement": 3.6838,
+      "count": 136,
       "priority_scores": {
-        "莫雷洛秘典": 100,
+        "灭世者的死亡之帽": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "401018",
+      "comp_name": "TFT17_APTrait, TFT17_Lulu, TFT17_Maokai",
+      "items": [
+        "珠光护手",
+        "强袭者的链枷",
+        "朔极之矛"
+      ],
+      "avg_placement": 2.8205,
+      "count": 39,
+      "priority_scores": {
+        "珠光护手": 100,
+        "强袭者的链枷": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "401043",
+      "comp_name": "TFT17_Timebreaker, TFT17_Ezreal",
+      "items": [
+        "珠光护手",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 4.2,
+      "count": 10,
+      "priority_scores": {
+        "珠光护手": 100,
         "朔极之矛": 85,
         "虚空之杖": 72
       }

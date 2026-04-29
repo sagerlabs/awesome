@@ -2,171 +2,83 @@
   "name": "鬼索的狂暴之刃",
   "priority_list": [
     {
-      "cluster_id": "394009",
-      "comp_name": "TFT16_Noxus, TFT16_Skarner",
+      "cluster_id": "401007",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
       "comp_tier": "S",
-      "comp_avg": 4.003,
+      "comp_avg": 4.183,
       "carry": "千珏",
       "priority_score": 100
     },
     {
-      "cluster_id": "394008",
-      "comp_name": "TFT16_Defender, TFT16_Aphelios",
-      "comp_tier": "S",
-      "comp_avg": 4.0341,
-      "carry": "厄斐琉斯",
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3079,
+      "carry": "提莫",
       "priority_score": 100
     },
     {
-      "cluster_id": "394024",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick",
-      "comp_tier": "S",
-      "comp_avg": 4.0701,
+      "cluster_id": "401004",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.3717,
+      "carry": "霞",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401015",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "comp_tier": "A",
+      "comp_avg": 4.4022,
+      "carry": "乐芙兰",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "comp_tier": "A",
+      "comp_avg": 4.4447,
+      "carry": "乐芙兰",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401023",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.5139,
+      "carry": "薇古丝",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "401014",
+      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "comp_tier": "A",
+      "comp_avg": 4.3245,
+      "carry": "凯特琳",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401006",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
+      "comp_tier": "A",
+      "comp_avg": 4.3396,
+      "carry": "霞",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "401029",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "comp_tier": "A",
+      "comp_avg": 4.4845,
       "carry": "千珏",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394025",
-      "comp_name": "TFT16_Yordle, TFT16_Veigar",
-      "comp_tier": "S",
-      "comp_avg": 4.1011,
-      "carry": "吉格斯",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394010",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Sejuani",
-      "comp_tier": "S",
-      "comp_avg": 4.2473,
-      "carry": "金克丝",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394029",
-      "comp_name": "TFT16_Zaun, TFT16_Jinx, TFT16_Gunslinger",
-      "comp_tier": "A",
-      "comp_avg": 4.2663,
-      "carry": "金克丝",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394032",
-      "comp_name": "TFT16_Brawler, TFT16_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3158,
-      "carry": "厄斐琉斯",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394012",
-      "comp_name": "TFT16_Noxus, TFT16_Nasus",
-      "comp_tier": "A",
-      "comp_avg": 4.3413,
-      "carry": "阿兹尔",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394028",
-      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
-      "comp_tier": "A",
-      "comp_avg": 4.3576,
-      "carry": "亚恒",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394018",
-      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
-      "comp_tier": "A",
-      "comp_avg": 4.3637,
-      "carry": "卡莎",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394007",
-      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
-      "comp_tier": "A",
-      "comp_avg": 4.3786,
-      "carry": "芸阿娜",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394006",
-      "comp_name": "TFT16_Noxus, TFT16_Darius, TFT16_Leblanc, TFT16_Draven",
-      "comp_tier": "A",
-      "comp_avg": 4.4506,
-      "carry": "德莱文",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394037",
-      "comp_name": "TFT16_Ionia, TFT16_Wukong",
-      "comp_tier": "A",
-      "comp_avg": 4.4739,
-      "carry": "吉格斯",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "394014",
-      "comp_name": "TFT16_Augment_RumbleCarry",
-      "comp_tier": "S",
-      "comp_avg": 3.8451,
-      "carry": "兰博",
       "priority_score": 85
     },
     {
-      "cluster_id": "394024",
-      "comp_name": "TFT16_Zaun, TFT16_Warwick",
-      "comp_tier": "S",
-      "comp_avg": 4.0701,
-      "carry": "吉格斯",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394028",
-      "comp_name": "TFT16_Augment_XinZhaoCarry, TFT16_Ionia",
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
       "comp_tier": "A",
-      "comp_avg": 4.3576,
-      "carry": "永恩",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394015",
-      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Sett",
-      "comp_tier": "A",
-      "comp_avg": 4.3658,
-      "carry": "永恩",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394007",
-      "comp_name": "TFT16_Ionia, TFT16_Yone, TFT16_Yunara",
-      "comp_tier": "A",
-      "comp_avg": 4.3786,
-      "carry": "永恩",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394013",
-      "comp_name": "TFT16_Ionia, TFT16_Ahri, TFT16_Yone",
-      "comp_tier": "A",
-      "comp_avg": 4.499,
-      "carry": "永恩",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394004",
-      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
-      "comp_tier": "A",
-      "comp_avg": 4.5124,
-      "carry": "艾希",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "394004",
-      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Darius",
-      "comp_tier": "A",
-      "comp_avg": 4.5124,
-      "carry": "泰达米尔",
+      "comp_avg": 4.4852,
+      "carry": "霞",
       "priority_score": 85
     }
   ]

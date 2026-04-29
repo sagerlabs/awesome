@@ -1,0 +1,69 @@
+{
+  "name": "伊泽瑞尔",
+  "appear_in_comps": [
+    {
+      "cluster_id": "401020",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+      "tier": "A",
+      "avg_placement": 4.4852
+    },
+    {
+      "cluster_id": "401027",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Riven",
+      "tier": "B",
+      "avg_placement": 4.7637
+    },
+    {
+      "cluster_id": "401024",
+      "comp_name": "TFT17_HPTank, TFT17_Chogath",
+      "tier": "C",
+      "avg_placement": 4.79
+    },
+    {
+      "cluster_id": "401041",
+      "comp_name": "TFT17_DarkStar, TFT17_Chogath",
+      "tier": "C",
+      "avg_placement": 5.0087
+    },
+    {
+      "cluster_id": "401043",
+      "comp_name": "TFT17_Timebreaker, TFT17_Ezreal",
+      "tier": "D",
+      "avg_placement": 5.414
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "401024",
+      "comp_name": "TFT17_HPTank, TFT17_Chogath",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.4431,
+      "count": 6295,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "401043",
+      "comp_name": "TFT17_Timebreaker, TFT17_Ezreal",
+      "items": [
+        "无尽之刃",
+        "强袭者的链枷",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.2979,
+      "count": 94,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "强袭者的链枷": 85,
+        "朔极之矛": 72
+      }
+    }
+  ]
+}

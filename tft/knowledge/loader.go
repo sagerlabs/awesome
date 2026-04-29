@@ -25,9 +25,19 @@ func NewLoader(dataDir string) *Loader {
 func (l *Loader) LoadAll() (*Store, error) {
 	store := NewStore()
 
+	// 加载黑话/别名映射
+	if err := l.loadAliases(store); err != nil {
+		return nil, fmt.Errorf("load aliases: %w", err)
+	}
+
 	// 加载英雄数据
 	if err := l.loadChampions(store); err != nil {
 		return nil, fmt.Errorf("load champions: %w", err)
+	}
+
+	// 加载英雄画像数据
+	if err := l.loadChampionProfiles(store); err != nil {
+		return nil, fmt.Errorf("load champion profiles: %w", err)
 	}
 
 	// 加载装备数据
@@ -50,7 +60,53 @@ func (l *Loader) LoadAll() (*Store, error) {
 		return nil, fmt.Errorf("load knowledge docs: %w", err)
 	}
 
+	// 加载官方版本公告
+	if err := l.loadPatchNotes(store); err != nil {
+		return nil, fmt.Errorf("load patch notes: %w", err)
+	}
+
 	return store, nil
+}
+
+// loadAliases 加载玩家黑话/别名映射。
+func (l *Loader) loadAliases(store *Store) error {
+	path := filepath.Join(l.dataDir, "aliases.json")
+	b, err := os.ReadFile(path)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return nil
+		}
+		return err
+	}
+
+	var file models.AliasesFile
+	if err := json.Unmarshal(b, &file); err != nil {
+		return fmt.Errorf("unmarshal %s: %w", path, err)
+	}
+	store.AddAliases(file)
+	return nil
+}
+
+// loadChampionProfiles 加载英雄费用/标签等轻量画像。
+func (l *Loader) loadChampionProfiles(store *Store) error {
+	path := filepath.Join(l.dataDir, "champion_profiles.json")
+	b, err := os.ReadFile(path)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return nil
+		}
+		return err
+	}
+
+	var file models.ChampionProfilesFile
+	if err := json.Unmarshal(b, &file); err != nil {
+		return fmt.Errorf("unmarshal %s: %w", path, err)
+	}
+
+	for name, profile := range file.Champions {
+		store.AddChampionProfile(name, profile)
+	}
+	return nil
 }
 
 // loadChampions 加载英雄数据
@@ -245,6 +301,38 @@ func (l *Loader) loadKnowledgeDocs(store *Store) error {
 		}
 
 		store.AddKnowledgeDoc(doc)
+	}
+
+	return nil
+}
+
+// loadPatchNotes 加载官方版本公告。
+func (l *Loader) loadPatchNotes(store *Store) error {
+	patchNotesDir := filepath.Join(l.dataDir, "patch_notes")
+	files, err := os.ReadDir(patchNotesDir)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return nil
+		}
+		return err
+	}
+
+	for _, file := range files {
+		if file.IsDir() || !strings.HasSuffix(file.Name(), ".json") {
+			continue
+		}
+
+		path := filepath.Join(patchNotesDir, file.Name())
+		b, err := os.ReadFile(path)
+		if err != nil {
+			return fmt.Errorf("read %s: %w", path, err)
+		}
+
+		var note models.PatchNote
+		if err := json.Unmarshal(b, &note); err != nil {
+			return fmt.Errorf("unmarshal %s: %w", path, err)
+		}
+		store.AddPatchNote(&note)
 	}
 
 	return nil

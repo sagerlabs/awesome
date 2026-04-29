@@ -1,0 +1,210 @@
+{
+  "cluster_id": "401028",
+  "tft_set": "TFTSet17",
+  "units": [
+    "贾克斯",
+    "烬",
+    "璐璐",
+    "莫德凯撒",
+    "努努和威朗普",
+    "锐雯",
+    "慎",
+    "泰隆",
+    "霞"
+  ],
+  "traits": [
+    "游侠 (1)",
+    "暗星 (1)",
+    "灭星尊 (1)",
+    "狙神 (1)",
+    "堡垒卫士 (1)",
+    "暮光铁壁 (1)",
+    "重装战士 (1)",
+    "观星者 (6)"
+  ],
+  "stars": [],
+  "name_string": "TFT17_Stargazer_Mountain, TFT17_Xayah",
+  "display_names": [
+    {
+      "name": "观星者",
+      "type": "trait",
+      "score": 2.2630545900633816
+    },
+    {
+      "name": "霞",
+      "type": "unit",
+      "score": 4.103639337558781
+    }
+  ],
+  "count": 24619,
+  "avg_placement": 4.7262,
+  "top4_rate": 0.4522,
+  "win_rate": 0.1106,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "霞",
+      "items": [
+        "战兔十字弩",
+        "鬼索的狂暴之刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 2.3793,
+      "count": 87,
+      "score": 0.8102,
+      "place_change": -2.34,
+      "priority_scores": {
+        "战兔十字弩": 100,
+        "鬼索的狂暴之刃": 85,
+        "无尽之刃": 72
+      }
+    },
+    {
+      "unit": "努努和威朗普",
+      "items": [
+        "适应性头盔",
+        "圣盾使的誓约",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.6,
+      "count": 115,
+      "score": 0.4532,
+      "place_change": -1.119,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "圣盾使的誓约": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "unit": "锐雯",
+      "items": [
+        "观星者纹章",
+        "饮血剑",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 4.0238,
+      "count": 2097,
+      "score": 0.4077,
+      "place_change": -0.695,
+      "priority_scores": {
+        "观星者纹章": 100,
+        "饮血剑": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "烬",
+      "items": [
+        "观星者纹章",
+        "无尽之刃",
+        "最后的轻语"
+      ],
+      "avg_placement": 3.0973,
+      "count": 298,
+      "score": 0.2864,
+      "place_change": -1.622,
+      "priority_scores": {
+        "观星者纹章": 100,
+        "无尽之刃": 85,
+        "最后的轻语": 72
+      }
+    }
+  ],
+  "build_items": {
+    "观星者纹章": {
+      "itemNames": "TFT17_Item_StargazerEmblemItem",
+      "count": 43588,
+      "avg": 4.2531,
+      "pcnt": 1.78238
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 25205,
+      "avg": 4.6197,
+      "pcnt": 1.03067
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 15483,
+      "avg": 4.4917,
+      "pcnt": 0.63312
+    },
+    "圣盾使的誓约": {
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 12280,
+      "avg": 4.3384,
+      "pcnt": 0.50215
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 11269,
+      "avg": 4.5356,
+      "pcnt": 0.46081
+    },
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 10483,
+      "avg": 4.3818,
+      "pcnt": 0.42866
+    },
+    "最后的轻语": {
+      "itemNames": "TFT_Item_LastWhisper",
+      "count": 8296,
+      "avg": 4.2668,
+      "pcnt": 0.33924
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 6743,
+      "avg": 4.1987,
+      "pcnt": 0.27573
+    },
+    "适应性头盔": {
+      "itemNames": "TFT_Item_AdaptiveHelm",
+      "count": 4381,
+      "avg": 4.0888,
+      "pcnt": 0.17915
+    },
+    "战兔十字弩": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier2_BattleBunnyCrossbow",
+      "count": 205,
+      "avg": 3.039,
+      "pcnt": 0.00838
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 2066,
+      "avg": 4.7464,
+      "pick_rate": 0.014212
+    },
+    {
+      "day": "2026-04-18",
+      "count": 5847,
+      "avg": 4.7245,
+      "pick_rate": 0.014671
+    },
+    {
+      "day": "2026-04-19",
+      "count": 5980,
+      "avg": 4.6732,
+      "pick_rate": 0.010913
+    },
+    {
+      "day": "2026-04-20",
+      "count": 11013,
+      "avg": 4.7322,
+      "pick_rate": 0.010016
+    },
+    {
+      "day": "2026-04-21",
+      "count": 2569,
+      "avg": 4.6956,
+      "pick_rate": 0.01037
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.103
+}

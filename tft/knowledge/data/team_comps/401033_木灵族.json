@@ -1,0 +1,217 @@
+{
+  "cluster_id": "401033",
+  "tft_set": "TFTSet17",
+  "units": [
+    "巴德",
+    "库奇",
+    "菲兹",
+    "超级机甲",
+    "纳尔",
+    "小木灵",
+    "波比",
+    "拉莫斯"
+  ],
+  "traits": [
+    "木灵族 (3)",
+    "旅人 (1)",
+    "堡垒卫士 (1)"
+  ],
+  "stars": [
+    "科加斯"
+  ],
+  "name_string": "TFT17_Astronaut, TFT17_Corki, TFT17_Gnar",
+  "display_names": [
+    {
+      "name": "木灵族",
+      "type": "trait",
+      "score": 2.7619606003752346
+    },
+    {
+      "name": "库奇",
+      "type": "unit",
+      "score": 3.7175773921200745
+    },
+    {
+      "name": "拉莫斯",
+      "type": "unit",
+      "score": 3.624824108818011
+    }
+  ],
+  "count": 25970,
+  "avg_placement": 4.8675,
+  "top4_rate": 0.4043,
+  "win_rate": 0.1377,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "拉莫斯",
+      "items": [
+        "棘刺背心",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.9451,
+      "count": 164,
+      "score": 0.4532,
+      "place_change": -0.921,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "库奇",
+      "items": [
+        "无尽之刃",
+        "巨人杀手",
+        "红霸符"
+      ],
+      "avg_placement": 4.0667,
+      "count": 90,
+      "score": 0.38,
+      "place_change": -0.799,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "巨人杀手": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "unit": "巴德",
+      "items": [
+        "大天使之杖",
+        "珠光护手",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.9485,
+      "count": 97,
+      "score": 0.1584,
+      "place_change": -0.917,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "珠光护手": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "小木灵",
+      "items": [
+        "夜之锋刃",
+        "珠光护手",
+        "正义之手"
+      ],
+      "avg_placement": 4.2101,
+      "count": 395,
+      "score": 0.1008,
+      "place_change": -0.656,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "珠光护手": 85,
+        "正义之手": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 15417,
+      "avg": 4.6512,
+      "pcnt": 0.6026
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 14220,
+      "avg": 4.6965,
+      "pcnt": 0.55582
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 13671,
+      "avg": 4.634,
+      "pcnt": 0.53436
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 11480,
+      "avg": 4.5956,
+      "pcnt": 0.44872
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 11011,
+      "avg": 4.5331,
+      "pcnt": 0.43039
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 10436,
+      "avg": 4.5897,
+      "pcnt": 0.40791
+    },
+    "棘刺背心": {
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 4854,
+      "avg": 4.3745,
+      "pcnt": 0.18973
+    },
+    "正义之手": {
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 4173,
+      "avg": 4.3906,
+      "pcnt": 0.16311
+    },
+    "红霸符": {
+      "itemNames": "TFT_Item_RapidFireCannon",
+      "count": 3875,
+      "avg": 4.3855,
+      "pcnt": 0.15146
+    },
+    "大天使之杖": {
+      "itemNames": "TFT_Item_ArchangelsStaff",
+      "count": 3093,
+      "avg": 4.4268,
+      "pcnt": 0.1209
+    },
+    "夜之锋刃": {
+      "itemNames": "TFT_Item_GuardianAngel",
+      "count": 2348,
+      "avg": 4.2261,
+      "pcnt": 0.09178
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 1415,
+      "avg": 4.8693,
+      "pick_rate": 0.009734
+    },
+    {
+      "day": "2026-04-18",
+      "count": 4235,
+      "avg": 4.8503,
+      "pick_rate": 0.010626
+    },
+    {
+      "day": "2026-04-19",
+      "count": 6460,
+      "avg": 4.8571,
+      "pick_rate": 0.011789
+    },
+    {
+      "day": "2026-04-20",
+      "count": 12575,
+      "avg": 4.8762,
+      "pick_rate": 0.011437
+    },
+    {
+      "day": "2026-04-21",
+      "count": 2979,
+      "avg": 4.8483,
+      "pick_rate": 0.012025
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.304
+}

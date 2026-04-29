@@ -16,7 +16,7 @@ vendor/
 
 # 数据文件（爬虫生成，不提交到仓库）
 metadata/tft-meta/data/*.json
-
+release/
 # 环境变量
 .env
 .env.local

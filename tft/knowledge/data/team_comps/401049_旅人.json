@@ -1,0 +1,220 @@
+{
+  "cluster_id": "401049",
+  "tft_set": "TFTSet17",
+  "units": [
+    "阿萝拉",
+    "菲奥娜",
+    "超级机甲",
+    "俄洛伊",
+    "卡尔玛",
+    "莫德凯撒",
+    "派克",
+    "维克托"
+  ],
+  "traits": [
+    "幻灵战队 (1)",
+    "暗星 (1)",
+    "斗神 (1)",
+    "旅人 (3)",
+    "神谕 (1)",
+    "灵能特工 (1)",
+    "重装战士 (1)"
+  ],
+  "stars": [
+    "阿萝拉",
+    "俄洛伊",
+    "维克托",
+    "厄运小姐",
+    "卡莎"
+  ],
+  "name_string": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_FlexTrait",
+  "display_names": [
+    {
+      "name": "旅人",
+      "type": "trait",
+      "score": 1.991005670338265
+    },
+    {
+      "name": "阿萝拉",
+      "type": "unit",
+      "score": 4.115492406960829
+    }
+  ],
+  "count": 15456,
+  "avg_placement": 5.1832,
+  "top4_rate": 0.3813,
+  "win_rate": 0.1636,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "阿萝拉",
+      "items": [
+        "进化余烬射击",
+        "珠光护手",
+        "纳什之牙"
+      ],
+      "avg_placement": 1.3692,
+      "count": 65,
+      "score": 1.5048,
+      "place_change": -3.805,
+      "priority_scores": {
+        "进化余烬射击": 100,
+        "珠光护手": 85,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "unit": "俄洛伊",
+      "items": [
+        "冰爆护甲",
+        "耀光力场",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 3.0714,
+      "count": 28,
+      "score": 0.6692,
+      "place_change": -2.103,
+      "priority_scores": {
+        "冰爆护甲": 100,
+        "耀光力场": 85,
+        "石像鬼石板甲": 72
+      }
+    },
+    {
+      "unit": "菲奥娜",
+      "items": [
+        "旋风切割器",
+        "饮血剑",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3,
+      "count": 45,
+      "score": 0.3214,
+      "place_change": -2.175,
+      "priority_scores": {
+        "旋风切割器": 100,
+        "饮血剑": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "维克托",
+      "items": [
+        "大天使之杖",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.6889,
+      "count": 45,
+      "score": 0.2053,
+      "place_change": -1.486,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    }
+  ],
+  "build_items": {
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 14149,
+      "avg": 4.8793,
+      "pcnt": 0.92218
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 8285,
+      "avg": 4.8661,
+      "pcnt": 0.53999
+    },
+    "纳什之牙": {
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 7738,
+      "avg": 4.8355,
+      "pcnt": 0.50433
+    },
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 4710,
+      "avg": 4.6669,
+      "pcnt": 0.30698
+    },
+    "大天使之杖": {
+      "itemNames": "TFT_Item_ArchangelsStaff",
+      "count": 4592,
+      "avg": 4.7014,
+      "pcnt": 0.29929
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 3449,
+      "avg": 4.5216,
+      "pcnt": 0.22479
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 2908,
+      "avg": 4.4161,
+      "pcnt": 0.18953
+    },
+    "耀光力场": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier2_RadiantField",
+      "count": 1766,
+      "avg": 4.3726,
+      "pcnt": 0.1151
+    },
+    "冰爆护甲": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier2_IceblastArmor",
+      "count": 1684,
+      "avg": 4.5053,
+      "pcnt": 0.10976
+    },
+    "旋风切割器": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier2_CyclonicSlicers",
+      "count": 1257,
+      "avg": 4.5298,
+      "pcnt": 0.08193
+    },
+    "进化余烬射击": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier3_SearingShortbow",
+      "count": 402,
+      "avg": 1.4726,
+      "pcnt": 0.0262
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 1059,
+      "avg": 5.0472,
+      "pick_rate": 0.007285
+    },
+    {
+      "day": "2026-04-18",
+      "count": 2817,
+      "avg": 5.0916,
+      "pick_rate": 0.007068
+    },
+    {
+      "day": "2026-04-19",
+      "count": 3976,
+      "avg": 5.1097,
+      "pick_rate": 0.007256
+    },
+    {
+      "day": "2026-04-20",
+      "count": 7438,
+      "avg": 5.2167,
+      "pick_rate": 0.006765
+    },
+    {
+      "day": "2026-04-21",
+      "count": 1586,
+      "avg": 5.3625,
+      "pick_rate": 0.006402
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.043
+}

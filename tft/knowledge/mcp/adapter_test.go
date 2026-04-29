@@ -88,6 +88,19 @@ func TestAdapter_ListTools(t *testing.T) {
 	assert.Equal(t, "query_nlu", tools[0].Name)
 }
 
+func TestAdapter_QueryNLUSchemaIncludesVerticalFields(t *testing.T) {
+	adapter := NewAdapter(&fakeKnowledgeTool{})
+
+	tools := adapter.ListTools()
+
+	require.NotEmpty(t, tools)
+	queryTool := tools[0]
+	properties, ok := queryTool.InputSchema["properties"].(map[string]any)
+	require.True(t, ok)
+	assert.Contains(t, properties, "unit_cost")
+	assert.Contains(t, properties, "role_query")
+}
+
 func TestAdapter_CallTool(t *testing.T) {
 	tool := &fakeKnowledgeTool{
 		getMetaCompByID: func(req knowledge.Request) (knowledge.Response, error) {

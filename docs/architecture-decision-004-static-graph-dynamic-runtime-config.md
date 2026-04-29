@@ -4,6 +4,28 @@
 
 Accepted
 
+## Implementation Status（实现状态）
+
+Status: Done for MVP（最小可用版本已完成）
+
+Checklist:
+
+- [x] `BuildGraph`（构建执行图）仍在服务初始化时构建并复用，静态 Graph 骨架已满足本 ADR。
+- [x] `knowledge` 适配器已有独立构造入口，可从 knowledge data（知识库数据）加载后注入 agent。
+- [x] Graph 节点不再直接 `new` tool（创建工具），改为通过 `GraphRuntime` 注入。
+- [x] 已新增 `ToolRegistry`（工具注册表）和 `PromptBuilder`（提示词构造器）注入点。
+- [x] `AgentConfig` 支持传入自定义 `GraphRuntime`，方便测试和后续模式切换。
+- [ ] 多个预编译 Graph 模板尚未出现真实需求，不纳入当前 MVP 完成标准。
+
+Evidence（证据）:
+
+- `tft/agent/graph.go`
+- `tft/agent/agent.go`
+- `tft/agent/knowledge_runtime.go`
+- `tft/agent/knowledge_adapter.go`
+- `tft/agent/runtime.go`
+- `tft/agent/runtime_test.go`
+
 ## 日期
 
 2026-03-29

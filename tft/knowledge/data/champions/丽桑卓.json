@@ -2,157 +2,102 @@
   "name": "丽桑卓",
   "appear_in_comps": [
     {
-      "cluster_id": "394026",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "cluster_id": "401000",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
       "tier": "S",
-      "avg_placement": 3.8968
+      "avg_placement": 3.9764
     },
     {
-      "cluster_id": "394001",
-      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
       "tier": "S",
-      "avg_placement": 4.1427
+      "avg_placement": 4.2264
     },
     {
-      "cluster_id": "394030",
-      "comp_name": "TFT16_Piltover, TFT16_Seraphine",
+      "cluster_id": "401002",
+      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
+      "tier": "A",
+      "avg_placement": 4.2811
+    },
+    {
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "tier": "A",
+      "avg_placement": 4.3079
+    },
+    {
+      "cluster_id": "401017",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
+      "tier": "A",
+      "avg_placement": 4.4447
+    },
+    {
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "tier": "A",
+      "avg_placement": 4.5082
+    },
+    {
+      "cluster_id": "401013",
+      "comp_name": "TFT17_DarkStar, TFT17_Nunu",
       "tier": "B",
-      "avg_placement": 4.6052
+      "avg_placement": 4.5209
     },
     {
-      "cluster_id": "394047",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Taric",
+      "cluster_id": "401019",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Corki",
+      "tier": "B",
+      "avg_placement": 4.6649
+    },
+    {
+      "cluster_id": "401034",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nami",
       "tier": "C",
-      "avg_placement": 4.9556
+      "avg_placement": 4.9237
     },
     {
-      "cluster_id": "394059",
-      "comp_name": "TFT16_Explorer, TFT16_Lissandra",
+      "cluster_id": "401041",
+      "comp_name": "TFT17_DarkStar, TFT17_Chogath",
       "tier": "C",
-      "avg_placement": 5.0701
+      "avg_placement": 5.0087
     },
     {
-      "cluster_id": "394041",
-      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Lissandra",
-      "tier": "D",
-      "avg_placement": 5.2556
-    },
-    {
-      "cluster_id": "394061",
-      "comp_name": "TFT16_Demacia, TFT16_Garen",
-      "tier": "D",
-      "avg_placement": 5.4167
+      "cluster_id": "401044",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
+      "tier": "C",
+      "avg_placement": 5.0546
     }
   ],
   "builds": [
     {
-      "cluster_id": "394026",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Braum",
+      "cluster_id": "401003",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
       "items": [
         "珠光护手",
-        "纳什之牙",
-        "纳什之牙"
+        "朔极之矛",
+        "虚空之杖"
       ],
-      "avg_placement": 3.7025,
-      "count": 52122,
+      "avg_placement": 3.6995,
+      "count": 1005,
       "priority_scores": {
         "珠光护手": 100,
-        "纳什之牙": 72
+        "朔极之矛": 85,
+        "虚空之杖": 72
       }
     },
     {
-      "cluster_id": "394001",
-      "comp_name": "TFT16_Brawler, TFT16_Wukong",
+      "cluster_id": "401009",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
       "items": [
         "蓝霸符",
         "莫雷洛秘典",
         "虚空之杖"
       ],
-      "avg_placement": 2.7341,
-      "count": 173,
+      "avg_placement": 2.9691,
+      "count": 162,
       "priority_scores": {
         "蓝霸符": 100,
         "莫雷洛秘典": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "394030",
-      "comp_name": "TFT16_Piltover, TFT16_Seraphine",
-      "items": [
-        "莫雷洛秘典",
-        "朔极之矛",
-        "虚空之杖"
-      ],
-      "avg_placement": 3.7004,
-      "count": 454,
-      "priority_scores": {
-        "莫雷洛秘典": 100,
-        "朔极之矛": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "394047",
-      "comp_name": "TFT16_Freljord, TFT16_Lissandra, TFT16_Taric",
-      "items": [
-        "红霸符",
-        "朔极之矛",
-        "虚空之杖"
-      ],
-      "avg_placement": 3.7188,
-      "count": 32,
-      "priority_scores": {
-        "红霸符": 100,
-        "朔极之矛": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "394052",
-      "comp_name": "TFT16_Freljord, TFT16_Tryndamere, TFT16_Slayer",
-      "items": [
-        "蓝霸符",
-        "珠光护手",
-        "灭世者的死亡之帽"
-      ],
-      "avg_placement": 4.1842,
-      "count": 38,
-      "priority_scores": {
-        "蓝霸符": 100,
-        "珠光护手": 85,
-        "灭世者的死亡之帽": 72
-      }
-    },
-    {
-      "cluster_id": "394059",
-      "comp_name": "TFT16_Explorer, TFT16_Lissandra",
-      "items": [
-        "蓝霸符",
-        "珠光护手",
-        "灭世者的死亡之帽"
-      ],
-      "avg_placement": 4.3148,
-      "count": 54,
-      "priority_scores": {
-        "蓝霸符": 100,
-        "珠光护手": 85,
-        "灭世者的死亡之帽": 72
-      }
-    },
-    {
-      "cluster_id": "394041",
-      "comp_name": "TFT16_Demacia, TFT16_Lux, TFT16_Lissandra",
-      "items": [
-        "大天使之杖",
-        "珠光护手",
-        "虚空之杖"
-      ],
-      "avg_placement": 4.175,
-      "count": 40,
-      "priority_scores": {
-        "大天使之杖": 100,
-        "珠光护手": 85,
         "虚空之杖": 72
       }
     }

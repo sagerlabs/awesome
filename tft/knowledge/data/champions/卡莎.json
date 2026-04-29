@@ -2,93 +2,105 @@
   "name": "卡莎",
   "appear_in_comps": [
     {
-      "cluster_id": "394031",
-      "comp_name": "TFT16_Demacia, TFT16_Vayne",
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
       "tier": "A",
-      "avg_placement": 4.3035
+      "avg_placement": 4.4707
     },
     {
-      "cluster_id": "394018",
-      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
       "tier": "A",
-      "avg_placement": 4.3637
+      "avg_placement": 4.4761
     },
     {
-      "cluster_id": "394042",
-      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Juggernaut",
+      "cluster_id": "401012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "tier": "A",
+      "avg_placement": 4.5082
+    },
+    {
+      "cluster_id": "401013",
+      "comp_name": "TFT17_DarkStar, TFT17_Nunu",
       "tier": "B",
-      "avg_placement": 4.67
+      "avg_placement": 4.5209
     },
     {
-      "cluster_id": "394020",
-      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_ChoGath",
+      "cluster_id": "401027",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Riven",
+      "tier": "B",
+      "avg_placement": 4.7637
+    },
+    {
+      "cluster_id": "401041",
+      "comp_name": "TFT17_DarkStar, TFT17_Chogath",
       "tier": "C",
-      "avg_placement": 4.8547
+      "avg_placement": 5.0087
     }
   ],
   "builds": [
     {
-      "cluster_id": "394031",
-      "comp_name": "TFT16_Demacia, TFT16_Vayne",
+      "cluster_id": "401001",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.9262,
+      "count": 596,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "401010",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "items": [
+        "蓝霸符",
+        "死亡之刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 4.1219,
+      "count": 4382,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "死亡之刃": 85,
+        "无尽之刃": 72
+      }
+    },
+    {
+      "cluster_id": "401027",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Riven",
       "items": [
         "无尽之刃",
-        "最后的轻语",
+        "红霸符",
         "朔极之矛"
       ],
-      "avg_placement": 3.6413,
-      "count": 13177,
+      "avg_placement": 3.6923,
+      "count": 26,
       "priority_scores": {
         "无尽之刃": 100,
-        "最后的轻语": 85,
+        "红霸符": 85,
         "朔极之矛": 72
       }
     },
     {
-      "cluster_id": "394018",
-      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Wukong",
+      "cluster_id": "401041",
+      "comp_name": "TFT17_DarkStar, TFT17_Chogath",
       "items": [
-        "鬼索的狂暴之刃",
-        "珠光护手",
-        "虚空之杖"
+        "蓝霸符",
+        "无尽之刃",
+        "强袭者的链枷"
       ],
-      "avg_placement": 4.1761,
-      "count": 2947,
+      "avg_placement": 3.7549,
+      "count": 102,
       "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "珠光护手": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "394042",
-      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_Juggernaut",
-      "items": [
-        "鬼索的狂暴之刃",
-        "海克斯科技枪刃",
-        "珠光护手"
-      ],
-      "avg_placement": 4.4091,
-      "count": 787,
-      "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "海克斯科技枪刃": 85,
-        "珠光护手": 72
-      }
-    },
-    {
-      "cluster_id": "394020",
-      "comp_name": "TFT16_Void, TFT16_Kaisa, TFT16_ChoGath",
-      "items": [
-        "鬼索的狂暴之刃",
-        "珠光护手",
-        "虚空之杖"
-      ],
-      "avg_placement": 4.3653,
-      "count": 11815,
-      "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "珠光护手": 85,
-        "虚空之杖": 72
+        "蓝霸符": 100,
+        "无尽之刃": 85,
+        "强袭者的链枷": 72
       }
     }
   ]

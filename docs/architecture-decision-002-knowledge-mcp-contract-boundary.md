@@ -4,6 +4,33 @@
 
 Accepted
 
+## Implementation Status（实现状态）
+
+Status: Done for MVP（最小可用版本已完成）
+
+Checklist:
+
+- [x] 已新增 `tft/knowledge/contracts` 作为 agent 与 knowledge 的共享协议层。
+- [x] `agent.Context` 和 `agent.NluEnrichedContext` 已改为 contract alias（类型别名）。
+- [x] `knowledge` 查询入口使用 `contracts.QueryNLURequest` / `contracts.QueryNLUResponse`。
+- [x] 已有 MCP adapter（模型上下文协议适配器）雏形。
+- [x] 已有 `cmd/tft-knowledge-mcp` stdio server（标准输入输出服务），可以作为独立 MCP 进程启动。
+- [x] MCP `query_nlu` schema（输入结构说明）已同步 `unit_cost`、`role_query` 等当前 contract 字段。
+- [x] 已补充 MCP adapter 测试，避免 contract 字段新增后 schema 漏同步。
+- [ ] 长期发布、安装包、进程守护属于部署产品化问题，不纳入本 ADR 的 MVP 完成标准。
+
+Evidence（证据）:
+
+- `tft/knowledge/contracts/query_nlu.go`
+- `tft/agent/context.go`
+- `tft/agent/nlu_data_query.go`
+- `tft/knowledge/tool.go`
+- `tft/knowledge/mcp/adapter.go`
+- `tft/knowledge/mcp/stdio.go`
+- `cmd/tft-knowledge-mcp/main.go`
+- `tft/knowledge/mcp/adapter_test.go`
+- `tft/knowledge/mcp/stdio_test.go`
+
 ## 背景
 
 当前项目中：

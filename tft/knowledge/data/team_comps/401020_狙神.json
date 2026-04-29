@@ -1,0 +1,216 @@
+{
+  "cluster_id": "401020",
+  "tft_set": "TFTSet17",
+  "units": [
+    "伊泽瑞尔",
+    "烬",
+    "莫德凯撒",
+    "努努和威朗普",
+    "潘森",
+    "锐雯",
+    "塔姆",
+    "泰隆",
+    "霞"
+  ],
+  "traits": [
+    "游侠 (1)",
+    "暗星 (1)",
+    "斗士 (1)",
+    "灭星尊 (1)",
+    "狙神 (2)",
+    "重装战士 (1)",
+    "观星者 (1)",
+    "命运祭司 (1)",
+    "未来战士 (2)"
+  ],
+  "stars": [],
+  "name_string": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
+  "display_names": [
+    {
+      "name": "狙神",
+      "type": "trait",
+      "score": 1.273867787964431
+    },
+    {
+      "name": "霞",
+      "type": "unit",
+      "score": 4.104604673605845
+    },
+    {
+      "name": "塔姆",
+      "type": "unit",
+      "score": 3.3058523471427588
+    }
+  ],
+  "count": 14779,
+  "avg_placement": 4.4852,
+  "top4_rate": 0.4981,
+  "win_rate": 0.1644,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "霞",
+      "items": [
+        "战兔十字弩",
+        "鬼索的狂暴之刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 2.2763,
+      "count": 228,
+      "score": 1.1255,
+      "place_change": -2.204,
+      "priority_scores": {
+        "战兔十字弩": 100,
+        "鬼索的狂暴之刃": 85,
+        "无尽之刃": 72
+      }
+    },
+    {
+      "unit": "努努和威朗普",
+      "items": [
+        "圣盾使的誓约",
+        "日炎斗篷",
+        "薄暮法袍"
+      ],
+      "avg_placement": 3.1633,
+      "count": 98,
+      "score": 0.4124,
+      "place_change": -1.317,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "日炎斗篷": 85,
+        "薄暮法袍": 72
+      }
+    },
+    {
+      "unit": "烬",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "最后的轻语"
+      ],
+      "avg_placement": 2.976,
+      "count": 125,
+      "score": 0.3622,
+      "place_change": -1.505,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "最后的轻语": 72
+      }
+    },
+    {
+      "unit": "塔姆",
+      "items": [
+        "棘刺背心",
+        "巨龙之爪",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.4815,
+      "count": 54,
+      "score": 0.3103,
+      "place_change": -0.999,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
+        "日炎斗篷": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 15463,
+      "avg": 4.3612,
+      "pcnt": 1.0659
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 12094,
+      "avg": 4.2404,
+      "pcnt": 0.83367
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 7803,
+      "avg": 4.2935,
+      "pcnt": 0.53788
+    },
+    "圣盾使的誓约": {
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 7562,
+      "avg": 3.954,
+      "pcnt": 0.52127
+    },
+    "最后的轻语": {
+      "itemNames": "TFT_Item_LastWhisper",
+      "count": 4455,
+      "avg": 3.9625,
+      "pcnt": 0.30709
+    },
+    "死亡之刃": {
+      "itemNames": "TFT_Item_Deathblade",
+      "count": 4276,
+      "avg": 3.9247,
+      "pcnt": 0.29475
+    },
+    "薄暮法袍": {
+      "itemNames": "TFT_Item_SpectralGauntlet",
+      "count": 4256,
+      "avg": 4.2451,
+      "pcnt": 0.29338
+    },
+    "巨龙之爪": {
+      "itemNames": "TFT_Item_DragonsClaw",
+      "count": 3564,
+      "avg": 4.0592,
+      "pcnt": 0.24567
+    },
+    "棘刺背心": {
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 2487,
+      "avg": 3.9349,
+      "pcnt": 0.17143
+    },
+    "战兔十字弩": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier2_BattleBunnyCrossbow",
+      "count": 458,
+      "avg": 2.8952,
+      "pcnt": 0.03157
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-04-17",
+      "count": 879,
+      "avg": 4.4926,
+      "pick_rate": 0.006047
+    },
+    {
+      "day": "2026-04-18",
+      "count": 2511,
+      "avg": 4.3724,
+      "pick_rate": 0.006301
+    },
+    {
+      "day": "2026-04-19",
+      "count": 3282,
+      "avg": 4.5149,
+      "pick_rate": 0.005989
+    },
+    {
+      "day": "2026-04-20",
+      "count": 7267,
+      "avg": 4.4787,
+      "pick_rate": 0.006609
+    },
+    {
+      "day": "2026-04-21",
+      "count": 1898,
+      "avg": 4.4937,
+      "pick_rate": 0.007661
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.049
+}

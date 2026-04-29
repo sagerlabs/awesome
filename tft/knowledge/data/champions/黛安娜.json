@@ -2,55 +2,49 @@
   "name": "黛安娜",
   "appear_in_comps": [
     {
-      "cluster_id": "394048",
-      "comp_name": "TFT16_Sorcerer, TFT16_Diana",
-      "tier": "B",
-      "avg_placement": 4.5982
+      "cluster_id": "401022",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_Diana",
+      "tier": "C",
+      "avg_placement": 4.8216
     },
     {
-      "cluster_id": "394057",
-      "comp_name": "TFT16_Piltover, TFT16_Zoe",
-      "tier": "C",
-      "avg_placement": 5.097
-    },
-    {
-      "cluster_id": "394057",
-      "comp_name": "TFT16_Piltover, TFT16_Zoe",
-      "tier": "C",
-      "avg_placement": 5.097
+      "cluster_id": "401054",
+      "comp_name": "TFT17_ADMIN, TFT17_Diana",
+      "tier": "D",
+      "avg_placement": 5.5805
     }
   ],
   "builds": [
     {
-      "cluster_id": "394048",
-      "comp_name": "TFT16_Sorcerer, TFT16_Diana",
+      "cluster_id": "401022",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_Diana",
       "items": [
+        "旋风切割器",
         "饮血剑",
-        "鬼索的狂暴之刃",
         "泰坦的坚决"
       ],
-      "avg_placement": 4.1364,
-      "count": 13090,
+      "avg_placement": 3.6446,
+      "count": 543,
       "priority_scores": {
-        "饮血剑": 100,
-        "鬼索的狂暴之刃": 85,
+        "旋风切割器": 100,
+        "饮血剑": 85,
         "泰坦的坚决": 72
       }
     },
     {
-      "cluster_id": "394057",
-      "comp_name": "TFT16_Piltover, TFT16_Zoe",
+      "cluster_id": "401054",
+      "comp_name": "TFT17_ADMIN, TFT17_Diana",
       "items": [
-        "饮血剑",
-        "珠光护手",
-        "正义之手"
+        "重装战士纹章",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
       ],
-      "avg_placement": 3.8788,
-      "count": 66,
+      "avg_placement": 3.76,
+      "count": 25,
       "priority_scores": {
-        "饮血剑": 100,
-        "珠光护手": 85,
-        "正义之手": 72
+        "重装战士纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
       }
     }
   ]

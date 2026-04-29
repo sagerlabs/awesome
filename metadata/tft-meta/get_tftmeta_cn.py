@@ -113,6 +113,7 @@ class Translator:
     def __init__(self):
         self.id_to_cn: dict[str, str] = {}
         self.cn_to_id: dict[str, str] = {}
+        self.unit_profiles: dict[str, dict] = {}
 
     def load_from_lookups(self, tft_set: str = "TFTSet16") -> bool:
         """从 MetaTFT lookups 接口加载翻译"""
@@ -140,6 +141,12 @@ class Translator:
                 if api_name and name:
                     self.id_to_cn[api_name] = name
                     self.cn_to_id[name] = api_name
+                    self.unit_profiles[api_name] = {
+                        "api_name": api_name,
+                        "name": name,
+                        "cost": unit.get("cost"),
+                        "traits": unit.get("traits", []),
+                    }
 
             # 解析羁绊
             traits = data.get("traits", [])
@@ -407,9 +414,10 @@ class OutputBuilder:
         ID ↔ 中文名映射表
         """
         output = {
-            "source":   "MetaTFT",
-            "id_to_cn": translator.id_to_cn,
-            "cn_to_id": translator.cn_to_id,
+            "source":        "MetaTFT",
+            "id_to_cn":      translator.id_to_cn,
+            "cn_to_id":      translator.cn_to_id,
+            "unit_profiles": translator.unit_profiles,
         }
 
         path = OUTPUT_DIR / "localization.json"
