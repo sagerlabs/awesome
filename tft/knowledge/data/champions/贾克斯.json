@@ -2,134 +2,53 @@
   "name": "贾克斯",
   "appear_in_comps": [
     {
-      "cluster_id": "401014",
-      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
-      "tier": "A",
-      "avg_placement": 4.3245
+      "cluster_id": "3d430c9c1fc15b3a22e3e6f8a92426a6",
+      "comp_name": "织命人崔斯特",
+      "tier": "S",
+      "avg_placement": 3.16
     },
     {
-      "cluster_id": "401006",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
-      "tier": "A",
-      "avg_placement": 4.3396
+      "cluster_id": "4c75d7eb9d6742103cffd95b46309ba9",
+      "comp_name": "观星者璐璐",
+      "tier": "S",
+      "avg_placement": 3
     },
     {
-      "cluster_id": "401004",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
-      "tier": "A",
-      "avg_placement": 4.3717
-    },
-    {
-      "cluster_id": "401025",
-      "comp_name": "TFT17_ResistTank, TFT17_TwistedFate",
-      "tier": "B",
-      "avg_placement": 4.565
-    },
-    {
-      "cluster_id": "401018",
-      "comp_name": "TFT17_APTrait, TFT17_Lulu, TFT17_Maokai",
-      "tier": "B",
-      "avg_placement": 4.7021
-    },
-    {
-      "cluster_id": "401028",
-      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Xayah",
-      "tier": "B",
-      "avg_placement": 4.7262
-    },
-    {
-      "cluster_id": "401026",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Nunu",
-      "tier": "B",
-      "avg_placement": 4.7662
-    },
-    {
-      "cluster_id": "401042",
-      "comp_name": "TFT17_ResistTank, TFT17_Poppy",
-      "tier": "C",
-      "avg_placement": 5.0771
-    },
-    {
-      "cluster_id": "401048",
-      "comp_name": "TFT17_APTrait, TFT17_Lulu, TFT17_ResistTank",
-      "tier": "D",
-      "avg_placement": 5.1697
-    },
-    {
-      "cluster_id": "401047",
-      "comp_name": "TFT17_DRX, TFT17_Aatrox",
-      "tier": "D",
-      "avg_placement": 5.239
-    },
-    {
-      "cluster_id": "401051",
-      "comp_name": "TFT17_ResistTank, TFT17_Ornn",
-      "tier": "D",
-      "avg_placement": 5.6756
+      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
+      "comp_name": "木灵族霞",
+      "tier": "S",
+      "avg_placement": 2.88
     }
   ],
   "builds": [
     {
-      "cluster_id": "401014",
-      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
-      "items": [
-        "冕卫",
-        "圣盾使的誓约",
-        "石像鬼石板甲"
-      ],
-      "avg_placement": 3.682,
-      "count": 4400,
-      "priority_scores": {
-        "冕卫": 100,
-        "圣盾使的誓约": 85,
-        "石像鬼石板甲": 72
-      }
-    },
-    {
-      "cluster_id": "401025",
-      "comp_name": "TFT17_ResistTank, TFT17_TwistedFate",
+      "cluster_id": "3d430c9c1fc15b3a22e3e6f8a92426a6",
+      "comp_name": "织命人崔斯特",
       "items": [
         "冕卫",
         "石像鬼石板甲",
         "石像鬼石板甲"
       ],
-      "avg_placement": 3.8119,
-      "count": 218,
+      "avg_placement": 3.16,
+      "count": 83052,
       "priority_scores": {
-        "冕卫": 100,
-        "石像鬼石板甲": 72
+        "冕卫": 90,
+        "石像鬼石板甲": 90
       }
     },
     {
-      "cluster_id": "401018",
-      "comp_name": "TFT17_APTrait, TFT17_Lulu, TFT17_Maokai",
+      "cluster_id": "4c75d7eb9d6742103cffd95b46309ba9",
+      "comp_name": "观星者璐璐",
       "items": [
+        "冕卫",
         "石像鬼石板甲",
-        "坚定之心",
-        "狂徒铠甲"
+        "石像鬼石板甲"
       ],
-      "avg_placement": 3.2069,
-      "count": 29,
+      "avg_placement": 3,
+      "count": 50454,
       "priority_scores": {
-        "石像鬼石板甲": 100,
-        "坚定之心": 85,
-        "狂徒铠甲": 72
-      }
-    },
-    {
-      "cluster_id": "401051",
-      "comp_name": "TFT17_ResistTank, TFT17_Ornn",
-      "items": [
-        "饮血剑",
-        "鬼索的狂暴之刃",
-        "泰坦的坚决"
-      ],
-      "avg_placement": 5.0585,
-      "count": 837,
-      "priority_scores": {
-        "饮血剑": 100,
-        "鬼索的狂暴之刃": 85,
-        "泰坦的坚决": 72
+        "冕卫": 90,
+        "石像鬼石板甲": 90
       }
     }
   ]

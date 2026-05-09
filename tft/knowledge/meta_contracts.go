@@ -1,6 +1,9 @@
 package knowledge
 
 import (
+	"strconv"
+	"strings"
+
 	"github.com/sagerlabs/awesome/tft/knowledge/contracts"
 	"github.com/sagerlabs/awesome/tft/knowledge/models"
 )
@@ -13,6 +16,7 @@ func toContractMetaComp(in *models.MetaComp) *contracts.MetaComp {
 	return &contracts.MetaComp{
 		ClusterID:    in.ClusterID,
 		TFTSet:       in.TFTSet,
+		Metadata:     metadataFromMetaComp(in),
 		Units:        cloneStrings(in.Units),
 		Traits:       cloneStrings(in.Traits),
 		Stars:        cloneStrings(in.Stars),
@@ -28,6 +32,7 @@ func toContractMetaComp(in *models.MetaComp) *contracts.MetaComp {
 		Trends:       toContractTrends(in.Trends),
 		Levelling:    in.Levelling,
 		Difficulty:   in.Difficulty,
+		Plan:         compPlanFromMetaComp(in),
 		Description:  in.Description,
 		Limit:        cloneAnyMap(in.Limit),
 	}
@@ -54,6 +59,225 @@ func paginateMetaComps(in []*contracts.MetaComp, limit int, offset int) []*contr
 		end = offset + limit
 	}
 	return in[offset:end]
+}
+
+func metadataFromMetaComp(in *models.MetaComp) *contracts.KnowledgeMetadata {
+	if in == nil {
+		return nil
+	}
+	if in.Metadata != nil {
+		return &contracts.KnowledgeMetadata{
+			Version:     in.Metadata.Version,
+			Source:      in.Metadata.Source,
+			UpdatedAt:   in.Metadata.UpdatedAt,
+			SampleCount: in.Metadata.SampleCount,
+		}
+	}
+
+	metadata := &contracts.KnowledgeMetadata{
+		Version:     in.TFTSet,
+		Source:      "MetaTFT",
+		UpdatedAt:   latestTrendDay(in.Trends),
+		SampleCount: in.Count,
+	}
+	if metadata.Version == "" && metadata.Source == "" && metadata.UpdatedAt == "" && metadata.SampleCount == 0 {
+		return nil
+	}
+	return metadata
+}
+
+func compPlanFromMetaComp(in *models.MetaComp) *contracts.CompPlan {
+	if in == nil {
+		return nil
+	}
+	if in.Plan != nil {
+		return toContractCompPlan(in.Plan, in)
+	}
+
+	final := buildFinalSnapshot(in)
+	if len(final.Units) == 0 && len(final.Traits) == 0 {
+		return nil
+	}
+	return &contracts.CompPlan{
+		ClusterID: in.ClusterID,
+		Name:      metaCompDisplayName(in),
+		Tier:      in.Tier,
+		Final:     final,
+	}
+}
+
+func toContractCompPlan(plan *models.CompPlan, fallback *models.MetaComp) *contracts.CompPlan {
+	if plan == nil {
+		return nil
+	}
+	out := &contracts.CompPlan{
+		ClusterID: plan.ClusterID,
+		Name:      plan.Name,
+		Tier:      plan.Tier,
+		Final:     toContractBoardSnapshot(plan.Final),
+		Early:     toContractBoardSnapshotPtr(plan.Early),
+		Middle:    toContractBoardSnapshotPtr(plan.Middle),
+	}
+	if fallback != nil {
+		if out.ClusterID == "" {
+			out.ClusterID = fallback.ClusterID
+		}
+		if out.Name == "" {
+			out.Name = metaCompDisplayName(fallback)
+		}
+		if out.Tier == "" {
+			out.Tier = fallback.Tier
+		}
+		if len(out.Final.Units) == 0 && len(out.Final.Traits) == 0 {
+			out.Final = buildFinalSnapshot(fallback)
+		}
+	}
+	return out
+}
+
+func toContractBoardSnapshotPtr(snapshot *models.BoardSnapshot) *contracts.BoardSnapshot {
+	if snapshot == nil {
+		return nil
+	}
+	out := toContractBoardSnapshot(*snapshot)
+	return &out
+}
+
+func toContractBoardSnapshot(snapshot models.BoardSnapshot) contracts.BoardSnapshot {
+	return contracts.BoardSnapshot{
+		Level:  snapshot.Level,
+		Units:  toContractBoardUnits(snapshot.Units),
+		Traits: toContractTraitMarkers(snapshot.Traits),
+	}
+}
+
+func toContractBoardUnits(in []models.BoardUnit) []contracts.BoardUnit {
+	if len(in) == 0 {
+		return nil
+	}
+	out := make([]contracts.BoardUnit, 0, len(in))
+	for _, unit := range in {
+		out = append(out, contracts.BoardUnit{
+			Name:     unit.Name,
+			Items:    cloneStrings(unit.Items),
+			IsCore:   unit.IsCore,
+			Priority: unit.Priority,
+		})
+	}
+	return out
+}
+
+func toContractTraitMarkers(in []models.TraitMarker) []contracts.TraitMarker {
+	if len(in) == 0 {
+		return nil
+	}
+	out := make([]contracts.TraitMarker, 0, len(in))
+	for _, trait := range in {
+		out = append(out, contracts.TraitMarker{
+			Name:  trait.Name,
+			Count: trait.Count,
+		})
+	}
+	return out
+}
+
+func buildFinalSnapshot(in *models.MetaComp) contracts.BoardSnapshot {
+	if in == nil {
+		return contracts.BoardSnapshot{}
+	}
+
+	buildsByUnit := make(map[string]models.CompBuild, len(in.Builds))
+	for _, build := range in.Builds {
+		name := strings.TrimSpace(build.Unit)
+		if name == "" {
+			continue
+		}
+		buildsByUnit[name] = build
+	}
+
+	units := make([]contracts.BoardUnit, 0, len(in.Units))
+	for index, unitName := range in.Units {
+		name := strings.TrimSpace(unitName)
+		if name == "" {
+			continue
+		}
+		unit := contracts.BoardUnit{Name: name}
+		if build, ok := buildsByUnit[name]; ok {
+			unit.Items = cloneStrings(build.Items)
+			unit.IsCore = true
+			unit.Priority = index + 1
+		}
+		units = append(units, unit)
+	}
+
+	return contracts.BoardSnapshot{
+		Level:  finalLevelFromLevelling(in.Levelling),
+		Units:  units,
+		Traits: traitMarkersFromNames(in.Traits),
+	}
+}
+
+func traitMarkersFromNames(in []string) []contracts.TraitMarker {
+	if len(in) == 0 {
+		return nil
+	}
+	out := make([]contracts.TraitMarker, 0, len(in))
+	for _, raw := range in {
+		marker := parseTraitMarker(raw)
+		if marker.Name != "" {
+			out = append(out, marker)
+		}
+	}
+	return out
+}
+
+func parseTraitMarker(raw string) contracts.TraitMarker {
+	trimmed := strings.TrimSpace(raw)
+	if trimmed == "" {
+		return contracts.TraitMarker{}
+	}
+	marker := contracts.TraitMarker{Name: trimmed}
+	openIndex := strings.LastIndex(trimmed, "(")
+	closeIndex := strings.LastIndex(trimmed, ")")
+	if openIndex < 0 || closeIndex <= openIndex {
+		openIndex = strings.LastIndex(trimmed, "（")
+		closeIndex = strings.LastIndex(trimmed, "）")
+	}
+	if openIndex >= 0 && closeIndex > openIndex {
+		marker.Name = strings.TrimSpace(trimmed[:openIndex])
+		countText := strings.TrimSpace(trimmed[openIndex+1 : closeIndex])
+		if count, err := strconv.Atoi(countText); err == nil {
+			marker.Count = count
+		}
+	}
+	return marker
+}
+
+func finalLevelFromLevelling(levelling string) string {
+	lower := strings.ToLower(strings.TrimSpace(levelling))
+	switch {
+	case strings.Contains(lower, "9"):
+		return "9"
+	case strings.Contains(lower, "8"):
+		return "8"
+	case strings.Contains(lower, "7"):
+		return "7"
+	default:
+		return ""
+	}
+}
+
+func latestTrendDay(trends []models.Trend) string {
+	if len(trends) == 0 {
+		return ""
+	}
+	latest := ""
+	for _, trend := range trends {
+		if strings.TrimSpace(trend.Day) > latest {
+			latest = strings.TrimSpace(trend.Day)
+		}
+	}
+	return latest
 }
 
 func toContractMetaChampion(in *models.MetaChampion) *contracts.MetaChampion {

@@ -2,28 +2,20 @@
   "name": "最后的轻语",
   "priority_list": [
     {
-      "cluster_id": "401004",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
-      "comp_tier": "A",
-      "comp_avg": 4.3717,
-      "carry": "霞",
-      "priority_score": 85
+      "cluster_id": "b0e4c786a8fc51e0706762e2537c37fb",
+      "comp_name": "狂战士千珏",
+      "comp_tier": "S",
+      "comp_avg": 3.02,
+      "carry": "千珏",
+      "priority_score": 100
     },
     {
-      "cluster_id": "401005",
-      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
-      "comp_tier": "A",
-      "comp_avg": 4.4656,
-      "carry": "库奇",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "401020",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
-      "comp_tier": "A",
-      "comp_avg": 4.4852,
+      "cluster_id": "94cb23447f940384d13a7c640c2f2c10",
+      "comp_name": "暗星卡尔玛",
+      "comp_tier": "S",
+      "comp_avg": 3.41,
       "carry": "烬",
-      "priority_score": 72
+      "priority_score": 90
     }
   ]
 }

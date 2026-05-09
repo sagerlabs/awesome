@@ -1,7 +1,7 @@
 {
   "version": "TFTSet17",
-  "source": "MetaTFT lookup",
-  "generated_at": "2026-04-21T14:21:22+0800",
+  "source": "OP.GG MCP",
+  "generated_at": "2026-05-09T15:46:01+0800",
   "champions": {
     "丽桑卓": {
       "name": "丽桑卓",
@@ -29,15 +29,6 @@
       "traits": [
         "新星特攻队",
         "堡垒卫士"
-      ]
-    },
-    "伊泽瑞尔": {
-      "name": "伊泽瑞尔",
-      "api_name": "TFT17_Ezreal",
-      "cost": 1,
-      "traits": [
-        "未来战士",
-        "狙神"
       ]
     },
     "佐伊": {
@@ -133,15 +124,6 @@
         "狂战士"
       ]
     },
-    "厄运小姐": {
-      "name": "厄运小姐",
-      "api_name": "TFT17_MissFortune",
-      "cost": 3,
-      "traits": [
-        "武装战姬",
-        "选择羁绊"
-      ]
-    },
     "古拉加斯": {
       "name": "古拉加斯",
       "api_name": "TFT17_Gragas",
@@ -158,24 +140,6 @@
       "traits": [
         "命运祭司",
         "斗士"
-      ]
-    },
-    "奥恩": {
-      "name": "奥恩",
-      "api_name": "TFT17_Ornn",
-      "cost": 3,
-      "traits": [
-        "太空律动",
-        "堡垒卫士"
-      ]
-    },
-    "奥瑞利安·索尔": {
-      "name": "奥瑞利安·索尔",
-      "api_name": "TFT17_AurelionSol",
-      "cost": 4,
-      "traits": [
-        "霸天机甲",
-        "神谕"
       ]
     },
     "娑娜": {
@@ -244,15 +208,6 @@
         "织命人"
       ]
     },
-    "慎": {
-      "name": "慎",
-      "api_name": "TFT17_Shen",
-      "cost": 5,
-      "traits": [
-        "暮光铁壁",
-        "堡垒卫士"
-      ]
-    },
     "拉亚斯特": {
       "name": "拉亚斯特",
       "api_name": "TFT17_Rhaast",
@@ -286,32 +241,6 @@
       "traits": [
         "灵能特工",
         "狂战士"
-      ]
-    },
-    "格温": {
-      "name": "格温",
-      "api_name": "TFT17_Gwen",
-      "cost": 2,
-      "traits": [
-        "太空律动",
-        "游侠"
-      ]
-    },
-    "格雷福斯": {
-      "name": "格雷福斯",
-      "api_name": "TFT17_Graves",
-      "cost": 5,
-      "traits": [
-        "军工1号"
-      ]
-    },
-    "波比": {
-      "name": "波比",
-      "api_name": "TFT17_Poppy",
-      "cost": 1,
-      "traits": [
-        "木灵族",
-        "堡垒卫士"
       ]
     },
     "泰隆": {
@@ -397,15 +326,6 @@
         "神谕"
       ]
     },
-    "维迦": {
-      "name": "维迦",
-      "api_name": "TFT17_Veigar",
-      "cost": 1,
-      "traits": [
-        "木灵族",
-        "魔术师"
-      ]
-    },
     "茂凯": {
       "name": "茂凯",
       "api_name": "TFT17_Maokai",
@@ -413,15 +333,6 @@
       "traits": [
         "新星特攻队",
         "斗士"
-      ]
-    },
-    "莎弥拉": {
-      "name": "莎弥拉",
-      "api_name": "TFT17_Samira",
-      "cost": 3,
-      "traits": [
-        "太空律动",
-        "狙神"
       ]
     },
     "莫德凯撒": {
@@ -440,15 +351,6 @@
       "cost": 5,
       "traits": [
         "黑暗魔女"
-      ]
-    },
-    "菲兹": {
-      "name": "菲兹",
-      "api_name": "TFT17_Fizz",
-      "cost": 3,
-      "traits": [
-        "木灵族",
-        "游侠"
       ]
     },
     "菲奥娜": {
@@ -506,15 +408,6 @@
         "旅人"
       ]
     },
-    "金克丝": {
-      "name": "金克丝",
-      "api_name": "TFT17_Jinx",
-      "cost": 2,
-      "traits": [
-        "幻灵战队",
-        "挑战者"
-      ]
-    },
     "锐雯": {
       "name": "锐雯",
       "api_name": "TFT17_Riven",
@@ -533,15 +426,6 @@
         "狂战士"
       ]
     },
-    "阿萝拉": {
-      "name": "阿萝拉",
-      "api_name": "TFT17_Aurora",
-      "cost": 3,
-      "traits": [
-        "幻灵战队",
-        "旅人"
-      ]
-    },
     "雷克塞": {
       "name": "雷克塞",
       "api_name": "TFT17_RekSai",
@@ -558,15 +442,6 @@
       "traits": [
         "观星者",
         "狙神"
-      ]
-    },
-    "黛安娜": {
-      "name": "黛安娜",
-      "api_name": "TFT17_Diana",
-      "cost": 3,
-      "traits": [
-        "法官",
-        "挑战者"
       ]
     }
   }

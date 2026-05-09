@@ -97,6 +97,18 @@ func BuildNluFormatPrompt(input *NluEnrichedContext) (string, error) {
 		}
 		sb.WriteString(fmt.Sprintf("- 已识别黑话：%s\n", strings.Join(terms, "、")))
 	}
+	if input.Feedback != nil {
+		sb.WriteString(fmt.Sprintf("- 上轮反馈：%s\n", formatAdviceFeedback(input.Feedback.Type)))
+		if input.Feedback.Reason != "" {
+			sb.WriteString(fmt.Sprintf("- 反馈原因：%s\n", input.Feedback.Reason))
+		}
+		if input.Feedback.PreviousUserInput != "" {
+			sb.WriteString(fmt.Sprintf("- 上轮问题：%s\n", input.Feedback.PreviousUserInput))
+		}
+		if input.Feedback.LastAdviceSummary != "" {
+			sb.WriteString(fmt.Sprintf("- 上轮回答摘要：%s\n", input.Feedback.LastAdviceSummary))
+		}
+	}
 	if ctx.Gold != nil {
 		sb.WriteString(fmt.Sprintf("- 金币：%d\n", *ctx.Gold))
 	}
@@ -134,8 +146,31 @@ func BuildNluFormatPrompt(input *NluEnrichedContext) (string, error) {
 	if ctx.RoleQuery != "" {
 		sb.WriteString(fmt.Sprintf("- 查询定位：%s\n", formatRoleQuery(ctx.RoleQuery)))
 	}
+	if hints := buildDecisionPolicyHints(ctx, input); len(hints) > 0 {
+		sb.WriteString("\n## 局内决策提示\n")
+		for _, hint := range hints {
+			sb.WriteString(fmt.Sprintf("- %s\n", hint))
+		}
+	}
 
-	// ── 2. 装备匹配结果 ──────────────────────────────────
+	// ── 2. 知识库元信息 ──────────────────────────────────
+	if input.Metadata != nil {
+		sb.WriteString("\n## 知识库元信息\n")
+		if input.Metadata.Source != "" {
+			sb.WriteString(fmt.Sprintf("- 来源：%s\n", input.Metadata.Source))
+		}
+		if input.Metadata.Version != "" {
+			sb.WriteString(fmt.Sprintf("- 版本：%s\n", input.Metadata.Version))
+		}
+		if input.Metadata.UpdatedAt != "" {
+			sb.WriteString(fmt.Sprintf("- 更新时间：%s\n", input.Metadata.UpdatedAt))
+		}
+		if input.Metadata.SampleCount > 0 {
+			sb.WriteString(fmt.Sprintf("- 样本量：%d\n", input.Metadata.SampleCount))
+		}
+	}
+
+	// ── 3. 装备匹配结果 ──────────────────────────────────
 	if len(input.MatchedItems) > 0 {
 		sb.WriteString("\n## 装备适配数据\n")
 		for _, item := range input.MatchedItems {
@@ -156,7 +191,7 @@ func BuildNluFormatPrompt(input *NluEnrichedContext) (string, error) {
 		}
 	}
 
-	// ── 3. 垂直英雄数据 ──────────────────────────────────
+	// ── 4. 垂直英雄数据 ──────────────────────────────────
 	if len(input.MatchedChampions) > 0 {
 		sb.WriteString("\n## 垂直英雄数据\n")
 		if isWorkQuery(ctx.RoleQuery) {
@@ -181,6 +216,12 @@ func BuildNluFormatPrompt(input *NluEnrichedContext) (string, error) {
 			if champion.BestAvgPlacement > 0 {
 				sb.WriteString(fmt.Sprintf("- 最佳平均排名：%.2f\n", champion.BestAvgPlacement))
 			}
+			if isWorkQuery(ctx.RoleQuery) && champion.WorkScore > 0 {
+				sb.WriteString(fmt.Sprintf("- 打工评分：%.0f/100\n", champion.WorkScore))
+			}
+			if isWorkQuery(ctx.RoleQuery) && champion.WorkReason != "" {
+				sb.WriteString(fmt.Sprintf("- 打工判断：%s\n", champion.WorkReason))
+			}
 			if len(champion.Tags) > 0 && !isWorkQuery(ctx.RoleQuery) {
 				sb.WriteString(fmt.Sprintf("- 定位判断：%s\n", strings.Join(champion.Tags, "、")))
 			}
@@ -204,7 +245,7 @@ func BuildNluFormatPrompt(input *NluEnrichedContext) (string, error) {
 		}
 	}
 
-	// ── 4. 羁绊数据 ──────────────────────────────────────
+	// ── 5. 羁绊数据 ──────────────────────────────────────
 	if len(input.MatchedTraits) > 0 {
 		sb.WriteString("\n## 羁绊数据\n")
 		for i, trait := range input.MatchedTraits {
@@ -233,7 +274,7 @@ func BuildNluFormatPrompt(input *NluEnrichedContext) (string, error) {
 		}
 	}
 
-	// ── 5. 官方版本环境 ──────────────────────────────────
+	// ── 6. 官方版本环境 ──────────────────────────────────
 	if len(input.PatchNotes) > 0 {
 		sb.WriteString("\n## 官方版本环境\n")
 		for i, note := range input.PatchNotes {
@@ -256,7 +297,7 @@ func BuildNluFormatPrompt(input *NluEnrichedContext) (string, error) {
 		}
 	}
 
-	// ── 6. 推荐阵容数据 ──────────────────────────────────
+	// ── 7. 推荐阵容数据 ──────────────────────────────────
 	if len(input.MatchedComps) > 0 {
 		sb.WriteString("\n## 推荐阵容数据\n")
 		for i, comp := range input.MatchedComps {
@@ -271,6 +312,14 @@ func BuildNluFormatPrompt(input *NluEnrichedContext) (string, error) {
 			))
 			if comp.Count > 0 {
 				sb.WriteString(fmt.Sprintf("- 样本场次：%d\n", comp.Count))
+			}
+			if comp.Metadata != nil {
+				if comp.Metadata.UpdatedAt != "" {
+					sb.WriteString(fmt.Sprintf("- 数据更新时间：%s\n", comp.Metadata.UpdatedAt))
+				}
+				if comp.Metadata.SampleCount > 0 && comp.Metadata.SampleCount != comp.Count {
+					sb.WriteString(fmt.Sprintf("- 阵容样本：%d\n", comp.Metadata.SampleCount))
+				}
 			}
 			if comp.Levelling != "" {
 				sb.WriteString(fmt.Sprintf("- 运营节奏：%s\n", formatLevelling(comp.Levelling)))
@@ -287,21 +336,200 @@ func BuildNluFormatPrompt(input *NluEnrichedContext) (string, error) {
 					strings.Join(comp.BestBuild.Items, " + "),
 				))
 			}
+			if comp.Plan != nil {
+				writeCompPlan(&sb, comp.Plan)
+			}
 		}
 	}
 
-	// ── 7. 没有匹配到任何数据 ────────────────────────────
+	// ── 8. 没有匹配到任何数据 ────────────────────────────
 	if len(input.MatchedComps) == 0 && len(input.MatchedItems) == 0 && len(input.MatchedChampions) == 0 && len(input.MatchedTraits) == 0 {
 		sb.WriteString("\n## 数据说明\n")
 		sb.WriteString("当前条件未匹配到具体阵容数据。不要编造具体阵容、版本、数值或运营节奏，只能说明当前知识库没有命中，并提示玩家补充英雄、装备、羁绊或重新更新知识库。\n")
 	}
 
-	// ── 8. 输出指令 ──────────────────────────────────────
+	// ── 9. 输出指令 ──────────────────────────────────────
 	sb.WriteString("\n## 你的任务\n")
 	sb.WriteString("先给玩家明确结论，再给理由和操作；阵容强度结论必须对应上方统计数据，版本原因可以引用官方版本环境。")
+	sb.WriteString(buildFeedbackInstruction(input.Feedback))
 	sb.WriteString(buildInstruction(ctx))
 
 	return sb.String(), nil
+}
+
+func buildFeedbackInstruction(feedback *AdviceFeedback) string {
+	if feedback == nil {
+		return ""
+	}
+	switch feedback.Type {
+	case FeedbackRejected:
+		return "用户已表示上一轮建议没命中。开头用一句话承认并重新判断，不要重复上一轮原话；如果知识库证据不足，要直接说明不足。"
+	case FeedbackNeedsContext:
+		return "用户补充了新局面。先说明这个上下文会改变判断，并基于新阶段/血量/装备重新给操作。"
+	case FeedbackAcceptedOrContinued:
+		return "用户沿着上一轮继续追问。不要重新科普整套阵容，直接推进下一步操作。"
+	default:
+		return ""
+	}
+}
+
+func formatAdviceFeedback(feedbackType string) string {
+	switch feedbackType {
+	case FeedbackRejected:
+		return "上一轮建议可能没命中"
+	case FeedbackNeedsContext:
+		return "用户补充了新局面"
+	case FeedbackAcceptedOrContinued:
+		return "用户沿着上一轮继续追问"
+	default:
+		return feedbackType
+	}
+}
+
+func buildDecisionPolicyHints(ctx Context, input *NluEnrichedContext) []string {
+	stageMajor, stageRound := parseStageNumber(ctx.GameStage)
+	hasGameState := ctx.GameStage != nil || ctx.Level != nil || ctx.HP != nil || ctx.Gold != nil
+	if !hasGameState {
+		return nil
+	}
+
+	hints := make([]string, 0, 6)
+	switch {
+	case stageMajor > 0 && stageMajor <= 2:
+		hints = append(hints, "当前偏前期，回答重点放在稳血过渡、装备先合和不要过早锁死最终阵容。")
+	case stageMajor == 3:
+		hints = append(hints, "当前进入三阶段，回答需要明确是否补质量：血量低优先稳血，经济好才考虑贪人口。")
+	case stageMajor >= 4:
+		hints = append(hints, "当前已到四阶段以后，回答要给出明确成型路线：该D就D，该上人口就上人口，不要只说阵容强度。")
+	}
+
+	if stageMajor == 3 && stageRound == 2 {
+		hints = append(hints, "3-2 是常见启动点，如果质量弱或血量低，要优先说明是否拉6/小D稳血。")
+	}
+	if stageMajor == 4 && stageRound == 1 {
+		hints = append(hints, "4-1 是常见大节奏点，如果目标阵容依赖4费/高费，应说明拉7/拉8和搜牌取舍。")
+	}
+
+	if ctx.HP != nil {
+		switch {
+		case *ctx.HP <= 35:
+			hints = append(hints, "血量很低，策略偏保命：优先即时战力和止血，不建议空等完美成型。")
+		case *ctx.HP <= 55:
+			hints = append(hints, "血量中低，策略偏稳血：可以牺牲一点经济换质量。")
+		case *ctx.HP >= 75:
+			hints = append(hints, "血量健康，可以更贪经济或人口，但仍要结合装备和来牌判断。")
+		}
+	}
+
+	if ctx.Gold != nil {
+		switch {
+		case *ctx.Gold < 20:
+			hints = append(hints, "经济偏低，除非血量危险，否则不要建议大搜。")
+		case *ctx.Gold >= 50:
+			hints = append(hints, "经济健康，可以讨论卡利息拉人口或在关键等级搜牌。")
+		}
+	}
+
+	if ctx.Level != nil {
+		if stageMajor >= 4 && *ctx.Level <= 6 {
+			hints = append(hints, "当前阶段等级偏低，回答要提醒节奏落后，优先补人口或补质量。")
+		}
+		if stageMajor <= 3 && *ctx.Level >= 7 {
+			hints = append(hints, "当前等级偏领先，回答可以考虑连胜压制或提前抢体系牌。")
+		}
+	}
+
+	if input != nil && len(input.MatchedComps) > 0 {
+		best := input.MatchedComps[0]
+		if best.AvgPlacement > 0 {
+			hints = append(hints, fmt.Sprintf("当前推荐第一套是 %s（平均排名%.2f），回答要把它和备选阵容按可执行性排序。", best.Name, best.AvgPlacement))
+		}
+		if best.Plan != nil {
+			if best.Plan.Early != nil || best.Plan.Middle != nil {
+				hints = append(hints, "知识库有前中期棋盘，回答可以引用 early/middle/final（前期/中期/成型）路径。")
+			} else if len(best.Plan.Final.Units) > 0 {
+				hints = append(hints, "知识库只有成型棋盘，回答不能编造前中期过渡。")
+			}
+		}
+	}
+
+	return hints
+}
+
+func parseStageNumber(stage *string) (int, int) {
+	if stage == nil {
+		return 0, 0
+	}
+	trimmed := strings.TrimSpace(*stage)
+	if trimmed == "" {
+		return 0, 0
+	}
+	var major, round int
+	if _, err := fmt.Sscanf(trimmed, "%d-%d", &major, &round); err == nil {
+		return major, round
+	}
+	if _, err := fmt.Sscanf(trimmed, "%d阶段", &major); err == nil {
+		return major, 0
+	}
+	return 0, 0
+}
+
+func writeCompPlan(sb *strings.Builder, plan *CompPlan) {
+	if plan == nil {
+		return
+	}
+	if plan.Early != nil {
+		sb.WriteString(fmt.Sprintf("- 前期棋盘：%s\n", formatBoardSnapshot(*plan.Early)))
+	}
+	if plan.Middle != nil {
+		sb.WriteString(fmt.Sprintf("- 中期棋盘：%s\n", formatBoardSnapshot(*plan.Middle)))
+	}
+	if len(plan.Final.Units) > 0 || len(plan.Final.Traits) > 0 {
+		sb.WriteString(fmt.Sprintf("- 成型棋盘：%s\n", formatBoardSnapshot(plan.Final)))
+	}
+}
+
+func formatBoardSnapshot(snapshot BoardSnapshot) string {
+	parts := make([]string, 0, 3)
+	if snapshot.Level != "" {
+		parts = append(parts, snapshot.Level+"级")
+	}
+	if len(snapshot.Units) > 0 {
+		units := make([]string, 0, len(snapshot.Units))
+		for _, unit := range snapshot.Units {
+			name := strings.TrimSpace(unit.Name)
+			if name == "" {
+				continue
+			}
+			if unit.IsCore && len(unit.Items) > 0 {
+				name += "（" + strings.Join(unit.Items, "+") + "）"
+			}
+			units = append(units, name)
+		}
+		if len(units) > 0 {
+			parts = append(parts, strings.Join(units, "、"))
+		}
+	}
+	if len(snapshot.Traits) > 0 {
+		traits := make([]string, 0, len(snapshot.Traits))
+		for _, trait := range snapshot.Traits {
+			if trait.Name == "" {
+				continue
+			}
+			if trait.Count > 0 {
+				traits = append(traits, fmt.Sprintf("%d%s", trait.Count, trait.Name))
+			} else {
+				traits = append(traits, trait.Name)
+			}
+		}
+		if len(traits) > 0 {
+			parts = append(parts, "羁绊："+strings.Join(traits, "、"))
+		}
+	}
+	if len(parts) == 0 {
+		return "当前知识库无棋盘细节"
+	}
+	return strings.Join(parts, "；")
 }
 
 // buildInstruction 根据意图定制输出指令

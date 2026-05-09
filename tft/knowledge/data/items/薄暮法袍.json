@@ -2,36 +2,28 @@
   "name": "薄暮法袍",
   "priority_list": [
     {
-      "cluster_id": "401006",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
-      "comp_tier": "A",
-      "comp_avg": 4.3396,
+      "cluster_id": "b0e4c786a8fc51e0706762e2537c37fb",
+      "comp_name": "狂战士千珏",
+      "comp_tier": "S",
+      "comp_avg": 3.02,
+      "carry": "塔姆",
+      "priority_score": 80
+    },
+    {
+      "cluster_id": "8f5d84cf55194702e441031fe21eb88f",
+      "comp_name": "海魔人贝蕾亚",
+      "comp_tier": "S",
+      "comp_avg": 3.44,
+      "carry": "雷克塞",
+      "priority_score": 80
+    },
+    {
+      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
+      "comp_name": "木灵族霞",
+      "comp_tier": "S",
+      "comp_avg": 2.88,
       "carry": "拉莫斯",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "401010",
-      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
-      "comp_tier": "A",
-      "comp_avg": 4.4761,
-      "carry": "奥恩",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "401020",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
-      "comp_tier": "A",
-      "comp_avg": 4.4852,
-      "carry": "努努和威朗普",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "401012",
-      "comp_name": "TFT17_DarkStar, TFT17_Karma",
-      "comp_tier": "A",
-      "comp_avg": 4.5082,
-      "carry": "超级机甲",
-      "priority_score": 72
+      "priority_score": 50
     }
   ]
 }

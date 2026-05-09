@@ -7,9 +7,13 @@ import (
 )
 
 type NluContext struct {
-	UserInput  string
-	Ctx        Context
-	FinalReply string
+	UserInput   string
+	Ctx         Context
+	Feedback    *contracts.AdviceFeedback
+	FinalReply  string
+	FastNLUHit  bool
+	NLUProvider string
+	NLUCalls    int
 }
 
 // NluEnrichedContext 是 agent 侧对共享 QueryNLUResponse 的别名。

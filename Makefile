@@ -9,9 +9,11 @@ BUILD_DIR  := ./bin
 MAIN       := ./main.go
 
 # 数据目录
-DATA_DIR   := ./metadata/tft-meta
-SCRAPER    := $(DATA_DIR)/get_tftmeta.py
-PYTHON     := python3
+METADATA_DIR  := ./metadata/tft-meta/data
+KNOWLEDGE_DIR := ./tft/knowledge/data
+UPDATE_SCRIPT := ./scripts/update_cn_knowledge.py
+OPGG_MCP_SCRIPT := ./scripts/update_opgg_mcp_mvp.py
+PYTHON        := python3
 
 # Go 工具
 GOFMT      := gofmt
@@ -89,27 +91,54 @@ build-mac: ## 交叉编译 macOS arm64（Apple Silicon）
 # ── 数据 ──────────────────────────────────────────────────────────────────────
 
 .PHONY: data
-data: ## 拉取最新阵容数据 + 生成汉化表（每个版本跑一次）
-	@echo "📦 开始爬取 TFT 数据..."
-	cd $(DATA_DIR) && $(PYTHON) get_tftmeta.py
-	@echo "✅ 数据更新完成"
+data: ## 拉取最新中文数据并拆分到 knowledge（可传 PATCH_NOTE_URL=官方公告链接）
+	@echo "📦 开始更新 TFT knowledge 数据..."
+	$(PYTHON) $(UPDATE_SCRIPT) $(if $(PATCH_NOTE_URL),--patch-note-url "$(PATCH_NOTE_URL)")
+	@echo "✅ knowledge 数据更新完成"
+
+.PHONY: data-local
+data-local: ## 使用本地 metadata JSON 重新生成 knowledge（不访问网络）
+	@echo "📦 使用本地 metadata 重新生成 knowledge..."
+	$(PYTHON) $(UPDATE_SCRIPT) --skip-fetch
+	@echo "✅ knowledge 数据生成完成"
+
+.PHONY: data-opgg-mvp
+data-opgg-mvp: ## 从 OP.GG MCP 拉取最小 knowledge（默认最多 20 套，可传 LIMIT=20）
+	@echo "📦 从 OP.GG MCP 更新最小 TFT knowledge..."
+	$(PYTHON) $(OPGG_MCP_SCRIPT) --limit $(if $(LIMIT),$(LIMIT),20)
+	@echo "✅ OP.GG MCP MVP knowledge 数据更新完成"
+
+.PHONY: data-opgg-mvp-check
+data-opgg-mvp-check: ## 使用 OP.GG MCP 响应样例做 dry-run 校验（可传 INPUT_RESPONSE=/path/response.json）
+	@echo "🔍 校验 OP.GG MCP MVP 数据管线..."
+	$(PYTHON) $(OPGG_MCP_SCRIPT) --dry-run $(if $(INPUT_RESPONSE),--input-response "$(INPUT_RESPONSE)")
+	@echo "✅ OP.GG MCP MVP 数据管线校验完成"
 
 .PHONY: data-check
 data-check: ## 检查数据文件是否存在且非空
 	@echo "🔍 检查数据文件..."
 	@for f in comps_for_agent.json items_priority.json localization.json; do \
-		path="$(DATA_DIR)/data/$$f"; \
+		path="$(METADATA_DIR)/$$f"; \
 		if [ ! -f "$$path" ]; then \
 			echo "❌ 缺少文件: $$path，请先运行 make data"; \
 			exit 1; \
 		fi; \
 		echo "  ✓ $$f"; \
 	done
+	@for d in champions items team_comps; do \
+		path="$(KNOWLEDGE_DIR)/$$d"; \
+		if [ ! -d "$$path" ]; then \
+			echo "❌ 缺少目录: $$path，请先运行 make data"; \
+			exit 1; \
+		fi; \
+		echo "  ✓ $$d/"; \
+	done
+	@if [ ! -f "$(KNOWLEDGE_DIR)/aliases.json" ]; then \
+		echo "❌ 缺少文件: $(KNOWLEDGE_DIR)/aliases.json"; \
+		exit 1; \
+	fi
+	@echo "  ✓ aliases.json"
 	@echo "✅ 数据文件完整"
-
-.PHONY: data-debug
-data-debug: ## 调试汉化数据接口（查看 CDragon 真实数据结构）
-	cd $(DATA_DIR) && $(PYTHON) debug_localization.py
 
 # ── 测试 ──────────────────────────────────────────────────────────────────────
 
@@ -133,15 +162,15 @@ test-api: ## 用 curl 测试本地接口（需要服务已启动）
 	@echo "--- 健康检查 ---"
 	curl -s http://localhost:8080/v1/tft/health | jq .
 	@echo ""
-	@echo "--- 普通接口 ---"
-	curl -s -X POST http://localhost:8080/v1/tft/analyze \
+	@echo "--- 主接口：NLU JSON ---"
+	curl -s -X POST http://localhost:8080/v1/tft/nlu \
 		-H "Content-Type: application/json" \
-		-d '{"input":"兰博 肯能 鬼索的狂暴之刃"}' | jq .
+		-d '{"input":"当前版本最强的三套阵容是什么？"}' | jq .
 	@echo ""
-	@echo "--- 流式接口 ---"
-	curl -X POST http://localhost:8080/v1/tft/analyze/stream \
+	@echo "--- 主接口：NLU SSE ---"
+	curl -X POST http://localhost:8080/v1/tft/nlu/stream \
 		-H "Content-Type: application/json" \
-		-d '{"input":"瞎子 破败 大帽子"}' \
+		-d '{"input":"剑魔打工强吗"}' \
 		--no-buffer
 
 # ── 代码质量 ──────────────────────────────────────────────────────────────────
@@ -198,10 +227,12 @@ clean: ## 清理编译产物
 
 .PHONY: clean-data
 clean-data: ## 清理爬取的数据文件（谨慎使用）
-	@rm -f $(DATA_DIR)/data/comps_for_agent.json \
-	        $(DATA_DIR)/data/items_priority.json \
-	        $(DATA_DIR)/data/localization.json \
-	        $(DATA_DIR)/data/comps_full.json
+	@rm -f $(METADATA_DIR)/comps_for_agent.json \
+	        $(METADATA_DIR)/items_priority.json \
+	        $(METADATA_DIR)/localization.json \
+	        $(METADATA_DIR)/comps_full.json \
+	        $(METADATA_DIR)/comps_full_cn.json \
+	        $(METADATA_DIR)/items_priority_cn.json
 	@echo "✅ 数据文件已清理"
 
 .PHONY: clean-all

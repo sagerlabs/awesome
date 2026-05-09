@@ -54,6 +54,12 @@ type TFTKnowledgeTool interface {
 	// GetAllMetaComps 获取所有Meta阵容
 	GetAllMetaComps(req Request) (Response, error)
 
+	// ListMetaComps 获取经过筛选和字段裁剪的Meta阵容列表
+	ListMetaComps(req Request) (Response, error)
+
+	// GetCompPlan 获取阵容前中后期棋盘计划
+	GetCompPlan(req Request) (Response, error)
+
 	// =========================================================================
 	// 英雄查询
 	// =========================================================================
@@ -64,6 +70,9 @@ type TFTKnowledgeTool interface {
 	// GetAllMetaChampions 获取所有Meta英雄
 	GetAllMetaChampions(req Request) (Response, error)
 
+	// GetChampionBuilds 获取英雄在强阵容中的装备和出现位置
+	GetChampionBuilds(req Request) (Response, error)
+
 	// =========================================================================
 	// 装备查询
 	// =========================================================================
@@ -73,6 +82,12 @@ type TFTKnowledgeTool interface {
 
 	// GetAllMetaItems 获取所有Meta装备
 	GetAllMetaItems(req Request) (Response, error)
+
+	// GetItemFits 获取装备适配的阵容、英雄和优先级
+	GetItemFits(req Request) (Response, error)
+
+	// GetTraitInsight 获取羁绊的代表阵容和常见单位
+	GetTraitInsight(req Request) (Response, error)
 
 	// =========================================================================
 	// 名称解析和转换

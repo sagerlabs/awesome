@@ -39,6 +39,22 @@ func TestFastNLUExtractorParsesItemQuery(t *testing.T) {
 	}
 }
 
+func TestFastNLUExtractorTreatsItemLineupQuestionAsItemQuery(t *testing.T) {
+	extractor := &FastNLUExtractor{items: []string{"珠光护手"}}
+
+	ctx, ok := extractor.TryParse("我有珠光护手，可以玩什么阵容？")
+
+	if !ok {
+		t.Fatal("expected fast nlu hit")
+	}
+	if ctx.Intent != "item_query" {
+		t.Fatalf("expected item_query, got %q", ctx.Intent)
+	}
+	if len(ctx.Items) != 1 || ctx.Items[0] != "珠光护手" {
+		t.Fatalf("expected item 珠光护手, got %#v", ctx.Items)
+	}
+}
+
 func TestFastNLUExtractorParsesVerticalQuery(t *testing.T) {
 	extractor := &FastNLUExtractor{}
 
@@ -55,6 +71,40 @@ func TestFastNLUExtractorParsesVerticalQuery(t *testing.T) {
 	}
 	if ctx.RoleQuery != "carry" {
 		t.Fatalf("expected carry role, got %q", ctx.RoleQuery)
+	}
+}
+
+func TestFastNLUExtractorParsesGameState(t *testing.T) {
+	extractor := &FastNLUExtractor{
+		champions: []string{"千珏"},
+		items:     []string{"羊刀", "水银"},
+	}
+
+	ctx, ok := extractor.TryParse("我现在3-2，6级，40血，50金币，场上千珏两星，有羊刀水银，能冲吗？")
+
+	if !ok {
+		t.Fatal("expected fast nlu hit")
+	}
+	if ctx.Intent != "lineup_recommend" {
+		t.Fatalf("expected lineup_recommend, got %q", ctx.Intent)
+	}
+	if ctx.GameStage == nil || *ctx.GameStage != "3-2" {
+		t.Fatalf("expected stage 3-2, got %#v", ctx.GameStage)
+	}
+	if ctx.Level == nil || *ctx.Level != 6 {
+		t.Fatalf("expected level 6, got %#v", ctx.Level)
+	}
+	if ctx.HP == nil || *ctx.HP != 40 {
+		t.Fatalf("expected hp 40, got %#v", ctx.HP)
+	}
+	if ctx.Gold == nil || *ctx.Gold != 50 {
+		t.Fatalf("expected gold 50, got %#v", ctx.Gold)
+	}
+	if _, ok := ctx.Champions["千珏"]; !ok {
+		t.Fatalf("expected champion 千珏, got %#v", ctx.Champions)
+	}
+	if len(ctx.Items) != 2 {
+		t.Fatalf("expected two items, got %#v", ctx.Items)
 	}
 }
 

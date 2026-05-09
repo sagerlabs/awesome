@@ -5,7 +5,6 @@ package main
 
 import (
 	"context"
-	"embed"
 	"fmt"
 	"os"
 
@@ -20,9 +19,6 @@ import (
 	"github.com/wailsapp/wails/v2/pkg/options/windows"
 	wailsRuntime "github.com/wailsapp/wails/v2/pkg/runtime"
 )
-
-//go:embed all:../frontend
-var assets embed.FS
 
 // App 暴露给前端的 Go 方法
 type App struct {
@@ -54,22 +50,42 @@ func (a *App) OnStartup(ctx context.Context) {
 	}
 	a.logger.Info("TFT Copilot 启动完成")
 
-	// 全屏覆盖置顶
+	// 桌面端使用真实小浮窗：右下角置顶，不再创建全屏透明覆盖层。
 	screens, err := wailsRuntime.ScreenGetAll(ctx)
 	if err == nil && len(screens) > 0 {
-		wailsRuntime.WindowSetSize(ctx, screens[0].Size.Width, screens[0].Size.Height)
-		wailsRuntime.WindowSetPosition(ctx, 0, 0)
+		const width = 430
+		const height = 660
+		margin := 28
+		screen := screens[0].Size
+		wailsRuntime.WindowSetSize(ctx, width, height)
+		wailsRuntime.WindowSetPosition(ctx, screen.Width-width-margin, screen.Height-height-margin)
 	}
 	wailsRuntime.WindowSetAlwaysOnTop(ctx, true)
 }
 
 // Analyze 暴露给前端 JS：window.go.main.App.Analyze(input)
 func (a *App) Analyze(input string) (string, error) {
-	out, err := a.agent.Analyze(a.ctx, input)
+	out, err := a.agent.NluAdvice(a.ctx, input)
 	if err != nil {
 		return "", fmt.Errorf("推理失败: %w", err)
 	}
-	return out.LLMAdvice, nil
+	return out, nil
+}
+
+// Minimize 让无边框浮窗可从前端最小化。
+func (a *App) Minimize() {
+	if a.ctx != nil {
+		wailsRuntime.WindowMinimise(a.ctx)
+	}
+}
+
+func frontendAssetsDir() string {
+	for _, dir := range []string{"frontend", "../frontend"} {
+		if _, err := os.Stat(dir); err == nil {
+			return dir
+		}
+	}
+	return "frontend"
 }
 
 func main() {
@@ -80,14 +96,14 @@ func main() {
 
 	err := wails.Run(&options.App{
 		Title:            "TFT Copilot",
-		Width:            1920,
-		Height:           1080,
+		Width:            430,
+		Height:           660,
 		Frameless:        true,
 		AlwaysOnTop:      true,
 		BackgroundColour: &options.RGBA{R: 0, G: 0, B: 0, A: 0},
 
 		AssetServer: &assetserver.Options{
-			Assets: assets,
+			Assets: os.DirFS(frontendAssetsDir()),
 		},
 
 		OnStartup: app.OnStartup,

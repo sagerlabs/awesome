@@ -3,7 +3,6 @@ package agent
 import (
 	"context"
 	"fmt"
-	"strings"
 	"sync"
 	"time"
 
@@ -79,33 +78,13 @@ func NewTraceCallback(logger *logrus.Logger) callbacks.Handler {
 		OnEndWithStreamOutputFn(func(ctx context.Context, info *callbacks.RunInfo, output *schema.StreamReader[callbacks.CallbackOutput]) context.Context {
 			startTime, _ := spans.endTime(info)
 			traceID, _ := trace.TraceIDFromContext(ctx)
-
-			// 异步消费 stream 统计 token 数，不阻塞主流程
-			go func() {
-				defer output.Close()
-				tokenCount := 0
-				var sb strings.Builder
-				for {
-					chunk, err := output.Recv()
-					if err != nil {
-						break
-					}
-					if msg, ok := chunk.(*schema.Message); ok && msg != nil && msg.Content != "" {
-						tokenCount++
-						if sb.Len() < 120 {
-							sb.WriteString(msg.Content)
-						}
-					}
-				}
-				logger.WithFields(logrus.Fields{
-					"trace_id":    traceID,
-					"node":        info.Name,
-					"component":   info.Type,
-					"elapsed":     time.Since(startTime).Round(time.Millisecond).String(),
-					"token_chunk": tokenCount,
-					"preview":     truncate(sb.String(), 30),
-				}).Info("✓ 节点完成（流式输出）")
-			}()
+			_ = output
+			logger.WithFields(logrus.Fields{
+				"trace_id":  traceID,
+				"node":      info.Name,
+				"component": info.Type,
+				"elapsed":   time.Since(startTime).Round(time.Millisecond).String(),
+			}).Info("✓ 节点完成（流式输出，不消费业务流）")
 			return ctx
 		}).
 		Build()

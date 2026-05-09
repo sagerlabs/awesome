@@ -2,68 +2,11 @@
   "name": "古拉加斯",
   "appear_in_comps": [
     {
-      "cluster_id": "401011",
-      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
-      "tier": "A",
-      "avg_placement": 4.4068
-    },
-    {
-      "cluster_id": "401021",
-      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
-      "tier": "C",
-      "avg_placement": 4.7878
-    },
-    {
-      "cluster_id": "401040",
-      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
-      "tier": "C",
-      "avg_placement": 4.8334
-    },
-    {
-      "cluster_id": "401036",
-      "comp_name": "TFT17_PsyOps, TFT17_Pyke",
-      "tier": "C",
-      "avg_placement": 4.8839
-    },
-    {
-      "cluster_id": "401053",
-      "comp_name": "TFT17_PsyOps, TFT17_Viktor",
-      "tier": "D",
-      "avg_placement": 5.5278
+      "cluster_id": "b0e4c786a8fc51e0706762e2537c37fb",
+      "comp_name": "狂战士千珏",
+      "tier": "S",
+      "avg_placement": 3.02
     }
   ],
-  "builds": [
-    {
-      "cluster_id": "401036",
-      "comp_name": "TFT17_PsyOps, TFT17_Pyke",
-      "items": [
-        "冕卫",
-        "振奋盔甲",
-        "薄暮法袍"
-      ],
-      "avg_placement": 3.8824,
-      "count": 34,
-      "priority_scores": {
-        "冕卫": 100,
-        "振奋盔甲": 85,
-        "薄暮法袍": 72
-      }
-    },
-    {
-      "cluster_id": "401053",
-      "comp_name": "TFT17_PsyOps, TFT17_Viktor",
-      "items": [
-        "巨龙之爪",
-        "石像鬼石板甲",
-        "日炎斗篷"
-      ],
-      "avg_placement": 4.5455,
-      "count": 11,
-      "priority_scores": {
-        "巨龙之爪": 100,
-        "石像鬼石板甲": 85,
-        "日炎斗篷": 72
-      }
-    }
-  ]
+  "builds": []
 }

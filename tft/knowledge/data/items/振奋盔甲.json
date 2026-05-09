@@ -2,84 +2,36 @@
   "name": "振奋盔甲",
   "priority_list": [
     {
-      "cluster_id": "401004",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
-      "comp_tier": "A",
-      "comp_avg": 4.3717,
-      "carry": "奥恩",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "401008",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
-      "comp_tier": "A",
-      "comp_avg": 4.3744,
-      "carry": "塔姆",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "401001",
-      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
-      "comp_tier": "A",
-      "comp_avg": 4.4707,
-      "carry": "奥恩",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "401029",
-      "comp_name": "TFT17_DRX, TFT17_Kindred",
-      "comp_tier": "A",
-      "comp_avg": 4.4845,
-      "carry": "茂凯",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "401000",
-      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "cluster_id": "b0e4c786a8fc51e0706762e2537c37fb",
+      "comp_name": "狂战士千珏",
       "comp_tier": "S",
-      "comp_avg": 3.9764,
-      "carry": "拉亚斯特",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "401015",
-      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
-      "comp_tier": "A",
-      "comp_avg": 4.4022,
-      "carry": "俄洛伊",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "401011",
-      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
-      "comp_tier": "A",
-      "comp_avg": 4.4068,
-      "carry": "潘森",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "401005",
-      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
-      "comp_tier": "A",
-      "comp_avg": 4.4656,
-      "carry": "拉莫斯",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "401010",
-      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
-      "comp_tier": "A",
-      "comp_avg": 4.4761,
-      "carry": "拉亚斯特",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "401029",
-      "comp_name": "TFT17_DRX, TFT17_Kindred",
-      "comp_tier": "A",
-      "comp_avg": 4.4845,
+      "comp_avg": 3.02,
       "carry": "塔姆",
-      "priority_score": 72
+      "priority_score": 80
+    },
+    {
+      "cluster_id": "94cb23447f940384d13a7c640c2f2c10",
+      "comp_name": "暗星卡尔玛",
+      "comp_tier": "S",
+      "comp_avg": 3.41,
+      "carry": "塔姆",
+      "priority_score": 80
+    },
+    {
+      "cluster_id": "4c75d7eb9d6742103cffd95b46309ba9",
+      "comp_name": "观星者璐璐",
+      "comp_tier": "S",
+      "comp_avg": 3,
+      "carry": "茂凯",
+      "priority_score": 50
+    },
+    {
+      "cluster_id": "d036609ff95f9d4c28aad031a5fb965a",
+      "comp_name": "重装战士提莫",
+      "comp_tier": "S",
+      "comp_avg": 3.89,
+      "carry": "内瑟斯",
+      "priority_score": 50
     }
   ]
 }

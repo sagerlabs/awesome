@@ -2,90 +2,11 @@
   "name": "娑娜",
   "appear_in_comps": [
     {
-      "cluster_id": "401017",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
-      "tier": "A",
-      "avg_placement": 4.4447
-    },
-    {
-      "cluster_id": "401040",
-      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
-      "tier": "C",
-      "avg_placement": 4.8334
-    },
-    {
-      "cluster_id": "401044",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
-      "tier": "C",
-      "avg_placement": 5.0546
-    },
-    {
-      "cluster_id": "401052",
-      "comp_name": "TFT17_ShieldTank, TFT17_Illaoi",
-      "tier": "D",
-      "avg_placement": 5.2599
+      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
+      "comp_name": "重装战士薇古丝",
+      "tier": "S",
+      "avg_placement": 3.69
     }
   ],
-  "builds": [
-    {
-      "cluster_id": "401017",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
-      "items": [
-        "红霸符",
-        "朔极之矛",
-        "虚空之杖"
-      ],
-      "avg_placement": 3.1892,
-      "count": 37,
-      "priority_scores": {
-        "红霸符": 100,
-        "朔极之矛": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "401040",
-      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
-      "items": [
-        "莫雷洛秘典"
-      ],
-      "avg_placement": 4.5192,
-      "count": 52,
-      "priority_scores": {
-        "莫雷洛秘典": 100
-      }
-    },
-    {
-      "cluster_id": "401044",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
-      "items": [
-        "珠光护手",
-        "纳什之牙",
-        "虚空之杖"
-      ],
-      "avg_placement": 2.8571,
-      "count": 21,
-      "priority_scores": {
-        "珠光护手": 100,
-        "纳什之牙": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "401052",
-      "comp_name": "TFT17_ShieldTank, TFT17_Illaoi",
-      "items": [
-        "珠光护手",
-        "纳什之牙",
-        "虚空之杖"
-      ],
-      "avg_placement": 3.7895,
-      "count": 19,
-      "priority_scores": {
-        "珠光护手": 100,
-        "纳什之牙": 85,
-        "虚空之杖": 72
-      }
-    }
-  ]
+  "builds": []
 }

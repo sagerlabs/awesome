@@ -173,11 +173,11 @@ Query / Data
 
 Decision:
 
-后续考虑新增 `early_game_work_units`（前期打工卡）查询逻辑或打工评分字段。
+已新增 `work_score`（打工评分）和 `work_reason`（打工原因），用英雄费用、阶段、阵容承接和装备承载数据综合排序。注意它仍是结构化启发式评分，不等于真实对局胜率。
 
 Status:
 
-Open
+Fixed
 
 ### Case 3
 

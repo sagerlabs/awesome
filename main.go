@@ -79,8 +79,10 @@ func main() {
 		"addr": fmt.Sprintf("http://localhost:%s", port),
 		"routes": []string{
 			"GET  /                    (index.html)",
-			"POST /v1/tft/analyze",
-			"POST /v1/tft/analyze/stream",
+			"POST /v1/tft/nlu         (primary JSON)",
+			"POST /v1/tft/nlu/stream  (primary SSE)",
+			"POST /v1/tft/analyze     (legacy)",
+			"POST /v1/tft/analyze/stream (legacy SSE)",
 			"GET  /v1/tft/health",
 		},
 	}).Info("服务启动")

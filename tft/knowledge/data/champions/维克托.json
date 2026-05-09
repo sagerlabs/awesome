@@ -2,151 +2,27 @@
   "name": "维克托",
   "appear_in_comps": [
     {
-      "cluster_id": "401000",
-      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "cluster_id": "55972c44f51aad6861e8cf2def3cde7d",
+      "comp_name": "牧羊人维克托",
       "tier": "S",
-      "avg_placement": 3.9764
-    },
-    {
-      "cluster_id": "401021",
-      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
-      "tier": "C",
-      "avg_placement": 4.7878
-    },
-    {
-      "cluster_id": "401031",
-      "comp_name": "TFT17_Mecha, TFT17_Galio",
-      "tier": "C",
-      "avg_placement": 4.8089
-    },
-    {
-      "cluster_id": "401040",
-      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
-      "tier": "C",
-      "avg_placement": 4.8334
-    },
-    {
-      "cluster_id": "401036",
-      "comp_name": "TFT17_PsyOps, TFT17_Pyke",
-      "tier": "C",
-      "avg_placement": 4.8839
-    },
-    {
-      "cluster_id": "401049",
-      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_FlexTrait",
-      "tier": "D",
-      "avg_placement": 5.1832
-    },
-    {
-      "cluster_id": "401045",
-      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_PsyOps",
-      "tier": "D",
-      "avg_placement": 5.5217
-    },
-    {
-      "cluster_id": "401045",
-      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_PsyOps",
-      "tier": "D",
-      "avg_placement": 5.5217
-    },
-    {
-      "cluster_id": "401053",
-      "comp_name": "TFT17_PsyOps, TFT17_Viktor",
-      "tier": "D",
-      "avg_placement": 5.5278
+      "avg_placement": 3.52
     }
   ],
   "builds": [
     {
-      "cluster_id": "401000",
-      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "cluster_id": "55972c44f51aad6861e8cf2def3cde7d",
+      "comp_name": "牧羊人维克托",
       "items": [
         "无人机上行链路",
         "大天使之杖",
         "珠光护手"
       ],
-      "avg_placement": 3.8925,
-      "count": 36738,
+      "avg_placement": 3.52,
+      "count": 32935,
       "priority_scores": {
         "无人机上行链路": 100,
-        "大天使之杖": 85,
-        "珠光护手": 72
-      }
-    },
-    {
-      "cluster_id": "401021",
-      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
-      "items": [
-        "无人机上行链路",
-        "大天使之杖",
-        "珠光护手"
-      ],
-      "avg_placement": 4.4727,
-      "count": 2048,
-      "priority_scores": {
-        "无人机上行链路": 100,
-        "大天使之杖": 85,
-        "珠光护手": 72
-      }
-    },
-    {
-      "cluster_id": "401036",
-      "comp_name": "TFT17_PsyOps, TFT17_Pyke",
-      "items": [
-        "虚空之杖"
-      ],
-      "avg_placement": 5,
-      "count": 35,
-      "priority_scores": {
-        "虚空之杖": 100
-      }
-    },
-    {
-      "cluster_id": "401049",
-      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_FlexTrait",
-      "items": [
-        "大天使之杖",
-        "珠光护手",
-        "灭世者的死亡之帽"
-      ],
-      "avg_placement": 3.6889,
-      "count": 45,
-      "priority_scores": {
         "大天使之杖": 100,
-        "珠光护手": 85,
-        "灭世者的死亡之帽": 72
-      }
-    },
-    {
-      "cluster_id": "401045",
-      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_PsyOps",
-      "items": [
-        "珠光护手",
-        "灭世者的死亡之帽",
-        "虚空之杖"
-      ],
-      "avg_placement": 3.5385,
-      "count": 13,
-      "priority_scores": {
-        "珠光护手": 100,
-        "灭世者的死亡之帽": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "401053",
-      "comp_name": "TFT17_PsyOps, TFT17_Viktor",
-      "items": [
-        "无人机上行链路",
-        "大天使之杖",
-        "珠光护手"
-      ],
-      "avg_placement": 5.6071,
-      "count": 28,
-      "priority_scores": {
-        "无人机上行链路": 100,
-        "大天使之杖": 85,
-        "珠光护手": 72
+        "珠光护手": 100
       }
     }
   ]
