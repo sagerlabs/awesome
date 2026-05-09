@@ -4,6 +4,7 @@ package contracts
 type MetaComp struct {
 	ClusterID    string                 `json:"cluster_id" yaml:"cluster_id"`
 	TFTSet       string                 `json:"tft_set" yaml:"tft_set"`
+	Metadata     *KnowledgeMetadata     `json:"metadata,omitempty" yaml:"metadata,omitempty"`
 	Units        []string               `json:"units" yaml:"units"`
 	Traits       []string               `json:"traits" yaml:"traits"`
 	Stars        []string               `json:"stars" yaml:"stars"`
@@ -19,8 +20,46 @@ type MetaComp struct {
 	Trends       []Trend                `json:"trends" yaml:"trends"`
 	Levelling    string                 `json:"levelling" yaml:"levelling"`
 	Difficulty   float64                `json:"difficulty" yaml:"difficulty"`
+	Plan         *CompPlan              `json:"plan,omitempty" yaml:"plan,omitempty"`
 	Description  string                 `json:"description,omitempty" yaml:"description,omitempty"`
 	Limit        map[string]interface{} `json:"limit,omitempty" yaml:"limit,omitempty"`
+}
+
+// KnowledgeMetadata describes where and when a knowledge result was generated.
+type KnowledgeMetadata struct {
+	Version     string `json:"version,omitempty" yaml:"version,omitempty"`
+	Source      string `json:"source,omitempty" yaml:"source,omitempty"`
+	UpdatedAt   string `json:"updated_at,omitempty" yaml:"updated_at,omitempty"`
+	SampleCount int    `json:"sample_count,omitempty" yaml:"sample_count,omitempty"`
+}
+
+// CompPlan describes a comp as stage-based board snapshots.
+type CompPlan struct {
+	ClusterID string         `json:"cluster_id,omitempty" yaml:"cluster_id,omitempty"`
+	Name      string         `json:"name,omitempty" yaml:"name,omitempty"`
+	Tier      string         `json:"tier,omitempty" yaml:"tier,omitempty"`
+	Final     BoardSnapshot  `json:"final" yaml:"final"`
+	Early     *BoardSnapshot `json:"early,omitempty" yaml:"early,omitempty"`
+	Middle    *BoardSnapshot `json:"middle,omitempty" yaml:"middle,omitempty"`
+}
+
+// BoardSnapshot represents a board state at a stage.
+type BoardSnapshot struct {
+	Level  string        `json:"level,omitempty" yaml:"level,omitempty"`
+	Units  []BoardUnit   `json:"units" yaml:"units"`
+	Traits []TraitMarker `json:"traits,omitempty" yaml:"traits,omitempty"`
+}
+
+type BoardUnit struct {
+	Name     string   `json:"name" yaml:"name"`
+	Items    []string `json:"items,omitempty" yaml:"items,omitempty"`
+	IsCore   bool     `json:"is_core,omitempty" yaml:"is_core,omitempty"`
+	Priority int      `json:"priority,omitempty" yaml:"priority,omitempty"`
+}
+
+type TraitMarker struct {
+	Name  string `json:"name" yaml:"name"`
+	Count int    `json:"count,omitempty" yaml:"count,omitempty"`
 }
 
 type DisplayName struct {

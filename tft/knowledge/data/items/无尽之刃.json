@@ -2,76 +2,28 @@
   "name": "无尽之刃",
   "priority_list": [
     {
-      "cluster_id": "401012",
-      "comp_name": "TFT17_DarkStar, TFT17_Karma",
-      "comp_tier": "A",
-      "comp_avg": 4.5082,
+      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
+      "comp_name": "木灵族霞",
+      "comp_tier": "S",
+      "comp_avg": 2.88,
       "carry": "烬",
-      "priority_score": 100
+      "priority_score": 90
     },
     {
-      "cluster_id": "401006",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
-      "comp_tier": "A",
-      "comp_avg": 4.3396,
+      "cluster_id": "94cb23447f940384d13a7c640c2f2c10",
+      "comp_name": "暗星卡尔玛",
+      "comp_tier": "S",
+      "comp_avg": 3.41,
       "carry": "烬",
-      "priority_score": 85
+      "priority_score": 90
     },
     {
-      "cluster_id": "401004",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
-      "comp_tier": "A",
-      "comp_avg": 4.3717,
-      "carry": "莎弥拉",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "401001",
-      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
-      "comp_tier": "A",
-      "comp_avg": 4.4707,
+      "cluster_id": "8f5d84cf55194702e441031fe21eb88f",
+      "comp_name": "海魔人贝蕾亚",
+      "comp_tier": "S",
+      "comp_avg": 3.44,
       "carry": "卡莎",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "401020",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
-      "comp_tier": "A",
-      "comp_avg": 4.4852,
-      "carry": "烬",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "401006",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
-      "comp_tier": "A",
-      "comp_avg": 4.3396,
-      "carry": "霞",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "401011",
-      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
-      "comp_tier": "A",
-      "comp_avg": 4.4068,
-      "carry": "派克",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "401010",
-      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
-      "comp_tier": "A",
-      "comp_avg": 4.4761,
-      "carry": "卡莎",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "401020",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
-      "comp_tier": "A",
-      "comp_avg": 4.4852,
-      "carry": "霞",
-      "priority_score": 72
+      "priority_score": 50
     }
   ]
 }

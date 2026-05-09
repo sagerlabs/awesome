@@ -2,140 +2,41 @@
   "name": "莫德凯撒",
   "appear_in_comps": [
     {
-      "cluster_id": "401000",
-      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "cluster_id": "d036609ff95f9d4c28aad031a5fb965a",
+      "comp_name": "重装战士提莫",
       "tier": "S",
-      "avg_placement": 3.9764
+      "avg_placement": 3.89
     },
     {
-      "cluster_id": "401003",
-      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Lissandra",
+      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
+      "comp_name": "木灵族霞",
       "tier": "S",
-      "avg_placement": 4.2264
+      "avg_placement": 2.88
     },
     {
-      "cluster_id": "401009",
-      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
-      "tier": "A",
-      "avg_placement": 4.3079
+      "cluster_id": "94cb23447f940384d13a7c640c2f2c10",
+      "comp_name": "暗星卡尔玛",
+      "tier": "S",
+      "avg_placement": 3.41
     },
     {
-      "cluster_id": "401006",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
-      "tier": "A",
-      "avg_placement": 4.3396
+      "cluster_id": "55972c44f51aad6861e8cf2def3cde7d",
+      "comp_name": "牧羊人维克托",
+      "tier": "S",
+      "avg_placement": 3.52
     },
     {
-      "cluster_id": "401015",
-      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
-      "tier": "A",
-      "avg_placement": 4.4022
+      "cluster_id": "86c70a8a7c98ca5a2e20a5ae52ecce0b",
+      "comp_name": "重装战士提莫",
+      "tier": "S",
+      "avg_placement": 2.38
     },
     {
-      "cluster_id": "401020",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
-      "tier": "A",
-      "avg_placement": 4.4852
-    },
-    {
-      "cluster_id": "401012",
-      "comp_name": "TFT17_DarkStar, TFT17_Karma",
-      "tier": "A",
-      "avg_placement": 4.5082
-    },
-    {
-      "cluster_id": "401023",
-      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
-      "tier": "A",
-      "avg_placement": 4.5139
-    },
-    {
-      "cluster_id": "401013",
-      "comp_name": "TFT17_DarkStar, TFT17_Nunu",
-      "tier": "B",
-      "avg_placement": 4.5209
-    },
-    {
-      "cluster_id": "401028",
-      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Xayah",
-      "tier": "B",
-      "avg_placement": 4.7262
-    },
-    {
-      "cluster_id": "401041",
-      "comp_name": "TFT17_DarkStar, TFT17_Chogath",
-      "tier": "C",
-      "avg_placement": 5.0087
-    },
-    {
-      "cluster_id": "401039",
-      "comp_name": "TFT17_ShieldTank, TFT17_Zoe",
-      "tier": "C",
-      "avg_placement": 5.0501
-    },
-    {
-      "cluster_id": "401044",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
-      "tier": "C",
-      "avg_placement": 5.0546
-    },
-    {
-      "cluster_id": "401049",
-      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_FlexTrait",
-      "tier": "D",
-      "avg_placement": 5.1832
-    },
-    {
-      "cluster_id": "401052",
-      "comp_name": "TFT17_ShieldTank, TFT17_Illaoi",
-      "tier": "D",
-      "avg_placement": 5.2599
-    },
-    {
-      "cluster_id": "401046",
-      "comp_name": "TFT17_FlexTrait, TFT17_Galio",
-      "tier": "D",
-      "avg_placement": 5.2739
-    },
-    {
-      "cluster_id": "401045",
-      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_PsyOps",
-      "tier": "D",
-      "avg_placement": 5.5217
+      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
+      "comp_name": "重装战士薇古丝",
+      "tier": "S",
+      "avg_placement": 3.69
     }
   ],
-  "builds": [
-    {
-      "cluster_id": "401041",
-      "comp_name": "TFT17_DarkStar, TFT17_Chogath",
-      "items": [
-        "棘刺背心",
-        "石像鬼石板甲",
-        "狂徒铠甲"
-      ],
-      "avg_placement": 3.5833,
-      "count": 24,
-      "priority_scores": {
-        "棘刺背心": 100,
-        "石像鬼石板甲": 85,
-        "狂徒铠甲": 72
-      }
-    },
-    {
-      "cluster_id": "401039",
-      "comp_name": "TFT17_ShieldTank, TFT17_Zoe",
-      "items": [
-        "冕卫",
-        "石像鬼石板甲",
-        "狂徒铠甲"
-      ],
-      "avg_placement": 4.0667,
-      "count": 30,
-      "priority_scores": {
-        "冕卫": 100,
-        "石像鬼石板甲": 85,
-        "狂徒铠甲": 72
-      }
-    }
-  ]
+  "builds": []
 }

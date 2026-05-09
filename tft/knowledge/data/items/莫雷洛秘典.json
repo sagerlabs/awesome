@@ -2,28 +2,36 @@
   "name": "莫雷洛秘典",
   "priority_list": [
     {
-      "cluster_id": "401023",
-      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
-      "comp_tier": "A",
-      "comp_avg": 4.5139,
+      "cluster_id": "55972c44f51aad6861e8cf2def3cde7d",
+      "comp_name": "牧羊人维克托",
+      "comp_tier": "S",
+      "comp_avg": 3.52,
+      "carry": "娜美",
+      "priority_score": 90
+    },
+    {
+      "cluster_id": "86c70a8a7c98ca5a2e20a5ae52ecce0b",
+      "comp_name": "重装战士提莫",
+      "comp_tier": "S",
+      "comp_avg": 2.38,
+      "carry": "乐芙兰",
+      "priority_score": 80
+    },
+    {
+      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
+      "comp_name": "重装战士薇古丝",
+      "comp_tier": "S",
+      "comp_avg": 3.69,
       "carry": "巴德",
-      "priority_score": 100
+      "priority_score": 80
     },
     {
-      "cluster_id": "401009",
-      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
-      "comp_tier": "A",
-      "comp_avg": 4.3079,
+      "cluster_id": "d036609ff95f9d4c28aad031a5fb965a",
+      "comp_name": "重装战士提莫",
+      "comp_tier": "S",
+      "comp_avg": 3.89,
       "carry": "丽桑卓",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "401017",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
-      "comp_tier": "A",
-      "comp_avg": 4.4447,
-      "carry": "卡尔玛",
-      "priority_score": 85
+      "priority_score": 80
     }
   ]
 }

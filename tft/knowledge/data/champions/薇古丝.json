@@ -2,115 +2,27 @@
   "name": "薇古丝",
   "appear_in_comps": [
     {
-      "cluster_id": "401023",
-      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
-      "tier": "A",
-      "avg_placement": 4.5139
-    },
-    {
-      "cluster_id": "401030",
-      "comp_name": "TFT17_ShieldTank, TFT17_Nunu",
-      "tier": "B",
-      "avg_placement": 4.5516
-    },
-    {
-      "cluster_id": "401037",
-      "comp_name": "TFT17_HPTank, TFT17_TahmKench",
-      "tier": "C",
-      "avg_placement": 4.7974
-    },
-    {
-      "cluster_id": "401052",
-      "comp_name": "TFT17_ShieldTank, TFT17_Illaoi",
-      "tier": "D",
-      "avg_placement": 5.2599
-    },
-    {
-      "cluster_id": "401046",
-      "comp_name": "TFT17_FlexTrait, TFT17_Galio",
-      "tier": "D",
-      "avg_placement": 5.2739
+      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
+      "comp_name": "重装战士薇古丝",
+      "tier": "S",
+      "avg_placement": 3.69
     }
   ],
   "builds": [
     {
-      "cluster_id": "401023",
-      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
+      "comp_name": "重装战士薇古丝",
       "items": [
         "鬼索的狂暴之刃",
         "巨人杀手",
-        "虚空之杖"
+        "灭世者的死亡之帽"
       ],
-      "avg_placement": 3.8587,
-      "count": 11086,
+      "avg_placement": 3.69,
+      "count": 35701,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
-        "巨人杀手": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "401030",
-      "comp_name": "TFT17_ShieldTank, TFT17_Nunu",
-      "items": [
-        "鬼索的狂暴之刃",
-        "海克斯科技枪刃",
-        "巨人杀手"
-      ],
-      "avg_placement": 4.0344,
-      "count": 11994,
-      "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "海克斯科技枪刃": 85,
-        "巨人杀手": 72
-      }
-    },
-    {
-      "cluster_id": "401037",
-      "comp_name": "TFT17_HPTank, TFT17_TahmKench",
-      "items": [
-        "鬼索的狂暴之刃",
-        "巨人杀手",
-        "红霸符"
-      ],
-      "avg_placement": 3.6356,
-      "count": 483,
-      "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "巨人杀手": 85,
-        "红霸符": 72
-      }
-    },
-    {
-      "cluster_id": "401052",
-      "comp_name": "TFT17_ShieldTank, TFT17_Illaoi",
-      "items": [
-        "鬼索的狂暴之刃",
-        "珠光护手",
-        "巨人杀手"
-      ],
-      "avg_placement": 4.329,
-      "count": 459,
-      "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "珠光护手": 85,
-        "巨人杀手": 72
-      }
-    },
-    {
-      "cluster_id": "401046",
-      "comp_name": "TFT17_FlexTrait, TFT17_Galio",
-      "items": [
-        "鬼索的狂暴之刃",
-        "珠光护手",
-        "强袭者的链枷"
-      ],
-      "avg_placement": 4.6016,
-      "count": 123,
-      "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "珠光护手": 85,
-        "强袭者的链枷": 72
+        "巨人杀手": 100,
+        "灭世者的死亡之帽": 100
       }
     }
   ]

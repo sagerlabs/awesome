@@ -4,12 +4,15 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"strings"
+	"time"
+
 	"github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
 	"github.com/sagerlabs/awesome/tft/prompt"
+	"github.com/sagerlabs/awesome/tft/trace"
 	"github.com/sirupsen/logrus"
-	"strings"
 
 	"github.com/sagerlabs/awesome/tft/data"
 )
@@ -236,12 +239,13 @@ func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, knowledgeAdap
 
 	// Node 1: NLU提取
 	nluExtract := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluContext, err error) {
-		logrus.Println("用户输入:", input.UserInput)
+		start := time.Now()
+		traceID, _ := trace.TraceIDFromContext(ctx)
 		if c, ok := fastNLU.TryParse(input.UserInput); ok {
 			input.Ctx = c
-			if jsonBytes, err := json.MarshalIndent(input.Ctx, "", "  "); err == nil {
-				logrus.Println("fast nlu 提取的内容为:\n" + string(jsonBytes))
-			}
+			input.FastNLUHit = true
+			input.NLUProvider = "fast"
+			logNluExtract(traceID, input, time.Since(start))
 			return input, nil
 		}
 		fullPrompt, err := prompt.BuildNLUPrompt(input.UserInput)
@@ -266,12 +270,9 @@ func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, knowledgeAdap
 			logrus.WithError(err).WithField("raw_content", resp.Content).WithField("extracted_content", content).Warn("JSON解析失败，使用空Context")
 		}
 		input.Ctx = c
-		// 使用JSON缩进格式输出，更易读
-		if jsonBytes, err := json.MarshalIndent(input.Ctx, "", "  "); err == nil {
-			logrus.Println("llm 提取的内容为:\n" + string(jsonBytes))
-		} else {
-			logrus.Printf("llm 提取的内容为: %+v\n", input.Ctx)
-		}
+		input.NLUProvider = "llm"
+		input.NLUCalls = 1
+		logNluExtract(traceID, input, time.Since(start))
 		return input, nil
 	})
 	if err := g.AddLambdaNode("nlu_extract", nluExtract); err != nil {
@@ -280,11 +281,15 @@ func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, knowledgeAdap
 
 	// Node 2: 数据查询和中文转换
 	dataLookup := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluEnrichedContext, err error) {
+		start := time.Now()
+		traceID, _ := trace.TraceIDFromContext(ctx)
 		result, err := knowledgeAdapter.QueryNLU(input.Ctx)
 		if err != nil {
 			return nil, fmt.Errorf("knowledge query nlu: %w", err)
 		}
 		result.UserInput = input.UserInput
+		result.Feedback = input.Feedback
+		logKnowledgeLookup(traceID, input, result, time.Since(start))
 		return result, nil
 	})
 	if err := g.AddLambdaNode("data_lookup", dataLookup); err != nil {
@@ -321,12 +326,13 @@ func BuildNluStreamGraph(ctx context.Context, chatModel model.ChatModel, knowled
 
 	// Node 1: NLU提取
 	nluExtract := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluContext, err error) {
-		logrus.Println("用户输入:", input.UserInput)
+		start := time.Now()
+		traceID, _ := trace.TraceIDFromContext(ctx)
 		if c, ok := fastNLU.TryParse(input.UserInput); ok {
 			input.Ctx = c
-			if jsonBytes, err := json.MarshalIndent(input.Ctx, "", "  "); err == nil {
-				logrus.Println("fast nlu 提取的内容为:\n" + string(jsonBytes))
-			}
+			input.FastNLUHit = true
+			input.NLUProvider = "fast"
+			logNluExtract(traceID, input, time.Since(start))
 			return input, nil
 		}
 		fullPrompt, err := prompt.BuildNLUPrompt(input.UserInput)
@@ -351,12 +357,9 @@ func BuildNluStreamGraph(ctx context.Context, chatModel model.ChatModel, knowled
 			logrus.WithError(err).WithField("raw_content", resp.Content).WithField("extracted_content", content).Warn("JSON解析失败，使用空Context")
 		}
 		input.Ctx = c
-		// 使用JSON缩进格式输出，更易读
-		if jsonBytes, err := json.MarshalIndent(input.Ctx, "", "  "); err == nil {
-			logrus.Println("llm 提取的内容为:\n" + string(jsonBytes))
-		} else {
-			logrus.Printf("llm 提取的内容为: %+v\n", input.Ctx)
-		}
+		input.NLUProvider = "llm"
+		input.NLUCalls = 1
+		logNluExtract(traceID, input, time.Since(start))
 		return input, nil
 	})
 	if err := g.AddLambdaNode("nlu_extract", nluExtract); err != nil {
@@ -365,11 +368,15 @@ func BuildNluStreamGraph(ctx context.Context, chatModel model.ChatModel, knowled
 
 	// Node 2: 数据查询和中文转换
 	dataLookup := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluEnrichedContext, err error) {
+		start := time.Now()
+		traceID, _ := trace.TraceIDFromContext(ctx)
 		result, err := knowledgeAdapter.QueryNLU(input.Ctx)
 		if err != nil {
 			return nil, fmt.Errorf("knowledge query nlu: %w", err)
 		}
 		result.UserInput = input.UserInput
+		result.Feedback = input.Feedback
+		logKnowledgeLookup(traceID, input, result, time.Since(start))
 		return result, nil
 	})
 	if err := g.AddLambdaNode("data_lookup", dataLookup); err != nil {
@@ -418,4 +425,47 @@ func BuildNluStreamGraph(ctx context.Context, chatModel model.ChatModel, knowled
 	}
 
 	return runnable, nil
+}
+
+func logNluExtract(traceID string, input *NluContext, elapsed time.Duration) {
+	fields := logrus.Fields{
+		"trace_id":     traceID,
+		"input":        input.UserInput,
+		"elapsed_ms":   elapsed.Milliseconds(),
+		"fast_nlu_hit": input.FastNLUHit,
+		"nlu_provider": input.NLUProvider,
+		"llm_calls":    input.NLUCalls,
+		"intent":       input.Ctx.Intent,
+		"champions":    len(input.Ctx.Champions),
+		"items":        len(input.Ctx.Items),
+		"traits":       len(input.Ctx.Traits),
+		"role_query":   input.Ctx.RoleQuery,
+		"playstyle":    input.Ctx.Playstyle,
+	}
+	if input.Ctx.UnitCost != nil {
+		fields["unit_cost"] = *input.Ctx.UnitCost
+	}
+	if input.Ctx.GameStage != nil {
+		fields["game_stage"] = *input.Ctx.GameStage
+	}
+	logrus.WithFields(fields).Info("NLU提取完成")
+	if jsonBytes, err := json.Marshal(input.Ctx); err == nil {
+		logrus.WithField("trace_id", traceID).WithField("ctx", string(jsonBytes)).Debug("NLU结构化结果")
+	}
+}
+
+func logKnowledgeLookup(traceID string, input *NluContext, result *NluEnrichedContext, elapsed time.Duration) {
+	logrus.WithFields(logrus.Fields{
+		"trace_id":          traceID,
+		"elapsed_ms":        elapsed.Milliseconds(),
+		"fast_nlu_hit":      input.FastNLUHit,
+		"nlu_provider":      input.NLUProvider,
+		"llm_calls":         input.NLUCalls,
+		"intent":            result.Ctx.Intent,
+		"matched_comps":     len(result.MatchedComps),
+		"matched_items":     len(result.MatchedItems),
+		"matched_champions": len(result.MatchedChampions),
+		"matched_traits":    len(result.MatchedTraits),
+		"patch_notes":       len(result.PatchNotes),
+	}).Info("knowledge查询完成")
 }

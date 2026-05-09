@@ -32,6 +32,12 @@ func TestBuildNluFormatPromptUsesKnowledgeFriendlyFields(t *testing.T) {
 		Ctx: contracts.QueryNLURequest{
 			Intent: "lineup_recommend",
 		},
+		Metadata: &contracts.KnowledgeMetadata{
+			Source:      "MetaTFT",
+			Version:     "TFT17",
+			UpdatedAt:   "2026-05-09",
+			SampleCount: 900,
+		},
 		MatchedComps: []contracts.CompSummary{
 			{
 				Name:         "约德尔人兰博",
@@ -45,6 +51,16 @@ func TestBuildNluFormatPromptUsesKnowledgeFriendlyFields(t *testing.T) {
 					Carry: "兰博",
 					Items: []string{"鬼索的狂暴之刃", "灭世者的死亡之帽"},
 				},
+				Plan: &contracts.CompPlan{
+					Final: contracts.BoardSnapshot{
+						Level: "8",
+						Units: []contracts.BoardUnit{
+							{Name: "兰博", Items: []string{"鬼索的狂暴之刃"}, IsCore: true},
+							{Name: "凯南"},
+						},
+						Traits: []contracts.TraitMarker{{Name: "约德尔人", Count: 4}},
+					},
+				},
 			},
 		},
 	})
@@ -52,7 +68,7 @@ func TestBuildNluFormatPromptUsesKnowledgeFriendlyFields(t *testing.T) {
 		t.Fatalf("BuildNluFormatPrompt failed: %v", err)
 	}
 
-	for _, text := range []string{"约德尔人兰博", "样本场次：25060", "运营节奏：5级节奏"} {
+	for _, text := range []string{"约德尔人兰博", "知识库元信息", "样本量：900", "样本场次：25060", "运营节奏：5级节奏", "成型棋盘：8级", "兰博（鬼索的狂暴之刃）"} {
 		if !strings.Contains(prompt, text) {
 			t.Fatalf("prompt should contain %q, got:\n%s", text, prompt)
 		}
@@ -266,6 +282,48 @@ func TestBuildNluFormatPromptIncludesPatchNotes(t *testing.T) {
 	}
 
 	for _, text := range []string{"官方版本环境", "17.1 - 装备", "坦克装备整体削弱", "版本原因可以引用官方版本环境"} {
+		if !strings.Contains(prompt, text) {
+			t.Fatalf("prompt should contain %q, got:\n%s", text, prompt)
+		}
+	}
+}
+
+func TestBuildNluFormatPromptIncludesDecisionPolicyHints(t *testing.T) {
+	stage := "3-2"
+	level := 6
+	hp := 40
+	gold := 50
+	prompt, err := BuildNluFormatPrompt(&NluEnrichedContext{
+		UserInput: "我现在3-2，6级，40血，50金币，千珏两星羊刀水银，能冲吗？",
+		Ctx: contracts.QueryNLURequest{
+			Intent:    "lineup_recommend",
+			GameStage: &stage,
+			Level:     &level,
+			HP:        &hp,
+			Gold:      &gold,
+			Champions: map[string]int8{"千珏": 2},
+			Items:     []string{"鬼索的狂暴之刃", "水银"},
+		},
+		MatchedComps: []contracts.CompSummary{
+			{
+				Name:         "狂战士千珏",
+				Tier:         "S",
+				AvgPlacement: 3.02,
+				Top4Rate:     0.80,
+				WinRate:      0.22,
+				Plan: &contracts.CompPlan{
+					Early:  &contracts.BoardSnapshot{Level: "5"},
+					Middle: &contracts.BoardSnapshot{Level: "7"},
+					Final:  contracts.BoardSnapshot{Level: "9", Units: []contracts.BoardUnit{{Name: "千珏"}}},
+				},
+			},
+		},
+	})
+	if err != nil {
+		t.Fatalf("BuildNluFormatPrompt failed: %v", err)
+	}
+
+	for _, text := range []string{"局内决策提示", "3-2 是常见启动点", "血量中低", "经济健康", "按可执行性排序", "early/middle/final"} {
 		if !strings.Contains(prompt, text) {
 			t.Fatalf("prompt should contain %q, got:\n%s", text, prompt)
 		}

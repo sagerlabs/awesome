@@ -2,46 +2,17 @@
   "name": "佐伊",
   "appear_in_comps": [
     {
-      "cluster_id": "401009",
-      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
-      "tier": "A",
-      "avg_placement": 4.3079
+      "cluster_id": "d036609ff95f9d4c28aad031a5fb965a",
+      "comp_name": "重装战士提莫",
+      "tier": "S",
+      "avg_placement": 3.89
     },
     {
-      "cluster_id": "401015",
-      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
-      "tier": "A",
-      "avg_placement": 4.4022
-    },
-    {
-      "cluster_id": "401039",
-      "comp_name": "TFT17_ShieldTank, TFT17_Zoe",
-      "tier": "C",
-      "avg_placement": 5.0501
-    },
-    {
-      "cluster_id": "401044",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
-      "tier": "C",
-      "avg_placement": 5.0546
+      "cluster_id": "86c70a8a7c98ca5a2e20a5ae52ecce0b",
+      "comp_name": "重装战士提莫",
+      "tier": "S",
+      "avg_placement": 2.38
     }
   ],
-  "builds": [
-    {
-      "cluster_id": "401039",
-      "comp_name": "TFT17_ShieldTank, TFT17_Zoe",
-      "items": [
-        "灭世者的死亡之帽",
-        "朔极之矛",
-        "虚空之杖"
-      ],
-      "avg_placement": 3.8667,
-      "count": 45,
-      "priority_scores": {
-        "灭世者的死亡之帽": 100,
-        "朔极之矛": 85,
-        "虚空之杖": 72
-      }
-    }
-  ]
+  "builds": []
 }

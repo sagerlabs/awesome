@@ -23,12 +23,22 @@ type QueryNLURequest struct {
 type QueryNLUResponse struct {
 	UserInput        string             `json:"user_input"`
 	Ctx              QueryNLURequest    `json:"ctx"`
+	Metadata         *KnowledgeMetadata `json:"metadata,omitempty"`
+	Feedback         *AdviceFeedback    `json:"feedback,omitempty"`
 	NormalizedTerms  []NormalizedTerm   `json:"normalized_terms,omitempty"`
 	MatchedComps     []CompSummary      `json:"matched_comps"`
 	MatchedItems     []MatchedItemInfo  `json:"matched_items"`
 	MatchedChampions []ChampionInsight  `json:"matched_champions,omitempty"`
 	MatchedTraits    []TraitInsight     `json:"matched_traits,omitempty"`
 	PatchNotes       []PatchNoteInsight `json:"patch_notes,omitempty"`
+}
+
+// AdviceFeedback describes whether the previous advice appears accepted, rejected, or context-starved.
+type AdviceFeedback struct {
+	Type              string `json:"type"`
+	Reason            string `json:"reason,omitempty"`
+	PreviousUserInput string `json:"previous_user_input,omitempty"`
+	LastAdviceSummary string `json:"last_advice_summary,omitempty"`
 }
 
 // NormalizedTerm records how player slang was mapped before querying knowledge.
@@ -59,20 +69,22 @@ type ItemFitCompInfo struct {
 // CompSummary 是跨 knowledge 边界暴露给 agent 的阵容摘要。
 // 这里保留 QueryNLU 当前真正会消费的字段，避免把 data.Comp 直接泄漏到 contract 层。
 type CompSummary struct {
-	ClusterID    string      `json:"cluster_id"`
-	Name         string      `json:"name"`
-	Tier         string      `json:"tier"`
-	AvgPlacement float64     `json:"avg_placement"`
-	Top4Rate     float64     `json:"top4_rate"`
-	WinRate      float64     `json:"win_rate"`
-	Count        int         `json:"count"`
-	Units        []string    `json:"units"`
-	Traits       []string    `json:"traits"`
-	Stars        []string    `json:"stars"`
-	Levelling    string      `json:"levelling"`
-	Difficulty   float64     `json:"difficulty"`
-	BestBuild    BuildInfo   `json:"best_build"`
-	AllBuilds    []BuildInfo `json:"all_builds,omitempty"`
+	ClusterID    string             `json:"cluster_id"`
+	Metadata     *KnowledgeMetadata `json:"metadata,omitempty"`
+	Name         string             `json:"name"`
+	Tier         string             `json:"tier"`
+	AvgPlacement float64            `json:"avg_placement"`
+	Top4Rate     float64            `json:"top4_rate"`
+	WinRate      float64            `json:"win_rate"`
+	Count        int                `json:"count"`
+	Units        []string           `json:"units"`
+	Traits       []string           `json:"traits"`
+	Stars        []string           `json:"stars"`
+	Levelling    string             `json:"levelling"`
+	Difficulty   float64            `json:"difficulty"`
+	BestBuild    BuildInfo          `json:"best_build"`
+	AllBuilds    []BuildInfo        `json:"all_builds,omitempty"`
+	Plan         *CompPlan          `json:"plan,omitempty"`
 }
 
 // BuildInfo 是阵容内某个核心英雄的装备方案。
@@ -94,6 +106,8 @@ type ChampionInsight struct {
 	BestAvgPlacement float64       `json:"best_avg_placement,omitempty"`
 	CarryScore       float64       `json:"carry_score,omitempty"`
 	TankScore        float64       `json:"tank_score,omitempty"`
+	WorkScore        float64       `json:"work_score,omitempty"`
+	WorkReason       string        `json:"work_reason,omitempty"`
 	BestComps        []CompSummary `json:"best_comps,omitempty"`
 	BestBuilds       []BuildInfo   `json:"best_builds,omitempty"`
 }

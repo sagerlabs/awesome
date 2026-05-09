@@ -2,91 +2,47 @@
   "name": "蕾欧娜",
   "appear_in_comps": [
     {
-      "cluster_id": "401009",
-      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
-      "tier": "A",
-      "avg_placement": 4.3079
+      "cluster_id": "d036609ff95f9d4c28aad031a5fb965a",
+      "comp_name": "重装战士提莫",
+      "tier": "S",
+      "avg_placement": 3.89
     },
     {
-      "cluster_id": "401015",
-      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
-      "tier": "A",
-      "avg_placement": 4.4022
-    },
-    {
-      "cluster_id": "401017",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
-      "tier": "A",
-      "avg_placement": 4.4447
-    },
-    {
-      "cluster_id": "401022",
-      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_Diana",
-      "tier": "C",
-      "avg_placement": 4.8216
-    },
-    {
-      "cluster_id": "401039",
-      "comp_name": "TFT17_ShieldTank, TFT17_Zoe",
-      "tier": "C",
-      "avg_placement": 5.0501
-    },
-    {
-      "cluster_id": "401044",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
-      "tier": "C",
-      "avg_placement": 5.0546
-    },
-    {
-      "cluster_id": "401054",
-      "comp_name": "TFT17_ADMIN, TFT17_Diana",
-      "tier": "D",
-      "avg_placement": 5.5805
+      "cluster_id": "86c70a8a7c98ca5a2e20a5ae52ecce0b",
+      "comp_name": "重装战士提莫",
+      "tier": "S",
+      "avg_placement": 2.38
     }
   ],
   "builds": [
     {
-      "cluster_id": "401009",
-      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "cluster_id": "d036609ff95f9d4c28aad031a5fb965a",
+      "comp_name": "重装战士提莫",
       "items": [
         "石像鬼石板甲",
         "石像鬼石板甲",
         "狂徒铠甲"
       ],
-      "avg_placement": 3.8222,
-      "count": 7504,
+      "avg_placement": 3.89,
+      "count": 69707,
       "priority_scores": {
-        "石像鬼石板甲": 85,
-        "狂徒铠甲": 72
+        "石像鬼石板甲": 90,
+        "狂徒铠甲": 90
       }
     },
     {
-      "cluster_id": "401039",
-      "comp_name": "TFT17_ShieldTank, TFT17_Zoe",
+      "cluster_id": "86c70a8a7c98ca5a2e20a5ae52ecce0b",
+      "comp_name": "重装战士提莫",
       "items": [
         "石像鬼石板甲",
         "石像鬼石板甲",
-        "石像鬼石板甲"
+        "狂徒铠甲"
       ],
-      "avg_placement": 3.9615,
-      "count": 260,
+      "avg_placement": 2.38,
+      "count": 14075,
       "priority_scores": {
-        "石像鬼石板甲": 72
-      }
-    },
-    {
-      "cluster_id": "401054",
-      "comp_name": "TFT17_ADMIN, TFT17_Diana",
-      "items": [
-        "石像鬼石板甲",
-        "石像鬼石板甲",
-        "振奋盔甲"
-      ],
-      "avg_placement": 4.2941,
-      "count": 17,
-      "priority_scores": {
-        "石像鬼石板甲": 85,
-        "振奋盔甲": 72
+        "石像鬼石板甲": 90,
+        "狂徒铠甲": 90
       }
     }
   ]

@@ -2,39 +2,33 @@
   "name": "卑尔维斯",
   "appear_in_comps": [
     {
-      "cluster_id": "401007",
-      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "cluster_id": "b0e4c786a8fc51e0706762e2537c37fb",
+      "comp_name": "狂战士千珏",
       "tier": "S",
-      "avg_placement": 4.183
+      "avg_placement": 3.02
     },
     {
-      "cluster_id": "401029",
-      "comp_name": "TFT17_DRX, TFT17_Kindred",
-      "tier": "A",
-      "avg_placement": 4.4845
-    },
-    {
-      "cluster_id": "401055",
-      "comp_name": "TFT17_AnimaSquad, TFT17_Jinx",
-      "tier": "D",
-      "avg_placement": 6.2252
+      "cluster_id": "8f5d84cf55194702e441031fe21eb88f",
+      "comp_name": "海魔人贝蕾亚",
+      "tier": "S",
+      "avg_placement": 3.44
     }
   ],
   "builds": [
     {
-      "cluster_id": "401007",
-      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "cluster_id": "8f5d84cf55194702e441031fe21eb88f",
+      "comp_name": "海魔人贝蕾亚",
       "items": [
         "巨人杀手",
         "水银",
         "海妖之怒"
       ],
-      "avg_placement": 4.016,
-      "count": 37187,
+      "avg_placement": 3.44,
+      "count": 93150,
       "priority_scores": {
-        "巨人杀手": 100,
-        "水银": 85,
-        "海妖之怒": 72
+        "巨人杀手": 90,
+        "水银": 90,
+        "海妖之怒": 90
       }
     }
   ]

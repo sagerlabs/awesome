@@ -2,121 +2,27 @@
   "name": "乐芙兰",
   "appear_in_comps": [
     {
-      "cluster_id": "401015",
-      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
-      "tier": "A",
-      "avg_placement": 4.4022
-    },
-    {
-      "cluster_id": "401017",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
-      "tier": "A",
-      "avg_placement": 4.4447
-    },
-    {
-      "cluster_id": "401022",
-      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_Diana",
-      "tier": "C",
-      "avg_placement": 4.8216
-    },
-    {
-      "cluster_id": "401039",
-      "comp_name": "TFT17_ShieldTank, TFT17_Zoe",
-      "tier": "C",
-      "avg_placement": 5.0501
-    },
-    {
-      "cluster_id": "401044",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
-      "tier": "C",
-      "avg_placement": 5.0546
-    },
-    {
-      "cluster_id": "401054",
-      "comp_name": "TFT17_ADMIN, TFT17_Diana",
-      "tier": "D",
-      "avg_placement": 5.5805
+      "cluster_id": "86c70a8a7c98ca5a2e20a5ae52ecce0b",
+      "comp_name": "重装战士提莫",
+      "tier": "S",
+      "avg_placement": 2.38
     }
   ],
   "builds": [
     {
-      "cluster_id": "401015",
-      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "cluster_id": "86c70a8a7c98ca5a2e20a5ae52ecce0b",
+      "comp_name": "重装战士提莫",
       "items": [
         "鬼索的狂暴之刃",
-        "巨人杀手",
-        "灭世者的死亡之帽"
-      ],
-      "avg_placement": 4.2047,
-      "count": 4831,
-      "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "巨人杀手": 85,
-        "灭世者的死亡之帽": 72
-      }
-    },
-    {
-      "cluster_id": "401017",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
-      "items": [
-        "鬼索的狂暴之刃",
-        "巨人杀手",
-        "灭世者的死亡之帽"
-      ],
-      "avg_placement": 3.9984,
-      "count": 628,
-      "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "巨人杀手": 85,
-        "灭世者的死亡之帽": 72
-      }
-    },
-    {
-      "cluster_id": "401022",
-      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora, TFT17_Diana",
-      "items": [
-        "闪光原型",
-        "鬼索的狂暴之刃",
+        "莫雷洛秘典",
         "虚空之杖"
       ],
-      "avg_placement": 3.0818,
-      "count": 110,
+      "avg_placement": 2.38,
+      "count": 14075,
       "priority_scores": {
-        "闪光原型": 100,
-        "鬼索的狂暴之刃": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "401039",
-      "comp_name": "TFT17_ShieldTank, TFT17_Zoe",
-      "items": [
-        "大天使之杖",
-        "鬼索的狂暴之刃",
-        "巨人杀手"
-      ],
-      "avg_placement": 3.9727,
-      "count": 110,
-      "priority_scores": {
-        "大天使之杖": 100,
-        "鬼索的狂暴之刃": 85,
-        "巨人杀手": 72
-      }
-    },
-    {
-      "cluster_id": "401044",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Illaoi",
-      "items": [
-        "暗星纹章",
-        "鬼索的狂暴之刃",
-        "珠光护手"
-      ],
-      "avg_placement": 3.4643,
-      "count": 28,
-      "priority_scores": {
-        "暗星纹章": 100,
-        "鬼索的狂暴之刃": 85,
-        "珠光护手": 72
+        "鬼索的狂暴之刃": 80,
+        "莫雷洛秘典": 80,
+        "虚空之杖": 80
       }
     }
   ]

@@ -48,12 +48,42 @@
 
         body {
             font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-            background: #1a2035;
+            background: #121723;
             min-height: 100vh;
             /* 演示背景 */
             background-image:
-                    radial-gradient(ellipse at 20% 50%, rgba(74,158,255,0.08) 0%, transparent 60%),
-                    radial-gradient(ellipse at 80% 20%, rgba(200,169,110,0.06) 0%, transparent 50%);
+                    radial-gradient(circle at 18% 18%, rgba(200,169,110,0.12) 0%, transparent 28%),
+                    radial-gradient(circle at 82% 24%, rgba(74,158,255,0.14) 0%, transparent 32%),
+                    linear-gradient(135deg, #111723 0%, #1b2433 48%, #101319 100%);
+            color: var(--text-1);
+            overflow: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+            background-size: 34px 34px;
+            mask-image: radial-gradient(circle at 50% 50%, #000 0%, transparent 72%);
+        }
+
+        body.wails {
+            width: 100vw;
+            height: 100vh;
+            min-height: 0;
+            background: transparent;
+            background-image: none;
+        }
+
+        body.wails::before,
+        body.wails .demo-hint,
+        body.wails #bubble,
+        body.wails .panel-settings {
+            display: none;
         }
 
         /* ── 演示页面提示 ─────────────────────────────────────────── */
@@ -162,12 +192,15 @@
             z-index: 9998;
             width: var(--panel-w);
             height: var(--panel-h);
-            background: var(--dark-1);
+            background:
+                    linear-gradient(180deg, rgba(31,36,48,0.96), rgba(10,12,16,0.98)),
+                    var(--dark-1);
             border-radius: var(--radius);
-            border: 1px solid var(--dark-4);
+            border: 1px solid rgba(200,169,110,0.18);
             box-shadow:
                     0 32px 80px rgba(0,0,0,0.7),
-                    0 0 0 1px rgba(200,169,110,0.08),
+                    0 0 0 1px rgba(74,158,255,0.08),
+                    0 0 44px rgba(74,158,255,0.10),
                     inset 0 1px 0 rgba(255,255,255,0.04);
             display: flex;
             flex-direction: column;
@@ -191,6 +224,22 @@
             pointer-events: all;
         }
 
+        body.wails #panel {
+            position: fixed;
+            inset: 10px;
+            width: auto;
+            height: auto;
+            opacity: 1;
+            transform: none;
+            pointer-events: all;
+            border-radius: 22px;
+            box-shadow:
+                    0 26px 70px rgba(0,0,0,0.58),
+                    0 0 0 1px rgba(200,169,110,0.18),
+                    0 0 40px rgba(74,158,255,0.12),
+                    inset 0 1px 0 rgba(255,255,255,0.06);
+        }
+
         /* 面板顶栏 */
         .panel-header {
             padding: 14px 16px 12px;
@@ -199,7 +248,10 @@
             align-items: center;
             gap: 10px;
             flex-shrink: 0;
-            background: linear-gradient(to bottom, var(--dark-2), var(--dark-1));
+            background:
+                    radial-gradient(circle at 12% 0%, rgba(200,169,110,0.16), transparent 34%),
+                    linear-gradient(to bottom, rgba(24,28,36,0.98), rgba(17,19,24,0.96));
+            --wails-draggable: drag;
         }
 
         .panel-avatar {
@@ -248,6 +300,7 @@
             font-size: 16px;
             transition: background 0.15s, color 0.15s;
             flex-shrink: 0;
+            --wails-draggable: no-drag;
         }
         .panel-close:hover,
         .panel-settings:hover { background: var(--dark-4); color: var(--text-1); }
@@ -296,7 +349,7 @@
         .messages {
             flex: 1;
             overflow-y: auto;
-            padding: 16px 14px;
+            padding: 16px 14px 18px;
             display: flex;
             flex-direction: column;
             gap: 12px;
@@ -339,8 +392,8 @@
 
         .msg-bubble {
             max-width: 82%;
-            padding: 9px 12px;
-            border-radius: 12px;
+            padding: 10px 12px;
+            border-radius: 14px;
             font-size: 13px;
             line-height: 1.65;
             word-break: break-word;
@@ -348,15 +401,15 @@
         }
 
         .msg.ai .msg-bubble {
-            background: var(--dark-2);
-            border: 1px solid var(--dark-4);
+            background: linear-gradient(180deg, rgba(31,36,48,0.94), rgba(24,28,36,0.92));
+            border: 1px solid rgba(200,169,110,0.12);
             color: var(--text-1);
             border-bottom-left-radius: 4px;
         }
 
         .msg.user .msg-bubble {
-            background: linear-gradient(135deg, #1a3a5c, #0f2540);
-            border: 1px solid rgba(74,158,255,0.2);
+            background: linear-gradient(135deg, rgba(29,72,103,0.96), rgba(13,38,58,0.96));
+            border: 1px solid rgba(74,158,255,0.28);
             color: var(--text-1);
             border-bottom-right-radius: 4px;
         }
@@ -391,9 +444,9 @@
         }
 
         .suggestion-tag {
-            padding: 5px 10px;
-            background: var(--dark-3);
-            border: 1px solid var(--dark-4);
+            padding: 6px 10px;
+            background: rgba(31,36,48,0.72);
+            border: 1px solid rgba(200,169,110,0.12);
             border-radius: 20px;
             font-size: 11px;
             color: var(--text-2);
@@ -402,7 +455,7 @@
             white-space: nowrap;
         }
         .suggestion-tag:hover {
-            background: var(--dark-4);
+            background: rgba(200,169,110,0.10);
             border-color: var(--gold-dim);
             color: var(--gold);
         }
@@ -410,8 +463,8 @@
         /* 输入区 */
         .input-area {
             padding: 10px 12px 12px;
-            border-top: 1px solid var(--dark-4);
-            background: var(--dark-2);
+            border-top: 1px solid rgba(200,169,110,0.10);
+            background: linear-gradient(180deg, rgba(24,28,36,0.94), rgba(17,19,24,0.98));
             flex-shrink: 0;
         }
 
@@ -419,9 +472,9 @@
             display: flex;
             align-items: flex-end;
             gap: 8px;
-            background: var(--dark-3);
-            border: 1px solid var(--dark-4);
-            border-radius: 12px;
+            background: rgba(10,12,16,0.72);
+            border: 1px solid rgba(200,169,110,0.16);
+            border-radius: 14px;
             padding: 8px 8px 8px 12px;
             transition: border-color 0.2s;
         }
@@ -449,7 +502,7 @@
 
         .send-btn {
             width: 32px; height: 32px;
-            border-radius: 8px;
+            border-radius: 10px;
             border: none;
             background: linear-gradient(135deg, var(--gold-dim), var(--gold));
             color: var(--dark-0);
@@ -564,21 +617,14 @@
             <div class="msg-avatar">⚔</div>
             <div class="msg-bubble md" id="welcome-msg"></div>
         </div>
-        <script>
-            document.getElementById('welcome-msg').innerHTML = renderMd(
-                "你好！我是你的**云顶之弈阵容教练** 🎮\n\n" +
-                "告诉我棋盘上的英雄和装备，我来分析最优方向。\n\n" +
-                "> 例如：`兰博 肯能 璐璐 破败 大帽子`"
-            )
-        </script>
     </div>
 
     <!-- 快捷输入建议 -->
     <div class="suggestions" id="suggestions">
-        <span class="suggestion-tag" onclick="fillInput('开局水滴，我能玩什么')">💧 开局水滴</span>
-        <span class="suggestion-tag" onclick="fillInput('兰博 肯能 大帽子')">⚙ 约德尔阵容</span>
-        <span class="suggestion-tag" onclick="fillInput('瞎子 破败')">👁 盲僧路线</span>
-        <span class="suggestion-tag" onclick="fillInput('当前版本 S Tier 是什么')">🏆 版本强度</span>
+        <span class="suggestion-tag" onclick="fillInput('当前版本最强的三套阵容是什么？')">版本强势</span>
+        <span class="suggestion-tag" onclick="fillInput('剑魔打工强吗？')">剑魔打工</span>
+        <span class="suggestion-tag" onclick="fillInput('四费卡谁能C？')">四费主C</span>
+        <span class="suggestion-tag" onclick="fillInput('海魔人能玩吗？')">羁绊查询</span>
     </div>
 
     <!-- 输入区 -->
@@ -605,6 +651,7 @@
     // Wails 环境：window.go 存在，通过 Go binding 直接调用
     // 浏览器/Electron 环境：通过 SSE HTTP 接口
     const IS_WAILS = typeof window !== 'undefined' && !!window.go
+    if (IS_WAILS) document.body.classList.add('wails')
 
     // ── 配置加载 ──────────────────────────────────────────────────────
     // Electron 环境：通过 IPC 读取用户数据目录的 config.json（可持久修改）
@@ -646,11 +693,25 @@
     const sendBtn  = document.getElementById('send-btn')
     const closeBtn = document.getElementById('close-btn')
     const badge    = document.getElementById('badge')
+    const welcomeMsg = document.getElementById('welcome-msg')
+
+    welcomeMsg.innerHTML = renderMd(
+        "我是你的 **TFT Copilot**（云顶教练浮窗）。\n\n" +
+        "你可以直接问阵容、装备、羁绊、几费卡强度和打工过渡。\n\n" +
+        "> 例如：`剑魔打工强吗？`、`四费卡谁能C？`"
+    )
 
     // ── 面板开关 ──────────────────────────────────────────────────────
-    let panelOpen = false
+    let panelOpen = IS_WAILS
+    if (IS_WAILS) {
+        panel.classList.add('open')
+        bubble.classList.add('panel-open')
+        closeBtn.textContent = '—'
+        closeBtn.title = '最小化'
+    }
 
     function togglePanel() {
+        if (IS_WAILS) return
         panelOpen = !panelOpen
         panel.classList.toggle('open', panelOpen)
         bubble.classList.toggle('panel-open', panelOpen)
@@ -690,6 +751,11 @@
         if (!isDragged) togglePanel()
     })
     closeBtn.addEventListener('click', togglePanel)
+    closeBtn.addEventListener('click', async (e) => {
+        if (!IS_WAILS) return
+        e.stopPropagation()
+        if (window.go?.main?.App?.Minimize) await window.go.main.App.Minimize()
+    })
 
     // ── 气泡拖拽 ──────────────────────────────────────────────────────
     let isDragging = false

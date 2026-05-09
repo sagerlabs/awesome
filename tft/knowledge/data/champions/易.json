@@ -2,137 +2,27 @@
   "name": "易",
   "appear_in_comps": [
     {
-      "cluster_id": "401029",
-      "comp_name": "TFT17_DRX, TFT17_Kindred",
-      "tier": "A",
-      "avg_placement": 4.4845
-    },
-    {
-      "cluster_id": "401016",
-      "comp_name": "TFT17_DRX, TFT17_Rammus",
-      "tier": "B",
-      "avg_placement": 4.6407
-    },
-    {
-      "cluster_id": "401031",
-      "comp_name": "TFT17_Mecha, TFT17_Galio",
-      "tier": "C",
-      "avg_placement": 4.8089
-    },
-    {
-      "cluster_id": "401040",
-      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
-      "tier": "C",
-      "avg_placement": 4.8334
-    },
-    {
-      "cluster_id": "401036",
-      "comp_name": "TFT17_PsyOps, TFT17_Pyke",
-      "tier": "C",
-      "avg_placement": 4.8839
-    },
-    {
-      "cluster_id": "401053",
-      "comp_name": "TFT17_PsyOps, TFT17_Viktor",
-      "tier": "D",
-      "avg_placement": 5.5278
+      "cluster_id": "b0e4c786a8fc51e0706762e2537c37fb",
+      "comp_name": "狂战士千珏",
+      "tier": "S",
+      "avg_placement": 3.02
     }
   ],
   "builds": [
     {
-      "cluster_id": "401029",
-      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "cluster_id": "b0e4c786a8fc51e0706762e2537c37fb",
+      "comp_name": "狂战士千珏",
       "items": [
         "夜之锋刃",
         "巨人杀手",
-        "正义之手"
-      ],
-      "avg_placement": 3.8465,
-      "count": 1166,
-      "priority_scores": {
-        "夜之锋刃": 100,
-        "巨人杀手": 85,
-        "正义之手": 72
-      }
-    },
-    {
-      "cluster_id": "401016",
-      "comp_name": "TFT17_DRX, TFT17_Rammus",
-      "items": [
-        "夜之锋刃",
-        "巨人杀手",
-        "正义之手"
-      ],
-      "avg_placement": 4.0432,
-      "count": 139,
-      "priority_scores": {
-        "夜之锋刃": 100,
-        "巨人杀手": 85,
-        "正义之手": 72
-      }
-    },
-    {
-      "cluster_id": "401031",
-      "comp_name": "TFT17_Mecha, TFT17_Galio",
-      "items": [
-        "饮血剑",
-        "水银",
-        "斯特拉克的挑战护手"
-      ],
-      "avg_placement": 3.3793,
-      "count": 87,
-      "priority_scores": {
-        "饮血剑": 100,
-        "水银": 85,
-        "斯特拉克的挑战护手": 72
-      }
-    },
-    {
-      "cluster_id": "401040",
-      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
-      "items": [
-        "恶意软件矩阵",
-        "夜之锋刃",
         "水银"
       ],
-      "avg_placement": 3.4902,
-      "count": 51,
+      "avg_placement": 3.02,
+      "count": 77772,
       "priority_scores": {
-        "恶意软件矩阵": 100,
-        "夜之锋刃": 85,
-        "水银": 72
-      }
-    },
-    {
-      "cluster_id": "401036",
-      "comp_name": "TFT17_PsyOps, TFT17_Pyke",
-      "items": [
-        "夜之锋刃",
-        "巨人杀手",
-        "正义之手"
-      ],
-      "avg_placement": 3.8333,
-      "count": 48,
-      "priority_scores": {
-        "夜之锋刃": 100,
-        "巨人杀手": 85,
-        "正义之手": 72
-      }
-    },
-    {
-      "cluster_id": "401053",
-      "comp_name": "TFT17_PsyOps, TFT17_Viktor",
-      "items": [
-        "饮血剑",
-        "巨人杀手",
-        "泰坦的坚决"
-      ],
-      "avg_placement": 4.3333,
-      "count": 15,
-      "priority_scores": {
-        "饮血剑": 100,
-        "巨人杀手": 85,
-        "泰坦的坚决": 72
+        "夜之锋刃": 90,
+        "巨人杀手": 90,
+        "水银": 90
       }
     }
   ]

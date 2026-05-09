@@ -13,6 +13,7 @@ import (
 
 type fakeKnowledgeTool struct {
 	getMetaCompByID func(req knowledge.Request) (knowledge.Response, error)
+	listMetaComps   func(req knowledge.Request) (knowledge.Response, error)
 }
 
 func (f *fakeKnowledgeTool) QueryNLU(req knowledge.QueryRequest) (knowledge.QueryResponse, error) {
@@ -39,6 +40,17 @@ func (f *fakeKnowledgeTool) GetAllMetaComps(req knowledge.Request) (knowledge.Re
 	return nil, nil
 }
 
+func (f *fakeKnowledgeTool) ListMetaComps(req knowledge.Request) (knowledge.Response, error) {
+	if f.listMetaComps != nil {
+		return f.listMetaComps(req)
+	}
+	return nil, nil
+}
+
+func (f *fakeKnowledgeTool) GetCompPlan(req knowledge.Request) (knowledge.Response, error) {
+	return nil, nil
+}
+
 func (f *fakeKnowledgeTool) GetMetaChampionByName(req knowledge.Request) (knowledge.Response, error) {
 	return nil, nil
 }
@@ -47,11 +59,23 @@ func (f *fakeKnowledgeTool) GetAllMetaChampions(req knowledge.Request) (knowledg
 	return nil, nil
 }
 
+func (f *fakeKnowledgeTool) GetChampionBuilds(req knowledge.Request) (knowledge.Response, error) {
+	return nil, nil
+}
+
 func (f *fakeKnowledgeTool) GetMetaItemByName(req knowledge.Request) (knowledge.Response, error) {
 	return nil, nil
 }
 
 func (f *fakeKnowledgeTool) GetAllMetaItems(req knowledge.Request) (knowledge.Response, error) {
+	return nil, nil
+}
+
+func (f *fakeKnowledgeTool) GetItemFits(req knowledge.Request) (knowledge.Response, error) {
+	return nil, nil
+}
+
+func (f *fakeKnowledgeTool) GetTraitInsight(req knowledge.Request) (knowledge.Response, error) {
 	return nil, nil
 }
 
@@ -86,6 +110,8 @@ func TestAdapter_ListTools(t *testing.T) {
 
 	require.NotEmpty(t, tools)
 	assert.Equal(t, "query_nlu", tools[0].Name)
+	assert.Contains(t, toolNames(tools), "tft_list_meta_comps")
+	assert.Contains(t, toolNames(tools), "tft_get_comp_plan")
 }
 
 func TestAdapter_QueryNLUSchemaIncludesVerticalFields(t *testing.T) {
@@ -129,4 +155,41 @@ func TestAdapter_CallTool(t *testing.T) {
 	require.NotNil(t, resp.Comp)
 	assert.Equal(t, "394014", resp.Comp.ClusterID)
 	assert.Equal(t, "S", resp.Comp.Tier)
+}
+
+func TestAdapter_CallSemanticTool(t *testing.T) {
+	tool := &fakeKnowledgeTool{
+		listMetaComps: func(req knowledge.Request) (knowledge.Response, error) {
+			var request contracts.ListMetaCompsRequest
+			err := json.Unmarshal(req, &request)
+			require.NoError(t, err)
+			assert.Equal(t, 2, request.Limit)
+
+			respBytes, err := json.Marshal(contracts.ListMetaCompsResponse{
+				Metadata: &contracts.KnowledgeMetadata{Source: "MetaTFT", SampleCount: 100},
+				Comps: []map[string]any{
+					{"name": "狂战士千珏", "tier": "S"},
+				},
+			})
+			require.NoError(t, err)
+			return knowledge.Response(respBytes), nil
+		},
+	}
+	adapter := NewAdapter(tool)
+
+	result, err := adapter.CallTool(context.Background(), "tft_list_meta_comps", json.RawMessage(`{"limit":2}`))
+
+	require.NoError(t, err)
+	var resp contracts.ListMetaCompsResponse
+	require.NoError(t, json.Unmarshal(result, &resp))
+	require.Len(t, resp.Comps, 1)
+	assert.Equal(t, "狂战士千珏", resp.Comps[0]["name"])
+}
+
+func toolNames(tools []ToolDefinition) []string {
+	names := make([]string, 0, len(tools))
+	for _, tool := range tools {
+		names = append(names, tool.Name)
+	}
+	return names
 }

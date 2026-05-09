@@ -2,51 +2,27 @@
   "name": "泰隆",
   "appear_in_comps": [
     {
-      "cluster_id": "401014",
-      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
-      "tier": "A",
-      "avg_placement": 4.3245
-    },
-    {
-      "cluster_id": "401020",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
-      "tier": "A",
-      "avg_placement": 4.4852
-    },
-    {
-      "cluster_id": "401028",
-      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Xayah",
-      "tier": "B",
-      "avg_placement": 4.7262
-    },
-    {
-      "cluster_id": "401027",
-      "comp_name": "TFT17_AssassinTrait, TFT17_Riven",
-      "tier": "B",
-      "avg_placement": 4.7637
-    },
-    {
-      "cluster_id": "401048",
-      "comp_name": "TFT17_APTrait, TFT17_Lulu, TFT17_ResistTank",
-      "tier": "D",
-      "avg_placement": 5.1697
+      "cluster_id": "3d430c9c1fc15b3a22e3e6f8a92426a6",
+      "comp_name": "织命人崔斯特",
+      "tier": "S",
+      "avg_placement": 3.16
     }
   ],
   "builds": [
     {
-      "cluster_id": "401014",
-      "comp_name": "TFT17_Fateweaver, TFT17_TwistedFate",
+      "cluster_id": "3d430c9c1fc15b3a22e3e6f8a92426a6",
+      "comp_name": "织命人崔斯特",
       "items": [
         "夜之锋刃",
         "海克斯科技枪刃",
         "朔极之矛"
       ],
-      "avg_placement": 3.7906,
-      "count": 4041,
+      "avg_placement": 3.16,
+      "count": 83052,
       "priority_scores": {
-        "夜之锋刃": 100,
-        "海克斯科技枪刃": 85,
-        "朔极之矛": 72
+        "夜之锋刃": 80,
+        "海克斯科技枪刃": 80,
+        "朔极之矛": 80
       }
     }
   ]

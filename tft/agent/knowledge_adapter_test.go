@@ -55,6 +55,14 @@ func (m *mockTool) GetAllMetaComps(req knowledge.Request) (knowledge.Response, e
 	return nil, nil
 }
 
+func (m *mockTool) ListMetaComps(req knowledge.Request) (knowledge.Response, error) {
+	return nil, nil
+}
+
+func (m *mockTool) GetCompPlan(req knowledge.Request) (knowledge.Response, error) {
+	return nil, nil
+}
+
 func (m *mockTool) GetMetaChampionByName(req knowledge.Request) (knowledge.Response, error) {
 	return nil, nil
 }
@@ -63,11 +71,23 @@ func (m *mockTool) GetAllMetaChampions(req knowledge.Request) (knowledge.Respons
 	return nil, nil
 }
 
+func (m *mockTool) GetChampionBuilds(req knowledge.Request) (knowledge.Response, error) {
+	return nil, nil
+}
+
 func (m *mockTool) GetMetaItemByName(req knowledge.Request) (knowledge.Response, error) {
 	return nil, nil
 }
 
 func (m *mockTool) GetAllMetaItems(req knowledge.Request) (knowledge.Response, error) {
+	return nil, nil
+}
+
+func (m *mockTool) GetItemFits(req knowledge.Request) (knowledge.Response, error) {
+	return nil, nil
+}
+
+func (m *mockTool) GetTraitInsight(req knowledge.Request) (knowledge.Response, error) {
 	return nil, nil
 }
 

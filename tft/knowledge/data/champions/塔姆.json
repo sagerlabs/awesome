@@ -2,233 +2,49 @@
   "name": "塔姆",
   "appear_in_comps": [
     {
-      "cluster_id": "401008",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
-      "tier": "A",
-      "avg_placement": 4.3744
+      "cluster_id": "b0e4c786a8fc51e0706762e2537c37fb",
+      "comp_name": "狂战士千珏",
+      "tier": "S",
+      "avg_placement": 3.02
     },
     {
-      "cluster_id": "401029",
-      "comp_name": "TFT17_DRX, TFT17_Kindred",
-      "tier": "A",
-      "avg_placement": 4.4845
-    },
-    {
-      "cluster_id": "401020",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
-      "tier": "A",
-      "avg_placement": 4.4852
-    },
-    {
-      "cluster_id": "401012",
-      "comp_name": "TFT17_DarkStar, TFT17_Karma",
-      "tier": "A",
-      "avg_placement": 4.5082
-    },
-    {
-      "cluster_id": "401013",
-      "comp_name": "TFT17_DarkStar, TFT17_Nunu",
-      "tier": "B",
-      "avg_placement": 4.5209
-    },
-    {
-      "cluster_id": "401035",
-      "comp_name": "TFT17_Mecha, TFT17_AurelionSol",
-      "tier": "B",
-      "avg_placement": 4.6683
-    },
-    {
-      "cluster_id": "401024",
-      "comp_name": "TFT17_HPTank, TFT17_Chogath",
-      "tier": "C",
-      "avg_placement": 4.79
-    },
-    {
-      "cluster_id": "401037",
-      "comp_name": "TFT17_HPTank, TFT17_TahmKench",
-      "tier": "C",
-      "avg_placement": 4.7974
-    },
-    {
-      "cluster_id": "401031",
-      "comp_name": "TFT17_Mecha, TFT17_Galio",
-      "tier": "C",
-      "avg_placement": 4.8089
-    },
-    {
-      "cluster_id": "401040",
-      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
-      "tier": "C",
-      "avg_placement": 4.8334
-    },
-    {
-      "cluster_id": "401043",
-      "comp_name": "TFT17_Timebreaker, TFT17_Ezreal",
-      "tier": "D",
-      "avg_placement": 5.414
-    },
-    {
-      "cluster_id": "401053",
-      "comp_name": "TFT17_PsyOps, TFT17_Viktor",
-      "tier": "D",
-      "avg_placement": 5.5278
-    },
-    {
-      "cluster_id": "401054",
-      "comp_name": "TFT17_ADMIN, TFT17_Diana",
-      "tier": "D",
-      "avg_placement": 5.5805
-    },
-    {
-      "cluster_id": "401055",
-      "comp_name": "TFT17_AnimaSquad, TFT17_Jinx",
-      "tier": "D",
-      "avg_placement": 6.2252
+      "cluster_id": "94cb23447f940384d13a7c640c2f2c10",
+      "comp_name": "暗星卡尔玛",
+      "tier": "S",
+      "avg_placement": 3.41
     }
   ],
   "builds": [
     {
-      "cluster_id": "401008",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "cluster_id": "b0e4c786a8fc51e0706762e2537c37fb",
+      "comp_name": "狂战士千珏",
+      "items": [
+        "日炎斗篷",
+        "振奋盔甲",
+        "薄暮法袍"
+      ],
+      "avg_placement": 3.02,
+      "count": 77772,
+      "priority_scores": {
+        "日炎斗篷": 80,
+        "振奋盔甲": 80,
+        "薄暮法袍": 80
+      }
+    },
+    {
+      "cluster_id": "94cb23447f940384d13a7c640c2f2c10",
+      "comp_name": "暗星卡尔玛",
       "items": [
         "日炎斗篷",
         "振奋盔甲",
         "狂徒铠甲"
       ],
-      "avg_placement": 3.6778,
-      "count": 748,
+      "avg_placement": 3.41,
+      "count": 31489,
       "priority_scores": {
-        "日炎斗篷": 100,
-        "振奋盔甲": 85,
-        "狂徒铠甲": 72
-      }
-    },
-    {
-      "cluster_id": "401029",
-      "comp_name": "TFT17_DRX, TFT17_Kindred",
-      "items": [
-        "圣盾使的誓约",
-        "日炎斗篷",
-        "振奋盔甲"
-      ],
-      "avg_placement": 3.7405,
-      "count": 898,
-      "priority_scores": {
-        "圣盾使的誓约": 100,
-        "日炎斗篷": 85,
-        "振奋盔甲": 72
-      }
-    },
-    {
-      "cluster_id": "401020",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
-      "items": [
-        "棘刺背心",
-        "巨龙之爪",
-        "日炎斗篷"
-      ],
-      "avg_placement": 3.4815,
-      "count": 54,
-      "priority_scores": {
-        "棘刺背心": 100,
-        "巨龙之爪": 85,
-        "日炎斗篷": 72
-      }
-    },
-    {
-      "cluster_id": "401012",
-      "comp_name": "TFT17_DarkStar, TFT17_Karma",
-      "items": [
-        "圣盾使的誓约",
-        "石像鬼石板甲",
-        "狂徒铠甲"
-      ],
-      "avg_placement": 3.8614,
-      "count": 166,
-      "priority_scores": {
-        "圣盾使的誓约": 100,
-        "石像鬼石板甲": 85,
-        "狂徒铠甲": 72
-      }
-    },
-    {
-      "cluster_id": "401035",
-      "comp_name": "TFT17_Mecha, TFT17_AurelionSol",
-      "items": [
-        "日炎斗篷",
-        "振奋盔甲",
-        "狂徒铠甲"
-      ],
-      "avg_placement": 3.5088,
-      "count": 283,
-      "priority_scores": {
-        "日炎斗篷": 100,
-        "振奋盔甲": 85,
-        "狂徒铠甲": 72
-      }
-    },
-    {
-      "cluster_id": "401027",
-      "comp_name": "TFT17_AssassinTrait, TFT17_Riven",
-      "items": [
-        "巨龙之爪",
-        "日炎斗篷",
-        "狂徒铠甲"
-      ],
-      "avg_placement": 3.6667,
-      "count": 18,
-      "priority_scores": {
-        "巨龙之爪": 100,
-        "日炎斗篷": 85,
-        "狂徒铠甲": 72
-      }
-    },
-    {
-      "cluster_id": "401037",
-      "comp_name": "TFT17_HPTank, TFT17_TahmKench",
-      "items": [
-        "圣盾使的誓约",
-        "振奋盔甲",
-        "狂徒铠甲"
-      ],
-      "avg_placement": 3.7376,
-      "count": 221,
-      "priority_scores": {
-        "圣盾使的誓约": 100,
-        "振奋盔甲": 85,
-        "狂徒铠甲": 72
-      }
-    },
-    {
-      "cluster_id": "401040",
-      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
-      "items": [
-        "巨龙之爪",
-        "振奋盔甲",
-        "狂徒铠甲"
-      ],
-      "avg_placement": 3.4717,
-      "count": 53,
-      "priority_scores": {
-        "巨龙之爪": 100,
-        "振奋盔甲": 85,
-        "狂徒铠甲": 72
-      }
-    },
-    {
-      "cluster_id": "401053",
-      "comp_name": "TFT17_PsyOps, TFT17_Viktor",
-      "items": [
-        "巨龙之爪",
-        "日炎斗篷",
-        "狂徒铠甲"
-      ],
-      "avg_placement": 4.5882,
-      "count": 17,
-      "priority_scores": {
-        "巨龙之爪": 100,
-        "日炎斗篷": 85,
-        "狂徒铠甲": 72
+        "日炎斗篷": 80,
+        "振奋盔甲": 80,
+        "狂徒铠甲": 80
       }
     }
   ]

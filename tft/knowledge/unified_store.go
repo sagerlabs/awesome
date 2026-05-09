@@ -70,6 +70,7 @@ func (s *UnifiedStore) QueryNLU(req QueryRequest) (QueryResponse, error) {
 	// 3. 如果启用Meta数据，补充Meta数据
 	if s.config.EnableMeta && s.knowledgeStore != nil {
 		s.internalEnrichWithMetaData(result, normalizedCtx)
+		result.Metadata = s.buildKnowledgeMetadata()
 	}
 
 	// 4. Marshal响应：contract response → []byte
@@ -204,6 +205,7 @@ func enrichCompSummaryWithMeta(summary contracts.CompSummary, metaComp *models.M
 	if metaComp.Count != 0 {
 		summary.Count = metaComp.Count
 	}
+	summary.Metadata = metadataFromMetaComp(metaComp)
 	if len(metaComp.Units) > 0 {
 		summary.Units = cloneStrings(metaComp.Units)
 	}
@@ -223,6 +225,7 @@ func enrichCompSummaryWithMeta(summary contracts.CompSummary, metaComp *models.M
 		summary.BestBuild = metaBuildToBuildInfo(metaComp.Builds[0])
 		summary.AllBuilds = metaBuildsToBuildInfos(metaComp.Builds)
 	}
+	summary.Plan = compPlanFromMetaComp(metaComp)
 
 	return summary
 }
