@@ -165,7 +165,7 @@ func (s *UnifiedStore) buildChampionInsights(ctx contracts.QueryNLURequest) []co
 			}
 		}
 
-		insight := s.buildChampionInsight(champion, cost)
+		insight := s.buildChampionInsight(champion, cost, ctx)
 		if role == "carry" && insight.CarryScore <= 0 {
 			continue
 		}
@@ -199,7 +199,7 @@ func normalizeChampionName(name string) string {
 	return strings.ToLower(strings.TrimSpace(name))
 }
 
-func (s *UnifiedStore) buildChampionInsight(champion *models.MetaChampion, cost int) contracts.ChampionInsight {
+func (s *UnifiedStore) buildChampionInsight(champion *models.MetaChampion, cost int, ctx contracts.QueryNLURequest) contracts.ChampionInsight {
 	insight := contracts.ChampionInsight{
 		Name:             champion.Name,
 		Cost:             cost,
@@ -224,6 +224,7 @@ func (s *UnifiedStore) buildChampionInsight(champion *models.MetaChampion, cost 
 	})
 	insight.BestBuilds = limitBuildInfos(builds, 3)
 	insight.BestComps = s.bestCompsForChampion(champion, 3)
+	insight.WorkScore, insight.WorkReason = scoreWorkValue(cost, insight, ctx)
 
 	if insight.CarryScore >= insight.TankScore && insight.CarryScore > 0 {
 		insight.Role = "主C"
@@ -235,6 +236,9 @@ func (s *UnifiedStore) buildChampionInsight(champion *models.MetaChampion, cost 
 	}
 	if insight.CarryScore > 0 && insight.TankScore > 0 {
 		insight.Tags = append(insight.Tags, "可摇摆")
+	}
+	if insight.WorkScore > 0 {
+		insight.Tags = append(insight.Tags, "可打工")
 	}
 
 	return insight
@@ -356,6 +360,10 @@ func championInsightLess(a contracts.ChampionInsight, b contracts.ChampionInsigh
 		if a.TankScore != b.TankScore {
 			return a.TankScore > b.TankScore
 		}
+	case "work":
+		if a.WorkScore != b.WorkScore {
+			return a.WorkScore > b.WorkScore
+		}
 	default:
 		aScore := a.CarryScore + a.TankScore
 		bScore := b.CarryScore + b.TankScore
@@ -367,6 +375,54 @@ func championInsightLess(a contracts.ChampionInsight, b contracts.ChampionInsigh
 		return a.BestAvgPlacement < b.BestAvgPlacement
 	}
 	return a.Name < b.Name
+}
+
+func scoreWorkValue(cost int, insight contracts.ChampionInsight, ctx contracts.QueryNLURequest) (float64, string) {
+	score := 0.0
+	reasons := make([]string, 0, 4)
+
+	if cost > 0 {
+		switch {
+		case cost <= 1:
+			score += 40
+			reasons = append(reasons, "1费好抓，适合二阶段临时过渡")
+		case cost == 2:
+			score += 34
+			reasons = append(reasons, "2费二阶段能自然嫖到，过渡稳定性不错")
+		case cost == 3:
+			score += 18
+			reasons = append(reasons, "3费更偏三阶段后接力，二阶段不能稳定指望")
+		default:
+			score += 6
+			reasons = append(reasons, "高费卡更偏成型组件，不适合作为二阶段打工基准")
+		}
+	}
+
+	if insight.BestAvgPlacement > 0 && insight.BestAvgPlacement <= 4.35 {
+		score += 14
+		reasons = append(reasons, "能接到数据较好的强势阵容")
+	} else if insight.BestAvgPlacement > 0 && insight.BestAvgPlacement <= 4.75 {
+		score += 8
+		reasons = append(reasons, "有可用阵容承接")
+	}
+
+	if len(insight.BestComps) > 0 {
+		score += 8
+	}
+	if insight.CarryScore > 0 || insight.TankScore > 0 {
+		score += 6
+		reasons = append(reasons, "有装备承载记录，可以先拿来稳血")
+	}
+
+	if ctx.GameStage != nil && strings.Contains(*ctx.GameStage, "2") && cost >= 3 {
+		score -= 10
+		reasons = append(reasons, "但二阶段商店不稳定，不要把它当主要打工计划")
+	}
+
+	if len(reasons) == 0 {
+		return score, ""
+	}
+	return score, strings.Join(reasons, "；")
 }
 
 func sortCompSummariesByAvg(comps []contracts.CompSummary) {

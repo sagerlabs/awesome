@@ -27,6 +27,8 @@ type AgentConfig struct {
 	EnableTrace bool
 	// GraphRuntime 注入静态 Graph 的可变依赖，nil 时使用默认 runtime
 	GraphRuntime *GraphRuntime
+	// FeedbackCasesPath rejected feedback 样本记录文件，空值使用 docs/FEEDBACK_CASES.md
+	FeedbackCasesPath string
 }
 
 // defaultLLMTimeout 从环境变量读超时，兜底 60s
@@ -49,6 +51,8 @@ type Agent struct {
 	logger            *logrus.Logger
 	traceOpts         []compose.Option // 链路追踪 callback，每次调用时注入
 	graphRuntime      *GraphRuntime
+	feedbackMemory    *FeedbackMemory
+	feedbackCasesPath string
 }
 
 // NewAgent 使用默认配置初始化 Agent
@@ -132,6 +136,8 @@ func NewAgentWithConfig(ctx context.Context, store *data.Store, cfg *AgentConfig
 		logger:            logger,
 		traceOpts:         traceOpts,
 		graphRuntime:      graphRuntime,
+		feedbackMemory:    NewFeedbackMemory(),
+		feedbackCasesPath: cfg.FeedbackCasesPath,
 	}, nil
 }
 
@@ -245,7 +251,7 @@ func (a *Agent) NluAnalyze(ctx context.Context, rawInput string) (
 		ark.WithThinking(&ark.Thinking{
 			Type: arkModel.ThinkingTypeDisabled,
 		})))
-	result, err := a.nluRunnable.Invoke(llmCtx, &NluContext{UserInput: rawInput}, opts...)
+	result, err := a.nluRunnable.Invoke(llmCtx, a.newNluContext(rawInput), opts...)
 	if err != nil {
 		a.logger.WithError(err).WithFields(logrus.Fields{
 			"trace_id": traceID,
@@ -277,7 +283,7 @@ func (a *Agent) NluAnalyzeStream(ctx context.Context, rawInput string) (
 		ark.WithThinking(&ark.Thinking{
 			Type: arkModel.ThinkingTypeDisabled,
 		})))
-	sr, err := a.nluStreamRunnable.Stream(llmCtx, &NluContext{UserInput: rawInput}, opts...)
+	sr, err := a.nluStreamRunnable.Stream(llmCtx, a.newNluContext(rawInput), opts...)
 	if err != nil {
 		cancel()
 		a.logger.WithError(err).WithField("elapsed", time.Since(start).String()).Error("NLU流式推理启动失败")
@@ -298,6 +304,60 @@ func (a *Agent) NluAnalyzeStream(ctx context.Context, rawInput string) (
 
 	_ = cancel
 	return converted, nil
+}
+
+// NluAdvice 返回主 NLU 链路的完整自然语言回答，适合 Wails 等不需要 SSE 的桌面调用。
+func (a *Agent) NluAdvice(ctx context.Context, rawInput string) (string, error) {
+	traceID, _ := trace.TraceIDFromContext(ctx)
+	llmCtx, cancel := a.withLLMTimeout(ctx)
+	defer cancel()
+
+	start := time.Now()
+	opts := append(a.traceOpts, compose.WithChatModelOption(
+		ark.WithThinking(&ark.Thinking{
+			Type: arkModel.ThinkingTypeDisabled,
+		})))
+	msg, err := a.nluStreamRunnable.Invoke(llmCtx, a.newNluContext(rawInput), opts...)
+	if err != nil {
+		a.logger.WithError(err).WithFields(logrus.Fields{
+			"trace_id": traceID,
+			"elapsed":  time.Since(start).String(),
+		}).Error("NLU完整推理失败")
+		return "", fmt.Errorf("nlu advice: %w", err)
+	}
+	if msg == nil {
+		return "", nil
+	}
+
+	a.logger.WithFields(logrus.Fields{
+		"trace_id":     traceID,
+		"elapsed":      time.Since(start).Round(time.Millisecond).String(),
+		"output_chars": len([]rune(msg.Content)),
+	}).Debug("NLU完整推理完成")
+	a.RecordAdvice(rawInput, msg.Content, "")
+	return msg.Content, nil
+}
+
+func (a *Agent) newNluContext(rawInput string) *NluContext {
+	ctx := &NluContext{UserInput: rawInput}
+	if a == nil || a.feedbackMemory == nil {
+		return ctx
+	}
+	feedback := a.feedbackMemory.Detect(rawInput)
+	ctx.Feedback = feedback
+	if feedback != nil && feedback.Type == FeedbackRejected {
+		if err := AppendFeedbackCase(a.feedbackCasesPath, rawInput, feedback.LastAdviceSummary, feedback); err != nil && a.logger != nil {
+			a.logger.WithError(err).Warn("记录 feedback case 失败")
+		}
+	}
+	return ctx
+}
+
+func (a *Agent) RecordAdvice(userInput string, advice string, intent string) {
+	if a == nil || a.feedbackMemory == nil {
+		return
+	}
+	a.feedbackMemory.Record(userInput, advice, intent)
 }
 
 func (a *Agent) computeRecommendations(ctx context.Context, rawInput string) ([]data.Recommendation, error) {

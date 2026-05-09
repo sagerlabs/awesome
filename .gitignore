@@ -14,6 +14,10 @@ bin/
 # Go local cache
 vendor/
 
+# Python cache
+__pycache__/
+*.py[cod]
+
 # 数据文件（爬虫生成，不提交到仓库）
 metadata/tft-meta/data/*.json
 release/

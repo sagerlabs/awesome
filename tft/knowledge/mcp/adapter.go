@@ -51,8 +51,18 @@ func (a *Adapter) CallTool(ctx context.Context, name string, args json.RawMessag
 	)
 
 	switch name {
-	case "query_nlu":
+	case "query_nlu", "tft_query_nlu":
 		resp, err = a.tool.QueryNLU(knowledge.QueryRequest(args))
+	case "tft_list_meta_comps":
+		resp, err = a.tool.ListMetaComps(knowledge.Request(args))
+	case "tft_get_comp_plan":
+		resp, err = a.tool.GetCompPlan(knowledge.Request(args))
+	case "tft_get_champion_builds":
+		resp, err = a.tool.GetChampionBuilds(knowledge.Request(args))
+	case "tft_get_item_fits":
+		resp, err = a.tool.GetItemFits(knowledge.Request(args))
+	case "tft_get_trait_insight":
+		resp, err = a.tool.GetTraitInsight(knowledge.Request(args))
 	case "get_comp_by_id":
 		resp, err = a.tool.GetCompByID(knowledge.Request(args))
 	case "get_meta_comp_by_id":
@@ -102,6 +112,73 @@ func defaultToolDefinitions() []ToolDefinition {
 				"unit_cost":       nullableIntegerSchema(),
 				"role_query":      stringSchema(),
 			}, nil),
+		},
+		{
+			Name:        "tft_query_nlu",
+			Description: "Query TFT knowledge with Chinese NLU context and return matched comps, items, champions, traits, metadata, and patch notes.",
+			InputSchema: objectSchema(map[string]any{
+				"intent":          stringSchema(),
+				"champions":       mapSchema("integer"),
+				"items":           arraySchema("string"),
+				"traits":          arraySchema("string"),
+				"augments":        arraySchema("string"),
+				"explicit_lineup": nullableStringSchema(),
+				"inferred_lineup": stringSchema(),
+				"playstyle":       stringSchema(),
+				"game_stage":      nullableStringSchema(),
+				"gold":            nullableIntegerSchema(),
+				"level":           nullableIntegerSchema(),
+				"hp":              nullableIntegerSchema(),
+				"unit_cost":       nullableIntegerSchema(),
+				"role_query":      stringSchema(),
+			}, nil),
+		},
+		{
+			Name:        "tft_list_meta_comps",
+			Description: "List strongest TFT meta comps with version metadata and optional field projection.",
+			InputSchema: objectSchema(map[string]any{
+				"tier":                  stringSchema(),
+				"tiers":                 arraySchema("string"),
+				"limit":                 integerSchema(),
+				"offset":                integerSchema(),
+				"desired_output_fields": arraySchema("string"),
+			}, nil),
+		},
+		{
+			Name:        "tft_get_comp_plan",
+			Description: "Get a TFT comp board plan by cluster ID or comp name, including final board and optional early/middle boards.",
+			InputSchema: objectSchema(map[string]any{
+				"cluster_id":            stringSchema(),
+				"name":                  stringSchema(),
+				"desired_output_fields": arraySchema("string"),
+			}, nil),
+		},
+		{
+			Name:        "tft_get_champion_builds",
+			Description: "Get a TFT champion's common builds and strongest comp appearances.",
+			InputSchema: objectSchema(map[string]any{
+				"name":                  stringSchema(),
+				"limit":                 integerSchema(),
+				"desired_output_fields": arraySchema("string"),
+			}, []string{"name"}),
+		},
+		{
+			Name:        "tft_get_item_fits",
+			Description: "Get comps, carries, and priority scores for a TFT item.",
+			InputSchema: objectSchema(map[string]any{
+				"name":                  stringSchema(),
+				"limit":                 integerSchema(),
+				"desired_output_fields": arraySchema("string"),
+			}, []string{"name"}),
+		},
+		{
+			Name:        "tft_get_trait_insight",
+			Description: "Get representative comps, common units, and activations for a TFT trait.",
+			InputSchema: objectSchema(map[string]any{
+				"name":                  stringSchema(),
+				"limit":                 integerSchema(),
+				"desired_output_fields": arraySchema("string"),
+			}, []string{"name"}),
 		},
 		{
 			Name:        "get_comp_by_id",

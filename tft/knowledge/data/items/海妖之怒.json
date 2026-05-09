@@ -2,28 +2,28 @@
   "name": "海妖之怒",
   "priority_list": [
     {
-      "cluster_id": "401007",
-      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
+      "comp_name": "木灵族霞",
       "comp_tier": "S",
-      "comp_avg": 4.183,
+      "comp_avg": 2.88,
+      "carry": "霞",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "b0e4c786a8fc51e0706762e2537c37fb",
+      "comp_name": "狂战士千珏",
+      "comp_tier": "S",
+      "comp_avg": 3.02,
+      "carry": "千珏",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "8f5d84cf55194702e441031fe21eb88f",
+      "comp_name": "海魔人贝蕾亚",
+      "comp_tier": "S",
+      "comp_avg": 3.44,
       "carry": "卑尔维斯",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "401007",
-      "comp_name": "TFT17_DRX, TFT17_Belveth",
-      "comp_tier": "S",
-      "comp_avg": 4.183,
-      "carry": "千珏",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "401029",
-      "comp_name": "TFT17_DRX, TFT17_Kindred",
-      "comp_tier": "A",
-      "comp_avg": 4.4845,
-      "carry": "千珏",
-      "priority_score": 72
+      "priority_score": 90
     }
   ]
 }

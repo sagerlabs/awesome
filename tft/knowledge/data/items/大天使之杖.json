@@ -2,12 +2,28 @@
   "name": "大天使之杖",
   "priority_list": [
     {
-      "cluster_id": "401000",
-      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "cluster_id": "86c70a8a7c98ca5a2e20a5ae52ecce0b",
+      "comp_name": "重装战士提莫",
       "comp_tier": "S",
-      "comp_avg": 3.9764,
+      "comp_avg": 2.38,
+      "carry": "提莫",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "55972c44f51aad6861e8cf2def3cde7d",
+      "comp_name": "牧羊人维克托",
+      "comp_tier": "S",
+      "comp_avg": 3.52,
       "carry": "维克托",
-      "priority_score": 85
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "4c75d7eb9d6742103cffd95b46309ba9",
+      "comp_name": "观星者璐璐",
+      "comp_tier": "S",
+      "comp_avg": 3,
+      "carry": "米利欧",
+      "priority_score": 80
     }
   ]
 }

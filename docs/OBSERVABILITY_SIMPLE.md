@@ -212,6 +212,8 @@ INFO[0056] 请求结束   trace_id=abc-123 elapsed=55.123s success=true
 ✅ Trace ID生成和传递  
 ✅ 所有日志包含trace_id  
 ✅ 节点级链路追踪
+✅ NLU日志记录 `fast_nlu_hit`、`nlu_provider`、`llm_calls`、intent 和命中数量
+✅ 流式 Trace Callback 不再消费业务流，避免 TRACE=true 时影响 SSE 输出
 
 ### 第二阶段
 📊 Token使用统计  

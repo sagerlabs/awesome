@@ -2,20 +2,12 @@
   "name": "饮血剑",
   "priority_list": [
     {
-      "cluster_id": "401005",
-      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
-      "comp_tier": "A",
-      "comp_avg": 4.4656,
-      "carry": "锐雯",
+      "cluster_id": "8f5d84cf55194702e441031fe21eb88f",
+      "comp_name": "海魔人贝蕾亚",
+      "comp_tier": "S",
+      "comp_avg": 3.44,
+      "carry": "贝蕾亚",
       "priority_score": 100
-    },
-    {
-      "cluster_id": "401008",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
-      "comp_tier": "A",
-      "comp_avg": 4.3744,
-      "carry": "锐雯",
-      "priority_score": 85
     }
   ]
 }

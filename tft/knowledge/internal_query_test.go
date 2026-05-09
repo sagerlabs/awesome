@@ -452,6 +452,85 @@ func TestUnifiedStoreQueryNLU_BuildsVerticalChampionInsights(t *testing.T) {
 	}
 }
 
+func TestUnifiedStoreQueryNLU_SortsWorkQueryByWorkScore(t *testing.T) {
+	dataStore := data.NewStoreFromRaw(nil, data.ItemsFile{}, data.LocalizationFile{IDToCN: map[string]string{}, CNToID: map[string]string{}})
+	knowledgeStore := NewStore()
+	knowledgeStore.AddChampionProfile("亚托克斯", &models.ChampionProfile{Cost: 1})
+	knowledgeStore.AddChampionProfile("乐芙兰", &models.ChampionProfile{Cost: 4})
+	knowledgeStore.AddMetaComp(&models.MetaComp{
+		ClusterID:    "401007",
+		DisplayNames: []models.DisplayName{{Name: "海魔人"}, {Name: "卑尔维斯"}},
+		Tier:         "S",
+		AvgPlacement: 4.18,
+		Top4Rate:     0.58,
+		WinRate:      0.10,
+		Units:        []string{"亚托克斯", "卑尔维斯"},
+	})
+	knowledgeStore.AddMetaComp(&models.MetaComp{
+		ClusterID:    "401050",
+		DisplayNames: []models.DisplayName{{Name: "法官"}, {Name: "乐芙兰"}},
+		Tier:         "S",
+		AvgPlacement: 3.80,
+		Top4Rate:     0.63,
+		WinRate:      0.20,
+		Units:        []string{"乐芙兰"},
+	})
+	knowledgeStore.AddMetaChampion(&models.MetaChampion{
+		Name: "亚托克斯",
+		AppearInComps: []models.CompAppearance{
+			{ClusterID: "401007", CompName: "海魔人、卑尔维斯", Tier: "S", AvgPlacement: 4.18},
+		},
+		Builds: []models.ChampionBuild{
+			{ClusterID: "401007", Items: []string{"饮血剑", "泰坦的坚决"}, AvgPlacement: 4.10},
+		},
+	})
+	knowledgeStore.AddMetaChampion(&models.MetaChampion{
+		Name: "乐芙兰",
+		AppearInComps: []models.CompAppearance{
+			{ClusterID: "401050", CompName: "法官、乐芙兰", Tier: "S", AvgPlacement: 3.80},
+		},
+		Builds: []models.ChampionBuild{
+			{ClusterID: "401050", Items: []string{"珠光护手", "朔极之矛"}, AvgPlacement: 3.70},
+		},
+	})
+
+	store, err := NewUnifiedStore(dataStore, knowledgeStore, &ToolConfig{EnableMeta: true})
+	if err != nil {
+		t.Fatalf("NewUnifiedStore failed: %v", err)
+	}
+	stage := "2阶段"
+	req, err := json.Marshal(contracts.QueryNLURequest{
+		Intent:    "vertical_query",
+		RoleQuery: "work",
+		GameStage: &stage,
+	})
+	if err != nil {
+		t.Fatalf("marshal request failed: %v", err)
+	}
+
+	respBytes, err := store.QueryNLU(req)
+	if err != nil {
+		t.Fatalf("QueryNLU failed: %v", err)
+	}
+	var resp contracts.QueryNLUResponse
+	if err := json.Unmarshal(respBytes, &resp); err != nil {
+		t.Fatalf("unmarshal response failed: %v", err)
+	}
+
+	if len(resp.MatchedChampions) < 2 {
+		t.Fatalf("expected work champion insights, got %#v", resp.MatchedChampions)
+	}
+	if resp.MatchedChampions[0].Name != "亚托克斯" {
+		t.Fatalf("expected 1-cost work unit first, got %#v", resp.MatchedChampions)
+	}
+	if resp.MatchedChampions[0].WorkScore <= resp.MatchedChampions[1].WorkScore {
+		t.Fatalf("expected work score ordering, got %#v", resp.MatchedChampions)
+	}
+	if resp.MatchedChampions[0].WorkReason == "" {
+		t.Fatalf("expected work reason")
+	}
+}
+
 func TestUnifiedStoreQueryNLU_AttachesRelevantPatchNotes(t *testing.T) {
 	dataStore := data.NewStoreFromRaw(nil, data.ItemsFile{}, data.LocalizationFile{IDToCN: map[string]string{}, CNToID: map[string]string{}})
 	knowledgeStore := NewStore()

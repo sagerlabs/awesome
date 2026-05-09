@@ -2,107 +2,33 @@
   "name": "巴德",
   "appear_in_comps": [
     {
-      "cluster_id": "401006",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
-      "tier": "A",
-      "avg_placement": 4.3396
+      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
+      "comp_name": "木灵族霞",
+      "tier": "S",
+      "avg_placement": 2.88
     },
     {
-      "cluster_id": "401015",
-      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
-      "tier": "A",
-      "avg_placement": 4.4022
-    },
-    {
-      "cluster_id": "401005",
-      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
-      "tier": "A",
-      "avg_placement": 4.4656
-    },
-    {
-      "cluster_id": "401023",
-      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
-      "tier": "A",
-      "avg_placement": 4.5139
-    },
-    {
-      "cluster_id": "401019",
-      "comp_name": "TFT17_Astronaut, TFT17_Veigar, TFT17_Corki",
-      "tier": "B",
-      "avg_placement": 4.6649
-    },
-    {
-      "cluster_id": "401035",
-      "comp_name": "TFT17_Mecha, TFT17_AurelionSol",
-      "tier": "B",
-      "avg_placement": 4.6683
-    },
-    {
-      "cluster_id": "401033",
-      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Gnar",
-      "tier": "C",
-      "avg_placement": 4.8675
-    },
-    {
-      "cluster_id": "401052",
-      "comp_name": "TFT17_ShieldTank, TFT17_Illaoi",
-      "tier": "D",
-      "avg_placement": 5.2599
-    },
-    {
-      "cluster_id": "401046",
-      "comp_name": "TFT17_FlexTrait, TFT17_Galio",
-      "tier": "D",
-      "avg_placement": 5.2739
+      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
+      "comp_name": "重装战士薇古丝",
+      "tier": "S",
+      "avg_placement": 3.69
     }
   ],
   "builds": [
     {
-      "cluster_id": "401005",
-      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
-      "items": [
-        "灭世者的死亡之帽",
-        "朔极之矛",
-        "虚空之杖"
-      ],
-      "avg_placement": 3.6468,
-      "count": 218,
-      "priority_scores": {
-        "灭世者的死亡之帽": 100,
-        "朔极之矛": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "401023",
-      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
+      "comp_name": "重装战士薇古丝",
       "items": [
         "莫雷洛秘典",
         "朔极之矛",
         "虚空之杖"
       ],
-      "avg_placement": 3.1685,
-      "count": 932,
+      "avg_placement": 3.69,
+      "count": 35701,
       "priority_scores": {
-        "莫雷洛秘典": 100,
-        "朔极之矛": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "401033",
-      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Gnar",
-      "items": [
-        "大天使之杖",
-        "珠光护手",
-        "朔极之矛"
-      ],
-      "avg_placement": 3.9485,
-      "count": 97,
-      "priority_scores": {
-        "大天使之杖": 100,
-        "珠光护手": 85,
-        "朔极之矛": 72
+        "莫雷洛秘典": 80,
+        "朔极之矛": 80,
+        "虚空之杖": 80
       }
     }
   ]

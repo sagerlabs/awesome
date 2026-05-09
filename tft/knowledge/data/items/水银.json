@@ -2,20 +2,20 @@
   "name": "水银",
   "priority_list": [
     {
-      "cluster_id": "401007",
-      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "cluster_id": "b0e4c786a8fc51e0706762e2537c37fb",
+      "comp_name": "狂战士千珏",
       "comp_tier": "S",
-      "comp_avg": 4.183,
-      "carry": "卑尔维斯",
-      "priority_score": 85
+      "comp_avg": 3.02,
+      "carry": "易",
+      "priority_score": 90
     },
     {
-      "cluster_id": "401005",
-      "comp_name": "TFT17_Astronaut, TFT17_Corki, TFT17_Riven",
-      "comp_tier": "A",
-      "comp_avg": 4.4656,
-      "carry": "锐雯",
-      "priority_score": 85
+      "cluster_id": "8f5d84cf55194702e441031fe21eb88f",
+      "comp_name": "海魔人贝蕾亚",
+      "comp_tier": "S",
+      "comp_avg": 3.44,
+      "carry": "卑尔维斯",
+      "priority_score": 90
     }
   ]
 }

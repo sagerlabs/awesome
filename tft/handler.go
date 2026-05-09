@@ -89,10 +89,13 @@ type NluAnalyzeResponse struct {
 
 func (h *Handler) RegisterRoutes(e *gin.Engine) {
 	group := e.Group("/v1")
+	// Primary（主链路）：NLU + knowledge，当前推荐给前端和测试用例使用。
+	group.POST("/tft/nlu", h.NluAnalyze)
+	group.POST("/tft/nlu/stream", h.NluAnalyzeStream)
+
+	// Legacy（历史兼容）：保留早期 analyze graph，方便对比和回归。
 	group.POST("/tft/analyze", h.Analyze)
 	group.POST("/tft/analyze/stream", h.AnalyzeStream) // ← 注意：路由是 /stream 不是 /analyzeStream
-	group.POST("/tft/nlu", h.NluAnalyze)
-	group.POST("/tft/nlu/stream", h.NluAnalyzeStream) // NLU流式接口
 	group.GET("/tft/health", h.Health)
 }
 
@@ -125,6 +128,7 @@ func (h *Handler) Analyze(c *gin.Context) {
 	log.WithFields(logrus.Fields{
 		"trace_id": traceID,
 		"endpoint": "/v1/tft/analyze",
+		"api_mode": "legacy",
 		"input":    req.Input,
 	}).Info("请求开始")
 	start := time.Now()
@@ -184,6 +188,7 @@ func (h *Handler) AnalyzeStream(c *gin.Context) {
 	log.WithFields(logrus.Fields{
 		"trace_id": traceID,
 		"endpoint": "/v1/tft/analyze/stream",
+		"api_mode": "legacy",
 		"input":    req.Input,
 	}).Info("请求开始")
 
@@ -246,6 +251,7 @@ func (h *Handler) NluAnalyze(c *gin.Context) {
 	log.WithFields(logrus.Fields{
 		"trace_id": traceID,
 		"endpoint": "/v1/tft/nlu",
+		"api_mode": "primary",
 		"input":    req.Input,
 	}).Info("请求开始")
 	start := time.Now()
@@ -304,6 +310,7 @@ func (h *Handler) NluAnalyzeStream(c *gin.Context) {
 	log.WithFields(logrus.Fields{
 		"trace_id": traceID,
 		"endpoint": "/v1/tft/nlu/stream",
+		"api_mode": "primary",
 		"input":    req.Input,
 	}).Info("请求开始")
 
@@ -352,6 +359,7 @@ func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Serve
 	defer sr.Close()
 
 	var buf strings.Builder // token 缓冲区
+	var finalReply strings.Builder
 
 	// flush 把缓冲区内容推送出去，然后清空
 	flush := func() {
@@ -369,6 +377,7 @@ func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Serve
 			// 流结束前把缓冲区剩余内容推出去
 			flush()
 			if err == io.EOF {
+				h.ag.RecordAdvice(input, finalReply.String(), "")
 				log.WithFields(logrus.Fields{
 					"trace_id":    traceID,
 					"token_count": tokenCount,
@@ -392,8 +401,9 @@ func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Serve
 			continue
 		}
 
-		tokenCount++  // 每次收到LLM的chunk就算一个token
+		tokenCount++ // 每次收到LLM的chunk就算一个token
 		totalChars += len(output.LLMAdvice)
+		finalReply.WriteString(output.LLMAdvice)
 		buf.WriteString(output.LLMAdvice)
 
 		// 遇到标点或换行立即推送（自然断句，阅读体验好）
@@ -475,7 +485,7 @@ func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *
 			continue
 		}
 
-		tokenCount++  // 每次收到LLM的chunk就算一个token
+		tokenCount++ // 每次收到LLM的chunk就算一个token
 		totalChars += len(output.LLMAdvice)
 		buf.WriteString(output.LLMAdvice)
 

@@ -1,8 +1,12 @@
 package parser
 
 import (
-	"github.com/sagerlabs/awesome/tft/data"
+	"encoding/json"
+	"os"
+	"path/filepath"
 	"strings"
+
+	"github.com/sagerlabs/awesome/tft/data"
 )
 
 // InputParser 用户输入标准化
@@ -16,7 +20,7 @@ type InputParser struct {
 func NewInputParser(store *data.Store) *InputParser {
 	return &InputParser{
 		store:   store,
-		aliases: defaultAliases(),
+		aliases: loadAliases(),
 	}
 }
 
@@ -77,30 +81,65 @@ func splitTokens(s string) []string {
 	return tokens
 }
 
-// defaultAliases 内置的民间外号映射表
-// 版本更新时按需补充，无需重新爬取数据
+type aliasesFile struct {
+	Heroes map[string]string `json:"heroes"`
+	Items  map[string]string `json:"items"`
+	Traits map[string]string `json:"traits"`
+}
+
+// loadAliases 优先读取 knowledge 侧的 aliases.json，让旧 analyze 链路和新 NLU 链路共享同一套黑话表。
+func loadAliases() map[string]string {
+	aliases := defaultAliases()
+
+	path := os.Getenv("TFT_ALIASES_FILE")
+	if path == "" {
+		path = filepath.Join("tft", "knowledge", "data", "aliases.json")
+	}
+
+	b, err := os.ReadFile(path)
+	if err != nil {
+		return aliases
+	}
+
+	var file aliasesFile
+	if err := json.Unmarshal(b, &file); err != nil {
+		return aliases
+	}
+	mergeAliases(aliases, file.Heroes)
+	mergeAliases(aliases, file.Items)
+	mergeAliases(aliases, file.Traits)
+	return aliases
+}
+
+func mergeAliases(dst map[string]string, src map[string]string) {
+	for raw, normalized := range src {
+		raw = strings.TrimSpace(raw)
+		normalized = strings.TrimSpace(normalized)
+		if raw == "" || normalized == "" {
+			continue
+		}
+		dst[raw] = normalized
+	}
+}
+
+// defaultAliases 是 aliases.json 缺失时的最小兜底。
 func defaultAliases() map[string]string {
 	return map[string]string{
 		// 英雄外号
-		"瞎子": "盲僧",
-		"蛐蛐": "螳螂",
-		"猴子": "孙悟空",
-		"小炮": "崔斯特",
-		"兔子": "璐璐",
-		"熊":  "波比",
-		"小鱼": "提莫",
-		"企鹅": "小布",
-		"轮子": "兰博",
-		"电球": "肯能",
+		"剑魔": "亚托克斯",
+		"龙王": "奥瑞利安·索尔",
+		"女枪": "厄运小姐",
+		"小鱼": "菲兹",
+		"卡牌": "崔斯特",
 
 		// 装备外号
-		"大帽子":   "拉巴顿死亡之帽",
-		"帽子":    "拉巴顿死亡之帽",
-		"破败":    "古神狂暴之刃",
-		"鬼书":    "古神狂暴之刃",
-		"蓝buff": "蓝色电池",
-		"反甲":    "冰霜之心",
-		"日炎":    "日炎圣盾",
-		"鞋":     "疾步之靴",
+		"羊刀":    "鬼索的狂暴之刃",
+		"大帽子":   "灭世者的死亡之帽",
+		"帽子":    "灭世者的死亡之帽",
+		"青龙刀":   "朔极之矛",
+		"法爆":    "珠光护手",
+		"蓝buff": "蓝霸符",
+		"反甲":    "棘刺背心",
+		"板甲":    "石像鬼石板甲",
 	}
 }

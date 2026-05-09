@@ -2,135 +2,45 @@
   "name": "拉亚斯特",
   "appear_in_comps": [
     {
-      "cluster_id": "401000",
-      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "cluster_id": "8f5d84cf55194702e441031fe21eb88f",
+      "comp_name": "海魔人贝蕾亚",
       "tier": "S",
-      "avg_placement": 3.9764
+      "avg_placement": 3.44
     },
     {
-      "cluster_id": "401006",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
-      "tier": "A",
-      "avg_placement": 4.3396
+      "cluster_id": "4c75d7eb9d6742103cffd95b46309ba9",
+      "comp_name": "观星者璐璐",
+      "tier": "S",
+      "avg_placement": 3
     },
     {
-      "cluster_id": "401001",
-      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Maokai",
-      "tier": "A",
-      "avg_placement": 4.4707
+      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
+      "comp_name": "木灵族霞",
+      "tier": "S",
+      "avg_placement": 2.88
     },
     {
-      "cluster_id": "401010",
-      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
-      "tier": "A",
-      "avg_placement": 4.4761
-    },
-    {
-      "cluster_id": "401023",
-      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
-      "tier": "A",
-      "avg_placement": 4.5139
-    },
-    {
-      "cluster_id": "401018",
-      "comp_name": "TFT17_APTrait, TFT17_Lulu, TFT17_Maokai",
-      "tier": "B",
-      "avg_placement": 4.7021
-    },
-    {
-      "cluster_id": "401021",
-      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
-      "tier": "C",
-      "avg_placement": 4.7878
-    },
-    {
-      "cluster_id": "401050",
-      "comp_name": "TFT17_HPTank, TFT17_Urgot",
-      "tier": "C",
-      "avg_placement": 4.8738
-    },
-    {
-      "cluster_id": "401034",
-      "comp_name": "TFT17_ShieldTank, TFT17_Nami",
-      "tier": "C",
-      "avg_placement": 4.9237
-    },
-    {
-      "cluster_id": "401038",
-      "comp_name": "TFT17_HPTank, TFT17_MissFortune",
-      "tier": "C",
-      "avg_placement": 5.075
-    },
-    {
-      "cluster_id": "401054",
-      "comp_name": "TFT17_ADMIN, TFT17_Diana",
-      "tier": "D",
-      "avg_placement": 5.5805
+      "cluster_id": "55972c44f51aad6861e8cf2def3cde7d",
+      "comp_name": "牧羊人维克托",
+      "tier": "S",
+      "avg_placement": 3.52
     }
   ],
   "builds": [
     {
-      "cluster_id": "401000",
-      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
-      "items": [
-        "圣盾使的誓约",
-        "石像鬼石板甲",
-        "振奋盔甲"
-      ],
-      "avg_placement": 3.3678,
-      "count": 435,
-      "priority_scores": {
-        "圣盾使的誓约": 100,
-        "石像鬼石板甲": 85,
-        "振奋盔甲": 72
-      }
-    },
-    {
-      "cluster_id": "401010",
-      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa, TFT17_Ornn",
+      "cluster_id": "55972c44f51aad6861e8cf2def3cde7d",
+      "comp_name": "牧羊人维克托",
       "items": [
         "石像鬼石板甲",
         "日炎斗篷",
-        "振奋盔甲"
-      ],
-      "avg_placement": 4.0205,
-      "count": 195,
-      "priority_scores": {
-        "石像鬼石板甲": 100,
-        "日炎斗篷": 85,
-        "振奋盔甲": 72
-      }
-    },
-    {
-      "cluster_id": "401038",
-      "comp_name": "TFT17_HPTank, TFT17_MissFortune",
-      "items": [
-        "石像鬼石板甲",
-        "坚定之心",
         "狂徒铠甲"
       ],
-      "avg_placement": 4,
-      "count": 10,
+      "avg_placement": 3.52,
+      "count": 32935,
       "priority_scores": {
-        "石像鬼石板甲": 100,
-        "坚定之心": 85,
-        "狂徒铠甲": 72
-      }
-    },
-    {
-      "cluster_id": "401045",
-      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_PsyOps",
-      "items": [
-        "石像鬼石板甲",
-        "振奋盔甲",
-        "狂徒铠甲"
-      ],
-      "avg_placement": 4.8,
-      "count": 15,
-      "priority_scores": {
-        "石像鬼石板甲": 100,
-        "振奋盔甲": 85,
-        "狂徒铠甲": 72
+        "石像鬼石板甲": 50,
+        "日炎斗篷": 50,
+        "狂徒铠甲": 50
       }
     }
   ]

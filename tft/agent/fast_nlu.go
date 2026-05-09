@@ -3,7 +3,9 @@ package agent
 import (
 	"encoding/json"
 	"os"
+	"regexp"
 	"sort"
+	"strconv"
 	"strings"
 )
 
@@ -75,6 +77,15 @@ func (e *FastNLUExtractor) TryParse(raw string) (Context, bool) {
 	}
 	if stage, ok := parseFastStage(input); ok {
 		ctx.GameStage = &stage
+	}
+	if level, ok := parseFastLevel(input); ok {
+		ctx.Level = &level
+	}
+	if hp, ok := parseFastHP(input); ok {
+		ctx.HP = &hp
+	}
+	if gold, ok := parseFastGold(input); ok {
+		ctx.Gold = &gold
 	}
 	ctx.RoleQuery = parseFastRole(input)
 	ctx.Playstyle = parseFastPlaystyle(input)
@@ -186,12 +197,16 @@ func inferFastIntent(input string, ctx Context) string {
 	hasChampion := len(ctx.Champions) > 0
 	hasItem := len(ctx.Items) > 0
 	hasTrait := len(ctx.Traits) > 0
+	hasGameState := ctx.GameStage != nil || ctx.Level != nil || ctx.HP != nil || ctx.Gold != nil
 
-	if hasItem && containsAny(input, "给谁", "适合谁", "适合哪个", "怎么出装", "带什么", "给什么", "装备") {
+	if hasItem && containsAny(input, "给谁", "适合谁", "适合哪个", "怎么出装", "带什么", "给什么", "装备", "能玩什么", "玩什么", "可以玩") {
 		return "item_query"
 	}
 	if hasTrait && !hasChampion && !hasItem {
 		return "trait_query"
+	}
+	if hasChampion && (hasItem || hasGameState) && containsAny(input, "怎么玩", "运营", "能冲", "冲吗", "要不要", "升不升", "d不d", "D不D", "搜不搜", "转不转", "玩什么") {
+		return "lineup_recommend"
 	}
 	if hasChampion {
 		return "champion_query"
@@ -256,6 +271,9 @@ func parseFastUnitCost(input string) (int, bool) {
 }
 
 func parseFastStage(input string) (string, bool) {
+	if match := regexp.MustCompile(`([1-7])[-－—]([1-7])`).FindStringSubmatch(input); len(match) == 3 {
+		return match[1] + "-" + match[2], true
+	}
 	switch {
 	case strings.Contains(input, "二阶段"):
 		return "2阶段", true
@@ -266,6 +284,58 @@ func parseFastStage(input string) (string, bool) {
 	default:
 		return "", false
 	}
+}
+
+func parseFastLevel(input string) (int, bool) {
+	if match := regexp.MustCompile(`([1-9])\s*级`).FindStringSubmatch(input); len(match) == 2 {
+		level, err := strconv.Atoi(match[1])
+		return level, err == nil
+	}
+	levelWords := map[string]int{
+		"一级": 1, "二级": 2, "三级": 3, "四级": 4, "五级": 5,
+		"六级": 6, "七级": 7, "八级": 8, "九级": 9,
+	}
+	for word, level := range levelWords {
+		if strings.Contains(input, word) {
+			return level, true
+		}
+	}
+	return 0, false
+}
+
+func parseFastHP(input string) (int, bool) {
+	patterns := []*regexp.Regexp{
+		regexp.MustCompile(`([0-9]{1,3})\s*血`),
+		regexp.MustCompile(`血量\s*([0-9]{1,3})`),
+		regexp.MustCompile(`hp\s*([0-9]{1,3})`),
+		regexp.MustCompile(`HP\s*([0-9]{1,3})`),
+	}
+	for _, pattern := range patterns {
+		if match := pattern.FindStringSubmatch(input); len(match) == 2 {
+			value, err := strconv.Atoi(match[1])
+			if err == nil && value >= 0 && value <= 100 {
+				return value, true
+			}
+		}
+	}
+	return 0, false
+}
+
+func parseFastGold(input string) (int, bool) {
+	patterns := []*regexp.Regexp{
+		regexp.MustCompile(`([0-9]{1,3})\s*(金币|块钱|块|经济)`),
+		regexp.MustCompile(`经济\s*([0-9]{1,3})`),
+		regexp.MustCompile(`金币\s*([0-9]{1,3})`),
+	}
+	for _, pattern := range patterns {
+		if match := pattern.FindStringSubmatch(input); len(match) >= 2 {
+			value, err := strconv.Atoi(match[1])
+			if err == nil && value >= 0 && value <= 200 {
+				return value, true
+			}
+		}
+	}
+	return 0, false
 }
 
 func normalizeFastTraitName(name string) string {

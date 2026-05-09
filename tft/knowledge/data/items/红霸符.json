@@ -2,28 +2,12 @@
   "name": "红霸符",
   "priority_list": [
     {
-      "cluster_id": "401017",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc, TFT17_Galio",
-      "comp_tier": "A",
-      "comp_avg": 4.4447,
-      "carry": "娑娜",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "401002",
-      "comp_name": "TFT17_FlexTrait, TFT17_IvernMinion",
-      "comp_tier": "A",
-      "comp_avg": 4.2811,
-      "carry": "卡尔玛",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "401004",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Ornn",
-      "comp_tier": "A",
-      "comp_avg": 4.3717,
+      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
+      "comp_name": "木灵族霞",
+      "comp_tier": "S",
+      "comp_avg": 2.88,
       "carry": "霞",
-      "priority_score": 72
+      "priority_score": 100
     }
   ]
 }

@@ -2,153 +2,49 @@
   "name": "烬",
   "appear_in_comps": [
     {
-      "cluster_id": "401006",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
-      "tier": "A",
-      "avg_placement": 4.3396
+      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
+      "comp_name": "木灵族霞",
+      "tier": "S",
+      "avg_placement": 2.88
     },
     {
-      "cluster_id": "401020",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
-      "tier": "A",
-      "avg_placement": 4.4852
-    },
-    {
-      "cluster_id": "401012",
-      "comp_name": "TFT17_DarkStar, TFT17_Karma",
-      "tier": "A",
-      "avg_placement": 4.5082
-    },
-    {
-      "cluster_id": "401013",
-      "comp_name": "TFT17_DarkStar, TFT17_Nunu",
-      "tier": "B",
-      "avg_placement": 4.5209
-    },
-    {
-      "cluster_id": "401028",
-      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Xayah",
-      "tier": "B",
-      "avg_placement": 4.7262
-    },
-    {
-      "cluster_id": "401041",
-      "comp_name": "TFT17_DarkStar, TFT17_Chogath",
-      "tier": "C",
-      "avg_placement": 5.0087
+      "cluster_id": "94cb23447f940384d13a7c640c2f2c10",
+      "comp_name": "暗星卡尔玛",
+      "tier": "S",
+      "avg_placement": 3.41
     }
   ],
   "builds": [
     {
-      "cluster_id": "401006",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_Rammus",
-      "items": [
-        "死亡之刃",
-        "无尽之刃",
-        "强袭者的链枷"
-      ],
-      "avg_placement": 3.1761,
-      "count": 3118,
-      "priority_scores": {
-        "死亡之刃": 100,
-        "无尽之刃": 85,
-        "强袭者的链枷": 72
-      }
-    },
-    {
-      "cluster_id": "401020",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_DarkStar",
-      "items": [
-        "死亡之刃",
-        "无尽之刃",
-        "最后的轻语"
-      ],
-      "avg_placement": 2.976,
-      "count": 125,
-      "priority_scores": {
-        "死亡之刃": 100,
-        "无尽之刃": 85,
-        "最后的轻语": 72
-      }
-    },
-    {
-      "cluster_id": "401012",
-      "comp_name": "TFT17_DarkStar, TFT17_Karma",
-      "items": [
-        "无尽之刃",
-        "巨人杀手",
-        "强袭者的链枷"
-      ],
-      "avg_placement": 3.4976,
-      "count": 840,
-      "priority_scores": {
-        "无尽之刃": 100,
-        "巨人杀手": 85,
-        "强袭者的链枷": 72
-      }
-    },
-    {
-      "cluster_id": "401013",
-      "comp_name": "TFT17_DarkStar, TFT17_Nunu",
-      "items": [
-        "无尽之刃",
-        "巨人杀手",
-        "强袭者的链枷"
-      ],
-      "avg_placement": 3.33,
-      "count": 300,
-      "priority_scores": {
-        "无尽之刃": 100,
-        "巨人杀手": 85,
-        "强袭者的链枷": 72
-      }
-    },
-    {
-      "cluster_id": "401028",
-      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Xayah",
-      "items": [
-        "观星者纹章",
-        "无尽之刃",
-        "最后的轻语"
-      ],
-      "avg_placement": 3.0973,
-      "count": 298,
-      "priority_scores": {
-        "观星者纹章": 100,
-        "无尽之刃": 85,
-        "最后的轻语": 72
-      }
-    },
-    {
-      "cluster_id": "401026",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Samira, TFT17_Nunu",
-      "items": [
-        "无尽之刃",
-        "最后的轻语",
-        "强袭者的链枷"
-      ],
-      "avg_placement": 3.0909,
-      "count": 22,
-      "priority_scores": {
-        "无尽之刃": 100,
-        "最后的轻语": 85,
-        "强袭者的链枷": 72
-      }
-    },
-    {
-      "cluster_id": "401041",
-      "comp_name": "TFT17_DarkStar, TFT17_Chogath",
+      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
+      "comp_name": "木灵族霞",
       "items": [
         "死亡之刃",
         "无尽之刃",
         "巨人杀手"
       ],
-      "avg_placement": 3.6,
-      "count": 45,
+      "avg_placement": 2.88,
+      "count": 25423,
       "priority_scores": {
-        "死亡之刃": 100,
-        "无尽之刃": 85,
-        "巨人杀手": 72
+        "死亡之刃": 90,
+        "无尽之刃": 90,
+        "巨人杀手": 90
+      }
+    },
+    {
+      "cluster_id": "94cb23447f940384d13a7c640c2f2c10",
+      "comp_name": "暗星卡尔玛",
+      "items": [
+        "无尽之刃",
+        "最后的轻语",
+        "巨人杀手"
+      ],
+      "avg_placement": 3.41,
+      "count": 31489,
+      "priority_scores": {
+        "无尽之刃": 90,
+        "最后的轻语": 90,
+        "巨人杀手": 90
       }
     }
   ]
