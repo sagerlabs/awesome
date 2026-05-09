@@ -89,7 +89,7 @@ type aliasesFile struct {
 
 // loadAliases 优先读取 knowledge 侧的 aliases.json，让旧 analyze 链路和新 NLU 链路共享同一套黑话表。
 func loadAliases() map[string]string {
-	aliases := defaultAliases()
+	aliases := make(map[string]string)
 
 	path := os.Getenv("TFT_ALIASES_FILE")
 	if path == "" {
@@ -119,27 +119,5 @@ func mergeAliases(dst map[string]string, src map[string]string) {
 			continue
 		}
 		dst[raw] = normalized
-	}
-}
-
-// defaultAliases 是 aliases.json 缺失时的最小兜底。
-func defaultAliases() map[string]string {
-	return map[string]string{
-		// 英雄外号
-		"剑魔": "亚托克斯",
-		"龙王": "奥瑞利安·索尔",
-		"女枪": "厄运小姐",
-		"小鱼": "菲兹",
-		"卡牌": "崔斯特",
-
-		// 装备外号
-		"羊刀":    "鬼索的狂暴之刃",
-		"大帽子":   "灭世者的死亡之帽",
-		"帽子":    "灭世者的死亡之帽",
-		"青龙刀":   "朔极之矛",
-		"法爆":    "珠光护手",
-		"蓝buff": "蓝霸符",
-		"反甲":    "棘刺背心",
-		"板甲":    "石像鬼石板甲",
 	}
 }

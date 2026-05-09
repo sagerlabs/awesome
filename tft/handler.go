@@ -20,8 +20,11 @@ import (
 
 // Handler TFT Copilot 的 HTTP 处理器
 type Handler struct {
-	ag     *agent.Agent
-	logger *logrus.Logger
+	ag        *agent.Agent
+	logger    *logrus.Logger
+	dataDir   string
+	compCount int
+	ready     bool
 }
 
 // NewHandler 初始化 Handler，加载数据 + 编译 Graph
@@ -53,7 +56,13 @@ func NewHandler(ctx context.Context, logger *logrus.Logger) (*Handler, error) {
 	}
 	logger.Info("TFT Handler 初始化完成")
 
-	return &Handler{ag: a, logger: logger}, nil
+	return &Handler{
+		ag:        a,
+		logger:    logger,
+		dataDir:   data.GetDataDir(),
+		compCount: len(store.AllComps()),
+		ready:     true,
+	}, nil
 }
 
 // ── 请求/响应结构体 ────────────────────────────────────────────────────────────
@@ -97,6 +106,8 @@ func (h *Handler) RegisterRoutes(e *gin.Engine) {
 	group.POST("/tft/analyze", h.Analyze)
 	group.POST("/tft/analyze/stream", h.AnalyzeStream) // ← 注意：路由是 /stream 不是 /analyzeStream
 	group.GET("/tft/health", h.Health)
+	group.GET("/tft/ready", h.Ready)
+	group.GET("/tft/version", h.Version)
 }
 
 // ── POST /v1/tft/analyze ──────────────────────────────────────────────────────
@@ -350,12 +361,13 @@ func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Serve
 	tokenCount := 0
 	totalChars := 0
 
-	sr, err := h.ag.NluAnalyzeStream(ctx, input)
+	sr, cancel, err := h.ag.NluAnalyzeStream(ctx, input)
 	if err != nil {
 		log.WithError(err).WithField("trace_id", traceID).Error("NLU流式推理启动失败")
 		srv.Publish(buildEvent("error", StreamChunk{Type: "error", Error: err.Error()}, false))
 		return
 	}
+	defer cancel()
 	defer sr.Close()
 
 	var buf strings.Builder // token 缓冲区
@@ -421,7 +433,34 @@ func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Serve
 // ── GET /v1/tft/health ────────────────────────────────────────────────────────
 
 func (h *Handler) Health(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{"status": "ok"})
+	c.JSON(http.StatusOK, gin.H{
+		"status": "ok",
+		"uptime": time.Since(ServiceStartTime()).Round(time.Second).String(),
+	})
+}
+
+// ── GET /v1/tft/ready ─────────────────────────────────────────────────────────
+
+func (h *Handler) Ready(c *gin.Context) {
+	status := http.StatusOK
+	ready := h.ready && h.ag != nil && h.compCount > 0
+	if !ready {
+		status = http.StatusServiceUnavailable
+	}
+	c.JSON(status, gin.H{
+		"status":      map[bool]string{true: "ready", false: "not_ready"}[ready],
+		"agent":       h.ag != nil,
+		"data_loaded": h.compCount > 0,
+		"data_dir":    h.dataDir,
+		"comp_count":  h.compCount,
+		"build":       CurrentBuildInfo(),
+	})
+}
+
+// ── GET /v1/tft/version ───────────────────────────────────────────────────────
+
+func (h *Handler) Version(c *gin.Context) {
+	c.JSON(http.StatusOK, CurrentBuildInfo())
 }
 
 // ── 流式推理 goroutine ────────────────────────────────────────────────────────
@@ -436,12 +475,13 @@ func (h *Handler) runStream(ctx context.Context, input string, plain bool, srv *
 	tokenCount := 0
 	totalChars := 0
 
-	sr, err := h.ag.AnalyzeStream(ctx, input)
+	sr, cancel, err := h.ag.AnalyzeStream(ctx, input)
 	if err != nil {
 		log.WithError(err).WithField("trace_id", traceID).Error("流式推理启动失败")
 		srv.Publish(buildEvent("error", StreamChunk{Type: "error", Error: err.Error()}, plain))
 		return
 	}
+	defer cancel()
 	defer sr.Close()
 
 	var buf strings.Builder // token 缓冲区

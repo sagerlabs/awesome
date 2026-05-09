@@ -26,7 +26,7 @@ type FastNLUExtractor struct {
 func NewFastNLUExtractor(adapter *KnowledgeAdapter) *FastNLUExtractor {
 	extractor := &FastNLUExtractor{}
 	if adapter == nil {
-		extractor.addDefaultAliases()
+		extractor.addAliasesFromFile("tft/knowledge/data/aliases.json")
 		extractor.prepare()
 		return extractor
 	}
@@ -50,7 +50,6 @@ func NewFastNLUExtractor(adapter *KnowledgeAdapter) *FastNLUExtractor {
 	}
 
 	extractor.addAliasesFromFile("tft/knowledge/data/aliases.json")
-	extractor.addDefaultAliases()
 	extractor.prepare()
 	return extractor
 }
@@ -99,18 +98,6 @@ func (e *FastNLUExtractor) TryParse(raw string) (Context, bool) {
 		ctx.Champions = nil
 	}
 	return ctx, true
-}
-
-func (e *FastNLUExtractor) addDefaultAliases() {
-	for _, champion := range []string{"剑魔", "炸弹人", "女枪", "龙王", "铁男", "卡牌"} {
-		e.addChampion(champion)
-	}
-	for _, item := range []string{"羊刀", "青龙刀", "法爆", "帽子", "反甲", "板甲", "日炎", "科技枪", "饮血", "泰坦", "无尽", "轻语"} {
-		e.addItem(item)
-	}
-	for _, trait := range []string{"机甲", "未来"} {
-		e.addTrait(trait)
-	}
 }
 
 func (e *FastNLUExtractor) addAliasesFromFile(path string) {

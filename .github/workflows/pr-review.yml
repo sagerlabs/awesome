@@ -96,13 +96,11 @@ jobs:
                   
                   const code = Buffer.from(content.content, 'base64').toString();
                   
-                  // 检查硬编码密码
-                  if (code.toLowerCase().includes('password') || 
-                      code.toLowerCase().includes('secret') || 
-                      code.toLowerCase().includes('token') ||
-                      code.toLowerCase().includes('api_key') ||
-                      code.toLowerCase().includes('apikey')) {
-                    issues.push(`🔑 **警告**: ${file.filename} 可能包含硬编码的敏感信息，请使用环境变量`);
+                  // 检查疑似硬编码密钥。只匹配“赋值为具体密钥”的形态，避免 OPENAI_API_KEY
+                  // 这类环境变量名把 review 结果刷屏。
+                  const secretPattern = /(password|secret|token|api[_-]?key)\s*[:=]\s*['"][^'"]{8,}['"]/i;
+                  if (secretPattern.test(code)) {
+                    issues.push(`🔑 **警告**: ${file.filename} 可能包含硬编码敏感值，请改为环境变量或 secret manager`);
                     hasWarnings = true;
                   }
                   

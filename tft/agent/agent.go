@@ -141,11 +141,14 @@ func NewAgentWithConfig(ctx context.Context, store *data.Store, cfg *AgentConfig
 	}, nil
 }
 
-// maxTokens 返回每次调用的 token 上限
-// 优先读环境变量 LLM_MAX_TOKENS，兜底 60
+// maxTokens 返回每次调用的 token 上限。
+// 优先读环境变量 LLM_MAX_TOKENS，兜底 1024，并限制在 provider 通用安全上限内。
 func (a *Agent) maxTokens() int {
 	if v := os.Getenv("LLM_MAX_TOKENS"); v != "" {
-		if n, err := strconv.Atoi(v); err == nil && n > 0 && n <= 150 {
+		if n, err := strconv.Atoi(v); err == nil && n > 0 {
+			if n > 4096 {
+				return 4096
+			}
 			return n
 		}
 	}
@@ -203,7 +206,7 @@ func (a *Agent) Analyze(ctx context.Context, rawInput string) (*GraphOutput, err
 
 // AnalyzeStream 流式接口：返回 StreamReader，由 handler 逐 chunk 推送
 func (a *Agent) AnalyzeStream(ctx context.Context, rawInput string) (
-	*schema.StreamReader[*GraphOutput], error,
+	*schema.StreamReader[*GraphOutput], context.CancelFunc, error,
 ) {
 	llmCtx, cancel := a.withLLMTimeout(ctx)
 
@@ -218,7 +221,7 @@ func (a *Agent) AnalyzeStream(ctx context.Context, rawInput string) (
 	if err != nil {
 		cancel()
 		a.logger.WithError(err).WithField("elapsed", time.Since(start).String()).Error("流式推理启动失败")
-		return nil, fmt.Errorf("graph stream: %w", err)
+		return nil, nil, fmt.Errorf("graph stream: %w", err)
 	}
 
 	// 把 *schema.Message 流转换成 *GraphOutput 流，同时在流结束时打印总耗时
@@ -233,8 +236,7 @@ func (a *Agent) AnalyzeStream(ctx context.Context, rawInput string) (
 		},
 	)
 
-	_ = cancel
-	return converted, nil
+	return converted, cancel, nil
 }
 
 // NluAnalyze NLU分析接口：提取用户输入的结构化信息并查询数据
@@ -273,7 +275,7 @@ func (a *Agent) NluAnalyze(ctx context.Context, rawInput string) (
 
 // NluAnalyzeStream NLU流式分析接口：提取用户输入的结构化信息并查询数据，然后流式返回LLM润色结果
 func (a *Agent) NluAnalyzeStream(ctx context.Context, rawInput string) (
-	*schema.StreamReader[*GraphOutput], error,
+	*schema.StreamReader[*GraphOutput], context.CancelFunc, error,
 ) {
 	llmCtx, cancel := a.withLLMTimeout(ctx)
 
@@ -287,7 +289,7 @@ func (a *Agent) NluAnalyzeStream(ctx context.Context, rawInput string) (
 	if err != nil {
 		cancel()
 		a.logger.WithError(err).WithField("elapsed", time.Since(start).String()).Error("NLU流式推理启动失败")
-		return nil, fmt.Errorf("nlu stream graph: %w", err)
+		return nil, nil, fmt.Errorf("nlu stream graph: %w", err)
 	}
 
 	// 把 *schema.Message 流转换成 *GraphOutput 流
@@ -302,8 +304,7 @@ func (a *Agent) NluAnalyzeStream(ctx context.Context, rawInput string) (
 		},
 	)
 
-	_ = cancel
-	return converted, nil
+	return converted, cancel, nil
 }
 
 // NluAdvice 返回主 NLU 链路的完整自然语言回答，适合 Wails 等不需要 SSE 的桌面调用。

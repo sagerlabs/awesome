@@ -135,7 +135,7 @@ func newOpenAIModel(ctx context.Context, cfg *ModelConfig) (model.ChatModel, err
 		Model:       modelName,
 		BaseURL:     os.Getenv("OPENAI_BASE_URL"), // 空字符串时使用默认值
 		Temperature: &cfg.Temperature,
-		//MaxTokens:   &cfg.MaxTokens,
+		MaxTokens:   &cfg.MaxTokens,
 		ExtraFields: map[string]any{
 			"enable_thinking": false,
 		},

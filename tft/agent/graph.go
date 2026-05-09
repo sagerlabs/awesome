@@ -237,62 +237,11 @@ func BuildNluGraph(ctx context.Context, chatModel model.ChatModel, knowledgeAdap
 	g := compose.NewGraph[*NluContext, *NluEnrichedContext]()
 	fastNLU := NewFastNLUExtractor(knowledgeAdapter)
 
-	// Node 1: NLU提取
-	nluExtract := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluContext, err error) {
-		start := time.Now()
-		traceID, _ := trace.TraceIDFromContext(ctx)
-		if c, ok := fastNLU.TryParse(input.UserInput); ok {
-			input.Ctx = c
-			input.FastNLUHit = true
-			input.NLUProvider = "fast"
-			logNluExtract(traceID, input, time.Since(start))
-			return input, nil
-		}
-		fullPrompt, err := prompt.BuildNLUPrompt(input.UserInput)
-		if err != nil {
-			return nil, fmt.Errorf("build nlu prompt: %w", err)
-		}
-		resp, err := chatModel.Generate(ctx, []*schema.Message{
-			schema.UserMessage(fullPrompt),
-		})
-		if err != nil {
-			return nil, fmt.Errorf("generate: %w", err)
-		}
-		var c Context
-		// 提取JSON内容：去除think标签和其他前缀，找到第一个{和最后一个}之间的内容
-		content := resp.Content
-		if startIdx := strings.Index(content, "{"); startIdx != -1 {
-			if endIdx := strings.LastIndex(content, "}"); endIdx != -1 && endIdx > startIdx {
-				content = content[startIdx : endIdx+1]
-			}
-		}
-		if err := json.Unmarshal([]byte(content), &c); err != nil {
-			logrus.WithError(err).WithField("raw_content", resp.Content).WithField("extracted_content", content).Warn("JSON解析失败，使用空Context")
-		}
-		input.Ctx = c
-		input.NLUProvider = "llm"
-		input.NLUCalls = 1
-		logNluExtract(traceID, input, time.Since(start))
-		return input, nil
-	})
-	if err := g.AddLambdaNode("nlu_extract", nluExtract); err != nil {
+	if err := g.AddLambdaNode("nlu_extract", newNluExtractLambda(chatModel, fastNLU)); err != nil {
 		return nil, fmt.Errorf("add nlu_extract node: %w", err)
 	}
 
-	// Node 2: 数据查询和中文转换
-	dataLookup := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluEnrichedContext, err error) {
-		start := time.Now()
-		traceID, _ := trace.TraceIDFromContext(ctx)
-		result, err := knowledgeAdapter.QueryNLU(input.Ctx)
-		if err != nil {
-			return nil, fmt.Errorf("knowledge query nlu: %w", err)
-		}
-		result.UserInput = input.UserInput
-		result.Feedback = input.Feedback
-		logKnowledgeLookup(traceID, input, result, time.Since(start))
-		return result, nil
-	})
-	if err := g.AddLambdaNode("data_lookup", dataLookup); err != nil {
+	if err := g.AddLambdaNode("data_lookup", newDataLookupLambda(knowledgeAdapter)); err != nil {
 		return nil, fmt.Errorf("add data_lookup node: %w", err)
 	}
 
@@ -324,62 +273,11 @@ func BuildNluStreamGraph(ctx context.Context, chatModel model.ChatModel, knowled
 	g := compose.NewGraph[*NluContext, *schema.Message]()
 	fastNLU := NewFastNLUExtractor(knowledgeAdapter)
 
-	// Node 1: NLU提取
-	nluExtract := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluContext, err error) {
-		start := time.Now()
-		traceID, _ := trace.TraceIDFromContext(ctx)
-		if c, ok := fastNLU.TryParse(input.UserInput); ok {
-			input.Ctx = c
-			input.FastNLUHit = true
-			input.NLUProvider = "fast"
-			logNluExtract(traceID, input, time.Since(start))
-			return input, nil
-		}
-		fullPrompt, err := prompt.BuildNLUPrompt(input.UserInput)
-		if err != nil {
-			return nil, fmt.Errorf("build nlu prompt: %w", err)
-		}
-		resp, err := chatModel.Generate(ctx, []*schema.Message{
-			schema.UserMessage(fullPrompt),
-		})
-		if err != nil {
-			return nil, fmt.Errorf("generate: %w", err)
-		}
-		var c Context
-		// 提取JSON内容：去除think标签和其他前缀，找到第一个{和最后一个}之间的内容
-		content := resp.Content
-		if startIdx := strings.Index(content, "{"); startIdx != -1 {
-			if endIdx := strings.LastIndex(content, "}"); endIdx != -1 && endIdx > startIdx {
-				content = content[startIdx : endIdx+1]
-			}
-		}
-		if err := json.Unmarshal([]byte(content), &c); err != nil {
-			logrus.WithError(err).WithField("raw_content", resp.Content).WithField("extracted_content", content).Warn("JSON解析失败，使用空Context")
-		}
-		input.Ctx = c
-		input.NLUProvider = "llm"
-		input.NLUCalls = 1
-		logNluExtract(traceID, input, time.Since(start))
-		return input, nil
-	})
-	if err := g.AddLambdaNode("nlu_extract", nluExtract); err != nil {
+	if err := g.AddLambdaNode("nlu_extract", newNluExtractLambda(chatModel, fastNLU)); err != nil {
 		return nil, fmt.Errorf("add nlu_extract node: %w", err)
 	}
 
-	// Node 2: 数据查询和中文转换
-	dataLookup := compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluEnrichedContext, err error) {
-		start := time.Now()
-		traceID, _ := trace.TraceIDFromContext(ctx)
-		result, err := knowledgeAdapter.QueryNLU(input.Ctx)
-		if err != nil {
-			return nil, fmt.Errorf("knowledge query nlu: %w", err)
-		}
-		result.UserInput = input.UserInput
-		result.Feedback = input.Feedback
-		logKnowledgeLookup(traceID, input, result, time.Since(start))
-		return result, nil
-	})
-	if err := g.AddLambdaNode("data_lookup", dataLookup); err != nil {
+	if err := g.AddLambdaNode("data_lookup", newDataLookupLambda(knowledgeAdapter)); err != nil {
 		return nil, fmt.Errorf("add data_lookup node: %w", err)
 	}
 
@@ -425,6 +323,68 @@ func BuildNluStreamGraph(ctx context.Context, chatModel model.ChatModel, knowled
 	}
 
 	return runnable, nil
+}
+
+func newNluExtractLambda(chatModel model.ChatModel, fastNLU *FastNLUExtractor) *compose.Lambda {
+	return compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluContext, err error) {
+		start := time.Now()
+		traceID, _ := trace.TraceIDFromContext(ctx)
+		if c, ok := fastNLU.TryParse(input.UserInput); ok {
+			input.Ctx = c
+			input.FastNLUHit = true
+			input.NLUProvider = "fast"
+			logNluExtract(traceID, input, time.Since(start))
+			return input, nil
+		}
+		fullPrompt, err := prompt.BuildNLUPrompt(input.UserInput)
+		if err != nil {
+			return nil, fmt.Errorf("build nlu prompt: %w", err)
+		}
+		resp, err := chatModel.Generate(ctx, []*schema.Message{
+			schema.UserMessage(fullPrompt),
+		})
+		if err != nil {
+			return nil, fmt.Errorf("generate: %w", err)
+		}
+
+		var c Context
+		content := extractJSONObject(resp.Content)
+		if err := json.Unmarshal([]byte(content), &c); err != nil {
+			logrus.WithError(err).
+				WithField("raw_content", resp.Content).
+				WithField("extracted_content", content).
+				Warn("JSON解析失败，使用空Context")
+		}
+		input.Ctx = c
+		input.NLUProvider = "llm"
+		input.NLUCalls = 1
+		logNluExtract(traceID, input, time.Since(start))
+		return input, nil
+	})
+}
+
+func newDataLookupLambda(knowledgeAdapter *KnowledgeAdapter) *compose.Lambda {
+	return compose.InvokableLambda(func(ctx context.Context, input *NluContext) (output *NluEnrichedContext, err error) {
+		start := time.Now()
+		traceID, _ := trace.TraceIDFromContext(ctx)
+		result, err := knowledgeAdapter.QueryNLU(input.Ctx)
+		if err != nil {
+			return nil, fmt.Errorf("knowledge query nlu: %w", err)
+		}
+		result.UserInput = input.UserInput
+		result.Feedback = input.Feedback
+		logKnowledgeLookup(traceID, input, result, time.Since(start))
+		return result, nil
+	})
+}
+
+func extractJSONObject(content string) string {
+	if startIdx := strings.Index(content, "{"); startIdx != -1 {
+		if endIdx := strings.LastIndex(content, "}"); endIdx != -1 && endIdx > startIdx {
+			return content[startIdx : endIdx+1]
+		}
+	}
+	return content
 }
 
 func logNluExtract(traceID string, input *NluContext, elapsed time.Duration) {

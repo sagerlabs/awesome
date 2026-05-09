@@ -19,10 +19,17 @@ import (
 	"github.com/sagerlabs/awesome/tft"
 )
 
+var (
+	Version   = "dev"
+	GitCommit = "unknown"
+	BuildTime = "unknown"
+)
+
 //go:embed frontend/index.html
 var indexHTML []byte
 
 func main() {
+	tft.SetBuildInfo(Version, GitCommit, BuildTime)
 	logger := tft.NewLogger()
 
 	// env
@@ -45,6 +52,9 @@ func main() {
 	e.Use(
 		gin.Logger(),
 		gin.Recovery(),
+		tft.CORSMiddleware(),
+		tft.RequestSizeLimit(tft.MaxRequestBytesFromEnv()),
+		tft.OptionalAPIKey(),
 	)
 	tftHandler.RegisterRoutes(e)
 	e.GET("/", func(c *gin.Context) {
@@ -84,6 +94,8 @@ func main() {
 			"POST /v1/tft/analyze     (legacy)",
 			"POST /v1/tft/analyze/stream (legacy SSE)",
 			"GET  /v1/tft/health",
+			"GET  /v1/tft/ready",
+			"GET  /v1/tft/version",
 		},
 	}).Info("服务启动")
 
