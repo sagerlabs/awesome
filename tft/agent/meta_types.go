@@ -19,3 +19,11 @@ type CompAppearance = contracts.CompAppearance
 type ChampionBuild = contracts.ChampionBuild
 type MetaItem = contracts.MetaItem
 type ItemPriority = contracts.ItemPriority
+
+// Query/response types exposed to prompt builders.
+type CompSummary = contracts.CompSummary
+type BuildInfo = contracts.BuildInfo
+type NormalizedTerm = contracts.NormalizedTerm
+type ChampionInsight = contracts.ChampionInsight
+type TraitInsight = contracts.TraitInsight
+type PatchNoteInsight = contracts.PatchNoteInsight
