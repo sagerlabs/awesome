@@ -63,6 +63,19 @@ curl -N -X POST http://localhost:8080/v1/tft/nlu/stream \
   -d '{"input":"剑魔打工强吗"}'
 ```
 
+### 多轮对话（教练反馈闭环）
+
+教练反馈闭环（识别"答非所问/补充局面/继续追问"）按会话隔离。要启用多轮记忆，
+客户端需为同一段对话传一个稳定的 `session_id`（也可用 `X-Session-ID` 请求头）：
+
+```bash
+curl -N -X POST http://localhost:8080/v1/tft/nlu/stream \
+  -H "Content-Type: application/json" \
+  -d '{"input":"不对，这个答非所问","session_id":"user-42-conv-1"}'
+```
+
+不传 `session_id` 时请求是无状态的：不会读到上一轮上下文，也不会和其他用户串话。
+
 ## 数据更新
 
 每次版本更新后执行：

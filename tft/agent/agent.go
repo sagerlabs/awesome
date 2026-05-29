@@ -12,6 +12,7 @@ import (
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
 	"github.com/sagerlabs/awesome/tft/data"
+	"github.com/sagerlabs/awesome/tft/session"
 	"github.com/sagerlabs/awesome/tft/trace"
 	"github.com/sirupsen/logrus"
 	arkModel "github.com/volcengine/volcengine-go-sdk/service/arkruntime/model"
@@ -251,7 +252,7 @@ func (a *Agent) NluAnalyze(ctx context.Context, rawInput string) (
 		ark.WithThinking(&ark.Thinking{
 			Type: arkModel.ThinkingTypeDisabled,
 		})))
-	result, err := a.nluRunnable.Invoke(llmCtx, a.newNluContext(rawInput), opts...)
+	result, err := a.nluRunnable.Invoke(llmCtx, a.newNluContext(ctx, rawInput), opts...)
 	if err != nil {
 		a.logger.WithError(err).WithFields(logrus.Fields{
 			"trace_id": traceID,
@@ -283,7 +284,7 @@ func (a *Agent) NluAnalyzeStream(ctx context.Context, rawInput string) (
 		ark.WithThinking(&ark.Thinking{
 			Type: arkModel.ThinkingTypeDisabled,
 		})))
-	sr, err := a.nluStreamRunnable.Stream(llmCtx, a.newNluContext(rawInput), opts...)
+	sr, err := a.nluStreamRunnable.Stream(llmCtx, a.newNluContext(ctx, rawInput), opts...)
 	if err != nil {
 		cancel()
 		a.logger.WithError(err).WithField("elapsed", time.Since(start).String()).Error("NLU流式推理启动失败")
@@ -317,7 +318,7 @@ func (a *Agent) NluAdvice(ctx context.Context, rawInput string) (string, error) 
 		ark.WithThinking(&ark.Thinking{
 			Type: arkModel.ThinkingTypeDisabled,
 		})))
-	msg, err := a.nluStreamRunnable.Invoke(llmCtx, a.newNluContext(rawInput), opts...)
+	msg, err := a.nluStreamRunnable.Invoke(llmCtx, a.newNluContext(ctx, rawInput), opts...)
 	if err != nil {
 		a.logger.WithError(err).WithFields(logrus.Fields{
 			"trace_id": traceID,
@@ -334,30 +335,31 @@ func (a *Agent) NluAdvice(ctx context.Context, rawInput string) (string, error) 
 		"elapsed":      time.Since(start).Round(time.Millisecond).String(),
 		"output_chars": len([]rune(msg.Content)),
 	}).Debug("NLU完整推理完成")
-	a.RecordAdvice(rawInput, msg.Content, "")
+	a.RecordAdvice(ctx, rawInput, msg.Content, "")
 	return msg.Content, nil
 }
 
-func (a *Agent) newNluContext(rawInput string) *NluContext {
-	ctx := &NluContext{UserInput: rawInput}
+func (a *Agent) newNluContext(ctx context.Context, rawInput string) *NluContext {
+	nluCtx := &NluContext{UserInput: rawInput}
 	if a == nil || a.feedbackMemory == nil {
-		return ctx
+		return nluCtx
 	}
-	feedback := a.feedbackMemory.Detect(rawInput)
-	ctx.Feedback = feedback
+	sessionID := session.IDFromContext(ctx)
+	feedback := a.feedbackMemory.Detect(sessionID, rawInput)
+	nluCtx.Feedback = feedback
 	if feedback != nil && feedback.Type == FeedbackRejected {
 		if err := AppendFeedbackCase(a.feedbackCasesPath, rawInput, feedback.LastAdviceSummary, feedback); err != nil && a.logger != nil {
 			a.logger.WithError(err).Warn("记录 feedback case 失败")
 		}
 	}
-	return ctx
+	return nluCtx
 }
 
-func (a *Agent) RecordAdvice(userInput string, advice string, intent string) {
+func (a *Agent) RecordAdvice(ctx context.Context, userInput string, advice string, intent string) {
 	if a == nil || a.feedbackMemory == nil {
 		return
 	}
-	a.feedbackMemory.Record(userInput, advice, intent)
+	a.feedbackMemory.Record(session.IDFromContext(ctx), userInput, advice, intent)
 }
 
 func (a *Agent) computeRecommendations(ctx context.Context, rawInput string) ([]data.Recommendation, error) {

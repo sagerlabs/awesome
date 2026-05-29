@@ -10,6 +10,7 @@ import (
 
 	"github.com/sagerlabs/awesome/tft/agent"
 	"github.com/sagerlabs/awesome/tft/data"
+	"github.com/sagerlabs/awesome/tft/session"
 	"github.com/sirupsen/logrus"
 	"github.com/wailsapp/wails/v2"
 	"github.com/wailsapp/wails/v2/pkg/options"
@@ -33,7 +34,8 @@ func NewApp(logger *logrus.Logger) *App {
 
 // OnStartup Wails 启动时调用，初始化 Store + Agent
 func (a *App) OnStartup(ctx context.Context) {
-	a.ctx = ctx
+	// 桌面端是单用户单会话：给一个固定 session ID，让教练反馈闭环对本次启动生效。
+	a.ctx = session.WithID(ctx, "desktop")
 
 	a.logger.WithField("data_dir", data.GetDataDir()).Info("加载 TFT 数据")
 	store, err := data.NewStore(data.GetDataDir())

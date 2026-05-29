@@ -14,6 +14,7 @@ import (
 
 	"github.com/sagerlabs/awesome/tft/agent"
 	"github.com/sagerlabs/awesome/tft/data"
+	"github.com/sagerlabs/awesome/tft/session"
 	"github.com/sagerlabs/awesome/tft/sse"
 	"github.com/sagerlabs/awesome/tft/trace"
 )
@@ -77,6 +78,10 @@ type StreamChunk struct {
 
 type NluAnalyzeRequest struct {
 	Input string `json:"input"`
+	// SessionID scopes the coach feedback loop to one conversation. Clients that
+	// want "you said X last turn" behaviour send a stable ID per conversation;
+	// omitting it makes the request stateless (no cross-conversation memory).
+	SessionID string `json:"session_id"`
 }
 
 type NluAnalyzeResponse struct {
@@ -248,6 +253,7 @@ func (h *Handler) NluAnalyze(c *gin.Context) {
 
 	// 2. 注入到context
 	ctx := trace.WithTraceID(context.Background(), traceID)
+	ctx = session.WithID(ctx, resolveSessionID(req.SessionID, c))
 
 	log.WithFields(logrus.Fields{
 		"trace_id": traceID,
@@ -307,6 +313,7 @@ func (h *Handler) NluAnalyzeStream(c *gin.Context) {
 
 	// 2. 注入到context
 	ctx := trace.WithTraceID(c.Request.Context(), traceID)
+	ctx = session.WithID(ctx, resolveSessionID(req.SessionID, c))
 
 	log.WithFields(logrus.Fields{
 		"trace_id": traceID,
@@ -378,7 +385,7 @@ func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Serve
 			// 流结束前把缓冲区剩余内容推出去
 			flush()
 			if err == io.EOF {
-				h.ag.RecordAdvice(input, finalReply.String(), "")
+				h.ag.RecordAdvice(ctx, input, finalReply.String(), "")
 				log.WithFields(logrus.Fields{
 					"trace_id":    traceID,
 					"token_count": tokenCount,
@@ -423,6 +430,16 @@ func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Serve
 
 func (h *Handler) Health(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"status": "ok"})
+}
+
+// resolveSessionID picks the conversation ID from the request body, falling
+// back to the X-Session-ID header. An empty result means "no conversation
+// scope", which the feedback loop treats as stateless.
+func resolveSessionID(bodyValue string, c *gin.Context) string {
+	if id := strings.TrimSpace(bodyValue); id != "" {
+		return id
+	}
+	return strings.TrimSpace(c.GetHeader("X-Session-ID"))
 }
 
 // deprecationMiddleware sets the Deprecation response header on legacy /analyze routes.
