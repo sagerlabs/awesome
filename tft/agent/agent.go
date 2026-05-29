@@ -142,15 +142,18 @@ func NewAgentWithConfig(ctx context.Context, store *data.Store, cfg *AgentConfig
 	}, nil
 }
 
-// maxTokens 返回每次调用的 token 上限
-// 优先读环境变量 LLM_MAX_TOKENS，兜底 60
+// defaultMaxTokens 单次 LLM 调用的默认 token 上限。
+const defaultMaxTokens = 1024
+
+// maxTokens 返回每次调用的 token 上限：优先读环境变量 LLM_MAX_TOKENS，
+// 非正数或无法解析时回退到 defaultMaxTokens。
 func (a *Agent) maxTokens() int {
 	if v := os.Getenv("LLM_MAX_TOKENS"); v != "" {
-		if n, err := strconv.Atoi(v); err == nil && n > 0 && n <= 150 {
+		if n, err := strconv.Atoi(v); err == nil && n > 0 {
 			return n
 		}
 	}
-	return 1024
+	return defaultMaxTokens
 }
 
 // withLLMTimeout 在 ctx 上套一层 LLM 专属超时
