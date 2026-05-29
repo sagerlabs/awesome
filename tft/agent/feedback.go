@@ -1,6 +1,7 @@
 package agent
 
 import (
+	"encoding/json"
 	"fmt"
 	"os"
 	"path/filepath"
@@ -135,38 +136,52 @@ func summarizeForFeedback(text string, maxRunes int) string {
 	return string(runes[:maxRunes]) + "..."
 }
 
+// feedbackRecord is the persistent schema for a single rejected-advice event.
+type feedbackRecord struct {
+	Timestamp         string `json:"timestamp"`
+	Date              string `json:"date"`
+	Type              string `json:"type"`
+	UserInput         string `json:"user_input"`
+	PreviousUserInput string `json:"previous_user_input,omitempty"`
+	AdviceSummary     string `json:"advice_summary,omitempty"`
+	Reason            string `json:"reason,omitempty"`
+}
+
+// AppendFeedbackCase appends a rejected-advice event to a JSONL file.
+// path defaults to "data/feedback_cases.jsonl" — one JSON object per line,
+// append-only, safe to tail/grep, multi-instance friendly.
 func AppendFeedbackCase(path string, userInput string, advice string, feedback *contracts.AdviceFeedback) error {
 	if feedback == nil || feedback.Type != FeedbackRejected {
 		return nil
 	}
 	if path == "" {
-		path = filepath.Join("docs", "FEEDBACK_CASES.md")
+		path = filepath.Join("data", "feedback_cases.jsonl")
 	}
 
-	entry := fmt.Sprintf(`
-## %s
+	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
+		return err
+	}
 
-日期：%s
-用户原问题：%s
-Agent 原回答摘要：%s
-用户反馈：%s
-判定类型：%s
-可能原因：待人工复盘
-后续修复方向：待人工复盘
-`,
-		time.Now().Format("2006-01-02 15:04:05"),
-		time.Now().Format("2006-01-02"),
-		feedback.PreviousUserInput,
-		feedback.LastAdviceSummary,
-		strings.TrimSpace(userInput),
-		feedback.Type,
-	)
+	rec := feedbackRecord{
+		Timestamp:         time.Now().UTC().Format(time.RFC3339),
+		Date:              time.Now().Format("2006-01-02"),
+		Type:              feedback.Type,
+		UserInput:         strings.TrimSpace(userInput),
+		PreviousUserInput: feedback.PreviousUserInput,
+		AdviceSummary:     feedback.LastAdviceSummary,
+		Reason:            feedback.Reason,
+	}
+
+	line, err := json.Marshal(rec)
+	if err != nil {
+		return err
+	}
 
 	file, err := os.OpenFile(path, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0o644)
 	if err != nil {
 		return err
 	}
 	defer file.Close()
-	_, err = file.WriteString(entry)
+	_, err = fmt.Fprintf(file, "%s\n", line)
 	return err
 }

@@ -1,6 +1,7 @@
 package agent
 
 import (
+	"encoding/json"
 	"os"
 	"path/filepath"
 	"strings"
@@ -82,7 +83,7 @@ func TestBuildNluFormatPromptIncludesRejectedFeedbackInstruction(t *testing.T) {
 
 func TestAppendFeedbackCaseWritesRejectedCase(t *testing.T) {
 	dir := t.TempDir()
-	path := filepath.Join(dir, "FEEDBACK_CASES.md")
+	path := filepath.Join(dir, "feedback_cases.jsonl")
 
 	err := AppendFeedbackCase(path, "不对", "old answer", &contracts.AdviceFeedback{
 		Type:              FeedbackRejected,
@@ -97,9 +98,23 @@ func TestAppendFeedbackCaseWritesRejectedCase(t *testing.T) {
 	if err != nil {
 		t.Fatalf("read feedback case failed: %v", err)
 	}
-	for _, text := range []string{"用户原问题：原问题", "Agent 原回答摘要：原回答摘要", "用户反馈：不对"} {
-		if !strings.Contains(string(content), text) {
-			t.Fatalf("feedback file should contain %q, got:\n%s", text, string(content))
+
+	line := strings.TrimSpace(string(content))
+	var rec map[string]interface{}
+	if err := json.Unmarshal([]byte(line), &rec); err != nil {
+		t.Fatalf("feedback file should be valid JSONL, got:\n%s\nerr: %v", line, err)
+	}
+	for key, want := range map[string]string{
+		"type":               FeedbackRejected,
+		"user_input":         "不对",
+		"previous_user_input": "原问题",
+		"advice_summary":     "原回答摘要",
+	} {
+		if got, _ := rec[key].(string); got != want {
+			t.Errorf("field %q: want %q, got %q", key, want, got)
 		}
+	}
+	if rec["timestamp"] == "" {
+		t.Error("timestamp should be non-empty")
 	}
 }

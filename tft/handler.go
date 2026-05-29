@@ -94,8 +94,9 @@ func (h *Handler) RegisterRoutes(e *gin.Engine) {
 	group.POST("/tft/nlu/stream", h.NluAnalyzeStream)
 
 	// Legacy（历史兼容）：保留早期 analyze graph，方便对比和回归。
-	group.POST("/tft/analyze", h.Analyze)
-	group.POST("/tft/analyze/stream", h.AnalyzeStream) // ← 注意：路由是 /stream 不是 /analyzeStream
+	// Deprecated: use /v1/tft/nlu and /v1/tft/nlu/stream instead.
+	group.POST("/tft/analyze", h.deprecationMiddleware(), h.Analyze)
+	group.POST("/tft/analyze/stream", h.deprecationMiddleware(), h.AnalyzeStream)
 	group.GET("/tft/health", h.Health)
 }
 
@@ -422,6 +423,17 @@ func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Serve
 
 func (h *Handler) Health(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"status": "ok"})
+}
+
+// deprecationMiddleware sets the Deprecation response header on legacy /analyze routes.
+func (h *Handler) deprecationMiddleware() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		c.Header("Deprecation", "true")
+		c.Header("Sunset", "2026-12-31")
+		c.Header("Link", `</v1/tft/nlu>; rel="successor-version"`)
+		h.logger.WithField("path", c.Request.URL.Path).Warn("legacy /analyze endpoint called; migrate to /v1/tft/nlu")
+		c.Next()
+	}
 }
 
 // ── 流式推理 goroutine ────────────────────────────────────────────────────────
