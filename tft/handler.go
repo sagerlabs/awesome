@@ -23,6 +23,7 @@ import (
 // Handler TFT Copilot 的 HTTP 处理器
 type Handler struct {
 	ag     *agent.Agent
+	store  *data.Store // 保留引用用于健康检查上报数据状态
 	logger *logrus.Logger
 }
 
@@ -59,7 +60,7 @@ func NewHandler(ctx context.Context, logger *logrus.Logger) (*Handler, error) {
 	}
 	logger.Info("TFT Handler 初始化完成")
 
-	return &Handler{ag: a, logger: logger}, nil
+	return &Handler{ag: a, store: store, logger: logger}, nil
 }
 
 // ── 请求/响应结构体 ────────────────────────────────────────────────────────────
@@ -438,7 +439,25 @@ func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Serve
 // ── GET /v1/tft/health ────────────────────────────────────────────────────────
 
 func (h *Handler) Health(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{"status": "ok"})
+	// 数据是否加载成功：阵容数为 0 视为未就绪。
+	compCount := 0
+	if h.store != nil {
+		compCount = len(h.store.AllComps())
+	}
+	status := "ok"
+	code := http.StatusOK
+	if compCount == 0 {
+		status = "degraded"
+		code = http.StatusServiceUnavailable
+	}
+
+	c.JSON(code, gin.H{
+		"status":     status,
+		"version":    Version,
+		"git_commit": GitCommit,
+		"build_time": BuildTime,
+		"comp_count": compCount,
+	})
 }
 
 // resolveSessionID picks the conversation ID from the request body, falling

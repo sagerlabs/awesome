@@ -141,7 +141,7 @@ jobs:
       - name: Build server binary
         run: |
           GOOS=${{ matrix.goos }} GOARCH=${{ matrix.goarch }} \
-          go build -ldflags "-X main.Version=${{ needs.checks.outputs.version }}" \
+          go build -ldflags "-X github.com/sagerlabs/awesome/tft.Version=${{ needs.checks.outputs.version }}" \
           -o bin/tft-server-${{ matrix.goos }}-${{ matrix.goarch }} \
           ./main.go
 

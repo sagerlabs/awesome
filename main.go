@@ -10,6 +10,7 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
+	"strconv"
 	"syscall"
 	"time"
 
@@ -24,6 +25,12 @@ var indexHTML []byte
 
 func main() {
 	logger := tft.NewLogger()
+
+	logger.WithFields(logrus.Fields{
+		"version":    tft.Version,
+		"git_commit": tft.GitCommit,
+		"build_time": tft.BuildTime,
+	}).Info("TFT Copilot 构建信息")
 
 	// env
 	if err := checkEnv(logger); err != nil {
@@ -45,6 +52,7 @@ func main() {
 	e.Use(
 		gin.Logger(),
 		gin.Recovery(),
+		tft.RateLimitMiddleware(rateLimitRPS(), rateLimitBurst()),
 	)
 	tftHandler.RegisterRoutes(e)
 	e.GET("/", func(c *gin.Context) {
@@ -92,6 +100,26 @@ func main() {
 	}
 
 	logger.Info("Server 已退出")
+}
+
+// rateLimitRPS 读取每 IP 每秒请求上限，RATE_LIMIT_RPS<=0 或未设置时返回 0（禁用限流）。
+func rateLimitRPS() float64 {
+	if v := os.Getenv("RATE_LIMIT_RPS"); v != "" {
+		if n, err := strconv.ParseFloat(v, 64); err == nil && n > 0 {
+			return n
+		}
+	}
+	return 0
+}
+
+// rateLimitBurst 读取突发额度，未设置时默认 20。
+func rateLimitBurst() int {
+	if v := os.Getenv("RATE_LIMIT_BURST"); v != "" {
+		if n, err := strconv.Atoi(v); err == nil && n > 0 {
+			return n
+		}
+	}
+	return 20
 }
 
 // checkEnv

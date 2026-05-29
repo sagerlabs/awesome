@@ -55,6 +55,23 @@ export PORT=8080
 make run
 ```
 
+### 容器化部署
+
+镜像采用多阶段构建（静态二进制 + Alpine 运行时 + 非 root 用户），运行所需的
+knowledge 和 metadata 数据已打进镜像，内置 healthcheck 命中 `/v1/tft/health`：
+
+```bash
+# 直接用 docker
+make docker-build
+make docker-run        # 需先 export LLM_PROVIDER / OPENAI_API_KEY 等
+
+# 或用 docker compose（把变量写进 .env）
+make compose-up
+```
+
+构建时通过 `--build-arg VERSION/GIT_COMMIT/BUILD_TIME` 注入版本信息，`/v1/tft/health`
+会原样返回，便于运维确认线上版本。
+
 测试主接口：
 
 ```bash
@@ -137,4 +154,22 @@ TRACE=true make run
 
 ```bash
 DISABLE_LEGACY_GRAPH=true make run
+```
+
+### 限流
+
+按客户端 IP 限流，默认关闭。设置 `RATE_LIMIT_RPS`（每秒请求数）即可开启，
+`RATE_LIMIT_BURST` 控制突发额度（默认 20）；超限返回 HTTP 429：
+
+```bash
+RATE_LIMIT_RPS=5 RATE_LIMIT_BURST=10 make run
+```
+
+### 运维探针
+
+`GET /v1/tft/health` 返回服务状态、版本/构建信息和已加载阵容数；数据未加载时
+返回 `503 degraded`，可直接用于容器/负载均衡的健康检查：
+
+```json
+{ "status": "ok", "version": "v1.2.3", "git_commit": "abc1234", "comp_count": 120 }
 ```
