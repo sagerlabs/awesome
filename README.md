@@ -131,3 +131,10 @@ make test
 ```bash
 TRACE=true make run
 ```
+
+如果不需要 legacy `/v1/tft/analyze` 链路，可设置 `DISABLE_LEGACY_GRAPH=true` 跳过它的编译，
+减少启动开销；主链路 `/v1/tft/nlu` 不受影响，被禁用的 analyze 接口会返回 410：
+
+```bash
+DISABLE_LEGACY_GRAPH=true make run
+```

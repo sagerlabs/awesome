@@ -30,6 +30,9 @@ type AgentConfig struct {
 	GraphRuntime *GraphRuntime
 	// FeedbackCasesPath rejected feedback 样本记录文件，空值使用 docs/FEEDBACK_CASES.md
 	FeedbackCasesPath string
+	// DisableLegacyGraph 为 true 时不编译 legacy analyze graph，跳过其启动开销。
+	// 此时 /v1/tft/analyze 链路（Analyze/AnalyzeStream）不可用，主链路 NLU 不受影响。
+	DisableLegacyGraph bool
 }
 
 // defaultLLMTimeout 从环境变量读超时，兜底 60s
@@ -108,9 +111,15 @@ func NewAgentWithConfig(ctx context.Context, store *data.Store, cfg *AgentConfig
 	}
 
 	// ── 编译 Graph ────────────────────────────────────────────────────
-	runnable, err := BuildGraphWithRuntime(ctx, chatModel, graphRuntime)
-	if err != nil {
-		return nil, fmt.Errorf("build graph: %w", err)
+	// legacy analyze graph 仅在未禁用时编译，避免不需要它的部署多付启动开销。
+	var runnable compose.Runnable[*GraphInput, *schema.Message]
+	if !cfg.DisableLegacyGraph {
+		runnable, err = BuildGraphWithRuntime(ctx, chatModel, graphRuntime)
+		if err != nil {
+			return nil, fmt.Errorf("build graph: %w", err)
+		}
+	} else {
+		logger.Info("legacy analyze graph 已禁用（DisableLegacyGraph=true）")
 	}
 
 	knowledgeAdapter, err := newKnowledgeAdapterFromStore(store, logger)
@@ -162,8 +171,15 @@ func (a *Agent) withLLMTimeout(parent context.Context) (context.Context, context
 	return context.WithTimeout(parent, a.llmTimeout)
 }
 
+// ErrLegacyGraphDisabled 在 legacy analyze 链路被配置禁用时由 Analyze/AnalyzeStream 返回。
+var ErrLegacyGraphDisabled = fmt.Errorf("legacy analyze graph is disabled")
+
 // Analyze 普通接口：等待 LLM 完整输出后返回
 func (a *Agent) Analyze(ctx context.Context, rawInput string) (*GraphOutput, error) {
+	if a.runnable == nil {
+		return nil, ErrLegacyGraphDisabled
+	}
+
 	traceID, _ := trace.TraceIDFromContext(ctx)
 	llmCtx, cancel := a.withLLMTimeout(ctx)
 	defer cancel()
@@ -209,6 +225,10 @@ func (a *Agent) Analyze(ctx context.Context, rawInput string) (*GraphOutput, err
 func (a *Agent) AnalyzeStream(ctx context.Context, rawInput string) (
 	*schema.StreamReader[*GraphOutput], error,
 ) {
+	if a.runnable == nil {
+		return nil, ErrLegacyGraphDisabled
+	}
+
 	llmCtx, cancel := a.withLLMTimeout(ctx)
 
 	start := time.Now()

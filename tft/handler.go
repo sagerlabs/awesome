@@ -2,6 +2,7 @@ package tft
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"io"
 	"net/http"
@@ -44,9 +45,13 @@ func NewHandler(ctx context.Context, logger *logrus.Logger) (*Handler, error) {
 	// 从环境变量读链路追踪开关：TRACE=true 开启节点级耗时日志
 	enableTrace := os.Getenv("TRACE") == "true"
 
+	// DISABLE_LEGACY_GRAPH=true 跳过 legacy analyze graph 编译（主链路 NLU 不受影响）
+	disableLegacyGraph := os.Getenv("DISABLE_LEGACY_GRAPH") == "true"
+
 	a, err := agent.NewAgentWithConfig(ctx, store, &agent.AgentConfig{
-		Logger:      logger,
-		EnableTrace: enableTrace,
+		Logger:             logger,
+		EnableTrace:        enableTrace,
+		DisableLegacyGraph: disableLegacyGraph,
 	})
 	if err != nil {
 		logger.WithError(err).Error("Agent 初始化失败")
@@ -145,6 +150,10 @@ func (h *Handler) Analyze(c *gin.Context) {
 
 	output, err := h.ag.Analyze(ctx, req.Input)
 	if err != nil {
+		if errors.Is(err, agent.ErrLegacyGraphDisabled) {
+			c.JSON(http.StatusGone, AnalyzeResponse{Success: false, Error: "legacy analyze endpoint is disabled; use /v1/tft/nlu"})
+			return
+		}
 		log.WithError(err).WithFields(logrus.Fields{
 			"trace_id": traceID,
 			"input":    req.Input,
