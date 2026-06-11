@@ -70,20 +70,20 @@ run-ark: ## 使用火山引擎豆包启动（需要设置 ARK_API_KEY 和 ARK_MO
 # ── 构建 ──────────────────────────────────────────────────────────────────────
 
 .PHONY: build
-build: ## 编译二进制（输出到 ./bin/tft-copilot）
+build: data-check ## 编译二进制（输出到 ./bin/tft-copilot）
 	@mkdir -p $(BUILD_DIR)
 	go build -ldflags "$(LDFLAGS)" -o $(BUILD_DIR)/$(BINARY) $(MAIN)
 	@echo "✅ 构建完成: $(BUILD_DIR)/$(BINARY)"
 
 .PHONY: build-linux
-build-linux: ## 交叉编译 Linux amd64（用于部署服务器）
+build-linux: data-check ## 交叉编译 Linux amd64（用于部署服务器）
 	@mkdir -p $(BUILD_DIR)
 	GOOS=linux GOARCH=amd64 \
 	go build -ldflags "$(LDFLAGS)" -o $(BUILD_DIR)/$(BINARY)-linux-amd64 $(MAIN)
 	@echo "✅ Linux 构建完成: $(BUILD_DIR)/$(BINARY)-linux-amd64"
 
 .PHONY: build-mac
-build-mac: ## 交叉编译 macOS arm64（Apple Silicon）
+build-mac: data-check ## 交叉编译 macOS arm64（Apple Silicon）
 	@mkdir -p $(BUILD_DIR)
 	GOOS=darwin GOARCH=arm64 \
 	go build -ldflags "$(LDFLAGS)" -o $(BUILD_DIR)/$(BINARY)-darwin-arm64 $(MAIN)
@@ -94,7 +94,7 @@ build-mac: ## 交叉编译 macOS arm64（Apple Silicon）
 DOCKER_IMAGE := tft-copilot:latest
 
 .PHONY: docker-build
-docker-build: ## 构建 Docker 镜像（注入版本信息）
+docker-build: data-check ## 构建 Docker 镜像（注入版本信息）
 	docker build \
 	  --build-arg VERSION="$(GIT_TAG)" \
 	  --build-arg GIT_COMMIT="$(GIT_COMMIT)" \
