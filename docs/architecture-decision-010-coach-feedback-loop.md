@@ -199,7 +199,9 @@ Agent 原回答摘要
 暂未实现：
 
 - 长期用户画像或跨设备反馈记忆。
-- 自动化回放评测（拿 rejected 样本重新跑链路对比新旧回答）。
+- 自动化回放评测：demo 已实现（`cmd/tft-replay-eval`，`make replay-eval-demo`），
+  设计与升级条件见 `docs/replay-eval-design.md`；正式接入（CI 门禁、LLM judge）
+  待 rejected 样本量和评判标准成熟后再做。
   人工复盘入口已有：`make feedback-report` 汇总 `data/feedback_cases.jsonl`
   生成按日期统计 + 最近样本明细的复盘清单（`cmd/tft-feedback-report`）。
 

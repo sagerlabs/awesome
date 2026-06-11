@@ -178,6 +178,14 @@ test-tft: ## 只运行 tft 包的测试
 feedback-report: ## 汇总 rejected 反馈样本，输出复盘报告（可传 FILE=路径）
 	go run ./cmd/tft-feedback-report $(if $(FILE),-file "$(FILE)")
 
+.PHONY: replay-eval-demo
+replay-eval-demo: ## 离线演示自动回放评测（不依赖服务/LLM），设计见 docs/replay-eval-design.md
+	go run ./cmd/tft-replay-eval -mode demo -file cmd/tft-replay-eval/testdata/demo_cases.jsonl
+
+.PHONY: replay-eval
+replay-eval: ## 对运行中的服务回放 rejected 样本（可传 ADDR=、FILE=、MAX=）
+	go run ./cmd/tft-replay-eval -mode http $(if $(ADDR),-addr "$(ADDR)") $(if $(FILE),-file "$(FILE)") $(if $(MAX),-max $(MAX))
+
 .PHONY: test-cover
 test-cover: ## 运行测试并生成覆盖率报告
 	@mkdir -p $(BUILD_DIR)
