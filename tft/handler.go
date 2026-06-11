@@ -10,6 +10,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/cloudwego/eino/schema"
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
@@ -20,9 +21,19 @@ import (
 	"github.com/sagerlabs/awesome/tft/trace"
 )
 
+// agentService 是 Handler 实际用到的 agent 能力面。
+// 用接口而不是 *agent.Agent，让 HTTP 层可以在测试里用 stub 替换推理。
+type agentService interface {
+	Analyze(ctx context.Context, rawInput string) (*agent.GraphOutput, error)
+	AnalyzeStream(ctx context.Context, rawInput string) (*schema.StreamReader[*agent.GraphOutput], error)
+	NluAnalyze(ctx context.Context, rawInput string) (*agent.NluEnrichedContext, error)
+	NluAnalyzeStream(ctx context.Context, rawInput string) (*schema.StreamReader[*agent.GraphOutput], error)
+	RecordAdvice(ctx context.Context, userInput string, advice string, intent string)
+}
+
 // Handler TFT Copilot 的 HTTP 处理器
 type Handler struct {
-	ag     *agent.Agent
+	ag     agentService
 	store  *data.Store // 保留引用用于健康检查上报数据状态
 	logger *logrus.Logger
 }
