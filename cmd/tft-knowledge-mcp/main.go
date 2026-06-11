@@ -23,10 +23,7 @@ func run(ctx context.Context) error {
 		return fmt.Errorf("load data store: %w", err)
 	}
 
-	knowledgeDir := os.Getenv("TFT_KNOWLEDGE_DIR")
-	if knowledgeDir == "" {
-		knowledgeDir = "tft/knowledge/data"
-	}
+	knowledgeDir := knowledge.GetKnowledgeDir()
 
 	var knowledgeStore *knowledge.Store
 	if store, err := knowledge.NewLoader(knowledgeDir).LoadAll(); err == nil {

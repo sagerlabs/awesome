@@ -30,4 +30,7 @@ services:
       RATE_LIMIT_BURST: ${RATE_LIMIT_BURST:-20}
       # 关闭 legacy /analyze 链路以省启动开销
       DISABLE_LEGACY_GRAPH: ${DISABLE_LEGACY_GRAPH:-false}
+      # 数据目录（镜像内默认布局即可，挂载外部数据时才需要改）
+      TFT_DATA_DIR: ${TFT_DATA_DIR:-}
+      TFT_KNOWLEDGE_DIR: ${TFT_KNOWLEDGE_DIR:-}
     restart: unless-stopped
