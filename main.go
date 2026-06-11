@@ -4,9 +4,10 @@ package main
 
 import (
 	"context"
-	_ "embed"
+	"embed"
 	"errors"
 	"fmt"
+	"io/fs"
 	"net/http"
 	"os"
 	"os/signal"
@@ -20,8 +21,10 @@ import (
 	"github.com/sagerlabs/awesome/tft"
 )
 
-//go:embed frontend/index.html
-var indexHTML []byte
+// 前端资源打进二进制：页面骨架 + 拆分出来的 CSS/JS（frontend/assets/）。
+//
+//go:embed frontend/index.html frontend/assets
+var frontendFS embed.FS
 
 func main() {
 	logger := tft.NewLogger()
@@ -55,9 +58,20 @@ func main() {
 		tft.RateLimitMiddleware(rateLimitRPS(), rateLimitBurst()),
 	)
 	tftHandler.RegisterRoutes(e)
+
+	// 内嵌前端：/ 返回页面，/assets/* 返回拆分后的 CSS/JS。
+	indexHTML, err := frontendFS.ReadFile("frontend/index.html")
+	if err != nil {
+		logger.WithError(err).Fatal("内嵌前端缺少 index.html")
+	}
+	assetsFS, err := fs.Sub(frontendFS, "frontend/assets")
+	if err != nil {
+		logger.WithError(err).Fatal("内嵌前端缺少 assets 目录")
+	}
 	e.GET("/", func(c *gin.Context) {
 		c.Data(http.StatusOK, "text/html; charset=utf-8", indexHTML)
 	})
+	e.StaticFS("/assets", http.FS(assetsFS))
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
