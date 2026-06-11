@@ -174,6 +174,10 @@ test: ## 运行所有单元测试
 test-tft: ## 只运行 tft 包的测试
 	go test ./tft/... -v -count=1
 
+.PHONY: feedback-report
+feedback-report: ## 汇总 rejected 反馈样本，输出复盘报告（可传 FILE=路径）
+	go run ./cmd/tft-feedback-report $(if $(FILE),-file "$(FILE)")
+
 .PHONY: test-cover
 test-cover: ## 运行测试并生成覆盖率报告
 	@mkdir -p $(BUILD_DIR)
