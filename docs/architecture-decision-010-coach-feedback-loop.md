@@ -198,9 +198,28 @@ Agent 原回答摘要
 
 暂未实现：
 
-- 多用户 session 隔离。当前 MVP 是进程内单 Agent 轻量状态。
-- 自动化 Eval 消费 `FEEDBACK_CASES.md`。
+- 自动化 Eval 消费 rejected 样本。
 - 长期用户画像或跨设备反馈记忆。
+
+## 修订记录
+
+### 2026-06-11：会话隔离与持久化格式修订
+
+原 MVP 的 `FeedbackMemory` 是进程内单状态，挂在全局 Agent 单例上。这在并发多用户
+场景是正确性缺陷：用户 B 的"为什么/不对"会命中用户 A 的上一轮回答（串话）。
+
+修订后的实现（见 `tft/session`、`tft/agent/feedback.go`）：
+
+- `FeedbackMemory` 按 session ID 分键保存上一轮状态，30 分钟 TTL 惰性淘汰，内存有界。
+- session ID 经 `tft/session` 包通过 context 传递（与 `tft/trace` 同模式），
+  HTTP 入口从请求体 `session_id` 或 `X-Session-ID` 头读取。
+- 空 session = 无状态：`Detect` 返回 nil、`Record` 空操作。匿名请求不会
+  通过任何默认桶串话，这是安全默认值。
+- rejected 样本的落盘从追加 Markdown 到 `docs/FEEDBACK_CASES.md` 改为
+  JSONL 追加到 `data/feedback_cases.jsonl`，便于多实例写入和后续 Eval 工具消费。
+
+本修订不改变本 ADR 的决策方向，只修正 MVP 实现里"单状态可接受"的错误假设：
+单状态对单用户桌面端成立，对 HTTP 服务端不成立。
 
 ## Learning Summary
 
