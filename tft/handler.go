@@ -2,6 +2,7 @@ package tft
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"io"
 	"net/http"
@@ -9,18 +10,31 @@ import (
 	"strings"
 	"time"
 
+	"github.com/cloudwego/eino/schema"
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 
 	"github.com/sagerlabs/awesome/tft/agent"
 	"github.com/sagerlabs/awesome/tft/data"
+	"github.com/sagerlabs/awesome/tft/session"
 	"github.com/sagerlabs/awesome/tft/sse"
 	"github.com/sagerlabs/awesome/tft/trace"
 )
 
+// agentService 是 Handler 实际用到的 agent 能力面。
+// 用接口而不是 *agent.Agent，让 HTTP 层可以在测试里用 stub 替换推理。
+type agentService interface {
+	Analyze(ctx context.Context, rawInput string) (*agent.GraphOutput, error)
+	AnalyzeStream(ctx context.Context, rawInput string) (*schema.StreamReader[*agent.GraphOutput], error)
+	NluAnalyze(ctx context.Context, rawInput string) (*agent.NluEnrichedContext, error)
+	NluAnalyzeStream(ctx context.Context, rawInput string) (*schema.StreamReader[*agent.GraphOutput], error)
+	RecordAdvice(ctx context.Context, userInput string, advice string, intent string)
+}
+
 // Handler TFT Copilot 的 HTTP 处理器
 type Handler struct {
-	ag     *agent.Agent
+	ag     agentService
+	store  *data.Store // 保留引用用于健康检查上报数据状态
 	logger *logrus.Logger
 }
 
@@ -43,9 +57,13 @@ func NewHandler(ctx context.Context, logger *logrus.Logger) (*Handler, error) {
 	// 从环境变量读链路追踪开关：TRACE=true 开启节点级耗时日志
 	enableTrace := os.Getenv("TRACE") == "true"
 
+	// DISABLE_LEGACY_GRAPH=true 跳过 legacy analyze graph 编译（主链路 NLU 不受影响）
+	disableLegacyGraph := os.Getenv("DISABLE_LEGACY_GRAPH") == "true"
+
 	a, err := agent.NewAgentWithConfig(ctx, store, &agent.AgentConfig{
-		Logger:      logger,
-		EnableTrace: enableTrace,
+		Logger:             logger,
+		EnableTrace:        enableTrace,
+		DisableLegacyGraph: disableLegacyGraph,
 	})
 	if err != nil {
 		logger.WithError(err).Error("Agent 初始化失败")
@@ -53,7 +71,7 @@ func NewHandler(ctx context.Context, logger *logrus.Logger) (*Handler, error) {
 	}
 	logger.Info("TFT Handler 初始化完成")
 
-	return &Handler{ag: a, logger: logger}, nil
+	return &Handler{ag: a, store: store, logger: logger}, nil
 }
 
 // ── 请求/响应结构体 ────────────────────────────────────────────────────────────
@@ -77,6 +95,10 @@ type StreamChunk struct {
 
 type NluAnalyzeRequest struct {
 	Input string `json:"input"`
+	// SessionID scopes the coach feedback loop to one conversation. Clients that
+	// want "you said X last turn" behaviour send a stable ID per conversation;
+	// omitting it makes the request stateless (no cross-conversation memory).
+	SessionID string `json:"session_id"`
 }
 
 type NluAnalyzeResponse struct {
@@ -94,8 +116,9 @@ func (h *Handler) RegisterRoutes(e *gin.Engine) {
 	group.POST("/tft/nlu/stream", h.NluAnalyzeStream)
 
 	// Legacy（历史兼容）：保留早期 analyze graph，方便对比和回归。
-	group.POST("/tft/analyze", h.Analyze)
-	group.POST("/tft/analyze/stream", h.AnalyzeStream) // ← 注意：路由是 /stream 不是 /analyzeStream
+	// Deprecated: use /v1/tft/nlu and /v1/tft/nlu/stream instead.
+	group.POST("/tft/analyze", h.deprecationMiddleware(), h.Analyze)
+	group.POST("/tft/analyze/stream", h.deprecationMiddleware(), h.AnalyzeStream)
 	group.GET("/tft/health", h.Health)
 }
 
@@ -139,6 +162,10 @@ func (h *Handler) Analyze(c *gin.Context) {
 
 	output, err := h.ag.Analyze(ctx, req.Input)
 	if err != nil {
+		if errors.Is(err, agent.ErrLegacyGraphDisabled) {
+			c.JSON(http.StatusGone, AnalyzeResponse{Success: false, Error: "legacy analyze endpoint is disabled; use /v1/tft/nlu"})
+			return
+		}
 		log.WithError(err).WithFields(logrus.Fields{
 			"trace_id": traceID,
 			"input":    req.Input,
@@ -247,6 +274,7 @@ func (h *Handler) NluAnalyze(c *gin.Context) {
 
 	// 2. 注入到context
 	ctx := trace.WithTraceID(context.Background(), traceID)
+	ctx = session.WithID(ctx, resolveSessionID(req.SessionID, c))
 
 	log.WithFields(logrus.Fields{
 		"trace_id": traceID,
@@ -306,6 +334,7 @@ func (h *Handler) NluAnalyzeStream(c *gin.Context) {
 
 	// 2. 注入到context
 	ctx := trace.WithTraceID(c.Request.Context(), traceID)
+	ctx = session.WithID(ctx, resolveSessionID(req.SessionID, c))
 
 	log.WithFields(logrus.Fields{
 		"trace_id": traceID,
@@ -377,7 +406,7 @@ func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Serve
 			// 流结束前把缓冲区剩余内容推出去
 			flush()
 			if err == io.EOF {
-				h.ag.RecordAdvice(input, finalReply.String(), "")
+				h.ag.RecordAdvice(ctx, input, finalReply.String(), "")
 				log.WithFields(logrus.Fields{
 					"trace_id":    traceID,
 					"token_count": tokenCount,
@@ -421,7 +450,46 @@ func (h *Handler) runNluStream(ctx context.Context, input string, srv *sse.Serve
 // ── GET /v1/tft/health ────────────────────────────────────────────────────────
 
 func (h *Handler) Health(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{"status": "ok"})
+	// 数据是否加载成功：阵容数为 0 视为未就绪。
+	compCount := 0
+	if h.store != nil {
+		compCount = len(h.store.AllComps())
+	}
+	status := "ok"
+	code := http.StatusOK
+	if compCount == 0 {
+		status = "degraded"
+		code = http.StatusServiceUnavailable
+	}
+
+	c.JSON(code, gin.H{
+		"status":     status,
+		"version":    Version,
+		"git_commit": GitCommit,
+		"build_time": BuildTime,
+		"comp_count": compCount,
+	})
+}
+
+// resolveSessionID picks the conversation ID from the request body, falling
+// back to the X-Session-ID header. An empty result means "no conversation
+// scope", which the feedback loop treats as stateless.
+func resolveSessionID(bodyValue string, c *gin.Context) string {
+	if id := strings.TrimSpace(bodyValue); id != "" {
+		return id
+	}
+	return strings.TrimSpace(c.GetHeader("X-Session-ID"))
+}
+
+// deprecationMiddleware sets the Deprecation response header on legacy /analyze routes.
+func (h *Handler) deprecationMiddleware() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		c.Header("Deprecation", "true")
+		c.Header("Sunset", "2026-12-31")
+		c.Header("Link", `</v1/tft/nlu>; rel="successor-version"`)
+		h.logger.WithField("path", c.Request.URL.Path).Warn("legacy /analyze endpoint called; migrate to /v1/tft/nlu")
+		c.Next()
+	}
 }
 
 // ── 流式推理 goroutine ────────────────────────────────────────────────────────

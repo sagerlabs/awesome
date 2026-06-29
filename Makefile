@@ -25,10 +25,11 @@ GIT_TAG    := $(shell git describe --tags --abbrev=0 2>/dev/null || echo "unknow
 GIT_COMMIT := $(shell git rev-parse --short HEAD 2>/dev/null || echo "unknown")
 BUILD_TIME := $(shell date '+%Y-%m-%d %H:%M:%S')
 
-# 编译时注入版本信息
-LDFLAGS := -X 'main.Version=$(GIT_TAG)' \
-           -X 'main.GitCommit=$(GIT_COMMIT)' \
-           -X 'main.BuildTime=$(BUILD_TIME)'
+# 编译时注入版本信息（注入到 tft 包，main 和 /health 共用同一份）
+VERSION_PKG := github.com/sagerlabs/awesome/tft
+LDFLAGS := -X '$(VERSION_PKG).Version=$(GIT_TAG)' \
+           -X '$(VERSION_PKG).GitCommit=$(GIT_COMMIT)' \
+           -X '$(VERSION_PKG).BuildTime=$(BUILD_TIME)'
 
 # ── 默认目标 ──────────────────────────────────────────────────────────────────
 
@@ -69,24 +70,47 @@ run-ark: ## 使用火山引擎豆包启动（需要设置 ARK_API_KEY 和 ARK_MO
 # ── 构建 ──────────────────────────────────────────────────────────────────────
 
 .PHONY: build
-build: ## 编译二进制（输出到 ./bin/tft-copilot）
+build: data-check ## 编译二进制（输出到 ./bin/tft-copilot）
 	@mkdir -p $(BUILD_DIR)
 	go build -ldflags "$(LDFLAGS)" -o $(BUILD_DIR)/$(BINARY) $(MAIN)
 	@echo "✅ 构建完成: $(BUILD_DIR)/$(BINARY)"
 
 .PHONY: build-linux
-build-linux: ## 交叉编译 Linux amd64（用于部署服务器）
+build-linux: data-check ## 交叉编译 Linux amd64（用于部署服务器）
 	@mkdir -p $(BUILD_DIR)
 	GOOS=linux GOARCH=amd64 \
 	go build -ldflags "$(LDFLAGS)" -o $(BUILD_DIR)/$(BINARY)-linux-amd64 $(MAIN)
 	@echo "✅ Linux 构建完成: $(BUILD_DIR)/$(BINARY)-linux-amd64"
 
 .PHONY: build-mac
-build-mac: ## 交叉编译 macOS arm64（Apple Silicon）
+build-mac: data-check ## 交叉编译 macOS arm64（Apple Silicon）
 	@mkdir -p $(BUILD_DIR)
 	GOOS=darwin GOARCH=arm64 \
 	go build -ldflags "$(LDFLAGS)" -o $(BUILD_DIR)/$(BINARY)-darwin-arm64 $(MAIN)
 	@echo "✅ macOS 构建完成: $(BUILD_DIR)/$(BINARY)-darwin-arm64"
+
+# ── 容器 ──────────────────────────────────────────────────────────────────────
+
+DOCKER_IMAGE := tft-copilot:latest
+
+.PHONY: docker-build
+docker-build: data-check ## 构建 Docker 镜像（注入版本信息）
+	docker build \
+	  --build-arg VERSION="$(GIT_TAG)" \
+	  --build-arg GIT_COMMIT="$(GIT_COMMIT)" \
+	  --build-arg BUILD_TIME="$(BUILD_TIME)" \
+	  -t $(DOCKER_IMAGE) .
+	@echo "✅ 镜像构建完成: $(DOCKER_IMAGE)"
+
+.PHONY: docker-run
+docker-run: ## 本地运行容器（需先 export LLM_PROVIDER/OPENAI_API_KEY 等）
+	docker run --rm -p 8080:8080 \
+	  -e LLM_PROVIDER -e OPENAI_API_KEY -e OPENAI_BASE_URL -e OPENAI_MODEL \
+	  $(DOCKER_IMAGE)
+
+.PHONY: compose-up
+compose-up: ## docker compose 启动（读取 .env）
+	docker compose up --build
 
 # ── 数据 ──────────────────────────────────────────────────────────────────────
 
@@ -149,6 +173,18 @@ test: ## 运行所有单元测试
 .PHONY: test-tft
 test-tft: ## 只运行 tft 包的测试
 	go test ./tft/... -v -count=1
+
+.PHONY: feedback-report
+feedback-report: ## 汇总 rejected 反馈样本，输出复盘报告（可传 FILE=路径）
+	go run ./cmd/tft-feedback-report $(if $(FILE),-file "$(FILE)")
+
+.PHONY: replay-eval-demo
+replay-eval-demo: ## 离线演示自动回放评测（不依赖服务/LLM），设计见 docs/replay-eval-design.md
+	go run ./cmd/tft-replay-eval -mode demo -file cmd/tft-replay-eval/testdata/demo_cases.jsonl
+
+.PHONY: replay-eval
+replay-eval: ## 对运行中的服务回放 rejected 样本（可传 ADDR=、FILE=、MAX=）
+	go run ./cmd/tft-replay-eval -mode http $(if $(ADDR),-addr "$(ADDR)") $(if $(FILE),-file "$(FILE)") $(if $(MAX),-max $(MAX))
 
 .PHONY: test-cover
 test-cover: ## 运行测试并生成覆盖率报告

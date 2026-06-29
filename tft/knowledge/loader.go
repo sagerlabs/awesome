@@ -11,6 +11,16 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
+// GetKnowledgeDir 返回 knowledge 数据目录：优先环境变量 TFT_KNOWLEDGE_DIR，
+// 否则默认仓库内的 tft/knowledge/data（容器镜像保持同样布局）。
+// 与 data.GetDataDir 的 TFT_DATA_DIR 模式保持一致。
+func GetKnowledgeDir() string {
+	if dir := os.Getenv("TFT_KNOWLEDGE_DIR"); dir != "" {
+		return dir
+	}
+	return filepath.Join("tft", "knowledge", "data")
+}
+
 // Loader 数据加载器
 type Loader struct {
 	dataDir string

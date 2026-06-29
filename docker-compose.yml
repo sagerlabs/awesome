@@ -1,0 +1,36 @@
+# TFT Copilot 服务编排。
+#
+# 用法：
+#   1. 复制环境变量到 .env（见下方 environment 注释），至少配置 LLM provider + key
+#   2. docker compose up --build
+#
+# 健康检查命中 /v1/tft/health；数据未加载时该接口返回 503，容器会被标记 unhealthy。
+services:
+  tft-copilot:
+    build:
+      context: .
+      args:
+        VERSION: ${VERSION:-docker}
+        GIT_COMMIT: ${GIT_COMMIT:-unknown}
+        BUILD_TIME: ${BUILD_TIME:-unknown}
+    image: tft-copilot:latest
+    ports:
+      - "${PORT:-8080}:8080"
+    environment:
+      # ── LLM provider（必填其一）────────────────────────────────
+      LLM_PROVIDER: ${LLM_PROVIDER:-deepseek}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-https://api.deepseek.com}
+      OPENAI_MODEL: ${OPENAI_MODEL:-deepseek-chat}
+      # ── 可选调优 ───────────────────────────────────────────────
+      PORT: "8080"
+      LOG_ENV: ${LOG_ENV:-prod}
+      # 每 IP 每秒请求上限（0/未设置=不限流）+ 突发额度
+      RATE_LIMIT_RPS: ${RATE_LIMIT_RPS:-0}
+      RATE_LIMIT_BURST: ${RATE_LIMIT_BURST:-20}
+      # 关闭 legacy /analyze 链路以省启动开销
+      DISABLE_LEGACY_GRAPH: ${DISABLE_LEGACY_GRAPH:-false}
+      # 数据目录（镜像内默认布局即可，挂载外部数据时才需要改）
+      TFT_DATA_DIR: ${TFT_DATA_DIR:-}
+      TFT_KNOWLEDGE_DIR: ${TFT_KNOWLEDGE_DIR:-}
+    restart: unless-stopped

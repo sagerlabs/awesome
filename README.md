@@ -55,6 +55,23 @@ export PORT=8080
 make run
 ```
 
+### 容器化部署
+
+镜像采用多阶段构建（静态二进制 + Alpine 运行时 + 非 root 用户），运行所需的
+knowledge 和 metadata 数据已打进镜像，内置 healthcheck 命中 `/v1/tft/health`：
+
+```bash
+# 直接用 docker
+make docker-build
+make docker-run        # 需先 export LLM_PROVIDER / OPENAI_API_KEY 等
+
+# 或用 docker compose（把变量写进 .env）
+make compose-up
+```
+
+构建时通过 `--build-arg VERSION/GIT_COMMIT/BUILD_TIME` 注入版本信息，`/v1/tft/health`
+会原样返回，便于运维确认线上版本。
+
 测试主接口：
 
 ```bash
@@ -62,6 +79,19 @@ curl -N -X POST http://localhost:8080/v1/tft/nlu/stream \
   -H "Content-Type: application/json" \
   -d '{"input":"剑魔打工强吗"}'
 ```
+
+### 多轮对话（教练反馈闭环）
+
+教练反馈闭环（识别"答非所问/补充局面/继续追问"）按会话隔离。要启用多轮记忆，
+客户端需为同一段对话传一个稳定的 `session_id`（也可用 `X-Session-ID` 请求头）：
+
+```bash
+curl -N -X POST http://localhost:8080/v1/tft/nlu/stream \
+  -H "Content-Type: application/json" \
+  -d '{"input":"不对，这个答非所问","session_id":"user-42-conv-1"}'
+```
+
+不传 `session_id` 时请求是无状态的：不会读到上一轮上下文，也不会和其他用户串话。
 
 ## 数据更新
 
@@ -117,4 +147,29 @@ make test
 
 ```bash
 TRACE=true make run
+```
+
+如果不需要 legacy `/v1/tft/analyze` 链路，可设置 `DISABLE_LEGACY_GRAPH=true` 跳过它的编译，
+减少启动开销；主链路 `/v1/tft/nlu` 不受影响，被禁用的 analyze 接口会返回 410：
+
+```bash
+DISABLE_LEGACY_GRAPH=true make run
+```
+
+### 限流
+
+按客户端 IP 限流，默认关闭。设置 `RATE_LIMIT_RPS`（每秒请求数）即可开启，
+`RATE_LIMIT_BURST` 控制突发额度（默认 20）；超限返回 HTTP 429：
+
+```bash
+RATE_LIMIT_RPS=5 RATE_LIMIT_BURST=10 make run
+```
+
+### 运维探针
+
+`GET /v1/tft/health` 返回服务状态、版本/构建信息和已加载阵容数；数据未加载时
+返回 `503 degraded`，可直接用于容器/负载均衡的健康检查：
+
+```json
+{ "status": "ok", "version": "v1.2.3", "git_commit": "abc1234", "comp_count": 120 }
 ```

@@ -1,6 +1,7 @@
 package agent
 
 import (
+	"encoding/json"
 	"fmt"
 	"os"
 	"path/filepath"
@@ -19,6 +20,12 @@ const (
 	FeedbackUnrelated           = "unrelated"
 )
 
+// defaultSessionTTL bounds how long a conversation's last-turn state is kept.
+// A turn older than this is treated as a fresh conversation, and the entry is
+// evicted to keep memory bounded for a long-running server.
+const defaultSessionTTL = 30 * time.Minute
+
+// AdviceFeedbackState is the last-turn memory for a single conversation.
 type AdviceFeedbackState struct {
 	LastUserInput string
 	LastAdvice    string
@@ -26,24 +33,46 @@ type AdviceFeedbackState struct {
 	LastFeedback  string
 }
 
+type sessionEntry struct {
+	state     AdviceFeedbackState
+	updatedAt time.Time
+}
+
+// FeedbackMemory holds last-turn advice state keyed by session ID, so that
+// concurrent conversations never read each other's context. Requests without a
+// session ID are treated as stateless: Detect returns nil and Record is a
+// no-op, which is the safe default (no cross-talk) when the caller does not
+// identify a conversation.
 type FeedbackMemory struct {
-	mu    sync.Mutex
-	state AdviceFeedbackState
+	mu       sync.Mutex
+	sessions map[string]*sessionEntry
+	ttl      time.Duration
+	now      func() time.Time // injectable so tests can control expiry
 }
 
 func NewFeedbackMemory() *FeedbackMemory {
-	return &FeedbackMemory{}
+	return &FeedbackMemory{
+		sessions: make(map[string]*sessionEntry),
+		ttl:      defaultSessionTTL,
+		now:      time.Now,
+	}
 }
 
-func (m *FeedbackMemory) Detect(userInput string) *contracts.AdviceFeedback {
-	if m == nil {
+// Detect compares the new input against the session's previous turn and returns
+// a feedback signal, or nil when there is no prior turn or no session scope.
+func (m *FeedbackMemory) Detect(sessionID string, userInput string) *contracts.AdviceFeedback {
+	if m == nil || strings.TrimSpace(sessionID) == "" {
 		return nil
 	}
 
 	m.mu.Lock()
 	defer m.mu.Unlock()
 
-	if strings.TrimSpace(m.state.LastUserInput) == "" || strings.TrimSpace(m.state.LastAdvice) == "" {
+	entry := m.liveEntryLocked(sessionID)
+	if entry == nil {
+		return nil
+	}
+	if strings.TrimSpace(entry.state.LastUserInput) == "" || strings.TrimSpace(entry.state.LastAdvice) == "" {
 		return nil
 	}
 
@@ -55,33 +84,71 @@ func (m *FeedbackMemory) Detect(userInput string) *contracts.AdviceFeedback {
 	return &contracts.AdviceFeedback{
 		Type:              feedbackType,
 		Reason:            reason,
-		PreviousUserInput: m.state.LastUserInput,
-		LastAdviceSummary: summarizeForFeedback(m.state.LastAdvice, 120),
+		PreviousUserInput: entry.state.LastUserInput,
+		LastAdviceSummary: summarizeForFeedback(entry.state.LastAdvice, 120),
 	}
 }
 
-func (m *FeedbackMemory) Record(userInput string, advice string, intent string) {
-	if m == nil || strings.TrimSpace(userInput) == "" || strings.TrimSpace(advice) == "" {
+// Record stores the latest turn for a session. It no-ops when the session ID,
+// input, or advice is empty.
+func (m *FeedbackMemory) Record(sessionID string, userInput string, advice string, intent string) {
+	if m == nil || strings.TrimSpace(sessionID) == "" {
+		return
+	}
+	if strings.TrimSpace(userInput) == "" || strings.TrimSpace(advice) == "" {
 		return
 	}
 
 	m.mu.Lock()
 	defer m.mu.Unlock()
 
-	m.state = AdviceFeedbackState{
-		LastUserInput: strings.TrimSpace(userInput),
-		LastAdvice:    strings.TrimSpace(advice),
-		LastIntent:    strings.TrimSpace(intent),
+	m.evictExpiredLocked()
+	m.sessions[sessionID] = &sessionEntry{
+		state: AdviceFeedbackState{
+			LastUserInput: strings.TrimSpace(userInput),
+			LastAdvice:    strings.TrimSpace(advice),
+			LastIntent:    strings.TrimSpace(intent),
+		},
+		updatedAt: m.now(),
 	}
 }
 
-func (m *FeedbackMemory) Snapshot() AdviceFeedbackState {
+// Snapshot returns a copy of a session's current state, for tests and debugging.
+func (m *FeedbackMemory) Snapshot(sessionID string) AdviceFeedbackState {
 	if m == nil {
 		return AdviceFeedbackState{}
 	}
 	m.mu.Lock()
 	defer m.mu.Unlock()
-	return m.state
+	if entry := m.liveEntryLocked(sessionID); entry != nil {
+		return entry.state
+	}
+	return AdviceFeedbackState{}
+}
+
+// liveEntryLocked returns a non-expired entry for the session, deleting it if
+// it has aged past the TTL. Callers must hold m.mu.
+func (m *FeedbackMemory) liveEntryLocked(sessionID string) *sessionEntry {
+	entry, ok := m.sessions[sessionID]
+	if !ok {
+		return nil
+	}
+	if m.now().Sub(entry.updatedAt) > m.ttl {
+		delete(m.sessions, sessionID)
+		return nil
+	}
+	return entry
+}
+
+// evictExpiredLocked drops all aged-out sessions. Callers must hold m.mu.
+// Eviction runs on each Record, which is cheap for the expected session count.
+func (m *FeedbackMemory) evictExpiredLocked() {
+	cutoff := m.now()
+	for id, entry := range m.sessions {
+		if cutoff.Sub(entry.updatedAt) > m.ttl {
+			delete(m.sessions, id)
+		}
+	}
 }
 
 func classifyAdviceFeedback(userInput string) (string, string) {
@@ -135,38 +202,52 @@ func summarizeForFeedback(text string, maxRunes int) string {
 	return string(runes[:maxRunes]) + "..."
 }
 
+// feedbackRecord is the persistent schema for a single rejected-advice event.
+type feedbackRecord struct {
+	Timestamp         string `json:"timestamp"`
+	Date              string `json:"date"`
+	Type              string `json:"type"`
+	UserInput         string `json:"user_input"`
+	PreviousUserInput string `json:"previous_user_input,omitempty"`
+	AdviceSummary     string `json:"advice_summary,omitempty"`
+	Reason            string `json:"reason,omitempty"`
+}
+
+// AppendFeedbackCase appends a rejected-advice event to a JSONL file.
+// path defaults to "data/feedback_cases.jsonl" — one JSON object per line,
+// append-only, safe to tail/grep, multi-instance friendly.
 func AppendFeedbackCase(path string, userInput string, advice string, feedback *contracts.AdviceFeedback) error {
 	if feedback == nil || feedback.Type != FeedbackRejected {
 		return nil
 	}
 	if path == "" {
-		path = filepath.Join("docs", "FEEDBACK_CASES.md")
+		path = filepath.Join("data", "feedback_cases.jsonl")
 	}
 
-	entry := fmt.Sprintf(`
-## %s
+	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
+		return err
+	}
 
-日期：%s
-用户原问题：%s
-Agent 原回答摘要：%s
-用户反馈：%s
-判定类型：%s
-可能原因：待人工复盘
-后续修复方向：待人工复盘
-`,
-		time.Now().Format("2006-01-02 15:04:05"),
-		time.Now().Format("2006-01-02"),
-		feedback.PreviousUserInput,
-		feedback.LastAdviceSummary,
-		strings.TrimSpace(userInput),
-		feedback.Type,
-	)
+	rec := feedbackRecord{
+		Timestamp:         time.Now().UTC().Format(time.RFC3339),
+		Date:              time.Now().Format("2006-01-02"),
+		Type:              feedback.Type,
+		UserInput:         strings.TrimSpace(userInput),
+		PreviousUserInput: feedback.PreviousUserInput,
+		AdviceSummary:     feedback.LastAdviceSummary,
+		Reason:            feedback.Reason,
+	}
+
+	line, err := json.Marshal(rec)
+	if err != nil {
+		return err
+	}
 
 	file, err := os.OpenFile(path, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0o644)
 	if err != nil {
 		return err
 	}
 	defer file.Close()
-	_, err = file.WriteString(entry)
+	_, err = fmt.Fprintf(file, "%s\n", line)
 	return err
 }

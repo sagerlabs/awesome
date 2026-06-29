@@ -1,0 +1,25 @@
+# Build artifacts
+bin/
+*.exe
+desktop/build/
+
+# VCS and IDE
+.git/
+.github/
+.idea/
+.vscode/
+
+# Docs and local notes (not needed in the image)
+docs/
+*.md
+
+# Test / coverage output
+coverage.out
+coverage.html
+coverage.txt
+
+# Local data scratch (the image copies only the committed data dirs it needs)
+data/feedback_cases.jsonl
+
+# OS noise
+.DS_Store

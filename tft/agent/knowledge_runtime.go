@@ -12,7 +12,7 @@ func newKnowledgeAdapterFromStore(dataStore *data.Store, logger *logrus.Logger) 
 	var knowledgeStore *knowledge.Store
 	enableMeta := false
 
-	loader := knowledge.NewLoader("tft/knowledge/data")
+	loader := knowledge.NewLoader(knowledge.GetKnowledgeDir())
 	store, err := loader.LoadAll()
 	if err == nil {
 		knowledgeStore = store

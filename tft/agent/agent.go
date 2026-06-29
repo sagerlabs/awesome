@@ -12,6 +12,7 @@ import (
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
 	"github.com/sagerlabs/awesome/tft/data"
+	"github.com/sagerlabs/awesome/tft/session"
 	"github.com/sagerlabs/awesome/tft/trace"
 	"github.com/sirupsen/logrus"
 	arkModel "github.com/volcengine/volcengine-go-sdk/service/arkruntime/model"
@@ -29,6 +30,9 @@ type AgentConfig struct {
 	GraphRuntime *GraphRuntime
 	// FeedbackCasesPath rejected feedback 样本记录文件，空值使用 docs/FEEDBACK_CASES.md
 	FeedbackCasesPath string
+	// DisableLegacyGraph 为 true 时不编译 legacy analyze graph，跳过其启动开销。
+	// 此时 /v1/tft/analyze 链路（Analyze/AnalyzeStream）不可用，主链路 NLU 不受影响。
+	DisableLegacyGraph bool
 }
 
 // defaultLLMTimeout 从环境变量读超时，兜底 60s
@@ -107,9 +111,15 @@ func NewAgentWithConfig(ctx context.Context, store *data.Store, cfg *AgentConfig
 	}
 
 	// ── 编译 Graph ────────────────────────────────────────────────────
-	runnable, err := BuildGraphWithRuntime(ctx, chatModel, graphRuntime)
-	if err != nil {
-		return nil, fmt.Errorf("build graph: %w", err)
+	// legacy analyze graph 仅在未禁用时编译，避免不需要它的部署多付启动开销。
+	var runnable compose.Runnable[*GraphInput, *schema.Message]
+	if !cfg.DisableLegacyGraph {
+		runnable, err = BuildGraphWithRuntime(ctx, chatModel, graphRuntime)
+		if err != nil {
+			return nil, fmt.Errorf("build graph: %w", err)
+		}
+	} else {
+		logger.Info("legacy analyze graph 已禁用（DisableLegacyGraph=true）")
 	}
 
 	knowledgeAdapter, err := newKnowledgeAdapterFromStore(store, logger)
@@ -141,15 +151,18 @@ func NewAgentWithConfig(ctx context.Context, store *data.Store, cfg *AgentConfig
 	}, nil
 }
 
-// maxTokens 返回每次调用的 token 上限
-// 优先读环境变量 LLM_MAX_TOKENS，兜底 60
+// defaultMaxTokens 单次 LLM 调用的默认 token 上限。
+const defaultMaxTokens = 1024
+
+// maxTokens 返回每次调用的 token 上限：优先读环境变量 LLM_MAX_TOKENS，
+// 非正数或无法解析时回退到 defaultMaxTokens。
 func (a *Agent) maxTokens() int {
 	if v := os.Getenv("LLM_MAX_TOKENS"); v != "" {
-		if n, err := strconv.Atoi(v); err == nil && n > 0 && n <= 150 {
+		if n, err := strconv.Atoi(v); err == nil && n > 0 {
 			return n
 		}
 	}
-	return 1024
+	return defaultMaxTokens
 }
 
 // withLLMTimeout 在 ctx 上套一层 LLM 专属超时
@@ -158,8 +171,15 @@ func (a *Agent) withLLMTimeout(parent context.Context) (context.Context, context
 	return context.WithTimeout(parent, a.llmTimeout)
 }
 
+// ErrLegacyGraphDisabled 在 legacy analyze 链路被配置禁用时由 Analyze/AnalyzeStream 返回。
+var ErrLegacyGraphDisabled = fmt.Errorf("legacy analyze graph is disabled")
+
 // Analyze 普通接口：等待 LLM 完整输出后返回
 func (a *Agent) Analyze(ctx context.Context, rawInput string) (*GraphOutput, error) {
+	if a.runnable == nil {
+		return nil, ErrLegacyGraphDisabled
+	}
+
 	traceID, _ := trace.TraceIDFromContext(ctx)
 	llmCtx, cancel := a.withLLMTimeout(ctx)
 	defer cancel()
@@ -205,6 +225,10 @@ func (a *Agent) Analyze(ctx context.Context, rawInput string) (*GraphOutput, err
 func (a *Agent) AnalyzeStream(ctx context.Context, rawInput string) (
 	*schema.StreamReader[*GraphOutput], error,
 ) {
+	if a.runnable == nil {
+		return nil, ErrLegacyGraphDisabled
+	}
+
 	llmCtx, cancel := a.withLLMTimeout(ctx)
 
 	start := time.Now()
@@ -251,7 +275,7 @@ func (a *Agent) NluAnalyze(ctx context.Context, rawInput string) (
 		ark.WithThinking(&ark.Thinking{
 			Type: arkModel.ThinkingTypeDisabled,
 		})))
-	result, err := a.nluRunnable.Invoke(llmCtx, a.newNluContext(rawInput), opts...)
+	result, err := a.nluRunnable.Invoke(llmCtx, a.newNluContext(ctx, rawInput), opts...)
 	if err != nil {
 		a.logger.WithError(err).WithFields(logrus.Fields{
 			"trace_id": traceID,
@@ -283,7 +307,7 @@ func (a *Agent) NluAnalyzeStream(ctx context.Context, rawInput string) (
 		ark.WithThinking(&ark.Thinking{
 			Type: arkModel.ThinkingTypeDisabled,
 		})))
-	sr, err := a.nluStreamRunnable.Stream(llmCtx, a.newNluContext(rawInput), opts...)
+	sr, err := a.nluStreamRunnable.Stream(llmCtx, a.newNluContext(ctx, rawInput), opts...)
 	if err != nil {
 		cancel()
 		a.logger.WithError(err).WithField("elapsed", time.Since(start).String()).Error("NLU流式推理启动失败")
@@ -317,7 +341,7 @@ func (a *Agent) NluAdvice(ctx context.Context, rawInput string) (string, error) 
 		ark.WithThinking(&ark.Thinking{
 			Type: arkModel.ThinkingTypeDisabled,
 		})))
-	msg, err := a.nluStreamRunnable.Invoke(llmCtx, a.newNluContext(rawInput), opts...)
+	msg, err := a.nluStreamRunnable.Invoke(llmCtx, a.newNluContext(ctx, rawInput), opts...)
 	if err != nil {
 		a.logger.WithError(err).WithFields(logrus.Fields{
 			"trace_id": traceID,
@@ -334,30 +358,31 @@ func (a *Agent) NluAdvice(ctx context.Context, rawInput string) (string, error) 
 		"elapsed":      time.Since(start).Round(time.Millisecond).String(),
 		"output_chars": len([]rune(msg.Content)),
 	}).Debug("NLU完整推理完成")
-	a.RecordAdvice(rawInput, msg.Content, "")
+	a.RecordAdvice(ctx, rawInput, msg.Content, "")
 	return msg.Content, nil
 }
 
-func (a *Agent) newNluContext(rawInput string) *NluContext {
-	ctx := &NluContext{UserInput: rawInput}
+func (a *Agent) newNluContext(ctx context.Context, rawInput string) *NluContext {
+	nluCtx := &NluContext{UserInput: rawInput}
 	if a == nil || a.feedbackMemory == nil {
-		return ctx
+		return nluCtx
 	}
-	feedback := a.feedbackMemory.Detect(rawInput)
-	ctx.Feedback = feedback
+	sessionID := session.IDFromContext(ctx)
+	feedback := a.feedbackMemory.Detect(sessionID, rawInput)
+	nluCtx.Feedback = feedback
 	if feedback != nil && feedback.Type == FeedbackRejected {
 		if err := AppendFeedbackCase(a.feedbackCasesPath, rawInput, feedback.LastAdviceSummary, feedback); err != nil && a.logger != nil {
 			a.logger.WithError(err).Warn("记录 feedback case 失败")
 		}
 	}
-	return ctx
+	return nluCtx
 }
 
-func (a *Agent) RecordAdvice(userInput string, advice string, intent string) {
+func (a *Agent) RecordAdvice(ctx context.Context, userInput string, advice string, intent string) {
 	if a == nil || a.feedbackMemory == nil {
 		return
 	}
-	a.feedbackMemory.Record(userInput, advice, intent)
+	a.feedbackMemory.Record(session.IDFromContext(ctx), userInput, advice, intent)
 }
 
 func (a *Agent) computeRecommendations(ctx context.Context, rawInput string) ([]data.Recommendation, error) {

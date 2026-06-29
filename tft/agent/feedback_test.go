@@ -1,10 +1,12 @@
 package agent
 
 import (
+	"encoding/json"
 	"os"
 	"path/filepath"
 	"strings"
 	"testing"
+	"time"
 
 	"github.com/sagerlabs/awesome/tft/knowledge/contracts"
 )
@@ -34,13 +36,14 @@ func TestClassifyAdviceFeedback(t *testing.T) {
 
 func TestFeedbackMemoryDetectsRejectedFromPreviousAdvice(t *testing.T) {
 	memory := NewFeedbackMemory()
+	const sess = "session-a"
 
-	if feedback := memory.Detect("不对"); feedback != nil {
+	if feedback := memory.Detect(sess, "不对"); feedback != nil {
 		t.Fatalf("expected no feedback before previous advice, got %#v", feedback)
 	}
 
-	memory.Record("剑魔打工强吗", "能拿来打工，但不要追三。", "champion_query")
-	feedback := memory.Detect("不对，这个答非所问")
+	memory.Record(sess, "剑魔打工强吗", "能拿来打工，但不要追三。", "champion_query")
+	feedback := memory.Detect(sess, "不对，这个答非所问")
 
 	if feedback == nil {
 		t.Fatal("expected feedback")
@@ -53,6 +56,53 @@ func TestFeedbackMemoryDetectsRejectedFromPreviousAdvice(t *testing.T) {
 	}
 	if !strings.Contains(feedback.LastAdviceSummary, "能拿来打工") {
 		t.Fatalf("unexpected advice summary: %s", feedback.LastAdviceSummary)
+	}
+}
+
+// TestFeedbackMemoryIsolatesSessions is the regression guard for the cross-talk
+// bug: one conversation's previous turn must never surface in another's.
+func TestFeedbackMemoryIsolatesSessions(t *testing.T) {
+	memory := NewFeedbackMemory()
+
+	memory.Record("session-a", "剑魔打工强吗", "能拿来打工。", "champion_query")
+
+	// A different session asking a follow-up must not see session-a's advice.
+	if feedback := memory.Detect("session-b", "不对"); feedback != nil {
+		t.Fatalf("session-b should not see session-a's advice, got %#v", feedback)
+	}
+
+	// The original session still sees its own previous turn.
+	if feedback := memory.Detect("session-a", "不对"); feedback == nil {
+		t.Fatal("session-a should still detect feedback against its own advice")
+	}
+}
+
+// TestFeedbackMemoryEmptySessionIsStateless verifies anonymous requests carry no
+// shared state, so they cannot cross-talk through a default bucket.
+func TestFeedbackMemoryEmptySessionIsStateless(t *testing.T) {
+	memory := NewFeedbackMemory()
+
+	memory.Record("", "剑魔打工强吗", "能拿来打工。", "champion_query")
+	if feedback := memory.Detect("", "不对"); feedback != nil {
+		t.Fatalf("empty session must stay stateless, got %#v", feedback)
+	}
+}
+
+// TestFeedbackMemoryEvictsExpiredSessions checks the TTL bound: a turn older
+// than the TTL is forgotten so memory does not grow without limit.
+func TestFeedbackMemoryEvictsExpiredSessions(t *testing.T) {
+	memory := NewFeedbackMemory()
+	memory.ttl = time.Minute
+
+	clock := time.Unix(0, 0)
+	memory.now = func() time.Time { return clock }
+
+	memory.Record("session-a", "剑魔打工强吗", "能拿来打工。", "champion_query")
+
+	// Advance past the TTL: the previous turn should be gone.
+	clock = clock.Add(2 * time.Minute)
+	if feedback := memory.Detect("session-a", "不对"); feedback != nil {
+		t.Fatalf("expired session should be forgotten, got %#v", feedback)
 	}
 }
 
@@ -82,7 +132,7 @@ func TestBuildNluFormatPromptIncludesRejectedFeedbackInstruction(t *testing.T) {
 
 func TestAppendFeedbackCaseWritesRejectedCase(t *testing.T) {
 	dir := t.TempDir()
-	path := filepath.Join(dir, "FEEDBACK_CASES.md")
+	path := filepath.Join(dir, "feedback_cases.jsonl")
 
 	err := AppendFeedbackCase(path, "不对", "old answer", &contracts.AdviceFeedback{
 		Type:              FeedbackRejected,
@@ -97,9 +147,23 @@ func TestAppendFeedbackCaseWritesRejectedCase(t *testing.T) {
 	if err != nil {
 		t.Fatalf("read feedback case failed: %v", err)
 	}
-	for _, text := range []string{"用户原问题：原问题", "Agent 原回答摘要：原回答摘要", "用户反馈：不对"} {
-		if !strings.Contains(string(content), text) {
-			t.Fatalf("feedback file should contain %q, got:\n%s", text, string(content))
+
+	line := strings.TrimSpace(string(content))
+	var rec map[string]interface{}
+	if err := json.Unmarshal([]byte(line), &rec); err != nil {
+		t.Fatalf("feedback file should be valid JSONL, got:\n%s\nerr: %v", line, err)
+	}
+	for key, want := range map[string]string{
+		"type":                FeedbackRejected,
+		"user_input":          "不对",
+		"previous_user_input": "原问题",
+		"advice_summary":      "原回答摘要",
+	} {
+		if got, _ := rec[key].(string); got != want {
+			t.Errorf("field %q: want %q, got %q", key, want, got)
 		}
+	}
+	if rec["timestamp"] == "" {
+		t.Error("timestamp should be non-empty")
 	}
 }
