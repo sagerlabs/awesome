@@ -1,0 +1,231 @@
+{
+  "cluster_id": "409067",
+  "tft_set": "TFTSet17",
+  "units": [
+    "伊泽瑞尔",
+    "贾克斯",
+    "莫甘娜",
+    "奥恩",
+    "拉莫斯",
+    "锐雯",
+    "慎",
+    "薇古丝",
+    "霞"
+  ],
+  "traits": [
+    "黑暗魔女 (1)",
+    "狙神 (1)",
+    "堡垒卫士 (2)",
+    "暮光铁壁 (1)",
+    "太空律动 (1)",
+    "观星者 (1)",
+    "未来战士 (2)",
+    "末日使者 (1)"
+  ],
+  "stars": [
+    "纳尔",
+    "维迦"
+  ],
+  "name_string": "TFT17_ResistTank, TFT17_Ornn",
+  "display_names": [
+    {
+      "name": "堡垒卫士",
+      "type": "trait",
+      "score": 1.5073099415204678
+    },
+    {
+      "name": "奥恩",
+      "type": "unit",
+      "score": 4.0511695906432745
+    }
+  ],
+  "count": 20012,
+  "avg_placement": 5.5606,
+  "top4_rate": 0.2988,
+  "win_rate": 0.0445,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "奥恩",
+      "items": [
+        "石像鬼石板甲",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 5.1935,
+      "count": 31,
+      "score": 0.6289,
+      "place_change": -0.863,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "薇古丝",
+      "items": [
+        "鬼索的狂暴之刃",
+        "灭世者的死亡之帽",
+        "红霸符"
+      ],
+      "avg_placement": 4.5833,
+      "count": 12,
+      "score": 0.2295,
+      "place_change": -1.473,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "灭世者的死亡之帽": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "unit": "慎",
+      "items": [
+        "饮血剑",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.7586,
+      "count": 29,
+      "score": 0.1233,
+      "place_change": -1.298,
+      "priority_scores": {
+        "饮血剑": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "格雷福斯",
+      "items": [
+        "无尽之刃",
+        "巨人杀手",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.875,
+      "count": 8,
+      "score": 0.0793,
+      "place_change": -1.181,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "巨人杀手": 85,
+        "朔极之矛": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 1650,
+      "avg": 5.8352,
+      "pcnt": 0.80409
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 1441,
+      "avg": 5.7849,
+      "pcnt": 0.70224
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 1077,
+      "avg": 5.7874,
+      "pcnt": 0.52485
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 684,
+      "avg": 5.6199,
+      "pcnt": 0.33333
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 561,
+      "avg": 5.5579,
+      "pcnt": 0.27339
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 544,
+      "avg": 5.6379,
+      "pcnt": 0.26511
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 523,
+      "avg": 5.6883,
+      "pcnt": 0.25487
+    },
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 330,
+      "avg": 5.6061,
+      "pcnt": 0.16082
+    },
+    "红霸符": {
+      "itemNames": "TFT_Item_RapidFireCannon",
+      "count": 322,
+      "avg": 5.6708,
+      "pcnt": 0.15692
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 292,
+      "avg": 5.6096,
+      "pcnt": 0.1423
+    },
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 202,
+      "avg": 5.3416,
+      "pcnt": 0.09844
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 632,
+      "avg": 6.0585,
+      "pick_rate": 0.001381
+    },
+    {
+      "day": "2026-07-23",
+      "count": 687,
+      "avg": 6.0349,
+      "pick_rate": 0.001478
+    },
+    {
+      "day": "2026-07-24",
+      "count": 690,
+      "avg": 6.1188,
+      "pick_rate": 0.001474
+    },
+    {
+      "day": "2026-07-25",
+      "count": 718,
+      "avg": 6.0975,
+      "pick_rate": 0.001501
+    },
+    {
+      "day": "2026-07-26",
+      "count": 732,
+      "avg": 6.0068,
+      "pick_rate": 0.001523
+    },
+    {
+      "day": "2026-07-27",
+      "count": 640,
+      "avg": 6.0047,
+      "pick_rate": 0.001385
+    },
+    {
+      "day": "2026-07-28",
+      "count": 682,
+      "avg": 6.1672,
+      "pick_rate": 0.00157
+    }
+  ],
+  "levelling": "Standard",
+  "difficulty": -0.079
+}

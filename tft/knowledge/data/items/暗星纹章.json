@@ -1,0 +1,13 @@
+{
+  "name": "暗星纹章",
+  "priority_list": [
+    {
+      "cluster_id": "409004",
+      "comp_name": "TFT17_DarkStar, TFT17_AurelionSol",
+      "comp_tier": "A",
+      "comp_avg": 4.3001,
+      "carry": "奥瑞利安·索尔",
+      "priority_score": 100
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "cluster_id": "409066",
+  "tft_set": "TFTSet17",
+  "units": [
+    "阿萝拉",
+    "卑尔维斯",
+    "布里茨",
+    "贝蕾亚",
+    "菲奥娜",
+    "超级机甲",
+    "俄洛伊",
+    "金克丝",
+    "莫甘娜"
+  ],
+  "traits": [
+    "挑战者 (1)",
+    "幻灵战队 (2)",
+    "汪星机器人 (1)",
+    "斗神 (1)",
+    "旅人 (1)",
+    "狂战士 (1)",
+    "黑暗魔女 (1)",
+    "海魔人 (1)",
+    "重装战士 (1)",
+    "太空律动 (1)"
+  ],
+  "stars": [
+    "阿萝拉",
+    "俄洛伊",
+    "蕾欧娜",
+    "厄运小姐",
+    "科加斯"
+  ],
+  "name_string": "TFT17_AnimaSquad, TFT17_Aurora",
+  "display_names": [
+    {
+      "name": "旅人",
+      "type": "trait",
+      "score": 2.328873220628689
+    },
+    {
+      "name": "阿萝拉",
+      "type": "unit",
+      "score": 3.5628154795288838
+    }
+  ],
+  "count": 192113,
+  "avg_placement": 4.4086,
+  "top4_rate": 0.484,
+  "win_rate": 0.3211,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "菲奥娜",
+      "items": [
+        "挑战者纹章",
+        "旅人纹章",
+        "夜之锋刃"
+      ],
+      "avg_placement": 1.9232,
+      "count": 807,
+      "score": 0.7978,
+      "place_change": -2.344,
+      "priority_scores": {
+        "挑战者纹章": 100,
+        "旅人纹章": 85,
+        "夜之锋刃": 72
+      }
+    },
+    {
+      "unit": "阿萝拉",
+      "items": [
+        "挑战者纹章",
+        "莫雷洛秘典",
+        "朔极之矛"
+      ],
+      "avg_placement": 2.4745,
+      "count": 274,
+      "score": 0.5592,
+      "place_change": -1.793,
+      "priority_scores": {
+        "挑战者纹章": 100,
+        "莫雷洛秘典": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "俄洛伊",
+      "items": [
+        "旅人纹章",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 2.4155,
+      "count": 142,
+      "score": 0.5053,
+      "place_change": -1.852,
+      "priority_scores": {
+        "旅人纹章": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "unit": "金克丝",
+      "items": [
+        "战兔十字弩",
+        "鬼索的狂暴之刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 2.3689,
+      "count": 938,
+      "score": 0.4858,
+      "place_change": -1.898,
+      "priority_scores": {
+        "战兔十字弩": 100,
+        "鬼索的狂暴之刃": 85,
+        "无尽之刃": 72
+      }
+    }
+  ],
+  "build_items": {
+    "旅人纹章": {
+      "itemNames": "TFT17_Item_FlexTraitEmblemItem",
+      "count": 54736,
+      "avg": 2.5287,
+      "pcnt": 1.46185
+    },
+    "挑战者纹章": {
+      "itemNames": "TFT17_Item_ASTraitEmblemItem",
+      "count": 53688,
+      "avg": 2.5936,
+      "pcnt": 1.43386
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 33274,
+      "avg": 4.0544,
+      "pcnt": 0.88866
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 23341,
+      "avg": 3.7104,
+      "pcnt": 0.62337
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 15079,
+      "avg": 3.7184,
+      "pcnt": 0.40272
+    },
+    "夜之锋刃": {
+      "itemNames": "TFT_Item_GuardianAngel",
+      "count": 13128,
+      "avg": 3.3759,
+      "pcnt": 0.35061
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 12730,
+      "avg": 3.4379,
+      "pcnt": 0.33998
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 9362,
+      "avg": 3.7631,
+      "pcnt": 0.25003
+    },
+    "莫雷洛秘典": {
+      "itemNames": "TFT_Item_Morellonomicon",
+      "count": 7860,
+      "avg": 3.6394,
+      "pcnt": 0.20992
+    },
+    "战兔十字弩": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier2_BattleBunnyCrossbow",
+      "count": 3962,
+      "avg": 3.0209,
+      "pcnt": 0.10581
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 11184,
+      "avg": 4.3523,
+      "pick_rate": 0.024432
+    },
+    {
+      "day": "2026-07-23",
+      "count": 11939,
+      "avg": 4.2808,
+      "pick_rate": 0.025684
+    },
+    {
+      "day": "2026-07-24",
+      "count": 11979,
+      "avg": 4.2806,
+      "pick_rate": 0.025581
+    },
+    {
+      "day": "2026-07-25",
+      "count": 12651,
+      "avg": 4.2797,
+      "pick_rate": 0.026452
+    },
+    {
+      "day": "2026-07-26",
+      "count": 12879,
+      "avg": 4.3111,
+      "pick_rate": 0.026792
+    },
+    {
+      "day": "2026-07-27",
+      "count": 12622,
+      "avg": 4.2363,
+      "pick_rate": 0.027307
+    },
+    {
+      "day": "2026-07-28",
+      "count": 12061,
+      "avg": 4.2534,
+      "pick_rate": 0.027762
+    },
+    {
+      "day": "2026-07-29",
+      "count": 82,
+      "avg": 4.5488,
+      "pick_rate": 0.020681
+    }
+  ],
+  "levelling": "Fast 9",
+  "difficulty": 0.035
+}

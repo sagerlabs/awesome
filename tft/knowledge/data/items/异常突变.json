@@ -1,0 +1,13 @@
+{
+  "name": "异常突变",
+  "priority_list": [
+    {
+      "cluster_id": "409050",
+      "comp_name": "TFT17_Augment_NasusCarry",
+      "comp_tier": "A",
+      "comp_avg": 4.3078,
+      "carry": "奥恩",
+      "priority_score": 100
+    }
+  ]
+}

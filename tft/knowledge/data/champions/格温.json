@@ -1,0 +1,41 @@
+{
+  "name": "格温",
+  "appear_in_comps": [
+    {
+      "cluster_id": "409034",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Ornn",
+      "tier": "S",
+      "avg_placement": 4.2013
+    },
+    {
+      "cluster_id": "409028",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "tier": "S",
+      "avg_placement": 4.2087
+    },
+    {
+      "cluster_id": "409029",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "tier": "C",
+      "avg_placement": 4.8717
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "409029",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "items": [
+        "珠光护手",
+        "强袭者的链枷",
+        "正义之手"
+      ],
+      "avg_placement": 3.9474,
+      "count": 19,
+      "priority_scores": {
+        "珠光护手": 100,
+        "强袭者的链枷": 85,
+        "正义之手": 72
+      }
+    }
+  ]
+}

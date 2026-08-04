@@ -1,0 +1,238 @@
+{
+  "cluster_id": "409041",
+  "tft_set": "TFTSet17",
+  "units": [
+    "亚托克斯",
+    "凯特琳",
+    "库奇",
+    "贾克斯",
+    "米利欧",
+    "锐雯",
+    "泰隆",
+    "崔斯特"
+  ],
+  "traits": [
+    "游侠 (1)",
+    "新星特攻队 (1)",
+    "织命人 (2)",
+    "堡垒卫士 (1)",
+    "观星者 (1)",
+    "未来战士 (1)"
+  ],
+  "stars": [
+    "崔斯特",
+    "贾克斯",
+    "凯特琳",
+    "米利欧",
+    "泰隆",
+    "亚托克斯",
+    "格温",
+    "阿卡丽",
+    "波比",
+    "贝蕾亚",
+    "伊泽瑞尔",
+    "雷克塞",
+    "科加斯",
+    "蕾欧娜"
+  ],
+  "name_string": "TFT17_Fateweaver, TFT17_TwistedFate",
+  "display_names": [
+    {
+      "name": "织命人",
+      "type": "trait",
+      "score": 1.3919308357348703
+    },
+    {
+      "name": "崔斯特",
+      "type": "unit",
+      "score": 3.801008645533141
+    }
+  ],
+  "count": 59110,
+  "avg_placement": 4.7729,
+  "top4_rate": 0.4526,
+  "win_rate": 0.067,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "贾克斯",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 4.2545,
+      "count": 786,
+      "score": 0.5137,
+      "place_change": -0.655,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 72
+      }
+    },
+    {
+      "unit": "崔斯特",
+      "items": [
+        "纳什之牙",
+        "纳什之牙",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 4.6976,
+      "count": 1756,
+      "score": 0.392,
+      "place_change": -0.212,
+      "priority_scores": {
+        "纳什之牙": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "凯特琳",
+      "items": [
+        "死亡之刃",
+        "鬼索的狂暴之刃",
+        "巨人杀手"
+      ],
+      "avg_placement": 4.2418,
+      "count": 455,
+      "score": 0.2807,
+      "place_change": -0.668,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "巨人杀手": 72
+      }
+    },
+    {
+      "unit": "泰隆",
+      "items": [
+        "海克斯科技枪刃",
+        "朔极之矛",
+        "正义之手"
+      ],
+      "avg_placement": 3.56,
+      "count": 25,
+      "score": 0.136,
+      "place_change": -1.35,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "朔极之矛": 85,
+        "正义之手": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 13488,
+      "avg": 4.6389,
+      "pcnt": 1.29568
+    },
+    "纳什之牙": {
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 10519,
+      "avg": 4.7239,
+      "pcnt": 1.01047
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 5929,
+      "avg": 4.6984,
+      "pcnt": 0.56955
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 4695,
+      "avg": 4.6829,
+      "pcnt": 0.45101
+    },
+    "死亡之刃": {
+      "itemNames": "TFT_Item_Deathblade",
+      "count": 4490,
+      "avg": 4.5198,
+      "pcnt": 0.43132
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 4142,
+      "avg": 4.5159,
+      "pcnt": 0.39789
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 3866,
+      "avg": 4.4084,
+      "pcnt": 0.37137
+    },
+    "冕卫": {
+      "itemNames": "TFT_Item_Crownguard",
+      "count": 2557,
+      "avg": 4.4298,
+      "pcnt": 0.24563
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "TFT_Item_HextechGunblade",
+      "count": 2461,
+      "avg": 4.553,
+      "pcnt": 0.23641
+    },
+    "正义之手": {
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 1464,
+      "avg": 4.3723,
+      "pcnt": 0.14063
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 3461,
+      "avg": 4.9413,
+      "pick_rate": 0.007561
+    },
+    {
+      "day": "2026-07-23",
+      "count": 3526,
+      "avg": 4.9064,
+      "pick_rate": 0.007585
+    },
+    {
+      "day": "2026-07-24",
+      "count": 3501,
+      "avg": 4.8937,
+      "pick_rate": 0.007476
+    },
+    {
+      "day": "2026-07-25",
+      "count": 3604,
+      "avg": 4.8835,
+      "pick_rate": 0.007536
+    },
+    {
+      "day": "2026-07-26",
+      "count": 3577,
+      "avg": 4.9673,
+      "pick_rate": 0.007441
+    },
+    {
+      "day": "2026-07-27",
+      "count": 3531,
+      "avg": 4.9051,
+      "pick_rate": 0.007639
+    },
+    {
+      "day": "2026-07-28",
+      "count": 3323,
+      "avg": 4.8622,
+      "pick_rate": 0.007649
+    },
+    {
+      "day": "2026-07-29",
+      "count": 41,
+      "avg": 4.8293,
+      "pick_rate": 0.01034
+    }
+  ],
+  "levelling": "lvl 5",
+  "difficulty": -0.064
+}

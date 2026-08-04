@@ -1,0 +1,226 @@
+{
+  "cluster_id": "409048",
+  "tft_set": "TFTSet17",
+  "units": [
+    "布里茨",
+    "俄洛伊",
+    "蕾欧娜",
+    "丽桑卓",
+    "莫德凯撒",
+    "内瑟斯",
+    "努努和威朗普",
+    "佐伊"
+  ],
+  "traits": [
+    "法官 (1)",
+    "汪星机器人 (1)",
+    "暗星 (1)",
+    "神谕 (1)",
+    "重装战士 (3)",
+    "太空律动 (1)"
+  ],
+  "stars": [
+    "莫德凯撒",
+    "佐伊",
+    "蕾欧娜",
+    "维克托",
+    "黛安娜",
+    "古拉加斯"
+  ],
+  "name_string": "TFT17_Augment_MordekaiserCarry, TFT17_ShieldTank",
+  "display_names": [
+    {
+      "name": "重装战士",
+      "type": "trait",
+      "score": 2.05
+    },
+    {
+      "name": "莫德凯撒",
+      "type": "unit",
+      "score": 4.451020408163266
+    }
+  ],
+  "count": 10714,
+  "avg_placement": 4.4469,
+  "top4_rate": 0.5213,
+  "win_rate": 0.0613,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "莫德凯撒",
+      "items": [
+        "饮血剑",
+        "夜之锋刃",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.4615,
+      "count": 13,
+      "score": 0.5338,
+      "place_change": -1.059,
+      "priority_scores": {
+        "饮血剑": 100,
+        "夜之锋刃": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "佐伊",
+      "items": [
+        "海克斯科技枪刃",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.2222,
+      "count": 18,
+      "score": 0.4134,
+      "place_change": -1.299,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "莫雷洛秘典": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "蕾欧娜",
+      "items": [
+        "石像鬼石板甲",
+        "坚定之心",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 2.8333,
+      "count": 12,
+      "score": 0.2087,
+      "place_change": -1.688,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "坚定之心": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "俄洛伊",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.5556,
+      "count": 18,
+      "score": 0.1379,
+      "place_change": -0.965,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 1360,
+      "avg": 4.1691,
+      "pcnt": 0.69388
+    },
+    "虚空之杖": {
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 1297,
+      "avg": 4.2837,
+      "pcnt": 0.66173
+    },
+    "夜之锋刃": {
+      "itemNames": "TFT_Item_GuardianAngel",
+      "count": 1190,
+      "avg": 4.5151,
+      "pcnt": 0.60714
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 1020,
+      "avg": 4.1696,
+      "pcnt": 0.52041
+    },
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 894,
+      "avg": 4.4351,
+      "pcnt": 0.45612
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "TFT_Item_HextechGunblade",
+      "count": 894,
+      "avg": 4.3054,
+      "pcnt": 0.45612
+    },
+    "莫雷洛秘典": {
+      "itemNames": "TFT_Item_Morellonomicon",
+      "count": 777,
+      "avg": 4.1763,
+      "pcnt": 0.39643
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 704,
+      "avg": 3.9645,
+      "pcnt": 0.35918
+    },
+    "冕卫": {
+      "itemNames": "TFT_Item_Crownguard",
+      "count": 297,
+      "avg": 3.8047,
+      "pcnt": 0.15153
+    },
+    "坚定之心": {
+      "itemNames": "TFT_Item_NightHarvester",
+      "count": 262,
+      "avg": 4.0382,
+      "pcnt": 0.13367
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 703,
+      "avg": 4.4808,
+      "pick_rate": 0.001536
+    },
+    {
+      "day": "2026-07-23",
+      "count": 662,
+      "avg": 4.4879,
+      "pick_rate": 0.001424
+    },
+    {
+      "day": "2026-07-24",
+      "count": 690,
+      "avg": 4.6116,
+      "pick_rate": 0.001474
+    },
+    {
+      "day": "2026-07-25",
+      "count": 755,
+      "avg": 4.445,
+      "pick_rate": 0.001579
+    },
+    {
+      "day": "2026-07-26",
+      "count": 678,
+      "avg": 4.5354,
+      "pick_rate": 0.00141
+    },
+    {
+      "day": "2026-07-27",
+      "count": 644,
+      "avg": 4.6165,
+      "pick_rate": 0.001393
+    },
+    {
+      "day": "2026-07-28",
+      "count": 644,
+      "avg": 4.4255,
+      "pick_rate": 0.001482
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.043
+}

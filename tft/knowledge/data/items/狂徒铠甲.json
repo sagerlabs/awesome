@@ -2,68 +2,196 @@
   "name": "狂徒铠甲",
   "priority_list": [
     {
-      "cluster_id": "86c70a8a7c98ca5a2e20a5ae52ecce0b",
-      "comp_name": "重装战士提莫",
+      "cluster_id": "409045",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
       "comp_tier": "S",
-      "comp_avg": 2.38,
-      "carry": "蕾欧娜",
-      "priority_score": 90
+      "comp_avg": 3.9722,
+      "carry": "莫甘娜",
+      "priority_score": 72
     },
     {
-      "cluster_id": "d036609ff95f9d4c28aad031a5fb965a",
-      "comp_name": "重装战士提莫",
+      "cluster_id": "409045",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
       "comp_tier": "S",
-      "comp_avg": 3.89,
-      "carry": "蕾欧娜",
-      "priority_score": 90
-    },
-    {
-      "cluster_id": "94cb23447f940384d13a7c640c2f2c10",
-      "comp_name": "暗星卡尔玛",
-      "comp_tier": "S",
-      "comp_avg": 3.41,
+      "comp_avg": 3.9722,
       "carry": "塔姆",
-      "priority_score": 80
+      "priority_score": 72
     },
     {
-      "cluster_id": "55972c44f51aad6861e8cf2def3cde7d",
-      "comp_name": "牧羊人维克托",
+      "cluster_id": "409013",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira",
       "comp_tier": "S",
-      "comp_avg": 3.52,
-      "carry": "俄洛伊",
-      "priority_score": 80
+      "comp_avg": 4.0341,
+      "carry": "奥恩",
+      "priority_score": 72
     },
     {
-      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
-      "comp_name": "木灵族霞",
+      "cluster_id": "409006",
+      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_Illaoi",
       "comp_tier": "S",
-      "comp_avg": 2.88,
-      "carry": "拉莫斯",
-      "priority_score": 50
+      "comp_avg": 4.1825,
+      "carry": "莫德凯撒",
+      "priority_score": 72
     },
     {
-      "cluster_id": "4c75d7eb9d6742103cffd95b46309ba9",
-      "comp_name": "观星者璐璐",
+      "cluster_id": "409034",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Ornn",
       "comp_tier": "S",
-      "comp_avg": 3,
+      "comp_avg": 4.2013,
+      "carry": "奥恩",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409028",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "comp_tier": "S",
+      "comp_avg": 4.2087,
+      "carry": "奥恩",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409054",
+      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Viktor",
+      "comp_tier": "S",
+      "comp_avg": 4.2261,
+      "carry": "蕾欧娜",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409019",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "comp_tier": "A",
+      "comp_avg": 4.2675,
+      "carry": "雷克塞",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409003",
+      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Urgot",
+      "comp_tier": "A",
+      "comp_avg": 4.2778,
+      "carry": "奥恩",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409003",
+      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Urgot",
+      "comp_tier": "A",
+      "comp_avg": 4.2778,
       "carry": "茂凯",
-      "priority_score": 50
+      "priority_score": 72
     },
     {
-      "cluster_id": "55972c44f51aad6861e8cf2def3cde7d",
-      "comp_name": "牧羊人维克托",
-      "comp_tier": "S",
-      "comp_avg": 3.52,
-      "carry": "拉亚斯特",
-      "priority_score": 50
+      "cluster_id": "409050",
+      "comp_name": "TFT17_Augment_NasusCarry",
+      "comp_tier": "A",
+      "comp_avg": 4.3078,
+      "carry": "蕾欧娜",
+      "priority_score": 72
     },
     {
-      "cluster_id": "d036609ff95f9d4c28aad031a5fb965a",
-      "comp_name": "重装战士提莫",
-      "comp_tier": "S",
-      "comp_avg": 3.89,
-      "carry": "内瑟斯",
-      "priority_score": 50
+      "cluster_id": "409050",
+      "comp_name": "TFT17_Augment_NasusCarry",
+      "comp_tier": "A",
+      "comp_avg": 4.3078,
+      "carry": "奥恩",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409031",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc",
+      "comp_tier": "A",
+      "comp_avg": 4.3374,
+      "carry": "莫甘娜",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409035",
+      "comp_name": "TFT17_APTrait, TFT17_MissFortune",
+      "comp_tier": "A",
+      "comp_avg": 4.3386,
+      "carry": "奥恩",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409008",
+      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.344,
+      "carry": "奥恩",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409008",
+      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
+      "comp_tier": "A",
+      "comp_avg": 4.344,
+      "carry": "茂凯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409020",
+      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_FlexTrait",
+      "comp_tier": "A",
+      "comp_avg": 4.3546,
+      "carry": "拉莫斯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409039",
+      "comp_name": "TFT17_Augment_PoppyCarry",
+      "comp_tier": "A",
+      "comp_avg": 4.3649,
+      "carry": "奥恩",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409001",
+      "comp_name": "TFT17_Augment_LeonaCarry",
+      "comp_tier": "A",
+      "comp_avg": 4.405,
+      "carry": "努努和威朗普",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409043",
+      "comp_name": "TFT17_Mecha, TFT17_AurelionSol, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.4194,
+      "carry": "莫甘娜",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.4314,
+      "carry": "塔姆",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409010",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_TahmKench",
+      "comp_tier": "A",
+      "comp_avg": 4.4414,
+      "carry": "塔姆",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409048",
+      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_ShieldTank",
+      "comp_tier": "A",
+      "comp_avg": 4.4469,
+      "carry": "蕾欧娜",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409048",
+      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_ShieldTank",
+      "comp_tier": "A",
+      "comp_avg": 4.4469,
+      "carry": "俄洛伊",
+      "priority_score": 72
     }
   ]
 }

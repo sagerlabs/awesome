@@ -1,0 +1,81 @@
+{
+  "name": "波比",
+  "appear_in_comps": [
+    {
+      "cluster_id": "409020",
+      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_FlexTrait",
+      "tier": "A",
+      "avg_placement": 4.3546
+    },
+    {
+      "cluster_id": "409039",
+      "comp_name": "TFT17_Augment_PoppyCarry",
+      "tier": "A",
+      "avg_placement": 4.3649
+    },
+    {
+      "cluster_id": "409027",
+      "comp_name": "TFT17_Augment_AatroxCarry, TFT17_Kindred",
+      "tier": "A",
+      "avg_placement": 4.3701
+    },
+    {
+      "cluster_id": "409005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki",
+      "tier": "A",
+      "avg_placement": 4.3714
+    },
+    {
+      "cluster_id": "409053",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "tier": "B",
+      "avg_placement": 4.6483
+    },
+    {
+      "cluster_id": "409049",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar",
+      "tier": "B",
+      "avg_placement": 4.6957
+    },
+    {
+      "cluster_id": "409056",
+      "comp_name": "TFT17_ResistTank, TFT17_Corki",
+      "tier": "B",
+      "avg_placement": 4.7739
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "409039",
+      "comp_name": "TFT17_Augment_PoppyCarry",
+      "items": [
+        "死亡之刃",
+        "巨人杀手",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.6154,
+      "count": 13,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "巨人杀手": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "409049",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar",
+      "items": [
+        "圣盾使的誓约",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 4.2222,
+      "count": 36,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    }
+  ]
+}

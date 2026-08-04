@@ -1,0 +1,234 @@
+{
+  "cluster_id": "409015",
+  "tft_set": "TFTSet17",
+  "units": [
+    "卑尔维斯",
+    "菲奥娜",
+    "古拉加斯",
+    "千珏",
+    "茂凯",
+    "易",
+    "拉亚斯特",
+    "塔姆",
+    "厄加特"
+  ],
+  "traits": [
+    "挑战者 (1)",
+    "新星特攻队 (1)",
+    "斗神 (1)",
+    "斗士 (2)",
+    "狂战士 (2)",
+    "灵能特工 (1)",
+    "救世主 (1)",
+    "命运祭司 (1)"
+  ],
+  "stars": [
+    "贾克斯",
+    "金克丝",
+    "贝蕾亚",
+    "蕾欧娜",
+    "丽桑卓"
+  ],
+  "name_string": "TFT17_MeleeTrait, TFT17_MasterYi",
+  "display_names": [
+    {
+      "name": "狂战士",
+      "type": "trait",
+      "score": 1.9340000835177684
+    },
+    {
+      "name": "易",
+      "type": "unit",
+      "score": 4.073558274522905
+    }
+  ],
+  "count": 143632,
+  "avg_placement": 4.3545,
+  "top4_rate": 0.5344,
+  "win_rate": 0.0942,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "易",
+      "items": [
+        "夜之锋刃",
+        "巨人杀手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.157,
+      "count": 2305,
+      "score": 0.4253,
+      "place_change": -0.279,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "巨人杀手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "塔姆",
+      "items": [
+        "日炎斗篷",
+        "振奋盔甲",
+        "薄暮法袍"
+      ],
+      "avg_placement": 3.8334,
+      "count": 1585,
+      "score": 0.4049,
+      "place_change": -0.603,
+      "priority_scores": {
+        "日炎斗篷": 100,
+        "振奋盔甲": 85,
+        "薄暮法袍": 72
+      }
+    },
+    {
+      "unit": "千珏",
+      "items": [
+        "狂战士纹章",
+        "鬼索的狂暴之刃",
+        "红霸符"
+      ],
+      "avg_placement": 3.705,
+      "count": 444,
+      "score": 0.4001,
+      "place_change": -0.731,
+      "priority_scores": {
+        "狂战士纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "unit": "菲奥娜",
+      "items": [
+        "夜之锋刃",
+        "巨人杀手",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.1015,
+      "count": 266,
+      "score": 0.2782,
+      "place_change": -1.335,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "巨人杀手": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    }
+  ],
+  "build_items": {
+    "夜之锋刃": {
+      "itemNames": "TFT_Item_GuardianAngel",
+      "count": 41430,
+      "avg": 4.2849,
+      "pcnt": 0.86504
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 40715,
+      "avg": 4.2109,
+      "pcnt": 0.85011
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 35031,
+      "avg": 4.3576,
+      "pcnt": 0.73143
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 24783,
+      "avg": 4.2344,
+      "pcnt": 0.51746
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 17292,
+      "avg": 4.2803,
+      "pcnt": 0.36105
+    },
+    "薄暮法袍": {
+      "itemNames": "TFT_Item_SpectralGauntlet",
+      "count": 15970,
+      "avg": 4.2451,
+      "pcnt": 0.33344
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 13197,
+      "avg": 3.9126,
+      "pcnt": 0.27555
+    },
+    "红霸符": {
+      "itemNames": "TFT_Item_RapidFireCannon",
+      "count": 11948,
+      "avg": 4.0449,
+      "pcnt": 0.24947
+    },
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 10452,
+      "avg": 4.1564,
+      "pcnt": 0.21823
+    },
+    "狂战士纹章": {
+      "itemNames": "TFT17_Item_MeleeTraitEmblemItem",
+      "count": 9272,
+      "avg": 4.2717,
+      "pcnt": 0.19359
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 17506,
+      "avg": 4.4304,
+      "pick_rate": 0.038242
+    },
+    {
+      "day": "2026-07-23",
+      "count": 17782,
+      "avg": 4.4834,
+      "pick_rate": 0.038253
+    },
+    {
+      "day": "2026-07-24",
+      "count": 17729,
+      "avg": 4.4455,
+      "pick_rate": 0.03786
+    },
+    {
+      "day": "2026-07-25",
+      "count": 17539,
+      "avg": 4.4642,
+      "pick_rate": 0.036672
+    },
+    {
+      "day": "2026-07-26",
+      "count": 17264,
+      "avg": 4.4482,
+      "pick_rate": 0.035915
+    },
+    {
+      "day": "2026-07-27",
+      "count": 16141,
+      "avg": 4.4072,
+      "pick_rate": 0.03492
+    },
+    {
+      "day": "2026-07-28",
+      "count": 14669,
+      "avg": 4.4558,
+      "pick_rate": 0.033765
+    },
+    {
+      "day": "2026-07-29",
+      "count": 162,
+      "avg": 4.3827,
+      "pick_rate": 0.040858
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": 0.027
+}

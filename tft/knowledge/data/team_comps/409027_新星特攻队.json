@@ -1,0 +1,223 @@
+{
+  "cluster_id": "409027",
+  "tft_set": "TFTSet17",
+  "units": [
+    "亚托克斯",
+    "阿卡丽",
+    "凯特琳",
+    "库奇",
+    "千珏",
+    "茂凯",
+    "波比",
+    "拉莫斯"
+  ],
+  "traits": [
+    "木灵族 (1)",
+    "新星特攻队 (2)",
+    "织命人 (1)",
+    "堡垒卫士 (1)"
+  ],
+  "stars": [
+    "亚托克斯",
+    "凯特琳",
+    "阿卡丽",
+    "波比",
+    "雷克塞",
+    "贝蕾亚"
+  ],
+  "name_string": "TFT17_Augment_AatroxCarry, TFT17_Kindred",
+  "display_names": [
+    {
+      "name": "新星特攻队",
+      "type": "trait",
+      "score": 1.6355460385438971
+    },
+    {
+      "name": "亚托克斯",
+      "type": "unit",
+      "score": 4.449892933618844
+    },
+    {
+      "name": "凯特琳",
+      "type": "unit",
+      "score": 1.9143468950749467
+    }
+  ],
+  "count": 12753,
+  "avg_placement": 4.3701,
+  "top4_rate": 0.5335,
+  "win_rate": 0.083,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "亚托克斯",
+      "items": [
+        "饮血剑",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.5411,
+      "count": 1096,
+      "score": 0.3924,
+      "place_change": -0.061,
+      "priority_scores": {
+        "饮血剑": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "千珏",
+      "items": [
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.0526,
+      "count": 19,
+      "score": 0.1605,
+      "place_change": -1.549,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "unit": "阿卡丽",
+      "items": [
+        "死亡之刃",
+        "海克斯科技枪刃",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.7692,
+      "count": 130,
+      "score": 0.1338,
+      "place_change": -0.833,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "海克斯科技枪刃": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "凯特琳",
+      "items": [
+        "死亡之刃",
+        "鬼索的狂暴之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 4.1951,
+      "count": 41,
+      "score": 0.1161,
+      "place_change": -0.407,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "海妖之怒": 72
+      }
+    }
+  ],
+  "build_items": {
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 1988,
+      "avg": 4.5307,
+      "pcnt": 0.85139
+    },
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 1945,
+      "avg": 4.51,
+      "pcnt": 0.83298
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 1773,
+      "avg": 4.524,
+      "pcnt": 0.75931
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 1759,
+      "avg": 4.5099,
+      "pcnt": 0.75332
+    },
+    "强袭者的链枷": {
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 1083,
+      "avg": 4.3324,
+      "pcnt": 0.46381
+    },
+    "死亡之刃": {
+      "itemNames": "TFT_Item_Deathblade",
+      "count": 1077,
+      "avg": 4.2396,
+      "pcnt": 0.46124
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 712,
+      "avg": 4.2121,
+      "pcnt": 0.30493
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "TFT_Item_HextechGunblade",
+      "count": 664,
+      "avg": 4.3163,
+      "pcnt": 0.28437
+    },
+    "海妖之怒": {
+      "itemNames": "TFT_Item_RunaansHurricane",
+      "count": 588,
+      "avg": 4.1378,
+      "pcnt": 0.25182
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 825,
+      "avg": 4.6303,
+      "pick_rate": 0.001802
+    },
+    {
+      "day": "2026-07-23",
+      "count": 815,
+      "avg": 4.6491,
+      "pick_rate": 0.001753
+    },
+    {
+      "day": "2026-07-24",
+      "count": 761,
+      "avg": 4.5966,
+      "pick_rate": 0.001625
+    },
+    {
+      "day": "2026-07-25",
+      "count": 785,
+      "avg": 4.7745,
+      "pick_rate": 0.001641
+    },
+    {
+      "day": "2026-07-26",
+      "count": 820,
+      "avg": 4.6512,
+      "pick_rate": 0.001706
+    },
+    {
+      "day": "2026-07-27",
+      "count": 796,
+      "avg": 4.5578,
+      "pick_rate": 0.001722
+    },
+    {
+      "day": "2026-07-28",
+      "count": 733,
+      "avg": 4.5839,
+      "pick_rate": 0.001687
+    }
+  ],
+  "levelling": "lvl 5",
+  "difficulty": -0.092
+}

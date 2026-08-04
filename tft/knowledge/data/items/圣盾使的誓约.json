@@ -2,68 +2,100 @@
   "name": "圣盾使的誓约",
   "priority_list": [
     {
-      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
-      "comp_name": "重装战士薇古丝",
-      "comp_tier": "S",
-      "comp_avg": 3.69,
-      "carry": "努努和威朗普",
-      "priority_score": 90
-    },
-    {
-      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
-      "comp_name": "重装战士薇古丝",
-      "comp_tier": "S",
-      "comp_avg": 3.69,
-      "carry": "努努和威朗普",
-      "priority_score": 90
-    },
-    {
-      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
-      "comp_name": "重装战士薇古丝",
-      "comp_tier": "S",
-      "comp_avg": 3.69,
-      "carry": "努努和威朗普",
-      "priority_score": 90
-    },
-    {
-      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
-      "comp_name": "木灵族霞",
-      "comp_tier": "S",
-      "comp_avg": 2.88,
-      "carry": "努努和威朗普",
-      "priority_score": 80
-    },
-    {
-      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
-      "comp_name": "木灵族霞",
-      "comp_tier": "S",
-      "comp_avg": 2.88,
-      "carry": "努努和威朗普",
-      "priority_score": 80
-    },
-    {
-      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
-      "comp_name": "木灵族霞",
-      "comp_tier": "S",
-      "comp_avg": 2.88,
-      "carry": "努努和威朗普",
-      "priority_score": 80
-    },
-    {
-      "cluster_id": "8f5d84cf55194702e441031fe21eb88f",
-      "comp_name": "海魔人贝蕾亚",
-      "comp_tier": "S",
-      "comp_avg": 3.44,
+      "cluster_id": "409019",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "comp_tier": "A",
+      "comp_avg": 4.2675,
       "carry": "雷克塞",
-      "priority_score": 80
+      "priority_score": 100
     },
     {
-      "cluster_id": "94cb23447f940384d13a7c640c2f2c10",
-      "comp_name": "暗星卡尔玛",
-      "comp_tier": "S",
-      "comp_avg": 3.41,
-      "carry": "超级机甲",
-      "priority_score": 50
+      "cluster_id": "409003",
+      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Urgot",
+      "comp_tier": "A",
+      "comp_avg": 4.2778,
+      "carry": "茂凯",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "409031",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc",
+      "comp_tier": "A",
+      "comp_avg": 4.3374,
+      "carry": "莫甘娜",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "409043",
+      "comp_name": "TFT17_Mecha, TFT17_AurelionSol, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.4194,
+      "carry": "莫甘娜",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "409024",
+      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Riven",
+      "comp_tier": "A",
+      "comp_avg": 4.2519,
+      "carry": "努努和威朗普",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "409039",
+      "comp_name": "TFT17_Augment_PoppyCarry",
+      "comp_tier": "A",
+      "comp_avg": 4.3649,
+      "carry": "拉莫斯",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "409001",
+      "comp_name": "TFT17_Augment_LeonaCarry",
+      "comp_tier": "A",
+      "comp_avg": 4.405,
+      "carry": "努努和威朗普",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "409021",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_ResistTank",
+      "comp_tier": "A",
+      "comp_avg": 4.4708,
+      "carry": "努努和威朗普",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "409004",
+      "comp_name": "TFT17_DarkStar, TFT17_AurelionSol",
+      "comp_tier": "A",
+      "comp_avg": 4.3001,
+      "carry": "努努和威朗普",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409012",
+      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "comp_tier": "A",
+      "comp_avg": 4.4314,
+      "carry": "努努和威朗普",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409010",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_TahmKench",
+      "comp_tier": "A",
+      "comp_avg": 4.4414,
+      "carry": "努努和威朗普",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409002",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Illaoi",
+      "comp_tier": "A",
+      "comp_avg": 4.499,
+      "carry": "努努和威朗普",
+      "priority_score": 72
     }
   ]
 }

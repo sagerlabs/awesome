@@ -1,0 +1,206 @@
+{
+  "cluster_id": "409044",
+  "tft_set": "TFTSet17",
+  "units": [
+    "俄洛伊",
+    "蕾欧娜",
+    "丽桑卓",
+    "莫德凯撒",
+    "娜美",
+    "内瑟斯",
+    "羊咩咩 & 咩咩羊",
+    "提莫",
+    "佐伊"
+  ],
+  "traits": [
+    "法官 (1)",
+    "魔术师 (1)",
+    "暗星 (1)",
+    "神谕 (1)",
+    "重装战士 (2)",
+    "太空律动 (2)",
+    "牧羊人 (1)"
+  ],
+  "stars": [
+    "蕾欧娜",
+    "提莫",
+    "丽桑卓",
+    "内瑟斯",
+    "佐伊",
+    "维克托"
+  ],
+  "name_string": "TFT17_ShieldTank, TFT17_Teemo",
+  "display_names": [
+    {
+      "name": "重装战士",
+      "type": "trait",
+      "score": 1.938400576368876
+    },
+    {
+      "name": "蕾欧娜",
+      "type": "unit",
+      "score": 3.400936599423631
+    },
+    {
+      "name": "提莫",
+      "type": "unit",
+      "score": 2.5671829971181555
+    }
+  ],
+  "count": 19036,
+  "avg_placement": 5.1311,
+  "top4_rate": 0.3869,
+  "win_rate": 0.047,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "蕾欧娜",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.7197,
+      "count": 264,
+      "score": 0.5642,
+      "place_change": -0.663,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "提莫",
+      "items": [
+        "鬼索的狂暴之刃",
+        "巨人杀手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 4.6299,
+      "count": 154,
+      "score": 0.4021,
+      "place_change": -0.753,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "巨人杀手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "佐伊",
+      "items": [
+        "灭世者的死亡之帽",
+        "灭世者的死亡之帽",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.1538,
+      "count": 13,
+      "score": 0.3086,
+      "place_change": -2.229,
+      "priority_scores": {
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "乐芙兰",
+      "items": [
+        "鬼索的狂暴之刃",
+        "巨人杀手",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.6429,
+      "count": 14,
+      "score": 0.1488,
+      "place_change": -1.74,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "巨人杀手": 85,
+        "虚空之杖": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 3169,
+      "avg": 4.9943,
+      "pcnt": 1.14157
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 2294,
+      "avg": 5.1896,
+      "pcnt": 0.82637
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 1612,
+      "avg": 5.0422,
+      "pcnt": 0.58069
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 1366,
+      "avg": 4.9436,
+      "pcnt": 0.49207
+    },
+    "虚空之杖": {
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 1360,
+      "avg": 4.8963,
+      "pcnt": 0.48991
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 1065,
+      "avg": 4.63,
+      "pcnt": 0.38365
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 989,
+      "avg": 5.3903,
+      "pick_rate": 0.00216
+    },
+    {
+      "day": "2026-07-23",
+      "count": 918,
+      "avg": 5.354,
+      "pick_rate": 0.001975
+    },
+    {
+      "day": "2026-07-24",
+      "count": 971,
+      "avg": 5.4562,
+      "pick_rate": 0.002074
+    },
+    {
+      "day": "2026-07-25",
+      "count": 959,
+      "avg": 5.3639,
+      "pick_rate": 0.002005
+    },
+    {
+      "day": "2026-07-26",
+      "count": 991,
+      "avg": 5.3481,
+      "pick_rate": 0.002062
+    },
+    {
+      "day": "2026-07-27",
+      "count": 916,
+      "avg": 5.3581,
+      "pick_rate": 0.001982
+    },
+    {
+      "day": "2026-07-28",
+      "count": 874,
+      "avg": 5.46,
+      "pick_rate": 0.002012
+    }
+  ],
+  "levelling": "lvl 5",
+  "difficulty": -0.073
+}

@@ -2,44 +2,52 @@
   "name": "日炎斗篷",
   "priority_list": [
     {
-      "cluster_id": "b0e4c786a8fc51e0706762e2537c37fb",
-      "comp_name": "狂战士千珏",
-      "comp_tier": "S",
-      "comp_avg": 3.02,
+      "cluster_id": "409015",
+      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
+      "comp_tier": "A",
+      "comp_avg": 4.3545,
       "carry": "塔姆",
-      "priority_score": 80
+      "priority_score": 100
     },
     {
-      "cluster_id": "94cb23447f940384d13a7c640c2f2c10",
-      "comp_name": "暗星卡尔玛",
-      "comp_tier": "S",
-      "comp_avg": 3.41,
-      "carry": "塔姆",
-      "priority_score": 80
+      "cluster_id": "409039",
+      "comp_name": "TFT17_Augment_PoppyCarry",
+      "comp_tier": "A",
+      "comp_avg": 4.3649,
+      "carry": "奥恩",
+      "priority_score": 100
     },
     {
-      "cluster_id": "8f5d84cf55194702e441031fe21eb88f",
-      "comp_name": "海魔人贝蕾亚",
-      "comp_tier": "S",
-      "comp_avg": 3.44,
-      "carry": "雷克塞",
-      "priority_score": 80
+      "cluster_id": "409050",
+      "comp_name": "TFT17_Augment_NasusCarry",
+      "comp_tier": "A",
+      "comp_avg": 4.3078,
+      "carry": "蕾欧娜",
+      "priority_score": 85
     },
     {
-      "cluster_id": "55972c44f51aad6861e8cf2def3cde7d",
-      "comp_name": "牧羊人维克托",
-      "comp_tier": "S",
-      "comp_avg": 3.52,
-      "carry": "拉亚斯特",
-      "priority_score": 50
+      "cluster_id": "409009",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "A",
+      "comp_avg": 4.4015,
+      "carry": "俄洛伊",
+      "priority_score": 72
     },
     {
-      "cluster_id": "d036609ff95f9d4c28aad031a5fb965a",
-      "comp_name": "重装战士提莫",
-      "comp_tier": "S",
-      "comp_avg": 3.89,
-      "carry": "内瑟斯",
-      "priority_score": 50
+      "cluster_id": "409066",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora",
+      "comp_tier": "A",
+      "comp_avg": 4.4086,
+      "carry": "俄洛伊",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409038",
+      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_Kaisa",
+      "comp_tier": "A",
+      "comp_avg": 4.4363,
+      "carry": "俄洛伊",
+      "priority_score": 72
     }
   ]
 }

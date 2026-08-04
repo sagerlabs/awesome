@@ -1,0 +1,122 @@
+{
+  "name": "金克丝",
+  "appear_in_comps": [
+    {
+      "cluster_id": "409019",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "tier": "A",
+      "avg_placement": 4.2675
+    },
+    {
+      "cluster_id": "409066",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora",
+      "tier": "A",
+      "avg_placement": 4.4086
+    },
+    {
+      "cluster_id": "409030",
+      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Maokai",
+      "tier": "B",
+      "avg_placement": 4.5426
+    },
+    {
+      "cluster_id": "409018",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Diana",
+      "tier": "B",
+      "avg_placement": 4.5706
+    },
+    {
+      "cluster_id": "409052",
+      "comp_name": "TFT17_Primordian, TFT17_Belveth",
+      "tier": "C",
+      "avg_placement": 5.0866
+    },
+    {
+      "cluster_id": "409068",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Jinx",
+      "tier": "D",
+      "avg_placement": 6.052
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "409019",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "items": [
+        "死亡之刃",
+        "最后的轻语",
+        "红霸符"
+      ],
+      "avg_placement": 3.8719,
+      "count": 5832,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "最后的轻语": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "cluster_id": "409066",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora",
+      "items": [
+        "战兔十字弩",
+        "鬼索的狂暴之刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 2.3689,
+      "count": 938,
+      "priority_scores": {
+        "战兔十字弩": 100,
+        "鬼索的狂暴之刃": 85,
+        "无尽之刃": 72
+      }
+    },
+    {
+      "cluster_id": "409018",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Diana",
+      "items": [
+        "战兔十字弩",
+        "鬼索的狂暴之刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 3.2633,
+      "count": 300,
+      "priority_scores": {
+        "战兔十字弩": 100,
+        "鬼索的狂暴之刃": 85,
+        "无尽之刃": 72
+      }
+    },
+    {
+      "cluster_id": "409052",
+      "comp_name": "TFT17_Primordian, TFT17_Belveth",
+      "items": [
+        "死亡之刃",
+        "死亡之刃",
+        "最后的轻语"
+      ],
+      "avg_placement": 4.0208,
+      "count": 48,
+      "priority_scores": {
+        "死亡之刃": 85,
+        "最后的轻语": 72
+      }
+    },
+    {
+      "cluster_id": "409068",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Jinx",
+      "items": [
+        "战兔十字弩",
+        "鬼索的狂暴之刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 4.3351,
+      "count": 552,
+      "priority_scores": {
+        "战兔十字弩": 100,
+        "鬼索的狂暴之刃": 85,
+        "无尽之刃": 72
+      }
+    }
+  ]
+}

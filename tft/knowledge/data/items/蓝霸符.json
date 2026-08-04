@@ -1,0 +1,29 @@
+{
+  "name": "蓝霸符",
+  "priority_list": [
+    {
+      "cluster_id": "409009",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "A",
+      "comp_avg": 4.4015,
+      "carry": "娜美",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "409001",
+      "comp_name": "TFT17_Augment_LeonaCarry",
+      "comp_tier": "A",
+      "comp_avg": 4.405,
+      "carry": "佐伊",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "409038",
+      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_Kaisa",
+      "comp_tier": "A",
+      "comp_avg": 4.4363,
+      "carry": "卡尔玛",
+      "priority_score": 100
+    }
+  ]
+}

@@ -2,11 +2,122 @@
   "name": "古拉加斯",
   "appear_in_comps": [
     {
-      "cluster_id": "b0e4c786a8fc51e0706762e2537c37fb",
-      "comp_name": "狂战士千珏",
-      "tier": "S",
-      "avg_placement": 3.02
+      "cluster_id": "409008",
+      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
+      "tier": "A",
+      "avg_placement": 4.344
+    },
+    {
+      "cluster_id": "409015",
+      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
+      "tier": "A",
+      "avg_placement": 4.3545
+    },
+    {
+      "cluster_id": "409033",
+      "comp_name": "TFT17_PsyOps, TFT17_Pyke",
+      "tier": "B",
+      "avg_placement": 4.5248
+    },
+    {
+      "cluster_id": "409032",
+      "comp_name": "TFT17_Mecha, TFT17_MasterYi",
+      "tier": "B",
+      "avg_placement": 4.7128
+    },
+    {
+      "cluster_id": "409007",
+      "comp_name": "TFT17_Augment_GragasCarry",
+      "tier": "B",
+      "avg_placement": 4.743
+    },
+    {
+      "cluster_id": "409029",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "tier": "C",
+      "avg_placement": 4.8717
+    },
+    {
+      "cluster_id": "409059",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pantheon",
+      "tier": "C",
+      "avg_placement": 5.0415
+    },
+    {
+      "cluster_id": "409063",
+      "comp_name": "TFT17_PsyOps, TFT17_Viktor",
+      "tier": "D",
+      "avg_placement": 5.2457
+    },
+    {
+      "cluster_id": "409064",
+      "comp_name": "TFT17_HPTank, TFT17_Maokai",
+      "tier": "D",
+      "avg_placement": 5.2824
     }
   ],
-  "builds": []
+  "builds": [
+    {
+      "cluster_id": "409033",
+      "comp_name": "TFT17_PsyOps, TFT17_Pyke",
+      "items": [
+        "圣盾使的誓约",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.3889,
+      "count": 18,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "409007",
+      "comp_name": "TFT17_Augment_GragasCarry",
+      "items": [
+        "珠光护手",
+        "珠光护手",
+        "正义之手"
+      ],
+      "avg_placement": 4.5455,
+      "count": 11,
+      "priority_scores": {
+        "珠光护手": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "cluster_id": "409029",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.1667,
+      "count": 12,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "409063",
+      "comp_name": "TFT17_PsyOps, TFT17_Viktor",
+      "items": [
+        "石像鬼石板甲",
+        "狂徒铠甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.375,
+      "count": 16,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "狂徒铠甲": 72
+      }
+    }
+  ]
 }

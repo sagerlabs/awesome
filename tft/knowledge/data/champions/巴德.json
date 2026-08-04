@@ -2,33 +2,113 @@
   "name": "巴德",
   "appear_in_comps": [
     {
-      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
-      "comp_name": "木灵族霞",
+      "cluster_id": "409054",
+      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Viktor",
       "tier": "S",
-      "avg_placement": 2.88
+      "avg_placement": 4.2261
     },
     {
-      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
-      "comp_name": "重装战士薇古丝",
-      "tier": "S",
-      "avg_placement": 3.69
+      "cluster_id": "409021",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_ResistTank",
+      "tier": "A",
+      "avg_placement": 4.4708
+    },
+    {
+      "cluster_id": "409002",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Illaoi",
+      "tier": "A",
+      "avg_placement": 4.499
+    },
+    {
+      "cluster_id": "409026",
+      "comp_name": "TFT17_ShieldTank, TFT17_AurelionSol",
+      "tier": "B",
+      "avg_placement": 4.554
+    },
+    {
+      "cluster_id": "409049",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar",
+      "tier": "B",
+      "avg_placement": 4.6957
     }
   ],
   "builds": [
     {
-      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
-      "comp_name": "重装战士薇古丝",
+      "cluster_id": "409005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki",
       "items": [
         "莫雷洛秘典",
-        "朔极之矛",
+        "灭世者的死亡之帽",
         "虚空之杖"
       ],
-      "avg_placement": 3.69,
-      "count": 35701,
+      "avg_placement": 3.3953,
+      "count": 86,
       "priority_scores": {
-        "莫雷洛秘典": 80,
-        "朔极之矛": 80,
-        "虚空之杖": 80
+        "莫雷洛秘典": 100,
+        "灭世者的死亡之帽": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "409002",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Illaoi",
+      "items": [
+        "大天使之杖",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.0565,
+      "count": 283,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "cluster_id": "409026",
+      "comp_name": "TFT17_ShieldTank, TFT17_AurelionSol",
+      "items": [
+        "灭世者的死亡之帽",
+        "灭世者的死亡之帽",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 1.9286,
+      "count": 28,
+      "priority_scores": {
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "cluster_id": "409053",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "items": [
+        "珠光护手",
+        "灭世者的死亡之帽",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.6753,
+      "count": 77,
+      "priority_scores": {
+        "珠光护手": 100,
+        "灭世者的死亡之帽": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "409049",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar",
+      "items": [
+        "珠光护手",
+        "巨人杀手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 2.4,
+      "count": 65,
+      "priority_scores": {
+        "珠光护手": 100,
+        "巨人杀手": 85,
+        "灭世者的死亡之帽": 72
       }
     }
   ]

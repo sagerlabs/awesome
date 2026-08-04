@@ -1,0 +1,207 @@
+{
+  "cluster_id": "409032",
+  "tft_set": "TFTSet17",
+  "units": [
+    "奥瑞利安·索尔",
+    "超级机甲",
+    "古拉加斯",
+    "易",
+    "派克",
+    "厄加特",
+    "维克托"
+  ],
+  "traits": [
+    "旅人 (1)",
+    "斗士 (1)",
+    "神谕 (1)",
+    "霸天机甲 (2)",
+    "狂战士 (1)",
+    "灵能特工 (2)"
+  ],
+  "stars": [],
+  "name_string": "TFT17_Mecha, TFT17_MasterYi",
+  "display_names": [
+    {
+      "name": "霸天机甲",
+      "type": "trait",
+      "score": 1.7873931623931625
+    },
+    {
+      "name": "超级机甲",
+      "type": "unit",
+      "score": 3.763621794871795
+    }
+  ],
+  "count": 18620,
+  "avg_placement": 4.7128,
+  "top4_rate": 0.4625,
+  "win_rate": 0.0718,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "奥瑞利安·索尔",
+      "items": [
+        "大天使之杖",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.7273,
+      "count": 33,
+      "score": 0.5904,
+      "place_change": -1.193,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "超级机甲",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 4.381,
+      "count": 84,
+      "score": 0.5008,
+      "place_change": -0.539,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "易",
+      "items": [
+        "夜之锋刃",
+        "巨人杀手",
+        "正义之手"
+      ],
+      "avg_placement": 3.625,
+      "count": 8,
+      "score": 0.3089,
+      "place_change": -1.295,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "巨人杀手": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "unit": "维克托",
+      "items": [
+        "虚空之杖"
+      ],
+      "avg_placement": 4.5417,
+      "count": 24,
+      "score": 0.005,
+      "place_change": -0.379,
+      "priority_scores": {
+        "虚空之杖": 100
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 1955,
+      "avg": 4.7678,
+      "pcnt": 1.04434
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 1453,
+      "avg": 4.7068,
+      "pcnt": 0.77618
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 987,
+      "avg": 4.6413,
+      "pcnt": 0.52724
+    },
+    "夜之锋刃": {
+      "itemNames": "TFT_Item_GuardianAngel",
+      "count": 858,
+      "avg": 4.5793,
+      "pcnt": 0.45833
+    },
+    "虚空之杖": {
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 844,
+      "avg": 4.7026,
+      "pcnt": 0.45085
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 834,
+      "avg": 4.4736,
+      "pcnt": 0.44551
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 728,
+      "avg": 4.6566,
+      "pcnt": 0.38889
+    },
+    "大天使之杖": {
+      "itemNames": "TFT_Item_ArchangelsStaff",
+      "count": 439,
+      "avg": 4.4715,
+      "pcnt": 0.23451
+    },
+    "正义之手": {
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 341,
+      "avg": 4.4839,
+      "pcnt": 0.18216
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 632,
+      "avg": 4.6772,
+      "pick_rate": 0.001381
+    },
+    {
+      "day": "2026-07-23",
+      "count": 607,
+      "avg": 4.8138,
+      "pick_rate": 0.001306
+    },
+    {
+      "day": "2026-07-24",
+      "count": 563,
+      "avg": 4.8757,
+      "pick_rate": 0.001202
+    },
+    {
+      "day": "2026-07-25",
+      "count": 649,
+      "avg": 4.8182,
+      "pick_rate": 0.001357
+    },
+    {
+      "day": "2026-07-26",
+      "count": 664,
+      "avg": 4.9021,
+      "pick_rate": 0.001381
+    },
+    {
+      "day": "2026-07-27",
+      "count": 647,
+      "avg": 5.0232,
+      "pick_rate": 0.0014
+    },
+    {
+      "day": "2026-07-28",
+      "count": 571,
+      "avg": 4.8074,
+      "pick_rate": 0.001314
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.103
+}

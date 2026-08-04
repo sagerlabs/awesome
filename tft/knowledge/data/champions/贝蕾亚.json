@@ -2,27 +2,45 @@
   "name": "贝蕾亚",
   "appear_in_comps": [
     {
-      "cluster_id": "8f5d84cf55194702e441031fe21eb88f",
-      "comp_name": "海魔人贝蕾亚",
-      "tier": "S",
-      "avg_placement": 3.44
+      "cluster_id": "409019",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "tier": "A",
+      "avg_placement": 4.2675
+    },
+    {
+      "cluster_id": "409066",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora",
+      "tier": "A",
+      "avg_placement": 4.4086
+    },
+    {
+      "cluster_id": "409052",
+      "comp_name": "TFT17_Primordian, TFT17_Belveth",
+      "tier": "C",
+      "avg_placement": 5.0866
+    },
+    {
+      "cluster_id": "409068",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Jinx",
+      "tier": "D",
+      "avg_placement": 6.052
     }
   ],
   "builds": [
     {
-      "cluster_id": "8f5d84cf55194702e441031fe21eb88f",
-      "comp_name": "海魔人贝蕾亚",
+      "cluster_id": "409052",
+      "comp_name": "TFT17_Primordian, TFT17_Belveth",
       "items": [
         "饮血剑",
         "斯特拉克的挑战护手",
         "泰坦的坚决"
       ],
-      "avg_placement": 3.44,
-      "count": 93150,
+      "avg_placement": 4.3992,
+      "count": 719,
       "priority_scores": {
         "饮血剑": 100,
-        "斯特拉克的挑战护手": 100,
-        "泰坦的坚决": 100
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
       }
     }
   ]

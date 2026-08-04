@@ -1,0 +1,233 @@
+{
+  "cluster_id": "409036",
+  "tft_set": "TFTSet17",
+  "units": [
+    "奥瑞利安·索尔",
+    "菲奥娜",
+    "超级机甲",
+    "卡尔玛",
+    "莫德凯撒",
+    "塔姆",
+    "厄加特"
+  ],
+  "traits": [
+    "暗星 (1)",
+    "斗神 (1)",
+    "旅人 (1)",
+    "斗士 (1)",
+    "神谕 (1)",
+    "霸天机甲 (2)",
+    "狂战士 (1)",
+    "命运祭司 (1)"
+  ],
+  "stars": [
+    "金克丝"
+  ],
+  "name_string": "TFT17_Mecha, TFT17_AurelionSol, TFT17_Urgot",
+  "display_names": [
+    {
+      "name": "霸天机甲",
+      "type": "trait",
+      "score": 2.680183727034121
+    },
+    {
+      "name": "奥瑞利安·索尔",
+      "type": "unit",
+      "score": 4.2241141732283465
+    }
+  ],
+  "count": 73423,
+  "avg_placement": 4.6648,
+  "top4_rate": 0.4625,
+  "win_rate": 0.1494,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "超级机甲",
+      "items": [
+        "雌狮之怨",
+        "石像鬼石板甲",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 2.2848,
+      "count": 330,
+      "score": 1.2005,
+      "place_change": -2.134,
+      "priority_scores": {
+        "雌狮之怨": 100,
+        "石像鬼石板甲": 72
+      }
+    },
+    {
+      "unit": "奥瑞利安·索尔",
+      "items": [
+        "歼灭者",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 2.4715,
+      "count": 386,
+      "score": 1.175,
+      "place_change": -1.947,
+      "priority_scores": {
+        "歼灭者": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "菲奥娜",
+      "items": [
+        "回响蝠刃",
+        "夜之锋刃",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 1.3514,
+      "count": 37,
+      "score": 0.3771,
+      "place_change": -3.067,
+      "priority_scores": {
+        "回响蝠刃": 100,
+        "夜之锋刃": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "塔姆",
+      "items": [
+        "日炎斗篷",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.1579,
+      "count": 38,
+      "score": 0.1273,
+      "place_change": -1.26,
+      "priority_scores": {
+        "日炎斗篷": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 21358,
+      "avg": 4.1312,
+      "pcnt": 1.40144
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 14129,
+      "avg": 4.1344,
+      "pcnt": 0.9271
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 9666,
+      "avg": 3.8986,
+      "pcnt": 0.63425
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "TFT_Item_SteraksGage",
+      "count": 7325,
+      "avg": 3.8623,
+      "pcnt": 0.48064
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 6896,
+      "avg": 4.0141,
+      "pcnt": 0.45249
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 4027,
+      "avg": 3.9873,
+      "pcnt": 0.26424
+    },
+    "夜之锋刃": {
+      "itemNames": "TFT_Item_GuardianAngel",
+      "count": 3203,
+      "avg": 3.1967,
+      "pcnt": 0.21017
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 2784,
+      "avg": 4.2586,
+      "pcnt": 0.18268
+    },
+    "雌狮之怨": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier2_LionessLament",
+      "count": 1302,
+      "avg": 2.6144,
+      "pcnt": 0.08543
+    },
+    "歼灭者": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier2_Annihilator",
+      "count": 1276,
+      "avg": 2.9303,
+      "pcnt": 0.08373
+    },
+    "回响蝠刃": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier2_EchoingBatblades",
+      "count": 961,
+      "avg": 3.0989,
+      "pcnt": 0.06306
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 5423,
+      "avg": 4.406,
+      "pick_rate": 0.011847
+    },
+    {
+      "day": "2026-07-23",
+      "count": 5418,
+      "avg": 4.4086,
+      "pick_rate": 0.011655
+    },
+    {
+      "day": "2026-07-24",
+      "count": 5251,
+      "avg": 4.4685,
+      "pick_rate": 0.011214
+    },
+    {
+      "day": "2026-07-25",
+      "count": 5236,
+      "avg": 4.4057,
+      "pick_rate": 0.010948
+    },
+    {
+      "day": "2026-07-26",
+      "count": 5358,
+      "avg": 4.4197,
+      "pick_rate": 0.011146
+    },
+    {
+      "day": "2026-07-27",
+      "count": 5144,
+      "avg": 4.4207,
+      "pick_rate": 0.011129
+    },
+    {
+      "day": "2026-07-28",
+      "count": 4781,
+      "avg": 4.4166,
+      "pick_rate": 0.011005
+    },
+    {
+      "day": "2026-07-29",
+      "count": 53,
+      "avg": 4.3774,
+      "pick_rate": 0.013367
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.004
+}

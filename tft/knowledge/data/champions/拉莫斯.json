@@ -2,27 +2,177 @@
   "name": "拉莫斯",
   "appear_in_comps": [
     {
-      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
-      "comp_name": "木灵族霞",
-      "tier": "S",
-      "avg_placement": 2.88
+      "cluster_id": "409020",
+      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_FlexTrait",
+      "tier": "A",
+      "avg_placement": 4.3546
+    },
+    {
+      "cluster_id": "409039",
+      "comp_name": "TFT17_Augment_PoppyCarry",
+      "tier": "A",
+      "avg_placement": 4.3649
+    },
+    {
+      "cluster_id": "409027",
+      "comp_name": "TFT17_Augment_AatroxCarry, TFT17_Kindred",
+      "tier": "A",
+      "avg_placement": 4.3701
+    },
+    {
+      "cluster_id": "409005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki",
+      "tier": "A",
+      "avg_placement": 4.3714
+    },
+    {
+      "cluster_id": "409021",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_ResistTank",
+      "tier": "A",
+      "avg_placement": 4.4708
+    },
+    {
+      "cluster_id": "409053",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "tier": "B",
+      "avg_placement": 4.6483
+    },
+    {
+      "cluster_id": "409049",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar",
+      "tier": "B",
+      "avg_placement": 4.6957
+    },
+    {
+      "cluster_id": "409056",
+      "comp_name": "TFT17_ResistTank, TFT17_Corki",
+      "tier": "B",
+      "avg_placement": 4.7739
+    },
+    {
+      "cluster_id": "409055",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa",
+      "tier": "C",
+      "avg_placement": 4.7961
+    },
+    {
+      "cluster_id": "409067",
+      "comp_name": "TFT17_ResistTank, TFT17_Ornn",
+      "tier": "D",
+      "avg_placement": 5.5606
     }
   ],
   "builds": [
     {
-      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
-      "comp_name": "木灵族霞",
+      "cluster_id": "409020",
+      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_FlexTrait",
       "items": [
+        "巨龙之爪",
         "石像鬼石板甲",
-        "薄暮法袍",
         "狂徒铠甲"
       ],
-      "avg_placement": 2.88,
-      "count": 25423,
+      "avg_placement": 3.5455,
+      "count": 22,
       "priority_scores": {
-        "石像鬼石板甲": 50,
-        "薄暮法袍": 50,
-        "狂徒铠甲": 50
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "409039",
+      "comp_name": "TFT17_Augment_PoppyCarry",
+      "items": [
+        "冕卫",
+        "圣盾使的誓约",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 3.748,
+      "count": 127,
+      "priority_scores": {
+        "冕卫": 100,
+        "圣盾使的誓约": 85,
+        "石像鬼石板甲": 72
+      }
+    },
+    {
+      "cluster_id": "409005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki",
+      "items": [
+        "棘刺背心",
+        "冕卫",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 3.949,
+      "count": 412,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "冕卫": 85,
+        "石像鬼石板甲": 72
+      }
+    },
+    {
+      "cluster_id": "409021",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_ResistTank",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "坚定之心"
+      ],
+      "avg_placement": 3.5714,
+      "count": 21,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "坚定之心": 72
+      }
+    },
+    {
+      "cluster_id": "409053",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "items": [
+        "棘刺背心",
+        "冕卫",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 3.735,
+      "count": 283,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "冕卫": 85,
+        "石像鬼石板甲": 72
+      }
+    },
+    {
+      "cluster_id": "409049",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.7724,
+      "count": 413,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "409056",
+      "comp_name": "TFT17_ResistTank, TFT17_Corki",
+      "items": [
+        "冕卫",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.4545,
+      "count": 11,
+      "priority_scores": {
+        "冕卫": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
       }
     }
   ]

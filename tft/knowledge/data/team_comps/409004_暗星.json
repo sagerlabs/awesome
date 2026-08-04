@@ -1,0 +1,234 @@
+{
+  "cluster_id": "409004",
+  "tft_set": "TFTSet17",
+  "units": [
+    "奥瑞利安·索尔",
+    "科加斯",
+    "超级机甲",
+    "烬",
+    "卡莎",
+    "卡尔玛",
+    "莫德凯撒",
+    "努努和威朗普",
+    "塔姆"
+  ],
+  "traits": [
+    "暗星 (3)",
+    "旅人 (1)",
+    "斗士 (1)",
+    "灭星尊 (1)",
+    "神谕 (1)",
+    "重装战士 (1)",
+    "命运祭司 (1)"
+  ],
+  "stars": [
+    "蕾欧娜"
+  ],
+  "name_string": "TFT17_DarkStar, TFT17_AurelionSol",
+  "display_names": [
+    {
+      "name": "暗星",
+      "type": "trait",
+      "score": 2.8925440239790183
+    },
+    {
+      "name": "奥瑞利安·索尔",
+      "type": "unit",
+      "score": 4.2760959160734355
+    }
+  ],
+  "count": 46288,
+  "avg_placement": 4.3001,
+  "top4_rate": 0.5417,
+  "win_rate": 0.1139,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "奥瑞利安·索尔",
+      "items": [
+        "暗星纹章",
+        "珠光护手",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.2394,
+      "count": 3196,
+      "score": 0.4473,
+      "place_change": -0.197,
+      "priority_scores": {
+        "暗星纹章": 100,
+        "珠光护手": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "卡尔玛",
+      "items": [
+        "红霸符",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.4038,
+      "count": 104,
+      "score": 0.2684,
+      "place_change": -1.033,
+      "priority_scores": {
+        "红霸符": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "努努和威朗普",
+      "items": [
+        "适应性头盔",
+        "适应性头盔",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.4257,
+      "count": 101,
+      "score": 0.1717,
+      "place_change": -1.011,
+      "priority_scores": {
+        "适应性头盔": 85,
+        "圣盾使的誓约": 72
+      }
+    },
+    {
+      "unit": "塔姆",
+      "items": [
+        "石像鬼石板甲",
+        "坚定之心",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.7097,
+      "count": 31,
+      "score": 0.1106,
+      "place_change": -0.727,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "坚定之心": 85,
+        "振奋盔甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 13754,
+      "avg": 4.2844,
+      "pcnt": 1.03065
+    },
+    "暗星纹章": {
+      "itemNames": "TFT17_Item_DarkStarEmblemItem",
+      "count": 13688,
+      "avg": 4.3011,
+      "pcnt": 1.0257
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 11662,
+      "avg": 4.3475,
+      "pcnt": 0.87389
+    },
+    "虚空之杖": {
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 7637,
+      "avg": 4.1965,
+      "pcnt": 0.57227
+    },
+    "圣盾使的誓约": {
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 7480,
+      "avg": 4.1699,
+      "pcnt": 0.56051
+    },
+    "强袭者的链枷": {
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 5835,
+      "avg": 4.1585,
+      "pcnt": 0.43724
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 4732,
+      "avg": 4.2005,
+      "pcnt": 0.35459
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 4685,
+      "avg": 4.1061,
+      "pcnt": 0.35107
+    },
+    "适应性头盔": {
+      "itemNames": "TFT_Item_AdaptiveHelm",
+      "count": 4541,
+      "avg": 4.0584,
+      "pcnt": 0.34028
+    },
+    "红霸符": {
+      "itemNames": "TFT_Item_RapidFireCannon",
+      "count": 2714,
+      "avg": 4.0744,
+      "pcnt": 0.20337
+    },
+    "坚定之心": {
+      "itemNames": "TFT_Item_NightHarvester",
+      "count": 2179,
+      "avg": 3.9312,
+      "pcnt": 0.16328
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 4700,
+      "avg": 4.4279,
+      "pick_rate": 0.010267
+    },
+    {
+      "day": "2026-07-23",
+      "count": 4888,
+      "avg": 4.445,
+      "pick_rate": 0.010515
+    },
+    {
+      "day": "2026-07-24",
+      "count": 4773,
+      "avg": 4.5003,
+      "pick_rate": 0.010193
+    },
+    {
+      "day": "2026-07-25",
+      "count": 4778,
+      "avg": 4.414,
+      "pick_rate": 0.00999
+    },
+    {
+      "day": "2026-07-26",
+      "count": 4707,
+      "avg": 4.4062,
+      "pick_rate": 0.009792
+    },
+    {
+      "day": "2026-07-27",
+      "count": 4569,
+      "avg": 4.4706,
+      "pick_rate": 0.009885
+    },
+    {
+      "day": "2026-07-28",
+      "count": 4097,
+      "avg": 4.4306,
+      "pick_rate": 0.00943
+    },
+    {
+      "day": "2026-07-29",
+      "count": 40,
+      "avg": 4.65,
+      "pick_rate": 0.010088
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.06
+}

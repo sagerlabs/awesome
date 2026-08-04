@@ -2,17 +2,164 @@
   "name": "小木灵",
   "appear_in_comps": [
     {
-      "cluster_id": "55972c44f51aad6861e8cf2def3cde7d",
-      "comp_name": "牧羊人维克托",
+      "cluster_id": "409006",
+      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_Illaoi",
       "tier": "S",
-      "avg_placement": 3.52
+      "avg_placement": 4.1825
     },
     {
-      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
-      "comp_name": "重装战士薇古丝",
-      "tier": "S",
-      "avg_placement": 3.69
+      "cluster_id": "409031",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc",
+      "tier": "A",
+      "avg_placement": 4.3374
+    },
+    {
+      "cluster_id": "409020",
+      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_FlexTrait",
+      "tier": "A",
+      "avg_placement": 4.3546
+    },
+    {
+      "cluster_id": "409005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki",
+      "tier": "A",
+      "avg_placement": 4.3714
+    },
+    {
+      "cluster_id": "409009",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "tier": "A",
+      "avg_placement": 4.4015
+    },
+    {
+      "cluster_id": "409001",
+      "comp_name": "TFT17_Augment_LeonaCarry",
+      "tier": "A",
+      "avg_placement": 4.405
+    },
+    {
+      "cluster_id": "409038",
+      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_Kaisa",
+      "tier": "A",
+      "avg_placement": 4.4363
+    },
+    {
+      "cluster_id": "409002",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Illaoi",
+      "tier": "A",
+      "avg_placement": 4.499
+    },
+    {
+      "cluster_id": "409033",
+      "comp_name": "TFT17_PsyOps, TFT17_Pyke",
+      "tier": "B",
+      "avg_placement": 4.5248
+    },
+    {
+      "cluster_id": "409026",
+      "comp_name": "TFT17_ShieldTank, TFT17_AurelionSol",
+      "tier": "B",
+      "avg_placement": 4.554
+    },
+    {
+      "cluster_id": "409018",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Diana",
+      "tier": "B",
+      "avg_placement": 4.5706
+    },
+    {
+      "cluster_id": "409040",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "tier": "B",
+      "avg_placement": 4.5983
+    },
+    {
+      "cluster_id": "409016",
+      "comp_name": "TFT17_DarkStar, TFT17_Illaoi",
+      "tier": "B",
+      "avg_placement": 4.615
+    },
+    {
+      "cluster_id": "409053",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "tier": "B",
+      "avg_placement": 4.6483
+    },
+    {
+      "cluster_id": "409049",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar",
+      "tier": "B",
+      "avg_placement": 4.6957
+    },
+    {
+      "cluster_id": "409046",
+      "comp_name": "TFT17_SummonTrait, TFT17_Nami",
+      "tier": "B",
+      "avg_placement": 4.7287
+    },
+    {
+      "cluster_id": "409055",
+      "comp_name": "TFT17_AssassinTrait, TFT17_Kaisa",
+      "tier": "C",
+      "avg_placement": 4.7961
+    },
+    {
+      "cluster_id": "409029",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pyke",
+      "tier": "C",
+      "avg_placement": 4.8717
+    },
+    {
+      "cluster_id": "409051",
+      "comp_name": "TFT17_FlexTrait, TFT17_Galio",
+      "tier": "D",
+      "avg_placement": 5.1104
+    },
+    {
+      "cluster_id": "409063",
+      "comp_name": "TFT17_PsyOps, TFT17_Viktor",
+      "tier": "D",
+      "avg_placement": 5.2457
+    },
+    {
+      "cluster_id": "409060",
+      "comp_name": "TFT17_ADMIN, TFT17_Diana",
+      "tier": "D",
+      "avg_placement": 5.2753
     }
   ],
-  "builds": []
+  "builds": [
+    {
+      "cluster_id": "409006",
+      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_Illaoi",
+      "items": [
+        "夜之锋刃",
+        "珠光护手",
+        "正义之手"
+      ],
+      "avg_placement": 4.2126,
+      "count": 1990,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "珠光护手": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "cluster_id": "409020",
+      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_FlexTrait",
+      "items": [
+        "饮血剑",
+        "夜之锋刃",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.1538,
+      "count": 13,
+      "priority_scores": {
+        "饮血剑": 100,
+        "夜之锋刃": 85,
+        "灭世者的死亡之帽": 72
+      }
+    }
+  ]
 }

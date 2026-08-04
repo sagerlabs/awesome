@@ -1,0 +1,37 @@
+{
+  "name": "观星者纹章",
+  "priority_list": [
+    {
+      "cluster_id": "409024",
+      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Riven",
+      "comp_tier": "A",
+      "comp_avg": 4.2519,
+      "carry": "锐雯",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "409024",
+      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Riven",
+      "comp_tier": "A",
+      "comp_avg": 4.2519,
+      "carry": "烬",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "409035",
+      "comp_name": "TFT17_APTrait, TFT17_MissFortune",
+      "comp_tier": "A",
+      "comp_avg": 4.3386,
+      "carry": "娜美",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "409010",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_TahmKench",
+      "comp_tier": "A",
+      "comp_avg": 4.4414,
+      "carry": "塔姆",
+      "priority_score": 100
+    }
+  ]
+}

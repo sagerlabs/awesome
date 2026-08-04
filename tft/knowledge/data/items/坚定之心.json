@@ -2,12 +2,52 @@
   "name": "坚定之心",
   "priority_list": [
     {
-      "cluster_id": "94cb23447f940384d13a7c640c2f2c10",
-      "comp_name": "暗星卡尔玛",
+      "cluster_id": "409013",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira",
       "comp_tier": "S",
-      "comp_avg": 3.41,
-      "carry": "超级机甲",
-      "priority_score": 50
+      "comp_avg": 4.0341,
+      "carry": "奥恩",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "409004",
+      "comp_name": "TFT17_DarkStar, TFT17_AurelionSol",
+      "comp_tier": "A",
+      "comp_avg": 4.3001,
+      "carry": "塔姆",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "409038",
+      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_Kaisa",
+      "comp_tier": "A",
+      "comp_avg": 4.4363,
+      "carry": "俄洛伊",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "409010",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_TahmKench",
+      "comp_tier": "A",
+      "comp_avg": 4.4414,
+      "carry": "塔姆",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "409048",
+      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_ShieldTank",
+      "comp_tier": "A",
+      "comp_avg": 4.4469,
+      "carry": "蕾欧娜",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "409021",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_ResistTank",
+      "comp_tier": "A",
+      "comp_avg": 4.4708,
+      "carry": "拉莫斯",
+      "priority_score": 72
     }
   ]
 }

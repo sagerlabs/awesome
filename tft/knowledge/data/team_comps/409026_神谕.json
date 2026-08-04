@@ -1,0 +1,203 @@
+{
+  "cluster_id": "409026",
+  "tft_set": "TFTSet17",
+  "units": [
+    "奥瑞利安·索尔",
+    "巴德",
+    "布里茨",
+    "俄洛伊",
+    "小木灵",
+    "卡尔玛",
+    "莫德凯撒",
+    "努努和威朗普",
+    "娑娜",
+    "羊咩咩 & 咩咩羊"
+  ],
+  "traits": [
+    "汪星机器人 (1)",
+    "暗星 (1)",
+    "旅人 (1)",
+    "神谕 (2)",
+    "重装战士 (2)",
+    "最高指挥官 (1)",
+    "太空律动 (1)",
+    "牧羊人 (1)"
+  ],
+  "stars": [
+    "蕾欧娜",
+    "佐伊"
+  ],
+  "name_string": "TFT17_ShieldTank, TFT17_AurelionSol",
+  "display_names": [
+    {
+      "name": "神谕",
+      "type": "trait",
+      "score": 2.0275390625
+    },
+    {
+      "name": "奥瑞利安·索尔",
+      "type": "unit",
+      "score": 4.290966796875001
+    }
+  ],
+  "count": 29544,
+  "avg_placement": 4.554,
+  "top4_rate": 0.4989,
+  "win_rate": 0.1092,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "奥瑞利安·索尔",
+      "items": [
+        "灭世者的死亡之帽",
+        "灭世者的死亡之帽",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.25,
+      "count": 236,
+      "score": 0.8633,
+      "place_change": -1.361,
+      "priority_scores": {
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "努努和威朗普",
+      "items": [
+        "适应性头盔",
+        "适应性头盔",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.4557,
+      "count": 158,
+      "score": 0.4425,
+      "place_change": -1.155,
+      "priority_scores": {
+        "适应性头盔": 85,
+        "圣盾使的誓约": 72
+      }
+    },
+    {
+      "unit": "巴德",
+      "items": [
+        "灭世者的死亡之帽",
+        "灭世者的死亡之帽",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 1.9286,
+      "count": 28,
+      "score": 0.268,
+      "place_change": -2.682,
+      "priority_scores": {
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "俄洛伊",
+      "items": [
+        "石像鬼石板甲",
+        "坚定之心",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.4222,
+      "count": 45,
+      "score": 0.1407,
+      "place_change": -1.188,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "坚定之心": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 9668,
+      "avg": 4.4286,
+      "pcnt": 0.94414
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 9659,
+      "avg": 3.8445,
+      "pcnt": 0.94326
+    },
+    "圣盾使的誓约": {
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 6234,
+      "avg": 4.2276,
+      "pcnt": 0.60879
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 5885,
+      "avg": 4.1755,
+      "pcnt": 0.57471
+    },
+    "适应性头盔": {
+      "itemNames": "TFT_Item_AdaptiveHelm",
+      "count": 4262,
+      "avg": 4.0225,
+      "pcnt": 0.41621
+    },
+    "坚定之心": {
+      "itemNames": "TFT_Item_NightHarvester",
+      "count": 1629,
+      "avg": 4.0823,
+      "pcnt": 0.15908
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 3713,
+      "avg": 4.6483,
+      "pick_rate": 0.008111
+    },
+    {
+      "day": "2026-07-23",
+      "count": 3668,
+      "avg": 4.7094,
+      "pick_rate": 0.007891
+    },
+    {
+      "day": "2026-07-24",
+      "count": 3530,
+      "avg": 4.7555,
+      "pick_rate": 0.007538
+    },
+    {
+      "day": "2026-07-25",
+      "count": 3723,
+      "avg": 4.6229,
+      "pick_rate": 0.007784
+    },
+    {
+      "day": "2026-07-26",
+      "count": 3763,
+      "avg": 4.6099,
+      "pick_rate": 0.007828
+    },
+    {
+      "day": "2026-07-27",
+      "count": 3280,
+      "avg": 4.6415,
+      "pick_rate": 0.007096
+    },
+    {
+      "day": "2026-07-28",
+      "count": 3228,
+      "avg": 4.5815,
+      "pick_rate": 0.00743
+    },
+    {
+      "day": "2026-07-29",
+      "count": 36,
+      "avg": 4.4167,
+      "pick_rate": 0.009079
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.03
+}

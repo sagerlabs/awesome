@@ -1,0 +1,77 @@
+{
+  "name": "慎",
+  "appear_in_comps": [
+    {
+      "cluster_id": "409045",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "tier": "S",
+      "avg_placement": 3.9722
+    },
+    {
+      "cluster_id": "409034",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Ornn",
+      "tier": "S",
+      "avg_placement": 4.2013
+    },
+    {
+      "cluster_id": "409028",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "tier": "S",
+      "avg_placement": 4.2087
+    },
+    {
+      "cluster_id": "409024",
+      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Riven",
+      "tier": "A",
+      "avg_placement": 4.2519
+    },
+    {
+      "cluster_id": "409039",
+      "comp_name": "TFT17_Augment_PoppyCarry",
+      "tier": "A",
+      "avg_placement": 4.3649
+    },
+    {
+      "cluster_id": "409057",
+      "comp_name": "TFT17_ShieldTank, TFT17_Xayah",
+      "tier": "B",
+      "avg_placement": 4.6609
+    },
+    {
+      "cluster_id": "409058",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Vex",
+      "tier": "B",
+      "avg_placement": 4.724
+    },
+    {
+      "cluster_id": "409064",
+      "comp_name": "TFT17_HPTank, TFT17_Maokai",
+      "tier": "D",
+      "avg_placement": 5.2824
+    },
+    {
+      "cluster_id": "409067",
+      "comp_name": "TFT17_ResistTank, TFT17_Ornn",
+      "tier": "D",
+      "avg_placement": 5.5606
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "409067",
+      "comp_name": "TFT17_ResistTank, TFT17_Ornn",
+      "items": [
+        "饮血剑",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.7586,
+      "count": 29,
+      "priority_scores": {
+        "饮血剑": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ]
+}

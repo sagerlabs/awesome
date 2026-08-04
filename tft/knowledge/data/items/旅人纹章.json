@@ -1,0 +1,21 @@
+{
+  "name": "旅人纹章",
+  "priority_list": [
+    {
+      "cluster_id": "409066",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora",
+      "comp_tier": "A",
+      "comp_avg": 4.4086,
+      "carry": "俄洛伊",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "409066",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora",
+      "comp_tier": "A",
+      "comp_avg": 4.4086,
+      "carry": "菲奥娜",
+      "priority_score": 85
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "cluster_id": "409007",
+  "tft_set": "TFTSet17",
+  "units": [
+    "科加斯",
+    "古拉加斯",
+    "茂凯",
+    "易",
+    "潘森",
+    "派克",
+    "塔姆",
+    "厄加特"
+  ],
+  "traits": [
+    "斗士 (3)",
+    "狂战士 (1)",
+    "灵能特工 (1)",
+    "命运祭司 (1)"
+  ],
+  "stars": [
+    "古拉加斯",
+    "派克",
+    "潘森",
+    "小木灵",
+    "卑尔维斯",
+    "米利欧"
+  ],
+  "name_string": "TFT17_Augment_GragasCarry",
+  "display_names": [
+    {
+      "name": "斗士",
+      "type": "trait",
+      "score": 2.3635761589403974
+    },
+    {
+      "name": "古拉加斯",
+      "type": "unit",
+      "score": 4.486092715231788
+    }
+  ],
+  "count": 21973,
+  "avg_placement": 4.743,
+  "top4_rate": 0.4519,
+  "win_rate": 0.0583,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "易",
+      "items": [
+        "夜之锋刃",
+        "最后的轻语",
+        "巨人杀手"
+      ],
+      "avg_placement": 3.0769,
+      "count": 13,
+      "score": 0.2121,
+      "place_change": -1.484,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "最后的轻语": 85,
+        "巨人杀手": 72
+      }
+    },
+    {
+      "unit": "派克",
+      "items": [
+        "夜之锋刃",
+        "无尽之刃",
+        "正义之手"
+      ],
+      "avg_placement": 4.037,
+      "count": 81,
+      "score": 0.1668,
+      "place_change": -0.524,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "无尽之刃": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "unit": "古拉加斯",
+      "items": [
+        "珠光护手",
+        "珠光护手",
+        "正义之手"
+      ],
+      "avg_placement": 4.5455,
+      "count": 11,
+      "score": 0.1321,
+      "place_change": -0.016,
+      "priority_scores": {
+        "珠光护手": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "unit": "潘森",
+      "items": [
+        "离子火花",
+        "坚定之心",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.8571,
+      "count": 14,
+      "score": 0.1044,
+      "place_change": -0.704,
+      "priority_scores": {
+        "离子火花": 100,
+        "坚定之心": 85,
+        "日炎斗篷": 72
+      }
+    }
+  ],
+  "build_items": {
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 4827,
+      "avg": 4.4643,
+      "pcnt": 1.06556
+    },
+    "正义之手": {
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 4610,
+      "avg": 4.4683,
+      "pcnt": 1.01766
+    },
+    "夜之锋刃": {
+      "itemNames": "TFT_Item_GuardianAngel",
+      "count": 2946,
+      "avg": 4.4341,
+      "pcnt": 0.65033
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 2640,
+      "avg": 4.3598,
+      "pcnt": 0.58278
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 2153,
+      "avg": 4.4366,
+      "pcnt": 0.47528
+    },
+    "离子火花": {
+      "itemNames": "TFT_Item_IonicSpark",
+      "count": 1955,
+      "avg": 4.3059,
+      "pcnt": 0.43157
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 1308,
+      "avg": 4.3509,
+      "pcnt": 0.28874
+    },
+    "坚定之心": {
+      "itemNames": "TFT_Item_NightHarvester",
+      "count": 528,
+      "avg": 3.7917,
+      "pcnt": 0.11656
+    },
+    "最后的轻语": {
+      "itemNames": "TFT_Item_LastWhisper",
+      "count": 325,
+      "avg": 4.1631,
+      "pcnt": 0.07174
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 1612,
+      "avg": 4.6092,
+      "pick_rate": 0.003521
+    },
+    {
+      "day": "2026-07-23",
+      "count": 1686,
+      "avg": 4.6168,
+      "pick_rate": 0.003627
+    },
+    {
+      "day": "2026-07-24",
+      "count": 1623,
+      "avg": 4.6352,
+      "pick_rate": 0.003466
+    },
+    {
+      "day": "2026-07-25",
+      "count": 1600,
+      "avg": 4.6531,
+      "pick_rate": 0.003345
+    },
+    {
+      "day": "2026-07-26",
+      "count": 1613,
+      "avg": 4.5586,
+      "pick_rate": 0.003356
+    },
+    {
+      "day": "2026-07-27",
+      "count": 1510,
+      "avg": 4.5662,
+      "pick_rate": 0.003267
+    },
+    {
+      "day": "2026-07-28",
+      "count": 1416,
+      "avg": 4.5501,
+      "pick_rate": 0.003259
+    },
+    {
+      "day": "2026-07-29",
+      "count": 16,
+      "avg": 4.75,
+      "pick_rate": 0.004035
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.022
+}

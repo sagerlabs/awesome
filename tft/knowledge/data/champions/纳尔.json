@@ -2,11 +2,34 @@
   "name": "纳尔",
   "appear_in_comps": [
     {
-      "cluster_id": "592dcf64a8965208bbaf01de0393a109",
-      "comp_name": "木灵族霞",
-      "tier": "S",
-      "avg_placement": 2.88
+      "cluster_id": "409021",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_ResistTank",
+      "tier": "A",
+      "avg_placement": 4.4708
+    },
+    {
+      "cluster_id": "409053",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "tier": "B",
+      "avg_placement": 4.6483
     }
   ],
-  "builds": []
+  "builds": [
+    {
+      "cluster_id": "409053",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "items": [
+        "死亡之刃",
+        "鬼索的狂暴之刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 4.1511,
+      "count": 3752,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "无尽之刃": 72
+      }
+    }
+  ]
 }

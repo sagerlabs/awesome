@@ -1,0 +1,231 @@
+{
+  "cluster_id": "409023",
+  "tft_set": "TFTSet17",
+  "units": [
+    "亚托克斯",
+    "黛安娜",
+    "茂凯",
+    "厄运小姐",
+    "奥恩",
+    "拉亚斯特",
+    "厄加特"
+  ],
+  "traits": [
+    "挑战者 (1)",
+    "新星特攻队 (1)",
+    "斗士 (1)",
+    "武装战姬 (1)",
+    "堡垒卫士 (1)",
+    "救世主 (1)",
+    "太空律动 (1)"
+  ],
+  "stars": [
+    "黛安娜",
+    "厄运小姐",
+    "奥恩",
+    "拉亚斯特",
+    "金克丝",
+    "佐伊"
+  ],
+  "name_string": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Ornn",
+  "display_names": [
+    {
+      "name": "挑战者",
+      "type": "trait",
+      "score": 1.9733915806195392
+    },
+    {
+      "name": "黛安娜",
+      "type": "unit",
+      "score": 3.754169976171565
+    },
+    {
+      "name": "厄运小姐",
+      "type": "unit",
+      "score": 3.6785146942017475
+    }
+  ],
+  "count": 11599,
+  "avg_placement": 4.7552,
+  "top4_rate": 0.4577,
+  "win_rate": 0.0666,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "奥恩",
+      "items": [
+        "坚定之心",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 2.7273,
+      "count": 11,
+      "score": 0.5633,
+      "place_change": -2.18,
+      "priority_scores": {
+        "坚定之心": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "厄运小姐",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "巨人杀手"
+      ],
+      "avg_placement": 3.5667,
+      "count": 30,
+      "score": 0.5192,
+      "place_change": -1.34,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "巨人杀手": 72
+      }
+    },
+    {
+      "unit": "黛安娜",
+      "items": [
+        "饮血剑",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.5341,
+      "count": 674,
+      "score": 0.4718,
+      "place_change": -0.373,
+      "priority_scores": {
+        "饮血剑": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "千珏",
+      "items": [
+        "鬼索的狂暴之刃",
+        "巨人杀手",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.1,
+      "count": 10,
+      "score": 0.097,
+      "place_change": -1.807,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "巨人杀手": 85,
+        "海妖之怒": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 3153,
+      "avg": 4.6686,
+      "pcnt": 1.25218
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 1659,
+      "avg": 4.5919,
+      "pcnt": 0.65886
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 1591,
+      "avg": 4.7021,
+      "pcnt": 0.63185
+    },
+    "饮血剑": {
+      "itemNames": "TFT_Item_Bloodthirster",
+      "count": 1395,
+      "avg": 4.6832,
+      "pcnt": 0.55401
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 1299,
+      "avg": 4.5951,
+      "pcnt": 0.51589
+    },
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 1297,
+      "avg": 4.623,
+      "pcnt": 0.51509
+    },
+    "死亡之刃": {
+      "itemNames": "TFT_Item_Deathblade",
+      "count": 1253,
+      "avg": 4.5227,
+      "pcnt": 0.49762
+    },
+    "巨人杀手": {
+      "itemNames": "TFT_Item_MadredsBloodrazor",
+      "count": 851,
+      "avg": 4.1868,
+      "pcnt": 0.33797
+    },
+    "坚定之心": {
+      "itemNames": "TFT_Item_NightHarvester",
+      "count": 470,
+      "avg": 4.1809,
+      "pcnt": 0.18666
+    },
+    "海妖之怒": {
+      "itemNames": "TFT_Item_RunaansHurricane",
+      "count": 421,
+      "avg": 4.3515,
+      "pcnt": 0.1672
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 801,
+      "avg": 4.7179,
+      "pick_rate": 0.00175
+    },
+    {
+      "day": "2026-07-23",
+      "count": 737,
+      "avg": 4.8901,
+      "pick_rate": 0.001585
+    },
+    {
+      "day": "2026-07-24",
+      "count": 757,
+      "avg": 4.7768,
+      "pick_rate": 0.001617
+    },
+    {
+      "day": "2026-07-25",
+      "count": 898,
+      "avg": 5.0935,
+      "pick_rate": 0.001878
+    },
+    {
+      "day": "2026-07-26",
+      "count": 919,
+      "avg": 4.9097,
+      "pick_rate": 0.001912
+    },
+    {
+      "day": "2026-07-27",
+      "count": 857,
+      "avg": 4.8623,
+      "pick_rate": 0.001854
+    },
+    {
+      "day": "2026-07-28",
+      "count": 753,
+      "avg": 4.9987,
+      "pick_rate": 0.001733
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.085
+}

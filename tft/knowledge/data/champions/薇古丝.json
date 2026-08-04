@@ -2,27 +2,105 @@
   "name": "薇古丝",
   "appear_in_comps": [
     {
-      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
-      "comp_name": "重装战士薇古丝",
-      "tier": "S",
-      "avg_placement": 3.69
+      "cluster_id": "409002",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Illaoi",
+      "tier": "A",
+      "avg_placement": 4.499
+    },
+    {
+      "cluster_id": "409057",
+      "comp_name": "TFT17_ShieldTank, TFT17_Xayah",
+      "tier": "B",
+      "avg_placement": 4.6609
+    },
+    {
+      "cluster_id": "409058",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Vex",
+      "tier": "B",
+      "avg_placement": 4.724
+    },
+    {
+      "cluster_id": "409064",
+      "comp_name": "TFT17_HPTank, TFT17_Maokai",
+      "tier": "D",
+      "avg_placement": 5.2824
+    },
+    {
+      "cluster_id": "409061",
+      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Lulu",
+      "tier": "D",
+      "avg_placement": 5.3111
+    },
+    {
+      "cluster_id": "409067",
+      "comp_name": "TFT17_ResistTank, TFT17_Ornn",
+      "tier": "D",
+      "avg_placement": 5.5606
     }
   ],
   "builds": [
     {
-      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
-      "comp_name": "重装战士薇古丝",
+      "cluster_id": "409002",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Illaoi",
+      "items": [
+        "鬼索的狂暴之刃",
+        "红霸符",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.8156,
+      "count": 1692,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "红霸符": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "409057",
+      "comp_name": "TFT17_ShieldTank, TFT17_Xayah",
       "items": [
         "鬼索的狂暴之刃",
         "巨人杀手",
-        "灭世者的死亡之帽"
+        "虚空之杖"
       ],
-      "avg_placement": 3.69,
-      "count": 35701,
+      "avg_placement": 2.9811,
+      "count": 53,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
-        "巨人杀手": 100,
-        "灭世者的死亡之帽": 100
+        "巨人杀手": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "409058",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Vex",
+      "items": [
+        "鬼索的狂暴之刃",
+        "灭世者的死亡之帽",
+        "红霸符"
+      ],
+      "avg_placement": 3.8115,
+      "count": 8578,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "灭世者的死亡之帽": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "cluster_id": "409067",
+      "comp_name": "TFT17_ResistTank, TFT17_Ornn",
+      "items": [
+        "鬼索的狂暴之刃",
+        "灭世者的死亡之帽",
+        "红霸符"
+      ],
+      "avg_placement": 4.5833,
+      "count": 12,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "灭世者的死亡之帽": 85,
+        "红霸符": 72
       }
     }
   ]

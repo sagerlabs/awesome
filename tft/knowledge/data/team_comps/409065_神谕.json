@@ -1,0 +1,210 @@
+{
+  "cluster_id": "409065",
+  "tft_set": "TFTSet17",
+  "units": [
+    "奥瑞利安·索尔",
+    "俄洛伊",
+    "蕾欧娜",
+    "莫德凯撒",
+    "努努和威朗普",
+    "维克托",
+    "佐伊"
+  ],
+  "traits": [
+    "法官 (1)",
+    "神谕 (3)",
+    "重装战士 (2)"
+  ],
+  "stars": [
+    "蕾欧娜",
+    "佐伊",
+    "莫德凯撒",
+    "黛安娜",
+    "派克",
+    "泰隆",
+    "格温",
+    "雷克塞",
+    "米利欧"
+  ],
+  "name_string": "TFT17_ShieldTank, TFT17_Leona",
+  "display_names": [
+    {
+      "name": "神谕",
+      "type": "trait",
+      "score": 2.0449870566011334
+    },
+    {
+      "name": "蕾欧娜",
+      "type": "unit",
+      "score": 4.007591128524453
+    }
+  ],
+  "count": 65859,
+  "avg_placement": 5.1709,
+  "top4_rate": 0.374,
+  "win_rate": 0.0595,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "佐伊",
+      "items": [
+        "灭世者的死亡之帽",
+        "灭世者的死亡之帽",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 4.0541,
+      "count": 629,
+      "score": 0.6319,
+      "place_change": -1.073,
+      "priority_scores": {
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "蕾欧娜",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.6442,
+      "count": 2341,
+      "score": 0.5555,
+      "place_change": -0.483,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "黛安娜",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.8899,
+      "count": 1908,
+      "score": 0.1621,
+      "place_change": -0.237,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "莫德凯撒",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.3462,
+      "count": 52,
+      "score": 0.0725,
+      "place_change": -0.781,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 19183,
+      "avg": 4.8475,
+      "pcnt": 1.34213
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 9840,
+      "avg": 4.4141,
+      "pcnt": 0.68845
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 9425,
+      "avg": 4.7507,
+      "pcnt": 0.65941
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 6211,
+      "avg": 5.2713,
+      "pcnt": 0.43455
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "TFT_Item_HextechGunblade",
+      "count": 5492,
+      "avg": 4.8796,
+      "pcnt": 0.38424
+    },
+    "泰坦的坚决": {
+      "itemNames": "TFT_Item_TitansResolve",
+      "count": 3521,
+      "avg": 5.008,
+      "pcnt": 0.24634
+    },
+    "冕卫": {
+      "itemNames": "TFT_Item_Crownguard",
+      "count": 1855,
+      "avg": 4.2394,
+      "pcnt": 0.12978
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 2546,
+      "avg": 5.1984,
+      "pick_rate": 0.005562
+    },
+    {
+      "day": "2026-07-23",
+      "count": 2577,
+      "avg": 5.2278,
+      "pick_rate": 0.005544
+    },
+    {
+      "day": "2026-07-24",
+      "count": 2683,
+      "avg": 5.1789,
+      "pick_rate": 0.00573
+    },
+    {
+      "day": "2026-07-25",
+      "count": 2984,
+      "avg": 5.1847,
+      "pick_rate": 0.006239
+    },
+    {
+      "day": "2026-07-26",
+      "count": 3504,
+      "avg": 5.1575,
+      "pick_rate": 0.007289
+    },
+    {
+      "day": "2026-07-27",
+      "count": 5123,
+      "avg": 5.1312,
+      "pick_rate": 0.011083
+    },
+    {
+      "day": "2026-07-28",
+      "count": 5688,
+      "avg": 5.1074,
+      "pick_rate": 0.013092
+    },
+    {
+      "day": "2026-07-29",
+      "count": 40,
+      "avg": 5.15,
+      "pick_rate": 0.010088
+    }
+  ],
+  "levelling": "lvl 5",
+  "difficulty": -0.041
+}

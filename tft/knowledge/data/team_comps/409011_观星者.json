@@ -1,0 +1,222 @@
+{
+  "cluster_id": "409011",
+  "tft_set": "TFTSet17",
+  "units": [
+    "亚托克斯",
+    "贾克斯",
+    "璐璐",
+    "茂凯",
+    "米利欧",
+    "潘森",
+    "崔斯特"
+  ],
+  "traits": [
+    "魔术师 (1)",
+    "新星特攻队 (1)",
+    "织命人 (1)",
+    "斗士 (1)",
+    "堡垒卫士 (1)",
+    "观星者 (1)",
+    "未来战士 (1)"
+  ],
+  "stars": [
+    "璐璐",
+    "米利欧",
+    "贾克斯",
+    "潘森",
+    "茂凯",
+    "泰隆",
+    "凯特琳",
+    "奥恩",
+    "波比",
+    "格温",
+    "科加斯"
+  ],
+  "name_string": "TFT17_Timebreaker, TFT17_Lulu",
+  "display_names": [
+    {
+      "name": "观星者",
+      "type": "trait",
+      "score": 1.117062100268207
+    },
+    {
+      "name": "璐璐",
+      "type": "unit",
+      "score": 4.302620177429338
+    }
+  ],
+  "count": 78034,
+  "avg_placement": 4.5346,
+  "top4_rate": 0.4903,
+  "win_rate": 0.1089,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "璐璐",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
+      ],
+      "avg_placement": 4.4487,
+      "count": 10250,
+      "score": 0.4753,
+      "place_change": -0.226,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "unit": "米利欧",
+      "items": [
+        "观星者纹章",
+        "莫雷洛秘典",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.8842,
+      "count": 475,
+      "score": 0.2928,
+      "place_change": -0.79,
+      "priority_scores": {
+        "观星者纹章": 100,
+        "莫雷洛秘典": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "贾克斯",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 3.9385,
+      "count": 455,
+      "score": 0.2497,
+      "place_change": -0.736,
+      "priority_scores": {
+        "石像鬼石板甲": 72
+      }
+    },
+    {
+      "unit": "茂凯",
+      "items": [
+        "观星者纹章",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.0968,
+      "count": 124,
+      "score": 0.208,
+      "place_change": -1.577,
+      "priority_scores": {
+        "观星者纹章": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "纳什之牙": {
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 33513,
+      "avg": 4.5491,
+      "pcnt": 1.38283
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 30179,
+      "avg": 4.4,
+      "pcnt": 1.24527
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 25572,
+      "avg": 4.5312,
+      "pcnt": 1.05517
+    },
+    "观星者纹章": {
+      "itemNames": "TFT17_Item_StargazerEmblemItem",
+      "count": 22172,
+      "avg": 4.0001,
+      "pcnt": 0.91488
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 17196,
+      "avg": 4.4331,
+      "pcnt": 0.70955
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 11798,
+      "avg": 4.0819,
+      "pcnt": 0.48682
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 8576,
+      "avg": 4.109,
+      "pcnt": 0.35387
+    },
+    "莫雷洛秘典": {
+      "itemNames": "TFT_Item_Morellonomicon",
+      "count": 7068,
+      "avg": 4.3333,
+      "pcnt": 0.29164
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 8537,
+      "avg": 4.6842,
+      "pick_rate": 0.018649
+    },
+    {
+      "day": "2026-07-23",
+      "count": 8534,
+      "avg": 4.6991,
+      "pick_rate": 0.018359
+    },
+    {
+      "day": "2026-07-24",
+      "count": 8564,
+      "avg": 4.6971,
+      "pick_rate": 0.018289
+    },
+    {
+      "day": "2026-07-25",
+      "count": 8552,
+      "avg": 4.6956,
+      "pick_rate": 0.017881
+    },
+    {
+      "day": "2026-07-26",
+      "count": 8659,
+      "avg": 4.6852,
+      "pick_rate": 0.018013
+    },
+    {
+      "day": "2026-07-27",
+      "count": 8095,
+      "avg": 4.6576,
+      "pick_rate": 0.017513
+    },
+    {
+      "day": "2026-07-28",
+      "count": 7544,
+      "avg": 4.682,
+      "pick_rate": 0.017365
+    },
+    {
+      "day": "2026-07-29",
+      "count": 76,
+      "avg": 4.6579,
+      "pick_rate": 0.019168
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.009
+}

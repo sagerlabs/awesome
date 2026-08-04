@@ -1,0 +1,53 @@
+{
+  "name": "适应性头盔",
+  "priority_list": [
+    {
+      "cluster_id": "409013",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Samira",
+      "comp_tier": "S",
+      "comp_avg": 4.0341,
+      "carry": "布里茨",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "409001",
+      "comp_name": "TFT17_Augment_LeonaCarry",
+      "comp_tier": "A",
+      "comp_avg": 4.405,
+      "carry": "努努和威朗普",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "409010",
+      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_TahmKench",
+      "comp_tier": "A",
+      "comp_avg": 4.4414,
+      "carry": "努努和威朗普",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "409002",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Illaoi",
+      "comp_tier": "A",
+      "comp_avg": 4.499,
+      "carry": "布里茨",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "409004",
+      "comp_name": "TFT17_DarkStar, TFT17_AurelionSol",
+      "comp_tier": "A",
+      "comp_avg": 4.3001,
+      "carry": "努努和威朗普",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "409002",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Illaoi",
+      "comp_tier": "A",
+      "comp_avg": 4.499,
+      "carry": "努努和威朗普",
+      "priority_score": 85
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "cluster_id": "409035",
+  "tft_set": "TFTSet17",
+  "units": [
+    "亚托克斯",
+    "璐璐",
+    "茂凯",
+    "厄运小姐",
+    "娜美",
+    "奥恩",
+    "潘森"
+  ],
+  "traits": [
+    "魔术师 (2)",
+    "新星特攻队 (1)",
+    "斗士 (1)",
+    "武装战姬 (1)",
+    "堡垒卫士 (1)",
+    "太空律动 (1)"
+  ],
+  "stars": [
+    "璐璐",
+    "厄运小姐",
+    "奥恩",
+    "茂凯",
+    "拉亚斯特",
+    "科加斯",
+    "俄洛伊"
+  ],
+  "name_string": "TFT17_APTrait, TFT17_MissFortune",
+  "display_names": [
+    {
+      "name": "魔术师",
+      "type": "trait",
+      "score": 1.878642888212266
+    },
+    {
+      "name": "璐璐",
+      "type": "unit",
+      "score": 3.838625489343192
+    }
+  ],
+  "count": 39503,
+  "avg_placement": 4.3386,
+  "top4_rate": 0.5261,
+  "win_rate": 0.1278,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "璐璐",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
+      ],
+      "avg_placement": 4.1341,
+      "count": 1909,
+      "score": 0.4764,
+      "place_change": -0.364,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "unit": "厄运小姐",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.0535,
+      "count": 990,
+      "score": 0.4291,
+      "place_change": -0.445,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "奥恩",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.8665,
+      "count": 337,
+      "score": 0.2698,
+      "place_change": -0.632,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "娜美",
+      "items": [
+        "观星者纹章",
+        "珠光护手",
+        "朔极之矛"
+      ],
+      "avg_placement": 2.6818,
+      "count": 22,
+      "score": 0.2054,
+      "place_change": -1.817,
+      "priority_scores": {
+        "观星者纹章": 100,
+        "珠光护手": 85,
+        "朔极之矛": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 7370,
+      "avg": 4.3513,
+      "pcnt": 1.06858
+    },
+    "纳什之牙": {
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 7347,
+      "avg": 4.2981,
+      "pcnt": 1.06525
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 6362,
+      "avg": 4.1572,
+      "pcnt": 0.92243
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 6091,
+      "avg": 4.283,
+      "pcnt": 0.88314
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 4122,
+      "avg": 3.9704,
+      "pcnt": 0.59765
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 3996,
+      "avg": 4.2598,
+      "pcnt": 0.57938
+    },
+    "死亡之刃": {
+      "itemNames": "TFT_Item_Deathblade",
+      "count": 2822,
+      "avg": 4.163,
+      "pcnt": 0.40916
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 2732,
+      "avg": 4.0937,
+      "pcnt": 0.39611
+    },
+    "观星者纹章": {
+      "itemNames": "TFT17_Item_StargazerEmblemItem",
+      "count": 2453,
+      "avg": 3.6339,
+      "pcnt": 0.35566
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 2488,
+      "avg": 4.4136,
+      "pick_rate": 0.005435
+    },
+    {
+      "day": "2026-07-23",
+      "count": 2556,
+      "avg": 4.48,
+      "pick_rate": 0.005499
+    },
+    {
+      "day": "2026-07-24",
+      "count": 2405,
+      "avg": 4.5064,
+      "pick_rate": 0.005136
+    },
+    {
+      "day": "2026-07-25",
+      "count": 2422,
+      "avg": 4.5244,
+      "pick_rate": 0.005064
+    },
+    {
+      "day": "2026-07-26",
+      "count": 2437,
+      "avg": 4.5281,
+      "pick_rate": 0.00507
+    },
+    {
+      "day": "2026-07-27",
+      "count": 2286,
+      "avg": 4.5105,
+      "pick_rate": 0.004946
+    },
+    {
+      "day": "2026-07-28",
+      "count": 2186,
+      "avg": 4.4488,
+      "pick_rate": 0.005032
+    },
+    {
+      "day": "2026-07-29",
+      "count": 27,
+      "avg": 4.2593,
+      "pick_rate": 0.00681
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.064
+}

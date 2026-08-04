@@ -2,11 +2,91 @@
   "name": "厄加特",
   "appear_in_comps": [
     {
-      "cluster_id": "b0e4c786a8fc51e0706762e2537c37fb",
-      "comp_name": "狂战士千珏",
-      "tier": "S",
-      "avg_placement": 3.02
+      "cluster_id": "409003",
+      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Urgot",
+      "tier": "A",
+      "avg_placement": 4.2778
+    },
+    {
+      "cluster_id": "409015",
+      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
+      "tier": "A",
+      "avg_placement": 4.3545
+    },
+    {
+      "cluster_id": "409036",
+      "comp_name": "TFT17_Mecha, TFT17_AurelionSol, TFT17_Urgot",
+      "tier": "B",
+      "avg_placement": 4.6648
+    },
+    {
+      "cluster_id": "409032",
+      "comp_name": "TFT17_Mecha, TFT17_MasterYi",
+      "tier": "B",
+      "avg_placement": 4.7128
+    },
+    {
+      "cluster_id": "409007",
+      "comp_name": "TFT17_Augment_GragasCarry",
+      "tier": "B",
+      "avg_placement": 4.743
+    },
+    {
+      "cluster_id": "409023",
+      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Ornn",
+      "tier": "B",
+      "avg_placement": 4.7552
+    },
+    {
+      "cluster_id": "409025",
+      "comp_name": "TFT17_Augment_JaxCarry, TFT17_ResistTank",
+      "tier": "C",
+      "avg_placement": 4.82
+    },
+    {
+      "cluster_id": "409014",
+      "comp_name": "TFT17_Mecha, TFT17_Urgot",
+      "tier": "C",
+      "avg_placement": 4.9287
+    },
+    {
+      "cluster_id": "409064",
+      "comp_name": "TFT17_HPTank, TFT17_Maokai",
+      "tier": "D",
+      "avg_placement": 5.2824
     }
   ],
-  "builds": []
+  "builds": [
+    {
+      "cluster_id": "409003",
+      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Urgot",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "巨人杀手"
+      ],
+      "avg_placement": 3,
+      "count": 30,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "巨人杀手": 72
+      }
+    },
+    {
+      "cluster_id": "409014",
+      "comp_name": "TFT17_Mecha, TFT17_Urgot",
+      "items": [
+        "死亡之刃",
+        "死亡之刃",
+        "水银"
+      ],
+      "avg_placement": 3.9947,
+      "count": 189,
+      "priority_scores": {
+        "死亡之刃": 85,
+        "水银": 72
+      }
+    }
+  ]
 }

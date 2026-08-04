@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TFT Copilot</title>
+    <title>TFT Copilot · 云顶之弈 AI 教练</title>
     <!-- marked.js: 优先从 CDN 加载，CDN 失败时降级为纯文本显示 -->
     <script>
         // 内联极简 marked 降级实现，CDN 加载失败时使用
@@ -13,6 +13,8 @@
                 .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
                 .replace(/`(.+?)`/g, '<code>$1</code>')
                 .replace(/^#{1,3} (.+)$/gm, '<strong>$1</strong>')
+                .replace(/^[-*] (.+)$/gm, '• $1')
+                .replace(/^&gt; (.+)$/gm, '<em>$1</em>')
                 .replace(/\n/g, '<br>')
         }
     </script>
@@ -24,77 +26,109 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap"
           rel="stylesheet"
           onerror="this.remove()">
-    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="assets/app.css?v=20260803b">
 </head>
-<body>
+<!-- data-layout: web（默认全页） | compact（桌面小窗/Wails） | pet（桌宠预留） -->
+<body data-layout="web">
 
-<div class="demo-hint">
-    点击右下角气泡开始对话<br>
-    <span>TFT Copilot · 云顶之弈助手</span>
-</div>
+<div id="app">
 
-<!-- 悬浮气泡 -->
-<div id="bubble">
-    <div class="bubble-icon"></div>
-    <div class="bubble-badge" id="badge"></div>
-</div>
-
-<!-- 对话面板 -->
-<div id="panel">
-    <!-- 顶栏 -->
-    <div class="panel-header">
-        <div class="panel-avatar">⚔</div>
-        <div class="panel-title">
-            <h3>TFT Copilot</h3>
-            <p><span class="status-dot"></span>云顶之弈 · 阵容分析</p>
-        </div>
-        <button class="panel-settings" id="settings-btn" title="服务器设置">⚙</button>
-        <button class="panel-close" id="close-btn" title="最小化">╱╲</button>
-    </div>
-
-    <!-- 设置弹窗 -->
-    <div class="settings-modal" id="settings-modal">
-        <label>后端服务器地址</label>
-        <input type="text" id="api-input" placeholder="http://your-server:8080" />
-        <button class="settings-save" id="settings-save">保存并重连</button>
-        <div class="settings-tip">修改后当前对话会重置</div>
-    </div>
-
-    <!-- 消息列表 -->
-    <div class="messages" id="messages">
-        <!-- 欢迎消息 -->
-        <div class="msg ai">
-            <div class="msg-avatar">⚔</div>
-            <div class="msg-bubble md" id="welcome-msg"></div>
-        </div>
-    </div>
-
-    <!-- 快捷输入建议 -->
-    <div class="suggestions" id="suggestions">
-        <span class="suggestion-tag" onclick="fillInput('当前版本最强的三套阵容是什么？')">版本强势</span>
-        <span class="suggestion-tag" onclick="fillInput('剑魔打工强吗？')">剑魔打工</span>
-        <span class="suggestion-tag" onclick="fillInput('四费卡谁能C？')">四费主C</span>
-        <span class="suggestion-tag" onclick="fillInput('海魔人能玩吗？')">羁绊查询</span>
-    </div>
-
-    <!-- 输入区 -->
-    <div class="input-area">
-        <div class="input-row">
-      <textarea
-              id="chat-input"
-              placeholder="输入英雄、装备或问题..."
-              rows="1"
-      ></textarea>
-            <button class="send-btn" id="send-btn" title="发送">
-                ➤
+    <!-- ══ 侧边栏 ══ -->
+    <aside id="sidebar" aria-label="侧边栏">
+        <div class="side-head">
+            <div class="brand">
+                <span class="brand-icon">⚔</span>
+                <span class="brand-name">TFT Copilot</span>
+            </div>
+            <button class="newchat-btn" id="newchat-btn" type="button">
+                <span class="plus">＋</span> 新对话
             </button>
         </div>
-        <div class="input-hint">
-            <kbd>Enter</kbd> 发送 &nbsp;·&nbsp; <kbd>Shift+Enter</kbd> 换行
+
+        <nav class="conv-list" id="conv-list" aria-label="历史对话"></nav>
+
+        <div class="side-foot">
+            <div class="conn" id="conn" title="服务连接状态">
+                <span class="status-dot" id="status-dot"></span>
+                <div class="conn-texts">
+                    <span id="conn-text">连接中…</span>
+                    <span class="conn-sub" id="conn-sub"></span>
+                </div>
+            </div>
+            <button class="icon-btn" id="settings-btn" title="服务器设置" aria-label="服务器设置">⚙</button>
         </div>
+    </aside>
+    <div class="side-mask" id="side-mask"></div>
+
+    <!-- ══ 主区域 ══ -->
+    <main id="main">
+        <header id="topbar">
+            <button class="icon-btn" id="side-toggle" title="收起 / 展开侧边栏" aria-label="收起或展开侧边栏">☰</button>
+            <div class="topbar-title" id="topbar-title">TFT Copilot</div>
+            <div class="topbar-right">
+                <span class="status-dot topbar-dot" id="topbar-dot" title="服务连接状态"></span>
+                <button class="icon-btn wails-only" id="minimize-btn" title="最小化" aria-label="最小化">—</button>
+            </div>
+        </header>
+
+        <div id="scroll">
+            <!-- 欢迎空状态（会话无消息时显示） -->
+            <section class="welcome" id="welcome">
+                <div class="welcome-hero">⚔</div>
+                <h1 class="welcome-title">有什么可以帮你？</h1>
+                <p class="welcome-sub">云顶之弈 AI 教练 · 阵容 / 装备 / 英雄 / 羁绊 / 局内决策</p>
+                <div class="cap-cards" id="cap-cards"></div>
+                <p class="welcome-meta" id="welcome-meta"></p>
+            </section>
+
+            <!-- 消息列表 -->
+            <div class="messages" id="messages" aria-live="polite"></div>
+        </div>
+
+        <!-- 输入组合器 -->
+        <div class="composer-wrap">
+            <div class="composer" id="composer">
+                <div class="coach-row" id="coach-row">
+                    <div class="coach-groups" id="coach-groups"></div>
+                </div>
+                <textarea
+                        id="chat-input"
+                        placeholder="问阵容、装备、羁绊，或描述当前局面…"
+                        rows="1"
+                ></textarea>
+                <div class="composer-bar">
+                    <button class="mini-btn" id="coach-toggle" type="button" aria-expanded="false">
+                        ⚡ 局面快填
+                    </button>
+                    <span class="composer-hint">
+                        <kbd>Enter</kbd> 发送 · <kbd>Shift+Enter</kbd> 换行
+                    </span>
+                    <button class="send-btn" id="send-btn" title="发送" aria-label="发送">➤</button>
+                </div>
+            </div>
+            <p class="composer-foot">同一会话内支持多轮追问与教练反馈 · AI 生成内容仅供参考 · <span title="前端构建标记">UI v20260803</span></p>
+        </div>
+    </main>
+</div>
+
+<!-- ══ 设置弹窗 ══ -->
+<div class="modal-mask" id="settings-modal">
+    <div class="modal-card" role="dialog" aria-label="服务器设置">
+        <button class="icon-btn modal-close" id="settings-close" title="关闭" aria-label="关闭">✕</button>
+        <h3 class="modal-title">服务器设置</h3>
+        <label for="api-input">后端服务器地址</label>
+        <input type="text" id="api-input" placeholder="http://your-server:8080" spellcheck="false" autocomplete="off" />
+        <button class="settings-save" id="settings-save">保存并重连</button>
+        <div class="settings-divider"></div>
+        <div class="settings-health">
+            <div class="health-row"><span>服务状态</span><b id="health-status">—</b></div>
+            <div class="health-row"><span>版本</span><b id="health-version">—</b></div>
+            <div class="health-row"><span>已加载阵容</span><b id="health-comps">—</b></div>
+        </div>
+        <div class="settings-tip">修改服务器后，各对话的多轮上下文会重新开始</div>
     </div>
 </div>
 
-<script src="assets/app.js"></script>
+<script src="assets/app.js?v=20260803b"></script>
 </body>
 </html>

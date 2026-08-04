@@ -1,0 +1,234 @@
+{
+  "cluster_id": "409061",
+  "tft_set": "TFTSet17",
+  "units": [
+    "贾克斯",
+    "璐璐",
+    "努努和威朗普",
+    "潘森",
+    "泰隆",
+    "崔斯特",
+    "薇古丝",
+    "霞"
+  ],
+  "traits": [
+    "魔术师 (1)",
+    "观星者 (3)",
+    "末日使者 (1)"
+  ],
+  "stars": [
+    "璐璐"
+  ],
+  "name_string": "TFT17_Stargazer_Mountain, TFT17_Lulu",
+  "display_names": [
+    {
+      "name": "观星者",
+      "type": "trait",
+      "score": 1.3852855759922555
+    },
+    {
+      "name": "璐璐",
+      "type": "unit",
+      "score": 3.5779283639883834
+    },
+    {
+      "name": "贾克斯",
+      "type": "unit",
+      "score": 2.3153436592449177
+    }
+  ],
+  "count": 33502,
+  "avg_placement": 5.3111,
+  "top4_rate": 0.3322,
+  "win_rate": 0.0543,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "璐璐",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4,
+      "count": 11,
+      "score": 0.5348,
+      "place_change": -1.553,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "努努和威朗普",
+      "items": [
+        "适应性头盔",
+        "适应性头盔",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.75,
+      "count": 12,
+      "score": 0.3124,
+      "place_change": -1.803,
+      "priority_scores": {
+        "适应性头盔": 85,
+        "圣盾使的誓约": 72
+      }
+    },
+    {
+      "unit": "贾克斯",
+      "items": [
+        "巨龙之爪",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.1667,
+      "count": 12,
+      "score": 0.2804,
+      "place_change": -1.387,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "霞",
+      "items": [
+        "无尽之刃",
+        "红霸符",
+        "海妖之怒"
+      ],
+      "avg_placement": 4.3,
+      "count": 10,
+      "score": 0.1602,
+      "place_change": -1.253,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "红霸符": 85,
+        "海妖之怒": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 1758,
+      "avg": 5.2531,
+      "pcnt": 0.85092
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 1511,
+      "avg": 5.2694,
+      "pcnt": 0.73136
+    },
+    "纳什之牙": {
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 1198,
+      "avg": 5.1594,
+      "pcnt": 0.57986
+    },
+    "圣盾使的誓约": {
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 993,
+      "avg": 5.2508,
+      "pcnt": 0.48064
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 974,
+      "avg": 5.2413,
+      "pcnt": 0.47144
+    },
+    "适应性头盔": {
+      "itemNames": "TFT_Item_AdaptiveHelm",
+      "count": 493,
+      "avg": 5.144,
+      "pcnt": 0.23863
+    },
+    "红霸符": {
+      "itemNames": "TFT_Item_RapidFireCannon",
+      "count": 438,
+      "avg": 5.1461,
+      "pcnt": 0.212
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 432,
+      "avg": 5.3912,
+      "pcnt": 0.2091
+    },
+    "海妖之怒": {
+      "itemNames": "TFT_Item_RunaansHurricane",
+      "count": 416,
+      "avg": 5.5216,
+      "pcnt": 0.20136
+    },
+    "巨龙之爪": {
+      "itemNames": "TFT_Item_DragonsClaw",
+      "count": 338,
+      "avg": 5.1006,
+      "pcnt": 0.1636
+    },
+    "强袭者的链枷": {
+      "itemNames": "TFT_Item_PowerGauntlet",
+      "count": 234,
+      "avg": 5.1068,
+      "pcnt": 0.11326
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 646,
+      "avg": 5.7214,
+      "pick_rate": 0.001411
+    },
+    {
+      "day": "2026-07-23",
+      "count": 641,
+      "avg": 5.8362,
+      "pick_rate": 0.001379
+    },
+    {
+      "day": "2026-07-24",
+      "count": 685,
+      "avg": 5.4978,
+      "pick_rate": 0.001463
+    },
+    {
+      "day": "2026-07-25",
+      "count": 716,
+      "avg": 5.6187,
+      "pick_rate": 0.001497
+    },
+    {
+      "day": "2026-07-26",
+      "count": 725,
+      "avg": 5.6303,
+      "pick_rate": 0.001508
+    },
+    {
+      "day": "2026-07-27",
+      "count": 681,
+      "avg": 5.5507,
+      "pick_rate": 0.001473
+    },
+    {
+      "day": "2026-07-28",
+      "count": 663,
+      "avg": 5.4857,
+      "pick_rate": 0.001526
+    },
+    {
+      "day": "2026-07-29",
+      "count": 10,
+      "avg": 5.5,
+      "pick_rate": 0.002522
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.096
+}

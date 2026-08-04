@@ -2,45 +2,290 @@
   "name": "俄洛伊",
   "appear_in_comps": [
     {
-      "cluster_id": "d036609ff95f9d4c28aad031a5fb965a",
-      "comp_name": "重装战士提莫",
+      "cluster_id": "409006",
+      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_Illaoi",
       "tier": "S",
-      "avg_placement": 3.89
+      "avg_placement": 4.1825
     },
     {
-      "cluster_id": "55972c44f51aad6861e8cf2def3cde7d",
-      "comp_name": "牧羊人维克托",
+      "cluster_id": "409054",
+      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Viktor",
       "tier": "S",
-      "avg_placement": 3.52
+      "avg_placement": 4.2261
     },
     {
-      "cluster_id": "86c70a8a7c98ca5a2e20a5ae52ecce0b",
-      "comp_name": "重装战士提莫",
-      "tier": "S",
-      "avg_placement": 2.38
+      "cluster_id": "409050",
+      "comp_name": "TFT17_Augment_NasusCarry",
+      "tier": "A",
+      "avg_placement": 4.3078
     },
     {
-      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
-      "comp_name": "重装战士薇古丝",
-      "tier": "S",
-      "avg_placement": 3.69
+      "cluster_id": "409031",
+      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc",
+      "tier": "A",
+      "avg_placement": 4.3374
+    },
+    {
+      "cluster_id": "409009",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "tier": "A",
+      "avg_placement": 4.4015
+    },
+    {
+      "cluster_id": "409001",
+      "comp_name": "TFT17_Augment_LeonaCarry",
+      "tier": "A",
+      "avg_placement": 4.405
+    },
+    {
+      "cluster_id": "409066",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora",
+      "tier": "A",
+      "avg_placement": 4.4086
+    },
+    {
+      "cluster_id": "409038",
+      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_Kaisa",
+      "tier": "A",
+      "avg_placement": 4.4363
+    },
+    {
+      "cluster_id": "409048",
+      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_ShieldTank",
+      "tier": "A",
+      "avg_placement": 4.4469
+    },
+    {
+      "cluster_id": "409002",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Illaoi",
+      "tier": "A",
+      "avg_placement": 4.499
+    },
+    {
+      "cluster_id": "409026",
+      "comp_name": "TFT17_ShieldTank, TFT17_AurelionSol",
+      "tier": "B",
+      "avg_placement": 4.554
+    },
+    {
+      "cluster_id": "409018",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Diana",
+      "tier": "B",
+      "avg_placement": 4.5706
+    },
+    {
+      "cluster_id": "409040",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leblanc",
+      "tier": "B",
+      "avg_placement": 4.5983
+    },
+    {
+      "cluster_id": "409016",
+      "comp_name": "TFT17_DarkStar, TFT17_Illaoi",
+      "tier": "B",
+      "avg_placement": 4.615
+    },
+    {
+      "cluster_id": "409049",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar",
+      "tier": "B",
+      "avg_placement": 4.6957
+    },
+    {
+      "cluster_id": "409046",
+      "comp_name": "TFT17_SummonTrait, TFT17_Nami",
+      "tier": "B",
+      "avg_placement": 4.7287
+    },
+    {
+      "cluster_id": "409051",
+      "comp_name": "TFT17_FlexTrait, TFT17_Galio",
+      "tier": "D",
+      "avg_placement": 5.1104
+    },
+    {
+      "cluster_id": "409044",
+      "comp_name": "TFT17_ShieldTank, TFT17_Teemo",
+      "tier": "D",
+      "avg_placement": 5.1311
+    },
+    {
+      "cluster_id": "409065",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leona",
+      "tier": "D",
+      "avg_placement": 5.1709
+    },
+    {
+      "cluster_id": "409060",
+      "comp_name": "TFT17_ADMIN, TFT17_Diana",
+      "tier": "D",
+      "avg_placement": 5.2753
+    },
+    {
+      "cluster_id": "409068",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Jinx",
+      "tier": "D",
+      "avg_placement": 6.052
     }
   ],
   "builds": [
     {
-      "cluster_id": "55972c44f51aad6861e8cf2def3cde7d",
-      "comp_name": "牧羊人维克托",
+      "cluster_id": "409009",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "items": [
+        "棘刺背心",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.2,
+      "count": 10,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "cluster_id": "409066",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora",
+      "items": [
+        "旅人纹章",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 2.4155,
+      "count": 142,
+      "priority_scores": {
+        "旅人纹章": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "cluster_id": "409038",
+      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_Kaisa",
+      "items": [
+        "石像鬼石板甲",
+        "坚定之心",
+        "日炎斗篷"
+      ],
+      "avg_placement": 2.6,
+      "count": 10,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "坚定之心": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "cluster_id": "409048",
+      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_ShieldTank",
       "items": [
         "冕卫",
         "石像鬼石板甲",
         "狂徒铠甲"
       ],
-      "avg_placement": 3.52,
-      "count": 32935,
+      "avg_placement": 3.5556,
+      "count": 18,
       "priority_scores": {
-        "冕卫": 80,
-        "石像鬼石板甲": 80,
-        "狂徒铠甲": 80
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "409026",
+      "comp_name": "TFT17_ShieldTank, TFT17_AurelionSol",
+      "items": [
+        "石像鬼石板甲",
+        "坚定之心",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.4222,
+      "count": 45,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "坚定之心": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "409018",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Diana",
+      "items": [
+        "旅人纹章",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 2.4571,
+      "count": 70,
+      "priority_scores": {
+        "旅人纹章": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "409016",
+      "comp_name": "TFT17_DarkStar, TFT17_Illaoi",
+      "items": [
+        "圣盾使的誓约",
+        "石像鬼石板甲",
+        "坚定之心"
+      ],
+      "avg_placement": 2.8889,
+      "count": 9,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "石像鬼石板甲": 85,
+        "坚定之心": 72
+      }
+    },
+    {
+      "cluster_id": "409047",
+      "comp_name": "TFT17_ASTrait, TFT17_Diana, TFT17_MissFortune",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.325,
+      "count": 40,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "409060",
+      "comp_name": "TFT17_ADMIN, TFT17_Diana",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 4.3077,
+      "count": 13,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "409068",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Jinx",
+      "items": [
+        "旅人纹章",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 2.6486,
+      "count": 37,
+      "priority_scores": {
+        "旅人纹章": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
       }
     }
   ]

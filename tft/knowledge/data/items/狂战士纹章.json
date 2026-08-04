@@ -1,0 +1,13 @@
+{
+  "name": "狂战士纹章",
+  "priority_list": [
+    {
+      "cluster_id": "409015",
+      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
+      "comp_tier": "A",
+      "comp_avg": 4.3545,
+      "carry": "千珏",
+      "priority_score": 100
+    }
+  ]
+}

@@ -2,12 +2,52 @@
   "name": "斯特拉克的挑战护手",
   "priority_list": [
     {
-      "cluster_id": "8f5d84cf55194702e441031fe21eb88f",
-      "comp_name": "海魔人贝蕾亚",
+      "cluster_id": "409027",
+      "comp_name": "TFT17_Augment_AatroxCarry, TFT17_Kindred",
+      "comp_tier": "A",
+      "comp_avg": 4.3701,
+      "carry": "亚托克斯",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "409001",
+      "comp_name": "TFT17_Augment_LeonaCarry",
+      "comp_tier": "A",
+      "comp_avg": 4.405,
+      "carry": "蕾欧娜",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "409028",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
       "comp_tier": "S",
-      "comp_avg": 3.44,
-      "carry": "贝蕾亚",
-      "priority_score": 100
+      "comp_avg": 4.2087,
+      "carry": "锐雯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409024",
+      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Riven",
+      "comp_tier": "A",
+      "comp_avg": 4.2519,
+      "carry": "锐雯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409015",
+      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
+      "comp_tier": "A",
+      "comp_avg": 4.3545,
+      "carry": "菲奥娜",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409005",
+      "comp_name": "TFT17_Astronaut, TFT17_Corki",
+      "comp_tier": "A",
+      "comp_avg": 4.3714,
+      "carry": "锐雯",
+      "priority_score": 72
     }
   ]
 }

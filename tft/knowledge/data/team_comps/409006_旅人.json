@@ -1,0 +1,233 @@
+{
+  "cluster_id": "409006",
+  "tft_set": "TFTSet17",
+  "units": [
+    "俄洛伊",
+    "小木灵",
+    "丽桑卓",
+    "莫德凯撒",
+    "娜美",
+    "派克",
+    "拉亚斯特",
+    "羊咩咩 & 咩咩羊",
+    "维克托"
+  ],
+  "traits": [
+    "魔术师 (1)",
+    "暗星 (1)",
+    "旅人 (1)",
+    "神谕 (1)",
+    "灵能特工 (1)",
+    "救世主 (1)",
+    "重装战士 (1)",
+    "太空律动 (1)",
+    "牧羊人 (1)"
+  ],
+  "stars": [
+    "小木灵",
+    "派克",
+    "莫德凯撒",
+    "古拉加斯"
+  ],
+  "name_string": "TFT17_Augment_IvernMinionCarry, TFT17_Illaoi",
+  "display_names": [
+    {
+      "name": "旅人",
+      "type": "trait",
+      "score": 1.3676525645825532
+    },
+    {
+      "name": "小木灵",
+      "type": "unit",
+      "score": 4.466866342193935
+    },
+    {
+      "name": "派克",
+      "type": "unit",
+      "score": 3.490827405466118
+    }
+  ],
+  "count": 10180,
+  "avg_placement": 4.1825,
+  "top4_rate": 0.5849,
+  "win_rate": 0.0754,
+  "tier": "S",
+  "builds": [
+    {
+      "unit": "小木灵",
+      "items": [
+        "夜之锋刃",
+        "珠光护手",
+        "正义之手"
+      ],
+      "avg_placement": 4.2126,
+      "count": 1990,
+      "score": 0.3767,
+      "place_change": -0.038,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "珠光护手": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "unit": "派克",
+      "items": [
+        "死亡之刃",
+        "夜之锋刃",
+        "正义之手"
+      ],
+      "avg_placement": 3,
+      "count": 17,
+      "score": 0.3214,
+      "place_change": -1.251,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "夜之锋刃": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "unit": "莫德凯撒",
+      "items": [
+        "棘刺背心",
+        "离子火花",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 2.7647,
+      "count": 17,
+      "score": 0.259,
+      "place_change": -1.486,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "离子火花": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "维克托",
+      "items": [
+        "共感植入",
+        "灭世者的死亡之帽",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.3333,
+      "count": 21,
+      "score": 0.1274,
+      "place_change": -0.917,
+      "priority_scores": {
+        "共感植入": 100,
+        "灭世者的死亡之帽": 85,
+        "虚空之杖": 72
+      }
+    }
+  ],
+  "build_items": {
+    "夜之锋刃": {
+      "itemNames": "TFT_Item_GuardianAngel",
+      "count": 3506,
+      "avg": 4.1167,
+      "pcnt": 1.31262
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 3077,
+      "avg": 4.1719,
+      "pcnt": 1.152
+    },
+    "正义之手": {
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 2972,
+      "avg": 4.1666,
+      "pcnt": 1.11269
+    },
+    "离子火花": {
+      "itemNames": "TFT_Item_IonicSpark",
+      "count": 1318,
+      "avg": 4.0478,
+      "pcnt": 0.49345
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 1220,
+      "avg": 4.027,
+      "pcnt": 0.45676
+    },
+    "虚空之杖": {
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 918,
+      "avg": 3.9728,
+      "pcnt": 0.34369
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 622,
+      "avg": 3.8682,
+      "pcnt": 0.23287
+    },
+    "共感植入": {
+      "itemNames": "TFT17_Item_PsyOps_SympatheticImplantMod",
+      "count": 619,
+      "avg": 4.0921,
+      "pcnt": 0.23175
+    },
+    "死亡之刃": {
+      "itemNames": "TFT_Item_Deathblade",
+      "count": 327,
+      "avg": 3.8899,
+      "pcnt": 0.12243
+    },
+    "棘刺背心": {
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 316,
+      "avg": 3.5633,
+      "pcnt": 0.11831
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 892,
+      "avg": 4.3341,
+      "pick_rate": 0.001949
+    },
+    {
+      "day": "2026-07-23",
+      "count": 911,
+      "avg": 4.1416,
+      "pick_rate": 0.00196
+    },
+    {
+      "day": "2026-07-24",
+      "count": 903,
+      "avg": 4.247,
+      "pick_rate": 0.001928
+    },
+    {
+      "day": "2026-07-25",
+      "count": 1016,
+      "avg": 4.1988,
+      "pick_rate": 0.002124
+    },
+    {
+      "day": "2026-07-26",
+      "count": 944,
+      "avg": 4.2924,
+      "pick_rate": 0.001964
+    },
+    {
+      "day": "2026-07-27",
+      "count": 890,
+      "avg": 4.2843,
+      "pick_rate": 0.001925
+    },
+    {
+      "day": "2026-07-28",
+      "count": 856,
+      "avg": 4.1694,
+      "pick_rate": 0.00197
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.021
+}

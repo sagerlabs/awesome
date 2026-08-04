@@ -1,0 +1,220 @@
+{
+  "cluster_id": "409008",
+  "tft_set": "TFTSet17",
+  "units": [
+    "亚托克斯",
+    "古拉加斯",
+    "茂凯",
+    "厄运小姐",
+    "奥恩",
+    "拉亚斯特",
+    "维克托"
+  ],
+  "traits": [
+    "新星特攻队 (1)",
+    "斗士 (1)",
+    "神谕 (1)",
+    "武装战姬 (1)",
+    "灵能特工 (1)",
+    "堡垒卫士 (1)",
+    "救世主 (1)",
+    "太空律动 (1)"
+  ],
+  "stars": [
+    "厄运小姐",
+    "维克托",
+    "奥恩",
+    "茂凯",
+    "拉亚斯特",
+    "俄洛伊"
+  ],
+  "name_string": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
+  "display_names": [
+    {
+      "name": "神谕",
+      "type": "trait",
+      "score": 1.334001202163895
+    },
+    {
+      "name": "厄运小姐",
+      "type": "unit",
+      "score": 4.215688238829894
+    }
+  ],
+  "count": 21346,
+  "avg_placement": 4.344,
+  "top4_rate": 0.5324,
+  "win_rate": 0.0936,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "厄运小姐",
+      "items": [
+        "死亡之刃",
+        "死亡之刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 3.6675,
+      "count": 394,
+      "score": 0.7622,
+      "place_change": -0.761,
+      "priority_scores": {
+        "死亡之刃": 85,
+        "无尽之刃": 72
+      }
+    },
+    {
+      "unit": "维克托",
+      "items": [
+        "海克斯科技枪刃",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.2381,
+      "count": 21,
+      "score": 0.5561,
+      "place_change": -1.191,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "奥恩",
+      "items": [
+        "棘刺背心",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.2222,
+      "count": 18,
+      "score": 0.4643,
+      "place_change": -1.207,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "茂凯",
+      "items": [
+        "棘刺背心",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 2.75,
+      "count": 16,
+      "score": 0.2503,
+      "place_change": -1.679,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "死亡之刃": {
+      "itemNames": "TFT_Item_Deathblade",
+      "count": 4096,
+      "avg": 4.1108,
+      "pcnt": 0.82068
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 3632,
+      "avg": 4.0658,
+      "pcnt": 0.72771
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 3332,
+      "avg": 4.2569,
+      "pcnt": 0.6676
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 3133,
+      "avg": 4.3664,
+      "pcnt": 0.62773
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 2774,
+      "avg": 4.0977,
+      "pcnt": 0.5558
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 2348,
+      "avg": 4.0626,
+      "pcnt": 0.47045
+    },
+    "棘刺背心": {
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 1284,
+      "avg": 3.8271,
+      "pcnt": 0.25726
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "TFT_Item_HextechGunblade",
+      "count": 432,
+      "avg": 3.9468,
+      "pcnt": 0.08656
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 1642,
+      "avg": 4.447,
+      "pick_rate": 0.003587
+    },
+    {
+      "day": "2026-07-23",
+      "count": 1718,
+      "avg": 4.3562,
+      "pick_rate": 0.003696
+    },
+    {
+      "day": "2026-07-24",
+      "count": 1782,
+      "avg": 4.5095,
+      "pick_rate": 0.003805
+    },
+    {
+      "day": "2026-07-25",
+      "count": 1678,
+      "avg": 4.4976,
+      "pick_rate": 0.003509
+    },
+    {
+      "day": "2026-07-26",
+      "count": 1710,
+      "avg": 4.4784,
+      "pick_rate": 0.003557
+    },
+    {
+      "day": "2026-07-27",
+      "count": 1667,
+      "avg": 4.3455,
+      "pick_rate": 0.003606
+    },
+    {
+      "day": "2026-07-28",
+      "count": 1635,
+      "avg": 4.4563,
+      "pick_rate": 0.003763
+    },
+    {
+      "day": "2026-07-29",
+      "count": 12,
+      "avg": 5.1667,
+      "pick_rate": 0.003026
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.049
+}

@@ -1,0 +1,13 @@
+{
+  "name": "斗士纹章",
+  "priority_list": [
+    {
+      "cluster_id": "409003",
+      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Urgot",
+      "comp_tier": "A",
+      "comp_avg": 4.2778,
+      "carry": "奥恩",
+      "priority_score": 100
+    }
+  ]
+}

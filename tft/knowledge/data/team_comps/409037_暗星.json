@@ -1,0 +1,237 @@
+{
+  "cluster_id": "409037",
+  "tft_set": "TFTSet17",
+  "units": [
+    "科加斯",
+    "超级机甲",
+    "烬",
+    "卡莎",
+    "卡尔玛",
+    "丽桑卓",
+    "莫德凯撒",
+    "潘森"
+  ],
+  "traits": [
+    "魔术师 (1)",
+    "暗星 (3)",
+    "旅人 (1)",
+    "斗士 (1)",
+    "灭星尊 (1)"
+  ],
+  "stars": [
+    "科加斯",
+    "丽桑卓",
+    "伊泽瑞尔",
+    "雷克塞",
+    "蕾欧娜",
+    "贝蕾亚",
+    "维迦"
+  ],
+  "name_string": "TFT17_DarkStar, TFT17_Chogath",
+  "display_names": [
+    {
+      "name": "暗星",
+      "type": "trait",
+      "score": 2.5782399283127355
+    },
+    {
+      "name": "科加斯",
+      "type": "unit",
+      "score": 4.15590113131464
+    }
+  ],
+  "count": 151919,
+  "avg_placement": 4.7398,
+  "top4_rate": 0.4498,
+  "win_rate": 0.0821,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "科加斯",
+      "items": [
+        "圣盾使的誓约",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.133,
+      "count": 1834,
+      "score": 0.5082,
+      "place_change": -0.538,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "丽桑卓",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
+      ],
+      "avg_placement": 4.3601,
+      "count": 6168,
+      "score": 0.3924,
+      "place_change": -0.311,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "unit": "烬",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "最后的轻语"
+      ],
+      "avg_placement": 3.0386,
+      "count": 337,
+      "score": 0.2048,
+      "place_change": -1.633,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "最后的轻语": 72
+      }
+    },
+    {
+      "unit": "卡尔玛",
+      "items": [
+        "蓝霸符",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.0256,
+      "count": 117,
+      "score": 0.1644,
+      "place_change": -1.646,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "莫雷洛秘典": 85,
+        "虚空之杖": 72
+      }
+    }
+  ],
+  "build_items": {
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 22854,
+      "avg": 4.4937,
+      "pcnt": 0.8533
+    },
+    "纳什之牙": {
+      "itemNames": "TFT_Item_Leviathan",
+      "count": 22478,
+      "avg": 4.4874,
+      "pcnt": 0.83926
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 16871,
+      "avg": 4.384,
+      "pcnt": 0.62991
+    },
+    "圣盾使的誓约": {
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 15663,
+      "avg": 4.3773,
+      "pcnt": 0.58481
+    },
+    "振奋盔甲": {
+      "itemNames": "TFT_Item_Redemption",
+      "count": 14019,
+      "avg": 4.3995,
+      "pcnt": 0.52343
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 10848,
+      "avg": 4.2267,
+      "pcnt": 0.40503
+    },
+    "虚空之杖": {
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 8560,
+      "avg": 4.2229,
+      "pcnt": 0.31961
+    },
+    "死亡之刃": {
+      "itemNames": "TFT_Item_Deathblade",
+      "count": 7562,
+      "avg": 4.1083,
+      "pcnt": 0.28234
+    },
+    "最后的轻语": {
+      "itemNames": "TFT_Item_LastWhisper",
+      "count": 5830,
+      "avg": 3.9868,
+      "pcnt": 0.21768
+    },
+    "莫雷洛秘典": {
+      "itemNames": "TFT_Item_Morellonomicon",
+      "count": 5412,
+      "avg": 4.2439,
+      "pcnt": 0.20207
+    },
+    "蓝霸符": {
+      "itemNames": "TFT_Item_BlueBuff",
+      "count": 4530,
+      "avg": 4.1428,
+      "pcnt": 0.16914
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 9329,
+      "avg": 4.6486,
+      "pick_rate": 0.020379
+    },
+    {
+      "day": "2026-07-23",
+      "count": 9302,
+      "avg": 4.6462,
+      "pick_rate": 0.020011
+    },
+    {
+      "day": "2026-07-24",
+      "count": 9295,
+      "avg": 4.665,
+      "pick_rate": 0.01985
+    },
+    {
+      "day": "2026-07-25",
+      "count": 9600,
+      "avg": 4.6515,
+      "pick_rate": 0.020073
+    },
+    {
+      "day": "2026-07-26",
+      "count": 9395,
+      "avg": 4.6814,
+      "pick_rate": 0.019545
+    },
+    {
+      "day": "2026-07-27",
+      "count": 9181,
+      "avg": 4.6527,
+      "pick_rate": 0.019862
+    },
+    {
+      "day": "2026-07-28",
+      "count": 8284,
+      "avg": 4.6838,
+      "pick_rate": 0.019068
+    },
+    {
+      "day": "2026-07-29",
+      "count": 98,
+      "avg": 4.6633,
+      "pick_rate": 0.024716
+    }
+  ],
+  "levelling": "lvl 5",
+  "difficulty": -0.137
+}

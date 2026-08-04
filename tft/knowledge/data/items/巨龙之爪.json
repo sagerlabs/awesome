@@ -1,0 +1,21 @@
+{
+  "name": "巨龙之爪",
+  "priority_list": [
+    {
+      "cluster_id": "409045",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "comp_tier": "S",
+      "comp_avg": 3.9722,
+      "carry": "塔姆",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "409020",
+      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_FlexTrait",
+      "comp_tier": "A",
+      "comp_avg": 4.3546,
+      "carry": "拉莫斯",
+      "priority_score": 100
+    }
+  ]
+}

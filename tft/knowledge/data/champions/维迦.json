@@ -1,0 +1,35 @@
+{
+  "name": "维迦",
+  "appear_in_comps": [
+    {
+      "cluster_id": "409053",
+      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "tier": "B",
+      "avg_placement": 4.6483
+    },
+    {
+      "cluster_id": "409049",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar",
+      "tier": "B",
+      "avg_placement": 4.6957
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "409049",
+      "comp_name": "TFT17_Astronaut, TFT17_Veigar",
+      "items": [
+        "珠光护手",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 4.2245,
+      "count": 588,
+      "priority_scores": {
+        "珠光护手": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    }
+  ]
+}

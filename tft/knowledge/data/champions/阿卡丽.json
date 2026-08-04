@@ -2,11 +2,162 @@
   "name": "阿卡丽",
   "appear_in_comps": [
     {
-      "cluster_id": "8f5d84cf55194702e441031fe21eb88f",
-      "comp_name": "海魔人贝蕾亚",
+      "cluster_id": "409045",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
       "tier": "S",
-      "avg_placement": 3.44
+      "avg_placement": 3.9722
+    },
+    {
+      "cluster_id": "409019",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "tier": "A",
+      "avg_placement": 4.2675
+    },
+    {
+      "cluster_id": "409027",
+      "comp_name": "TFT17_Augment_AatroxCarry, TFT17_Kindred",
+      "tier": "A",
+      "avg_placement": 4.3701
+    },
+    {
+      "cluster_id": "409017",
+      "comp_name": "TFT17_Augment_AatroxCarry, TFT17_Jax",
+      "tier": "A",
+      "avg_placement": 4.4015
+    },
+    {
+      "cluster_id": "409022",
+      "comp_name": "TFT17_ASTrait, TFT17_Jinx",
+      "tier": "B",
+      "avg_placement": 4.6353
+    },
+    {
+      "cluster_id": "409058",
+      "comp_name": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Vex",
+      "tier": "B",
+      "avg_placement": 4.724
+    },
+    {
+      "cluster_id": "409056",
+      "comp_name": "TFT17_ResistTank, TFT17_Corki",
+      "tier": "B",
+      "avg_placement": 4.7739
+    },
+    {
+      "cluster_id": "409025",
+      "comp_name": "TFT17_Augment_JaxCarry, TFT17_ResistTank",
+      "tier": "C",
+      "avg_placement": 4.82
+    },
+    {
+      "cluster_id": "409014",
+      "comp_name": "TFT17_Mecha, TFT17_Urgot",
+      "tier": "C",
+      "avg_placement": 4.9287
+    },
+    {
+      "cluster_id": "409052",
+      "comp_name": "TFT17_Primordian, TFT17_Belveth",
+      "tier": "C",
+      "avg_placement": 5.0866
     }
   ],
-  "builds": []
+  "builds": [
+    {
+      "cluster_id": "409045",
+      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "items": [
+        "死亡之刃",
+        "海克斯科技枪刃",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.7282,
+      "count": 78400,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "海克斯科技枪刃": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "409019",
+      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "items": [
+        "死亡之刃",
+        "夜之锋刃",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 3.7919,
+      "count": 197,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "夜之锋刃": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "cluster_id": "409027",
+      "comp_name": "TFT17_Augment_AatroxCarry, TFT17_Kindred",
+      "items": [
+        "死亡之刃",
+        "海克斯科技枪刃",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.7692,
+      "count": 130,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "海克斯科技枪刃": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "409017",
+      "comp_name": "TFT17_Augment_AatroxCarry, TFT17_Jax",
+      "items": [
+        "死亡之刃",
+        "海克斯科技枪刃",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.4787,
+      "count": 94,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "海克斯科技枪刃": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "409022",
+      "comp_name": "TFT17_ASTrait, TFT17_Jinx",
+      "items": [
+        "海克斯科技枪刃",
+        "无尽之刃",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.0626,
+      "count": 2491,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "无尽之刃": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "409014",
+      "comp_name": "TFT17_Mecha, TFT17_Urgot",
+      "items": [
+        "死亡之刃",
+        "海克斯科技枪刃",
+        "正义之手"
+      ],
+      "avg_placement": 3.8182,
+      "count": 11,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "海克斯科技枪刃": 85,
+        "正义之手": 72
+      }
+    }
+  ]
 }

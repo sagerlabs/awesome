@@ -1,0 +1,57 @@
+{
+  "name": "伊泽瑞尔",
+  "appear_in_comps": [
+    {
+      "cluster_id": "409042",
+      "comp_name": "TFT17_HPTank, TFT17_Ezreal",
+      "tier": "B",
+      "avg_placement": 4.5893
+    },
+    {
+      "cluster_id": "409059",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pantheon",
+      "tier": "C",
+      "avg_placement": 5.0415
+    },
+    {
+      "cluster_id": "409067",
+      "comp_name": "TFT17_ResistTank, TFT17_Ornn",
+      "tier": "D",
+      "avg_placement": 5.5606
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "409042",
+      "comp_name": "TFT17_HPTank, TFT17_Ezreal",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.3703,
+      "count": 7402,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "409059",
+      "comp_name": "TFT17_Timebreaker, TFT17_Pantheon",
+      "items": [
+        "蓝霸符",
+        "无尽之刃",
+        "巨人杀手"
+      ],
+      "avg_placement": 2.5556,
+      "count": 9,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "无尽之刃": 85,
+        "巨人杀手": 72
+      }
+    }
+  ]
+}

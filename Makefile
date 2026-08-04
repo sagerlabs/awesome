@@ -89,6 +89,15 @@ build-mac: data-check ## 交叉编译 macOS arm64（Apple Silicon）
 	go build -ldflags "$(LDFLAGS)" -o $(BUILD_DIR)/$(BINARY)-darwin-arm64 $(MAIN)
 	@echo "✅ macOS 构建完成: $(BUILD_DIR)/$(BINARY)-darwin-arm64"
 
+.PHONY: release
+release: ## 打包云服务器一键部署包（Linux 双架构 + 安装脚本，输出 dist/*.tar.gz）
+	./deploy/build-release.sh
+
+.PHONY: publish
+publish: ## 一键打包+上传+远程安装：make publish SERVER=root@1.2.3.4（需 ssh 免密 + 远端 sudo）
+	@[ -n "$(SERVER)" ] || { echo "❌ 用法: make publish SERVER=root@<服务器IP>"; exit 1; }
+	./deploy/publish.sh "$(SERVER)"
+
 # ── 容器 ──────────────────────────────────────────────────────────────────────
 
 DOCKER_IMAGE := tft-copilot:latest

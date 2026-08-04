@@ -1,0 +1,228 @@
+{
+  "cluster_id": "409031",
+  "tft_set": "TFTSet17",
+  "units": [
+    "布里茨",
+    "超级机甲",
+    "俄洛伊",
+    "小木灵",
+    "卡尔玛",
+    "乐芙兰",
+    "丽桑卓",
+    "莫甘娜",
+    "娑娜",
+    "羊咩咩 & 咩咩羊"
+  ],
+  "traits": [
+    "汪星机器人 (1)",
+    "暗星 (1)",
+    "旅人 (2)",
+    "黑暗魔女 (1)",
+    "重装战士 (1)",
+    "最高指挥官 (1)",
+    "太空律动 (1)",
+    "牧羊人 (2)"
+  ],
+  "stars": [
+    "蕾欧娜",
+    "贝蕾亚",
+    "金克丝",
+    "雷克塞"
+  ],
+  "name_string": "TFT17_SummonTrait, TFT17_Leblanc",
+  "display_names": [
+    {
+      "name": "牧羊人",
+      "type": "trait",
+      "score": 2.135106925261548
+    },
+    {
+      "name": "乐芙兰",
+      "type": "unit",
+      "score": 4.317292521300095
+    }
+  ],
+  "count": 137413,
+  "avg_placement": 4.3374,
+  "top4_rate": 0.5361,
+  "win_rate": 0.098,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "乐芙兰",
+      "items": [
+        "鬼索的狂暴之刃",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 4.1921,
+      "count": 7866,
+      "score": 0.5455,
+      "place_change": -0.339,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "莫甘娜",
+      "items": [
+        "圣盾使的誓约",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0898,
+      "count": 3386,
+      "score": 0.3374,
+      "place_change": -0.442,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "卡尔玛",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.8334,
+      "count": 2095,
+      "score": 0.3041,
+      "place_change": -0.698,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "娑娜",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.4072,
+      "count": 582,
+      "score": 0.183,
+      "place_change": -1.124,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 40889,
+      "avg": 4.4779,
+      "pcnt": 0.99252
+    },
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 39297,
+      "avg": 4.424,
+      "pcnt": 0.95388
+    },
+    "珠光护手": {
+      "itemNames": "TFT_Item_JeweledGauntlet",
+      "count": 36318,
+      "avg": 4.3214,
+      "pcnt": 0.88157
+    },
+    "狂徒铠甲": {
+      "itemNames": "TFT_Item_WarmogsArmor",
+      "count": 28955,
+      "avg": 4.3078,
+      "pcnt": 0.70284
+    },
+    "虚空之杖": {
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 25031,
+      "avg": 4.1931,
+      "pcnt": 0.60759
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 22840,
+      "avg": 4.1429,
+      "pcnt": 0.55441
+    },
+    "朔极之矛": {
+      "itemNames": "TFT_Item_SpearOfShojin",
+      "count": 19911,
+      "avg": 4.2561,
+      "pcnt": 0.48331
+    },
+    "圣盾使的誓约": {
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 17841,
+      "avg": 4.2753,
+      "pcnt": 0.43307
+    },
+    "莫雷洛秘典": {
+      "itemNames": "TFT_Item_Morellonomicon",
+      "count": 14751,
+      "avg": 4.1279,
+      "pcnt": 0.35806
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 15617,
+      "avg": 4.5368,
+      "pick_rate": 0.034116
+    },
+    {
+      "day": "2026-07-23",
+      "count": 15822,
+      "avg": 4.5389,
+      "pick_rate": 0.034037
+    },
+    {
+      "day": "2026-07-24",
+      "count": 15330,
+      "avg": 4.5568,
+      "pick_rate": 0.032737
+    },
+    {
+      "day": "2026-07-25",
+      "count": 15306,
+      "avg": 4.5252,
+      "pick_rate": 0.032003
+    },
+    {
+      "day": "2026-07-26",
+      "count": 15213,
+      "avg": 4.5127,
+      "pick_rate": 0.031648
+    },
+    {
+      "day": "2026-07-27",
+      "count": 13707,
+      "avg": 4.5712,
+      "pick_rate": 0.029654
+    },
+    {
+      "day": "2026-07-28",
+      "count": 12400,
+      "avg": 4.5051,
+      "pick_rate": 0.028542
+    },
+    {
+      "day": "2026-07-29",
+      "count": 167,
+      "avg": 4.6467,
+      "pick_rate": 0.042119
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": 0
+}

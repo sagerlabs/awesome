@@ -1,0 +1,216 @@
+{
+  "cluster_id": "409058",
+  "tft_set": "TFTSet17",
+  "units": [
+    "亚托克斯",
+    "阿卡丽",
+    "布里茨",
+    "菲奥娜",
+    "格雷福斯",
+    "莫甘娜",
+    "努努和威朗普",
+    "慎",
+    "薇古丝"
+  ],
+  "traits": [
+    "汪星机器人 (1)",
+    "新星特攻队 (1)",
+    "斗神 (1)",
+    "军工1号 (1)",
+    "狂战士 (1)",
+    "黑暗魔女 (1)",
+    "堡垒卫士 (1)",
+    "暮光铁壁 (1)",
+    "重装战士 (1)",
+    "太空律动 (1)",
+    "末日使者 (1)"
+  ],
+  "stars": [
+    "蕾欧娜"
+  ],
+  "name_string": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Vex",
+  "display_names": [
+    {
+      "name": "太空律动",
+      "type": "trait",
+      "score": 0.7840800159163668
+    },
+    {
+      "name": "薇古丝",
+      "type": "unit",
+      "score": 3.0678615999565917
+    }
+  ],
+  "count": 505418,
+  "avg_placement": 4.724,
+  "top4_rate": 0.4594,
+  "win_rate": 0.1718,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "薇古丝",
+      "items": [
+        "鬼索的狂暴之刃",
+        "灭世者的死亡之帽",
+        "红霸符"
+      ],
+      "avg_placement": 3.8115,
+      "count": 8578,
+      "score": 0.4553,
+      "place_change": -0.872,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "灭世者的死亡之帽": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "unit": "格雷福斯",
+      "items": [
+        "战兔十字弩",
+        "鬼索的狂暴之刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 2.1838,
+      "count": 495,
+      "score": 0.4429,
+      "place_change": -2.5,
+      "priority_scores": {
+        "战兔十字弩": 100,
+        "鬼索的狂暴之刃": 85,
+        "无尽之刃": 72
+      }
+    },
+    {
+      "unit": "努努和威朗普",
+      "items": [
+        "适应性头盔",
+        "圣盾使的誓约",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.8874,
+      "count": 3579,
+      "score": 0.2547,
+      "place_change": -0.797,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "圣盾使的誓约": 72
+      }
+    },
+    {
+      "unit": "布里茨",
+      "items": [
+        "冕卫"
+      ],
+      "avg_placement": 3.7821,
+      "count": 702,
+      "score": 0.0144,
+      "place_change": -0.902,
+      "priority_scores": {
+        "冕卫": 100
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "TFT_Item_GuinsoosRageblade",
+      "count": 147471,
+      "avg": 4.468,
+      "pcnt": 0.88909
+    },
+    "圣盾使的誓约": {
+      "itemNames": "TFT_Item_FrozenHeart",
+      "count": 106388,
+      "avg": 4.3473,
+      "pcnt": 0.64141
+    },
+    "红霸符": {
+      "itemNames": "TFT_Item_RapidFireCannon",
+      "count": 52553,
+      "avg": 4.1955,
+      "pcnt": 0.31684
+    },
+    "适应性头盔": {
+      "itemNames": "TFT_Item_AdaptiveHelm",
+      "count": 47928,
+      "avg": 4.1323,
+      "pcnt": 0.28895
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 36310,
+      "avg": 4.1166,
+      "pcnt": 0.21891
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 31259,
+      "avg": 4.1943,
+      "pcnt": 0.18846
+    },
+    "冕卫": {
+      "itemNames": "TFT_Item_Crownguard",
+      "count": 19894,
+      "avg": 3.7247,
+      "pcnt": 0.11994
+    },
+    "战兔十字弩": {
+      "itemNames": "TFT17_AnimaSquadItem_Tier2_BattleBunnyCrossbow",
+      "count": 2195,
+      "avg": 3.1686,
+      "pcnt": 0.01323
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 53208,
+      "avg": 4.666,
+      "pick_rate": 0.116234
+    },
+    {
+      "day": "2026-07-23",
+      "count": 54851,
+      "avg": 4.6837,
+      "pick_rate": 0.117998
+    },
+    {
+      "day": "2026-07-24",
+      "count": 55737,
+      "avg": 4.6794,
+      "pick_rate": 0.119027
+    },
+    {
+      "day": "2026-07-25",
+      "count": 58110,
+      "avg": 4.6864,
+      "pick_rate": 0.121502
+    },
+    {
+      "day": "2026-07-26",
+      "count": 58152,
+      "avg": 4.6965,
+      "pick_rate": 0.120975
+    },
+    {
+      "day": "2026-07-27",
+      "count": 55775,
+      "avg": 4.6747,
+      "pick_rate": 0.120665
+    },
+    {
+      "day": "2026-07-28",
+      "count": 52475,
+      "avg": 4.68,
+      "pick_rate": 0.120785
+    },
+    {
+      "day": "2026-07-29",
+      "count": 362,
+      "avg": 4.7541,
+      "pick_rate": 0.091299
+    }
+  ],
+  "levelling": "Fast 9",
+  "difficulty": 0.113
+}

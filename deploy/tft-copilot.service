@@ -1,0 +1,24 @@
+[Unit]
+Description=TFT Copilot - 云顶之弈 AI 教练服务
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/tft-copilot
+EnvironmentFile=/opt/tft-copilot/.env
+ExecStart=/opt/tft-copilot/tft-copilot
+Restart=always
+RestartSec=3
+
+# 安全加固
+NoNewPrivileges=true
+ProtectSystem=full
+ProtectHome=true
+PrivateTmp=true
+
+# 日志走 journald：journalctl -u tft-copilot -f
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

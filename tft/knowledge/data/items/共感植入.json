@@ -1,0 +1,13 @@
+{
+  "name": "共感植入",
+  "priority_list": [
+    {
+      "cluster_id": "409006",
+      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_Illaoi",
+      "comp_tier": "S",
+      "comp_avg": 4.1825,
+      "carry": "维克托",
+      "priority_score": 100
+    }
+  ]
+}

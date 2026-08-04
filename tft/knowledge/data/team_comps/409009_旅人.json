@@ -1,0 +1,244 @@
+{
+  "cluster_id": "409009",
+  "tft_set": "TFTSet17",
+  "units": [
+    "俄洛伊",
+    "小木灵",
+    "丽桑卓",
+    "莫德凯撒",
+    "娜美",
+    "派克",
+    "拉亚斯特",
+    "羊咩咩 & 咩咩羊",
+    "维克托"
+  ],
+  "traits": [
+    "魔术师 (1)",
+    "暗星 (1)",
+    "旅人 (1)",
+    "神谕 (1)",
+    "灵能特工 (1)",
+    "救世主 (1)",
+    "重装战士 (1)",
+    "太空律动 (1)",
+    "牧羊人 (1)"
+  ],
+  "stars": [
+    "维克托",
+    "俄洛伊",
+    "派克",
+    "拉亚斯特",
+    "佐伊",
+    "阿萝拉",
+    "厄运小姐",
+    "蕾欧娜"
+  ],
+  "name_string": "TFT17_SummonTrait, TFT17_Viktor",
+  "display_names": [
+    {
+      "name": "旅人",
+      "type": "trait",
+      "score": 1.2380828340713728
+    },
+    {
+      "name": "维克托",
+      "type": "unit",
+      "score": 4.168663714508987
+    }
+  ],
+  "count": 23383,
+  "avg_placement": 4.4015,
+  "top4_rate": 0.5271,
+  "win_rate": 0.0739,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "维克托",
+      "items": [
+        "无人机上行链路",
+        "灭世者的死亡之帽",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.6667,
+      "count": 27,
+      "score": 0.4923,
+      "place_change": -0.892,
+      "priority_scores": {
+        "无人机上行链路": 100,
+        "灭世者的死亡之帽": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "俄洛伊",
+      "items": [
+        "棘刺背心",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.2,
+      "count": 10,
+      "score": 0.4299,
+      "place_change": -1.359,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "unit": "娜美",
+      "items": [
+        "蓝霸符",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "avg_placement": 2.8,
+      "count": 15,
+      "score": 0.253,
+      "place_change": -1.759,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "莫雷洛秘典": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "派克",
+      "items": [
+        "夜之锋刃",
+        "无尽之刃",
+        "正义之手"
+      ],
+      "avg_placement": 4.0822,
+      "count": 219,
+      "score": 0.2214,
+      "place_change": -0.477,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "无尽之刃": 85,
+        "正义之手": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "TFT_Item_GargoyleStoneplate",
+      "count": 3444,
+      "avg": 4.4387,
+      "pcnt": 0.89711
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "TFT_Item_RabadonsDeathcap",
+      "count": 2693,
+      "avg": 4.2878,
+      "pcnt": 0.70148
+    },
+    "虚空之杖": {
+      "itemNames": "TFT_Item_StatikkShiv",
+      "count": 2300,
+      "avg": 4.3443,
+      "pcnt": 0.59911
+    },
+    "无人机上行链路": {
+      "itemNames": "TFT17_Item_PsyOps_DroneMod",
+      "count": 1330,
+      "avg": 4.4293,
+      "pcnt": 0.34644
+    },
+    "日炎斗篷": {
+      "itemNames": "TFT_Item_RedBuff",
+      "count": 1255,
+      "avg": 4.2805,
+      "pcnt": 0.32691
+    },
+    "无尽之刃": {
+      "itemNames": "TFT_Item_InfinityEdge",
+      "count": 1186,
+      "avg": 4.3693,
+      "pcnt": 0.30893
+    },
+    "夜之锋刃": {
+      "itemNames": "TFT_Item_GuardianAngel",
+      "count": 1104,
+      "avg": 4.2717,
+      "pcnt": 0.28757
+    },
+    "莫雷洛秘典": {
+      "itemNames": "TFT_Item_Morellonomicon",
+      "count": 1044,
+      "avg": 4.272,
+      "pcnt": 0.27195
+    },
+    "棘刺背心": {
+      "itemNames": "TFT_Item_BrambleVest",
+      "count": 882,
+      "avg": 3.9943,
+      "pcnt": 0.22975
+    },
+    "正义之手": {
+      "itemNames": "TFT_Item_UnstableConcoction",
+      "count": 679,
+      "avg": 4.3152,
+      "pcnt": 0.17687
+    },
+    "蓝霸符": {
+      "itemNames": "TFT_Item_BlueBuff",
+      "count": 517,
+      "avg": 4.205,
+      "pcnt": 0.13467
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-07-22",
+      "count": 1286,
+      "avg": 4.5614,
+      "pick_rate": 0.002809
+    },
+    {
+      "day": "2026-07-23",
+      "count": 1323,
+      "avg": 4.5608,
+      "pick_rate": 0.002846
+    },
+    {
+      "day": "2026-07-24",
+      "count": 1354,
+      "avg": 4.5709,
+      "pick_rate": 0.002891
+    },
+    {
+      "day": "2026-07-25",
+      "count": 1416,
+      "avg": 4.524,
+      "pick_rate": 0.002961
+    },
+    {
+      "day": "2026-07-26",
+      "count": 1382,
+      "avg": 4.5478,
+      "pick_rate": 0.002875
+    },
+    {
+      "day": "2026-07-27",
+      "count": 1299,
+      "avg": 4.6467,
+      "pick_rate": 0.00281
+    },
+    {
+      "day": "2026-07-28",
+      "count": 1170,
+      "avg": 4.4769,
+      "pick_rate": 0.002693
+    },
+    {
+      "day": "2026-07-29",
+      "count": 12,
+      "avg": 4.5,
+      "pick_rate": 0.003026
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.058
+}

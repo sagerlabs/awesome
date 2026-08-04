@@ -1,0 +1,155 @@
+{
+  "name": "黛安娜",
+  "appear_in_comps": [
+    {
+      "cluster_id": "409030",
+      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Maokai",
+      "tier": "B",
+      "avg_placement": 4.5426
+    },
+    {
+      "cluster_id": "409018",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Diana",
+      "tier": "B",
+      "avg_placement": 4.5706
+    },
+    {
+      "cluster_id": "409023",
+      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Ornn",
+      "tier": "B",
+      "avg_placement": 4.7552
+    },
+    {
+      "cluster_id": "409062",
+      "comp_name": "TFT17_ASTrait, TFT17_Diana, TFT17_Kindred",
+      "tier": "C",
+      "avg_placement": 4.9254
+    },
+    {
+      "cluster_id": "409047",
+      "comp_name": "TFT17_ASTrait, TFT17_Diana, TFT17_MissFortune",
+      "tier": "C",
+      "avg_placement": 4.9915
+    },
+    {
+      "cluster_id": "409060",
+      "comp_name": "TFT17_ADMIN, TFT17_Diana",
+      "tier": "D",
+      "avg_placement": 5.2753
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "409030",
+      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Maokai",
+      "items": [
+        "饮血剑",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.9242,
+      "count": 66,
+      "priority_scores": {
+        "饮血剑": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "409018",
+      "comp_name": "TFT17_AnimaSquad, TFT17_Diana",
+      "items": [
+        "旅人纹章",
+        "饮血剑",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 2.9255,
+      "count": 94,
+      "priority_scores": {
+        "旅人纹章": 100,
+        "饮血剑": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "409023",
+      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Ornn",
+      "items": [
+        "饮血剑",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.5341,
+      "count": 674,
+      "priority_scores": {
+        "饮血剑": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "409062",
+      "comp_name": "TFT17_ASTrait, TFT17_Diana, TFT17_Kindred",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.1824,
+      "count": 614,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "409047",
+      "comp_name": "TFT17_ASTrait, TFT17_Diana, TFT17_MissFortune",
+      "items": [
+        "饮血剑",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.9254,
+      "count": 630,
+      "priority_scores": {
+        "饮血剑": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "409065",
+      "comp_name": "TFT17_ShieldTank, TFT17_Leona",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.8899,
+      "count": 1908,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "409060",
+      "comp_name": "TFT17_ADMIN, TFT17_Diana",
+      "items": [
+        "饮血剑",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.9315,
+      "count": 365,
+      "priority_scores": {
+        "饮血剑": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ]
+}

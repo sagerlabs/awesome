@@ -2,28 +2,36 @@
   "name": "正义之手",
   "priority_list": [
     {
-      "cluster_id": "86c70a8a7c98ca5a2e20a5ae52ecce0b",
-      "comp_name": "重装战士提莫",
+      "cluster_id": "409006",
+      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_Illaoi",
       "comp_tier": "S",
-      "comp_avg": 2.38,
-      "carry": "布里茨",
-      "priority_score": 50
+      "comp_avg": 4.1825,
+      "carry": "小木灵",
+      "priority_score": 72
     },
     {
-      "cluster_id": "b0e4c786a8fc51e0706762e2537c37fb",
-      "comp_name": "狂战士千珏",
+      "cluster_id": "409006",
+      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_Illaoi",
       "comp_tier": "S",
-      "comp_avg": 3.02,
-      "carry": "菲奥娜",
-      "priority_score": 50
+      "comp_avg": 4.1825,
+      "carry": "派克",
+      "priority_score": 72
     },
     {
-      "cluster_id": "b649d1eee8f7019800b2b8f50811534a",
-      "comp_name": "重装战士薇古丝",
+      "cluster_id": "409034",
+      "comp_name": "TFT17_SpaceGroove, TFT17_Ornn",
       "comp_tier": "S",
-      "comp_avg": 3.69,
+      "comp_avg": 4.2013,
       "carry": "布里茨",
-      "priority_score": 50
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "409009",
+      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "comp_tier": "A",
+      "comp_avg": 4.4015,
+      "carry": "派克",
+      "priority_score": 72
     }
   ]
 }

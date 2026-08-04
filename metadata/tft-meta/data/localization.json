@@ -169,6 +169,9 @@
     "TFT_Item_Shroud": "静止法衣",
     "TFT_Item_Redemption": "振奋盔甲",
     "TFT_Item_BansheesVeil": "女妖面纱",
+    "TFT17_Consumable_BlessingWealth": "赐福：财富",
+    "TFT17_Consumable_BlessingProsperityPlus": "赐福：兴盛+",
+    "TFT17_Consumable_BlessingProsperity": "赐福：兴盛",
     "TFT_Item_Artifact_ShadowPuppet": "暗影木偶",
     "TFT17_Item_Artifact_EkkoArtifact": "艾克的耐心",
     "TFT_Item_Zephyr": "灵风",
@@ -304,7 +307,6 @@
     "TFT_Item_Artifact_WitsEnd": "智慧末刃",
     "TFT17_DRXSelector": "特攻队员选择器",
     "TFT_Item_NeedlesslyLargeRod": "无用大棒",
-    "TFT_Item_Artifact_HorizonFocus": "视界专注",
     "TFT4_Item_OrnnRanduinsSanctum": "兰顿之兆",
     "TFT_Item_NightHarvester": "坚定之心",
     "TFT_Item_Artifact_ProwlersClaw": "暗行者之爪",
@@ -329,12 +331,20 @@
     "TFT_BlueGolem": "魔像",
     "TFT9_SLIME_Crab": "峡谷迅捷蟹",
     "TFT_TrainingDummy": "训练假人",
+    "TFT_BoardSlot": "TFT_BoardSlot",
+    "TFT_BenchSlot": "TFT_BenchSlot",
+    "TFT_ItemBenchSlot": "TFT_ItemBenchSlot",
+    "TFTItem": "TFTItem",
+    "TFT_ItemUnknown": "TFT_ItemUnknown",
+    "TFT_BenchSlotLock": "TFT_BenchSlotLock",
     "TFT5_EmblemArmoryKey": "纹章之书",
     "TFT_ArmoryKeyCompleted": "成装锻造器",
     "TFT_ArmoryKeyComponent": "基础装备锻造器",
     "TFT_ArmoryKeyOrnn": "神器装备锻造器",
+    "TFT_GoldenEgg": "TFT_GoldenEgg",
     "TFT_ArmoryKeySupport": "辅助装锻造器",
     "TFT6_MercenaryChest": "赏金猎人宝箱",
+    "TFT13_Augment": "TFT13_Augment",
     "TFT17_Briar": "贝蕾亚",
     "TFT17_Belveth": "卑尔维斯",
     "TFT17_MissFortune": "厄运小姐",
@@ -390,24 +400,52 @@
     "TFT17_Lissandra": "丽桑卓",
     "TFT17_Zed": "劫",
     "TFT17_Summon": "羊咩咩 & 咩咩羊",
+    "TFT17_AnimaSquadProp": "TFT17_AnimaSquadProp",
     "TFT17_IvernMinion": "小木灵",
+    "TFT17_DRXTracker": "TFT17_DRXTracker",
+    "TFT17_BardFollower": "TFT17_BardFollower",
+    "TFT17_Enemy_Fast": "TFT17_Enemy_Fast",
+    "TFT17_Enemy_Hunter": "TFT17_Enemy_Hunter",
+    "TFT17_Enemy_Lancer": "TFT17_Enemy_Lancer",
+    "TFT17_Enemy_BruiserMelee2_Daisy": "TFT17_Enemy_BruiserMelee2_Daisy",
+    "TFT17_PrimordianTracker": "TFT17_PrimordianTracker",
+    "TFT7_TempestStrike": "TFT7_TempestStrike",
+    "TFT17_MissFortune_TraitClone": "TFT17_MissFortune_TraitClone",
     "TFT17_Mordekaiser": "莫德凯撒",
     "TFT17_Xayah": "霞",
     "TFT17_Graves": "格雷福斯",
+    "TFT17_God_Thresh": "TFT17_God_Thresh",
+    "TFT17_God_Soraka": "TFT17_God_Soraka",
+    "TFT17_God_Ekko": "TFT17_God_Ekko",
+    "TFT17_God_Varus": "TFT17_God_Varus",
+    "TFT17_God_Kayle": "TFT17_God_Kayle",
+    "TFT17_KindredWolf": "TFT17_KindredWolf",
+    "TFT17_ShenProp": "TFT17_ShenProp",
     "TFT17_TahmKench": "塔姆",
     "TFT17_Rhaast": "拉亚斯特",
     "TFT17_TimebreakerCore": "未来战士核心",
+    "TFT17_God_AurelionSol": "TFT17_God_AurelionSol",
+    "TFT17_God_Pengu": "TFT17_God_Pengu",
+    "TFT17_God_Evelynn": "TFT17_God_Evelynn",
+    "TFT17_God_Yasuo": "TFT17_God_Yasuo",
+    "TFT17_God_Ahri": "TFT17_God_Ahri",
+    "TFT17_IllaoiMinion": "TFT17_IllaoiMinion",
+    "TFT13_Goop": "TFT13_Goop",
     "TFT17_RekSai": "雷克塞",
     "TFT17_Pantheon": "潘森",
     "TFT17_Morgana": "莫甘娜",
+    "TFT17_ThreshLantern": "TFT17_ThreshLantern",
     "TFT17_PVE_Minion": "星界鱿鱼",
     "TFT17_PVE_Raptor": "星界拆拆怪",
     "TFT17_PVE_Krug": "星界格斗怪",
+    "TFT17_BaubleShrine": "TFT17_BaubleShrine",
     "TFT17_PVE_Pix": "星界蝶灵",
     "TFT17_PVE_Gromp": "星界魔沼蛙",
     "TFT17_PVE_ElderDragon": "星界远古巨龙",
     "TFT14_EmblemArmoryKey": "纹章之书",
+    "TFT17_DarkStarDamageTracker": "TFT17_DarkStarDamageTracker",
     "TFT17_DarkStar_FakeUnit": "迷你黑洞",
+    "TFT17_Enemy_Aatrox": "海魔至尊",
     "TFT17_SummonTrait": "牧羊人",
     "TFT17_SummonTrait_1": "牧羊人 (1)",
     "TFT17_SummonTrait_2": "牧羊人 (2)",
@@ -1010,6 +1048,9 @@
     "静止法衣": "TFT_Item_Shroud",
     "振奋盔甲": "TFT_Item_Redemption",
     "女妖面纱": "TFT_Item_BansheesVeil",
+    "赐福：财富": "TFT17_Consumable_BlessingWealth",
+    "赐福：兴盛+": "TFT17_Consumable_BlessingProsperityPlus",
+    "赐福：兴盛": "TFT17_Consumable_BlessingProsperity",
     "暗影木偶": "TFT_Item_Artifact_ShadowPuppet",
     "艾克的耐心": "TFT17_Item_Artifact_EkkoArtifact",
     "灵风": "TFT_Item_Zephyr",
@@ -1141,7 +1182,6 @@
     "智慧末刃": "TFT_Item_Artifact_WitsEnd",
     "特攻队员选择器": "TFT17_DRXSelector",
     "无用大棒": "TFT_Item_NeedlesslyLargeRod",
-    "视界专注": "TFT_Item_Artifact_HorizonFocus",
     "兰顿之兆": "TFT4_Item_OrnnRanduinsSanctum",
     "坚定之心": "TFT_Item_NightHarvester",
     "暗行者之爪": "TFT_Item_Artifact_ProwlersClaw",
@@ -1166,12 +1206,20 @@
     "魔像": "TFT_BlueGolem",
     "峡谷迅捷蟹": "TFT9_SLIME_Crab",
     "训练假人": "TFT_TrainingDummy",
+    "TFT_BoardSlot": "TFT_BoardSlot",
+    "TFT_BenchSlot": "TFT_BenchSlot",
+    "TFT_ItemBenchSlot": "TFT_ItemBenchSlot",
+    "TFTItem": "TFTItem",
+    "TFT_ItemUnknown": "TFT_ItemUnknown",
+    "TFT_BenchSlotLock": "TFT_BenchSlotLock",
     "纹章之书": "TFT14_EmblemArmoryKey",
     "成装锻造器": "TFT_ArmoryKeyCompleted",
     "基础装备锻造器": "TFT_ArmoryKeyComponent",
     "神器装备锻造器": "TFT_ArmoryKeyOrnn",
+    "TFT_GoldenEgg": "TFT_GoldenEgg",
     "辅助装锻造器": "TFT_ArmoryKeySupport",
     "赏金猎人宝箱": "TFT6_MercenaryChest",
+    "TFT13_Augment": "TFT13_Augment",
     "贝蕾亚": "TFT17_Briar",
     "卑尔维斯": "TFT17_Belveth",
     "厄运小姐": "TFT17_MissFortune",
@@ -1227,23 +1275,51 @@
     "丽桑卓": "TFT17_Lissandra",
     "劫": "TFT17_Zed",
     "羊咩咩 & 咩咩羊": "TFT17_Summon",
+    "TFT17_AnimaSquadProp": "TFT17_AnimaSquadProp",
     "小木灵": "TFT17_IvernMinion",
+    "TFT17_DRXTracker": "TFT17_DRXTracker",
+    "TFT17_BardFollower": "TFT17_BardFollower",
+    "TFT17_Enemy_Fast": "TFT17_Enemy_Fast",
+    "TFT17_Enemy_Hunter": "TFT17_Enemy_Hunter",
+    "TFT17_Enemy_Lancer": "TFT17_Enemy_Lancer",
+    "TFT17_Enemy_BruiserMelee2_Daisy": "TFT17_Enemy_BruiserMelee2_Daisy",
+    "TFT17_PrimordianTracker": "TFT17_PrimordianTracker",
+    "TFT7_TempestStrike": "TFT7_TempestStrike",
+    "TFT17_MissFortune_TraitClone": "TFT17_MissFortune_TraitClone",
     "莫德凯撒": "TFT17_Mordekaiser",
     "霞": "TFT17_Xayah",
     "格雷福斯": "TFT17_Graves",
+    "TFT17_God_Thresh": "TFT17_God_Thresh",
+    "TFT17_God_Soraka": "TFT17_God_Soraka",
+    "TFT17_God_Ekko": "TFT17_God_Ekko",
+    "TFT17_God_Varus": "TFT17_God_Varus",
+    "TFT17_God_Kayle": "TFT17_God_Kayle",
+    "TFT17_KindredWolf": "TFT17_KindredWolf",
+    "TFT17_ShenProp": "TFT17_ShenProp",
     "塔姆": "TFT17_TahmKench",
     "拉亚斯特": "TFT17_Rhaast",
     "未来战士核心": "TFT17_TimebreakerCore",
+    "TFT17_God_AurelionSol": "TFT17_God_AurelionSol",
+    "TFT17_God_Pengu": "TFT17_God_Pengu",
+    "TFT17_God_Evelynn": "TFT17_God_Evelynn",
+    "TFT17_God_Yasuo": "TFT17_God_Yasuo",
+    "TFT17_God_Ahri": "TFT17_God_Ahri",
+    "TFT17_IllaoiMinion": "TFT17_IllaoiMinion",
+    "TFT13_Goop": "TFT13_Goop",
     "雷克塞": "TFT17_RekSai",
     "潘森": "TFT17_Pantheon",
     "莫甘娜": "TFT17_Morgana",
+    "TFT17_ThreshLantern": "TFT17_ThreshLantern",
     "星界鱿鱼": "TFT17_PVE_Minion",
     "星界拆拆怪": "TFT17_PVE_Raptor",
     "星界格斗怪": "TFT17_PVE_Krug",
+    "TFT17_BaubleShrine": "TFT17_BaubleShrine",
     "星界蝶灵": "TFT17_PVE_Pix",
     "星界魔沼蛙": "TFT17_PVE_Gromp",
     "星界远古巨龙": "TFT17_PVE_ElderDragon",
+    "TFT17_DarkStarDamageTracker": "TFT17_DarkStarDamageTracker",
     "迷你黑洞": "TFT17_DarkStar_FakeUnit",
+    "海魔至尊": "TFT17_Enemy_Aatrox",
     "牧羊人": "TFT17_SummonTrait",
     "法官": "TFT17_ADMIN",
     "狙神": "TFT17_RangedTrait",
@@ -1301,6 +1377,42 @@
       "cost": 1,
       "traits": []
     },
+    "TFT_BoardSlot": {
+      "api_name": "TFT_BoardSlot",
+      "name": "TFT_BoardSlot",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT_BenchSlot": {
+      "api_name": "TFT_BenchSlot",
+      "name": "TFT_BenchSlot",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT_ItemBenchSlot": {
+      "api_name": "TFT_ItemBenchSlot",
+      "name": "TFT_ItemBenchSlot",
+      "cost": 0,
+      "traits": []
+    },
+    "TFTItem": {
+      "api_name": "TFTItem",
+      "name": "TFTItem",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT_ItemUnknown": {
+      "api_name": "TFT_ItemUnknown",
+      "name": "TFT_ItemUnknown",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT_BenchSlotLock": {
+      "api_name": "TFT_BenchSlotLock",
+      "name": "TFT_BenchSlotLock",
+      "cost": 0,
+      "traits": []
+    },
     "TFT5_EmblemArmoryKey": {
       "api_name": "TFT5_EmblemArmoryKey",
       "name": "纹章之书",
@@ -1325,6 +1437,12 @@
       "cost": 8,
       "traits": []
     },
+    "TFT_GoldenEgg": {
+      "api_name": "TFT_GoldenEgg",
+      "name": "TFT_GoldenEgg",
+      "cost": 0,
+      "traits": []
+    },
     "TFT_ArmoryKeySupport": {
       "api_name": "TFT_ArmoryKeySupport",
       "name": "辅助装锻造器",
@@ -1335,6 +1453,12 @@
       "api_name": "TFT6_MercenaryChest",
       "name": "赏金猎人宝箱",
       "cost": 11,
+      "traits": []
+    },
+    "TFT13_Augment": {
+      "api_name": "TFT13_Augment",
+      "name": "TFT13_Augment",
+      "cost": 0,
       "traits": []
     },
     "TFT17_Briar": {
@@ -1728,7 +1852,8 @@
       "name": "薇古丝",
       "cost": 5,
       "traits": [
-        "末日使者"
+        "末日使者",
+        "观星者"
       ]
     },
     "TFT17_Riven": {
@@ -1746,6 +1871,7 @@
       "cost": 5,
       "traits": [
         "暮光铁壁",
+        "未来战士",
         "堡垒卫士"
       ]
     },
@@ -1836,6 +1962,12 @@
       "cost": 11,
       "traits": []
     },
+    "TFT17_AnimaSquadProp": {
+      "api_name": "TFT17_AnimaSquadProp",
+      "name": "TFT17_AnimaSquadProp",
+      "cost": 0,
+      "traits": []
+    },
     "TFT17_IvernMinion": {
       "api_name": "TFT17_IvernMinion",
       "name": "小木灵",
@@ -1844,6 +1976,64 @@
         "木灵族",
         "牧羊人",
         "旅人"
+      ]
+    },
+    "TFT17_DRXTracker": {
+      "api_name": "TFT17_DRXTracker",
+      "name": "TFT17_DRXTracker",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_BardFollower": {
+      "api_name": "TFT17_BardFollower",
+      "name": "TFT17_BardFollower",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_Enemy_Fast": {
+      "api_name": "TFT17_Enemy_Fast",
+      "name": "TFT17_Enemy_Fast",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_Enemy_Hunter": {
+      "api_name": "TFT17_Enemy_Hunter",
+      "name": "TFT17_Enemy_Hunter",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_Enemy_Lancer": {
+      "api_name": "TFT17_Enemy_Lancer",
+      "name": "TFT17_Enemy_Lancer",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_Enemy_BruiserMelee2_Daisy": {
+      "api_name": "TFT17_Enemy_BruiserMelee2_Daisy",
+      "name": "TFT17_Enemy_BruiserMelee2_Daisy",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_PrimordianTracker": {
+      "api_name": "TFT17_PrimordianTracker",
+      "name": "TFT17_PrimordianTracker",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT7_TempestStrike": {
+      "api_name": "TFT7_TempestStrike",
+      "name": "TFT7_TempestStrike",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_MissFortune_TraitClone": {
+      "api_name": "TFT17_MissFortune_TraitClone",
+      "name": "TFT17_MissFortune_TraitClone",
+      "cost": 0,
+      "traits": [
+        "神谕",
+        "挑战者",
+        "魔术师"
       ]
     },
     "TFT17_Mordekaiser": {
@@ -1873,6 +2063,48 @@
         "军工1号"
       ]
     },
+    "TFT17_God_Thresh": {
+      "api_name": "TFT17_God_Thresh",
+      "name": "TFT17_God_Thresh",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_God_Soraka": {
+      "api_name": "TFT17_God_Soraka",
+      "name": "TFT17_God_Soraka",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_God_Ekko": {
+      "api_name": "TFT17_God_Ekko",
+      "name": "TFT17_God_Ekko",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_God_Varus": {
+      "api_name": "TFT17_God_Varus",
+      "name": "TFT17_God_Varus",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_God_Kayle": {
+      "api_name": "TFT17_God_Kayle",
+      "name": "TFT17_God_Kayle",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_KindredWolf": {
+      "api_name": "TFT17_KindredWolf",
+      "name": "TFT17_KindredWolf",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_ShenProp": {
+      "api_name": "TFT17_ShenProp",
+      "name": "TFT17_ShenProp",
+      "cost": 0,
+      "traits": []
+    },
     "TFT17_TahmKench": {
       "api_name": "TFT17_TahmKench",
       "name": "塔姆",
@@ -1894,6 +2126,48 @@
       "api_name": "TFT17_TimebreakerCore",
       "name": "未来战士核心",
       "cost": 11,
+      "traits": []
+    },
+    "TFT17_God_AurelionSol": {
+      "api_name": "TFT17_God_AurelionSol",
+      "name": "TFT17_God_AurelionSol",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_God_Pengu": {
+      "api_name": "TFT17_God_Pengu",
+      "name": "TFT17_God_Pengu",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_God_Evelynn": {
+      "api_name": "TFT17_God_Evelynn",
+      "name": "TFT17_God_Evelynn",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_God_Yasuo": {
+      "api_name": "TFT17_God_Yasuo",
+      "name": "TFT17_God_Yasuo",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_God_Ahri": {
+      "api_name": "TFT17_God_Ahri",
+      "name": "TFT17_God_Ahri",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT17_IllaoiMinion": {
+      "api_name": "TFT17_IllaoiMinion",
+      "name": "TFT17_IllaoiMinion",
+      "cost": 0,
+      "traits": []
+    },
+    "TFT13_Goop": {
+      "api_name": "TFT13_Goop",
+      "name": "TFT13_Goop",
+      "cost": 0,
       "traits": []
     },
     "TFT17_RekSai": {
@@ -1918,10 +2192,16 @@
     "TFT17_Morgana": {
       "api_name": "TFT17_Morgana",
       "name": "莫甘娜",
-      "cost": 5,
+      "cost": 4,
       "traits": [
         "黑暗魔女"
       ]
+    },
+    "TFT17_ThreshLantern": {
+      "api_name": "TFT17_ThreshLantern",
+      "name": "TFT17_ThreshLantern",
+      "cost": 0,
+      "traits": []
     },
     "TFT17_PVE_Minion": {
       "api_name": "TFT17_PVE_Minion",
@@ -1939,6 +2219,12 @@
       "api_name": "TFT17_PVE_Krug",
       "name": "星界格斗怪",
       "cost": 2,
+      "traits": []
+    },
+    "TFT17_BaubleShrine": {
+      "api_name": "TFT17_BaubleShrine",
+      "name": "TFT17_BaubleShrine",
+      "cost": 0,
       "traits": []
     },
     "TFT17_PVE_Pix": {
@@ -1965,10 +2251,22 @@
       "cost": 8,
       "traits": []
     },
+    "TFT17_DarkStarDamageTracker": {
+      "api_name": "TFT17_DarkStarDamageTracker",
+      "name": "TFT17_DarkStarDamageTracker",
+      "cost": 0,
+      "traits": []
+    },
     "TFT17_DarkStar_FakeUnit": {
       "api_name": "TFT17_DarkStar_FakeUnit",
       "name": "迷你黑洞",
       "cost": 1,
+      "traits": []
+    },
+    "TFT17_Enemy_Aatrox": {
+      "api_name": "TFT17_Enemy_Aatrox",
+      "name": "海魔至尊",
+      "cost": 5,
       "traits": []
     }
   }
