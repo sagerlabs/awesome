@@ -1,0 +1,219 @@
+{
+  "cluster_id": "422011",
+  "tft_set": "TFTSet18",
+  "units": [
+    "茂凯",
+    "莫甘娜",
+    "苍蓝哨戒",
+    "提莫",
+    "克格莫",
+    "峡谷迅捷蟹",
+    "苍蓝雕纹魔像",
+    "塔里克"
+  ],
+  "traits": [
+    "帝王斑蝶 (1)",
+    "神谕 (4)",
+    "远古树精 (1)",
+    "重装战士 (1)",
+    "宝石骑士 (1)",
+    "主宰 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "苍蓝哨戒",
+    "峡谷迅捷蟹",
+    "绯红树怪",
+    "魔沼蛙",
+    "奥恩"
+  ],
+  "name_string": "DA_18_Invoker, DA_18_Sentry",
+  "display_names": [
+    {
+      "name": "神谕",
+      "type": "trait",
+      "score": 2.7087644552647596
+    },
+    {
+      "name": "苍蓝哨戒",
+      "type": "unit",
+      "score": 3.089470480827754
+    }
+  ],
+  "count": 128,
+  "avg_placement": 4.5469,
+  "top4_rate": 0.4766,
+  "win_rate": 0.1094,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "苍蓝哨戒",
+      "items": [
+        "蓝霸符",
+        "灭世者的死亡之帽",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.3611,
+      "count": 108,
+      "score": 0.5496,
+      "place_change": -1.274,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "适应性头盔",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.51,
+      "count": 100,
+      "score": 0.3737,
+      "place_change": -1.125,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "莫甘娜",
+      "items": [
+        "珠光护手",
+        "红霸符",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.25,
+      "count": 28,
+      "score": 0.2971,
+      "place_change": -1.385,
+      "priority_scores": {
+        "珠光护手": 100,
+        "红霸符": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "峡谷迅捷蟹",
+      "items": [
+        "棘刺背心",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.975,
+      "count": 40,
+      "score": 0.0852,
+      "place_change": -0.66,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 9168,
+      "avg": 4.4033,
+      "pcnt": 0.93001
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 7462,
+      "avg": 4.4886,
+      "pcnt": 0.75695
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 6290,
+      "avg": 4.3043,
+      "pcnt": 0.63806
+    },
+    "蓝霸符": {
+      "itemNames": "DA_BlueBuff",
+      "count": 5262,
+      "avg": 4.2689,
+      "pcnt": 0.53378
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 4308,
+      "avg": 4.1506,
+      "pcnt": 0.43701
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 3937,
+      "avg": 4.4534,
+      "pcnt": 0.39937
+    },
+    "适应性头盔": {
+      "itemNames": "DA_AdaptiveHelm",
+      "count": 3873,
+      "avg": 4.227,
+      "pcnt": 0.39288
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 3640,
+      "avg": 4.139,
+      "pcnt": 0.36924
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 2126,
+      "avg": 4.3824,
+      "pcnt": 0.21566
+    },
+    "棘刺背心": {
+      "itemNames": "DA_BrambleVest",
+      "count": 1578,
+      "avg": 4.1996,
+      "pcnt": 0.16007
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 547,
+      "avg": 4.5265,
+      "pick_rate": 0.0054
+    },
+    {
+      "day": "2026-08-28",
+      "count": 1738,
+      "avg": 4.5621,
+      "pick_rate": 0.004473
+    },
+    {
+      "day": "2026-08-29",
+      "count": 2681,
+      "avg": 4.6121,
+      "pick_rate": 0.004362
+    },
+    {
+      "day": "2026-08-30",
+      "count": 3146,
+      "avg": 4.6739,
+      "pick_rate": 0.003657
+    },
+    {
+      "day": "2026-08-31",
+      "count": 3706,
+      "avg": 4.6546,
+      "pick_rate": 0.003597
+    },
+    {
+      "day": "2026-09-01",
+      "count": 730,
+      "avg": 4.4849,
+      "pick_rate": 0.003992
+    }
+  ],
+  "levelling": "lvl 5",
+  "difficulty": 0.053
+}

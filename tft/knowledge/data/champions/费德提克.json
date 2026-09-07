@@ -1,0 +1,224 @@
+{
+  "name": "费德提克",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422015",
+      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "tier": "S",
+      "avg_placement": 4.0985
+    },
+    {
+      "cluster_id": "422003",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "tier": "A",
+      "avg_placement": 4.3641
+    },
+    {
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "tier": "A",
+      "avg_placement": 4.474
+    },
+    {
+      "cluster_id": "422001",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "tier": "B",
+      "avg_placement": 4.6
+    },
+    {
+      "cluster_id": "422004",
+      "comp_name": "DA_18_Spellweaver, DA_18_Cassiopeia",
+      "tier": "B",
+      "avg_placement": 4.6634
+    },
+    {
+      "cluster_id": "422019",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Ezreal",
+      "tier": "B",
+      "avg_placement": 4.7481
+    },
+    {
+      "cluster_id": "422027",
+      "comp_name": "DA_18_Spellweaver, DA_18_Lillia",
+      "tier": "B",
+      "avg_placement": 4.7714
+    },
+    {
+      "cluster_id": "422044",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
+      "tier": "B",
+      "avg_placement": 4.776
+    },
+    {
+      "cluster_id": "422037",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "tier": "C",
+      "avg_placement": 4.82
+    },
+    {
+      "cluster_id": "422035",
+      "comp_name": "DA_18_Rival, DA_18_Rengar",
+      "tier": "C",
+      "avg_placement": 4.9153
+    },
+    {
+      "cluster_id": "422041",
+      "comp_name": "DA_18_Executioner, DA_18_Soraka",
+      "tier": "C",
+      "avg_placement": 5.0
+    },
+    {
+      "cluster_id": "422025",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Malphite",
+      "tier": "D",
+      "avg_placement": 5.1037
+    },
+    {
+      "cluster_id": "422045",
+      "comp_name": "DA_18_Spellweaver, DA_18_KhaZix",
+      "tier": "D",
+      "avg_placement": 5.1856
+    },
+    {
+      "cluster_id": "422048",
+      "comp_name": "DA_18_Blackthorn, DA_18_Azir",
+      "tier": "D",
+      "avg_placement": 5.3625
+    },
+    {
+      "cluster_id": "422049",
+      "comp_name": "DA_18_Defender, DA_18_Rammus",
+      "tier": "D",
+      "avg_placement": 5.8333
+    },
+    {
+      "cluster_id": "422050",
+      "comp_name": "DA_18_Coven, DA_18_Morgana",
+      "tier": "D",
+      "avg_placement": 5.8427
+    },
+    {
+      "cluster_id": "422051",
+      "comp_name": "DA_18_Elderwood, DA_18_LeBlanc",
+      "tier": "D",
+      "avg_placement": 6.0247
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422015",
+      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "items": [
+        "冕卫"
+      ],
+      "avg_placement": 4.0077,
+      "count": 519,
+      "priority_scores": {
+        "冕卫": 100
+      }
+    },
+    {
+      "cluster_id": "422003",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "items": [
+        "离子火花",
+        "振奋盔甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.645,
+      "count": 6104,
+      "priority_scores": {
+        "离子火花": 100,
+        "振奋盔甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "cluster_id": "422004",
+      "comp_name": "DA_18_Spellweaver, DA_18_Cassiopeia",
+      "items": [
+        "适应性头盔",
+        "冕卫",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.2174,
+      "count": 23,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "冕卫": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "422027",
+      "comp_name": "DA_18_Spellweaver, DA_18_Lillia",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.6,
+      "count": 20,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422035",
+      "comp_name": "DA_18_Rival, DA_18_Rengar",
+      "items": [
+        "石像鬼石板甲",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.4444,
+      "count": 9,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422045",
+      "comp_name": "DA_18_Spellweaver, DA_18_KhaZix",
+      "items": [
+        "振奋盔甲",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 5.0244,
+      "count": 164,
+      "priority_scores": {
+        "振奋盔甲": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422049",
+      "comp_name": "DA_18_Defender, DA_18_Rammus",
+      "items": [
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 5.8,
+      "count": 10,
+      "priority_scores": {
+        "圣盾使的誓约": 100
+      }
+    },
+    {
+      "cluster_id": "422051",
+      "comp_name": "DA_18_Elderwood, DA_18_LeBlanc",
+      "items": [
+        "离子火花"
+      ],
+      "avg_placement": 4.95,
+      "count": 40,
+      "priority_scores": {
+        "离子火花": 100
+      }
+    }
+  ]
+}

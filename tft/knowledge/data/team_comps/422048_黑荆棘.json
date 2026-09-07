@@ -1,0 +1,222 @@
+{
+  "cluster_id": "422048",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿兹尔",
+    "可酷伯",
+    "墨菲特",
+    "拉莫斯",
+    "雷克塞",
+    "索拉卡",
+    "维迦",
+    "费德提克"
+  ],
+  "traits": [
+    "魔岩巨兽 (1)",
+    "黑荆棘 (2)",
+    "斗士 (1)",
+    "护卫 (1)",
+    "裁决使 (1)",
+    "法师 (1)",
+    "约德尔人... (1)",
+    "绝命花妖 (2)"
+  ],
+  "stars": [
+    "雷克塞",
+    "维迦",
+    "可酷伯",
+    "雷恩加尔",
+    "奥恩",
+    "易"
+  ],
+  "name_string": "DA_18_Blackthorn, DA_18_Azir",
+  "display_names": [
+    {
+      "name": "黑荆棘",
+      "type": "trait",
+      "score": 2.3683773459558215
+    },
+    {
+      "name": "墨菲特",
+      "type": "unit",
+      "score": 3.37767812655705
+    }
+  ],
+  "count": 80,
+  "avg_placement": 5.3625,
+  "top4_rate": 0.3375,
+  "win_rate": 0.0875,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "墨菲特",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.7865,
+      "count": 89,
+      "score": 0.6839,
+      "place_change": -1.441,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "维迦",
+      "items": [
+        "绝命花妖纹章",
+        "蓝霸符",
+        "珠光护手"
+      ],
+      "avg_placement": 3.4776,
+      "count": 134,
+      "score": 0.5422,
+      "place_change": -1.75,
+      "priority_scores": {
+        "绝命花妖纹章": 100,
+        "蓝霸符": 85,
+        "珠光护手": 72
+      }
+    },
+    {
+      "unit": "阿兹尔",
+      "items": [
+        "巨人杀手",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "avg_placement": 4,
+      "count": 19,
+      "score": 0.3282,
+      "place_change": -1.228,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "莫雷洛秘典": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "雷克塞",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.2877,
+      "count": 73,
+      "score": 0.1346,
+      "place_change": -0.94,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 5847,
+      "avg": 4.9153,
+      "pcnt": 0.9711
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 4428,
+      "avg": 4.7394,
+      "pcnt": 0.73543
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 3343,
+      "avg": 4.831,
+      "pcnt": 0.55522
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 2379,
+      "avg": 4.6784,
+      "pcnt": 0.39512
+    },
+    "蓝霸符": {
+      "itemNames": "DA_BlueBuff",
+      "count": 2221,
+      "avg": 4.3769,
+      "pcnt": 0.36888
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 2136,
+      "avg": 4.8408,
+      "pcnt": 0.35476
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 1889,
+      "avg": 4.8242,
+      "pcnt": 0.31374
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 1084,
+      "avg": 4.3958,
+      "pcnt": 0.18004
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 865,
+      "avg": 4.3006,
+      "pcnt": 0.14366
+    },
+    "绝命花妖纹章": {
+      "itemNames": "DA_18_EmblemFloraFatalisAugment",
+      "count": 361,
+      "avg": 3.6704,
+      "pcnt": 0.05996
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 211,
+      "avg": 4.7962,
+      "pick_rate": 0.002083
+    },
+    {
+      "day": "2026-08-28",
+      "count": 861,
+      "avg": 4.9605,
+      "pick_rate": 0.002216
+    },
+    {
+      "day": "2026-08-29",
+      "count": 1398,
+      "avg": 5.2811,
+      "pick_rate": 0.002275
+    },
+    {
+      "day": "2026-08-30",
+      "count": 2023,
+      "avg": 5.1251,
+      "pick_rate": 0.002352
+    },
+    {
+      "day": "2026-08-31",
+      "count": 2396,
+      "avg": 5.2275,
+      "pick_rate": 0.002326
+    },
+    {
+      "day": "2026-09-01",
+      "count": 413,
+      "avg": 5.5182,
+      "pick_rate": 0.002259
+    }
+  ],
+  "levelling": "Standard",
+  "difficulty": 0.043
+}

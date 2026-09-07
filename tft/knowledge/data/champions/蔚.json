@@ -1,0 +1,130 @@
+{
+  "name": "蔚",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422009",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "tier": "S",
+      "avg_placement": 4.1713
+    },
+    {
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "tier": "A",
+      "avg_placement": 4.3301
+    },
+    {
+      "cluster_id": "422005",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "tier": "A",
+      "avg_placement": 4.4132
+    },
+    {
+      "cluster_id": "422010",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "tier": "A",
+      "avg_placement": 4.4202
+    },
+    {
+      "cluster_id": "422017",
+      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
+      "tier": "A",
+      "avg_placement": 4.4826
+    },
+    {
+      "cluster_id": "422007",
+      "comp_name": "DA_18_Blossom, DA_18_Sett",
+      "tier": "B",
+      "avg_placement": 4.5238
+    },
+    {
+      "cluster_id": "422020",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Rammus",
+      "tier": "B",
+      "avg_placement": 4.5619
+    },
+    {
+      "cluster_id": "422018",
+      "comp_name": "DA_18_Adaptor, DA_Nidalee18_AP",
+      "tier": "C",
+      "avg_placement": 4.8382
+    },
+    {
+      "cluster_id": "422016",
+      "comp_name": "DA_18_Vanguard, DA_18_Caitlyn",
+      "tier": "C",
+      "avg_placement": 5.0438
+    },
+    {
+      "cluster_id": "422047",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Xayah",
+      "tier": "D",
+      "avg_placement": 5.7119
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422009",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "items": [
+        "斗士纹章",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.1146,
+      "count": 820,
+      "priority_scores": {
+        "斗士纹章": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "items": [
+        "薄暮法袍",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 2.9045,
+      "count": 178,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "cluster_id": "422020",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Rammus",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0601,
+      "count": 1065,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422040",
+      "comp_name": "DA_Juggernaut18, DA_Nidalee18_AP",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 4.4286,
+      "count": 35,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    }
+  ]
+}

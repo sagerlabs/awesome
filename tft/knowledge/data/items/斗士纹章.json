@@ -2,11 +2,27 @@
   "name": "斗士纹章",
   "priority_list": [
     {
-      "cluster_id": "409003",
-      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Urgot",
+      "cluster_id": "422009",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "comp_tier": "S",
+      "comp_avg": 4.1713,
+      "carry": "易",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "422009",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "comp_tier": "S",
+      "comp_avg": 4.1713,
+      "carry": "蔚",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
       "comp_tier": "A",
-      "comp_avg": 4.2778,
-      "carry": "奥恩",
+      "comp_avg": 4.3301,
+      "carry": "拉莫斯",
       "priority_score": 100
     }
   ]

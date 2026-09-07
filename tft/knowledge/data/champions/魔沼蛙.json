@@ -1,0 +1,12 @@
+{
+  "name": "魔沼蛙",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422018",
+      "comp_name": "DA_18_Adaptor, DA_Nidalee18_AP",
+      "tier": "C",
+      "avg_placement": 4.8382
+    }
+  ],
+  "builds": []
+}

@@ -1,0 +1,208 @@
+{
+  "cluster_id": "422027",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿狸",
+    "拉露恩",
+    "黛安娜",
+    "莉莉娅",
+    "洛",
+    "约里克",
+    "费德提克",
+    "卡尔玛"
+  ],
+  "traits": [
+    "灵魂莲华 (1)",
+    "护卫 (1)",
+    "花仙子 (1)",
+    "月蚀骑士 (1)",
+    "法师 (2)",
+    "重装战士 (1)",
+    "月华神女 (1)",
+    "绝命花妖 (1)",
+    "主宰 (1)"
+  ],
+  "stars": [],
+  "name_string": "DA_18_Spellweaver, DA_18_Lillia",
+  "display_names": [
+    {
+      "name": "法师",
+      "type": "trait",
+      "score": 1.598432055749129
+    },
+    {
+      "name": "阿狸",
+      "type": "unit",
+      "score": 3.5775261324041807
+    },
+    {
+      "name": "莉莉娅",
+      "type": "unit",
+      "score": 3.436193379790941
+    }
+  ],
+  "count": 70,
+  "avg_placement": 4.7714,
+  "top4_rate": 0.4286,
+  "win_rate": 0.0857,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "阿狸",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.4091,
+      "count": 22,
+      "score": 0.5504,
+      "place_change": -1.558,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "莉莉娅",
+      "items": [
+        "法师纹章",
+        "石像鬼石板甲",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.6875,
+      "count": 16,
+      "score": 0.4004,
+      "place_change": -1.28,
+      "priority_scores": {
+        "法师纹章": 100,
+        "石像鬼石板甲": 85,
+        "圣盾使的誓约": 72
+      }
+    },
+    {
+      "unit": "拉露恩",
+      "items": [
+        "适应性头盔",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 2.7895,
+      "count": 19,
+      "score": 0.3199,
+      "place_change": -2.178,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "费德提克",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.6,
+      "count": 20,
+      "score": 0.0416,
+      "place_change": -0.367,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 6365,
+      "avg": 4.8266,
+      "pcnt": 0.92407
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 6094,
+      "avg": 4.7,
+      "pcnt": 0.88473
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 3910,
+      "avg": 4.6368,
+      "pcnt": 0.56765
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 3447,
+      "avg": 4.6365,
+      "pcnt": 0.50044
+    },
+    "适应性头盔": {
+      "itemNames": "DA_AdaptiveHelm",
+      "count": 2206,
+      "avg": 4.3527,
+      "pcnt": 0.32027
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 2192,
+      "avg": 4.6551,
+      "pcnt": 0.31823
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 1994,
+      "avg": 4.3992,
+      "pcnt": 0.28949
+    },
+    "法师纹章": {
+      "itemNames": "DA_18_EmblemSpellweaver",
+      "count": 1703,
+      "avg": 4.586,
+      "pcnt": 0.24724
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 592,
+      "avg": 4.7365,
+      "pick_rate": 0.005844
+    },
+    {
+      "day": "2026-08-28",
+      "count": 1523,
+      "avg": 4.9022,
+      "pick_rate": 0.003919
+    },
+    {
+      "day": "2026-08-29",
+      "count": 1829,
+      "avg": 4.8573,
+      "pick_rate": 0.002976
+    },
+    {
+      "day": "2026-08-30",
+      "count": 2487,
+      "avg": 4.9638,
+      "pick_rate": 0.002891
+    },
+    {
+      "day": "2026-08-31",
+      "count": 2405,
+      "avg": 5.0237,
+      "pick_rate": 0.002334
+    },
+    {
+      "day": "2026-09-01",
+      "count": 444,
+      "avg": 5.0248,
+      "pick_rate": 0.002428
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.116
+}

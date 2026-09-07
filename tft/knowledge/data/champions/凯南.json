@@ -1,0 +1,125 @@
+{
+  "name": "凯南",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422002",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "tier": "A",
+      "avg_placement": 4.3871
+    },
+    {
+      "cluster_id": "422010",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "tier": "A",
+      "avg_placement": 4.4202
+    },
+    {
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "tier": "A",
+      "avg_placement": 4.474
+    },
+    {
+      "cluster_id": "422046",
+      "comp_name": "DA_Juggernaut18, DA_Draven18",
+      "tier": "B",
+      "avg_placement": 4.7644
+    },
+    {
+      "cluster_id": "422041",
+      "comp_name": "DA_18_Executioner, DA_18_Soraka",
+      "tier": "C",
+      "avg_placement": 5.0
+    },
+    {
+      "cluster_id": "422042",
+      "comp_name": "DA_18_Inferno, DA_Amumu18",
+      "tier": "D",
+      "avg_placement": 5.1579
+    },
+    {
+      "cluster_id": "422034",
+      "comp_name": "DA_18_Elderwood, DA_18_Sett",
+      "tier": "D",
+      "avg_placement": 5.2877
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422002",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.4012,
+      "count": 663,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "items": [
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.6866,
+      "count": 284,
+      "priority_scores": {
+        "灭世者的死亡之帽": 100
+      }
+    },
+    {
+      "cluster_id": "422046",
+      "comp_name": "DA_Juggernaut18, DA_Draven18",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "珠光护手"
+      ],
+      "avg_placement": 3.5685,
+      "count": 241,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "珠光护手": 72
+      }
+    },
+    {
+      "cluster_id": "422041",
+      "comp_name": "DA_18_Executioner, DA_18_Soraka",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.6364,
+      "count": 22,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "422042",
+      "comp_name": "DA_18_Inferno, DA_Amumu18",
+      "items": [
+        "夜之锋刃",
+        "珠光护手",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.9524,
+      "count": 21,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "珠光护手": 85,
+        "强袭者的链枷": 72
+      }
+    }
+  ]
+}

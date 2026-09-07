@@ -1,0 +1,13 @@
+{
+  "name": "法师纹章",
+  "priority_list": [
+    {
+      "cluster_id": "422012",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "comp_tier": "A",
+      "comp_avg": 4.5152,
+      "carry": "莫甘娜",
+      "priority_score": 100
+    }
+  ]
+}

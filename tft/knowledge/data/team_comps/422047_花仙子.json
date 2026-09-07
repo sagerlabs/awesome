@@ -1,0 +1,215 @@
+{
+  "cluster_id": "422047",
+  "tft_set": "TFTSet18",
+  "units": [
+    "赫卡里姆",
+    "莉莉娅",
+    "奥恩",
+    "洛",
+    "希维尔",
+    "崔丝塔娜",
+    "霞",
+    "蔚"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "永恒之森 (1)",
+    "花仙子 (2)",
+    "猎人 (1)",
+    "重装战士 (1)",
+    "主宰 (1)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "洛",
+    "崔丝塔娜",
+    "霞",
+    "伊莉丝",
+    "雷恩加尔",
+    "卡兹克",
+    "易"
+  ],
+  "name_string": "DA_18_Fae, DA_18_Tristana, DA_18_Xayah",
+  "display_names": [
+    {
+      "name": "花仙子",
+      "type": "trait",
+      "score": 1.8125996810207337
+    },
+    {
+      "name": "崔丝塔娜",
+      "type": "unit",
+      "score": 3.357655502392345
+    },
+    {
+      "name": "莉莉娅",
+      "type": "unit",
+      "score": 1.9924242424242424
+    }
+  ],
+  "count": 59,
+  "avg_placement": 5.7119,
+  "top4_rate": 0.2542,
+  "win_rate": 0.1017,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "崔丝塔娜",
+      "items": [
+        "迅捷射手纹章",
+        "鬼索的狂暴之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.7857,
+      "count": 14,
+      "score": 0.6185,
+      "place_change": -1.871,
+      "priority_scores": {
+        "迅捷射手纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "unit": "莉莉娅",
+      "items": [
+        "石像鬼石板甲",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.4737,
+      "count": 19,
+      "score": 0.2508,
+      "place_change": -1.183,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "霞",
+      "items": [
+        "死亡之刃",
+        "鬼索的狂暴之刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 4.1364,
+      "count": 22,
+      "score": 0.1956,
+      "place_change": -1.521,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "无尽之刃": 72
+      }
+    },
+    {
+      "unit": "洛",
+      "items": [
+        "石像鬼石板甲",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4,
+      "count": 11,
+      "score": 0.1872,
+      "place_change": -1.657,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 4017,
+      "avg": 5.3898,
+      "pcnt": 1.06778
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 2524,
+      "avg": 5.3534,
+      "pcnt": 0.67092
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 2170,
+      "avg": 5.2779,
+      "pcnt": 0.57682
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 1698,
+      "avg": 5.3569,
+      "pcnt": 0.45136
+    },
+    "海妖之怒": {
+      "itemNames": "DA_KrakensFury",
+      "count": 1380,
+      "avg": 5.1312,
+      "pcnt": 0.36683
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 1225,
+      "avg": 5.0269,
+      "pcnt": 0.32562
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 1158,
+      "avg": 5.1149,
+      "pcnt": 0.30781
+    },
+    "迅捷射手纹章": {
+      "itemNames": "DA_18_EmblemRapidfire",
+      "count": 301,
+      "avg": 4.5714,
+      "pcnt": 0.08001
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 102,
+      "avg": 5.7353,
+      "pick_rate": 0.001007
+    },
+    {
+      "day": "2026-08-28",
+      "count": 418,
+      "avg": 5.6029,
+      "pick_rate": 0.001076
+    },
+    {
+      "day": "2026-08-29",
+      "count": 788,
+      "avg": 5.7208,
+      "pick_rate": 0.001282
+    },
+    {
+      "day": "2026-08-30",
+      "count": 1186,
+      "avg": 5.6349,
+      "pick_rate": 0.001379
+    },
+    {
+      "day": "2026-08-31",
+      "count": 1601,
+      "avg": 5.6196,
+      "pick_rate": 0.001554
+    },
+    {
+      "day": "2026-09-01",
+      "count": 294,
+      "avg": 5.8844,
+      "pick_rate": 0.001608
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.135
+}

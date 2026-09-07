@@ -1,0 +1,214 @@
+{
+  "cluster_id": "422045",
+  "tft_set": "TFTSet18",
+  "units": [
+    "厄斐琉斯",
+    "黛安娜",
+    "卡兹克",
+    "乐芙兰",
+    "奥恩",
+    "洛",
+    "霞",
+    "阿木木",
+    "费德提克"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "永恒之森 (1)",
+    "花仙子 (1)",
+    "月蚀骑士 (1)",
+    "迅捷射手 (1)",
+    "宿敌 (1)",
+    "法师 (1)",
+    "重装战士 (1)",
+    "绝命花妖 (1)",
+    "主宰 (1)"
+  ],
+  "stars": [],
+  "name_string": "DA_18_Spellweaver, DA_18_KhaZix",
+  "display_names": [
+    {
+      "name": "绝命花妖",
+      "type": "trait",
+      "score": 1.1647236318749143
+    },
+    {
+      "name": "卡兹克",
+      "type": "unit",
+      "score": 3.9035797558633933
+    }
+  ],
+  "count": 97,
+  "avg_placement": 5.1856,
+  "top4_rate": 0.3608,
+  "win_rate": 0.134,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "卡兹克",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.3182,
+      "count": 22,
+      "score": 0.4231,
+      "place_change": -1.15,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "厄斐琉斯",
+      "items": [
+        "死亡之刃",
+        "最后的轻语",
+        "红霸符"
+      ],
+      "avg_placement": 4.2162,
+      "count": 37,
+      "score": 0.3983,
+      "place_change": -1.252,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "最后的轻语": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "unit": "费德提克",
+      "items": [
+        "振奋盔甲",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 5.0244,
+      "count": 164,
+      "score": 0.2336,
+      "place_change": -0.444,
+      "priority_scores": {
+        "振奋盔甲": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "黛安娜",
+      "items": [
+        "离子火花"
+      ],
+      "avg_placement": 4.5789,
+      "count": 38,
+      "score": 0.0154,
+      "place_change": -0.89,
+      "priority_scores": {
+        "离子火花": 100
+      }
+    }
+  ],
+  "build_items": {
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 4482,
+      "avg": 5.0991,
+      "pcnt": 0.61473
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 4154,
+      "avg": 5.2328,
+      "pcnt": 0.56974
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 3958,
+      "avg": 5.1718,
+      "pcnt": 0.54286
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 3548,
+      "avg": 5.1454,
+      "pcnt": 0.48663
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 2685,
+      "avg": 5.1672,
+      "pcnt": 0.36826
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 2312,
+      "avg": 5.1765,
+      "pcnt": 0.3171
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 2140,
+      "avg": 5.2276,
+      "pcnt": 0.29351
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 1613,
+      "avg": 5.0099,
+      "pcnt": 0.22123
+    },
+    "离子火花": {
+      "itemNames": "DA_IonicSpark",
+      "count": 1344,
+      "avg": 4.4747,
+      "pcnt": 0.18434
+    },
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 799,
+      "avg": 4.6646,
+      "pcnt": 0.10959
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 253,
+      "avg": 5.4506,
+      "pick_rate": 0.002497
+    },
+    {
+      "day": "2026-08-28",
+      "count": 987,
+      "avg": 5.4488,
+      "pick_rate": 0.00254
+    },
+    {
+      "day": "2026-08-29",
+      "count": 1577,
+      "avg": 5.3989,
+      "pick_rate": 0.002566
+    },
+    {
+      "day": "2026-08-30",
+      "count": 2414,
+      "avg": 5.4345,
+      "pick_rate": 0.002806
+    },
+    {
+      "day": "2026-08-31",
+      "count": 3013,
+      "avg": 5.5367,
+      "pick_rate": 0.002924
+    },
+    {
+      "day": "2026-09-01",
+      "count": 529,
+      "avg": 5.4253,
+      "pick_rate": 0.002893
+    }
+  ],
+  "levelling": "Standard",
+  "difficulty": -0.131
+}

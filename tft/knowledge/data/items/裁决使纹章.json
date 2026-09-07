@@ -1,0 +1,13 @@
+{
+  "name": "裁决使纹章",
+  "priority_list": [
+    {
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "comp_tier": "A",
+      "comp_avg": 4.474,
+      "carry": "婕拉",
+      "priority_score": 100
+    }
+  ]
+}

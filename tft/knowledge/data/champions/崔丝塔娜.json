@@ -1,0 +1,125 @@
+{
+  "name": "崔丝塔娜",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "tier": "A",
+      "avg_placement": 4.3301
+    },
+    {
+      "cluster_id": "422005",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "tier": "A",
+      "avg_placement": 4.4132
+    },
+    {
+      "cluster_id": "422010",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "tier": "A",
+      "avg_placement": 4.4202
+    },
+    {
+      "cluster_id": "422020",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Rammus",
+      "tier": "B",
+      "avg_placement": 4.5619
+    },
+    {
+      "cluster_id": "422028",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "tier": "C",
+      "avg_placement": 4.8495
+    },
+    {
+      "cluster_id": "422016",
+      "comp_name": "DA_18_Vanguard, DA_18_Caitlyn",
+      "tier": "C",
+      "avg_placement": 5.0438
+    },
+    {
+      "cluster_id": "422047",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Xayah",
+      "tier": "D",
+      "avg_placement": 5.7119
+    },
+    {
+      "cluster_id": "422039",
+      "comp_name": "DA_18_Fae, DA_18_Xayah",
+      "tier": "D",
+      "avg_placement": 5.8295
+    },
+    {
+      "cluster_id": "422049",
+      "comp_name": "DA_18_Defender, DA_18_Rammus",
+      "tier": "D",
+      "avg_placement": 5.8333
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "items": [
+        "巨人杀手",
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 3.7733,
+      "count": 2382,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "鬼索的狂暴之刃": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "cluster_id": "422020",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Rammus",
+      "items": [
+        "巨人杀手",
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 4.2197,
+      "count": 7032,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "鬼索的狂暴之刃": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "cluster_id": "422028",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "items": [
+        "巨人杀手",
+        "鬼索的狂暴之刃",
+        "红霸符"
+      ],
+      "avg_placement": 4,
+      "count": 32,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "鬼索的狂暴之刃": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "cluster_id": "422047",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Xayah",
+      "items": [
+        "迅捷射手纹章",
+        "鬼索的狂暴之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.7857,
+      "count": 14,
+      "priority_scores": {
+        "迅捷射手纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "海妖之怒": 72
+      }
+    }
+  ]
+}

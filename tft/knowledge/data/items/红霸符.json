@@ -2,59 +2,27 @@
   "name": "红霸符",
   "priority_list": [
     {
-      "cluster_id": "409004",
-      "comp_name": "TFT17_DarkStar, TFT17_AurelionSol",
-      "comp_tier": "A",
-      "comp_avg": 4.3001,
-      "carry": "卡尔玛",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409045",
-      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "cluster_id": "422009",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
       "comp_tier": "S",
-      "comp_avg": 3.9722,
-      "carry": "千珏",
+      "comp_avg": 4.1713,
+      "carry": "克格莫",
       "priority_score": 85
     },
     {
-      "cluster_id": "409024",
-      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Riven",
+      "cluster_id": "422010",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
       "comp_tier": "A",
-      "comp_avg": 4.2519,
-      "carry": "霞",
+      "comp_avg": 4.4202,
+      "carry": "艾希",
       "priority_score": 85
     },
     {
-      "cluster_id": "409021",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_ResistTank",
+      "cluster_id": "422005",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
       "comp_tier": "A",
-      "comp_avg": 4.4708,
-      "carry": "霞",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409002",
-      "comp_name": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Illaoi",
-      "comp_tier": "A",
-      "comp_avg": 4.499,
-      "carry": "薇古丝",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409019",
-      "comp_name": "TFT17_DRX, TFT17_Belveth",
-      "comp_tier": "A",
-      "comp_avg": 4.2675,
-      "carry": "金克丝",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409015",
-      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
-      "comp_tier": "A",
-      "comp_avg": 4.3545,
-      "carry": "千珏",
+      "comp_avg": 4.4132,
+      "carry": "希维尔",
       "priority_score": 72
     }
   ]

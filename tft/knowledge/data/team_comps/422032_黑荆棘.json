@@ -1,0 +1,225 @@
+{
+  "cluster_id": "422032",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿兹尔",
+    "黛安娜",
+    "墨菲特",
+    "雷克塞",
+    "沃里克",
+    "绯红印记树怪",
+    "远古石甲虫",
+    "暗影狼"
+  ],
+  "traits": [
+    "魔岩巨兽 (1)",
+    "黑荆棘 (2)",
+    "斗士 (1)",
+    "狂战士 (2)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "沃里克",
+    "雷克塞",
+    "暗影狼",
+    "卡蜜尔",
+    "峡谷迅捷蟹",
+    "雷恩加尔",
+    "卡兹克",
+    "可酷伯",
+    "阿利斯塔",
+    "伊莉丝",
+    "易",
+    "凯特琳",
+    "瑟庄妮"
+  ],
+  "name_string": "DA_18_Blackthorn, DA_18_Warwick",
+  "display_names": [
+    {
+      "name": "黑荆棘",
+      "type": "trait",
+      "score": 1.837284657341902
+    },
+    {
+      "name": "沃里克",
+      "type": "unit",
+      "score": 4.219311983582654
+    }
+  ],
+  "count": 199,
+  "avg_placement": 4.9095,
+  "top4_rate": 0.402,
+  "win_rate": 0.0251,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "沃里克",
+      "items": [
+        "朔极之矛",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.6717,
+      "count": 6443,
+      "score": 0.5224,
+      "place_change": -0.317,
+      "priority_scores": {
+        "朔极之矛": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "墨菲特",
+      "items": [
+        "巨龙之爪",
+        "石像鬼石板甲",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 3.2826,
+      "count": 46,
+      "score": 0.3,
+      "place_change": -1.706,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 72
+      }
+    },
+    {
+      "unit": "暗影狼",
+      "items": [
+        "死亡之刃",
+        "夜之锋刃",
+        "正义之手"
+      ],
+      "avg_placement": 4.6857,
+      "count": 1352,
+      "score": 0.2226,
+      "place_change": -0.303,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "夜之锋刃": 85,
+        "正义之手": 72
+      }
+    },
+    {
+      "unit": "绯红印记树怪",
+      "items": [
+        "饮血剑",
+        "水银",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.1509,
+      "count": 53,
+      "score": 0.1467,
+      "place_change": -1.838,
+      "priority_scores": {
+        "饮血剑": 100,
+        "水银": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    }
+  ],
+  "build_items": {
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 16497,
+      "avg": 4.7981,
+      "pcnt": 0.89091
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 14278,
+      "avg": 4.8499,
+      "pcnt": 0.77108
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 13914,
+      "avg": 4.7029,
+      "pcnt": 0.75142
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 12675,
+      "avg": 4.7561,
+      "pcnt": 0.68451
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 11418,
+      "avg": 4.8136,
+      "pcnt": 0.61662
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 9432,
+      "avg": 4.76,
+      "pcnt": 0.50937
+    },
+    "饮血剑": {
+      "itemNames": "DA_Bloodthirster",
+      "count": 6046,
+      "avg": 4.8516,
+      "pcnt": 0.32651
+    },
+    "水银": {
+      "itemNames": "DA_Quicksilver",
+      "count": 5477,
+      "avg": 4.6697,
+      "pcnt": 0.29578
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 5008,
+      "avg": 4.6496,
+      "pcnt": 0.27045
+    },
+    "巨龙之爪": {
+      "itemNames": "DA_DragonsClaw",
+      "count": 3047,
+      "avg": 4.6521,
+      "pcnt": 0.16455
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 1042,
+      "avg": 4.7937,
+      "pick_rate": 0.010286
+    },
+    {
+      "day": "2026-08-28",
+      "count": 3387,
+      "avg": 4.8775,
+      "pick_rate": 0.008716
+    },
+    {
+      "day": "2026-08-29",
+      "count": 4945,
+      "avg": 4.9401,
+      "pick_rate": 0.008046
+    },
+    {
+      "day": "2026-08-30",
+      "count": 6272,
+      "avg": 4.9855,
+      "pick_rate": 0.007291
+    },
+    {
+      "day": "2026-08-31",
+      "count": 6921,
+      "avg": 5.0007,
+      "pick_rate": 0.006718
+    },
+    {
+      "day": "2026-09-01",
+      "count": 1099,
+      "avg": 5.1001,
+      "pick_rate": 0.00601
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.037
+}

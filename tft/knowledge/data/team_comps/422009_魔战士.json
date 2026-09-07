@@ -1,0 +1,227 @@
+{
+  "cluster_id": "422009",
+  "tft_set": "TFTSet18",
+  "units": [
+    "易",
+    "瑟提",
+    "约里克",
+    "克格莫",
+    "远古石甲虫",
+    "奈德丽",
+    "蔚"
+  ],
+  "traits": [
+    "魔战士 (2)",
+    "灵魂莲华 (1)",
+    "斗士 (1)",
+    "帝王斑蝶 (1)",
+    "主宰 (1)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "易",
+    "克格莫",
+    "蔚",
+    "远古石甲虫",
+    "雷恩加尔",
+    "拉莫斯",
+    "卡兹克",
+    "奥恩",
+    "维迦",
+    "韦鲁斯",
+    "易",
+    "卡西奥佩娅",
+    "蕾欧娜",
+    "卡蜜尔"
+  ],
+  "name_string": "DA_18_Adaptor, DA_18_MasterYi_AD",
+  "display_names": [
+    {
+      "name": "魔战士",
+      "type": "trait",
+      "score": 2.095239531114545
+    },
+    {
+      "name": "易",
+      "type": "unit",
+      "score": 4.379371301496363
+    }
+  ],
+  "count": 1874,
+  "avg_placement": 4.1713,
+  "top4_rate": 0.5699,
+  "win_rate": 0.1355,
+  "tier": "S",
+  "builds": [
+    {
+      "unit": "易",
+      "items": [
+        "斗士纹章",
+        "夜之锋刃",
+        "鬼索的狂暴之刃"
+      ],
+      "avg_placement": 4.1064,
+      "count": 21314,
+      "score": 0.4071,
+      "place_change": -0.11,
+      "priority_scores": {
+        "斗士纹章": 100,
+        "夜之锋刃": 85,
+        "鬼索的狂暴之刃": 72
+      }
+    },
+    {
+      "unit": "克格莫",
+      "items": [
+        "无尽之刃",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.6569,
+      "count": 7843,
+      "score": 0.3744,
+      "place_change": -0.559,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "蔚",
+      "items": [
+        "斗士纹章",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.1146,
+      "count": 820,
+      "score": 0.3421,
+      "place_change": -1.101,
+      "priority_scores": {
+        "斗士纹章": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "奈德丽",
+      "items": [
+        "巨人杀手",
+        "鬼索的狂暴之刃",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 2.8918,
+      "count": 388,
+      "score": 0.2183,
+      "place_change": -1.324,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "鬼索的狂暴之刃": 85,
+        "灭世者的死亡之帽": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 168914,
+      "avg": 4.094,
+      "pcnt": 1.27333
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 116943,
+      "avg": 3.9628,
+      "pcnt": 0.88156
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 105755,
+      "avg": 4.1221,
+      "pcnt": 0.79722
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 81513,
+      "avg": 3.9268,
+      "pcnt": 0.61447
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 79375,
+      "avg": 3.9513,
+      "pcnt": 0.59836
+    },
+    "斗士纹章": {
+      "itemNames": "DA_18_EmblemBrawler",
+      "count": 49442,
+      "avg": 3.9447,
+      "pcnt": 0.37271
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 42053,
+      "avg": 3.942,
+      "pcnt": 0.31701
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 38887,
+      "avg": 3.685,
+      "pcnt": 0.29314
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 35843,
+      "avg": 3.7421,
+      "pcnt": 0.2702
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 24394,
+      "avg": 3.6738,
+      "pcnt": 0.18389
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 4002,
+      "avg": 4.2234,
+      "pick_rate": 0.039505
+    },
+    {
+      "day": "2026-08-28",
+      "count": 16569,
+      "avg": 4.2231,
+      "pick_rate": 0.04264
+    },
+    {
+      "day": "2026-08-29",
+      "count": 27265,
+      "avg": 4.2012,
+      "pick_rate": 0.044365
+    },
+    {
+      "day": "2026-08-30",
+      "count": 41756,
+      "avg": 4.1901,
+      "pick_rate": 0.048543
+    },
+    {
+      "day": "2026-08-31",
+      "count": 56778,
+      "avg": 4.2217,
+      "pick_rate": 0.055109
+    },
+    {
+      "day": "2026-09-01",
+      "count": 10786,
+      "avg": 4.2897,
+      "pick_rate": 0.058986
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": 0.062
+}

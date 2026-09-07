@@ -2,55 +2,149 @@
   "name": "伊泽瑞尔",
   "appear_in_comps": [
     {
-      "cluster_id": "409042",
-      "comp_name": "TFT17_HPTank, TFT17_Ezreal",
+      "cluster_id": "422002",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "tier": "A",
+      "avg_placement": 4.3871
+    },
+    {
+      "cluster_id": "422008",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "tier": "A",
+      "avg_placement": 4.4453
+    },
+    {
+      "cluster_id": "422001",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
       "tier": "B",
-      "avg_placement": 4.5893
+      "avg_placement": 4.6
     },
     {
-      "cluster_id": "409059",
-      "comp_name": "TFT17_Timebreaker, TFT17_Pantheon",
+      "cluster_id": "422023",
+      "comp_name": "DA_18_Executioner, DA_18_Yunara",
+      "tier": "B",
+      "avg_placement": 4.604
+    },
+    {
+      "cluster_id": "422019",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Ezreal",
+      "tier": "B",
+      "avg_placement": 4.7481
+    },
+    {
+      "cluster_id": "422037",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
       "tier": "C",
-      "avg_placement": 5.0415
+      "avg_placement": 4.82
     },
     {
-      "cluster_id": "409067",
-      "comp_name": "TFT17_ResistTank, TFT17_Ornn",
+      "cluster_id": "422034",
+      "comp_name": "DA_18_Elderwood, DA_18_Sett",
       "tier": "D",
-      "avg_placement": 5.5606
+      "avg_placement": 5.2877
+    },
+    {
+      "cluster_id": "422051",
+      "comp_name": "DA_18_Elderwood, DA_18_LeBlanc",
+      "tier": "D",
+      "avg_placement": 6.0247
     }
   ],
   "builds": [
     {
-      "cluster_id": "409042",
-      "comp_name": "TFT17_HPTank, TFT17_Ezreal",
+      "cluster_id": "422002",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
       "items": [
-        "死亡之刃",
+        "最后的轻语",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.9111,
+      "count": 2744,
+      "priority_scores": {
+        "最后的轻语": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "422001",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "items": [
         "无尽之刃",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.8771,
+      "count": 301,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "422023",
+      "comp_name": "DA_18_Executioner, DA_18_Yunara",
+      "items": [
+        "最后的轻语",
+        "红霸符",
         "朔极之矛"
       ],
-      "avg_placement": 4.3703,
-      "count": 7402,
+      "avg_placement": 3.6276,
+      "count": 333,
       "priority_scores": {
-        "死亡之刃": 100,
-        "无尽之刃": 85,
+        "最后的轻语": 100,
+        "红霸符": 85,
         "朔极之矛": 72
       }
     },
     {
-      "cluster_id": "409059",
-      "comp_name": "TFT17_Timebreaker, TFT17_Pantheon",
+      "cluster_id": "422019",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Ezreal",
       "items": [
-        "蓝霸符",
-        "无尽之刃",
-        "巨人杀手"
+        "死亡之刃",
+        "最后的轻语",
+        "强袭者的链枷"
       ],
-      "avg_placement": 2.5556,
-      "count": 9,
+      "avg_placement": 3.7386,
+      "count": 88,
       "priority_scores": {
-        "蓝霸符": 100,
-        "无尽之刃": 85,
-        "巨人杀手": 72
+        "死亡之刃": 100,
+        "最后的轻语": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "422037",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "items": [
+        "死亡之刃",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.3342,
+      "count": 748,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "422034",
+      "comp_name": "DA_18_Elderwood, DA_18_Sett",
+      "items": [
+        "最后的轻语",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.1714,
+      "count": 35,
+      "priority_scores": {
+        "最后的轻语": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
       }
     }
   ]

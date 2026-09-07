@@ -1,0 +1,163 @@
+{
+  "name": "索拉卡",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422003",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "tier": "A",
+      "avg_placement": 4.3641
+    },
+    {
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "tier": "A",
+      "avg_placement": 4.474
+    },
+    {
+      "cluster_id": "422001",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "tier": "B",
+      "avg_placement": 4.6
+    },
+    {
+      "cluster_id": "422023",
+      "comp_name": "DA_18_Executioner, DA_18_Yunara",
+      "tier": "B",
+      "avg_placement": 4.604
+    },
+    {
+      "cluster_id": "422019",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Ezreal",
+      "tier": "B",
+      "avg_placement": 4.7481
+    },
+    {
+      "cluster_id": "422037",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "tier": "C",
+      "avg_placement": 4.82
+    },
+    {
+      "cluster_id": "422035",
+      "comp_name": "DA_18_Rival, DA_18_Rengar",
+      "tier": "C",
+      "avg_placement": 4.9153
+    },
+    {
+      "cluster_id": "422041",
+      "comp_name": "DA_18_Executioner, DA_18_Soraka",
+      "tier": "C",
+      "avg_placement": 5.0
+    },
+    {
+      "cluster_id": "422025",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Malphite",
+      "tier": "D",
+      "avg_placement": 5.1037
+    },
+    {
+      "cluster_id": "422048",
+      "comp_name": "DA_18_Blackthorn, DA_18_Azir",
+      "tier": "D",
+      "avg_placement": 5.3625
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "items": [
+        "灭世者的死亡之帽",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.2423,
+      "count": 2571,
+      "priority_scores": {
+        "灭世者的死亡之帽": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "422001",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "items": [
+        "适应性头盔",
+        "大天使之杖",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.5333,
+      "count": 60,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "大天使之杖": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "cluster_id": "422019",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Ezreal",
+      "items": [
+        "灭世者的死亡之帽",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.9921,
+      "count": 126,
+      "priority_scores": {
+        "灭世者的死亡之帽": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "422037",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "items": [
+        "永恒之森纹章",
+        "灭世者的死亡之帽",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.6516,
+      "count": 155,
+      "priority_scores": {
+        "永恒之森纹章": 100,
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "422041",
+      "comp_name": "DA_18_Executioner, DA_18_Soraka",
+      "items": [
+        "海克斯科技枪刃",
+        "灭世者的死亡之帽",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.0714,
+      "count": 42,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "422025",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Malphite",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 4.2424,
+      "count": 33,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    }
+  ]
+}

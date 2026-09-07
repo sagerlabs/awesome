@@ -1,0 +1,36 @@
+{
+  "name": "可酷伯",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422015",
+      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "tier": "S",
+      "avg_placement": 4.0985
+    },
+    {
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "tier": "A",
+      "avg_placement": 4.3301
+    },
+    {
+      "cluster_id": "422020",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Rammus",
+      "tier": "B",
+      "avg_placement": 4.5619
+    },
+    {
+      "cluster_id": "422028",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "tier": "C",
+      "avg_placement": 4.8495
+    },
+    {
+      "cluster_id": "422048",
+      "comp_name": "DA_18_Blackthorn, DA_18_Azir",
+      "tier": "D",
+      "avg_placement": 5.3625
+    }
+  ],
+  "builds": []
+}

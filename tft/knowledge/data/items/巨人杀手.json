@@ -2,108 +2,20 @@
   "name": "巨人杀手",
   "priority_list": [
     {
-      "cluster_id": "409045",
-      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "cluster_id": "422009",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
       "comp_tier": "S",
-      "comp_avg": 3.9722,
-      "carry": "千珏",
+      "comp_avg": 4.1713,
+      "carry": "奈德丽",
       "priority_score": 100
     },
     {
-      "cluster_id": "409019",
-      "comp_name": "TFT17_DRX, TFT17_Belveth",
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
       "comp_tier": "A",
-      "comp_avg": 4.2675,
-      "carry": "卑尔维斯",
+      "comp_avg": 4.3301,
+      "carry": "崔丝塔娜",
       "priority_score": 100
-    },
-    {
-      "cluster_id": "409050",
-      "comp_name": "TFT17_Augment_NasusCarry",
-      "comp_tier": "A",
-      "comp_avg": 4.3078,
-      "carry": "提莫",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409015",
-      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
-      "comp_tier": "A",
-      "comp_avg": 4.3545,
-      "carry": "易",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409015",
-      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
-      "comp_tier": "A",
-      "comp_avg": 4.3545,
-      "carry": "菲奥娜",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409039",
-      "comp_name": "TFT17_Augment_PoppyCarry",
-      "comp_tier": "A",
-      "comp_avg": 4.3649,
-      "carry": "波比",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409001",
-      "comp_name": "TFT17_Augment_LeonaCarry",
-      "comp_tier": "A",
-      "comp_avg": 4.405,
-      "carry": "乐芙兰",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409012",
-      "comp_name": "TFT17_DarkStar, TFT17_Karma",
-      "comp_tier": "A",
-      "comp_avg": 4.4314,
-      "carry": "烬",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409024",
-      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Riven",
-      "comp_tier": "A",
-      "comp_avg": 4.2519,
-      "carry": "烬",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409003",
-      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Urgot",
-      "comp_tier": "A",
-      "comp_avg": 4.2778,
-      "carry": "厄加特",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409038",
-      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_Kaisa",
-      "comp_tier": "A",
-      "comp_avg": 4.4363,
-      "carry": "卡莎",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409010",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_TahmKench",
-      "comp_tier": "A",
-      "comp_avg": 4.4414,
-      "carry": "烬",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409021",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_ResistTank",
-      "comp_tier": "A",
-      "comp_avg": 4.4708,
-      "carry": "烬",
-      "priority_score": 72
     }
   ]
 }

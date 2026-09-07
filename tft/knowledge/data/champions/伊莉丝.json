@@ -1,0 +1,51 @@
+{
+  "name": "伊莉丝",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422016",
+      "comp_name": "DA_18_Vanguard, DA_18_Caitlyn",
+      "tier": "C",
+      "avg_placement": 5.0438
+    },
+    {
+      "cluster_id": "422050",
+      "comp_name": "DA_18_Coven, DA_18_Morgana",
+      "tier": "D",
+      "avg_placement": 5.8427
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422016",
+      "comp_name": "DA_18_Vanguard, DA_18_Caitlyn",
+      "items": [
+        "巨龙之爪",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.2301,
+      "count": 113,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422050",
+      "comp_name": "DA_18_Coven, DA_18_Morgana",
+      "items": [
+        "大天使之杖",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 5.3922,
+      "count": 816,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "cluster_id": "422039",
+  "tft_set": "TFTSet18",
+  "units": [
+    "赫卡里姆",
+    "莉莉娅",
+    "奥恩",
+    "洛",
+    "崔丝塔娜",
+    "韦鲁斯",
+    "霞",
+    "阿木木"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "永恒之森 (1)",
+    "花仙子 (2)",
+    "地狱火 (1)",
+    "迅捷射手 (1)",
+    "重装战士 (1)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "霞",
+    "奥恩",
+    "洛",
+    "韦鲁斯",
+    "蕾欧娜",
+    "约里克",
+    "阿卡丽",
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Fae, DA_18_Xayah",
+  "display_names": [
+    {
+      "name": "花仙子",
+      "type": "trait",
+      "score": 1.373724117818606
+    },
+    {
+      "name": "霞",
+      "type": "unit",
+      "score": 4.042213473315836
+    }
+  ],
+  "count": 88,
+  "avg_placement": 5.8295,
+  "top4_rate": 0.25,
+  "win_rate": 0.0341,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "霞",
+      "items": [
+        "巨人杀手",
+        "无尽之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 4,
+      "count": 14,
+      "score": 0.6224,
+      "place_change": -1.78,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "无尽之刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "unit": "奥恩",
+      "items": [
+        "冕卫",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.1429,
+      "count": 14,
+      "score": 0.3676,
+      "place_change": -1.638,
+      "priority_scores": {
+        "冕卫": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "韦鲁斯",
+      "items": [
+        "死亡之刃",
+        "鬼索的狂暴之刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 3.9286,
+      "count": 14,
+      "score": 0.2147,
+      "place_change": -1.852,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "无尽之刃": 72
+      }
+    },
+    {
+      "unit": "洛",
+      "items": [
+        "薄暮法袍",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 4,
+      "count": 17,
+      "score": 0.2143,
+      "place_change": -1.78,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 6978,
+      "avg": 5.5818,
+      "pcnt": 1.0175
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 5648,
+      "avg": 5.6158,
+      "pcnt": 0.82356
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 4226,
+      "avg": 5.5282,
+      "pcnt": 0.61621
+    },
+    "海妖之怒": {
+      "itemNames": "DA_KrakensFury",
+      "count": 3873,
+      "avg": 5.4699,
+      "pcnt": 0.56474
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 3691,
+      "avg": 5.3449,
+      "pcnt": 0.5382
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 3567,
+      "avg": 5.434,
+      "pcnt": 0.52012
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 2567,
+      "avg": 5.3638,
+      "pcnt": 0.37431
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 2035,
+      "avg": 5.202,
+      "pcnt": 0.29673
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 1656,
+      "avg": 5.2428,
+      "pcnt": 0.24147
+    },
+    "薄暮法袍": {
+      "itemNames": "DA_Evenshroud",
+      "count": 1455,
+      "avg": 4.934,
+      "pcnt": 0.21216
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 1090,
+      "avg": 5.0505,
+      "pcnt": 0.15894
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 235,
+      "avg": 5.6426,
+      "pick_rate": 0.00232
+    },
+    {
+      "day": "2026-08-28",
+      "count": 864,
+      "avg": 5.5451,
+      "pick_rate": 0.002224
+    },
+    {
+      "day": "2026-08-29",
+      "count": 1330,
+      "avg": 5.5541,
+      "pick_rate": 0.002164
+    },
+    {
+      "day": "2026-08-30",
+      "count": 2118,
+      "avg": 5.7158,
+      "pick_rate": 0.002462
+    },
+    {
+      "day": "2026-08-31",
+      "count": 3074,
+      "avg": 5.9047,
+      "pick_rate": 0.002984
+    },
+    {
+      "day": "2026-09-01",
+      "count": 546,
+      "avg": 5.7912,
+      "pick_rate": 0.002986
+    }
+  ],
+  "levelling": "lvl 5",
+  "difficulty": -0.092
+}

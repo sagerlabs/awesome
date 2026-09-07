@@ -1,0 +1,105 @@
+{
+  "name": "洛",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "tier": "A",
+      "avg_placement": 4.3301
+    },
+    {
+      "cluster_id": "422005",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "tier": "A",
+      "avg_placement": 4.4132
+    },
+    {
+      "cluster_id": "422020",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Rammus",
+      "tier": "B",
+      "avg_placement": 4.5619
+    },
+    {
+      "cluster_id": "422029",
+      "comp_name": "DA_18_Elderwood, DA_18_Kayle",
+      "tier": "B",
+      "avg_placement": 4.6188
+    },
+    {
+      "cluster_id": "422027",
+      "comp_name": "DA_18_Spellweaver, DA_18_Lillia",
+      "tier": "B",
+      "avg_placement": 4.7714
+    },
+    {
+      "cluster_id": "422016",
+      "comp_name": "DA_18_Vanguard, DA_18_Caitlyn",
+      "tier": "C",
+      "avg_placement": 5.0438
+    },
+    {
+      "cluster_id": "422045",
+      "comp_name": "DA_18_Spellweaver, DA_18_KhaZix",
+      "tier": "D",
+      "avg_placement": 5.1856
+    },
+    {
+      "cluster_id": "422040",
+      "comp_name": "DA_Juggernaut18, DA_Nidalee18_AP",
+      "tier": "D",
+      "avg_placement": 5.301
+    },
+    {
+      "cluster_id": "422047",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Xayah",
+      "tier": "D",
+      "avg_placement": 5.7119
+    },
+    {
+      "cluster_id": "422039",
+      "comp_name": "DA_18_Fae, DA_18_Xayah",
+      "tier": "D",
+      "avg_placement": 5.8295
+    },
+    {
+      "cluster_id": "422049",
+      "comp_name": "DA_18_Defender, DA_18_Rammus",
+      "tier": "D",
+      "avg_placement": 5.8333
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422047",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Xayah",
+      "items": [
+        "石像鬼石板甲",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4,
+      "count": 11,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422039",
+      "comp_name": "DA_18_Fae, DA_18_Xayah",
+      "items": [
+        "薄暮法袍",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 4,
+      "count": 17,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    }
+  ]
+}

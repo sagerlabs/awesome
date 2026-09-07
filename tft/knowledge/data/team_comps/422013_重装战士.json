@@ -1,0 +1,219 @@
+{
+  "cluster_id": "422013",
+  "tft_set": "TFTSet18",
+  "units": [
+    "厄斐琉斯",
+    "黛安娜",
+    "赫卡里姆",
+    "婕拉",
+    "绯红印记树怪",
+    "深红锋喙鸟",
+    "苍蓝雕纹魔像",
+    "塔里克"
+  ],
+  "traits": [
+    "月蚀骑士 (1)",
+    "迅捷射手 (1)",
+    "狂战士 (1)",
+    "召唤师 (1)",
+    "重装战士 (2)",
+    "荆棘之兴 (1)",
+    "宝石骑士 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "雷恩加尔",
+    "卡蜜尔",
+    "卡兹克"
+  ],
+  "name_string": "DA_18_Vanguard, DA_18_Aphelios",
+  "display_names": [
+    {
+      "name": "重装战士",
+      "type": "trait",
+      "score": 1.8121645587343072
+    },
+    {
+      "name": "厄斐琉斯",
+      "type": "unit",
+      "score": 4.351877887711765
+    }
+  ],
+  "count": 1941,
+  "avg_placement": 4.5935,
+  "top4_rate": 0.4972,
+  "win_rate": 0.068,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "厄斐琉斯",
+      "items": [
+        "死亡之刃",
+        "鬼索的狂暴之刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 4.4068,
+      "count": 7030,
+      "score": 0.4031,
+      "place_change": -0.22,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "无尽之刃": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "石像鬼石板甲",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.2984,
+      "count": 7486,
+      "score": 0.3601,
+      "place_change": -0.328,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "绯红印记树怪",
+      "items": [
+        "夜之锋刃",
+        "水银",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 4.0675,
+      "count": 6300,
+      "score": 0.2715,
+      "place_change": -0.559,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "水银": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "深红锋喙鸟",
+      "items": [
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "最后的轻语"
+      ],
+      "avg_placement": 3.9203,
+      "count": 389,
+      "score": 0.0259,
+      "place_change": -0.706,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "最后的轻语": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 127187,
+      "avg": 4.6044,
+      "pcnt": 0.74198
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 121721,
+      "avg": 4.4786,
+      "pcnt": 0.71009
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 101056,
+      "avg": 4.5156,
+      "pcnt": 0.58954
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 94496,
+      "avg": 4.4559,
+      "pcnt": 0.55127
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 91242,
+      "avg": 4.4261,
+      "pcnt": 0.53228
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 85541,
+      "avg": 4.4724,
+      "pcnt": 0.49903
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 80046,
+      "avg": 4.444,
+      "pcnt": 0.46697
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 49085,
+      "avg": 4.2596,
+      "pcnt": 0.28635
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 48370,
+      "avg": 4.3155,
+      "pcnt": 0.28218
+    },
+    "水银": {
+      "itemNames": "DA_Quicksilver",
+      "count": 39463,
+      "avg": 4.3437,
+      "pcnt": 0.23022
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 9907,
+      "avg": 4.5733,
+      "pick_rate": 0.097795
+    },
+    {
+      "day": "2026-08-28",
+      "count": 34149,
+      "avg": 4.555,
+      "pick_rate": 0.087882
+    },
+    {
+      "day": "2026-08-29",
+      "count": 46849,
+      "avg": 4.5908,
+      "pick_rate": 0.076232
+    },
+    {
+      "day": "2026-08-30",
+      "count": 58262,
+      "avg": 4.6342,
+      "pick_rate": 0.067732
+    },
+    {
+      "day": "2026-08-31",
+      "count": 63575,
+      "avg": 4.6367,
+      "pick_rate": 0.061706
+    },
+    {
+      "day": "2026-09-01",
+      "count": 10286,
+      "avg": 4.652,
+      "pick_rate": 0.056252
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.01
+}

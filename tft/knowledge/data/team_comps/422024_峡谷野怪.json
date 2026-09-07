@@ -1,0 +1,235 @@
+{
+  "cluster_id": "422024",
+  "tft_set": "TFTSet18",
+  "units": [
+    "远古巨龙",
+    "纳尔",
+    "苍蓝哨戒",
+    "绯红印记树怪",
+    "远古石甲虫",
+    "暗影狼",
+    "苍蓝雕纹魔像",
+    "塔里克"
+  ],
+  "traits": [
+    "顶级掠食者 (1)",
+    "斗士 (1)",
+    "神谕 (1)",
+    "狂战士 (1)",
+    "重装战士 (1)",
+    "宝石骑士 (1)",
+    "峡谷野怪 (3)"
+  ],
+  "stars": [
+    "苍蓝哨戒",
+    "绯红树怪",
+    "卡蜜尔",
+    "卡兹克",
+    "雷恩加尔",
+    "韦鲁斯",
+    "维迦",
+    "易"
+  ],
+  "name_string": "DA_Riftbeast18, DA_Sentinel18",
+  "display_names": [
+    {
+      "name": "峡谷野怪",
+      "type": "trait",
+      "score": 2.9746401328740157
+    },
+    {
+      "name": "苍蓝雕纹魔像",
+      "type": "unit",
+      "score": 3.6502060777559056
+    }
+  ],
+  "count": 1041,
+  "avg_placement": 3.976,
+  "top4_rate": 0.5946,
+  "win_rate": 0.1633,
+  "tier": "S",
+  "builds": [
+    {
+      "unit": "远古巨龙",
+      "items": [
+        "无尽之刃",
+        "最后的轻语",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 2.9831,
+      "count": 4747,
+      "score": 0.6731,
+      "place_change": -1.014,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "最后的轻语": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.5512,
+      "count": 1854,
+      "score": 0.3946,
+      "place_change": -0.445,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "绯红印记树怪",
+      "items": [
+        "夜之锋刃",
+        "水银",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.4926,
+      "count": 1494,
+      "score": 0.2963,
+      "place_change": -0.504,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "水银": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "苍蓝哨戒",
+      "items": [
+        "蓝霸符",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.4597,
+      "count": 3383,
+      "score": 0.1868,
+      "place_change": -0.537,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    }
+  ],
+  "build_items": {
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 50190,
+      "avg": 3.7352,
+      "pcnt": 0.77187
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 50097,
+      "avg": 3.8232,
+      "pcnt": 0.77044
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 35377,
+      "avg": 3.7584,
+      "pcnt": 0.54406
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 35125,
+      "avg": 3.6692,
+      "pcnt": 0.54019
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 28431,
+      "avg": 3.6944,
+      "pcnt": 0.43724
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 25057,
+      "avg": 3.7744,
+      "pcnt": 0.38535
+    },
+    "蓝霸符": {
+      "itemNames": "DA_BlueBuff",
+      "count": 23660,
+      "avg": 3.6333,
+      "pcnt": 0.36387
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 17842,
+      "avg": 3.5017,
+      "pcnt": 0.27439
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 17432,
+      "avg": 3.7665,
+      "pcnt": 0.26809
+    },
+    "水银": {
+      "itemNames": "DA_Quicksilver",
+      "count": 17035,
+      "avg": 3.6909,
+      "pcnt": 0.26198
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 15021,
+      "avg": 3.6538,
+      "pcnt": 0.23101
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 13455,
+      "avg": 3.6665,
+      "pcnt": 0.20692
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 1303,
+      "avg": 4.3039,
+      "pick_rate": 0.012862
+    },
+    {
+      "day": "2026-08-28",
+      "count": 5950,
+      "avg": 4.2287,
+      "pick_rate": 0.015312
+    },
+    {
+      "day": "2026-08-29",
+      "count": 12235,
+      "avg": 4.159,
+      "pick_rate": 0.019909
+    },
+    {
+      "day": "2026-08-30",
+      "count": 19820,
+      "avg": 4.0527,
+      "pick_rate": 0.023042
+    },
+    {
+      "day": "2026-08-31",
+      "count": 28573,
+      "avg": 3.9162,
+      "pick_rate": 0.027733
+    },
+    {
+      "day": "2026-09-01",
+      "count": 6062,
+      "avg": 3.9228,
+      "pick_rate": 0.033152
+    }
+  ],
+  "levelling": "Standard",
+  "difficulty": -0.029
+}

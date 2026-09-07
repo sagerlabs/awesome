@@ -1,0 +1,145 @@
+{
+  "name": "拉露恩",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422006",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "tier": "A",
+      "avg_placement": 4.3252
+    },
+    {
+      "cluster_id": "422038",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "tier": "B",
+      "avg_placement": 4.6239
+    },
+    {
+      "cluster_id": "422027",
+      "comp_name": "DA_18_Spellweaver, DA_18_Lillia",
+      "tier": "B",
+      "avg_placement": 4.7714
+    },
+    {
+      "cluster_id": "422044",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
+      "tier": "B",
+      "avg_placement": 4.776
+    },
+    {
+      "cluster_id": "422031",
+      "comp_name": "DA_18_Spellweaver, DA_18_Ahri",
+      "tier": "C",
+      "avg_placement": 4.9851
+    },
+    {
+      "cluster_id": "422041",
+      "comp_name": "DA_18_Executioner, DA_18_Soraka",
+      "tier": "C",
+      "avg_placement": 5.0
+    },
+    {
+      "cluster_id": "422050",
+      "comp_name": "DA_18_Coven, DA_18_Morgana",
+      "tier": "D",
+      "avg_placement": 5.8427
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422006",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "items": [
+        "珠光护手",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.5244,
+      "count": 860,
+      "priority_scores": {
+        "珠光护手": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "422012",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "items": [
+        "神谕纹章",
+        "大天使之杖",
+        "珠光护手"
+      ],
+      "avg_placement": 3.1294,
+      "count": 170,
+      "priority_scores": {
+        "神谕纹章": 100,
+        "大天使之杖": 85,
+        "珠光护手": 72
+      }
+    },
+    {
+      "cluster_id": "422027",
+      "comp_name": "DA_18_Spellweaver, DA_18_Lillia",
+      "items": [
+        "适应性头盔",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 2.7895,
+      "count": 19,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "422044",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
+      "items": [
+        "海克斯科技枪刃",
+        "珠光护手",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.5,
+      "count": 38,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "珠光护手": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "422031",
+      "comp_name": "DA_18_Spellweaver, DA_18_Ahri",
+      "items": [
+        "红霸符",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.0548,
+      "count": 73,
+      "priority_scores": {
+        "红霸符": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "422041",
+      "comp_name": "DA_18_Executioner, DA_18_Soraka",
+      "items": [
+        "大天使之杖",
+        "珠光护手",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.6346,
+      "count": 52,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "珠光护手": 85,
+        "朔极之矛": 72
+      }
+    }
+  ]
+}

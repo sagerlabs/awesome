@@ -1,0 +1,235 @@
+{
+  "cluster_id": "422038",
+  "tft_set": "TFTSet18",
+  "units": [
+    "拉露恩",
+    "厄斐琉斯",
+    "黛安娜",
+    "凯尔",
+    "蕾欧娜",
+    "瑟庄妮",
+    "慎",
+    "阿木木"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "日月双蚀 (1)",
+    "地狱火 (1)",
+    "月蚀骑士 (2)",
+    "迅捷射手 (1)",
+    "日蚀骑士 (1)",
+    "月华神女 (1)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "凯尔",
+    "瑟庄妮",
+    "蕾欧娜",
+    "慎",
+    "洛",
+    "奥恩",
+    "霞",
+    "峡谷迅捷蟹",
+    "约里克",
+    "乐芙兰",
+    "阿卡丽",
+    "伊莉丝",
+    "卡兹克",
+    "雷恩加尔",
+    "阿利斯塔",
+    "魔沼蛙",
+    "卡尔玛",
+    "可酷伯",
+    "卡蜜尔"
+  ],
+  "name_string": "DA_18_Rapidfire, DA_18_Kayle",
+  "display_names": [
+    {
+      "name": "月蚀骑士",
+      "type": "trait",
+      "score": 1.5910485933503837
+    },
+    {
+      "name": "凯尔",
+      "type": "unit",
+      "score": 3.6136189258312017
+    }
+  ],
+  "count": 109,
+  "avg_placement": 4.6239,
+  "top4_rate": 0.4679,
+  "win_rate": 0.0917,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "凯尔",
+      "items": [
+        "月蚀骑士纹章",
+        "鬼索的狂暴之刃",
+        "珠光护手"
+      ],
+      "avg_placement": 3.9686,
+      "count": 191,
+      "score": 0.5498,
+      "place_change": -0.827,
+      "priority_scores": {
+        "月蚀骑士纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "珠光护手": 72
+      }
+    },
+    {
+      "unit": "厄斐琉斯",
+      "items": [
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.3448,
+      "count": 58,
+      "score": 0.4535,
+      "place_change": -1.451,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "瑟庄妮",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.9774,
+      "count": 354,
+      "score": 0.4199,
+      "place_change": -0.818,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "蕾欧娜",
+      "items": [
+        "棘刺背心",
+        "巨龙之爪",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0769,
+      "count": 26,
+      "score": 0.1291,
+      "place_change": -0.719,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 9871,
+      "avg": 4.6063,
+      "pcnt": 1.26228
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 7125,
+      "avg": 4.5484,
+      "pcnt": 0.91113
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 4677,
+      "avg": 4.4486,
+      "pcnt": 0.59808
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 4608,
+      "avg": 4.4223,
+      "pcnt": 0.58926
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 4201,
+      "avg": 4.5156,
+      "pcnt": 0.53721
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 2754,
+      "avg": 4.3286,
+      "pcnt": 0.35217
+    },
+    "月蚀骑士纹章": {
+      "itemNames": "DA_18_EmblemLunar",
+      "count": 2371,
+      "avg": 4.326,
+      "pcnt": 0.3032
+    },
+    "巨龙之爪": {
+      "itemNames": "DA_DragonsClaw",
+      "count": 2052,
+      "avg": 4.3543,
+      "pcnt": 0.2624
+    },
+    "棘刺背心": {
+      "itemNames": "DA_BrambleVest",
+      "count": 1307,
+      "avg": 4.1829,
+      "pcnt": 0.16714
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 875,
+      "avg": 4.1657,
+      "pcnt": 0.11189
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 230,
+      "avg": 5.2304,
+      "pick_rate": 0.00227
+    },
+    {
+      "day": "2026-08-28",
+      "count": 988,
+      "avg": 4.6913,
+      "pick_rate": 0.002543
+    },
+    {
+      "day": "2026-08-29",
+      "count": 1791,
+      "avg": 4.7203,
+      "pick_rate": 0.002914
+    },
+    {
+      "day": "2026-08-30",
+      "count": 2533,
+      "avg": 4.8101,
+      "pick_rate": 0.002945
+    },
+    {
+      "day": "2026-08-31",
+      "count": 3154,
+      "avg": 4.8402,
+      "pick_rate": 0.003061
+    },
+    {
+      "day": "2026-09-01",
+      "count": 580,
+      "avg": 4.7431,
+      "pick_rate": 0.003172
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.156
+}

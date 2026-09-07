@@ -1,0 +1,200 @@
+{
+  "cluster_id": "422017",
+  "tft_set": "TFTSet18",
+  "units": [
+    "莫甘娜",
+    "苍蓝哨戒",
+    "克格莫",
+    "奈德丽",
+    "峡谷迅捷蟹",
+    "苍蓝雕纹魔像",
+    "塔里克",
+    "蔚"
+  ],
+  "traits": [
+    "魔战士 (1)",
+    "帝王斑蝶 (1)",
+    "神谕 (3)",
+    "重装战士 (1)",
+    "宝石骑士 (1)",
+    "主宰 (1)",
+    "野兽之灵 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "雷恩加尔",
+    "卡兹克"
+  ],
+  "name_string": "DA_18_Invoker, DA_Nidalee18_AP",
+  "display_names": [
+    {
+      "name": "神谕",
+      "type": "trait",
+      "score": 2.276122650840752
+    },
+    {
+      "name": "奈德丽",
+      "type": "unit",
+      "score": 4.197626112759644
+    }
+  ],
+  "count": 230,
+  "avg_placement": 4.4826,
+  "top4_rate": 0.5,
+  "win_rate": 0.0783,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "奈德丽",
+      "items": [
+        "鬼索的狂暴之刃",
+        "珠光护手",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.5792,
+      "count": 5689,
+      "score": 0.4345,
+      "place_change": -0.191,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "珠光护手": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "莫甘娜",
+      "items": [
+        "适应性头盔",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "avg_placement": 4.1557,
+      "count": 854,
+      "score": 0.3451,
+      "place_change": -0.614,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "莫雷洛秘典": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "圣盾使的誓约",
+        "圣盾使的誓约",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.9281,
+      "count": 167,
+      "score": 0.3133,
+      "place_change": -0.842,
+      "priority_scores": {
+        "圣盾使的誓约": 72
+      }
+    },
+    {
+      "unit": "克格莫",
+      "items": [
+        "大天使之杖"
+      ],
+      "avg_placement": 3.9571,
+      "count": 70,
+      "score": 0.009,
+      "place_change": -0.813,
+      "priority_scores": {
+        "大天使之杖": 100
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 22177,
+      "avg": 4.7155,
+      "pcnt": 0.87743
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 21924,
+      "avg": 4.6064,
+      "pcnt": 0.86742
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 14817,
+      "avg": 4.4945,
+      "pcnt": 0.58623
+    },
+    "适应性头盔": {
+      "itemNames": "DA_AdaptiveHelm",
+      "count": 12466,
+      "avg": 4.4496,
+      "pcnt": 0.49321
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 12441,
+      "avg": 4.4831,
+      "pcnt": 0.49223
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 10356,
+      "avg": 4.5318,
+      "pcnt": 0.40973
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 10137,
+      "avg": 4.5777,
+      "pcnt": 0.40107
+    },
+    "大天使之杖": {
+      "itemNames": "DA_ArchangelsStaff",
+      "count": 5571,
+      "avg": 4.4254,
+      "pcnt": 0.22042
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 2854,
+      "avg": 4.6013,
+      "pick_rate": 0.028173
+    },
+    {
+      "day": "2026-08-28",
+      "count": 8240,
+      "avg": 4.6523,
+      "pick_rate": 0.021206
+    },
+    {
+      "day": "2026-08-29",
+      "count": 8415,
+      "avg": 4.7244,
+      "pick_rate": 0.013693
+    },
+    {
+      "day": "2026-08-30",
+      "count": 9205,
+      "avg": 4.7715,
+      "pick_rate": 0.010701
+    },
+    {
+      "day": "2026-08-31",
+      "count": 8059,
+      "avg": 4.7915,
+      "pick_rate": 0.007822
+    },
+    {
+      "day": "2026-09-01",
+      "count": 1173,
+      "avg": 4.8713,
+      "pick_rate": 0.006415
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.1
+}

@@ -1,0 +1,221 @@
+{
+  "cluster_id": "422005",
+  "tft_set": "TFTSet18",
+  "units": [
+    "艾希",
+    "凯特琳",
+    "洛",
+    "瑟庄妮",
+    "希维尔",
+    "崔丝塔娜",
+    "峡谷迅捷蟹",
+    "蔚"
+  ],
+  "traits": [
+    "花仙子 (1)",
+    "猎人 (3)",
+    "主宰 (2)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "凯特琳",
+    "峡谷迅捷蟹",
+    "瑟庄妮",
+    "伊莉丝",
+    "雷恩加尔",
+    "阿利斯塔",
+    "阿卡丽",
+    "芸阿娜",
+    "维迦"
+  ],
+  "name_string": "DA_Juggernaut18, DA_18_Caitlyn",
+  "display_names": [
+    {
+      "name": "猎人",
+      "type": "trait",
+      "score": 2.24506567867969
+    },
+    {
+      "name": "凯特琳",
+      "type": "unit",
+      "score": 4.186055911081172
+    }
+  ],
+  "count": 317,
+  "avg_placement": 4.4132,
+  "top4_rate": 0.5237,
+  "win_rate": 0.0694,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "凯特琳",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 4.1033,
+      "count": 3157,
+      "score": 0.4562,
+      "place_change": -0.309,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "unit": "希维尔",
+      "items": [
+        "无尽之刃",
+        "最后的轻语",
+        "红霸符"
+      ],
+      "avg_placement": 3.634,
+      "count": 1604,
+      "score": 0.3615,
+      "place_change": -0.778,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "最后的轻语": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "unit": "峡谷迅捷蟹",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.3021,
+      "count": 2787,
+      "score": 0.2021,
+      "place_change": -0.11,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "瑟庄妮",
+      "items": [
+        "巨龙之爪",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.496,
+      "count": 125,
+      "score": 0.1622,
+      "place_change": -0.916,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 35365,
+      "avg": 4.294,
+      "pcnt": 1.19114
+    },
+    "海妖之怒": {
+      "itemNames": "DA_KrakensFury",
+      "count": 30794,
+      "avg": 4.3064,
+      "pcnt": 1.03718
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 28720,
+      "avg": 4.1854,
+      "pcnt": 0.96733
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 22492,
+      "avg": 4.2333,
+      "pcnt": 0.75756
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 19739,
+      "avg": 4.2234,
+      "pcnt": 0.66484
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 18909,
+      "avg": 4.1765,
+      "pcnt": 0.63688
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 17077,
+      "avg": 4.0877,
+      "pcnt": 0.57518
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 9632,
+      "avg": 3.8705,
+      "pcnt": 0.32442
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 8207,
+      "avg": 4.0496,
+      "pcnt": 0.27642
+    },
+    "巨龙之爪": {
+      "itemNames": "DA_DragonsClaw",
+      "count": 5986,
+      "avg": 3.8677,
+      "pcnt": 0.20162
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 1524,
+      "avg": 4.3642,
+      "pick_rate": 0.015044
+    },
+    {
+      "day": "2026-08-28",
+      "count": 4958,
+      "avg": 4.3336,
+      "pick_rate": 0.012759
+    },
+    {
+      "day": "2026-08-29",
+      "count": 7253,
+      "avg": 4.3862,
+      "pick_rate": 0.011802
+    },
+    {
+      "day": "2026-08-30",
+      "count": 9936,
+      "avg": 4.3923,
+      "pick_rate": 0.011551
+    },
+    {
+      "day": "2026-08-31",
+      "count": 11610,
+      "avg": 4.4298,
+      "pick_rate": 0.011269
+    },
+    {
+      "day": "2026-09-01",
+      "count": 1951,
+      "avg": 4.4475,
+      "pick_rate": 0.01067
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.069
+}

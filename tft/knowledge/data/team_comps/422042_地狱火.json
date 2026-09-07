@@ -1,0 +1,212 @@
+{
+  "cluster_id": "422042",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿卡丽",
+    "厄斐琉斯",
+    "黛安娜",
+    "凯南",
+    "茂凯",
+    "慎",
+    "韦鲁斯",
+    "阿木木",
+    "塔里克"
+  ],
+  "traits": [
+    "地狱火 (3)",
+    "月蚀骑士 (1)",
+    "远古树精 (1)",
+    "迅捷射手 (1)",
+    "狂战士 (1)",
+    "重装战士 (1)",
+    "宝石骑士 (1)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "卡兹克",
+    "雷恩加尔",
+    "卡蜜尔"
+  ],
+  "name_string": "DA_18_Inferno, DA_Amumu18",
+  "display_names": [
+    {
+      "name": "地狱火",
+      "type": "trait",
+      "score": 2.5354330708661417
+    },
+    {
+      "name": "阿木木",
+      "type": "unit",
+      "score": 3.3417697787776532
+    }
+  ],
+  "count": 95,
+  "avg_placement": 5.1579,
+  "top4_rate": 0.3789,
+  "win_rate": 0.0526,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "厄斐琉斯",
+      "items": [
+        "地狱火纹章",
+        "死亡之刃",
+        "巨人杀手"
+      ],
+      "avg_placement": 3.6957,
+      "count": 23,
+      "score": 0.3906,
+      "place_change": -1.406,
+      "priority_scores": {
+        "地狱火纹章": 100,
+        "死亡之刃": 85,
+        "巨人杀手": 72
+      }
+    },
+    {
+      "unit": "阿木木",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 4,
+      "count": 17,
+      "score": 0.3495,
+      "place_change": -1.102,
+      "priority_scores": {
+        "石像鬼石板甲": 72
+      }
+    },
+    {
+      "unit": "凯南",
+      "items": [
+        "夜之锋刃",
+        "珠光护手",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.9524,
+      "count": 21,
+      "score": 0.1659,
+      "place_change": -1.149,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "珠光护手": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "拉克丝",
+      "items": [
+        "珠光护手",
+        "灭世者的死亡之帽",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.0851,
+      "count": 47,
+      "score": 0.0937,
+      "place_change": -1.017,
+      "priority_scores": {
+        "珠光护手": 100,
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 6280,
+      "avg": 4.9231,
+      "pcnt": 0.7849
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 3521,
+      "avg": 4.9404,
+      "pcnt": 0.44007
+    },
+    "地狱火纹章": {
+      "itemNames": "DA_18_EmblemInferno",
+      "count": 3086,
+      "avg": 4.8866,
+      "pcnt": 0.3857
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 3036,
+      "avg": 4.7971,
+      "pcnt": 0.37945
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 2498,
+      "avg": 4.7046,
+      "pcnt": 0.31221
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 2368,
+      "avg": 4.8193,
+      "pcnt": 0.29596
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 1534,
+      "avg": 4.7021,
+      "pcnt": 0.19173
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 1534,
+      "avg": 4.485,
+      "pcnt": 0.19173
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 1222,
+      "avg": 4.716,
+      "pcnt": 0.15273
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 228,
+      "avg": 5.0614,
+      "pick_rate": 0.002251
+    },
+    {
+      "day": "2026-08-28",
+      "count": 1043,
+      "avg": 5.1055,
+      "pick_rate": 0.002684
+    },
+    {
+      "day": "2026-08-29",
+      "count": 1757,
+      "avg": 5.0683,
+      "pick_rate": 0.002859
+    },
+    {
+      "day": "2026-08-30",
+      "count": 2689,
+      "avg": 5.1528,
+      "pick_rate": 0.003126
+    },
+    {
+      "day": "2026-08-31",
+      "count": 3198,
+      "avg": 5.1104,
+      "pick_rate": 0.003104
+    },
+    {
+      "day": "2026-09-01",
+      "count": 584,
+      "avg": 4.9161,
+      "pick_rate": 0.003194
+    }
+  ],
+  "levelling": "Standard",
+  "difficulty": -0.087
+}

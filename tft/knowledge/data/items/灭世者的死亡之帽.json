@@ -2,115 +2,67 @@
   "name": "灭世者的死亡之帽",
   "priority_list": [
     {
-      "cluster_id": "409006",
-      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_Illaoi",
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "comp_tier": "A",
+      "comp_avg": 4.474,
+      "carry": "索拉卡",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "comp_tier": "A",
+      "comp_avg": 4.474,
+      "carry": "凯南",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "422021",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
       "comp_tier": "S",
-      "comp_avg": 4.1825,
-      "carry": "维克托",
+      "comp_avg": 4.2328,
+      "carry": "莫甘娜",
       "priority_score": 85
     },
     {
-      "cluster_id": "409034",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Ornn",
+      "cluster_id": "422024",
+      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
       "comp_tier": "S",
-      "comp_avg": 4.2013,
-      "carry": "娜美",
-      "priority_score": 85
+      "comp_avg": 3.976,
+      "carry": "苍蓝哨戒",
+      "priority_score": 72
     },
     {
-      "cluster_id": "409054",
-      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Viktor",
+      "cluster_id": "422009",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
       "comp_tier": "S",
-      "comp_avg": 4.2261,
-      "carry": "维克托",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409005",
-      "comp_name": "TFT17_Astronaut, TFT17_Corki",
-      "comp_tier": "A",
-      "comp_avg": 4.3714,
-      "carry": "巴德",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409009",
-      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
-      "comp_tier": "A",
-      "comp_avg": 4.4015,
-      "carry": "维克托",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409054",
-      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Viktor",
-      "comp_tier": "S",
-      "comp_avg": 4.2261,
-      "carry": "佐伊",
+      "comp_avg": 4.1713,
+      "carry": "奈德丽",
       "priority_score": 72
     },
     {
-      "cluster_id": "409050",
-      "comp_name": "TFT17_Augment_NasusCarry",
+      "cluster_id": "422002",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
       "comp_tier": "A",
-      "comp_avg": 4.3078,
-      "carry": "提莫",
+      "comp_avg": 4.3871,
+      "carry": "凯南",
       "priority_score": 72
     },
     {
-      "cluster_id": "409031",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc",
+      "cluster_id": "422008",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
       "comp_tier": "A",
-      "comp_avg": 4.3374,
-      "carry": "乐芙兰",
+      "comp_avg": 4.4453,
+      "carry": "卡兹克",
       "priority_score": 72
     },
     {
-      "cluster_id": "409008",
-      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
+      "cluster_id": "422033",
+      "comp_name": "DA_Riftbeast18",
       "comp_tier": "A",
-      "comp_avg": 4.344,
-      "carry": "维克托",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409020",
-      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_FlexTrait",
-      "comp_tier": "A",
-      "comp_avg": 4.3546,
-      "carry": "小木灵",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409001",
-      "comp_name": "TFT17_Augment_LeonaCarry",
-      "comp_tier": "A",
-      "comp_avg": 4.405,
-      "carry": "乐芙兰",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409043",
-      "comp_name": "TFT17_Mecha, TFT17_AurelionSol, TFT17_Karma",
-      "comp_tier": "A",
-      "comp_avg": 4.4194,
-      "carry": "奥瑞利安·索尔",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409048",
-      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_ShieldTank",
-      "comp_tier": "A",
-      "comp_avg": 4.4469,
-      "carry": "莫德凯撒",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409002",
-      "comp_name": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Illaoi",
-      "comp_tier": "A",
-      "comp_avg": 4.499,
-      "carry": "巴德",
+      "comp_avg": 4.4541,
+      "carry": "苍蓝哨戒",
       "priority_score": 72
     }
   ]

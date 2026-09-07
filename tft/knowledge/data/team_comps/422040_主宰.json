@@ -1,0 +1,218 @@
+{
+  "cluster_id": "422040",
+  "tft_set": "TFTSet18",
+  "units": [
+    "莉莉娅",
+    "洛",
+    "慎",
+    "希维尔",
+    "阿木木",
+    "克格莫",
+    "奈德丽",
+    "苍蓝雕纹魔像"
+  ],
+  "traits": [
+    "魔战士 (1)",
+    "帝王斑蝶 (1)",
+    "护卫 (1)",
+    "花仙子 (1)",
+    "地狱火 (1)",
+    "神谕 (1)",
+    "重装战士 (1)",
+    "主宰 (1)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "雷恩加尔",
+    "卡兹克"
+  ],
+  "name_string": "DA_Juggernaut18, DA_Nidalee18_AP",
+  "display_names": [
+    {
+      "name": "主宰",
+      "type": "trait",
+      "score": 1.4086175475136684
+    },
+    {
+      "name": "奈德丽",
+      "type": "unit",
+      "score": 4.330512887268941
+    }
+  ],
+  "count": 103,
+  "avg_placement": 5.301,
+  "top4_rate": 0.3786,
+  "win_rate": 0.0485,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "奈德丽",
+      "items": [
+        "饮血剑",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.5357,
+      "count": 28,
+      "score": 0.7214,
+      "place_change": -1.528,
+      "priority_scores": {
+        "饮血剑": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "阿木木",
+      "items": [
+        "棘刺背心",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.3333,
+      "count": 18,
+      "score": 0.3509,
+      "place_change": -1.73,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "unit": "希维尔",
+      "items": [
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "最后的轻语"
+      ],
+      "avg_placement": 3.9778,
+      "count": 45,
+      "score": 0.2128,
+      "place_change": -1.086,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "最后的轻语": 72
+      }
+    },
+    {
+      "unit": "蔚",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 4.4286,
+      "count": 35,
+      "score": 0.1028,
+      "place_change": -0.635,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 6680,
+      "avg": 4.8823,
+      "pcnt": 0.86957
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 6624,
+      "avg": 4.9204,
+      "pcnt": 0.86228
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 3376,
+      "avg": 4.7387,
+      "pcnt": 0.43947
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 3227,
+      "avg": 4.7738,
+      "pcnt": 0.42007
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 2051,
+      "avg": 4.7689,
+      "pcnt": 0.26699
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 1502,
+      "avg": 4.7091,
+      "pcnt": 0.19552
+    },
+    "棘刺背心": {
+      "itemNames": "DA_BrambleVest",
+      "count": 1315,
+      "avg": 4.5779,
+      "pcnt": 0.17118
+    },
+    "饮血剑": {
+      "itemNames": "DA_Bloodthirster",
+      "count": 1283,
+      "avg": 4.59,
+      "pcnt": 0.16701
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 1178,
+      "avg": 4.4253,
+      "pcnt": 0.15335
+    },
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 1096,
+      "avg": 4.4088,
+      "pcnt": 0.14267
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 267,
+      "avg": 4.9738,
+      "pick_rate": 0.002636
+    },
+    {
+      "day": "2026-08-28",
+      "count": 1017,
+      "avg": 5.0383,
+      "pick_rate": 0.002617
+    },
+    {
+      "day": "2026-08-29",
+      "count": 1701,
+      "avg": 5.0805,
+      "pick_rate": 0.002768
+    },
+    {
+      "day": "2026-08-30",
+      "count": 2504,
+      "avg": 5.0443,
+      "pick_rate": 0.002911
+    },
+    {
+      "day": "2026-08-31",
+      "count": 3141,
+      "avg": 5.0761,
+      "pick_rate": 0.003049
+    },
+    {
+      "day": "2026-09-01",
+      "count": 582,
+      "avg": 5.1031,
+      "pick_rate": 0.003183
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.111
+}

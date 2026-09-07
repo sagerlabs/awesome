@@ -1,0 +1,73 @@
+{
+  "name": "德莱文",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422002",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "tier": "A",
+      "avg_placement": 4.3871
+    },
+    {
+      "cluster_id": "422046",
+      "comp_name": "DA_Juggernaut18, DA_Draven18",
+      "tier": "B",
+      "avg_placement": 4.7644
+    },
+    {
+      "cluster_id": "422034",
+      "comp_name": "DA_18_Elderwood, DA_18_Sett",
+      "tier": "D",
+      "avg_placement": 5.2877
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422002",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "items": [
+        "死亡之刃",
+        "鬼索的狂暴之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.8545,
+      "count": 13343,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "cluster_id": "422046",
+      "comp_name": "DA_Juggernaut18, DA_Draven18",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海妖之怒",
+        "最后的轻语"
+      ],
+      "avg_placement": 3.6581,
+      "count": 2249,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海妖之怒": 85,
+        "最后的轻语": 72
+      }
+    },
+    {
+      "cluster_id": "422034",
+      "comp_name": "DA_18_Elderwood, DA_18_Sett",
+      "items": [
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.7778,
+      "count": 18,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "强袭者的链枷": 72
+      }
+    }
+  ]
+}

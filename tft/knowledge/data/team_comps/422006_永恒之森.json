@@ -1,0 +1,218 @@
+{
+  "cluster_id": "422006",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿利斯塔",
+    "拉露恩",
+    "厄斐琉斯",
+    "黛安娜",
+    "纳尔",
+    "赫卡里姆",
+    "莉莉娅",
+    "奥恩",
+    "霞"
+  ],
+  "traits": [
+    "斗士 (1)",
+    "护卫 (1)",
+    "永恒之森 (2)",
+    "花仙子 (1)",
+    "月蚀骑士 (2)",
+    "迅捷射手 (1)",
+    "重装战士 (1)",
+    "月华神女 (1)"
+  ],
+  "stars": [
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Elderwood, DA_18_Aphelios",
+  "display_names": [
+    {
+      "name": "永恒之森",
+      "type": "trait",
+      "score": 2.12036443114057
+    },
+    {
+      "name": "厄斐琉斯",
+      "type": "unit",
+      "score": 4.302936355213456
+    }
+  ],
+  "count": 987,
+  "avg_placement": 4.3252,
+  "top4_rate": 0.5289,
+  "win_rate": 0.153,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "厄斐琉斯",
+      "items": [
+        "永恒之森纹章",
+        "鬼索的狂暴之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 4.0064,
+      "count": 1868,
+      "score": 0.4689,
+      "place_change": -0.506,
+      "priority_scores": {
+        "永恒之森纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "unit": "莉莉娅",
+      "items": [
+        "薄暮法袍",
+        "圣盾使的誓约",
+        "日炎斗篷"
+      ],
+      "avg_placement": 4.0251,
+      "count": 2308,
+      "score": 0.2852,
+      "place_change": -0.487,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "圣盾使的誓约": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "unit": "拉露恩",
+      "items": [
+        "珠光护手",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.5244,
+      "count": 860,
+      "score": 0.184,
+      "place_change": -0.988,
+      "priority_scores": {
+        "珠光护手": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "赫卡里姆",
+      "items": [
+        "薄暮法袍",
+        "振奋盔甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.8519,
+      "count": 243,
+      "score": 0.1007,
+      "place_change": -0.66,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "振奋盔甲": 85,
+        "日炎斗篷": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 71928,
+      "avg": 4.4657,
+      "pcnt": 0.85439
+    },
+    "海妖之怒": {
+      "itemNames": "DA_KrakensFury",
+      "count": 44292,
+      "avg": 4.3929,
+      "pcnt": 0.52612
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 37207,
+      "avg": 4.2884,
+      "pcnt": 0.44196
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 36223,
+      "avg": 4.4591,
+      "pcnt": 0.43027
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 35885,
+      "avg": 4.1505,
+      "pcnt": 0.42626
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 32260,
+      "avg": 4.2209,
+      "pcnt": 0.3832
+    },
+    "薄暮法袍": {
+      "itemNames": "DA_Evenshroud",
+      "count": 32166,
+      "avg": 4.1396,
+      "pcnt": 0.38208
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 24961,
+      "avg": 4.1928,
+      "pcnt": 0.2965
+    },
+    "永恒之森纹章": {
+      "itemNames": "DA_18_EmblemElderwood",
+      "count": 21916,
+      "avg": 4.0041,
+      "pcnt": 0.26033
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 9445,
+      "avg": 3.7691,
+      "pcnt": 0.11219
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 4073,
+      "avg": 4.5608,
+      "pick_rate": 0.040206
+    },
+    {
+      "day": "2026-08-28",
+      "count": 14276,
+      "avg": 4.521,
+      "pick_rate": 0.036739
+    },
+    {
+      "day": "2026-08-29",
+      "count": 20905,
+      "avg": 4.5011,
+      "pick_rate": 0.034016
+    },
+    {
+      "day": "2026-08-30",
+      "count": 28703,
+      "avg": 4.5109,
+      "pick_rate": 0.033368
+    },
+    {
+      "day": "2026-08-31",
+      "count": 32272,
+      "avg": 4.5212,
+      "pick_rate": 0.031323
+    },
+    {
+      "day": "2026-09-01",
+      "count": 5362,
+      "avg": 4.5045,
+      "pick_rate": 0.029324
+    }
+  ],
+  "levelling": "Fast 9",
+  "difficulty": -0.093
+}

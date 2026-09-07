@@ -1,0 +1,215 @@
+{
+  "cluster_id": "422020",
+  "tft_set": "TFTSet18",
+  "units": [
+    "可酷伯",
+    "莉莉娅",
+    "洛",
+    "拉莫斯",
+    "希维尔",
+    "崔丝塔娜",
+    "霞",
+    "蔚"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "花仙子 (2)",
+    "猎人 (1)",
+    "约德尔人... (1)",
+    "主宰 (1)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "崔丝塔娜",
+    "拉莫斯",
+    "蔚",
+    "伊莉丝",
+    "卡兹克",
+    "易",
+    "卡尔玛"
+  ],
+  "name_string": "DA_18_Fae, DA_18_Tristana, DA_18_Rammus",
+  "display_names": [
+    {
+      "name": "花仙子",
+      "type": "trait",
+      "score": 1.7375733517431826
+    },
+    {
+      "name": "崔丝塔娜",
+      "type": "unit",
+      "score": 4.186486020020711
+    }
+  ],
+  "count": 557,
+  "avg_placement": 4.5619,
+  "top4_rate": 0.4991,
+  "win_rate": 0.1364,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "希维尔",
+      "items": [
+        "花仙子纹章",
+        "最后的轻语",
+        "红霸符"
+      ],
+      "avg_placement": 3.2546,
+      "count": 2235,
+      "score": 0.6011,
+      "place_change": -1.368,
+      "priority_scores": {
+        "花仙子纹章": 100,
+        "最后的轻语": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "unit": "崔丝塔娜",
+      "items": [
+        "巨人杀手",
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 4.2197,
+      "count": 7032,
+      "score": 0.5641,
+      "place_change": -0.403,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "鬼索的狂暴之刃": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "unit": "拉莫斯",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.2303,
+      "count": 2783,
+      "score": 0.26,
+      "place_change": -0.393,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "蔚",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0601,
+      "count": 1065,
+      "score": 0.1749,
+      "place_change": -0.563,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 48271,
+      "avg": 4.532,
+      "pcnt": 1.0414
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 41757,
+      "avg": 4.4187,
+      "pcnt": 0.90087
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 29021,
+      "avg": 4.3731,
+      "pcnt": 0.6261
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 25457,
+      "avg": 4.2764,
+      "pcnt": 0.54921
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 25226,
+      "avg": 4.2352,
+      "pcnt": 0.54423
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 23102,
+      "avg": 4.3598,
+      "pcnt": 0.4984
+    },
+    "花仙子纹章": {
+      "itemNames": "DA_18_EmblemFae",
+      "count": 21201,
+      "avg": 4.2146,
+      "pcnt": 0.45739
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 20647,
+      "avg": 4.2542,
+      "pcnt": 0.44544
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 13301,
+      "avg": 3.9564,
+      "pcnt": 0.28696
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 2033,
+      "avg": 4.6153,
+      "pick_rate": 0.020068
+    },
+    {
+      "day": "2026-08-28",
+      "count": 7629,
+      "avg": 4.6458,
+      "pick_rate": 0.019633
+    },
+    {
+      "day": "2026-08-29",
+      "count": 11272,
+      "avg": 4.579,
+      "pick_rate": 0.018342
+    },
+    {
+      "day": "2026-08-30",
+      "count": 15830,
+      "avg": 4.6327,
+      "pick_rate": 0.018403
+    },
+    {
+      "day": "2026-08-31",
+      "count": 17856,
+      "avg": 4.6349,
+      "pick_rate": 0.017331
+    },
+    {
+      "day": "2026-09-01",
+      "count": 3112,
+      "avg": 4.6562,
+      "pick_rate": 0.017019
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.067
+}

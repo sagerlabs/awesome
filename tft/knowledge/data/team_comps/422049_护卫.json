@@ -1,0 +1,210 @@
+{
+  "cluster_id": "422049",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿兹尔",
+    "黛安娜",
+    "卡兹克",
+    "洛",
+    "拉莫斯",
+    "崔丝塔娜",
+    "维迦",
+    "费德提克"
+  ],
+  "traits": [
+    "黑荆棘 (1)",
+    "护卫 (1)",
+    "花仙子 (1)",
+    "宿敌 (1)",
+    "法师 (1)",
+    "约德尔人... (1)",
+    "重装战士 (1)",
+    "绝命花妖 (1)"
+  ],
+  "stars": [
+    "卡兹克",
+    "雷恩加尔",
+    "克格莫",
+    "易"
+  ],
+  "name_string": "DA_18_Defender, DA_18_Rammus",
+  "display_names": [
+    {
+      "name": "护卫",
+      "type": "trait",
+      "score": 1.330106485963214
+    },
+    {
+      "name": "拉莫斯",
+      "type": "unit",
+      "score": 4.065827686350436
+    }
+  ],
+  "count": 12,
+  "avg_placement": 5.8333,
+  "top4_rate": 0.25,
+  "win_rate": 0.0833,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "拉莫斯",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "坚定之心"
+      ],
+      "avg_placement": 5.1176,
+      "count": 17,
+      "score": 0.6495,
+      "place_change": -1.115,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "坚定之心": 72
+      }
+    },
+    {
+      "unit": "卡兹克",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "珠光护手"
+      ],
+      "avg_placement": 6,
+      "count": 9,
+      "score": 0.0339,
+      "place_change": -0.232,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "珠光护手": 72
+      }
+    },
+    {
+      "unit": "阿兹尔",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "珠光护手"
+      ],
+      "avg_placement": 5.25,
+      "count": 4,
+      "score": 0.0121,
+      "place_change": -0.982,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "珠光护手": 72
+      }
+    },
+    {
+      "unit": "费德提克",
+      "items": [
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 5.8,
+      "count": 10,
+      "score": 0.012,
+      "place_change": -0.432,
+      "priority_scores": {
+        "圣盾使的誓约": 100
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 828,
+      "avg": 6.1171,
+      "pcnt": 0.80155
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 636,
+      "avg": 6.1053,
+      "pcnt": 0.61568
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 411,
+      "avg": 5.9757,
+      "pcnt": 0.39787
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 354,
+      "avg": 5.726,
+      "pcnt": 0.34269
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 237,
+      "avg": 5.7806,
+      "pcnt": 0.22943
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 224,
+      "avg": 6.125,
+      "pcnt": 0.21684
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 213,
+      "avg": 5.9906,
+      "pcnt": 0.2062
+    },
+    "坚定之心": {
+      "itemNames": "DA_SteadfastHeart",
+      "count": 186,
+      "avg": 5.7366,
+      "pcnt": 0.18006
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 168,
+      "avg": 5.8155,
+      "pcnt": 0.16263
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 34,
+      "avg": 6.4412,
+      "pick_rate": 0.000336
+    },
+    {
+      "day": "2026-08-28",
+      "count": 170,
+      "avg": 5.7941,
+      "pick_rate": 0.000437
+    },
+    {
+      "day": "2026-08-29",
+      "count": 255,
+      "avg": 6.1216,
+      "pick_rate": 0.000415
+    },
+    {
+      "day": "2026-08-30",
+      "count": 363,
+      "avg": 6.292,
+      "pick_rate": 0.000422
+    },
+    {
+      "day": "2026-08-31",
+      "count": 372,
+      "avg": 6.1935,
+      "pick_rate": 0.000361
+    },
+    {
+      "day": "2026-09-01",
+      "count": 84,
+      "avg": 6.3333,
+      "pick_rate": 0.000459
+    }
+  ],
+  "levelling": "Standard",
+  "difficulty": -0.087
+}

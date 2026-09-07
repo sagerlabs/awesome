@@ -2,60 +2,36 @@
   "name": "冕卫",
   "priority_list": [
     {
-      "cluster_id": "409054",
-      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Viktor",
+      "cluster_id": "422024",
+      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
       "comp_tier": "S",
-      "comp_avg": 4.2261,
-      "carry": "莫德凯撒",
+      "comp_avg": 3.976,
+      "carry": "苍蓝雕纹魔像",
       "priority_score": 100
     },
     {
-      "cluster_id": "409024",
-      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Riven",
-      "comp_tier": "A",
-      "comp_avg": 4.2519,
-      "carry": "努努和威朗普",
+      "cluster_id": "422015",
+      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.0985,
+      "carry": "费德提克",
       "priority_score": 100
     },
     {
-      "cluster_id": "409039",
-      "comp_name": "TFT17_Augment_PoppyCarry",
+      "cluster_id": "422010",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
       "comp_tier": "A",
-      "comp_avg": 4.3649,
-      "carry": "拉莫斯",
+      "comp_avg": 4.4202,
+      "carry": "莉莉娅",
       "priority_score": 100
     },
     {
-      "cluster_id": "409012",
-      "comp_name": "TFT17_DarkStar, TFT17_Karma",
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
       "comp_tier": "A",
-      "comp_avg": 4.4314,
-      "carry": "努努和威朗普",
+      "comp_avg": 4.474,
+      "carry": "墨菲特",
       "priority_score": 100
-    },
-    {
-      "cluster_id": "409048",
-      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_ShieldTank",
-      "comp_tier": "A",
-      "comp_avg": 4.4469,
-      "carry": "俄洛伊",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409021",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_ResistTank",
-      "comp_tier": "A",
-      "comp_avg": 4.4708,
-      "carry": "拉莫斯",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409005",
-      "comp_name": "TFT17_Astronaut, TFT17_Corki",
-      "comp_tier": "A",
-      "comp_avg": 4.3714,
-      "carry": "拉莫斯",
-      "priority_score": 85
     }
   ]
 }

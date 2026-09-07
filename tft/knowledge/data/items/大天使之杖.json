@@ -2,12 +2,28 @@
   "name": "大天使之杖",
   "priority_list": [
     {
-      "cluster_id": "409002",
-      "comp_name": "TFT17_ShieldTank, TFT17_Nunu, TFT17_Illaoi",
+      "cluster_id": "422017",
+      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
       "comp_tier": "A",
-      "comp_avg": 4.499,
-      "carry": "巴德",
+      "comp_avg": 4.4826,
+      "carry": "克格莫",
       "priority_score": 100
+    },
+    {
+      "cluster_id": "422003",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.3641,
+      "carry": "卡西奥佩娅",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "422012",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "comp_tier": "A",
+      "comp_avg": 4.5152,
+      "carry": "拉露恩",
+      "priority_score": 85
     }
   ]
 }

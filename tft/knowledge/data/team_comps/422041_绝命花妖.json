@@ -1,0 +1,228 @@
+{
+  "cluster_id": "422041",
+  "tft_set": "TFTSet18",
+  "units": [
+    "拉露恩",
+    "黛安娜",
+    "艾翁",
+    "凯南",
+    "茂凯",
+    "索拉卡",
+    "阿木木",
+    "费德提克",
+    "塔里克"
+  ],
+  "traits": [
+    "裁决使 (1)",
+    "翠神 (1)",
+    "地狱火 (1)",
+    "月蚀骑士 (1)",
+    "远古树精 (1)",
+    "法师 (1)",
+    "重装战士 (1)",
+    "月华神女 (1)",
+    "宝石骑士 (1)",
+    "绝命花妖 (2)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "卡兹克",
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Executioner, DA_18_Soraka",
+  "display_names": [
+    {
+      "name": "绝命花妖",
+      "type": "trait",
+      "score": 1.8828125
+    },
+    {
+      "name": "索拉卡",
+      "type": "unit",
+      "score": 3.8381610576923078
+    }
+  ],
+  "count": 128,
+  "avg_placement": 5.0,
+  "top4_rate": 0.4062,
+  "win_rate": 0.1094,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "索拉卡",
+      "items": [
+        "海克斯科技枪刃",
+        "灭世者的死亡之帽",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.0714,
+      "count": 42,
+      "score": 0.4101,
+      "place_change": -0.943,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "拉露恩",
+      "items": [
+        "大天使之杖",
+        "珠光护手",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.6346,
+      "count": 52,
+      "score": 0.1913,
+      "place_change": -1.38,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "珠光护手": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "凯南",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.6364,
+      "count": 22,
+      "score": 0.1604,
+      "place_change": -1.378,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "阿木木",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 4.3158,
+      "count": 19,
+      "score": 0.0758,
+      "place_change": -0.698,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "日炎斗篷": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 6954,
+      "avg": 4.9175,
+      "pcnt": 0.83582
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 5804,
+      "avg": 4.7057,
+      "pcnt": 0.6976
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 5632,
+      "avg": 4.8311,
+      "pcnt": 0.67692
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 3107,
+      "avg": 4.5925,
+      "pcnt": 0.37344
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 2611,
+      "avg": 4.7537,
+      "pcnt": 0.31382
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 2481,
+      "avg": 4.6719,
+      "pcnt": 0.2982
+    },
+    "大天使之杖": {
+      "itemNames": "DA_ArchangelsStaff",
+      "count": 2251,
+      "avg": 4.5353,
+      "pcnt": 0.27055
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 2131,
+      "avg": 4.5814,
+      "pcnt": 0.25613
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 1686,
+      "avg": 4.8292,
+      "pcnt": 0.20264
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 1349,
+      "avg": 4.4299,
+      "pcnt": 0.16214
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 1262,
+      "avg": 4.3273,
+      "pcnt": 0.15168
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 403,
+      "avg": 4.9578,
+      "pick_rate": 0.003978
+    },
+    {
+      "day": "2026-08-28",
+      "count": 1394,
+      "avg": 4.8659,
+      "pick_rate": 0.003587
+    },
+    {
+      "day": "2026-08-29",
+      "count": 2156,
+      "avg": 4.9977,
+      "pick_rate": 0.003508
+    },
+    {
+      "day": "2026-08-30",
+      "count": 2811,
+      "avg": 4.947,
+      "pick_rate": 0.003268
+    },
+    {
+      "day": "2026-08-31",
+      "count": 3127,
+      "avg": 5.0771,
+      "pick_rate": 0.003035
+    },
+    {
+      "day": "2026-09-01",
+      "count": 560,
+      "avg": 5.0518,
+      "pick_rate": 0.003063
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.019
+}

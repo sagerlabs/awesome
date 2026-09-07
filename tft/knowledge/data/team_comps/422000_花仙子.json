@@ -1,0 +1,227 @@
+{
+  "cluster_id": "422000",
+  "tft_set": "TFTSet18",
+  "units": [
+    "可酷伯",
+    "莉莉娅",
+    "洛",
+    "拉莫斯",
+    "雷恩加尔",
+    "崔丝塔娜",
+    "蔚"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "花仙子 (2)",
+    "宿敌 (1)",
+    "约德尔人... (1)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "雷恩加尔",
+    "崔丝塔娜",
+    "拉莫斯",
+    "蔚",
+    "赫卡里姆",
+    "卡兹克",
+    "易",
+    "阿卡丽",
+    "卡西奥佩娅"
+  ],
+  "name_string": "DA_18_Fae, DA_18_Rengar",
+  "display_names": [
+    {
+      "name": "花仙子",
+      "type": "trait",
+      "score": 1.6437511106597953
+    },
+    {
+      "name": "雷恩加尔",
+      "type": "unit",
+      "score": 4.328831458962707
+    }
+  ],
+  "count": 515,
+  "avg_placement": 4.3301,
+  "top4_rate": 0.5029,
+  "win_rate": 0.2466,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "雷恩加尔",
+      "items": [
+        "花仙子纹章",
+        "约德尔人…纹章",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.4324,
+      "count": 1531,
+      "score": 0.7858,
+      "place_change": -0.894,
+      "priority_scores": {
+        "花仙子纹章": 100,
+        "约德尔人…纹章": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "崔丝塔娜",
+      "items": [
+        "巨人杀手",
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 3.7733,
+      "count": 2382,
+      "score": 0.5992,
+      "place_change": -0.553,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "鬼索的狂暴之刃": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "unit": "拉莫斯",
+      "items": [
+        "斗士纹章",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.2214,
+      "count": 140,
+      "score": 0.3233,
+      "place_change": -1.105,
+      "priority_scores": {
+        "斗士纹章": 100,
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "unit": "蔚",
+      "items": [
+        "薄暮法袍",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 2.9045,
+      "count": 178,
+      "score": 0.234,
+      "place_change": -1.422,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 47039,
+      "avg": 4.1677,
+      "pcnt": 1.19416
+    },
+    "花仙子纹章": {
+      "itemNames": "DA_18_EmblemFae",
+      "count": 27206,
+      "avg": 4.0712,
+      "pcnt": 0.69067
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 27037,
+      "avg": 4.0622,
+      "pcnt": 0.68638
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 22795,
+      "avg": 4.058,
+      "pcnt": 0.57869
+    },
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 17016,
+      "avg": 4.0877,
+      "pcnt": 0.43198
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 14761,
+      "avg": 3.9951,
+      "pcnt": 0.37473
+    },
+    "薄暮法袍": {
+      "itemNames": "DA_Evenshroud",
+      "count": 12981,
+      "avg": 3.6831,
+      "pcnt": 0.32954
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 12834,
+      "avg": 3.701,
+      "pcnt": 0.32581
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 11492,
+      "avg": 3.6927,
+      "pcnt": 0.29174
+    },
+    "约德尔人…纹章": {
+      "itemNames": "DA_18_EmblemSprykin",
+      "count": 10438,
+      "avg": 3.9811,
+      "pcnt": 0.26498
+    },
+    "斗士纹章": {
+      "itemNames": "DA_18_EmblemBrawler",
+      "count": 2312,
+      "avg": 3.356,
+      "pcnt": 0.05869
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 1367,
+      "avg": 4.1448,
+      "pick_rate": 0.013494
+    },
+    {
+      "day": "2026-08-28",
+      "count": 5613,
+      "avg": 4.312,
+      "pick_rate": 0.014445
+    },
+    {
+      "day": "2026-08-29",
+      "count": 9158,
+      "avg": 4.2826,
+      "pick_rate": 0.014902
+    },
+    {
+      "day": "2026-08-30",
+      "count": 12872,
+      "avg": 4.3044,
+      "pick_rate": 0.014964
+    },
+    {
+      "day": "2026-08-31",
+      "count": 15842,
+      "avg": 4.3489,
+      "pick_rate": 0.015376
+    },
+    {
+      "day": "2026-09-01",
+      "count": 2889,
+      "avg": 4.4202,
+      "pick_rate": 0.015799
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": 0.051
+}

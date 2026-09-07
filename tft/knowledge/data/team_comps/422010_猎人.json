@@ -1,0 +1,210 @@
+{
+  "cluster_id": "422010",
+  "tft_set": "TFTSet18",
+  "units": [
+    "艾希",
+    "艾翁",
+    "凯南",
+    "莉莉娅",
+    "慎",
+    "希维尔",
+    "崔丝塔娜",
+    "阿木木",
+    "蔚"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "花仙子 (1)",
+    "翠神 (1)",
+    "猎人 (2)",
+    "地狱火 (2)",
+    "主宰 (1)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "雷恩加尔"
+  ],
+  "name_string": "DA_Juggernaut18, DA_18_Sivir",
+  "display_names": [
+    {
+      "name": "猎人",
+      "type": "trait",
+      "score": 1.7543999140431934
+    },
+    {
+      "name": "希维尔",
+      "type": "unit",
+      "score": 4.184076501557968
+    }
+  ],
+  "count": 633,
+  "avg_placement": 4.4202,
+  "top4_rate": 0.5118,
+  "win_rate": 0.1264,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "希维尔",
+      "items": [
+        "无尽之刃",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.1012,
+      "count": 3084,
+      "score": 0.5105,
+      "place_change": -0.324,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "艾希",
+      "items": [
+        "最后的轻语",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.2189,
+      "count": 1964,
+      "score": 0.5084,
+      "place_change": -1.206,
+      "priority_scores": {
+        "最后的轻语": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "阿木木",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.1258,
+      "count": 1534,
+      "score": 0.2746,
+      "place_change": -0.299,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "莉莉娅",
+      "items": [
+        "冕卫",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.9159,
+      "count": 214,
+      "score": 0.0992,
+      "place_change": -0.509,
+      "priority_scores": {
+        "冕卫": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 43752,
+      "avg": 4.2784,
+      "pcnt": 0.9402
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 40988,
+      "avg": 4.2104,
+      "pcnt": 0.8808
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 37709,
+      "avg": 4.1201,
+      "pcnt": 0.81034
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 29602,
+      "avg": 4.1566,
+      "pcnt": 0.63612
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 27503,
+      "avg": 4.1835,
+      "pcnt": 0.59102
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 17295,
+      "avg": 3.9785,
+      "pcnt": 0.37166
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 16378,
+      "avg": 4.0615,
+      "pcnt": 0.35195
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 14022,
+      "avg": 4.0929,
+      "pcnt": 0.30132
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 12759,
+      "avg": 4.0706,
+      "pcnt": 0.27418
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 1634,
+      "avg": 4.3091,
+      "pick_rate": 0.01613
+    },
+    {
+      "day": "2026-08-28",
+      "count": 6281,
+      "avg": 4.3458,
+      "pick_rate": 0.016164
+    },
+    {
+      "day": "2026-08-29",
+      "count": 9915,
+      "avg": 4.3995,
+      "pick_rate": 0.016133
+    },
+    {
+      "day": "2026-08-30",
+      "count": 16131,
+      "avg": 4.414,
+      "pick_rate": 0.018753
+    },
+    {
+      "day": "2026-08-31",
+      "count": 18766,
+      "avg": 4.4351,
+      "pick_rate": 0.018214
+    },
+    {
+      "day": "2026-09-01",
+      "count": 3225,
+      "avg": 4.4682,
+      "pick_rate": 0.017637
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.054
+}

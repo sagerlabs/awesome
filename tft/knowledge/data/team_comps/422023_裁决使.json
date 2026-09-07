@@ -1,0 +1,213 @@
+{
+  "cluster_id": "422023",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿狸",
+    "阿利斯塔",
+    "阿兹尔",
+    "伊泽瑞尔",
+    "乐芙兰",
+    "瑟提",
+    "索拉卡",
+    "芸阿娜"
+  ],
+  "traits": [
+    "灵魂莲华 (1)",
+    "斗士 (1)",
+    "永恒之森 (1)",
+    "裁决使 (3)",
+    "法师 (1)",
+    "绝命花妖 (1)"
+  ],
+  "stars": [
+    "芸阿娜",
+    "阿利斯塔",
+    "乐芙兰",
+    "卡兹克",
+    "瑟庄妮",
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Executioner, DA_18_Yunara",
+  "display_names": [
+    {
+      "name": "裁决使",
+      "type": "trait",
+      "score": 2.261035978565961
+    },
+    {
+      "name": "芸阿娜",
+      "type": "unit",
+      "score": 4.1515054860933915
+    }
+  ],
+  "count": 101,
+  "avg_placement": 4.604,
+  "top4_rate": 0.4851,
+  "win_rate": 0.0693,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "芸阿娜",
+      "items": [
+        "死亡之刃",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.4563,
+      "count": 1865,
+      "score": 0.4735,
+      "place_change": -0.253,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "阿利斯塔",
+      "items": [
+        "薄暮法袍",
+        "石像鬼石板甲",
+        "坚定之心"
+      ],
+      "avg_placement": 3.4545,
+      "count": 22,
+      "score": 0.3598,
+      "place_change": -1.255,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "石像鬼石板甲": 85,
+        "坚定之心": 72
+      }
+    },
+    {
+      "unit": "伊泽瑞尔",
+      "items": [
+        "最后的轻语",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.6276,
+      "count": 333,
+      "score": 0.3132,
+      "place_change": -1.082,
+      "priority_scores": {
+        "最后的轻语": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "瑟提",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.2308,
+      "count": 65,
+      "score": 0.1737,
+      "place_change": -1.478,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 9293,
+      "avg": 4.4634,
+      "pcnt": 1.18563
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 8780,
+      "avg": 4.5425,
+      "pcnt": 1.12018
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 5832,
+      "avg": 4.4479,
+      "pcnt": 0.74407
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 4947,
+      "avg": 4.4077,
+      "pcnt": 0.63116
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 4330,
+      "avg": 4.3831,
+      "pcnt": 0.55244
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 4247,
+      "avg": 4.5173,
+      "pcnt": 0.54185
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 2627,
+      "avg": 4.2946,
+      "pcnt": 0.33516
+    },
+    "薄暮法袍": {
+      "itemNames": "DA_Evenshroud",
+      "count": 1511,
+      "avg": 4.2608,
+      "pcnt": 0.19278
+    },
+    "坚定之心": {
+      "itemNames": "DA_SteadfastHeart",
+      "count": 1296,
+      "avg": 4.3287,
+      "pcnt": 0.16535
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 524,
+      "avg": 4.563,
+      "pick_rate": 0.005173
+    },
+    {
+      "day": "2026-08-28",
+      "count": 1396,
+      "avg": 4.7278,
+      "pick_rate": 0.003593
+    },
+    {
+      "day": "2026-08-29",
+      "count": 1859,
+      "avg": 4.702,
+      "pick_rate": 0.003025
+    },
+    {
+      "day": "2026-08-30",
+      "count": 2655,
+      "avg": 4.7032,
+      "pick_rate": 0.003087
+    },
+    {
+      "day": "2026-08-31",
+      "count": 3099,
+      "avg": 4.7251,
+      "pick_rate": 0.003008
+    },
+    {
+      "day": "2026-09-01",
+      "count": 516,
+      "avg": 4.8101,
+      "pick_rate": 0.002822
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.059
+}

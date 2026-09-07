@@ -2,33 +2,61 @@
   "name": "维迦",
   "appear_in_comps": [
     {
-      "cluster_id": "409053",
-      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
-      "tier": "B",
-      "avg_placement": 4.6483
+      "cluster_id": "422015",
+      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "tier": "S",
+      "avg_placement": 4.0985
     },
     {
-      "cluster_id": "409049",
-      "comp_name": "TFT17_Astronaut, TFT17_Veigar",
-      "tier": "B",
-      "avg_placement": 4.6957
+      "cluster_id": "422028",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "tier": "C",
+      "avg_placement": 4.8495
+    },
+    {
+      "cluster_id": "422048",
+      "comp_name": "DA_18_Blackthorn, DA_18_Azir",
+      "tier": "D",
+      "avg_placement": 5.3625
+    },
+    {
+      "cluster_id": "422049",
+      "comp_name": "DA_18_Defender, DA_18_Rammus",
+      "tier": "D",
+      "avg_placement": 5.8333
     }
   ],
   "builds": [
     {
-      "cluster_id": "409049",
-      "comp_name": "TFT17_Astronaut, TFT17_Veigar",
+      "cluster_id": "422015",
+      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
       "items": [
-        "珠光护手",
-        "朔极之矛",
-        "虚空之杖"
+        "绝命花妖纹章",
+        "蓝霸符",
+        "珠光护手"
       ],
-      "avg_placement": 4.2245,
-      "count": 588,
+      "avg_placement": 3.4429,
+      "count": 19297,
       "priority_scores": {
-        "珠光护手": 100,
-        "朔极之矛": 85,
-        "虚空之杖": 72
+        "绝命花妖纹章": 100,
+        "蓝霸符": 85,
+        "珠光护手": 72
+      }
+    },
+    {
+      "cluster_id": "422048",
+      "comp_name": "DA_18_Blackthorn, DA_18_Azir",
+      "items": [
+        "绝命花妖纹章",
+        "蓝霸符",
+        "珠光护手"
+      ],
+      "avg_placement": 3.4776,
+      "count": 134,
+      "priority_scores": {
+        "绝命花妖纹章": 100,
+        "蓝霸符": 85,
+        "珠光护手": 72
       }
     }
   ]

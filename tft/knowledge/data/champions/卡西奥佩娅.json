@@ -1,0 +1,73 @@
+{
+  "name": "卡西奥佩娅",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422003",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "tier": "A",
+      "avg_placement": 4.3641
+    },
+    {
+      "cluster_id": "422004",
+      "comp_name": "DA_18_Spellweaver, DA_18_Cassiopeia",
+      "tier": "B",
+      "avg_placement": 4.6634
+    },
+    {
+      "cluster_id": "422050",
+      "comp_name": "DA_18_Coven, DA_18_Morgana",
+      "tier": "D",
+      "avg_placement": 5.8427
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422003",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "items": [
+        "绝命花妖纹章",
+        "大天使之杖",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 3.6583,
+      "count": 16419,
+      "priority_scores": {
+        "绝命花妖纹章": 100,
+        "大天使之杖": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "cluster_id": "422004",
+      "comp_name": "DA_18_Spellweaver, DA_18_Cassiopeia",
+      "items": [
+        "绝命花妖纹章",
+        "大天使之杖",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 3.6608,
+      "count": 339,
+      "priority_scores": {
+        "绝命花妖纹章": 100,
+        "大天使之杖": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "cluster_id": "422050",
+      "comp_name": "DA_18_Coven, DA_18_Morgana",
+      "items": [
+        "大天使之杖",
+        "蓝霸符",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 5.2235,
+      "count": 613,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "蓝霸符": 85,
+        "海克斯科技枪刃": 72
+      }
+    }
+  ]
+}

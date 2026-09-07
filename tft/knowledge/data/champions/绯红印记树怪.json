@@ -1,0 +1,129 @@
+{
+  "name": "绯红印记树怪",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422024",
+      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "tier": "S",
+      "avg_placement": 3.976
+    },
+    {
+      "cluster_id": "422033",
+      "comp_name": "DA_Riftbeast18",
+      "tier": "A",
+      "avg_placement": 4.4541
+    },
+    {
+      "cluster_id": "422012",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "tier": "A",
+      "avg_placement": 4.5152
+    },
+    {
+      "cluster_id": "422013",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "tier": "B",
+      "avg_placement": 4.5935
+    },
+    {
+      "cluster_id": "422014",
+      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
+      "tier": "B",
+      "avg_placement": 4.744
+    },
+    {
+      "cluster_id": "422018",
+      "comp_name": "DA_18_Adaptor, DA_Nidalee18_AP",
+      "tier": "C",
+      "avg_placement": 4.8382
+    },
+    {
+      "cluster_id": "422032",
+      "comp_name": "DA_18_Blackthorn, DA_18_Warwick",
+      "tier": "C",
+      "avg_placement": 4.9095
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422024",
+      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "items": [
+        "夜之锋刃",
+        "水银",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.4926,
+      "count": 1494,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "水银": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "cluster_id": "422012",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "items": [
+        "夜之锋刃",
+        "水银",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 4.2855,
+      "count": 1692,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "水银": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "cluster_id": "422013",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "items": [
+        "夜之锋刃",
+        "水银",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 4.0675,
+      "count": 6300,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "水银": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "cluster_id": "422018",
+      "comp_name": "DA_18_Adaptor, DA_Nidalee18_AP",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.3846,
+      "count": 13,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "422032",
+      "comp_name": "DA_18_Blackthorn, DA_18_Warwick",
+      "items": [
+        "饮血剑",
+        "水银",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.1509,
+      "count": 53,
+      "priority_scores": {
+        "饮血剑": 100,
+        "水银": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    }
+  ]
+}

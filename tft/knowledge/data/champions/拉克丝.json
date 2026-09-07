@@ -1,0 +1,38 @@
+{
+  "name": "拉克丝",
+  "appear_in_comps": [],
+  "builds": [
+    {
+      "cluster_id": "422036",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Sett",
+      "items": [
+        "珠光护手",
+        "灭世者的死亡之帽",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.2929,
+      "count": 140,
+      "priority_scores": {
+        "珠光护手": 100,
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "422042",
+      "comp_name": "DA_18_Inferno, DA_Amumu18",
+      "items": [
+        "珠光护手",
+        "灭世者的死亡之帽",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.0851,
+      "count": 47,
+      "priority_scores": {
+        "珠光护手": 100,
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
+      }
+    }
+  ]
+}

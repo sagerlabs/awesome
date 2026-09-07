@@ -1,0 +1,233 @@
+{
+  "cluster_id": "422034",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿利斯塔",
+    "伊泽瑞尔",
+    "纳尔",
+    "艾翁",
+    "凯南",
+    "瑟提",
+    "阿木木",
+    "德莱文",
+    "塔里克"
+  ],
+  "traits": [
+    "斗士 (1)",
+    "永恒之森 (1)",
+    "裁决使 (1)",
+    "翠神 (1)",
+    "地狱火 (1)",
+    "赏金猎人 (1)",
+    "宝石骑士 (1)"
+  ],
+  "stars": [
+    "雷恩加尔",
+    "易",
+    "卡兹克",
+    "卡西奥佩娅",
+    "凯特琳"
+  ],
+  "name_string": "DA_18_Elderwood, DA_18_Sett",
+  "display_names": [
+    {
+      "name": "斗士",
+      "type": "trait",
+      "score": 1.371726789965208
+    },
+    {
+      "name": "瑟提",
+      "type": "unit",
+      "score": 4.0978758469144845
+    }
+  ],
+  "count": 73,
+  "avg_placement": 5.2877,
+  "top4_rate": 0.3425,
+  "win_rate": 0.0822,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "瑟提",
+      "items": [
+        "重装战士纹章",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.4167,
+      "count": 12,
+      "score": 0.6429,
+      "place_change": -1.765,
+      "priority_scores": {
+        "重装战士纹章": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "伊泽瑞尔",
+      "items": [
+        "最后的轻语",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.1714,
+      "count": 35,
+      "score": 0.3623,
+      "place_change": -1.01,
+      "priority_scores": {
+        "最后的轻语": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "纳尔",
+      "items": [
+        "饮血剑",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.7368,
+      "count": 19,
+      "score": 0.1076,
+      "place_change": -1.445,
+      "priority_scores": {
+        "饮血剑": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "德莱文",
+      "items": [
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.7778,
+      "count": 18,
+      "score": 0.0487,
+      "place_change": -0.404,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "强袭者的链枷": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 4357,
+      "avg": 5.1366,
+      "pcnt": 0.79784
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 3704,
+      "avg": 4.8974,
+      "pcnt": 0.67826
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 2785,
+      "avg": 5.2589,
+      "pcnt": 0.50998
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 2777,
+      "avg": 5.0342,
+      "pcnt": 0.50851
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 2388,
+      "avg": 5.0406,
+      "pcnt": 0.43728
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 2169,
+      "avg": 4.9447,
+      "pcnt": 0.39718
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 1558,
+      "avg": 4.6258,
+      "pcnt": 0.2853
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 1304,
+      "avg": 4.7055,
+      "pcnt": 0.23878
+    },
+    "饮血剑": {
+      "itemNames": "DA_Bloodthirster",
+      "count": 830,
+      "avg": 4.6422,
+      "pcnt": 0.15199
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 794,
+      "avg": 4.4836,
+      "pcnt": 0.14539
+    },
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 667,
+      "avg": 4.5127,
+      "pcnt": 0.12214
+    },
+    "重装战士纹章": {
+      "itemNames": "DA_18_EmblemVanguard",
+      "count": 166,
+      "avg": 4.4578,
+      "pcnt": 0.0304
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 274,
+      "avg": 5.1642,
+      "pick_rate": 0.002705
+    },
+    {
+      "day": "2026-08-28",
+      "count": 979,
+      "avg": 5.1062,
+      "pick_rate": 0.002519
+    },
+    {
+      "day": "2026-08-29",
+      "count": 1395,
+      "avg": 5.0867,
+      "pick_rate": 0.00227
+    },
+    {
+      "day": "2026-08-30",
+      "count": 1850,
+      "avg": 5.2416,
+      "pick_rate": 0.002151
+    },
+    {
+      "day": "2026-08-31",
+      "count": 2080,
+      "avg": 5.1793,
+      "pick_rate": 0.002019
+    },
+    {
+      "day": "2026-09-01",
+      "count": 370,
+      "avg": 5.1351,
+      "pick_rate": 0.002023
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.081
+}

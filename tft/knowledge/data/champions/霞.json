@@ -2,134 +2,100 @@
   "name": "霞",
   "appear_in_comps": [
     {
-      "cluster_id": "409024",
-      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Riven",
+      "cluster_id": "422006",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
       "tier": "A",
-      "avg_placement": 4.2519
+      "avg_placement": 4.3252
     },
     {
-      "cluster_id": "409010",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_TahmKench",
-      "tier": "A",
-      "avg_placement": 4.4414
-    },
-    {
-      "cluster_id": "409021",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_ResistTank",
-      "tier": "A",
-      "avg_placement": 4.4708
-    },
-    {
-      "cluster_id": "409057",
-      "comp_name": "TFT17_ShieldTank, TFT17_Xayah",
+      "cluster_id": "422020",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Rammus",
       "tier": "B",
-      "avg_placement": 4.6609
+      "avg_placement": 4.5619
     },
     {
-      "cluster_id": "409061",
-      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Lulu",
-      "tier": "D",
-      "avg_placement": 5.3111
+      "cluster_id": "422029",
+      "comp_name": "DA_18_Elderwood, DA_18_Kayle",
+      "tier": "B",
+      "avg_placement": 4.6188
     },
     {
-      "cluster_id": "409067",
-      "comp_name": "TFT17_ResistTank, TFT17_Ornn",
+      "cluster_id": "422037",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "tier": "C",
+      "avg_placement": 4.82
+    },
+    {
+      "cluster_id": "422045",
+      "comp_name": "DA_18_Spellweaver, DA_18_KhaZix",
       "tier": "D",
-      "avg_placement": 5.5606
+      "avg_placement": 5.1856
+    },
+    {
+      "cluster_id": "422047",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Xayah",
+      "tier": "D",
+      "avg_placement": 5.7119
+    },
+    {
+      "cluster_id": "422039",
+      "comp_name": "DA_18_Fae, DA_18_Xayah",
+      "tier": "D",
+      "avg_placement": 5.8295
+    },
+    {
+      "cluster_id": "422051",
+      "comp_name": "DA_18_Elderwood, DA_18_LeBlanc",
+      "tier": "D",
+      "avg_placement": 6.0247
     }
   ],
   "builds": [
     {
-      "cluster_id": "409024",
-      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Riven",
+      "cluster_id": "422029",
+      "comp_name": "DA_18_Elderwood, DA_18_Kayle",
       "items": [
-        "最后的轻语",
-        "红霸符",
-        "海妖之怒"
+        "死亡之刃",
+        "巨人杀手",
+        "鬼索的狂暴之刃"
       ],
-      "avg_placement": 3.427,
-      "count": 1335,
+      "avg_placement": 3.5039,
+      "count": 2542,
       "priority_scores": {
-        "最后的轻语": 100,
-        "红霸符": 85,
-        "海妖之怒": 72
+        "死亡之刃": 100,
+        "巨人杀手": 85,
+        "鬼索的狂暴之刃": 72
       }
     },
     {
-      "cluster_id": "409010",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_TahmKench",
+      "cluster_id": "422047",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Xayah",
       "items": [
-        "战兔十字弩",
+        "死亡之刃",
         "鬼索的狂暴之刃",
         "无尽之刃"
       ],
-      "avg_placement": 2.9559,
-      "count": 454,
+      "avg_placement": 4.1364,
+      "count": 22,
       "priority_scores": {
-        "战兔十字弩": 100,
+        "死亡之刃": 100,
         "鬼索的狂暴之刃": 85,
         "无尽之刃": 72
       }
     },
     {
-      "cluster_id": "409021",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_ResistTank",
+      "cluster_id": "422039",
+      "comp_name": "DA_18_Fae, DA_18_Xayah",
       "items": [
-        "最后的轻语",
-        "红霸符",
-        "海妖之怒"
-      ],
-      "avg_placement": 3.6477,
-      "count": 88,
-      "priority_scores": {
-        "最后的轻语": 100,
-        "红霸符": 85,
-        "海妖之怒": 72
-      }
-    },
-    {
-      "cluster_id": "409057",
-      "comp_name": "TFT17_ShieldTank, TFT17_Xayah",
-      "items": [
-        "红霸符",
-        "海妖之怒",
-        "海妖之怒"
-      ],
-      "avg_placement": 4.1954,
-      "count": 696,
-      "priority_scores": {
-        "红霸符": 100,
-        "海妖之怒": 72
-      }
-    },
-    {
-      "cluster_id": "409025",
-      "comp_name": "TFT17_Augment_JaxCarry, TFT17_ResistTank",
-      "items": [
-        "红霸符",
-        "海妖之怒",
-        "海妖之怒"
-      ],
-      "avg_placement": 4.0667,
-      "count": 15,
-      "priority_scores": {
-        "红霸符": 100,
-        "海妖之怒": 72
-      }
-    },
-    {
-      "cluster_id": "409061",
-      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Lulu",
-      "items": [
+        "巨人杀手",
         "无尽之刃",
-        "红霸符",
         "海妖之怒"
       ],
-      "avg_placement": 4.3,
-      "count": 10,
+      "avg_placement": 4,
+      "count": 14,
       "priority_scores": {
-        "无尽之刃": 100,
-        "红霸符": 85,
+        "巨人杀手": 100,
+        "无尽之刃": 85,
         "海妖之怒": 72
       }
     }

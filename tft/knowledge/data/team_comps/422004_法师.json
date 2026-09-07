@@ -1,0 +1,228 @@
+{
+  "cluster_id": "422004",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿狸",
+    "卡西奥佩娅",
+    "蕾欧娜",
+    "莉莉娅",
+    "奥恩",
+    "拉莫斯",
+    "慎",
+    "费德提克"
+  ],
+  "traits": [
+    "护卫 (3)",
+    "法师 (1)",
+    "绝命花妖 (1)"
+  ],
+  "stars": [
+    "卡西奥佩娅",
+    "费德提克",
+    "拉莫斯",
+    "卡兹克",
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Spellweaver, DA_18_Cassiopeia",
+  "display_names": [
+    {
+      "name": "法师",
+      "type": "trait",
+      "score": 2.067713107241063
+    },
+    {
+      "name": "阿狸",
+      "type": "unit",
+      "score": 3.5528758020164988
+    }
+  ],
+  "count": 101,
+  "avg_placement": 4.6634,
+  "top4_rate": 0.4752,
+  "win_rate": 0.0693,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "卡西奥佩娅",
+      "items": [
+        "绝命花妖纹章",
+        "大天使之杖",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 3.6608,
+      "count": 339,
+      "score": 0.6795,
+      "place_change": -1.04,
+      "priority_scores": {
+        "绝命花妖纹章": 100,
+        "大天使之杖": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "unit": "阿狸",
+      "items": [
+        "巨人杀手",
+        "珠光护手",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.35,
+      "count": 20,
+      "score": 0.4363,
+      "place_change": -1.351,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "珠光护手": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "费德提克",
+      "items": [
+        "适应性头盔",
+        "冕卫",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.2174,
+      "count": 23,
+      "score": 0.3897,
+      "place_change": -1.484,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "冕卫": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "拉莫斯",
+      "items": [
+        "巨龙之爪",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 2.8095,
+      "count": 21,
+      "score": 0.1691,
+      "place_change": -1.892,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 7560,
+      "avg": 4.5499,
+      "pcnt": 0.86618
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 6898,
+      "avg": 4.7195,
+      "pcnt": 0.79033
+    },
+    "大天使之杖": {
+      "itemNames": "DA_ArchangelsStaff",
+      "count": 5124,
+      "avg": 4.1924,
+      "pcnt": 0.58708
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 4943,
+      "avg": 4.1968,
+      "pcnt": 0.56634
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 3885,
+      "avg": 4.4407,
+      "pcnt": 0.44512
+    },
+    "适应性头盔": {
+      "itemNames": "DA_AdaptiveHelm",
+      "count": 2777,
+      "avg": 4.1941,
+      "pcnt": 0.31817
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 2724,
+      "avg": 4.2779,
+      "pcnt": 0.3121
+    },
+    "巨龙之爪": {
+      "itemNames": "DA_DragonsClaw",
+      "count": 2565,
+      "avg": 4.3637,
+      "pcnt": 0.29388
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 2214,
+      "avg": 4.5524,
+      "pcnt": 0.25367
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 1369,
+      "avg": 4.1402,
+      "pcnt": 0.15685
+    },
+    "绝命花妖纹章": {
+      "itemNames": "DA_18_EmblemFloraFatalisAugment",
+      "count": 1230,
+      "avg": 3.8154,
+      "pcnt": 0.14093
+    },
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 878,
+      "avg": 4.3781,
+      "pcnt": 0.1006
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 416,
+      "avg": 4.4615,
+      "pick_rate": 0.004106
+    },
+    {
+      "day": "2026-08-28",
+      "count": 1348,
+      "avg": 4.6521,
+      "pick_rate": 0.003469
+    },
+    {
+      "day": "2026-08-29",
+      "count": 2053,
+      "avg": 4.7126,
+      "pick_rate": 0.003341
+    },
+    {
+      "day": "2026-08-30",
+      "count": 2889,
+      "avg": 4.6809,
+      "pick_rate": 0.003359
+    },
+    {
+      "day": "2026-08-31",
+      "count": 3443,
+      "avg": 4.7067,
+      "pick_rate": 0.003342
+    },
+    {
+      "day": "2026-09-01",
+      "count": 643,
+      "avg": 4.7107,
+      "pick_rate": 0.003516
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.102
+}

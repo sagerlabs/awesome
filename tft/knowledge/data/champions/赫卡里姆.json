@@ -1,0 +1,137 @@
+{
+  "name": "赫卡里姆",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422006",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "tier": "A",
+      "avg_placement": 4.3252
+    },
+    {
+      "cluster_id": "422008",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "tier": "A",
+      "avg_placement": 4.4453
+    },
+    {
+      "cluster_id": "422012",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "tier": "A",
+      "avg_placement": 4.5152
+    },
+    {
+      "cluster_id": "422013",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "tier": "B",
+      "avg_placement": 4.5935
+    },
+    {
+      "cluster_id": "422029",
+      "comp_name": "DA_18_Elderwood, DA_18_Kayle",
+      "tier": "B",
+      "avg_placement": 4.6188
+    },
+    {
+      "cluster_id": "422014",
+      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
+      "tier": "B",
+      "avg_placement": 4.744
+    },
+    {
+      "cluster_id": "422037",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "tier": "C",
+      "avg_placement": 4.82
+    },
+    {
+      "cluster_id": "422016",
+      "comp_name": "DA_18_Vanguard, DA_18_Caitlyn",
+      "tier": "C",
+      "avg_placement": 5.0438
+    },
+    {
+      "cluster_id": "422047",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Xayah",
+      "tier": "D",
+      "avg_placement": 5.7119
+    },
+    {
+      "cluster_id": "422039",
+      "comp_name": "DA_18_Fae, DA_18_Xayah",
+      "tier": "D",
+      "avg_placement": 5.8295
+    },
+    {
+      "cluster_id": "422051",
+      "comp_name": "DA_18_Elderwood, DA_18_LeBlanc",
+      "tier": "D",
+      "avg_placement": 6.0247
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422006",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "items": [
+        "薄暮法袍",
+        "振奋盔甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.8519,
+      "count": 243,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "振奋盔甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "cluster_id": "422008",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "items": [
+        "薄暮法袍",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.0881,
+      "count": 329,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "cluster_id": "422014",
+      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
+      "items": [
+        "薄暮法袍",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.6034,
+      "count": 237,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "cluster_id": "422037",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "items": [
+        "薄暮法袍",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.1765,
+      "count": 119,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "cluster_id": "422001",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿狸",
+    "伊泽瑞尔",
+    "纳尔",
+    "奥恩",
+    "瑟提",
+    "索拉卡",
+    "芸阿娜",
+    "费德提克"
+  ],
+  "traits": [
+    "灵魂莲华 (1)",
+    "斗士 (1)",
+    "护卫 (1)",
+    "永恒之森 (1)",
+    "裁决使 (2)",
+    "法师 (1)",
+    "绝命花妖 (2)"
+  ],
+  "stars": [
+    "卡兹克"
+  ],
+  "name_string": "DA_18_Executioner, DA_18_Sett",
+  "display_names": [
+    {
+      "name": "裁决使",
+      "type": "trait",
+      "score": 2.292718135158255
+    },
+    {
+      "name": "瑟提",
+      "type": "unit",
+      "score": 3.8935521813515823
+    }
+  ],
+  "count": 200,
+  "avg_placement": 4.6,
+  "top4_rate": 0.485,
+  "win_rate": 0.09,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "阿狸",
+      "items": [
+        "裁决使纹章",
+        "红霸符",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.2157,
+      "count": 51,
+      "score": 0.4373,
+      "place_change": -1.289,
+      "priority_scores": {
+        "裁决使纹章": 100,
+        "红霸符": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "瑟提",
+      "items": [
+        "棘刺背心",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.9109,
+      "count": 247,
+      "score": 0.4257,
+      "place_change": -0.594,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "伊泽瑞尔",
+      "items": [
+        "无尽之刃",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.8771,
+      "count": 301,
+      "score": 0.3053,
+      "place_change": -0.628,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "索拉卡",
+      "items": [
+        "适应性头盔",
+        "大天使之杖",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.5333,
+      "count": 60,
+      "score": 0.2953,
+      "place_change": -0.972,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "大天使之杖": 85,
+        "灭世者的死亡之帽": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 19442,
+      "avg": 4.4286,
+      "pcnt": 1.03946
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 18255,
+      "avg": 4.2778,
+      "pcnt": 0.97599
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 10989,
+      "avg": 4.3317,
+      "pcnt": 0.58752
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 8765,
+      "avg": 4.2107,
+      "pcnt": 0.46862
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 8349,
+      "avg": 4.254,
+      "pcnt": 0.44638
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 7588,
+      "avg": 4.1788,
+      "pcnt": 0.40569
+    },
+    "裁决使纹章": {
+      "itemNames": "DA_18_EmblemExecutioner",
+      "count": 7337,
+      "avg": 4.2468,
+      "pcnt": 0.39227
+    },
+    "适应性头盔": {
+      "itemNames": "DA_AdaptiveHelm",
+      "count": 5624,
+      "avg": 4.1245,
+      "pcnt": 0.30068
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 5013,
+      "avg": 4.2625,
+      "pcnt": 0.26802
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 4313,
+      "avg": 4.2734,
+      "pcnt": 0.23059
+    },
+    "大天使之杖": {
+      "itemNames": "DA_ArchangelsStaff",
+      "count": 3842,
+      "avg": 4.2324,
+      "pcnt": 0.20541
+    },
+    "棘刺背心": {
+      "itemNames": "DA_BrambleVest",
+      "count": 2616,
+      "avg": 4.2213,
+      "pcnt": 0.13986
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 1255,
+      "avg": 4.3498,
+      "pick_rate": 0.012388
+    },
+    {
+      "day": "2026-08-28",
+      "count": 4036,
+      "avg": 4.3875,
+      "pick_rate": 0.010387
+    },
+    {
+      "day": "2026-08-29",
+      "count": 5264,
+      "avg": 4.4451,
+      "pick_rate": 0.008565
+    },
+    {
+      "day": "2026-08-30",
+      "count": 6281,
+      "avg": 4.5273,
+      "pick_rate": 0.007302
+    },
+    {
+      "day": "2026-08-31",
+      "count": 6888,
+      "avg": 4.5081,
+      "pick_rate": 0.006685
+    },
+    {
+      "day": "2026-09-01",
+      "count": 1135,
+      "avg": 4.5868,
+      "pick_rate": 0.006207
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.106
+}

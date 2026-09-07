@@ -1,0 +1,79 @@
+{
+  "name": "凯尔",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422029",
+      "comp_name": "DA_18_Elderwood, DA_18_Kayle",
+      "tier": "B",
+      "avg_placement": 4.6188
+    },
+    {
+      "cluster_id": "422038",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "tier": "B",
+      "avg_placement": 4.6239
+    },
+    {
+      "cluster_id": "422044",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
+      "tier": "B",
+      "avg_placement": 4.776
+    },
+    {
+      "cluster_id": "422030",
+      "comp_name": "DA_18_Inferno, DA_18_Kayle",
+      "tier": "C",
+      "avg_placement": 5.0
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422029",
+      "comp_name": "DA_18_Elderwood, DA_18_Kayle",
+      "items": [
+        "鬼索的狂暴之刃",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 4.6231,
+      "count": 11889,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "cluster_id": "422038",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "items": [
+        "月蚀骑士纹章",
+        "鬼索的狂暴之刃",
+        "珠光护手"
+      ],
+      "avg_placement": 3.9686,
+      "count": 191,
+      "priority_scores": {
+        "月蚀骑士纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "珠光护手": 72
+      }
+    },
+    {
+      "cluster_id": "422030",
+      "comp_name": "DA_18_Inferno, DA_18_Kayle",
+      "items": [
+        "鬼索的狂暴之刃",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 4.419,
+      "count": 1179,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    }
+  ]
+}

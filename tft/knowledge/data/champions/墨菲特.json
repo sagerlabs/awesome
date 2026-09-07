@@ -1,0 +1,159 @@
+{
+  "name": "墨菲特",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "tier": "A",
+      "avg_placement": 4.474
+    },
+    {
+      "cluster_id": "422026",
+      "comp_name": "DA_Riftbeast18, DA_18_Malphite",
+      "tier": "B",
+      "avg_placement": 4.5705
+    },
+    {
+      "cluster_id": "422019",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Ezreal",
+      "tier": "B",
+      "avg_placement": 4.7481
+    },
+    {
+      "cluster_id": "422032",
+      "comp_name": "DA_18_Blackthorn, DA_18_Warwick",
+      "tier": "C",
+      "avg_placement": 4.9095
+    },
+    {
+      "cluster_id": "422043",
+      "comp_name": "DA_18_Blackthorn, DA_18_KhaZix",
+      "tier": "C",
+      "avg_placement": 4.9752
+    },
+    {
+      "cluster_id": "422025",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Malphite",
+      "tier": "D",
+      "avg_placement": 5.1037
+    },
+    {
+      "cluster_id": "422048",
+      "comp_name": "DA_18_Blackthorn, DA_18_Azir",
+      "tier": "D",
+      "avg_placement": 5.3625
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.2581,
+      "count": 8313,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422026",
+      "comp_name": "DA_Riftbeast18, DA_18_Malphite",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.9984,
+      "count": 2549,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422019",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Ezreal",
+      "items": [
+        "主宰纹章",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.4412,
+      "count": 34,
+      "priority_scores": {
+        "主宰纹章": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422032",
+      "comp_name": "DA_18_Blackthorn, DA_18_Warwick",
+      "items": [
+        "巨龙之爪",
+        "石像鬼石板甲",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 3.2826,
+      "count": 46,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 72
+      }
+    },
+    {
+      "cluster_id": "422043",
+      "comp_name": "DA_18_Blackthorn, DA_18_KhaZix",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 4.1121,
+      "count": 107,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "422025",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Malphite",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.5099,
+      "count": 453,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422048",
+      "comp_name": "DA_18_Blackthorn, DA_18_Azir",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.7865,
+      "count": 89,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ]
+}

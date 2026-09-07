@@ -1,0 +1,159 @@
+{
+  "name": "莉莉娅",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422006",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "tier": "A",
+      "avg_placement": 4.3252
+    },
+    {
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "tier": "A",
+      "avg_placement": 4.3301
+    },
+    {
+      "cluster_id": "422003",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "tier": "A",
+      "avg_placement": 4.3641
+    },
+    {
+      "cluster_id": "422010",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "tier": "A",
+      "avg_placement": 4.4202
+    },
+    {
+      "cluster_id": "422020",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Rammus",
+      "tier": "B",
+      "avg_placement": 4.5619
+    },
+    {
+      "cluster_id": "422004",
+      "comp_name": "DA_18_Spellweaver, DA_18_Cassiopeia",
+      "tier": "B",
+      "avg_placement": 4.6634
+    },
+    {
+      "cluster_id": "422027",
+      "comp_name": "DA_18_Spellweaver, DA_18_Lillia",
+      "tier": "B",
+      "avg_placement": 4.7714
+    },
+    {
+      "cluster_id": "422028",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "tier": "C",
+      "avg_placement": 4.8495
+    },
+    {
+      "cluster_id": "422035",
+      "comp_name": "DA_18_Rival, DA_18_Rengar",
+      "tier": "C",
+      "avg_placement": 4.9153
+    },
+    {
+      "cluster_id": "422040",
+      "comp_name": "DA_Juggernaut18, DA_Nidalee18_AP",
+      "tier": "D",
+      "avg_placement": 5.301
+    },
+    {
+      "cluster_id": "422047",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Xayah",
+      "tier": "D",
+      "avg_placement": 5.7119
+    },
+    {
+      "cluster_id": "422039",
+      "comp_name": "DA_18_Fae, DA_18_Xayah",
+      "tier": "D",
+      "avg_placement": 5.8295
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422006",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "items": [
+        "薄暮法袍",
+        "圣盾使的誓约",
+        "日炎斗篷"
+      ],
+      "avg_placement": 4.0251,
+      "count": 2308,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "圣盾使的誓约": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "cluster_id": "422003",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "items": [
+        "离子火花",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.4315,
+      "count": 438,
+      "priority_scores": {
+        "离子火花": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422010",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "items": [
+        "冕卫",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.9159,
+      "count": 214,
+      "priority_scores": {
+        "冕卫": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422027",
+      "comp_name": "DA_18_Spellweaver, DA_18_Lillia",
+      "items": [
+        "法师纹章",
+        "石像鬼石板甲",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.6875,
+      "count": 16,
+      "priority_scores": {
+        "法师纹章": 100,
+        "石像鬼石板甲": 85,
+        "圣盾使的誓约": 72
+      }
+    },
+    {
+      "cluster_id": "422047",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Xayah",
+      "items": [
+        "石像鬼石板甲",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.4737,
+      "count": 19,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ]
+}

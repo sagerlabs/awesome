@@ -91,7 +91,8 @@ func DefaultModelConfig() *ModelConfig {
 //
 //	# 火山引擎 Ark（豆包）
 //	ARK_API_KEY      = xxx
-//	ARK_MODEL_ID     = doubao-pro-32k-xxxxxx  （推理接入点 ID）
+//	ARK_MODEL_ID     = doubao-pro-32k-xxxxxx  （推理接入点 ID，或 Coding Plan 模型如 ark-code-latest）
+//	ARK_BASE_URL     = https://ark.cn-beijing.volces.com/api/v3（默认；Coding Plan 用 .../api/coding/v3）
 func NewChatModel(ctx context.Context, cfg *ModelConfig) (model.ChatModel, error) {
 	if cfg == nil {
 		cfg = DefaultModelConfig()
@@ -170,9 +171,18 @@ func newArkModel(ctx context.Context, cfg *ModelConfig) (model.ChatModel, error)
 	}
 	timeout := time.Duration(timeoutSec) * time.Second
 
+	// 火山 Ark 的 Base URL：
+	//   - 默认普通在线推理：https://ark.cn-beijing.volces.com/api/v3
+	//   - Coding Plan 专用模型（如 ark-code-latest）必须走：https://ark.cn-beijing.volces.com/api/coding/v3
+	baseURL := os.Getenv("ARK_BASE_URL")
+	if baseURL == "" {
+		baseURL = "https://ark.cn-beijing.volces.com/api/v3"
+	}
+
 	acfg := &ark.ChatModelConfig{
 		APIKey:      apiKey,
 		Model:       modelID,
+		BaseURL:     baseURL,
 		Temperature: &cfg.Temperature,
 		MaxTokens:   &cfg.MaxTokens,
 		Timeout:     &timeout,

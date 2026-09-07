@@ -1,0 +1,107 @@
+{
+  "name": "婕拉",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "tier": "A",
+      "avg_placement": 4.474
+    },
+    {
+      "cluster_id": "422007",
+      "comp_name": "DA_18_Blossom, DA_18_Sett",
+      "tier": "B",
+      "avg_placement": 4.5238
+    },
+    {
+      "cluster_id": "422013",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "tier": "B",
+      "avg_placement": 4.5935
+    },
+    {
+      "cluster_id": "422019",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Ezreal",
+      "tier": "B",
+      "avg_placement": 4.7481
+    },
+    {
+      "cluster_id": "422025",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Malphite",
+      "tier": "D",
+      "avg_placement": 5.1037
+    },
+    {
+      "cluster_id": "422052",
+      "comp_name": "DA_Riftbeast18, DA_CrimsonRaptor18",
+      "tier": "D",
+      "avg_placement": 6.2188
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "items": [
+        "裁决使纹章",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.6127,
+      "count": 2670,
+      "priority_scores": {
+        "裁决使纹章": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "422019",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Ezreal",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.4842,
+      "count": 95,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "422025",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Malphite",
+      "items": [
+        "红霸符",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.8676,
+      "count": 68,
+      "priority_scores": {
+        "红霸符": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "422052",
+      "comp_name": "DA_Riftbeast18, DA_CrimsonRaptor18",
+      "items": [
+        "珠光护手",
+        "莫雷洛秘典",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.6364,
+      "count": 11,
+      "priority_scores": {
+        "珠光护手": 100,
+        "莫雷洛秘典": 85,
+        "朔极之矛": 72
+      }
+    }
+  ]
+}

@@ -2,33 +2,103 @@
   "name": "纳尔",
   "appear_in_comps": [
     {
-      "cluster_id": "409021",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_ResistTank",
-      "tier": "A",
-      "avg_placement": 4.4708
+      "cluster_id": "422024",
+      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "tier": "S",
+      "avg_placement": 3.976
     },
     {
-      "cluster_id": "409053",
-      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "cluster_id": "422015",
+      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "tier": "S",
+      "avg_placement": 4.0985
+    },
+    {
+      "cluster_id": "422006",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "tier": "A",
+      "avg_placement": 4.3252
+    },
+    {
+      "cluster_id": "422002",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "tier": "A",
+      "avg_placement": 4.3871
+    },
+    {
+      "cluster_id": "422033",
+      "comp_name": "DA_Riftbeast18",
+      "tier": "A",
+      "avg_placement": 4.4541
+    },
+    {
+      "cluster_id": "422007",
+      "comp_name": "DA_18_Blossom, DA_18_Sett",
       "tier": "B",
-      "avg_placement": 4.6483
+      "avg_placement": 4.5238
+    },
+    {
+      "cluster_id": "422001",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "tier": "B",
+      "avg_placement": 4.6
+    },
+    {
+      "cluster_id": "422037",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "tier": "C",
+      "avg_placement": 4.82
+    },
+    {
+      "cluster_id": "422036",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Sett",
+      "tier": "C",
+      "avg_placement": 4.921
+    },
+    {
+      "cluster_id": "422034",
+      "comp_name": "DA_18_Elderwood, DA_18_Sett",
+      "tier": "D",
+      "avg_placement": 5.2877
+    },
+    {
+      "cluster_id": "422051",
+      "comp_name": "DA_18_Elderwood, DA_18_LeBlanc",
+      "tier": "D",
+      "avg_placement": 6.0247
     }
   ],
   "builds": [
     {
-      "cluster_id": "409053",
-      "comp_name": "TFT17_Astronaut, TFT17_Rammus",
+      "cluster_id": "422037",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
       "items": [
-        "死亡之刃",
-        "鬼索的狂暴之刃",
-        "无尽之刃"
+        "饮血剑",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
       ],
-      "avg_placement": 4.1511,
-      "count": 3752,
+      "avg_placement": 3.5413,
+      "count": 242,
       "priority_scores": {
-        "死亡之刃": 100,
-        "鬼索的狂暴之刃": 85,
-        "无尽之刃": 72
+        "饮血剑": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "422034",
+      "comp_name": "DA_18_Elderwood, DA_18_Sett",
+      "items": [
+        "饮血剑",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.7368,
+      "count": 19,
+      "priority_scores": {
+        "饮血剑": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
       }
     }
   ]

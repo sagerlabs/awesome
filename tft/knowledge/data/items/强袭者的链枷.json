@@ -2,75 +2,51 @@
   "name": "强袭者的链枷",
   "priority_list": [
     {
-      "cluster_id": "409013",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Samira",
+      "cluster_id": "422024",
+      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
       "comp_tier": "S",
-      "comp_avg": 4.0341,
-      "carry": "莎弥拉",
-      "priority_score": 85
+      "comp_avg": 3.976,
+      "carry": "远古巨龙",
+      "priority_score": 72
     },
     {
-      "cluster_id": "409034",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Ornn",
+      "cluster_id": "422021",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
       "comp_tier": "S",
-      "comp_avg": 4.2013,
-      "carry": "布里茨",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409045",
-      "comp_name": "TFT17_DRX, TFT17_Kindred",
-      "comp_tier": "S",
-      "comp_avg": 3.9722,
-      "carry": "阿卡丽",
+      "comp_avg": 4.2328,
+      "carry": "阿狸",
       "priority_score": 72
     },
     {
-      "cluster_id": "409004",
-      "comp_name": "TFT17_DarkStar, TFT17_AurelionSol",
+      "cluster_id": "422002",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
       "comp_tier": "A",
-      "comp_avg": 4.3001,
-      "carry": "奥瑞利安·索尔",
+      "comp_avg": 4.3871,
+      "carry": "伊泽瑞尔",
       "priority_score": 72
     },
     {
-      "cluster_id": "409039",
-      "comp_name": "TFT17_Augment_PoppyCarry",
+      "cluster_id": "422010",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
       "comp_tier": "A",
-      "comp_avg": 4.3649,
-      "carry": "库奇",
+      "comp_avg": 4.4202,
+      "carry": "希维尔",
       "priority_score": 72
     },
     {
-      "cluster_id": "409027",
-      "comp_name": "TFT17_Augment_AatroxCarry, TFT17_Kindred",
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
       "comp_tier": "A",
-      "comp_avg": 4.3701,
-      "carry": "阿卡丽",
+      "comp_avg": 4.474,
+      "carry": "索拉卡",
       "priority_score": 72
     },
     {
-      "cluster_id": "409017",
-      "comp_name": "TFT17_Augment_AatroxCarry, TFT17_Jax",
+      "cluster_id": "422017",
+      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
       "comp_tier": "A",
-      "comp_avg": 4.4015,
-      "carry": "阿卡丽",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409012",
-      "comp_name": "TFT17_DarkStar, TFT17_Karma",
-      "comp_tier": "A",
-      "comp_avg": 4.4314,
-      "carry": "烬",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409038",
-      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_Kaisa",
-      "comp_tier": "A",
-      "comp_avg": 4.4363,
-      "carry": "莫德凯撒",
+      "comp_avg": 4.4826,
+      "carry": "奈德丽",
       "priority_score": 72
     }
   ]

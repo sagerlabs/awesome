@@ -1,0 +1,41 @@
+{
+  "name": "暗影狼",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422024",
+      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "tier": "S",
+      "avg_placement": 3.976
+    },
+    {
+      "cluster_id": "422033",
+      "comp_name": "DA_Riftbeast18",
+      "tier": "A",
+      "avg_placement": 4.4541
+    },
+    {
+      "cluster_id": "422032",
+      "comp_name": "DA_18_Blackthorn, DA_18_Warwick",
+      "tier": "C",
+      "avg_placement": 4.9095
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422032",
+      "comp_name": "DA_18_Blackthorn, DA_18_Warwick",
+      "items": [
+        "死亡之刃",
+        "夜之锋刃",
+        "正义之手"
+      ],
+      "avg_placement": 4.6857,
+      "count": 1352,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "夜之锋刃": 85,
+        "正义之手": 72
+      }
+    }
+  ]
+}

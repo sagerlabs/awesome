@@ -1,0 +1,213 @@
+{
+  "cluster_id": "422052",
+  "tft_set": "TFTSet18",
+  "units": [
+    "厄斐琉斯",
+    "黛安娜",
+    "瑟提",
+    "约里克",
+    "婕拉",
+    "深红锋喙鸟",
+    "远古石甲虫",
+    "苍蓝雕纹魔像"
+  ],
+  "traits": [
+    "斗士 (1)",
+    "月蚀骑士 (1)",
+    "迅捷射手 (1)",
+    "召唤师 (2)",
+    "重装战士 (1)",
+    "荆棘之兴 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "深红锋喙鸟",
+    "阿兹尔",
+    "卡兹克",
+    "雷恩加尔",
+    "易"
+  ],
+  "name_string": "DA_Riftbeast18, DA_CrimsonRaptor18",
+  "display_names": [
+    {
+      "name": "召唤师",
+      "type": "trait",
+      "score": 1.3053221288515406
+    },
+    {
+      "name": "深红锋喙鸟",
+      "type": "unit",
+      "score": 3.869147659063625
+    }
+  ],
+  "count": 32,
+  "avg_placement": 6.2188,
+  "top4_rate": 0.2188,
+  "win_rate": 0.0312,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "深红锋喙鸟",
+      "items": [
+        "死亡之刃",
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 4.5833,
+      "count": 12,
+      "score": 0.587,
+      "place_change": -1.305,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "unit": "阿兹尔",
+      "items": [
+        "迅捷射手纹章",
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 3.5455,
+      "count": 11,
+      "score": 0.2754,
+      "place_change": -2.343,
+      "priority_scores": {
+        "迅捷射手纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "unit": "远古石甲虫",
+      "items": [
+        "石像鬼石板甲",
+        "狂徒铠甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.1818,
+      "count": 11,
+      "score": 0.2312,
+      "place_change": -1.707,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "婕拉",
+      "items": [
+        "珠光护手",
+        "莫雷洛秘典",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.6364,
+      "count": 11,
+      "score": 0.1838,
+      "place_change": -2.252,
+      "priority_scores": {
+        "珠光护手": 100,
+        "莫雷洛秘典": 85,
+        "朔极之矛": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 2565,
+      "avg": 5.6749,
+      "pcnt": 1.02641
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 1864,
+      "avg": 5.6835,
+      "pcnt": 0.7459
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 1245,
+      "avg": 5.4908,
+      "pcnt": 0.4982
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 916,
+      "avg": 5.6321,
+      "pcnt": 0.36655
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 590,
+      "avg": 5.6508,
+      "pcnt": 0.23609
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 568,
+      "avg": 5.5863,
+      "pcnt": 0.22729
+    },
+    "迅捷射手纹章": {
+      "itemNames": "DA_18_EmblemRapidfire",
+      "count": 443,
+      "avg": 5.1264,
+      "pcnt": 0.17727
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 434,
+      "avg": 5.0438,
+      "pcnt": 0.17367
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 270,
+      "avg": 5.2667,
+      "pcnt": 0.10804
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 154,
+      "avg": 5.9221,
+      "pick_rate": 0.00152
+    },
+    {
+      "day": "2026-08-28",
+      "count": 415,
+      "avg": 6,
+      "pick_rate": 0.001068
+    },
+    {
+      "day": "2026-08-29",
+      "count": 622,
+      "avg": 5.926,
+      "pick_rate": 0.001012
+    },
+    {
+      "day": "2026-08-30",
+      "count": 770,
+      "avg": 5.9117,
+      "pick_rate": 0.000895
+    },
+    {
+      "day": "2026-08-31",
+      "count": 1029,
+      "avg": 5.8231,
+      "pick_rate": 0.000999
+    },
+    {
+      "day": "2026-09-01",
+      "count": 182,
+      "avg": 6.022,
+      "pick_rate": 0.000995
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.097
+}

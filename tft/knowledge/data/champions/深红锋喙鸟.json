@@ -1,0 +1,73 @@
+{
+  "name": "深红锋喙鸟",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422013",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "tier": "B",
+      "avg_placement": 4.5935
+    },
+    {
+      "cluster_id": "422014",
+      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
+      "tier": "B",
+      "avg_placement": 4.744
+    },
+    {
+      "cluster_id": "422052",
+      "comp_name": "DA_Riftbeast18, DA_CrimsonRaptor18",
+      "tier": "D",
+      "avg_placement": 6.2188
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422013",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "items": [
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "最后的轻语"
+      ],
+      "avg_placement": 3.9203,
+      "count": 389,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "最后的轻语": 72
+      }
+    },
+    {
+      "cluster_id": "422014",
+      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海妖之怒",
+        "最后的轻语"
+      ],
+      "avg_placement": 3.791,
+      "count": 737,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海妖之怒": 85,
+        "最后的轻语": 72
+      }
+    },
+    {
+      "cluster_id": "422052",
+      "comp_name": "DA_Riftbeast18, DA_CrimsonRaptor18",
+      "items": [
+        "死亡之刃",
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 4.5833,
+      "count": 12,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "海克斯科技枪刃": 72
+      }
+    }
+  ]
+}

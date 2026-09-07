@@ -2,212 +2,132 @@
   "name": "石像鬼石板甲",
   "priority_list": [
     {
-      "cluster_id": "409013",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Samira",
+      "cluster_id": "422021",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
       "comp_tier": "S",
-      "comp_avg": 4.0341,
-      "carry": "奥恩",
+      "comp_avg": 4.2328,
+      "carry": "瑟提",
       "priority_score": 100
     },
     {
-      "cluster_id": "409034",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Ornn",
+      "cluster_id": "422003",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.3641,
+      "carry": "拉莫斯",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "422002",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "comp_tier": "A",
+      "comp_avg": 4.3871,
+      "carry": "茂凯",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "422005",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "comp_tier": "A",
+      "comp_avg": 4.4132,
+      "carry": "峡谷迅捷蟹",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "422033",
+      "comp_name": "DA_Riftbeast18",
+      "comp_tier": "A",
+      "comp_avg": 4.4541,
+      "carry": "远古石甲虫",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "422012",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "comp_tier": "A",
+      "comp_avg": 4.5152,
+      "carry": "苍蓝雕纹魔像",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "422024",
+      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
       "comp_tier": "S",
-      "comp_avg": 4.2013,
-      "carry": "奥恩",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409028",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
-      "comp_tier": "S",
-      "comp_avg": 4.2087,
-      "carry": "奥恩",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409004",
-      "comp_name": "TFT17_DarkStar, TFT17_AurelionSol",
-      "comp_tier": "A",
-      "comp_avg": 4.3001,
-      "carry": "塔姆",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409035",
-      "comp_name": "TFT17_APTrait, TFT17_MissFortune",
-      "comp_tier": "A",
-      "comp_avg": 4.3386,
-      "carry": "奥恩",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409038",
-      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_Kaisa",
-      "comp_tier": "A",
-      "comp_avg": 4.4363,
-      "carry": "俄洛伊",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409048",
-      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_ShieldTank",
-      "comp_tier": "A",
-      "comp_avg": 4.4469,
-      "carry": "蕾欧娜",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409045",
-      "comp_name": "TFT17_DRX, TFT17_Kindred",
-      "comp_tier": "S",
-      "comp_avg": 3.9722,
-      "carry": "莫甘娜",
+      "comp_avg": 3.976,
+      "carry": "苍蓝雕纹魔像",
       "priority_score": 85
     },
     {
-      "cluster_id": "409045",
-      "comp_name": "TFT17_DRX, TFT17_Kindred",
+      "cluster_id": "422015",
+      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
       "comp_tier": "S",
-      "comp_avg": 3.9722,
-      "carry": "塔姆",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409054",
-      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Viktor",
-      "comp_tier": "S",
-      "comp_avg": 4.2261,
-      "carry": "蕾欧娜",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409019",
-      "comp_name": "TFT17_DRX, TFT17_Belveth",
-      "comp_tier": "A",
-      "comp_avg": 4.2675,
+      "comp_avg": 4.0985,
       "carry": "雷克塞",
       "priority_score": 85
     },
     {
-      "cluster_id": "409003",
-      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Urgot",
-      "comp_tier": "A",
-      "comp_avg": 4.2778,
-      "carry": "奥恩",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409050",
-      "comp_name": "TFT17_Augment_NasusCarry",
-      "comp_tier": "A",
-      "comp_avg": 4.3078,
-      "carry": "奥恩",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409031",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc",
-      "comp_tier": "A",
-      "comp_avg": 4.3374,
-      "carry": "莫甘娜",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409020",
-      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_FlexTrait",
-      "comp_tier": "A",
-      "comp_avg": 4.3546,
-      "carry": "拉莫斯",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409009",
-      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
-      "comp_tier": "A",
-      "comp_avg": 4.4015,
-      "carry": "俄洛伊",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409066",
-      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora",
-      "comp_tier": "A",
-      "comp_avg": 4.4086,
-      "carry": "俄洛伊",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409012",
-      "comp_name": "TFT17_DarkStar, TFT17_Karma",
-      "comp_tier": "A",
-      "comp_avg": 4.4314,
-      "carry": "塔姆",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409048",
-      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_ShieldTank",
-      "comp_tier": "A",
-      "comp_avg": 4.4469,
-      "carry": "俄洛伊",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409021",
-      "comp_name": "TFT17_RangedTrait, TFT17_Xayah, TFT17_ResistTank",
-      "comp_tier": "A",
-      "comp_avg": 4.4708,
-      "carry": "拉莫斯",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409054",
-      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Viktor",
+      "cluster_id": "422009",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
       "comp_tier": "S",
-      "comp_avg": 4.2261,
-      "carry": "莫德凯撒",
-      "priority_score": 72
+      "comp_avg": 4.1713,
+      "carry": "蔚",
+      "priority_score": 85
     },
     {
-      "cluster_id": "409024",
-      "comp_name": "TFT17_Stargazer_Mountain, TFT17_Riven",
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
       "comp_tier": "A",
-      "comp_avg": 4.2519,
-      "carry": "努努和威朗普",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409039",
-      "comp_name": "TFT17_Augment_PoppyCarry",
-      "comp_tier": "A",
-      "comp_avg": 4.3649,
+      "comp_avg": 4.3301,
       "carry": "拉莫斯",
-      "priority_score": 72
+      "priority_score": 85
     },
     {
-      "cluster_id": "409005",
-      "comp_name": "TFT17_Astronaut, TFT17_Corki",
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
       "comp_tier": "A",
-      "comp_avg": 4.3714,
-      "carry": "拉莫斯",
-      "priority_score": 72
+      "comp_avg": 4.3301,
+      "carry": "蔚",
+      "priority_score": 85
     },
     {
-      "cluster_id": "409017",
-      "comp_name": "TFT17_Augment_AatroxCarry, TFT17_Jax",
+      "cluster_id": "422005",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
       "comp_tier": "A",
-      "comp_avg": 4.4015,
-      "carry": "贾克斯",
-      "priority_score": 72
+      "comp_avg": 4.4132,
+      "carry": "瑟庄妮",
+      "priority_score": 85
     },
     {
-      "cluster_id": "409043",
-      "comp_name": "TFT17_Mecha, TFT17_AurelionSol, TFT17_Karma",
+      "cluster_id": "422010",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
       "comp_tier": "A",
-      "comp_avg": 4.4194,
-      "carry": "超级机甲",
-      "priority_score": 72
+      "comp_avg": 4.4202,
+      "carry": "阿木木",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "422008",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.4453,
+      "carry": "赫卡里姆",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "422033",
+      "comp_name": "DA_Riftbeast18",
+      "comp_tier": "A",
+      "comp_avg": 4.4541,
+      "carry": "峡谷迅捷蟹",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "comp_tier": "A",
+      "comp_avg": 4.474,
+      "carry": "墨菲特",
+      "priority_score": 85
     }
   ]
 }

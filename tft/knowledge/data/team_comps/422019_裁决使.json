@@ -1,0 +1,217 @@
+{
+  "cluster_id": "422019",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿兹尔",
+    "伊泽瑞尔",
+    "墨菲特",
+    "索拉卡",
+    "约里克",
+    "婕拉",
+    "阿木木",
+    "费德提克"
+  ],
+  "traits": [
+    "魔岩巨兽 (1)",
+    "黑荆棘 (1)",
+    "裁决使 (2)",
+    "召唤师 (2)",
+    "荆棘之兴 (1)",
+    "绝命花妖 (2)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "可酷伯",
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Executioner, DA_18_Malphite, DA_18_Ezreal",
+  "display_names": [
+    {
+      "name": "裁决使",
+      "type": "trait",
+      "score": 2.4548042157089007
+    },
+    {
+      "name": "伊泽瑞尔",
+      "type": "unit",
+      "score": 4.07500576967459
+    }
+  ],
+  "count": 131,
+  "avg_placement": 4.7481,
+  "top4_rate": 0.4351,
+  "win_rate": 0.0916,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "伊泽瑞尔",
+      "items": [
+        "死亡之刃",
+        "最后的轻语",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.7386,
+      "count": 88,
+      "score": 0.5388,
+      "place_change": -1.018,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "最后的轻语": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "墨菲特",
+      "items": [
+        "主宰纹章",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.4412,
+      "count": 34,
+      "score": 0.5367,
+      "place_change": -1.316,
+      "priority_scores": {
+        "主宰纹章": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "索拉卡",
+      "items": [
+        "灭世者的死亡之帽",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.9921,
+      "count": 126,
+      "score": 0.3048,
+      "place_change": -0.765,
+      "priority_scores": {
+        "灭世者的死亡之帽": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "婕拉",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.4842,
+      "count": 95,
+      "score": 0.218,
+      "place_change": -1.273,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 14030,
+      "avg": 4.6354,
+      "pcnt": 1.07931
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 11537,
+      "avg": 4.506,
+      "pcnt": 0.88753
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 7096,
+      "avg": 4.5924,
+      "pcnt": 0.54589
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 5622,
+      "avg": 4.4036,
+      "pcnt": 0.43249
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 5071,
+      "avg": 4.5697,
+      "pcnt": 0.39011
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 5056,
+      "avg": 4.3305,
+      "pcnt": 0.38895
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 4807,
+      "avg": 4.6235,
+      "pcnt": 0.3698
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 4648,
+      "avg": 4.2222,
+      "pcnt": 0.35757
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 2843,
+      "avg": 4.3356,
+      "pcnt": 0.21871
+    },
+    "主宰纹章": {
+      "itemNames": "DA_18_EmblemJuggernaut",
+      "count": 311,
+      "avg": 4.0225,
+      "pcnt": 0.02392
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 648,
+      "avg": 4.6883,
+      "pick_rate": 0.006397
+    },
+    {
+      "day": "2026-08-28",
+      "count": 2485,
+      "avg": 4.7646,
+      "pick_rate": 0.006395
+    },
+    {
+      "day": "2026-08-29",
+      "count": 3525,
+      "avg": 4.7495,
+      "pick_rate": 0.005736
+    },
+    {
+      "day": "2026-08-30",
+      "count": 4387,
+      "avg": 4.7948,
+      "pick_rate": 0.0051
+    },
+    {
+      "day": "2026-08-31",
+      "count": 4839,
+      "avg": 4.7386,
+      "pick_rate": 0.004697
+    },
+    {
+      "day": "2026-09-01",
+      "count": 820,
+      "avg": 4.7683,
+      "pick_rate": 0.004484
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.095
+}

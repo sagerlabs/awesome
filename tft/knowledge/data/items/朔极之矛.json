@@ -2,115 +2,67 @@
   "name": "朔极之矛",
   "priority_list": [
     {
-      "cluster_id": "409013",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Samira",
+      "cluster_id": "422015",
+      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
       "comp_tier": "S",
-      "comp_avg": 4.0341,
-      "carry": "娜美",
+      "comp_avg": 4.0985,
+      "carry": "提莫",
       "priority_score": 85
     },
     {
-      "cluster_id": "409028",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Nami",
+      "cluster_id": "422006",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.3252,
+      "carry": "拉露恩",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "422002",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "comp_tier": "A",
+      "comp_avg": 4.3871,
+      "carry": "伊泽瑞尔",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "422010",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "comp_tier": "A",
+      "comp_avg": 4.4202,
+      "carry": "希维尔",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "comp_tier": "A",
+      "comp_avg": 4.474,
+      "carry": "婕拉",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "comp_tier": "A",
+      "comp_avg": 4.474,
+      "carry": "索拉卡",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "422009",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
       "comp_tier": "S",
-      "comp_avg": 4.2087,
-      "carry": "布里茨",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409004",
-      "comp_name": "TFT17_DarkStar, TFT17_AurelionSol",
-      "comp_tier": "A",
-      "comp_avg": 4.3001,
-      "carry": "卡尔玛",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409031",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc",
-      "comp_tier": "A",
-      "comp_avg": 4.3374,
-      "carry": "卡尔玛",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409031",
-      "comp_name": "TFT17_SummonTrait, TFT17_Leblanc",
-      "comp_tier": "A",
-      "comp_avg": 4.3374,
-      "carry": "娑娜",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409020",
-      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_FlexTrait",
-      "comp_tier": "A",
-      "comp_avg": 4.3546,
-      "carry": "卡尔玛",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409043",
-      "comp_name": "TFT17_Mecha, TFT17_AurelionSol, TFT17_Karma",
-      "comp_tier": "A",
-      "comp_avg": 4.4194,
-      "carry": "卡尔玛",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409013",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Samira",
-      "comp_tier": "S",
-      "comp_avg": 4.0341,
-      "carry": "莎弥拉",
+      "comp_avg": 4.1713,
+      "carry": "克格莫",
       "priority_score": 72
     },
     {
-      "cluster_id": "409034",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Ornn",
-      "comp_tier": "S",
-      "comp_avg": 4.2013,
-      "carry": "莎弥拉",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409034",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Ornn",
-      "comp_tier": "S",
-      "comp_avg": 4.2013,
-      "carry": "娜美",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409035",
-      "comp_name": "TFT17_APTrait, TFT17_MissFortune",
+      "cluster_id": "422010",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
       "comp_tier": "A",
-      "comp_avg": 4.3386,
-      "carry": "厄运小姐",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409035",
-      "comp_name": "TFT17_APTrait, TFT17_MissFortune",
-      "comp_tier": "A",
-      "comp_avg": 4.3386,
-      "carry": "娜美",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409039",
-      "comp_name": "TFT17_Augment_PoppyCarry",
-      "comp_tier": "A",
-      "comp_avg": 4.3649,
-      "carry": "波比",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409066",
-      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora",
-      "comp_tier": "A",
-      "comp_avg": 4.4086,
-      "carry": "阿萝拉",
+      "comp_avg": 4.4202,
+      "carry": "艾希",
       "priority_score": 72
     }
   ]

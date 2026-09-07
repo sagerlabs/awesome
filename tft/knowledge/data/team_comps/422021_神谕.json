@@ -1,0 +1,225 @@
+{
+  "cluster_id": "422021",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿狸",
+    "莫甘娜",
+    "苍蓝哨戒",
+    "瑟提",
+    "卡尔玛",
+    "远古石甲虫",
+    "苍蓝雕纹魔像",
+    "塔里克"
+  ],
+  "traits": [
+    "灵魂莲华 (1)",
+    "斗士 (1)",
+    "神谕 (2)",
+    "法师 (1)",
+    "重装战士 (1)",
+    "宝石骑士 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "蕾欧娜",
+    "阿卡丽",
+    "霞",
+    "韦鲁斯",
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Vanguard, DA_18_Ahri",
+  "display_names": [
+    {
+      "name": "神谕",
+      "type": "trait",
+      "score": 2.079863653001464
+    },
+    {
+      "name": "阿狸",
+      "type": "unit",
+      "score": 4.387467972181552
+    }
+  ],
+  "count": 3221,
+  "avg_placement": 4.2328,
+  "top4_rate": 0.5585,
+  "win_rate": 0.1276,
+  "tier": "S",
+  "builds": [
+    {
+      "unit": "阿狸",
+      "items": [
+        "神谕纹章",
+        "珠光护手",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.6545,
+      "count": 18573,
+      "score": 0.5316,
+      "place_change": -0.514,
+      "priority_scores": {
+        "神谕纹章": 100,
+        "珠光护手": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "莫甘娜",
+      "items": [
+        "莫雷洛秘典",
+        "灭世者的死亡之帽",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.629,
+      "count": 15481,
+      "score": 0.434,
+      "place_change": -0.539,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "灭世者的死亡之帽": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "瑟提",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.6438,
+      "count": 6976,
+      "score": 0.2528,
+      "place_change": -0.524,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "适应性头盔",
+        "圣盾使的誓约",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.3052,
+      "count": 2749,
+      "score": 0.2414,
+      "place_change": -0.863,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "圣盾使的誓约": 72
+      }
+    }
+  ],
+  "build_items": {
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 274660,
+      "avg": 4.0402,
+      "pcnt": 1.04723
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 245191,
+      "avg": 4.0275,
+      "pcnt": 0.93487
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 194511,
+      "avg": 3.9508,
+      "pcnt": 0.74164
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 161950,
+      "avg": 3.9364,
+      "pcnt": 0.61749
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 157190,
+      "avg": 3.8635,
+      "pcnt": 0.59934
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 128509,
+      "avg": 4.0191,
+      "pcnt": 0.48998
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 119342,
+      "avg": 3.7577,
+      "pcnt": 0.45503
+    },
+    "适应性头盔": {
+      "itemNames": "DA_AdaptiveHelm",
+      "count": 111501,
+      "avg": 3.6812,
+      "pcnt": 0.42513
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 96623,
+      "avg": 3.7957,
+      "pcnt": 0.36841
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 79693,
+      "avg": 3.7602,
+      "pcnt": 0.30386
+    },
+    "神谕纹章": {
+      "itemNames": "DA_18_EmblemInvoker",
+      "count": 63669,
+      "avg": 3.7105,
+      "pcnt": 0.24276
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 1626,
+      "avg": 4.2269,
+      "pick_rate": 0.016051
+    },
+    {
+      "day": "2026-08-28",
+      "count": 15876,
+      "avg": 4.0916,
+      "pick_rate": 0.040857
+    },
+    {
+      "day": "2026-08-29",
+      "count": 54472,
+      "avg": 4.1387,
+      "pick_rate": 0.088636
+    },
+    {
+      "day": "2026-08-30",
+      "count": 87778,
+      "avg": 4.1704,
+      "pick_rate": 0.102045
+    },
+    {
+      "day": "2026-08-31",
+      "count": 107626,
+      "avg": 4.1779,
+      "pick_rate": 0.104462
+    },
+    {
+      "day": "2026-09-01",
+      "count": 19121,
+      "avg": 4.174,
+      "pick_rate": 0.104569
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": 0.058
+}

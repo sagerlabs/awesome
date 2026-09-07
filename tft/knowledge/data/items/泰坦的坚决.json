@@ -2,43 +2,19 @@
   "name": "泰坦的坚决",
   "priority_list": [
     {
-      "cluster_id": "409050",
-      "comp_name": "TFT17_Augment_NasusCarry",
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
       "comp_tier": "A",
-      "comp_avg": 4.3078,
-      "carry": "内瑟斯",
+      "comp_avg": 4.3301,
+      "carry": "雷恩加尔",
       "priority_score": 72
     },
     {
-      "cluster_id": "409015",
-      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
+      "cluster_id": "422008",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
       "comp_tier": "A",
-      "comp_avg": 4.3545,
-      "carry": "易",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409027",
-      "comp_name": "TFT17_Augment_AatroxCarry, TFT17_Kindred",
-      "comp_tier": "A",
-      "comp_avg": 4.3701,
-      "carry": "亚托克斯",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409017",
-      "comp_name": "TFT17_Augment_AatroxCarry, TFT17_Jax",
-      "comp_tier": "A",
-      "comp_avg": 4.4015,
-      "carry": "亚托克斯",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409001",
-      "comp_name": "TFT17_Augment_LeonaCarry",
-      "comp_tier": "A",
-      "comp_avg": 4.405,
-      "carry": "蕾欧娜",
+      "comp_avg": 4.4453,
+      "carry": "雷恩加尔",
       "priority_score": 72
     }
   ]

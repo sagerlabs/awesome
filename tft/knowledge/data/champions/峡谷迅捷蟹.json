@@ -1,0 +1,79 @@
+{
+  "name": "峡谷迅捷蟹",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422005",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "tier": "A",
+      "avg_placement": 4.4132
+    },
+    {
+      "cluster_id": "422033",
+      "comp_name": "DA_Riftbeast18",
+      "tier": "A",
+      "avg_placement": 4.4541
+    },
+    {
+      "cluster_id": "422017",
+      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
+      "tier": "A",
+      "avg_placement": 4.4826
+    },
+    {
+      "cluster_id": "422011",
+      "comp_name": "DA_18_Invoker, DA_18_Sentry",
+      "tier": "B",
+      "avg_placement": 4.5469
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422005",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.3021,
+      "count": 2787,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422033",
+      "comp_name": "DA_Riftbeast18",
+      "items": [
+        "薄暮法袍",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0564,
+      "count": 603,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422011",
+      "comp_name": "DA_18_Invoker, DA_18_Sentry",
+      "items": [
+        "棘刺背心",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.975,
+      "count": 40,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ]
+}

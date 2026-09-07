@@ -1,0 +1,222 @@
+{
+  "cluster_id": "422026",
+  "tft_set": "TFTSet18",
+  "units": [
+    "墨菲特",
+    "雷克塞",
+    "希维尔",
+    "绯红树怪",
+    "克格莫",
+    "远古石甲虫",
+    "奈德丽",
+    "苍蓝雕纹魔像"
+  ],
+  "traits": [
+    "魔战士 (1)",
+    "魔岩巨兽 (1)",
+    "黑荆棘 (1)",
+    "斗士 (1)",
+    "帝王斑蝶 (1)",
+    "猎人 (1)",
+    "神谕 (1)",
+    "野兽之灵 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "雷恩加尔"
+  ],
+  "name_string": "DA_Riftbeast18, DA_18_Malphite",
+  "display_names": [
+    {
+      "name": "猎人",
+      "type": "trait",
+      "score": 1.2794997281131049
+    },
+    {
+      "name": "希维尔",
+      "type": "unit",
+      "score": 4.099134144811144
+    },
+    {
+      "name": "奈德丽",
+      "type": "unit",
+      "score": 4.0503199899611
+    }
+  ],
+  "count": 752,
+  "avg_placement": 4.5705,
+  "top4_rate": 0.512,
+  "win_rate": 0.0811,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "希维尔",
+      "items": [
+        "无尽之刃",
+        "红霸符",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.8905,
+      "count": 2421,
+      "score": 0.705,
+      "place_change": -0.69,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "红霸符": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "墨菲特",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.9984,
+      "count": 2549,
+      "score": 0.5872,
+      "place_change": -0.582,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "奈德丽",
+      "items": [
+        "无尽之刃",
+        "朔极之矛",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 4.1368,
+      "count": 2112,
+      "score": 0.5419,
+      "place_change": -0.443,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "朔极之矛": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "适应性头盔",
+        "圣盾使的誓约",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.4505,
+      "count": 91,
+      "score": 0.1273,
+      "place_change": -1.13,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "圣盾使的誓约": 72
+      }
+    }
+  ],
+  "build_items": {
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 25697,
+      "avg": 4.3183,
+      "pcnt": 1.07487
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 24717,
+      "avg": 4.415,
+      "pcnt": 1.03388
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 16434,
+      "avg": 4.274,
+      "pcnt": 0.68741
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 13968,
+      "avg": 4.3802,
+      "pcnt": 0.58426
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 12570,
+      "avg": 4.1504,
+      "pcnt": 0.52579
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 10740,
+      "avg": 4.1984,
+      "pcnt": 0.44924
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 9945,
+      "avg": 4.1575,
+      "pcnt": 0.41599
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 8438,
+      "avg": 4.1996,
+      "pcnt": 0.35295
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 7119,
+      "avg": 4.1409,
+      "pcnt": 0.29778
+    },
+    "适应性头盔": {
+      "itemNames": "DA_AdaptiveHelm",
+      "count": 5418,
+      "avg": 4.0679,
+      "pcnt": 0.22663
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 554,
+      "avg": 4.639,
+      "pick_rate": 0.005469
+    },
+    {
+      "day": "2026-08-28",
+      "count": 2019,
+      "avg": 4.6939,
+      "pick_rate": 0.005196
+    },
+    {
+      "day": "2026-08-29",
+      "count": 3236,
+      "avg": 4.6202,
+      "pick_rate": 0.005266
+    },
+    {
+      "day": "2026-08-30",
+      "count": 5085,
+      "avg": 4.6785,
+      "pick_rate": 0.005912
+    },
+    {
+      "day": "2026-08-31",
+      "count": 12083,
+      "avg": 4.566,
+      "pick_rate": 0.011728
+    },
+    {
+      "day": "2026-09-01",
+      "count": 3969,
+      "avg": 4.4583,
+      "pick_rate": 0.021706
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.068
+}

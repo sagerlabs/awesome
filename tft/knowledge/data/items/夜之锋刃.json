@@ -2,92 +2,52 @@
   "name": "夜之锋刃",
   "priority_list": [
     {
-      "cluster_id": "409006",
-      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_Illaoi",
+      "cluster_id": "422024",
+      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
       "comp_tier": "S",
-      "comp_avg": 4.1825,
-      "carry": "小木灵",
+      "comp_avg": 3.976,
+      "carry": "绯红印记树怪",
       "priority_score": 100
     },
     {
-      "cluster_id": "409015",
-      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
+      "cluster_id": "422002",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
       "comp_tier": "A",
-      "comp_avg": 4.3545,
+      "comp_avg": 4.3871,
+      "carry": "凯南",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "422008",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.4453,
+      "carry": "雷恩加尔",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "422008",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.4453,
+      "carry": "卡兹克",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "422012",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "comp_tier": "A",
+      "comp_avg": 4.5152,
+      "carry": "绯红印记树怪",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "422009",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "comp_tier": "S",
+      "comp_avg": 4.1713,
       "carry": "易",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409015",
-      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
-      "comp_tier": "A",
-      "comp_avg": 4.3545,
-      "carry": "菲奥娜",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409009",
-      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
-      "comp_tier": "A",
-      "comp_avg": 4.4015,
-      "carry": "派克",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409006",
-      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_Illaoi",
-      "comp_tier": "S",
-      "comp_avg": 4.1825,
-      "carry": "派克",
       "priority_score": 85
-    },
-    {
-      "cluster_id": "409019",
-      "comp_name": "TFT17_DRX, TFT17_Belveth",
-      "comp_tier": "A",
-      "comp_avg": 4.2675,
-      "carry": "阿卡丽",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409020",
-      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_FlexTrait",
-      "comp_tier": "A",
-      "comp_avg": 4.3546,
-      "carry": "小木灵",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409020",
-      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_FlexTrait",
-      "comp_tier": "A",
-      "comp_avg": 4.3546,
-      "carry": "派克",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409017",
-      "comp_name": "TFT17_Augment_AatroxCarry, TFT17_Jax",
-      "comp_tier": "A",
-      "comp_avg": 4.4015,
-      "carry": "亚托克斯",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409048",
-      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_ShieldTank",
-      "comp_tier": "A",
-      "comp_avg": 4.4469,
-      "carry": "莫德凯撒",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409066",
-      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora",
-      "comp_tier": "A",
-      "comp_avg": 4.4086,
-      "carry": "菲奥娜",
-      "priority_score": 72
     }
   ]
 }

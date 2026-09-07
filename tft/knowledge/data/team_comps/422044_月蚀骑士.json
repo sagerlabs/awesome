@@ -1,0 +1,218 @@
+{
+  "cluster_id": "422044",
+  "tft_set": "TFTSet18",
+  "units": [
+    "拉露恩",
+    "厄斐琉斯",
+    "黛安娜",
+    "凯尔",
+    "蕾欧娜",
+    "茂凯",
+    "瑟庄妮",
+    "费德提克",
+    "塔里克"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "日月双蚀 (1)",
+    "月蚀骑士 (2)",
+    "远古树精 (1)",
+    "迅捷射手 (1)",
+    "日蚀骑士 (1)",
+    "法师 (1)",
+    "重装战士 (1)",
+    "月华神女 (1)",
+    "宝石骑士 (1)",
+    "绝命花妖 (1)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Lunar, DA_18_Aphelios",
+  "display_names": [
+    {
+      "name": "月蚀骑士",
+      "type": "trait",
+      "score": 1.8776197032277804
+    },
+    {
+      "name": "厄斐琉斯",
+      "type": "unit",
+      "score": 4.330197338228546
+    }
+  ],
+  "count": 183,
+  "avg_placement": 4.776,
+  "top4_rate": 0.4262,
+  "win_rate": 0.1421,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "厄斐琉斯",
+      "items": [
+        "巨人杀手",
+        "海妖之怒",
+        "红霸符"
+      ],
+      "avg_placement": 3.8378,
+      "count": 37,
+      "score": 0.5486,
+      "place_change": -1.152,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "海妖之怒": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "unit": "拉露恩",
+      "items": [
+        "海克斯科技枪刃",
+        "珠光护手",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.5,
+      "count": 38,
+      "score": 0.2195,
+      "place_change": -1.489,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "珠光护手": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "茂凯",
+      "items": [
+        "石像鬼石板甲",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.2188,
+      "count": 64,
+      "score": 0.216,
+      "place_change": -1.771,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "黛安娜",
+      "items": [
+        "金锅铲冠冕"
+      ],
+      "avg_placement": 3.3714,
+      "count": 35,
+      "score": 0.017,
+      "place_change": -1.618,
+      "priority_scores": {
+        "金锅铲冠冕": 100
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 9683,
+      "avg": 4.8043,
+      "pcnt": 0.74063
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 6936,
+      "avg": 4.6899,
+      "pcnt": 0.53052
+    },
+    "海妖之怒": {
+      "itemNames": "DA_KrakensFury",
+      "count": 5648,
+      "avg": 4.7757,
+      "pcnt": 0.432
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 5343,
+      "avg": 4.5396,
+      "pcnt": 0.40867
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 4537,
+      "avg": 4.6169,
+      "pcnt": 0.34702
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 4525,
+      "avg": 4.6075,
+      "pcnt": 0.34611
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 4371,
+      "avg": 4.6577,
+      "pcnt": 0.33433
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 2966,
+      "avg": 4.6322,
+      "pcnt": 0.22686
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 1926,
+      "avg": 4.4979,
+      "pcnt": 0.14732
+    },
+    "金锅铲冠冕": {
+      "itemNames": "DA_TacticiansCape",
+      "count": 555,
+      "avg": 4.0559,
+      "pcnt": 0.04245
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 490,
+      "avg": 4.8898,
+      "pick_rate": 0.004837
+    },
+    {
+      "day": "2026-08-28",
+      "count": 1904,
+      "avg": 4.9028,
+      "pick_rate": 0.0049
+    },
+    {
+      "day": "2026-08-29",
+      "count": 3020,
+      "avg": 4.8987,
+      "pick_rate": 0.004914
+    },
+    {
+      "day": "2026-08-30",
+      "count": 4327,
+      "avg": 5.0153,
+      "pick_rate": 0.00503
+    },
+    {
+      "day": "2026-08-31",
+      "count": 5334,
+      "avg": 4.9753,
+      "pick_rate": 0.005177
+    },
+    {
+      "day": "2026-09-01",
+      "count": 863,
+      "avg": 5.1993,
+      "pick_rate": 0.00472
+    }
+  ],
+  "levelling": "Fast 9",
+  "difficulty": -0.133
+}

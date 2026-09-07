@@ -2,51 +2,51 @@
   "name": "日炎斗篷",
   "priority_list": [
     {
-      "cluster_id": "409015",
-      "comp_name": "TFT17_MeleeTrait, TFT17_MasterYi",
+      "cluster_id": "422003",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
       "comp_tier": "A",
-      "comp_avg": 4.3545,
-      "carry": "塔姆",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409039",
-      "comp_name": "TFT17_Augment_PoppyCarry",
-      "comp_tier": "A",
-      "comp_avg": 4.3649,
-      "carry": "奥恩",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409050",
-      "comp_name": "TFT17_Augment_NasusCarry",
-      "comp_tier": "A",
-      "comp_avg": 4.3078,
-      "carry": "蕾欧娜",
+      "comp_avg": 4.3641,
+      "carry": "莉莉娅",
       "priority_score": 85
     },
     {
-      "cluster_id": "409009",
-      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "cluster_id": "422006",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
       "comp_tier": "A",
-      "comp_avg": 4.4015,
-      "carry": "俄洛伊",
+      "comp_avg": 4.3252,
+      "carry": "莉莉娅",
       "priority_score": 72
     },
     {
-      "cluster_id": "409066",
-      "comp_name": "TFT17_AnimaSquad, TFT17_Aurora",
+      "cluster_id": "422006",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
       "comp_tier": "A",
-      "comp_avg": 4.4086,
-      "carry": "俄洛伊",
+      "comp_avg": 4.3252,
+      "carry": "赫卡里姆",
       "priority_score": 72
     },
     {
-      "cluster_id": "409038",
-      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_Kaisa",
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
       "comp_tier": "A",
-      "comp_avg": 4.4363,
-      "carry": "俄洛伊",
+      "comp_avg": 4.3301,
+      "carry": "蔚",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "422003",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.3641,
+      "carry": "费德提克",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "422008",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.4453,
+      "carry": "赫卡里姆",
       "priority_score": 72
     }
   ]

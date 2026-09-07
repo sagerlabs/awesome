@@ -1,0 +1,95 @@
+{
+  "name": "雷恩加尔",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "tier": "A",
+      "avg_placement": 4.3301
+    },
+    {
+      "cluster_id": "422008",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "tier": "A",
+      "avg_placement": 4.4453
+    },
+    {
+      "cluster_id": "422014",
+      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
+      "tier": "B",
+      "avg_placement": 4.744
+    },
+    {
+      "cluster_id": "422035",
+      "comp_name": "DA_18_Rival, DA_18_Rengar",
+      "tier": "C",
+      "avg_placement": 4.9153
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "items": [
+        "花仙子纹章",
+        "约德尔人…纹章",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.4324,
+      "count": 1531,
+      "priority_scores": {
+        "花仙子纹章": 100,
+        "约德尔人…纹章": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "422008",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "items": [
+        "夜之锋刃",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.0017,
+      "count": 15736,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "422014",
+      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
+      "items": [
+        "夜之锋刃",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.1649,
+      "count": 3935,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "422035",
+      "comp_name": "DA_18_Rival, DA_18_Rengar",
+      "items": [
+        "狂战士纹章",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 2,
+      "count": 10,
+      "priority_scores": {
+        "狂战士纹章": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ]
+}

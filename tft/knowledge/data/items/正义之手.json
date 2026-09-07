@@ -2,36 +2,28 @@
   "name": "正义之手",
   "priority_list": [
     {
-      "cluster_id": "409006",
-      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_Illaoi",
-      "comp_tier": "S",
-      "comp_avg": 4.1825,
-      "carry": "小木灵",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409006",
-      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_Illaoi",
-      "comp_tier": "S",
-      "comp_avg": 4.1825,
-      "carry": "派克",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409034",
-      "comp_name": "TFT17_SpaceGroove, TFT17_Ornn",
-      "comp_tier": "S",
-      "comp_avg": 4.2013,
-      "carry": "布里茨",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "409009",
-      "comp_name": "TFT17_SummonTrait, TFT17_Viktor",
+      "cluster_id": "422008",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
       "comp_tier": "A",
-      "comp_avg": 4.4015,
-      "carry": "派克",
-      "priority_score": 72
+      "comp_avg": 4.4453,
+      "carry": "黛安娜",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "422002",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "comp_tier": "A",
+      "comp_avg": 4.3871,
+      "carry": "凯南",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "422008",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.4453,
+      "carry": "卡兹克",
+      "priority_score": 85
     }
   ]
 }

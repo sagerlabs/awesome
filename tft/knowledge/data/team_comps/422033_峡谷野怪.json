@@ -1,0 +1,224 @@
+{
+  "cluster_id": "422033",
+  "tft_set": "TFTSet18",
+  "units": [
+    "纳尔",
+    "苍蓝哨戒",
+    "绯红印记树怪",
+    "绯红树怪",
+    "远古石甲虫",
+    "暗影狼",
+    "峡谷迅捷蟹",
+    "苍蓝雕纹魔像"
+  ],
+  "traits": [
+    "斗士 (1)",
+    "神谕 (1)",
+    "狂战士 (1)",
+    "峡谷野怪 (3)"
+  ],
+  "stars": [
+    "苍蓝哨戒",
+    "绯红树怪",
+    "暗影狼",
+    "远古石甲虫",
+    "峡谷迅捷蟹",
+    "魔沼蛙",
+    "霞",
+    "卡蜜尔",
+    "卡尔玛",
+    "奥恩",
+    "蕾欧娜",
+    "维迦"
+  ],
+  "name_string": "DA_Riftbeast18",
+  "display_names": [
+    {
+      "name": "峡谷野怪",
+      "type": "trait",
+      "score": 3.069885010119826
+    },
+    {
+      "name": "苍蓝哨戒",
+      "type": "unit",
+      "score": 3.236777059339793
+    }
+  ],
+  "count": 3074,
+  "avg_placement": 4.4541,
+  "top4_rate": 0.5072,
+  "win_rate": 0.0992,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "远古石甲虫",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.7291,
+      "count": 15565,
+      "score": 0.385,
+      "place_change": -0.474,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "绯红树怪",
+      "items": [
+        "蓝霸符",
+        "无尽之刃",
+        "最后的轻语"
+      ],
+      "avg_placement": 3.7597,
+      "count": 23499,
+      "score": 0.3757,
+      "place_change": -0.444,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "无尽之刃": 85,
+        "最后的轻语": 72
+      }
+    },
+    {
+      "unit": "苍蓝哨戒",
+      "items": [
+        "蓝霸符",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.8583,
+      "count": 23761,
+      "score": 0.369,
+      "place_change": -0.345,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "峡谷迅捷蟹",
+      "items": [
+        "薄暮法袍",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0564,
+      "count": 603,
+      "score": 0.0553,
+      "place_change": -0.147,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 226287,
+      "avg": 4.0464,
+      "pcnt": 1.01327
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 161146,
+      "avg": 3.9318,
+      "pcnt": 0.72158
+    },
+    "蓝霸符": {
+      "itemNames": "DA_BlueBuff",
+      "count": 159360,
+      "avg": 3.9742,
+      "pcnt": 0.71358
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 152025,
+      "avg": 3.9951,
+      "pcnt": 0.68074
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 117174,
+      "avg": 3.8934,
+      "pcnt": 0.52468
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 111601,
+      "avg": 4.063,
+      "pcnt": 0.49973
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 83490,
+      "avg": 3.9399,
+      "pcnt": 0.37385
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 80987,
+      "avg": 4.0067,
+      "pcnt": 0.36264
+    },
+    "薄暮法袍": {
+      "itemNames": "DA_Evenshroud",
+      "count": 29891,
+      "avg": 3.7496,
+      "pcnt": 0.13385
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-26",
+      "count": 23,
+      "avg": 2.8261,
+      "pick_rate": 0.338235
+    },
+    {
+      "day": "2026-08-27",
+      "count": 4068,
+      "avg": 4.2517,
+      "pick_rate": 0.040156
+    },
+    {
+      "day": "2026-08-28",
+      "count": 22439,
+      "avg": 4.2842,
+      "pick_rate": 0.057747
+    },
+    {
+      "day": "2026-08-29",
+      "count": 46235,
+      "avg": 4.255,
+      "pick_rate": 0.075233
+    },
+    {
+      "day": "2026-08-30",
+      "count": 71252,
+      "avg": 4.2047,
+      "pick_rate": 0.082833
+    },
+    {
+      "day": "2026-08-31",
+      "count": 94992,
+      "avg": 4.1844,
+      "pick_rate": 0.092199
+    },
+    {
+      "day": "2026-09-01",
+      "count": 17719,
+      "avg": 4.2117,
+      "pick_rate": 0.096901
+    }
+  ],
+  "levelling": "lvl 5",
+  "difficulty": -0.062
+}

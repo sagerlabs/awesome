@@ -1,0 +1,223 @@
+{
+  "cluster_id": "422028",
+  "tft_set": "TFTSet18",
+  "units": [
+    "可酷伯",
+    "莉莉娅",
+    "莫甘娜",
+    "拉莫斯",
+    "提莫",
+    "崔丝塔娜",
+    "维迦",
+    "苍蓝雕纹魔像"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "花仙子 (1)",
+    "神谕 (2)",
+    "约德尔人... (2)"
+  ],
+  "stars": [
+    "提莫",
+    "可酷伯",
+    "拉莫斯",
+    "崔丝塔娜",
+    "阿利斯塔",
+    "乐芙兰",
+    "雷恩加尔",
+    "易",
+    "卡兹克",
+    "卡西奥佩娅",
+    "伊莉丝",
+    "沃里克"
+  ],
+  "name_string": "DA_18_Sprykin, DA_18_Teemo",
+  "display_names": [
+    {
+      "name": "约德尔人...",
+      "type": "trait",
+      "score": 1.9201328483314881
+    },
+    {
+      "name": "提莫",
+      "type": "unit",
+      "score": 3.6874901154515265
+    }
+  ],
+  "count": 186,
+  "avg_placement": 4.8495,
+  "top4_rate": 0.4516,
+  "win_rate": 0.043,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "提莫",
+      "items": [
+        "珠光护手",
+        "灭世者的死亡之帽",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.2833,
+      "count": 593,
+      "score": 0.4449,
+      "place_change": -0.397,
+      "priority_scores": {
+        "珠光护手": 100,
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "拉莫斯",
+      "items": [
+        "巨龙之爪",
+        "石像鬼石板甲",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 3.8824,
+      "count": 68,
+      "score": 0.2942,
+      "place_change": -0.797,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 72
+      }
+    },
+    {
+      "unit": "莫甘娜",
+      "items": [
+        "巨人杀手",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.2881,
+      "count": 59,
+      "score": 0.1908,
+      "place_change": -1.392,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "莫雷洛秘典": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "崔丝塔娜",
+      "items": [
+        "巨人杀手",
+        "鬼索的狂暴之刃",
+        "红霸符"
+      ],
+      "avg_placement": 4,
+      "count": 32,
+      "score": 0.1311,
+      "place_change": -0.68,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "鬼索的狂暴之刃": 85,
+        "红霸符": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 12764,
+      "avg": 4.5073,
+      "pcnt": 1.00933
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 8778,
+      "avg": 4.461,
+      "pcnt": 0.69413
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 7333,
+      "avg": 4.5684,
+      "pcnt": 0.57987
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 5111,
+      "avg": 4.8533,
+      "pcnt": 0.40416
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 4474,
+      "avg": 4.3169,
+      "pcnt": 0.35379
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 3948,
+      "avg": 4.2589,
+      "pcnt": 0.31219
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 3699,
+      "avg": 4.3758,
+      "pcnt": 0.2925
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 3308,
+      "avg": 4.3026,
+      "pcnt": 0.26158
+    },
+    "巨龙之爪": {
+      "itemNames": "DA_DragonsClaw",
+      "count": 3022,
+      "avg": 4.2968,
+      "pcnt": 0.23897
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 2838,
+      "avg": 4.3696,
+      "pcnt": 0.22442
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 382,
+      "avg": 4.6911,
+      "pick_rate": 0.003771
+    },
+    {
+      "day": "2026-08-28",
+      "count": 1627,
+      "avg": 4.6915,
+      "pick_rate": 0.004187
+    },
+    {
+      "day": "2026-08-29",
+      "count": 2901,
+      "avg": 4.7042,
+      "pick_rate": 0.00472
+    },
+    {
+      "day": "2026-08-30",
+      "count": 4219,
+      "avg": 4.6608,
+      "pick_rate": 0.004905
+    },
+    {
+      "day": "2026-08-31",
+      "count": 4986,
+      "avg": 4.6621,
+      "pick_rate": 0.004839
+    },
+    {
+      "day": "2026-09-01",
+      "count": 951,
+      "avg": 4.7371,
+      "pick_rate": 0.005201
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.163
+}

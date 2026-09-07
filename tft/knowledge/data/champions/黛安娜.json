@@ -2,153 +2,151 @@
   "name": "黛安娜",
   "appear_in_comps": [
     {
-      "cluster_id": "409030",
-      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Maokai",
-      "tier": "B",
-      "avg_placement": 4.5426
+      "cluster_id": "422006",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "tier": "A",
+      "avg_placement": 4.3252
     },
     {
-      "cluster_id": "409018",
-      "comp_name": "TFT17_AnimaSquad, TFT17_Diana",
-      "tier": "B",
-      "avg_placement": 4.5706
+      "cluster_id": "422008",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "tier": "A",
+      "avg_placement": 4.4453
     },
     {
-      "cluster_id": "409023",
-      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Ornn",
-      "tier": "B",
-      "avg_placement": 4.7552
+      "cluster_id": "422012",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "tier": "A",
+      "avg_placement": 4.5152
     },
     {
-      "cluster_id": "409062",
-      "comp_name": "TFT17_ASTrait, TFT17_Diana, TFT17_Kindred",
+      "cluster_id": "422013",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "tier": "B",
+      "avg_placement": 4.5935
+    },
+    {
+      "cluster_id": "422038",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "tier": "B",
+      "avg_placement": 4.6239
+    },
+    {
+      "cluster_id": "422014",
+      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
+      "tier": "B",
+      "avg_placement": 4.744
+    },
+    {
+      "cluster_id": "422027",
+      "comp_name": "DA_18_Spellweaver, DA_18_Lillia",
+      "tier": "B",
+      "avg_placement": 4.7714
+    },
+    {
+      "cluster_id": "422044",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
+      "tier": "B",
+      "avg_placement": 4.776
+    },
+    {
+      "cluster_id": "422032",
+      "comp_name": "DA_18_Blackthorn, DA_18_Warwick",
       "tier": "C",
-      "avg_placement": 4.9254
+      "avg_placement": 4.9095
     },
     {
-      "cluster_id": "409047",
-      "comp_name": "TFT17_ASTrait, TFT17_Diana, TFT17_MissFortune",
+      "cluster_id": "422041",
+      "comp_name": "DA_18_Executioner, DA_18_Soraka",
       "tier": "C",
-      "avg_placement": 4.9915
+      "avg_placement": 5.0
     },
     {
-      "cluster_id": "409060",
-      "comp_name": "TFT17_ADMIN, TFT17_Diana",
+      "cluster_id": "422042",
+      "comp_name": "DA_18_Inferno, DA_Amumu18",
       "tier": "D",
-      "avg_placement": 5.2753
+      "avg_placement": 5.1579
+    },
+    {
+      "cluster_id": "422045",
+      "comp_name": "DA_18_Spellweaver, DA_18_KhaZix",
+      "tier": "D",
+      "avg_placement": 5.1856
+    },
+    {
+      "cluster_id": "422049",
+      "comp_name": "DA_18_Defender, DA_18_Rammus",
+      "tier": "D",
+      "avg_placement": 5.8333
+    },
+    {
+      "cluster_id": "422050",
+      "comp_name": "DA_18_Coven, DA_18_Morgana",
+      "tier": "D",
+      "avg_placement": 5.8427
+    },
+    {
+      "cluster_id": "422052",
+      "comp_name": "DA_Riftbeast18, DA_CrimsonRaptor18",
+      "tier": "D",
+      "avg_placement": 6.2188
     }
   ],
   "builds": [
     {
-      "cluster_id": "409030",
-      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Maokai",
+      "cluster_id": "422008",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
       "items": [
-        "饮血剑",
-        "鬼索的狂暴之刃",
-        "泰坦的坚决"
+        "正义之手",
+        "离子火花",
+        "珠光护手"
       ],
-      "avg_placement": 3.9242,
-      "count": 66,
+      "avg_placement": 3.6762,
+      "count": 281,
       "priority_scores": {
-        "饮血剑": 100,
-        "鬼索的狂暴之刃": 85,
-        "泰坦的坚决": 72
+        "正义之手": 100,
+        "离子火花": 85,
+        "珠光护手": 72
       }
     },
     {
-      "cluster_id": "409018",
-      "comp_name": "TFT17_AnimaSquad, TFT17_Diana",
+      "cluster_id": "422014",
+      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
       "items": [
-        "旅人纹章",
-        "饮血剑",
-        "泰坦的坚决"
+        "夜之锋刃",
+        "正义之手",
+        "珠光护手"
       ],
-      "avg_placement": 2.9255,
-      "count": 94,
+      "avg_placement": 3.9206,
+      "count": 63,
       "priority_scores": {
-        "旅人纹章": 100,
-        "饮血剑": 85,
-        "泰坦的坚决": 72
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "珠光护手": 72
       }
     },
     {
-      "cluster_id": "409023",
-      "comp_name": "TFT17_ASTrait, TFT17_MissFortune, TFT17_Ornn",
+      "cluster_id": "422044",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
       "items": [
-        "饮血剑",
-        "鬼索的狂暴之刃",
-        "泰坦的坚决"
+        "金锅铲冠冕"
       ],
-      "avg_placement": 4.5341,
-      "count": 674,
+      "avg_placement": 3.3714,
+      "count": 35,
       "priority_scores": {
-        "饮血剑": 100,
-        "鬼索的狂暴之刃": 85,
-        "泰坦的坚决": 72
+        "金锅铲冠冕": 100
       }
     },
     {
-      "cluster_id": "409062",
-      "comp_name": "TFT17_ASTrait, TFT17_Diana, TFT17_Kindred",
+      "cluster_id": "422045",
+      "comp_name": "DA_18_Spellweaver, DA_18_KhaZix",
       "items": [
-        "鬼索的狂暴之刃",
-        "海克斯科技枪刃",
-        "泰坦的坚决"
+        "离子火花"
       ],
-      "avg_placement": 4.1824,
-      "count": 614,
+      "avg_placement": 4.5789,
+      "count": 38,
       "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "海克斯科技枪刃": 85,
-        "泰坦的坚决": 72
-      }
-    },
-    {
-      "cluster_id": "409047",
-      "comp_name": "TFT17_ASTrait, TFT17_Diana, TFT17_MissFortune",
-      "items": [
-        "饮血剑",
-        "鬼索的狂暴之刃",
-        "泰坦的坚决"
-      ],
-      "avg_placement": 4.9254,
-      "count": 630,
-      "priority_scores": {
-        "饮血剑": 100,
-        "鬼索的狂暴之刃": 85,
-        "泰坦的坚决": 72
-      }
-    },
-    {
-      "cluster_id": "409065",
-      "comp_name": "TFT17_ShieldTank, TFT17_Leona",
-      "items": [
-        "鬼索的狂暴之刃",
-        "海克斯科技枪刃",
-        "泰坦的坚决"
-      ],
-      "avg_placement": 4.8899,
-      "count": 1908,
-      "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "海克斯科技枪刃": 85,
-        "泰坦的坚决": 72
-      }
-    },
-    {
-      "cluster_id": "409060",
-      "comp_name": "TFT17_ADMIN, TFT17_Diana",
-      "items": [
-        "饮血剑",
-        "鬼索的狂暴之刃",
-        "泰坦的坚决"
-      ],
-      "avg_placement": 4.9315,
-      "count": 365,
-      "priority_scores": {
-        "饮血剑": 100,
-        "鬼索的狂暴之刃": 85,
-        "泰坦的坚决": 72
+        "离子火花": 100
       }
     }
   ]

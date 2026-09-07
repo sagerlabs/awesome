@@ -2,19 +2,11 @@
   "name": "巨龙之爪",
   "priority_list": [
     {
-      "cluster_id": "409045",
-      "comp_name": "TFT17_DRX, TFT17_Kindred",
-      "comp_tier": "S",
-      "comp_avg": 3.9722,
-      "carry": "塔姆",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409020",
-      "comp_name": "TFT17_Augment_IvernMinionCarry, TFT17_FlexTrait",
+      "cluster_id": "422005",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
       "comp_tier": "A",
-      "comp_avg": 4.3546,
-      "carry": "拉莫斯",
+      "comp_avg": 4.4132,
+      "carry": "瑟庄妮",
       "priority_score": 100
     }
   ]

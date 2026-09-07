@@ -33,3 +33,6 @@ release/
 # OS
 .DS_Store
 Thumbs.db
+
+# 本地编译产物（仓库名同名二进制）
+/awesome

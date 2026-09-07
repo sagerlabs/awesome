@@ -1,0 +1,202 @@
+{
+  "cluster_id": "422051",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿利斯塔",
+    "伊泽瑞尔",
+    "纳尔",
+    "赫卡里姆",
+    "乐芙兰",
+    "奥恩",
+    "霞",
+    "费德提克"
+  ],
+  "traits": [
+    "斗士 (1)",
+    "护卫 (1)",
+    "永恒之森 (3)",
+    "法师 (1)",
+    "绝命花妖 (1)"
+  ],
+  "stars": [
+    "乐芙兰",
+    "阿利斯塔",
+    "奥恩",
+    "霞",
+    "维迦",
+    "卡尔玛",
+    "可酷伯",
+    "提莫",
+    "雷克塞",
+    "蕾欧娜",
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Elderwood, DA_18_LeBlanc",
+  "display_names": [
+    {
+      "name": "永恒之森",
+      "type": "trait",
+      "score": 1.7703887510339122
+    },
+    {
+      "name": "乐芙兰",
+      "type": "unit",
+      "score": 3.597022332506203
+    }
+  ],
+  "count": 81,
+  "avg_placement": 6.0247,
+  "top4_rate": 0.2099,
+  "win_rate": 0.0617,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "乐芙兰",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.525,
+      "count": 40,
+      "score": 0.5661,
+      "place_change": -1.194,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "奥恩",
+      "items": [
+        "棘刺背心",
+        "巨龙之爪",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.4,
+      "count": 25,
+      "score": 0.2696,
+      "place_change": -1.319,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "阿利斯塔",
+      "items": [
+        "棘刺背心",
+        "巨龙之爪",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.1429,
+      "count": 14,
+      "score": 0.1632,
+      "place_change": -1.576,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "巨龙之爪": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "费德提克",
+      "items": [
+        "离子火花"
+      ],
+      "avg_placement": 4.95,
+      "count": 40,
+      "score": 0.0095,
+      "place_change": -0.769,
+      "priority_scores": {
+        "离子火花": 100
+      }
+    }
+  ],
+  "build_items": {
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 4323,
+      "avg": 5.232,
+      "pcnt": 0.71514
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 2986,
+      "avg": 5.3674,
+      "pcnt": 0.49396
+    },
+    "纳什之牙": {
+      "itemNames": "DA_NashorsTooth",
+      "count": 1727,
+      "avg": 5.2015,
+      "pcnt": 0.28569
+    },
+    "巨龙之爪": {
+      "itemNames": "DA_DragonsClaw",
+      "count": 1444,
+      "avg": 5.2327,
+      "pcnt": 0.23888
+    },
+    "离子火花": {
+      "itemNames": "DA_IonicSpark",
+      "count": 1122,
+      "avg": 4.803,
+      "pcnt": 0.18561
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 862,
+      "avg": 5.1729,
+      "pcnt": 0.1426
+    },
+    "棘刺背心": {
+      "itemNames": "DA_BrambleVest",
+      "count": 842,
+      "avg": 5.0938,
+      "pcnt": 0.13929
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 233,
+      "avg": 5.4979,
+      "pick_rate": 0.0023
+    },
+    {
+      "day": "2026-08-28",
+      "count": 792,
+      "avg": 5.7083,
+      "pick_rate": 0.002038
+    },
+    {
+      "day": "2026-08-29",
+      "count": 1349,
+      "avg": 5.6983,
+      "pick_rate": 0.002195
+    },
+    {
+      "day": "2026-08-30",
+      "count": 2028,
+      "avg": 5.6366,
+      "pick_rate": 0.002358
+    },
+    {
+      "day": "2026-08-31",
+      "count": 2416,
+      "avg": 5.7757,
+      "pick_rate": 0.002345
+    },
+    {
+      "day": "2026-09-01",
+      "count": 440,
+      "avg": 5.7636,
+      "pick_rate": 0.002406
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.122
+}

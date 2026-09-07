@@ -1,0 +1,228 @@
+{
+  "cluster_id": "422007",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿狸",
+    "艾希",
+    "纳尔",
+    "瑟提",
+    "希维尔",
+    "约里克",
+    "婕拉",
+    "卡尔玛",
+    "蔚"
+  ],
+  "traits": [
+    "灵魂莲华 (2)",
+    "斗士 (1)",
+    "猎人 (1)",
+    "法师 (1)",
+    "召唤师 (1)",
+    "荆棘之兴 (1)",
+    "主宰 (1)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "雷恩加尔",
+    "阿卡丽",
+    "霞",
+    "卡蜜尔",
+    "韦鲁斯"
+  ],
+  "name_string": "DA_18_Blossom, DA_18_Sett",
+  "display_names": [
+    {
+      "name": "灵魂莲华",
+      "type": "trait",
+      "score": 1.9754859987949132
+    },
+    {
+      "name": "瑟提",
+      "type": "unit",
+      "score": 3.9827006627977037
+    }
+  ],
+  "count": 987,
+  "avg_placement": 4.5238,
+  "top4_rate": 0.4934,
+  "win_rate": 0.1135,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "艾希",
+      "items": [
+        "最后的轻语",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.1293,
+      "count": 4131,
+      "score": 0.423,
+      "place_change": -1.398,
+      "priority_scores": {
+        "最后的轻语": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "瑟提",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.1431,
+      "count": 4620,
+      "score": 0.4018,
+      "place_change": -0.384,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "阿狸",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.9405,
+      "count": 1848,
+      "score": 0.3957,
+      "place_change": -0.587,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "希维尔",
+      "items": [
+        "巨人杀手",
+        "无尽之刃",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.9272,
+      "count": 756,
+      "score": 0.1492,
+      "place_change": -0.6,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "无尽之刃": 85,
+        "朔极之矛": 72
+      }
+    }
+  ],
+  "build_items": {
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 105933,
+      "avg": 4.2685,
+      "pcnt": 1.11981
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 96720,
+      "avg": 4.3871,
+      "pcnt": 1.02242
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 78026,
+      "avg": 4.4237,
+      "pcnt": 0.82481
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 58349,
+      "avg": 4.2856,
+      "pcnt": 0.6168
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 39089,
+      "avg": 4.0262,
+      "pcnt": 0.41321
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 38443,
+      "avg": 4.238,
+      "pcnt": 0.40638
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 35941,
+      "avg": 4.1367,
+      "pcnt": 0.37993
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 31614,
+      "avg": 4.0506,
+      "pcnt": 0.33419
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 29809,
+      "avg": 4.2703,
+      "pcnt": 0.31511
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 26727,
+      "avg": 4.0816,
+      "pcnt": 0.28253
+    },
+    "纳什之牙": {
+      "itemNames": "DA_NashorsTooth",
+      "count": 21895,
+      "avg": 4.2058,
+      "pcnt": 0.23145
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 8774,
+      "avg": 4.4189,
+      "pick_rate": 0.086611
+    },
+    {
+      "day": "2026-08-28",
+      "count": 27895,
+      "avg": 4.457,
+      "pick_rate": 0.071788
+    },
+    {
+      "day": "2026-08-29",
+      "count": 29403,
+      "avg": 4.4771,
+      "pick_rate": 0.047844
+    },
+    {
+      "day": "2026-08-30",
+      "count": 32858,
+      "avg": 4.528,
+      "pick_rate": 0.038199
+    },
+    {
+      "day": "2026-08-31",
+      "count": 32291,
+      "avg": 4.5565,
+      "pick_rate": 0.031342
+    },
+    {
+      "day": "2026-09-01",
+      "count": 5104,
+      "avg": 4.55,
+      "pick_rate": 0.027913
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.074
+}

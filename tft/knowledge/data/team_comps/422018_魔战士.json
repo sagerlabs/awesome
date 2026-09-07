@@ -1,0 +1,215 @@
+{
+  "cluster_id": "422018",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿卡丽",
+    "阿木木",
+    "绯红印记树怪",
+    "魔沼蛙",
+    "克格莫",
+    "奈德丽",
+    "苍蓝雕纹魔像",
+    "蔚"
+  ],
+  "traits": [
+    "魔战士 (3)",
+    "帝王斑蝶 (1)",
+    "地狱火 (1)",
+    "神谕 (1)",
+    "狂战士 (1)",
+    "主宰 (1)",
+    "野兽之灵 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "阿卡丽",
+    "卡蜜尔",
+    "雷恩加尔",
+    "卡兹克",
+    "奥恩"
+  ],
+  "name_string": "DA_18_Adaptor, DA_Nidalee18_AP",
+  "display_names": [
+    {
+      "name": "魔战士",
+      "type": "trait",
+      "score": 1.9371042634022795
+    },
+    {
+      "name": "奈德丽",
+      "type": "unit",
+      "score": 3.867771211481638
+    }
+  ],
+  "count": 68,
+  "avg_placement": 4.8382,
+  "top4_rate": 0.4559,
+  "win_rate": 0.0294,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "奈德丽",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "无尽之刃"
+      ],
+      "avg_placement": 4.392,
+      "count": 176,
+      "score": 0.4814,
+      "place_change": -0.406,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "无尽之刃": 72
+      }
+    },
+    {
+      "unit": "阿木木",
+      "items": [
+        "重装战士纹章",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.3077,
+      "count": 13,
+      "score": 0.3481,
+      "place_change": -1.491,
+      "priority_scores": {
+        "重装战士纹章": 100,
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "unit": "绯红印记树怪",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.3846,
+      "count": 13,
+      "score": 0.3473,
+      "place_change": -1.414,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.0833,
+      "count": 12,
+      "score": 0.2437,
+      "place_change": -1.715,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 3532,
+      "avg": 4.6195,
+      "pcnt": 0.74546
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 2537,
+      "avg": 4.5392,
+      "pcnt": 0.53546
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 2240,
+      "avg": 4.5237,
+      "pcnt": 0.47277
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 2004,
+      "avg": 4.5813,
+      "pcnt": 0.42296
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 1902,
+      "avg": 4.5626,
+      "pcnt": 0.40144
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 1840,
+      "avg": 4.4679,
+      "pcnt": 0.38835
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 964,
+      "avg": 4.5508,
+      "pcnt": 0.20346
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 801,
+      "avg": 4.2959,
+      "pcnt": 0.16906
+    },
+    "重装战士纹章": {
+      "itemNames": "DA_18_EmblemVanguard",
+      "count": 205,
+      "avg": 4.4195,
+      "pcnt": 0.04327
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 228,
+      "avg": 4.6579,
+      "pick_rate": 0.002251
+    },
+    {
+      "day": "2026-08-28",
+      "count": 718,
+      "avg": 4.8036,
+      "pick_rate": 0.001848
+    },
+    {
+      "day": "2026-08-29",
+      "count": 1151,
+      "avg": 4.8193,
+      "pick_rate": 0.001873
+    },
+    {
+      "day": "2026-08-30",
+      "count": 1560,
+      "avg": 4.7487,
+      "pick_rate": 0.001814
+    },
+    {
+      "day": "2026-08-31",
+      "count": 1889,
+      "avg": 4.8428,
+      "pick_rate": 0.001833
+    },
+    {
+      "day": "2026-09-01",
+      "count": 326,
+      "avg": 4.8497,
+      "pick_rate": 0.001783
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.063
+}

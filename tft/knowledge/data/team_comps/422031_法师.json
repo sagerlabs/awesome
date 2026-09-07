@@ -1,0 +1,220 @@
+{
+  "cluster_id": "422031",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿狸",
+    "拉露恩",
+    "莫甘娜",
+    "苍蓝哨戒",
+    "瑟提",
+    "卡尔玛",
+    "远古石甲虫",
+    "苍蓝雕纹魔像"
+  ],
+  "traits": [
+    "灵魂莲华 (1)",
+    "斗士 (1)",
+    "神谕 (2)",
+    "法师 (1)",
+    "月华神女 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "维迦",
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Spellweaver, DA_18_Ahri",
+  "display_names": [
+    {
+      "name": "法师",
+      "type": "trait",
+      "score": 1.5055862769439115
+    },
+    {
+      "name": "阿狸",
+      "type": "unit",
+      "score": 4.043448820674867
+    },
+    {
+      "name": "瑟提",
+      "type": "unit",
+      "score": 3.6602810066583906
+    }
+  ],
+  "count": 201,
+  "avg_placement": 4.9851,
+  "top4_rate": 0.4229,
+  "win_rate": 0.0945,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "阿狸",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
+      ],
+      "avg_placement": 4.377,
+      "count": 252,
+      "score": 0.4633,
+      "place_change": -0.7,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "unit": "瑟提",
+      "items": [
+        "石像鬼石板甲",
+        "坚定之心",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.5642,
+      "count": 335,
+      "score": 0.344,
+      "place_change": -0.513,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "坚定之心": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "拉露恩",
+      "items": [
+        "红霸符",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.0548,
+      "count": 73,
+      "score": 0.2888,
+      "place_change": -2.022,
+      "priority_scores": {
+        "红霸符": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "莫甘娜",
+      "items": [
+        "法师纹章",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "avg_placement": 4.7542,
+      "count": 240,
+      "score": 0.0622,
+      "place_change": -0.323,
+      "priority_scores": {
+        "法师纹章": 100,
+        "莫雷洛秘典": 85,
+        "虚空之杖": 72
+      }
+    }
+  ],
+  "build_items": {
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 17208,
+      "avg": 4.8918,
+      "pcnt": 0.971
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 15973,
+      "avg": 4.9408,
+      "pcnt": 0.90131
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 14790,
+      "avg": 4.7588,
+      "pcnt": 0.83456
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 9483,
+      "avg": 4.8189,
+      "pcnt": 0.5351
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 8758,
+      "avg": 4.8029,
+      "pcnt": 0.49419
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 5634,
+      "avg": 4.8445,
+      "pcnt": 0.31791
+    },
+    "纳什之牙": {
+      "itemNames": "DA_NashorsTooth",
+      "count": 5464,
+      "avg": 4.6382,
+      "pcnt": 0.30832
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 3747,
+      "avg": 4.5653,
+      "pcnt": 0.21143
+    },
+    "坚定之心": {
+      "itemNames": "DA_SteadfastHeart",
+      "count": 3675,
+      "avg": 4.6381,
+      "pcnt": 0.20737
+    },
+    "法师纹章": {
+      "itemNames": "DA_18_EmblemSpellweaver",
+      "count": 3188,
+      "avg": 4.5753,
+      "pcnt": 0.17989
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 616,
+      "avg": 4.3847,
+      "pick_rate": 0.006081
+    },
+    {
+      "day": "2026-08-28",
+      "count": 2630,
+      "avg": 4.6871,
+      "pick_rate": 0.006768
+    },
+    {
+      "day": "2026-08-29",
+      "count": 4281,
+      "avg": 4.8113,
+      "pick_rate": 0.006966
+    },
+    {
+      "day": "2026-08-30",
+      "count": 6198,
+      "avg": 5.0779,
+      "pick_rate": 0.007205
+    },
+    {
+      "day": "2026-08-31",
+      "count": 6715,
+      "avg": 5.1707,
+      "pick_rate": 0.006518
+    },
+    {
+      "day": "2026-09-01",
+      "count": 1148,
+      "avg": 5.2596,
+      "pick_rate": 0.006278
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": 0.027
+}

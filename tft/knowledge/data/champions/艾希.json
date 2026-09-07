@@ -1,0 +1,79 @@
+{
+  "name": "艾希",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422005",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "tier": "A",
+      "avg_placement": 4.4132
+    },
+    {
+      "cluster_id": "422010",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "tier": "A",
+      "avg_placement": 4.4202
+    },
+    {
+      "cluster_id": "422007",
+      "comp_name": "DA_18_Blossom, DA_18_Sett",
+      "tier": "B",
+      "avg_placement": 4.5238
+    },
+    {
+      "cluster_id": "422036",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Sett",
+      "tier": "C",
+      "avg_placement": 4.921
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422010",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "items": [
+        "最后的轻语",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.2189,
+      "count": 1964,
+      "priority_scores": {
+        "最后的轻语": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "422007",
+      "comp_name": "DA_18_Blossom, DA_18_Sett",
+      "items": [
+        "最后的轻语",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.1293,
+      "count": 4131,
+      "priority_scores": {
+        "最后的轻语": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "422036",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Sett",
+      "items": [
+        "无尽之刃",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.4243,
+      "count": 337,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "cluster_id": "422022",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿兹尔",
+    "凯南",
+    "墨菲特",
+    "索拉卡",
+    "约里克",
+    "婕拉",
+    "阿木木",
+    "费德提克"
+  ],
+  "traits": [
+    "魔岩巨兽 (1)",
+    "黑荆棘 (1)",
+    "裁决使 (2)",
+    "地狱火 (1)",
+    "召唤师 (2)",
+    "荆棘之兴 (1)",
+    "绝命花妖 (2)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "卡兹克",
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+  "display_names": [
+    {
+      "name": "裁决使",
+      "type": "trait",
+      "score": 1.8818031184942856
+    },
+    {
+      "name": "墨菲特",
+      "type": "unit",
+      "score": 3.993363640226027
+    }
+  ],
+  "count": 1479,
+  "avg_placement": 4.474,
+  "top4_rate": 0.503,
+  "win_rate": 0.1095,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "婕拉",
+      "items": [
+        "裁决使纹章",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.6127,
+      "count": 2670,
+      "score": 0.5889,
+      "place_change": -1.039,
+      "priority_scores": {
+        "裁决使纹章": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "墨菲特",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.2581,
+      "count": 8313,
+      "score": 0.4805,
+      "place_change": -0.394,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "索拉卡",
+      "items": [
+        "灭世者的死亡之帽",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.2423,
+      "count": 2571,
+      "score": 0.3561,
+      "place_change": -0.41,
+      "priority_scores": {
+        "灭世者的死亡之帽": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "凯南",
+      "items": [
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.6866,
+      "count": 284,
+      "score": 0.0102,
+      "place_change": -0.966,
+      "priority_scores": {
+        "灭世者的死亡之帽": 100
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 138800,
+      "avg": 4.5354,
+      "pcnt": 1.17942
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 108338,
+      "avg": 4.4319,
+      "pcnt": 0.92058
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 77831,
+      "avg": 4.3769,
+      "pcnt": 0.66135
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 72517,
+      "avg": 4.4614,
+      "pcnt": 0.6162
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 65318,
+      "avg": 4.3323,
+      "pcnt": 0.55502
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 45174,
+      "avg": 4.3616,
+      "pcnt": 0.38386
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 31209,
+      "avg": 4.1963,
+      "pcnt": 0.26519
+    },
+    "裁决使纹章": {
+      "itemNames": "DA_18_EmblemExecutioner",
+      "count": 24028,
+      "avg": 4.0969,
+      "pcnt": 0.20417
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 6471,
+      "avg": 4.5341,
+      "pick_rate": 0.063877
+    },
+    {
+      "day": "2026-08-28",
+      "count": 23957,
+      "avg": 4.6285,
+      "pick_rate": 0.061653
+    },
+    {
+      "day": "2026-08-29",
+      "count": 31733,
+      "avg": 4.6286,
+      "pick_rate": 0.051635
+    },
+    {
+      "day": "2026-08-30",
+      "count": 39790,
+      "avg": 4.655,
+      "pick_rate": 0.046257
+    },
+    {
+      "day": "2026-08-31",
+      "count": 43897,
+      "avg": 4.6594,
+      "pick_rate": 0.042606
+    },
+    {
+      "day": "2026-09-01",
+      "count": 7399,
+      "avg": 4.664,
+      "pick_rate": 0.040464
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": 0.044
+}

@@ -2,59 +2,27 @@
   "name": "海克斯科技枪刃",
   "priority_list": [
     {
-      "cluster_id": "409008",
-      "comp_name": "TFT17_ManaTrait, TFT17_MissFortune, TFT17_Ornn",
+      "cluster_id": "422005",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
       "comp_tier": "A",
-      "comp_avg": 4.344,
-      "carry": "维克托",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409038",
-      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_Kaisa",
-      "comp_tier": "A",
-      "comp_avg": 4.4363,
-      "carry": "莫德凯撒",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409048",
-      "comp_name": "TFT17_Augment_MordekaiserCarry, TFT17_ShieldTank",
-      "comp_tier": "A",
-      "comp_avg": 4.4469,
-      "carry": "佐伊",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "409045",
-      "comp_name": "TFT17_DRX, TFT17_Kindred",
-      "comp_tier": "S",
-      "comp_avg": 3.9722,
-      "carry": "阿卡丽",
+      "comp_avg": 4.4132,
+      "carry": "凯特琳",
       "priority_score": 85
     },
     {
-      "cluster_id": "409027",
-      "comp_name": "TFT17_Augment_AatroxCarry, TFT17_Kindred",
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
       "comp_tier": "A",
-      "comp_avg": 4.3701,
-      "carry": "阿卡丽",
-      "priority_score": 85
+      "comp_avg": 4.3301,
+      "carry": "崔丝塔娜",
+      "priority_score": 72
     },
     {
-      "cluster_id": "409017",
-      "comp_name": "TFT17_Augment_AatroxCarry, TFT17_Jax",
+      "cluster_id": "422003",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
       "comp_tier": "A",
-      "comp_avg": 4.4015,
-      "carry": "阿卡丽",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "409019",
-      "comp_name": "TFT17_DRX, TFT17_Belveth",
-      "comp_tier": "A",
-      "comp_avg": 4.2675,
-      "carry": "阿卡丽",
+      "comp_avg": 4.3641,
+      "carry": "卡西奥佩娅",
       "priority_score": 72
     }
   ]

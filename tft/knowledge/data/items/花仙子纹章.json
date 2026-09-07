@@ -1,0 +1,13 @@
+{
+  "name": "花仙子纹章",
+  "priority_list": [
+    {
+      "cluster_id": "422000",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "comp_tier": "A",
+      "comp_avg": 4.3301,
+      "carry": "雷恩加尔",
+      "priority_score": 100
+    }
+  ]
+}

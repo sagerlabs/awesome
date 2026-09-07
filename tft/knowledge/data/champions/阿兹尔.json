@@ -1,0 +1,119 @@
+{
+  "name": "阿兹尔",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422022",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "tier": "A",
+      "avg_placement": 4.474
+    },
+    {
+      "cluster_id": "422023",
+      "comp_name": "DA_18_Executioner, DA_18_Yunara",
+      "tier": "B",
+      "avg_placement": 4.604
+    },
+    {
+      "cluster_id": "422019",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Ezreal",
+      "tier": "B",
+      "avg_placement": 4.7481
+    },
+    {
+      "cluster_id": "422032",
+      "comp_name": "DA_18_Blackthorn, DA_18_Warwick",
+      "tier": "C",
+      "avg_placement": 4.9095
+    },
+    {
+      "cluster_id": "422043",
+      "comp_name": "DA_18_Blackthorn, DA_18_KhaZix",
+      "tier": "C",
+      "avg_placement": 4.9752
+    },
+    {
+      "cluster_id": "422025",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Malphite",
+      "tier": "D",
+      "avg_placement": 5.1037
+    },
+    {
+      "cluster_id": "422048",
+      "comp_name": "DA_18_Blackthorn, DA_18_Azir",
+      "tier": "D",
+      "avg_placement": 5.3625
+    },
+    {
+      "cluster_id": "422049",
+      "comp_name": "DA_18_Defender, DA_18_Rammus",
+      "tier": "D",
+      "avg_placement": 5.8333
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422043",
+      "comp_name": "DA_18_Blackthorn, DA_18_KhaZix",
+      "items": [
+        "大天使之杖",
+        "巨人杀手",
+        "鬼索的狂暴之刃"
+      ],
+      "avg_placement": 4.4464,
+      "count": 56,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "巨人杀手": 85,
+        "鬼索的狂暴之刃": 72
+      }
+    },
+    {
+      "cluster_id": "422048",
+      "comp_name": "DA_18_Blackthorn, DA_18_Azir",
+      "items": [
+        "巨人杀手",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "avg_placement": 4,
+      "count": 19,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "莫雷洛秘典": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "422049",
+      "comp_name": "DA_18_Defender, DA_18_Rammus",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "珠光护手"
+      ],
+      "avg_placement": 5.25,
+      "count": 4,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "珠光护手": 72
+      }
+    },
+    {
+      "cluster_id": "422052",
+      "comp_name": "DA_Riftbeast18, DA_CrimsonRaptor18",
+      "items": [
+        "迅捷射手纹章",
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 3.5455,
+      "count": 11,
+      "priority_scores": {
+        "迅捷射手纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "海克斯科技枪刃": 72
+      }
+    }
+  ]
+}

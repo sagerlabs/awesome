@@ -1,0 +1,47 @@
+{
+  "name": "芸阿娜",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422001",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "tier": "B",
+      "avg_placement": 4.6
+    },
+    {
+      "cluster_id": "422023",
+      "comp_name": "DA_18_Executioner, DA_18_Yunara",
+      "tier": "B",
+      "avg_placement": 4.604
+    },
+    {
+      "cluster_id": "422036",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Sett",
+      "tier": "C",
+      "avg_placement": 4.921
+    },
+    {
+      "cluster_id": "422043",
+      "comp_name": "DA_18_Blackthorn, DA_18_KhaZix",
+      "tier": "C",
+      "avg_placement": 4.9752
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422023",
+      "comp_name": "DA_18_Executioner, DA_18_Yunara",
+      "items": [
+        "死亡之刃",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.4563,
+      "count": 1865,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    }
+  ]
+}

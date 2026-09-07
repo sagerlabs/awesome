@@ -1,0 +1,231 @@
+{
+  "cluster_id": "422037",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿利斯塔",
+    "伊泽瑞尔",
+    "纳尔",
+    "赫卡里姆",
+    "乐芙兰",
+    "奥恩",
+    "索拉卡",
+    "霞",
+    "费德提克"
+  ],
+  "traits": [
+    "斗士 (1)",
+    "护卫 (1)",
+    "永恒之森 (3)",
+    "裁决使 (1)",
+    "法师 (1)",
+    "绝命花妖 (2)"
+  ],
+  "stars": [
+    "卡兹克",
+    "雷恩加尔",
+    "维迦",
+    "卡蜜尔"
+  ],
+  "name_string": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+  "display_names": [
+    {
+      "name": "永恒之森",
+      "type": "trait",
+      "score": 2.8164778920430313
+    },
+    {
+      "name": "伊泽瑞尔",
+      "type": "unit",
+      "score": 3.903724941945879
+    }
+  ],
+  "count": 561,
+  "avg_placement": 4.82,
+  "top4_rate": 0.4421,
+  "win_rate": 0.1266,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "伊泽瑞尔",
+      "items": [
+        "死亡之刃",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.3342,
+      "count": 748,
+      "score": 0.3944,
+      "place_change": -0.486,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "赫卡里姆",
+      "items": [
+        "薄暮法袍",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.1765,
+      "count": 119,
+      "score": 0.1577,
+      "place_change": -0.644,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "索拉卡",
+      "items": [
+        "永恒之森纹章",
+        "灭世者的死亡之帽",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.6516,
+      "count": 155,
+      "score": 0.1429,
+      "place_change": -1.168,
+      "priority_scores": {
+        "永恒之森纹章": 100,
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "纳尔",
+      "items": [
+        "饮血剑",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.5413,
+      "count": 242,
+      "score": 0.1257,
+      "place_change": -1.279,
+      "priority_scores": {
+        "饮血剑": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ],
+  "build_items": {
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 33425,
+      "avg": 4.5554,
+      "pcnt": 0.79202
+    },
+    "永恒之森纹章": {
+      "itemNames": "DA_18_EmblemElderwood",
+      "count": 22047,
+      "avg": 4.2227,
+      "pcnt": 0.52242
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 19762,
+      "avg": 4.7411,
+      "pcnt": 0.46827
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 16911,
+      "avg": 4.6152,
+      "pcnt": 0.40072
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 14402,
+      "avg": 4.4715,
+      "pcnt": 0.34126
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 11710,
+      "avg": 4.3763,
+      "pcnt": 0.27748
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 9348,
+      "avg": 4.3507,
+      "pcnt": 0.22151
+    },
+    "薄暮法袍": {
+      "itemNames": "DA_Evenshroud",
+      "count": 8629,
+      "avg": 4.3546,
+      "pcnt": 0.20447
+    },
+    "饮血剑": {
+      "itemNames": "DA_Bloodthirster",
+      "count": 6025,
+      "avg": 4.0671,
+      "pcnt": 0.14277
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 5418,
+      "avg": 3.9055,
+      "pcnt": 0.12838
+    },
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 4460,
+      "avg": 4.046,
+      "pcnt": 0.10568
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-26",
+      "count": 14,
+      "avg": 3,
+      "pick_rate": 0.205882
+    },
+    {
+      "day": "2026-08-27",
+      "count": 1587,
+      "avg": 4.7234,
+      "pick_rate": 0.015666
+    },
+    {
+      "day": "2026-08-28",
+      "count": 5985,
+      "avg": 4.724,
+      "pick_rate": 0.015402
+    },
+    {
+      "day": "2026-08-29",
+      "count": 9745,
+      "avg": 4.8234,
+      "pick_rate": 0.015857
+    },
+    {
+      "day": "2026-08-30",
+      "count": 14107,
+      "avg": 4.8031,
+      "pick_rate": 0.0164
+    },
+    {
+      "day": "2026-08-31",
+      "count": 16824,
+      "avg": 4.816,
+      "pick_rate": 0.016329
+    },
+    {
+      "day": "2026-09-01",
+      "count": 2984,
+      "avg": 4.8502,
+      "pick_rate": 0.016319
+    }
+  ],
+  "levelling": "Standard",
+  "difficulty": -0.151
+}

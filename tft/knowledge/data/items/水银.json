@@ -2,19 +2,19 @@
   "name": "水银",
   "priority_list": [
     {
-      "cluster_id": "409019",
-      "comp_name": "TFT17_DRX, TFT17_Belveth",
-      "comp_tier": "A",
-      "comp_avg": 4.2675,
-      "carry": "卑尔维斯",
+      "cluster_id": "422024",
+      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "comp_tier": "S",
+      "comp_avg": 3.976,
+      "carry": "绯红印记树怪",
       "priority_score": 85
     },
     {
-      "cluster_id": "409005",
-      "comp_name": "TFT17_Astronaut, TFT17_Corki",
+      "cluster_id": "422012",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "comp_tier": "A",
-      "comp_avg": 4.3714,
-      "carry": "锐雯",
+      "comp_avg": 4.5152,
+      "carry": "绯红印记树怪",
       "priority_score": 85
     }
   ]

@@ -1,0 +1,21 @@
+{
+  "name": "绝命花妖纹章",
+  "priority_list": [
+    {
+      "cluster_id": "422015",
+      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "comp_tier": "S",
+      "comp_avg": 4.0985,
+      "carry": "维迦",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "422003",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.3641,
+      "carry": "卡西奥佩娅",
+      "priority_score": 100
+    }
+  ]
+}

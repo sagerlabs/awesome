@@ -1,0 +1,264 @@
+{
+  "name": "苍蓝雕纹魔像",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422024",
+      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "tier": "S",
+      "avg_placement": 3.976
+    },
+    {
+      "cluster_id": "422021",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "tier": "S",
+      "avg_placement": 4.2328
+    },
+    {
+      "cluster_id": "422033",
+      "comp_name": "DA_Riftbeast18",
+      "tier": "A",
+      "avg_placement": 4.4541
+    },
+    {
+      "cluster_id": "422017",
+      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
+      "tier": "A",
+      "avg_placement": 4.4826
+    },
+    {
+      "cluster_id": "422012",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "tier": "A",
+      "avg_placement": 4.5152
+    },
+    {
+      "cluster_id": "422011",
+      "comp_name": "DA_18_Invoker, DA_18_Sentry",
+      "tier": "B",
+      "avg_placement": 4.5469
+    },
+    {
+      "cluster_id": "422026",
+      "comp_name": "DA_Riftbeast18, DA_18_Malphite",
+      "tier": "B",
+      "avg_placement": 4.5705
+    },
+    {
+      "cluster_id": "422013",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "tier": "B",
+      "avg_placement": 4.5935
+    },
+    {
+      "cluster_id": "422014",
+      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
+      "tier": "B",
+      "avg_placement": 4.744
+    },
+    {
+      "cluster_id": "422046",
+      "comp_name": "DA_Juggernaut18, DA_Draven18",
+      "tier": "B",
+      "avg_placement": 4.7644
+    },
+    {
+      "cluster_id": "422018",
+      "comp_name": "DA_18_Adaptor, DA_Nidalee18_AP",
+      "tier": "C",
+      "avg_placement": 4.8382
+    },
+    {
+      "cluster_id": "422028",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "tier": "C",
+      "avg_placement": 4.8495
+    },
+    {
+      "cluster_id": "422031",
+      "comp_name": "DA_18_Spellweaver, DA_18_Ahri",
+      "tier": "C",
+      "avg_placement": 4.9851
+    },
+    {
+      "cluster_id": "422016",
+      "comp_name": "DA_18_Vanguard, DA_18_Caitlyn",
+      "tier": "C",
+      "avg_placement": 5.0438
+    },
+    {
+      "cluster_id": "422040",
+      "comp_name": "DA_Juggernaut18, DA_Nidalee18_AP",
+      "tier": "D",
+      "avg_placement": 5.301
+    },
+    {
+      "cluster_id": "422050",
+      "comp_name": "DA_18_Coven, DA_18_Morgana",
+      "tier": "D",
+      "avg_placement": 5.8427
+    },
+    {
+      "cluster_id": "422052",
+      "comp_name": "DA_Riftbeast18, DA_CrimsonRaptor18",
+      "tier": "D",
+      "avg_placement": 6.2188
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422024",
+      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.5512,
+      "count": 1854,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422021",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "items": [
+        "适应性头盔",
+        "圣盾使的誓约",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.3052,
+      "count": 2749,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "圣盾使的誓约": 72
+      }
+    },
+    {
+      "cluster_id": "422017",
+      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
+      "items": [
+        "圣盾使的誓约",
+        "圣盾使的誓约",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.9281,
+      "count": 167,
+      "priority_scores": {
+        "圣盾使的誓约": 72
+      }
+    },
+    {
+      "cluster_id": "422012",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "items": [
+        "石像鬼石板甲",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0865,
+      "count": 2115,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422011",
+      "comp_name": "DA_18_Invoker, DA_18_Sentry",
+      "items": [
+        "适应性头盔",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.51,
+      "count": 100,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422026",
+      "comp_name": "DA_Riftbeast18, DA_18_Malphite",
+      "items": [
+        "适应性头盔",
+        "圣盾使的誓约",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.4505,
+      "count": 91,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "圣盾使的誓约": 72
+      }
+    },
+    {
+      "cluster_id": "422013",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "items": [
+        "石像鬼石板甲",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.2984,
+      "count": 7486,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422018",
+      "comp_name": "DA_18_Adaptor, DA_Nidalee18_AP",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.0833,
+      "count": 12,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "422016",
+      "comp_name": "DA_18_Vanguard, DA_18_Caitlyn",
+      "items": [
+        "适应性头盔",
+        "圣盾使的誓约",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.4091,
+      "count": 22,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "圣盾使的誓约": 72
+      }
+    },
+    {
+      "cluster_id": "422050",
+      "comp_name": "DA_18_Coven, DA_18_Morgana",
+      "items": [
+        "石像鬼石板甲",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.9778,
+      "count": 586,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ]
+}

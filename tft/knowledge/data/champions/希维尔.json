@@ -1,0 +1,167 @@
+{
+  "name": "希维尔",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422005",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "tier": "A",
+      "avg_placement": 4.4132
+    },
+    {
+      "cluster_id": "422010",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "tier": "A",
+      "avg_placement": 4.4202
+    },
+    {
+      "cluster_id": "422007",
+      "comp_name": "DA_18_Blossom, DA_18_Sett",
+      "tier": "B",
+      "avg_placement": 4.5238
+    },
+    {
+      "cluster_id": "422020",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Rammus",
+      "tier": "B",
+      "avg_placement": 4.5619
+    },
+    {
+      "cluster_id": "422026",
+      "comp_name": "DA_Riftbeast18, DA_18_Malphite",
+      "tier": "B",
+      "avg_placement": 4.5705
+    },
+    {
+      "cluster_id": "422016",
+      "comp_name": "DA_18_Vanguard, DA_18_Caitlyn",
+      "tier": "C",
+      "avg_placement": 5.0438
+    },
+    {
+      "cluster_id": "422040",
+      "comp_name": "DA_Juggernaut18, DA_Nidalee18_AP",
+      "tier": "D",
+      "avg_placement": 5.301
+    },
+    {
+      "cluster_id": "422047",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Xayah",
+      "tier": "D",
+      "avg_placement": 5.7119
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422005",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "items": [
+        "无尽之刃",
+        "最后的轻语",
+        "红霸符"
+      ],
+      "avg_placement": 3.634,
+      "count": 1604,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "最后的轻语": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "cluster_id": "422010",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "items": [
+        "无尽之刃",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.1012,
+      "count": 3084,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "422007",
+      "comp_name": "DA_18_Blossom, DA_18_Sett",
+      "items": [
+        "巨人杀手",
+        "无尽之刃",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.9272,
+      "count": 756,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "无尽之刃": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "422020",
+      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Rammus",
+      "items": [
+        "花仙子纹章",
+        "最后的轻语",
+        "红霸符"
+      ],
+      "avg_placement": 3.2546,
+      "count": 2235,
+      "priority_scores": {
+        "花仙子纹章": 100,
+        "最后的轻语": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "cluster_id": "422026",
+      "comp_name": "DA_Riftbeast18, DA_18_Malphite",
+      "items": [
+        "无尽之刃",
+        "红霸符",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.8905,
+      "count": 2421,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "红霸符": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "422016",
+      "comp_name": "DA_18_Vanguard, DA_18_Caitlyn",
+      "items": [
+        "无尽之刃",
+        "最后的轻语",
+        "红霸符"
+      ],
+      "avg_placement": 3.646,
+      "count": 113,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "最后的轻语": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "cluster_id": "422040",
+      "comp_name": "DA_Juggernaut18, DA_Nidalee18_AP",
+      "items": [
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "最后的轻语"
+      ],
+      "avg_placement": 3.9778,
+      "count": 45,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "最后的轻语": 72
+      }
+    }
+  ]
+}

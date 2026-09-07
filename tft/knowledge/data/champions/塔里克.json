@@ -1,0 +1,84 @@
+{
+  "name": "塔里克",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422024",
+      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "tier": "S",
+      "avg_placement": 3.976
+    },
+    {
+      "cluster_id": "422021",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "tier": "S",
+      "avg_placement": 4.2328
+    },
+    {
+      "cluster_id": "422002",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "tier": "A",
+      "avg_placement": 4.3871
+    },
+    {
+      "cluster_id": "422017",
+      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
+      "tier": "A",
+      "avg_placement": 4.4826
+    },
+    {
+      "cluster_id": "422012",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "tier": "A",
+      "avg_placement": 4.5152
+    },
+    {
+      "cluster_id": "422011",
+      "comp_name": "DA_18_Invoker, DA_18_Sentry",
+      "tier": "B",
+      "avg_placement": 4.5469
+    },
+    {
+      "cluster_id": "422013",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "tier": "B",
+      "avg_placement": 4.5935
+    },
+    {
+      "cluster_id": "422014",
+      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
+      "tier": "B",
+      "avg_placement": 4.744
+    },
+    {
+      "cluster_id": "422046",
+      "comp_name": "DA_Juggernaut18, DA_Draven18",
+      "tier": "B",
+      "avg_placement": 4.7644
+    },
+    {
+      "cluster_id": "422044",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
+      "tier": "B",
+      "avg_placement": 4.776
+    },
+    {
+      "cluster_id": "422041",
+      "comp_name": "DA_18_Executioner, DA_18_Soraka",
+      "tier": "C",
+      "avg_placement": 5.0
+    },
+    {
+      "cluster_id": "422042",
+      "comp_name": "DA_18_Inferno, DA_Amumu18",
+      "tier": "D",
+      "avg_placement": 5.1579
+    },
+    {
+      "cluster_id": "422034",
+      "comp_name": "DA_18_Elderwood, DA_18_Sett",
+      "tier": "D",
+      "avg_placement": 5.2877
+    }
+  ],
+  "builds": []
+}

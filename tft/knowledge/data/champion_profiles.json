@@ -1,574 +1,591 @@
 {
-  "version": "TFTSet17",
+  "version": "TFTSet18",
   "source": "MetaTFT lookup",
-  "generated_at": "2026-07-29T17:25:18+0800",
+  "generated_at": "2026-09-01T14:17:46+0800",
   "champions": {
-    "丽桑卓": {
-      "name": "丽桑卓",
-      "api_name": "TFT17_Lissandra",
-      "cost": 1,
-      "traits": [
-        "暗星",
-        "牧羊人",
-        "魔术师"
-      ]
-    },
     "乐芙兰": {
       "name": "乐芙兰",
-      "api_name": "TFT17_Leblanc",
-      "cost": 4,
+      "api_name": "DA_18_LeBlanc",
+      "cost": 2,
       "traits": [
-        "法官",
-        "牧羊人"
-      ]
-    },
-    "亚托克斯": {
-      "name": "亚托克斯",
-      "api_name": "TFT17_Aatrox",
-      "cost": 1,
-      "traits": [
-        "新星特攻队",
-        "堡垒卫士"
+        "永恒之森",
+        "法师"
       ]
     },
     "伊泽瑞尔": {
       "name": "伊泽瑞尔",
-      "api_name": "TFT17_Ezreal",
-      "cost": 1,
+      "api_name": "DA_18_Ezreal",
+      "cost": 4,
       "traits": [
-        "未来战士",
-        "狙神"
+        "永恒之森",
+        "裁决使"
       ]
     },
-    "佐伊": {
-      "name": "佐伊",
-      "api_name": "TFT17_Zoe",
+    "伊莉丝": {
+      "name": "伊莉丝",
+      "api_name": "TFT18_EliseSpider",
       "cost": 2,
       "traits": [
-        "法官",
+        "魔女",
+        "重装战士"
+      ]
+    },
+    "克格莫": {
+      "name": "克格莫",
+      "api_name": "DA_KogMaw18_AD",
+      "cost": 3,
+      "traits": [
+        "帝王斑蝶",
+        "魔战士",
         "神谕"
       ]
     },
-    "俄洛伊": {
-      "name": "俄洛伊",
-      "api_name": "TFT17_Illaoi",
-      "cost": 3,
+    "凯南": {
+      "name": "凯南",
+      "api_name": "DA_18_Kennen",
+      "cost": 5,
       "traits": [
-        "幻灵战队",
-        "重装战士",
-        "牧羊人"
+        "地狱火",
+        "裁决使"
       ]
     },
-    "内瑟斯": {
-      "name": "内瑟斯",
-      "api_name": "TFT17_Nasus",
-      "cost": 1,
+    "凯尔": {
+      "name": "凯尔",
+      "api_name": "DA_18_Kayle",
+      "cost": 2,
       "traits": [
-        "太空律动",
-        "重装战士"
+        "日蚀骑士",
+        "迅捷射手"
       ]
     },
     "凯特琳": {
       "name": "凯特琳",
-      "api_name": "TFT17_Caitlyn",
-      "cost": 1,
-      "traits": [
-        "新星特攻队",
-        "织命人"
-      ]
-    },
-    "努努和威朗普": {
-      "name": "努努和威朗普",
-      "api_name": "TFT17_Nunu",
-      "cost": 4,
-      "traits": [
-        "观星者",
-        "重装战士"
-      ]
-    },
-    "千珏": {
-      "name": "千珏",
-      "api_name": "TFT17_Kindred",
-      "cost": 4,
-      "traits": [
-        "新星特攻队",
-        "挑战者"
-      ]
-    },
-    "卑尔维斯": {
-      "name": "卑尔维斯",
-      "api_name": "TFT17_Belveth",
+      "api_name": "DA_18_Caitlyn",
       "cost": 2,
       "traits": [
-        "海魔人",
-        "挑战者",
-        "狂战士"
+        "魔女",
+        "猎人"
+      ]
+    },
+    "卡兹克": {
+      "name": "卡兹克",
+      "api_name": "DA_18_KhaZix",
+      "cost": 3,
+      "traits": [
+        "宿敌"
       ]
     },
     "卡尔玛": {
       "name": "卡尔玛",
-      "api_name": "TFT17_Karma",
+      "api_name": "DA_Karma18",
+      "cost": 1,
+      "traits": [
+        "灵魂莲华",
+        "法师"
+      ]
+    },
+    "卡西奥佩娅": {
+      "name": "卡西奥佩娅",
+      "api_name": "DA_18_Cassiopeia",
+      "cost": 3,
+      "traits": [
+        "魔女",
+        "法师"
+      ]
+    },
+    "厄斐琉斯": {
+      "name": "厄斐琉斯",
+      "api_name": "DA_18_Aphelios",
       "cost": 4,
       "traits": [
-        "暗星",
-        "旅人"
+        "月蚀骑士",
+        "迅捷射手"
       ]
     },
-    "卡莎": {
-      "name": "卡莎",
-      "api_name": "TFT17_Kaisa",
-      "cost": 3,
+    "可酷伯": {
+      "name": "可酷伯",
+      "api_name": "DA_18_Kobuko",
+      "cost": 1,
       "traits": [
-        "暗星",
-        "游侠"
-      ]
-    },
-    "厄加特": {
-      "name": "厄加特",
-      "api_name": "TFT17_Urgot",
-      "cost": 3,
-      "traits": [
-        "霸天机甲",
-        "斗士",
-        "狂战士"
-      ]
-    },
-    "厄运小姐": {
-      "name": "厄运小姐",
-      "api_name": "TFT17_MissFortune",
-      "cost": 3,
-      "traits": [
-        "武装战姬",
-        "选择羁绊"
-      ]
-    },
-    "古拉加斯": {
-      "name": "古拉加斯",
-      "api_name": "TFT17_Gragas",
-      "cost": 2,
-      "traits": [
-        "灵能特工",
+        "约德尔人...",
         "斗士"
       ]
     },
-    "塔姆": {
-      "name": "塔姆",
-      "api_name": "TFT17_TahmKench",
+    "塔里克": {
+      "name": "塔里克",
+      "api_name": "DA_Taric18",
+      "cost": 5,
+      "traits": [
+        "宝石骑士",
+        "重装战士"
+      ]
+    },
+    "墨菲特": {
+      "name": "墨菲特",
+      "api_name": "DA_18_Malphite",
       "cost": 4,
       "traits": [
-        "命运祭司",
-        "斗士"
+        "黑荆棘",
+        "魔岩巨兽"
+      ]
+    },
+    "奈德丽": {
+      "name": "奈德丽",
+      "api_name": "DA_Nidalee18_AP",
+      "cost": 4,
+      "traits": [
+        "野兽之灵",
+        "魔战士"
       ]
     },
     "奥恩": {
       "name": "奥恩",
-      "api_name": "TFT17_Ornn",
-      "cost": 3,
-      "traits": [
-        "太空律动",
-        "堡垒卫士"
-      ]
-    },
-    "奥瑞利安·索尔": {
-      "name": "奥瑞利安·索尔",
-      "api_name": "TFT17_AurelionSol",
-      "cost": 4,
-      "traits": [
-        "霸天机甲",
-        "神谕"
-      ]
-    },
-    "娑娜": {
-      "name": "娑娜",
-      "api_name": "TFT17_Sona",
-      "cost": 5,
-      "traits": [
-        "最高指挥官",
-        "灵能特工",
-        "牧羊人"
-      ]
-    },
-    "娜美": {
-      "name": "娜美",
-      "api_name": "TFT17_Nami",
-      "cost": 4,
-      "traits": [
-        "太空律动",
-        "魔术师"
-      ]
-    },
-    "小木灵": {
-      "name": "小木灵",
-      "api_name": "TFT17_IvernMinion",
-      "cost": 2,
-      "traits": [
-        "木灵族",
-        "牧羊人",
-        "旅人"
-      ]
-    },
-    "崔斯特": {
-      "name": "崔斯特",
-      "api_name": "TFT17_TwistedFate",
+      "api_name": "DA_18_Ornn",
       "cost": 1,
       "traits": [
-        "观星者",
-        "织命人"
+        "永恒之森",
+        "护卫"
       ]
     },
-    "巴德": {
-      "name": "巴德",
-      "api_name": "TFT17_Bard",
-      "cost": 5,
-      "traits": [
-        "木灵族",
-        "神谕"
-      ]
-    },
-    "布里茨": {
-      "name": "布里茨",
-      "api_name": "TFT17_Blitzcrank",
-      "cost": 5,
-      "traits": [
-        "汪星机器人",
-        "太空律动",
-        "重装战士"
-      ]
-    },
-    "库奇": {
-      "name": "库奇",
-      "api_name": "TFT17_Corki",
+    "婕拉": {
+      "name": "婕拉",
+      "api_name": "DA_18_Zyra",
       "cost": 4,
       "traits": [
-        "木灵族",
-        "织命人"
+        "荆棘之兴",
+        "召唤师"
+      ]
+    },
+    "峡谷迅捷蟹": {
+      "name": "峡谷迅捷蟹",
+      "api_name": "DA_Scuttlecrab18",
+      "cost": 2,
+      "traits": [
+        "峡谷野怪",
+        "主宰"
+      ]
+    },
+    "崔丝塔娜": {
+      "name": "崔丝塔娜",
+      "api_name": "DA_18_Tristana",
+      "cost": 3,
+      "traits": [
+        "花仙子",
+        "约德尔人...",
+        "猎人"
+      ]
+    },
+    "希维尔": {
+      "name": "希维尔",
+      "api_name": "DA_18_Sivir",
+      "cost": 4,
+      "traits": [
+        "野兽之灵",
+        "猎人"
+      ]
+    },
+    "德莱文": {
+      "name": "德莱文",
+      "api_name": "DA_Draven18",
+      "cost": 5,
+      "traits": [
+        "赏金猎人"
       ]
     },
     "慎": {
       "name": "慎",
-      "api_name": "TFT17_Shen",
-      "cost": 5,
+      "api_name": "DA_18_Shen",
+      "cost": 2,
       "traits": [
-        "暮光铁壁",
-        "未来战士",
-        "堡垒卫士"
+        "地狱火",
+        "护卫"
       ]
     },
-    "拉亚斯特": {
-      "name": "拉亚斯特",
-      "api_name": "TFT17_Rhaast",
-      "cost": 3,
+    "拉克丝": {
+      "name": "拉克丝",
+      "api_name": "TFT18_Lux_Base",
+      "cost": 5,
       "traits": [
-        "救世主"
+        "大元素使"
       ]
     },
     "拉莫斯": {
       "name": "拉莫斯",
-      "api_name": "TFT17_Rammus",
-      "cost": 4,
+      "api_name": "DA_18_Rammus",
+      "cost": 3,
       "traits": [
-        "木灵族",
-        "堡垒卫士"
+        "约德尔人...",
+        "护卫"
+      ]
+    },
+    "拉露恩": {
+      "name": "拉露恩",
+      "api_name": "DA_18_Alune",
+      "cost": 5,
+      "traits": [
+        "月华神女",
+        "月蚀骑士",
+        "法师"
       ]
     },
     "提莫": {
       "name": "提莫",
-      "api_name": "TFT17_Teemo",
-      "cost": 1,
+      "api_name": "DA_18_Teemo",
+      "cost": 2,
       "traits": [
-        "太空律动",
-        "牧羊人"
+        "约德尔人...",
+        "神谕"
       ]
     },
     "易": {
       "name": "易",
-      "api_name": "TFT17_MasterYi",
-      "cost": 4,
+      "api_name": "DA_18_MasterYi_AD",
+      "cost": 3,
       "traits": [
-        "灵能特工",
+        "灵魂莲华",
+        "魔战士"
+      ]
+    },
+    "暗影狼": {
+      "name": "暗影狼",
+      "api_name": "DA_Murkwolf18",
+      "cost": 2,
+      "traits": [
+        "峡谷野怪",
         "狂战士"
       ]
     },
-    "格温": {
-      "name": "格温",
-      "api_name": "TFT17_Gwen",
+    "沃里克": {
+      "name": "沃里克",
+      "api_name": "DA_18_Warwick",
       "cost": 2,
       "traits": [
-        "太空律动",
-        "游侠"
+        "黑荆棘",
+        "狂战士"
       ]
     },
-    "格雷福斯": {
-      "name": "格雷福斯",
-      "api_name": "TFT17_Graves",
-      "cost": 5,
-      "traits": [
-        "军工1号"
-      ]
-    },
-    "波比": {
-      "name": "波比",
-      "api_name": "TFT17_Poppy",
+    "洛": {
+      "name": "洛",
+      "api_name": "DA_18_Rakan",
       "cost": 1,
       "traits": [
-        "木灵族",
-        "堡垒卫士"
+        "花仙子",
+        "主宰",
+        "重装战士"
       ]
     },
-    "泰隆": {
-      "name": "泰隆",
-      "api_name": "TFT17_Talon",
-      "cost": 1,
-      "traits": [
-        "观星者",
-        "游侠"
-      ]
-    },
-    "派克": {
-      "name": "派克",
-      "api_name": "TFT17_Pyke",
-      "cost": 2,
-      "traits": [
-        "灵能特工",
-        "旅人"
-      ]
-    },
-    "潘森": {
-      "name": "潘森",
-      "api_name": "TFT17_Pantheon",
-      "cost": 2,
-      "traits": [
-        "未来战士",
-        "斗士",
-        "魔术师"
-      ]
-    },
-    "烬": {
-      "name": "烬",
-      "api_name": "TFT17_Jhin",
-      "cost": 5,
-      "traits": [
-        "暗星",
-        "灭星尊",
-        "狙神"
-      ]
-    },
-    "璐璐": {
-      "name": "璐璐",
-      "api_name": "TFT17_Lulu",
+    "深红锋喙鸟": {
+      "name": "深红锋喙鸟",
+      "api_name": "DA_CrimsonRaptor18",
       "cost": 3,
       "traits": [
-        "观星者",
-        "魔术师"
+        "峡谷野怪",
+        "召唤师",
+        "迅捷射手"
       ]
     },
-    "科加斯": {
-      "name": "科加斯",
-      "api_name": "TFT17_Chogath",
-      "cost": 1,
+    "瑟庄妮": {
+      "name": "瑟庄妮",
+      "api_name": "DA_18_Sejuani",
+      "cost": 2,
       "traits": [
-        "暗星",
+        "日蚀骑士",
+        "主宰"
+      ]
+    },
+    "瑟提": {
+      "name": "瑟提",
+      "api_name": "DA_18_Sett",
+      "cost": 4,
+      "traits": [
+        "灵魂莲华",
         "斗士"
       ]
     },
-    "米利欧": {
-      "name": "米利欧",
-      "api_name": "TFT17_Milio",
-      "cost": 2,
+    "索拉卡": {
+      "name": "索拉卡",
+      "api_name": "DA_18_Soraka",
+      "cost": 4,
       "traits": [
-        "未来战士",
-        "织命人"
+        "绝命花妖",
+        "裁决使"
+      ]
+    },
+    "约里克": {
+      "name": "约里克",
+      "api_name": "DA_18_Yorick",
+      "cost": 1,
+      "traits": [
+        "灵魂莲华",
+        "主宰",
+        "召唤师"
       ]
     },
     "纳尔": {
       "name": "纳尔",
-      "api_name": "TFT17_Gnar",
-      "cost": 2,
+      "api_name": "DA_18_GnarSmall",
+      "cost": 5,
       "traits": [
-        "木灵族",
-        "狙神"
+        "永恒之森",
+        "约德尔人...",
+        "斗士"
       ]
     },
-    "维克托": {
-      "name": "维克托",
-      "api_name": "TFT17_Viktor",
-      "cost": 3,
+    "绯红印记树怪": {
+      "name": "绯红印记树怪",
+      "api_name": "DA_Brambleback18",
+      "cost": 4,
       "traits": [
-        "灵能特工",
-        "神谕"
+        "峡谷野怪",
+        "狂战士"
+      ]
+    },
+    "绯红树怪": {
+      "name": "绯红树怪",
+      "api_name": "DA_Cinderling18",
+      "cost": 1,
+      "traits": [
+        "峡谷野怪",
+        "猎人"
       ]
     },
     "维迦": {
       "name": "维迦",
-      "api_name": "TFT17_Veigar",
+      "api_name": "DA_18_Veigar",
       "cost": 1,
       "traits": [
-        "木灵族",
-        "魔术师"
+        "黑荆棘",
+        "约德尔人...",
+        "法师"
+      ]
+    },
+    "艾希": {
+      "name": "艾希",
+      "api_name": "DA_18_Ashe",
+      "cost": 5,
+      "traits": [
+        "灵魂莲华",
+        "猎人"
+      ]
+    },
+    "艾翁": {
+      "name": "艾翁",
+      "api_name": "DA_18_Ivern",
+      "cost": 5,
+      "traits": [
+        "翠神"
+      ]
+    },
+    "芸阿娜": {
+      "name": "芸阿娜",
+      "api_name": "DA_18_Yunara",
+      "cost": 2,
+      "traits": [
+        "灵魂莲华",
+        "裁决使"
+      ]
+    },
+    "苍蓝哨戒": {
+      "name": "苍蓝哨戒",
+      "api_name": "DA_18_Sentry",
+      "cost": 1,
+      "traits": [
+        "峡谷野怪",
+        "神谕"
+      ]
+    },
+    "苍蓝雕纹魔像": {
+      "name": "苍蓝雕纹魔像",
+      "api_name": "DA_Sentinel18",
+      "cost": 4,
+      "traits": [
+        "峡谷野怪",
+        "重装战士",
+        "神谕"
       ]
     },
     "茂凯": {
       "name": "茂凯",
-      "api_name": "TFT17_Maokai",
-      "cost": 3,
+      "api_name": "DA_18_Maokai",
+      "cost": 5,
       "traits": [
-        "新星特攻队",
-        "斗士"
+        "远古树精",
+        "主宰"
       ]
     },
-    "莎弥拉": {
-      "name": "莎弥拉",
-      "api_name": "TFT17_Samira",
-      "cost": 3,
+    "莉莉娅": {
+      "name": "莉莉娅",
+      "api_name": "DA_18_Lillia",
+      "cost": 4,
       "traits": [
-        "太空律动",
-        "狙神"
-      ]
-    },
-    "莫德凯撒": {
-      "name": "莫德凯撒",
-      "api_name": "TFT17_Mordekaiser",
-      "cost": 2,
-      "traits": [
-        "暗星",
-        "神谕",
-        "重装战士"
+        "花仙子",
+        "护卫"
       ]
     },
     "莫甘娜": {
       "name": "莫甘娜",
-      "api_name": "TFT17_Morgana",
+      "api_name": "DA_18_Morgana",
       "cost": 4,
       "traits": [
-        "黑暗魔女"
+        "魔女",
+        "神谕"
       ]
     },
-    "菲兹": {
-      "name": "菲兹",
-      "api_name": "TFT17_Fizz",
+    "蔚": {
+      "name": "蔚",
+      "api_name": "DA_Vi18",
       "cost": 3,
       "traits": [
-        "木灵族",
-        "游侠"
-      ]
-    },
-    "菲奥娜": {
-      "name": "菲奥娜",
-      "api_name": "TFT17_Fiora",
-      "cost": 5,
-      "traits": [
-        "斗神",
-        "幻灵战队",
-        "狂战士"
+        "野兽之灵",
+        "主宰"
       ]
     },
     "蕾欧娜": {
       "name": "蕾欧娜",
-      "api_name": "TFT17_Leona",
+      "api_name": "DA_18_Leona",
       "cost": 1,
       "traits": [
-        "法官",
+        "日蚀骑士",
+        "护卫"
+      ]
+    },
+    "费德提克": {
+      "name": "费德提克",
+      "api_name": "DA_Fiddlesticks18",
+      "cost": 3,
+      "traits": [
+        "绝命花妖",
+        "护卫",
+        "法师"
+      ]
+    },
+    "赫卡里姆": {
+      "name": "赫卡里姆",
+      "api_name": "DA_18_Hecarim",
+      "cost": 3,
+      "traits": [
+        "永恒之森",
         "重装战士"
       ]
     },
-    "薇古丝": {
-      "name": "薇古丝",
-      "api_name": "TFT17_Vex",
+    "远古巨龙": {
+      "name": "远古巨龙",
+      "api_name": "DA_18_ElderDragon",
       "cost": 5,
       "traits": [
-        "末日使者",
-        "观星者"
+        "顶级掠食者",
+        "峡谷野怪"
       ]
     },
-    "贝蕾亚": {
-      "name": "贝蕾亚",
-      "api_name": "TFT17_Briar",
-      "cost": 1,
+    "远古石甲虫": {
+      "name": "远古石甲虫",
+      "api_name": "DA_Krug18",
+      "cost": 3,
       "traits": [
-        "幻灵战队",
-        "海魔人",
-        "游侠"
+        "峡谷野怪",
+        "斗士"
       ]
     },
-    "贾克斯": {
-      "name": "贾克斯",
-      "api_name": "TFT17_Jax",
+    "阿兹尔": {
+      "name": "阿兹尔",
+      "api_name": "DA_18_Azir",
+      "cost": 3,
+      "traits": [
+        "黑荆棘",
+        "裁决使",
+        "召唤师"
+      ]
+    },
+    "阿利斯塔": {
+      "name": "阿利斯塔",
+      "api_name": "DA_18_Alistar",
       "cost": 2,
       "traits": [
-        "观星者",
-        "堡垒卫士"
-      ]
-    },
-    "超级机甲": {
-      "name": "超级机甲",
-      "api_name": "TFT17_Galio",
-      "cost": 4,
-      "traits": [
-        "霸天机甲",
-        "旅人"
-      ]
-    },
-    "金克丝": {
-      "name": "金克丝",
-      "api_name": "TFT17_Jinx",
-      "cost": 2,
-      "traits": [
-        "幻灵战队",
-        "挑战者"
-      ]
-    },
-    "锐雯": {
-      "name": "锐雯",
-      "api_name": "TFT17_Riven",
-      "cost": 4,
-      "traits": [
-        "未来战士",
-        "游侠"
+        "永恒之森",
+        "斗士"
       ]
     },
     "阿卡丽": {
       "name": "阿卡丽",
-      "api_name": "TFT17_Akali",
-      "cost": 2,
+      "api_name": "DA_18_Akali_AD",
+      "cost": 1,
       "traits": [
-        "新星特攻队",
+        "地狱火",
+        "魔战士",
         "狂战士"
       ]
     },
-    "阿萝拉": {
-      "name": "阿萝拉",
-      "api_name": "TFT17_Aurora",
-      "cost": 3,
+    "阿木木": {
+      "name": "阿木木",
+      "api_name": "DA_Amumu18",
+      "cost": 4,
       "traits": [
-        "幻灵战队",
-        "旅人"
+        "地狱火",
+        "主宰"
+      ]
+    },
+    "阿狸": {
+      "name": "阿狸",
+      "api_name": "DA_18_Ahri",
+      "cost": 4,
+      "traits": [
+        "灵魂莲华",
+        "法师"
       ]
     },
     "雷克塞": {
       "name": "雷克塞",
-      "api_name": "TFT17_RekSai",
+      "api_name": "DA_18_RekSai",
       "cost": 1,
       "traits": [
-        "海魔人",
+        "黑荆棘",
         "斗士"
+      ]
+    },
+    "雷恩加尔": {
+      "name": "雷恩加尔",
+      "api_name": "DA_18_Rengar",
+      "cost": 3,
+      "traits": [
+        "宿敌"
       ]
     },
     "霞": {
       "name": "霞",
-      "api_name": "TFT17_Xayah",
-      "cost": 4,
+      "api_name": "DA_18_Xayah",
+      "cost": 1,
       "traits": [
-        "观星者",
-        "狙神"
+        "永恒之森",
+        "花仙子",
+        "迅捷射手"
+      ]
+    },
+    "韦鲁斯": {
+      "name": "韦鲁斯",
+      "api_name": "DA_18_Varus",
+      "cost": 1,
+      "traits": [
+        "地狱火",
+        "迅捷射手"
+      ]
+    },
+    "魔沼蛙": {
+      "name": "魔沼蛙",
+      "api_name": "DA_Gromp18_AP",
+      "cost": 2,
+      "traits": [
+        "峡谷野怪",
+        "魔战士"
       ]
     },
     "黛安娜": {
       "name": "黛安娜",
-      "api_name": "TFT17_Diana",
+      "api_name": "DA_18_Diana",
       "cost": 3,
       "traits": [
-        "法官",
-        "挑战者"
+        "月蚀骑士",
+        "狂战士",
+        "重装战士"
       ]
     }
   }

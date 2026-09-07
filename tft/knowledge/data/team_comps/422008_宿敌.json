@@ -1,0 +1,218 @@
+{
+  "cluster_id": "422008",
+  "tft_set": "TFTSet18",
+  "units": [
+    "厄斐琉斯",
+    "黛安娜",
+    "伊泽瑞尔",
+    "赫卡里姆",
+    "卡兹克",
+    "乐芙兰",
+    "雷恩加尔"
+  ],
+  "traits": [
+    "永恒之森 (1)",
+    "月蚀骑士 (1)",
+    "宿敌 (3)",
+    "狂战士 (1)",
+    "重装战士 (1)"
+  ],
+  "stars": [
+    "卡兹克",
+    "雷恩加尔",
+    "赫卡里姆",
+    "黛安娜",
+    "克格莫",
+    "易"
+  ],
+  "name_string": "DA_18_Elderwood, DA_18_KhaZix",
+  "display_names": [
+    {
+      "name": "宿敌",
+      "type": "trait",
+      "score": 2.7111455424640742
+    },
+    {
+      "name": "卡兹克",
+      "type": "unit",
+      "score": 4.268890894231424
+    }
+  ],
+  "count": 777,
+  "avg_placement": 4.4453,
+  "top4_rate": 0.4955,
+  "win_rate": 0.1609,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "雷恩加尔",
+      "items": [
+        "夜之锋刃",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.0017,
+      "count": 15736,
+      "score": 0.5338,
+      "place_change": -0.448,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "卡兹克",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 4.186,
+      "count": 15851,
+      "score": 0.4833,
+      "place_change": -0.263,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "赫卡里姆",
+      "items": [
+        "薄暮法袍",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.0881,
+      "count": 329,
+      "score": 0.3791,
+      "place_change": -1.361,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "unit": "黛安娜",
+      "items": [
+        "正义之手",
+        "离子火花",
+        "珠光护手"
+      ],
+      "avg_placement": 3.6762,
+      "count": 281,
+      "score": 0.0553,
+      "place_change": -0.773,
+      "priority_scores": {
+        "正义之手": 100,
+        "离子火花": 85,
+        "珠光护手": 72
+      }
+    }
+  ],
+  "build_items": {
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 77123,
+      "avg": 4.3108,
+      "pcnt": 1.31313
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 57752,
+      "avg": 4.3228,
+      "pcnt": 0.98331
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 44614,
+      "avg": 4.2705,
+      "pcnt": 0.75962
+    },
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 34351,
+      "avg": 4.1409,
+      "pcnt": 0.58488
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 31602,
+      "avg": 4.1433,
+      "pcnt": 0.53807
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 29433,
+      "avg": 4.169,
+      "pcnt": 0.50114
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 18497,
+      "avg": 4.2248,
+      "pcnt": 0.31494
+    },
+    "薄暮法袍": {
+      "itemNames": "DA_Evenshroud",
+      "count": 12566,
+      "avg": 3.9039,
+      "pcnt": 0.21395
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 12110,
+      "avg": 3.8211,
+      "pcnt": 0.20619
+    },
+    "离子火花": {
+      "itemNames": "DA_IonicSpark",
+      "count": 9348,
+      "avg": 3.7704,
+      "pcnt": 0.15916
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 2290,
+      "avg": 4.5939,
+      "pick_rate": 0.022605
+    },
+    {
+      "day": "2026-08-28",
+      "count": 8525,
+      "avg": 4.451,
+      "pick_rate": 0.021939
+    },
+    {
+      "day": "2026-08-29",
+      "count": 13372,
+      "avg": 4.4336,
+      "pick_rate": 0.021759
+    },
+    {
+      "day": "2026-08-30",
+      "count": 19610,
+      "avg": 4.4639,
+      "pick_rate": 0.022797
+    },
+    {
+      "day": "2026-08-31",
+      "count": 23479,
+      "avg": 4.4463,
+      "pick_rate": 0.022789
+    },
+    {
+      "day": "2026-09-01",
+      "count": 4251,
+      "avg": 4.4585,
+      "pick_rate": 0.023248
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.033
+}

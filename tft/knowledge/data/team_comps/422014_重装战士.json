@@ -1,0 +1,225 @@
+{
+  "cluster_id": "422014",
+  "tft_set": "TFTSet18",
+  "units": [
+    "厄斐琉斯",
+    "黛安娜",
+    "赫卡里姆",
+    "雷恩加尔",
+    "绯红印记树怪",
+    "深红锋喙鸟",
+    "苍蓝雕纹魔像",
+    "塔里克"
+  ],
+  "traits": [
+    "月蚀骑士 (1)",
+    "迅捷射手 (1)",
+    "宿敌 (1)",
+    "狂战士 (1)",
+    "重装战士 (2)",
+    "宝石骑士 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "雷恩加尔",
+    "赫卡里姆",
+    "黛安娜",
+    "深红锋喙鸟",
+    "卡兹克",
+    "克格莫",
+    "蔚",
+    "易",
+    "崔丝塔娜",
+    "卡西奥佩娅"
+  ],
+  "name_string": "DA_18_Vanguard, DA_18_Rengar",
+  "display_names": [
+    {
+      "name": "重装战士",
+      "type": "trait",
+      "score": 1.6095243895012483
+    },
+    {
+      "name": "雷恩加尔",
+      "type": "unit",
+      "score": 3.56315084343219
+    }
+  ],
+  "count": 168,
+  "avg_placement": 4.744,
+  "top4_rate": 0.4643,
+  "win_rate": 0.0952,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "雷恩加尔",
+      "items": [
+        "夜之锋刃",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.1649,
+      "count": 3935,
+      "score": 0.5404,
+      "place_change": -0.492,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "赫卡里姆",
+      "items": [
+        "薄暮法袍",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.6034,
+      "count": 237,
+      "score": 0.4109,
+      "place_change": -1.053,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "unit": "深红锋喙鸟",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海妖之怒",
+        "最后的轻语"
+      ],
+      "avg_placement": 3.791,
+      "count": 737,
+      "score": 0.3082,
+      "place_change": -0.866,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海妖之怒": 85,
+        "最后的轻语": 72
+      }
+    },
+    {
+      "unit": "黛安娜",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "珠光护手"
+      ],
+      "avg_placement": 3.9206,
+      "count": 63,
+      "score": 0.0931,
+      "place_change": -0.736,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "珠光护手": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 19633,
+      "avg": 4.412,
+      "pcnt": 1.1956
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 11915,
+      "avg": 4.2316,
+      "pcnt": 0.7256
+    },
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 9308,
+      "avg": 4.1783,
+      "pcnt": 0.56684
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 7567,
+      "avg": 4.5441,
+      "pcnt": 0.46081
+    },
+    "海妖之怒": {
+      "itemNames": "DA_KrakensFury",
+      "count": 6092,
+      "avg": 4.2306,
+      "pcnt": 0.37099
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 6089,
+      "avg": 4.3053,
+      "pcnt": 0.37081
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 5870,
+      "avg": 4.1387,
+      "pcnt": 0.35747
+    },
+    "薄暮法袍": {
+      "itemNames": "DA_Evenshroud",
+      "count": 5503,
+      "avg": 4.151,
+      "pcnt": 0.33512
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 4534,
+      "avg": 4.3754,
+      "pcnt": 0.27611
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 2645,
+      "avg": 4.6026,
+      "pcnt": 0.16107
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 793,
+      "avg": 4.5889,
+      "pick_rate": 0.007828
+    },
+    {
+      "day": "2026-08-28",
+      "count": 2787,
+      "avg": 4.5608,
+      "pick_rate": 0.007172
+    },
+    {
+      "day": "2026-08-29",
+      "count": 4171,
+      "avg": 4.6418,
+      "pick_rate": 0.006787
+    },
+    {
+      "day": "2026-08-30",
+      "count": 5726,
+      "avg": 4.5842,
+      "pick_rate": 0.006657
+    },
+    {
+      "day": "2026-08-31",
+      "count": 6179,
+      "avg": 4.7239,
+      "pick_rate": 0.005997
+    },
+    {
+      "day": "2026-09-01",
+      "count": 954,
+      "avg": 4.7495,
+      "pick_rate": 0.005217
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.044
+}

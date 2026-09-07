@@ -1,0 +1,224 @@
+{
+  "cluster_id": "422016",
+  "tft_set": "TFTSet18",
+  "units": [
+    "凯特琳",
+    "伊莉丝",
+    "赫卡里姆",
+    "洛",
+    "希维尔",
+    "崔丝塔娜",
+    "苍蓝雕纹魔像",
+    "蔚"
+  ],
+  "traits": [
+    "花仙子 (1)",
+    "猎人 (2)",
+    "重装战士 (2)",
+    "主宰 (1)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "凯特琳",
+    "伊莉丝",
+    "峡谷迅捷蟹",
+    "暗影狼",
+    "雷恩加尔",
+    "沃里克"
+  ],
+  "name_string": "DA_18_Vanguard, DA_18_Caitlyn",
+  "display_names": [
+    {
+      "name": "重装战士",
+      "type": "trait",
+      "score": 1.6741805397580396
+    },
+    {
+      "name": "凯特琳",
+      "type": "unit",
+      "score": 3.642591252197291
+    }
+  ],
+  "count": 137,
+  "avg_placement": 5.0438,
+  "top4_rate": 0.4015,
+  "win_rate": 0.0584,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "凯特琳",
+      "items": [
+        "巨人杀手",
+        "鬼索的狂暴之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 4.4308,
+      "count": 455,
+      "score": 0.505,
+      "place_change": -0.583,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "鬼索的狂暴之刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "unit": "伊莉丝",
+      "items": [
+        "巨龙之爪",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.2301,
+      "count": 113,
+      "score": 0.4041,
+      "place_change": -0.783,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "希维尔",
+      "items": [
+        "无尽之刃",
+        "最后的轻语",
+        "红霸符"
+      ],
+      "avg_placement": 3.646,
+      "count": 113,
+      "score": 0.3661,
+      "place_change": -1.367,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "最后的轻语": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "适应性头盔",
+        "圣盾使的誓约",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.4091,
+      "count": 22,
+      "score": 0.1398,
+      "place_change": -1.604,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "圣盾使的誓约": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 11097,
+      "avg": 4.8555,
+      "pcnt": 1.14745
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 7736,
+      "avg": 4.7063,
+      "pcnt": 0.79992
+    },
+    "海妖之怒": {
+      "itemNames": "DA_KrakensFury",
+      "count": 6905,
+      "avg": 4.8074,
+      "pcnt": 0.71399
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 6100,
+      "avg": 4.739,
+      "pcnt": 0.63075
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 5867,
+      "avg": 4.7713,
+      "pcnt": 0.60666
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 4296,
+      "avg": 4.517,
+      "pcnt": 0.44421
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 3983,
+      "avg": 4.6091,
+      "pcnt": 0.41185
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 3101,
+      "avg": 4.565,
+      "pcnt": 0.32065
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 2366,
+      "avg": 4.3694,
+      "pcnt": 0.24465
+    },
+    "适应性头盔": {
+      "itemNames": "DA_AdaptiveHelm",
+      "count": 2133,
+      "avg": 4.4341,
+      "pcnt": 0.22056
+    },
+    "巨龙之爪": {
+      "itemNames": "DA_DragonsClaw",
+      "count": 2077,
+      "avg": 4.5763,
+      "pcnt": 0.21477
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-08-27",
+      "count": 436,
+      "avg": 4.7959,
+      "pick_rate": 0.004304
+    },
+    {
+      "day": "2026-08-28",
+      "count": 1502,
+      "avg": 4.7517,
+      "pick_rate": 0.003865
+    },
+    {
+      "day": "2026-08-29",
+      "count": 2141,
+      "avg": 4.9071,
+      "pick_rate": 0.003484
+    },
+    {
+      "day": "2026-08-30",
+      "count": 3363,
+      "avg": 5.0059,
+      "pick_rate": 0.00391
+    },
+    {
+      "day": "2026-08-31",
+      "count": 3853,
+      "avg": 5.0654,
+      "pick_rate": 0.00374
+    },
+    {
+      "day": "2026-09-01",
+      "count": 619,
+      "avg": 5.0162,
+      "pick_rate": 0.003385
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.026
+}

@@ -115,8 +115,12 @@ class Translator:
         self.cn_to_id: dict[str, str] = {}
         self.unit_profiles: dict[str, dict] = {}
 
-    def load_from_lookups(self, tft_set: str = "TFTSet16") -> bool:
-        """从 MetaTFT lookups 接口加载翻译"""
+    def load_from_lookups(self, tft_set: str = "TFTSet16", comp_unit_ids: Optional[set] = None) -> bool:
+        """从 MetaTFT lookups 接口加载翻译
+
+        comp_unit_ids: comps_data 中实际出现的英雄 ID 集合（可选）。
+        用于决定 cn_to_id / unit_profiles 的主 ID：优先选 comps 实际使用的 key。
+        """
         try:
             url = f"https://data.metatft.com/lookups/{tft_set}_latest_zh_cn.json"
             log.info(f"加载翻译表: {url}")
@@ -134,19 +138,38 @@ class Translator:
                     self.cn_to_id[name] = api_name
 
             # 解析英雄
+            # apiName 永远保留为主兼容入口，assetNames 仅作为可选别名索引：
+            # TFTSet18+ 的 comps_data 英雄 ID（DA_18_*）与 lookup apiName（TFT18_*）
+            # 不一致，桥梁在 assetNames；未来 ID 恢复一致或 assetNames 消失时，
+            # 逻辑自动退回旧路径（assetNames 为空即跳过别名写入）。
             units = data.get("units", [])
             for unit in units:
                 api_name = unit.get("apiName", "")
                 name = unit.get("name", "")
-                if api_name and name:
-                    self.id_to_cn[api_name] = name
-                    self.cn_to_id[name] = api_name
-                    self.unit_profiles[api_name] = {
-                        "api_name": api_name,
-                        "name": name,
-                        "cost": unit.get("cost"),
-                        "traits": unit.get("traits", []),
-                    }
+                if not (api_name and name):
+                    continue
+
+                asset_names = [a for a in (unit.get("assetNames") or []) if isinstance(a, str) and a]
+
+                # 主 ID：优先选实际出现在 comps_data 里的 key（数据驱动，不写死策略）
+                primary = api_name
+                if comp_unit_ids is not None and api_name not in comp_unit_ids:
+                    for asset in asset_names:
+                        if asset in comp_unit_ids:
+                            primary = asset
+                            break
+
+                self.id_to_cn[api_name] = name
+                for asset in asset_names:
+                    if asset != api_name:
+                        self.id_to_cn.setdefault(asset, name)
+                self.cn_to_id[name] = primary
+                self.unit_profiles[primary] = {
+                    "api_name": primary,
+                    "name": name,
+                    "cost": unit.get("cost"),
+                    "traits": unit.get("traits", []),
+                }
 
             # 解析羁绊
             traits = data.get("traits", [])
@@ -491,7 +514,16 @@ class TFTDataPipeline:
         # 0. 先加载翻译表（用于生成 localization.json）
         raw_data  = self.client.fetch_comps_data()
         tft_set = raw_data.get("tft_set", "TFTSet16") if raw_data else "TFTSet16"
-        self.translator.load_from_lookups(tft_set)
+        # 提取 comps 实际使用的英雄 ID 集合（Set18+ ID 不一致时用于决定翻译主 ID）
+        comp_unit_ids: set = set()
+        for sub in (raw_data.get("cluster_details") or {}).values():
+            if not isinstance(sub, dict):
+                continue
+            for unit_id in sub.get("units_string", "").split(","):
+                unit_id = unit_id.strip()
+                if unit_id:
+                    comp_unit_ids.add(unit_id)
+        self.translator.load_from_lookups(tft_set, comp_unit_ids)
 
         # 1. 获取两个核心接口
         if not raw_data:

@@ -1,0 +1,51 @@
+{
+  "name": "沃里克",
+  "appear_in_comps": [
+    {
+      "cluster_id": "422032",
+      "comp_name": "DA_18_Blackthorn, DA_18_Warwick",
+      "tier": "C",
+      "avg_placement": 4.9095
+    },
+    {
+      "cluster_id": "422043",
+      "comp_name": "DA_18_Blackthorn, DA_18_KhaZix",
+      "tier": "C",
+      "avg_placement": 4.9752
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "422032",
+      "comp_name": "DA_18_Blackthorn, DA_18_Warwick",
+      "items": [
+        "朔极之矛",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.6717,
+      "count": 6443,
+      "priority_scores": {
+        "朔极之矛": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "422043",
+      "comp_name": "DA_18_Blackthorn, DA_18_KhaZix",
+      "items": [
+        "朔极之矛",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.8235,
+      "count": 51,
+      "priority_scores": {
+        "朔极之矛": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ]
+}

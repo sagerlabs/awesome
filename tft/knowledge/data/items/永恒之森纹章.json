@@ -1,0 +1,13 @@
+{
+  "name": "永恒之森纹章",
+  "priority_list": [
+    {
+      "cluster_id": "422006",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.3252,
+      "carry": "厄斐琉斯",
+      "priority_score": 100
+    }
+  ]
+}
