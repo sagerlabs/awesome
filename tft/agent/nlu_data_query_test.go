@@ -1,62 +1,52 @@
 package agent_test
 
+// FIX-01：业务行为测试已与现场生产数据解耦。
+// 历史依赖 `data.NewStore(metadata/tft-meta/data)` 的耦合测试，
+// 一旦赛季轮换就会因为"金克丝"等角色消失而失败。
+// 本文件改用 tft/agent/fixtures_test.go 中的稳定内存数据集。
+//
+// 现行赛季结构契约测试（数量、引用、Chinese ID 覆盖）已迁到
+// nlu_data_contract_test.go，由 Code Q 角色独立维护。
+
 import (
 	"context"
-	"fmt"
-	"path/filepath"
-	"runtime"
 	"testing"
 
 	"github.com/sagerlabs/awesome/tft/agent"
-	"github.com/sagerlabs/awesome/tft/data"
 )
 
-func setupTestStore(t *testing.T) *data.Store {
-	t.Helper()
-	_, file, _, ok := runtime.Caller(0)
-	if !ok {
-		t.Fatal("无法定位测试文件路径")
-	}
-
-	projectRoot := filepath.Clean(filepath.Join(filepath.Dir(file), "..", ".."))
-	dataDir := filepath.Join(projectRoot, "metadata", "tft-meta", "data")
-
-	store, err := data.NewStore(dataDir)
-	if err != nil {
-		t.Fatalf("初始化Store失败: %v", err)
-	}
-	return store
-}
-
 func TestQueryNLUData_Basic(t *testing.T) {
-	store := setupTestStore(t)
-
+	store := newFixtureStore()
 	ctx := context.Background()
 	_ = ctx
 
 	testCases := []struct {
-		name       string
-		inputCtx   agent.Context
-		expectHero bool
-		expectItem bool
+		name         string
+		inputCtx     agent.Context
+		expectHero   int // 期望命中的阵容数
+		expectItem   int // 期望命中的装备数
+		expectCNHero string // 期望规范化后的中文名（空表示不检查）
 	}{
 		{
-			name: "只有英雄",
+			name: "只有英雄-金克丝",
 			inputCtx: agent.Context{
 				Intent:    "lineup_recommend",
 				Champions: map[string]int8{"金克丝": 2},
 			},
-			expectHero: true,
-			expectItem: false,
+			expectHero:   1, // FX_Jinx_S 含 Jinx
+			expectItem:   0,
+			expectCNHero: "金克丝",
 		},
 		{
-			name: "只有装备",
+			name: "只有装备-羊刀",
 			inputCtx: agent.Context{
 				Intent: "lineup_recommend",
 				Items:  []string{"鬼索的狂暴之刃"},
 			},
-			expectHero: false,
-			expectItem: true,
+			// 纯装备查询：item 自身命中 1 项，关联 comp（FX_Jinx_S）同步返回 1。
+			// 这是 knowledge/internal_query.go 的既定行为，不应被测试覆盖。
+			expectHero: 1,
+			expectItem: 1,
 		},
 		{
 			name: "英雄+装备",
@@ -65,8 +55,39 @@ func TestQueryNLUData_Basic(t *testing.T) {
 				Champions: map[string]int8{"金克丝": 1},
 				Items:     []string{"鬼索的狂暴之刃"},
 			},
-			expectHero: true,
-			expectItem: true,
+			expectHero: 1,
+			expectItem: 1,
+		},
+		{
+			// FIX-01 新增：空英雄 map 不应 panic，应走 top-comps 兜底
+			name: "空英雄-兜底S档",
+			inputCtx: agent.Context{
+				Intent:    "lineup_recommend",
+				Champions: map[string]int8{},
+			},
+			expectHero: 2, // S+A 两个兜底，不包含 B
+			expectItem: 0,
+		},
+		{
+			// FIX-01 新增：未识别英雄，不命中任何阵容，不应 panic
+			name: "未知英雄-无命中",
+			inputCtx: agent.Context{
+				Intent:    "lineup_recommend",
+				Champions: map[string]int8{"不存在的英雄XYZ": 2},
+			},
+			expectHero: 0,
+			expectItem: 0,
+		},
+		{
+			// FIX-01 新增：英雄+装备都不可识别
+			name: "英雄+装备都未知",
+			inputCtx: agent.Context{
+				Intent:    "lineup_recommend",
+				Champions: map[string]int8{"假人A": 1},
+				Items:     []string{"假装备"},
+			},
+			expectHero: 0,
+			expectItem: 0,
 		},
 	}
 
@@ -74,20 +95,27 @@ func TestQueryNLUData_Basic(t *testing.T) {
 		t.Run(tc.name, func(t *testing.T) {
 			result := agent.QueryNLUData(tc.inputCtx, store)
 
-			if tc.expectHero && len(result.MatchedComps) == 0 {
-				t.Errorf("期望找到匹配阵容，但没找到")
+			if got := len(result.MatchedComps); got != tc.expectHero {
+				t.Errorf("MatchedComps 数量 = %d, 期望 %d", got, tc.expectHero)
 			}
-			if tc.expectItem && len(result.MatchedItems) == 0 {
-				t.Errorf("期望找到匹配装备，但没找到")
+			if got := len(result.MatchedItems); got != tc.expectItem {
+				t.Errorf("MatchedItems 数量 = %d, 期望 %d", got, tc.expectItem)
 			}
 
-			t.Logf("匹配到 %d 个阵容, %d 个装备", len(result.MatchedComps), len(result.MatchedItems))
+			// 规范化后的中文名检查
+			if tc.expectCNHero != "" {
+				if _, ok := result.Ctx.Champions[tc.expectCNHero]; !ok {
+					t.Errorf("规范化后丢失中文名 %q, 得到 %v", tc.expectCNHero, result.Ctx.Champions)
+				}
+			}
+
+			t.Logf("matched_comps=%d matched_items=%d", len(result.MatchedComps), len(result.MatchedItems))
 		})
 	}
 }
 
 func TestQueryNLUData_ChineseConversion(t *testing.T) {
-	store := setupTestStore(t)
+	store := newFixtureStore()
 
 	testCases := []struct {
 		name       string
@@ -98,20 +126,20 @@ func TestQueryNLUData_ChineseConversion(t *testing.T) {
 		{
 			name:       "英雄-金克丝",
 			rawName:    "金克丝",
-			expectID:   "TFT16_Jinx",
+			expectID:   "TFTFX_Jinx",
 			expectType: "hero",
 		},
 		{
-			name:       "装备-羊刀",
-			rawName:    "羊刀",
-			expectID:   "TFT_Item_GuinsoosRageblade",
-			expectType: "item",
-		},
-		{
-			name:       "英雄-中文全名",
+			name:       "英雄-孙悟空",
 			rawName:    "孙悟空",
-			expectID:   "TFT16_Wukong",
+			expectID:   "TFTFX_Wukong",
 			expectType: "hero",
+		},
+		{
+			name:       "装备-鬼索",
+			rawName:    "鬼索的狂暴之刃",
+			expectID:   "TFTFX_Item_GuinsoosRageblade",
+			expectType: "item",
 		},
 	}
 
@@ -130,32 +158,25 @@ func TestQueryNLUData_ChineseConversion(t *testing.T) {
 
 			result := agent.QueryNLUData(ctx, store)
 
-			// 检查转换后的名称
 			if tc.expectType == "hero" {
-				for name := range result.Ctx.Champions {
-					t.Logf("英雄名称: %s", name)
+				if _, ok := result.Ctx.Champions[tc.rawName]; !ok {
+					t.Fatalf("规范化后未保留原中文名 %q，得到 %v", tc.rawName, result.Ctx.Champions)
 				}
 			} else {
+				found := false
 				for _, item := range result.MatchedItems {
-					t.Logf("装备: %s (%s)", item.ItemName, item.ItemID)
 					if item.ItemID == tc.expectID {
-						t.Logf("✓ 找到匹配装备: %s", item.ItemName)
+						found = true
+						if item.ItemName == "" {
+							t.Errorf("装备 %s 缺少中文名", tc.expectID)
+						}
+						break
 					}
+				}
+				if !found {
+					t.Errorf("未找到装备 ID %s", tc.expectID)
 				}
 			}
 		})
 	}
-}
-
-func TestQueryNLUData_EmptyInput(t *testing.T) {
-	store := setupTestStore(t)
-
-	ctx := agent.Context{
-		Intent: "lineup_recommend",
-		Items:  []string{"日炎斗篷"},
-	}
-
-	result := agent.QueryNLUData(ctx, store)
-
-	fmt.Printf("%+v", result)
 }
