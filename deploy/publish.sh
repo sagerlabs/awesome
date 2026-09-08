@@ -61,7 +61,9 @@ ROOT=$(pwd)
 # ── 1. 打包（让 build-release.sh 自己决定 TARBALL 路径并打印） ───────────────
 echo ""
 echo "📦 1/4 打包 ..."
-TARBALL="$(bash deploy/build-release.sh | tee /dev/stderr | sed -n 's/^✅ 打包完成: \(dist\/tft-copilot-.*\.tar\.gz\) .*/\1/p' | head -1)"
+# pipefail + set -e 下 build 失败会让整条管道非零退出脚本；
+# 用 || true 吞掉管道码，交给下方 -z 校验统一走 exit 3 语义
+TARBALL="$(bash deploy/build-release.sh | tee /dev/stderr | sed -n 's/^✅ 打包完成: \(dist\/tft-copilot-.*\.tar\.gz\) .*/\1/p' | head -1)" || true
 if [ -z "$TARBALL" ] || [ ! -f "$TARBALL" ]; then
     echo "❌ 构建失败或未生成 dist/ 下的 tarball"
     exit 3

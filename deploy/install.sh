@@ -76,6 +76,15 @@ if [ -n "${PORT:-}" ] && [ -f "$INSTALL_DIR/.env" ]; then
 fi
 
 chmod 600 "$INSTALL_DIR/.env"   # 含 API Key，仅属主可读写
+
+# 首次安装（.env 由模板生成、仍含占位符）时退出，要求用户填 API key 后重跑
+# 必须在校验之前：首次安装 .env 含占位符，校验必然失败，
+# 直接 exit 0 给出可操作的提示（保持原版语义），PORT 已在上方同步到位
+if grep -q 'OPENAI_API_KEY=sk-在这里填入你的APIKey' "$INSTALL_DIR/.env"; then
+    echo "📌 首次安装：编辑 ${INSTALL_DIR}/.env 填入 LLM API Key 后重跑: sudo ./install.sh"
+    exit 0
+fi
+
 # 校验 key 已配置（拒绝占位符）
 set -a; . "$INSTALL_DIR/.env"; set +a
 # PORT 可能被 sed 更新过，刷新当前 shell 变量
@@ -88,13 +97,6 @@ case "${LLM_PROVIDER:-openai}" in
         [ -n "${ARK_API_KEY:-}" ] && [ -n "${ARK_MODEL_ID:-}" ] \
             || { echo "❌ .env 中 ARK_API_KEY / ARK_MODEL_ID 为空"; exit 1; } ;;
 esac
-
-# 首次安装（.env 由模板生成、仍含占位符）时退出，要求用户填 API key 后重跑
-# 通过判断"刚生成的 .env 中是否含占位符"来识别首次安装
-if grep -q 'OPENAI_API_KEY=sk-在这里填入你的APIKey' "$INSTALL_DIR/.env"; then
-    echo "📌 首次安装：编辑 ${INSTALL_DIR}/.env 填入 LLM API Key 后重跑: sudo ./install.sh"
-    exit 0
-fi
 
 # ── 端口预检：目标端口被非本服务进程占用时提前预警 ────────────────────────────
 PORT="${PORT:-8080}"
