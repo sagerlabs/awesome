@@ -46,6 +46,9 @@ cp -R "$SRC_DIR/tft/knowledge/data" "$INSTALL_DIR/tft/knowledge/data"
 
 # ── 环境变量 ──────────────────────────────────────────────────────────────────
 # 优先级：已安装的 /opt .env（升级时保留） > 发布包内用户已配置的 .env > 模板
+# 特殊情况：调用方通过 PORT 环境变量显式传入时，覆盖现有 .env 的 PORT 行
+#           （其余字段保留原值，避免误改用户已配的密钥）
+PORT="${PORT:-8080}"
 if [ ! -f "$INSTALL_DIR/.env" ]; then
     if [ -f "$SRC_DIR/.env" ]; then
         cp "$SRC_DIR/.env" "$INSTALL_DIR/.env"
@@ -54,14 +57,29 @@ if [ ! -f "$INSTALL_DIR/.env" ]; then
         cp "$SRC_DIR/.env.example" "$INSTALL_DIR/.env"
         echo "⚠️  已生成 ${INSTALL_DIR}/.env（模板），请编辑填入 LLM API Key 后重新执行本脚本"
         echo "    vi ${INSTALL_DIR}/.env && sudo ./install.sh"
-        exit 0
     fi
 else
     echo "🔑 使用已存在的 ${INSTALL_DIR}/.env（发布包内的 .env 不覆盖；改配置请直接编辑它）"
 fi
+
+# 同步 PORT 到 .env（如果调用方传入了 PORT，则把它写进 .env，
+# 无论 .env 是新建的还是升级保留的）。其他字段不动。
+if [ -n "${PORT:-}" ] && [ -f "$INSTALL_DIR/.env" ]; then
+    if grep -qE '^[[:space:]]*PORT=' "$INSTALL_DIR/.env"; then
+        # 用 sed 替换已有 PORT 行
+        sed -i.bak -E "s|^[[:space:]]*PORT=.*|PORT=${PORT}|" "$INSTALL_DIR/.env" && rm -f "$INSTALL_DIR/.env.bak"
+        echo "🔧 已更新 ${INSTALL_DIR}/.env 的 PORT=${PORT}"
+    else
+        echo "PORT=${PORT}" >> "$INSTALL_DIR/.env"
+        echo "🔧 已追加 PORT=${PORT} 到 ${INSTALL_DIR}/.env"
+    fi
+fi
+
 chmod 600 "$INSTALL_DIR/.env"   # 含 API Key，仅属主可读写
 # 校验 key 已配置（拒绝占位符）
 set -a; . "$INSTALL_DIR/.env"; set +a
+# PORT 可能被 sed 更新过，刷新当前 shell 变量
+PORT="${PORT:-8080}"
 case "${LLM_PROVIDER:-openai}" in
     openai|deepseek)
         [ -n "${OPENAI_API_KEY:-}" ] && [[ "${OPENAI_API_KEY}" != *"在这里"* ]] \
@@ -70,6 +88,13 @@ case "${LLM_PROVIDER:-openai}" in
         [ -n "${ARK_API_KEY:-}" ] && [ -n "${ARK_MODEL_ID:-}" ] \
             || { echo "❌ .env 中 ARK_API_KEY / ARK_MODEL_ID 为空"; exit 1; } ;;
 esac
+
+# 首次安装（.env 由模板生成、仍含占位符）时退出，要求用户填 API key 后重跑
+# 通过判断"刚生成的 .env 中是否含占位符"来识别首次安装
+if grep -q 'OPENAI_API_KEY=sk-在这里填入你的APIKey' "$INSTALL_DIR/.env"; then
+    echo "📌 首次安装：编辑 ${INSTALL_DIR}/.env 填入 LLM API Key 后重跑: sudo ./install.sh"
+    exit 0
+fi
 
 # ── 端口预检：目标端口被非本服务进程占用时提前预警 ────────────────────────────
 PORT="${PORT:-8080}"
