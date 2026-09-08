@@ -26,7 +26,6 @@ from dataclasses import dataclass, asdict, field
 # ── 配置 ──────────────────────────────────────────────────────────────────────
 
 OUTPUT_DIR = Path("./data")
-OUTPUT_DIR.mkdir(exist_ok=True)
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger(__name__)
@@ -126,69 +125,111 @@ class Translator:
             log.info(f"加载翻译表: {url}")
             resp = requests.get(url, timeout=15)
             resp.raise_for_status()
-            data = resp.json()
-
-            # 解析装备
-            items = data.get("items", [])
-            for item in items:
-                api_name = item.get("apiName", "")
-                name = item.get("name", "")
-                if api_name and name:
-                    self.id_to_cn[api_name] = name
-                    self.cn_to_id[name] = api_name
-
-            # 解析英雄
-            # apiName 永远保留为主兼容入口，assetNames 仅作为可选别名索引：
-            # TFTSet18+ 的 comps_data 英雄 ID（DA_18_*）与 lookup apiName（TFT18_*）
-            # 不一致，桥梁在 assetNames；未来 ID 恢复一致或 assetNames 消失时，
-            # 逻辑自动退回旧路径（assetNames 为空即跳过别名写入）。
-            units = data.get("units", [])
-            for unit in units:
-                api_name = unit.get("apiName", "")
-                name = unit.get("name", "")
-                if not (api_name and name):
-                    continue
-
-                asset_names = [a for a in (unit.get("assetNames") or []) if isinstance(a, str) and a]
-
-                # 主 ID：优先选实际出现在 comps_data 里的 key（数据驱动，不写死策略）
-                primary = api_name
-                if comp_unit_ids is not None and api_name not in comp_unit_ids:
-                    for asset in asset_names:
-                        if asset in comp_unit_ids:
-                            primary = asset
-                            break
-
-                self.id_to_cn[api_name] = name
-                for asset in asset_names:
-                    if asset != api_name:
-                        self.id_to_cn.setdefault(asset, name)
-                self.cn_to_id[name] = primary
-                self.unit_profiles[primary] = {
-                    "api_name": primary,
-                    "name": name,
-                    "cost": unit.get("cost"),
-                    "traits": unit.get("traits", []),
-                }
-
-            # 解析羁绊
-            traits = data.get("traits", [])
-            for trait in traits:
-                api_name = trait.get("apiName", "")
-                name = trait.get("name", "")
-                if api_name and name:
-                    self.id_to_cn[api_name] = name
-                    self.cn_to_id[name] = api_name
-                    # 也处理带数量的羁绊，比如 "TFT16_Yordle_4" -> "约德尔 (4)"
-                    for i in range(1, 10):
-                        trait_with_num = f"{api_name}_{i}"
-                        self.id_to_cn[trait_with_num] = f"{name} ({i})"
-
-            log.info(f"翻译表加载完成，共 {len(self.id_to_cn)} 条")
-            return True
+            return self.apply_lookups_data(resp.json(), comp_unit_ids)
         except Exception as e:
             log.warning(f"翻译表加载失败: {e}")
             return False
+
+    def apply_lookups_data(self, data: dict, comp_unit_ids: Optional[set] = None) -> bool:
+        """应用已解析的 lookups JSON 数据到翻译表。便于无网络单测。
+
+        comp_unit_ids: comps_data 中实际出现的英雄 ID 集合（可选）。
+        """
+        # 解析装备
+        items = data.get("items", [])
+        for item in items:
+            api_name = item.get("apiName", "")
+            name = item.get("name", "")
+            if api_name and name:
+                self.id_to_cn[api_name] = name
+                self.cn_to_id[name] = api_name
+
+        # 解析英雄
+        # apiName 永远保留为主兼容入口，assetNames 仅作为可选别名索引：
+        # TFTSet18+ 的 comps_data 英雄 ID（DA_18_*）与 lookup apiName（TFT18_*）
+        # 不一致，桥梁在 assetNames；未来 ID 恢复一致或 assetNames 消失时，
+        # 逻辑自动退回旧路径（assetNames 为空即跳过别名写入）。
+        #
+        # 多形态（同一 name 出现多个 entry，如伊莉丝 / 蜘蛛形态）：
+        # 先按 name 聚合所有 (apiName, assetNames, traits, cost)，
+        # 再选主 ID，避免 entries 顺序变化导致主 ID 被错误覆盖。
+        raw_units = data.get("units", [])
+        entries_by_name: dict[str, list[dict]] = {}
+        for unit in raw_units:
+            api_name = unit.get("apiName", "")
+            name = unit.get("name", "")
+            if not (api_name and name):
+                continue
+            entry = {
+                "api_name": api_name,
+                "asset_names": [a for a in (unit.get("assetNames") or []) if isinstance(a, str) and a],
+                "name": name,
+                "cost": unit.get("cost"),
+                "traits": unit.get("traits", []),
+            }
+            entries_by_name.setdefault(name, []).append(entry)
+
+        for name, entries in entries_by_name.items():
+            # 主 ID 选择（数据驱动，order-independent）：
+            # 1. 任何 entry 的 apiName 出现在 comp_unit_ids
+            # 2. 否则任何 entry 的 assetName 出现在 comp_unit_ids
+            # 3. 否则取第一个 entry 的 apiName
+            primary = entries[0]["api_name"]
+            if comp_unit_ids is not None:
+                found = False
+                for entry in entries:
+                    if entry["api_name"] in comp_unit_ids:
+                        primary = entry["api_name"]
+                        found = True
+                        break
+                if not found:
+                    for entry in entries:
+                        for asset in entry["asset_names"]:
+                            if asset in comp_unit_ids:
+                                primary = asset
+                                found = True
+                                break
+                        if found:
+                            break
+
+            # 写入 id_to_cn：每个 entry 的 apiName + 所有 assetNames 都映射
+            for entry in entries:
+                self.id_to_cn[entry["api_name"]] = name
+                for asset in entry["asset_names"]:
+                    if asset != entry["api_name"]:
+                        self.id_to_cn.setdefault(asset, name)
+
+            # cn_to_id 仅写一次
+            self.cn_to_id[name] = primary
+
+            # 画像用主 ID 索引
+            primary_entry = entries[0]
+            for entry in entries:
+                if entry["api_name"] == primary:
+                    primary_entry = entry
+                    break
+            self.unit_profiles[primary] = {
+                "api_name": primary,
+                "name": name,
+                "cost": primary_entry.get("cost"),
+                "traits": primary_entry.get("traits", []),
+            }
+
+        # 解析羁绊
+        traits = data.get("traits", [])
+        for trait in traits:
+            api_name = trait.get("apiName", "")
+            name = trait.get("name", "")
+            if api_name and name:
+                self.id_to_cn[api_name] = name
+                self.cn_to_id[name] = api_name
+                # 也处理带数量的羁绊，比如 "TFT16_Yordle_4" -> "约德尔 (4)"
+                for i in range(1, 10):
+                    trait_with_num = f"{api_name}_{i}"
+                    self.id_to_cn[trait_with_num] = f"{name} ({i})"
+
+        log.info(f"翻译表加载完成，共 {len(self.id_to_cn)} 条")
+        return True
 
 
 # ── API 客户端 ────────────────────────────────────────────────────────────────
@@ -350,6 +391,8 @@ class OutputBuilder:
     """将解析后的数据构建为三个输出文件（保持原设计）"""
 
     def save_all(self, comps: list[Comp], tft_set: str, cluster_id: str, translator: Translator):
+        # 实际写入时再创建目录，避免 import 时副作用与现场 data 目录冲突
+        OUTPUT_DIR.mkdir(exist_ok=True)
         self._save_comps_full(comps, tft_set, cluster_id)
         self._save_comps_for_agent(comps, tft_set, cluster_id)
         self._save_items_priority(comps)
@@ -511,10 +554,14 @@ class TFTDataPipeline:
         self.parser   = DataParser()
 
     def run(self):
-        # 0. 先加载翻译表（用于生成 localization.json）
-        raw_data  = self.client.fetch_comps_data()
-        tft_set = raw_data.get("tft_set", "TFTSet16") if raw_data else "TFTSet16"
-        # 提取 comps 实际使用的英雄 ID 集合（Set18+ ID 不一致时用于决定翻译主 ID）
+        # 0. 先抓 comps_data
+        raw_data = self.client.fetch_comps_data()
+        if not raw_data:
+            log.error("comps_data 接口返回为空，终止")
+            return
+
+        # 1. 提取 comps 实际使用的英雄 ID 集合（Set18+ ID 不一致时用于决定翻译主 ID）
+        tft_set = raw_data.get("tft_set", "TFTSet16")
         comp_unit_ids: set = set()
         for sub in (raw_data.get("cluster_details") or {}).values():
             if not isinstance(sub, dict):
@@ -525,21 +572,17 @@ class TFTDataPipeline:
                     comp_unit_ids.add(unit_id)
         self.translator.load_from_lookups(tft_set, comp_unit_ids)
 
-        # 1. 获取两个核心接口
-        if not raw_data:
-            log.error("comps_data 接口返回为空，终止")
-            return
-
+        # 2. 抓 stats 接口
         raw_stats = self.client.fetch_comps_stats()
 
         cluster_id_top  = str(raw_data.get("cluster_id", ""))
         cluster_details = raw_data.get("cluster_details", {})
 
-        # 2. 解析统计数据
+        # 3. 解析统计数据
         stats_map = self.parser.parse_stats(raw_stats)
         log.info(f"TFT Set: {tft_set} | cluster: {cluster_id_top} | {len(stats_map)} 个阵容有统计数据")
 
-        # 3. 解析所有阵容
+        # 4. 解析所有阵容
         comps: list[Comp] = []
         for cid, raw_comp in cluster_details.items():
             try:
@@ -552,7 +595,7 @@ class TFTDataPipeline:
         log.info(f"共解析 {len(comps)} 个阵容")
         comps.sort(key=lambda c: c.avg_placement)
 
-        # 4. 保存阵容数据（三个文件，保持原设计）
+        # 5. 保存阵容数据（三个文件，保持原设计）
         self.builder = OutputBuilder()
         self.builder.save_all(comps, tft_set, cluster_id_top, self.translator)
 

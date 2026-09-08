@@ -853,7 +853,7 @@
     "黛安娜": "DA_18_Diana",
     "德莱文": "DA_Draven18",
     "远古巨龙": "DA_18_ElderDragon",
-    "伊莉丝": "TFT18_EliseSpider",
+    "伊莉丝": "DA_18_Elise",
     "伊泽瑞尔": "DA_18_Ezreal",
     "费德提克": "DA_Fiddlesticks18",
     "纳尔": "DA_18_GnarSmall",
@@ -1134,15 +1134,6 @@
     },
     "DA_18_Elise": {
       "api_name": "DA_18_Elise",
-      "name": "伊莉丝",
-      "cost": 2,
-      "traits": [
-        "魔女",
-        "重装战士"
-      ]
-    },
-    "TFT18_EliseSpider": {
-      "api_name": "TFT18_EliseSpider",
       "name": "伊莉丝",
       "cost": 2,
       "traits": [

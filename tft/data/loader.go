@@ -335,17 +335,31 @@ func (s *Store) CNToID(cn string) string {
 }
 
 // ResolveUnitID 解析英雄输入：支持中文名、ID、模糊匹配
-// 返回标准 TFT ID，找不到返回空字符串
+// 返回规范化的英雄 ID，找不到返回空字符串。
+//
+// ID 识别策略：compsByUnit 索引中存在的 ID 都视为合法（不限前缀）。
+// 历史只认 "TFT" 前缀导致 Set18 的 DA_18_* 裸 ID 走查询链时丢失；
+// 现在用 compsByUnit 反向校验，让 Set17 TFT16_* 与 Set18 DA_18_* 等前缀共存。
+//
+// 别名回退：若输入不在 compsByUnit 中，但 id_to_cn 已知它是某中文名的别名
+// （例如蜘蛛形态 TFT18_EliseSpider），先反查中文再回到 cn_to_id 的主 ID。
 func (s *Store) ResolveUnitID(input string) string {
 	input = strings.TrimSpace(input)
 	if input == "" {
 		return ""
 	}
 
-	// 1. 直接是 TFT ID
-	if strings.HasPrefix(input, "TFT") {
-		if _, ok := s.compsByUnit[input]; ok {
-			return input
+	// 1. 直接是合法英雄 ID（compsByUnit 索引中存在）
+	if _, ok := s.compsByUnit[input]; ok {
+		return input
+	}
+
+	// 1.5. 是 id_to_cn 里的别名（已知映射到某中文名），通过中文回到主 ID
+	if cn, ok := s.localize.IDToCN[input]; ok && cn != "" {
+		if id, ok := s.localize.CNToID[cn]; ok && id != "" {
+			if _, inComps := s.compsByUnit[id]; inComps {
+				return id
+			}
 		}
 	}
 
