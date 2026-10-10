@@ -80,9 +80,15 @@ chmod 600 "$INSTALL_DIR/.env"   # 含 API Key，仅属主可读写
 # 首次安装（.env 由模板生成、仍含占位符）时退出，要求用户填 API key 后重跑
 # 必须在校验之前：首次安装 .env 含占位符，校验必然失败，
 # 直接 exit 0 给出可操作的提示（保持原版语义），PORT 已在上方同步到位
-if grep -q 'OPENAI_API_KEY=sk-在这里填入你的APIKey' "$INSTALL_DIR/.env"; then
-    echo "📌 首次安装：编辑 ${INSTALL_DIR}/.env 填入 LLM API Key 后重跑: sudo ./install.sh"
-    exit 0
+# 注意：占位符检查只针对当前生效的 LLM_PROVIDER——provider=ark 时
+# OPENAI 占位符是无害残留字段，不应触发"首次安装"误判（2026-10-10 线上踩坑）
+ENV_PROVIDER=$(grep -E '^[[:space:]]*LLM_PROVIDER=' "$INSTALL_DIR/.env" | tail -1 | cut -d= -f2- | tr -d '[:space:]' || true)
+ENV_PROVIDER="${ENV_PROVIDER:-openai}"
+if [ "$ENV_PROVIDER" = "openai" ] || [ "$ENV_PROVIDER" = "deepseek" ]; then
+    if grep -q 'OPENAI_API_KEY=sk-在这里填入你的APIKey' "$INSTALL_DIR/.env"; then
+        echo "📌 首次安装：编辑 ${INSTALL_DIR}/.env 填入 LLM API Key 后重跑: sudo ./install.sh"
+        exit 0
+    fi
 fi
 
 # 校验 key 已配置（拒绝占位符）
