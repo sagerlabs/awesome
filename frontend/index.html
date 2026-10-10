@@ -4,29 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TFT Copilot · 云顶之弈 AI 教练</title>
-    <!-- marked.js: 优先从 CDN 加载，CDN 失败时降级为纯文本显示 -->
-    <script>
-        // 内联极简 marked 降级实现，CDN 加载失败时使用
-        window._markedFallback = function(text) {
-            return text
-                .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
-                .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-                .replace(/`(.+?)`/g, '<code>$1</code>')
-                .replace(/^#{1,3} (.+)$/gm, '<strong>$1</strong>')
-                .replace(/^[-*] (.+)$/gm, '• $1')
-                .replace(/^&gt; (.+)$/gm, '<em>$1</em>')
-                .replace(/\n/g, '<br>')
-        }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"
-            onerror="window.marked={parse:window._markedFallback}">
-    </script>
-    <!-- 字体：优先 Google Fonts，离线时自动降级为系统中文字体 -->
+    <!-- marked.js：本地 vendor（随二进制 embed，始终可用）。
+         FIX-04 起移除 CDN 依赖与全部内联脚本，以支持 strict CSP（script-src 'self'）：
+         页面内不再有任何 <script>…</script> 内联块与 on*= 内联事件属性。 -->
+    <script src="assets/vendor/marked.min.js?v=20260908"></script>
+    <!-- vendor 加载失败时补位 window.marked，保证 renderMd 不退化 -->
+    <script src="assets/vendor/marked_fallback.js?v=20260908"></script>
+    <!-- FIX-04：HTML 白名单清洗器，所有 Markdown 渲染输出的统一防线 -->
+    <script src="assets/sanitizer.js?v=20260908"></script>
+    <!-- 字体：优先 Google Fonts，离线时自动降级为系统中文字体（CSP 已放行） -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap"
-          rel="stylesheet"
-          onerror="this.remove()">
-    <link rel="stylesheet" href="assets/app.css?v=20260803b">
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/app.css?v=20260908">
 </head>
 <!-- data-layout: web（默认全页） | compact（桌面小窗/Wails） | pet（桌宠预留） -->
 <body data-layout="web">
@@ -129,6 +119,6 @@
     </div>
 </div>
 
-<script src="assets/app.js?v=20260803b"></script>
+<script src="assets/app.js?v=20260908"></script>
 </body>
 </html>

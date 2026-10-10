@@ -183,6 +183,16 @@ test: ## 运行所有单元测试
 test-tft: ## 只运行 tft 包的测试
 	go test ./tft/... -v -count=1
 
+# 前端安全渲染测试（FIX-04）：需要 jsdom（npm i jsdom）。
+# jsdom 装在别的目录时可用 NODE_PATH=/path/to/node_modules make test-frontend。
+.PHONY: test-frontend
+test-frontend: ## 运行前端 XSS/清洗器测试（node --test + jsdom）
+	@if node -e "require('jsdom')" 2>/dev/null; then \
+		node --test --test-timeout=300000 --test-force-exit frontend/test/; \
+	else \
+		echo "⚠️  未找到 jsdom，跳过前端测试（npm i jsdom 后重跑）"; \
+	fi
+
 .PHONY: feedback-report
 feedback-report: ## 汇总 rejected 反馈样本，输出复盘报告（可传 FILE=路径）
 	go run ./cmd/tft-feedback-report $(if $(FILE),-file "$(FILE)")

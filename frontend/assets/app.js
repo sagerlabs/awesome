@@ -415,12 +415,28 @@ function escHtml(str) {
     return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 }
 
-// Markdown 渲染（marked 由 index.html 头部加载，CDN 失败时有降级实现）
+// Markdown 渲染（marked 由 index.html 头部加载，本地 vendor 优先，
+// 失败时降级为纯文本实现；输出统一过 TFTSanitize 白名单清洗）
+// FIX-04：XSS 防线——所有 innerHTML 赋值前必须经过本函数。
 function renderMd(text) {
     const cleaned = String(text)
         .replace(/\n{3,}/g, '\n\n')
         .replace(/^\s+|\s+$/g, '')
-    return marked.parse(cleaned)
+    let html
+    if (typeof marked !== 'undefined' && marked && typeof marked.parse === 'function') {
+        html = marked.parse(cleaned)
+    } else if (typeof window._markedFallback === 'function') {
+        html = window._markedFallback(cleaned)
+    } else {
+        // 兜底：全链路都缺失时退化为纯转义，绝不让未清洗 HTML 直达 innerHTML
+        html = escHtml(cleaned).replace(/\n/g, '<br>')
+    }
+    if (typeof window.TFTSanitize === 'function') {
+        return window.TFTSanitize(html)
+    }
+    // 清洗器异常缺失（理论上不会发生：本地 vendor 随二进制 embed）
+    // 退化为转义文本，宁可丢格式也不注入
+    return escHtml(html)
 }
 
 // 纯 DOM 消息（不写存储）；返回气泡元素

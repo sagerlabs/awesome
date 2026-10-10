@@ -13,6 +13,9 @@ bin/
 .gocache
 # Go local cache
 vendor/
+# 前端本地第三方库（安全渲染依赖，必须随二进制 embed，不依赖 CDN）
+!frontend/assets/vendor/
+!frontend/assets/vendor/*.js
 
 # Python cache
 __pycache__/

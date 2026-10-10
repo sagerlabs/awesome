@@ -57,6 +57,11 @@ func main() {
 		gin.Recovery(),
 		tft.RateLimitMiddleware(rateLimitRPS(), rateLimitBurst()),
 	)
+	// FIX-04：安全响应头（含 strict CSP）。CSP_POLICY=off 可关闭
+	//（自建反代已统一注入安全头时避免重复）。
+	if csp := cspPolicy(); csp != "" {
+		e.Use(tft.SecurityHeadersMiddleware(csp))
+	}
 	tftHandler.RegisterRoutes(e)
 
 	// 内嵌前端：/ 返回页面，/assets/* 返回拆分后的 CSS/JS。
@@ -114,6 +119,21 @@ func main() {
 	}
 
 	logger.Info("Server 已退出")
+}
+
+// cspPolicy 读取 CSP 覆盖值：
+//   - 未设置 / 空  -> 使用 tft.DefaultCSP（strict，script-src 'self'）
+//   - "off" / "none" -> 关闭安全头中间件（反代已统一注入时用）
+//   - 其它值        -> 原样作为 CSP 策略
+func cspPolicy() string {
+	v := os.Getenv("CSP_POLICY")
+	switch v {
+	case "", "default":
+		return tft.DefaultCSP
+	case "off", "none":
+		return ""
+	}
+	return v
 }
 
 // rateLimitRPS 读取每 IP 每秒请求上限，RATE_LIMIT_RPS<=0 或未设置时返回 0（禁用限流）。
