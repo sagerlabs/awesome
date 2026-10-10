@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "tft/release/contracts/session_record.schema.json",
+  "title": "SessionRecord",
+  "description": "TFT 数据发布契约 v1：会话所有权与版本绑定。state_revision 供 CAS/串行化防并发乱序覆盖；assigned_release 可因撤回/补丁变化失效。",
+  "type": "object",
+  "required": ["owner_id", "session_id", "state_revision", "scope", "assigned_release", "expires_at"],
+  "additionalProperties": false,
+  "properties": {
+    "owner_id": { "type": "string", "minLength": 1 },
+    "session_id": { "type": "string", "minLength": 1 },
+    "state_revision": { "type": "integer", "minimum": 0 },
+    "scope": { "$ref": "data_scope.schema.json" },
+    "assigned_release": { "type": "string", "minLength": 1 },
+    "experiment_id": { "type": "string" },
+    "context": { "type": "object", "additionalProperties": { "type": "string" } },
+    "expires_at": { "type": "string", "format": "date-time" }
+  }
+}

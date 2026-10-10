@@ -1,0 +1,22 @@
+{
+  "comps": [
+    {
+      "cluster_id": "422050",
+      "name_string": "魔女法杖",
+      "units": ["DA_18_Ahri", "DA_18_Kaisa"],
+      "traits": ["魔女(4)"],
+      "count": 4210,
+      "avg_placement": 4.12,
+      "tier": "S"
+    },
+    {
+      "cluster_id": "422051",
+      "name_string": "武仙座flex",
+      "units": ["DA_18_Wukong"],
+      "traits": ["武仙座(2)"],
+      "count": 640,
+      "avg_placement": 4.35,
+      "tier": "A"
+    }
+  ]
+}

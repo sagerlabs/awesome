@@ -1,0 +1,4 @@
+[
+  {"relative_path": "data/team_comps.json", "kind": "team_comps"},
+  {"relative_path": "data/localization.json", "kind": "localization"}
+]

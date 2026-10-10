@@ -1,0 +1,51 @@
+{
+  "data_release_id": "tft-s18-18.1-cn-2026-09-09T09:00:00Z-22d22239",
+  "schema_version": "1.0.0",
+  "scope": {
+    "game": "tft",
+    "set_id": 18,
+    "game_patch": "",
+    "region": "cn",
+    "queue": "ranked",
+    "locale": "zh-CN",
+    "effective_at": "2026-09-10T00:00:00Z"
+  },
+  "reader_schema_range": "^1.0",
+  "files": [
+    {
+      "relative_path": "data/team_comps.json",
+      "sha256": "76249893bf1c20b64f70f7e23d8b26bedb8136f14890786f3d0f2749e7f15546",
+      "size": 460,
+      "kind": "team_comps",
+      "entity_count": 1
+    },
+    {
+      "relative_path": "data/localization.json",
+      "sha256": "a1ff32afc0e5c7246452a9dc33888c9c73d20550d706a2b0942e6bd5c8348c5e",
+      "size": 274,
+      "kind": "localization",
+      "entity_count": 3
+    }
+  ],
+  "sources": [
+    {
+      "provider": "metatft",
+      "source_dataset_id": "tft-comps-api:set18",
+      "source_url": "https://api-hc.metatft.com/tft-comps-api",
+      "source_version": "2026-09-09",
+      "fetched_at": "2026-09-09T08:30:00Z",
+      "raw_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "stats_region": "cn",
+      "stats_queue": "ranked",
+      "stats_window_start": "2026-09-02T00:00:00Z",
+      "stats_window_end": "2026-09-09T00:00:00Z",
+      "sample_floor": 200
+    }
+  ],
+  "capabilities": [
+    "base_facts",
+    "meta_stats"
+  ],
+  "builder_commit": "fixture0001",
+  "built_at": "2026-09-09T09:00:00Z"
+}

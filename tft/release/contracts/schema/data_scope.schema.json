@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "tft/release/contracts/data_scope.schema.json",
+  "title": "DataScope",
+  "description": "TFT 数据发布契约 v1：数据适用范围（DATA-01 / ADR013）。game_patch 是补丁唯一真相源，禁止从 set_id 或公告标题推导；region/queue 未知时显式 unknown；locale 是语言不代表统计地区。",
+  "type": "object",
+  "required": ["game", "set_id", "game_patch", "region", "queue", "locale", "effective_at"],
+  "additionalProperties": false,
+  "properties": {
+    "game": { "const": "tft" },
+    "set_id": { "type": "integer", "minimum": 1 },
+    "game_patch": { "type": "string", "pattern": "^\\d+\\.\\d+[a-z]?$" },
+    "hotfix_revision": { "type": "string", "pattern": "^[a-z]$" },
+    "region": { "enum": ["cn", "na", "eu", "kr", "unknown"] },
+    "queue": { "enum": ["ranked", "normal", "unknown"] },
+    "locale": { "type": "string", "pattern": "^[a-z]{2,3}(-[A-Za-z]{2,8})*$" },
+    "effective_at": { "type": "string", "format": "date-time" }
+  }
+}

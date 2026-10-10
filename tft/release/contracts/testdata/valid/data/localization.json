@@ -1,0 +1,15 @@
+{
+  "id_to_cn": {
+    "DA_18_Ahri": "阿狸",
+    "DA_18_Kaisa": "卡莎",
+    "DA_18_Wukong": "孙悟空"
+  },
+  "cn_to_id": {
+    "阿狸": "DA_18_Ahri",
+    "卡莎": "DA_18_Kaisa",
+    "孙悟空": "DA_18_Wukong"
+  },
+  "item_to_cn": {
+    "蓝霸符": "BlueBuff"
+  }
+}

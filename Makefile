@@ -193,6 +193,18 @@ test-frontend: ## 运行前端 XSS/清洗器测试（node --test + jsdom）
 		echo "⚠️  未找到 jsdom，跳过前端测试（npm i jsdom 后重跑）"; \
 	fi
 
+# 数据发布契约测试（DATA-01）：Go 与 Python 对同一批 fixture 互通验证。
+# 可用 PYTHON=<path> 指定解释器（需 Python 3.10+，无第三方依赖）。
+DATA_CONTRACTS_PY ?= $(shell command -v python3 2>/dev/null)
+.PHONY: test-data-contracts
+test-data-contracts: ## 运行数据发布契约测试（Go + Python 互通）
+	go test ./tft/release/... -count=1
+	@if [ -n "$(DATA_CONTRACTS_PY)" ]; then \
+		cd metadata/tft-meta && $(DATA_CONTRACTS_PY) -m unittest test_release_contracts; \
+	else \
+		echo "⚠️  未找到 python3，跳过 Python 侧契约测试"; \
+	fi
+
 .PHONY: feedback-report
 feedback-report: ## 汇总 rejected 反馈样本，输出复盘报告（可传 FILE=路径）
 	go run ./cmd/tft-feedback-report $(if $(FILE),-file "$(FILE)")

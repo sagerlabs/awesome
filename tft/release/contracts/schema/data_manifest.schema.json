@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "tft/release/contracts/data_manifest.schema.json",
+  "title": "DataManifest",
+  "description": "TFT 数据发布契约 v1：数据包清单。manifest 本身不得出现在 files（哈希自引用禁止）；built_at/builder_commit 是构建 run 信息，与负载 content hash 分离。",
+  "type": "object",
+  "required": ["data_release_id", "schema_version", "scope", "reader_schema_range", "files", "sources", "capabilities", "builder_commit", "built_at"],
+  "additionalProperties": false,
+  "properties": {
+    "data_release_id": { "type": "string", "minLength": 1 },
+    "schema_version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "scope": { "$ref": "data_scope.schema.json" },
+    "reader_schema_range": {
+      "type": "string",
+      "description": "应用读取范围：^MAJOR.MINOR（锁定 major）或 >=x.y,<x.y（显式范围）",
+      "anyOf": [
+        { "pattern": "^\\^\\d+(\\.\\d+){0,2}$" },
+        { "pattern": "^>=\\d+\\.\\d+(\\.\\d+)?,<\\d+\\.\\d+(\\.\\d+)?$" }
+      ]
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["relative_path", "sha256", "size", "kind", "entity_count"],
+        "additionalProperties": false,
+        "properties": {
+          "relative_path": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_][A-Za-z0-9_./-]*\\.[A-Za-z0-9]+$",
+            "description": "包内相对路径；禁止绝对路径、.. 逃逸、反斜杠；不得为 manifest.json"
+          },
+          "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "size": { "type": "integer", "minimum": 0 },
+          "kind": {
+            "enum": ["team_comps", "localization", "champion_profiles", "items_priority", "patch_notes", "aliases", "knowledge"]
+          },
+          "entity_count": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["provider", "source_dataset_id", "fetched_at", "raw_sha256", "stats_region", "stats_queue", "stats_window_end", "sample_floor"],
+        "additionalProperties": false,
+        "properties": {
+          "provider": { "type": "string", "minLength": 1 },
+          "source_dataset_id": { "type": "string", "minLength": 1 },
+          "source_url": { "type": "string" },
+          "source_version": { "type": "string" },
+          "fetched_at": { "type": "string", "format": "date-time" },
+          "raw_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "stats_region": { "type": "string" },
+          "stats_queue": { "type": "string" },
+          "stats_window_start": { "type": "string", "format": "date-time" },
+          "stats_window_end": { "type": "string", "format": "date-time" },
+          "sample_floor": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "enum": ["base_facts", "meta_stats", "patch_notes", "champion_profiles", "items_priority", "slang_nlu", "knowledge"] }
+    },
+    "builder_commit": { "type": "string", "minLength": 1 },
+    "built_at": { "type": "string", "format": "date-time" }
+  }
+}

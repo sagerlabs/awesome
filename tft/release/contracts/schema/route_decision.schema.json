@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "tft/release/contracts/route_decision.schema.json",
+  "title": "RouteDecision",
+  "description": "TFT 数据发布契约 v1：服务端签发的路由决策。客户端只能回传签发结果，不能决定目标实例或任意数据包；过期必须重新请求。",
+  "type": "object",
+  "required": ["request_id", "subject_id", "session_id", "release_id", "policy_revision", "backend_id", "expires_at"],
+  "additionalProperties": false,
+  "properties": {
+    "request_id": { "type": "string", "minLength": 1 },
+    "subject_id": { "type": "string", "minLength": 1 },
+    "session_id": { "type": "string", "minLength": 1 },
+    "release_id": { "type": "string", "minLength": 1 },
+    "policy_revision": { "type": "integer", "minimum": 1 },
+    "backend_id": { "type": "string", "minLength": 1 },
+    "expires_at": { "type": "string", "format": "date-time" }
+  }
+}

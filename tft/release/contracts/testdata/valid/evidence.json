@@ -1,0 +1,28 @@
+{
+  "trace_id": "trace-fixture-0001",
+  "release_id": "tft-s18-18.1-cn-2026-09-09T09:00:00Z-22d22239",
+  "scope": {
+    "game": "tft",
+    "set_id": 18,
+    "game_patch": "18.1",
+    "region": "cn",
+    "queue": "ranked",
+    "locale": "zh-CN",
+    "effective_at": "2026-09-10T00:00:00Z"
+  },
+  "source_ids": ["metatft:tft-comps-api:set18"],
+  "evidence_ids": ["422050", "422051"],
+  "freshness": {
+    "fetched_at": "2026-09-09T08:30:00Z",
+    "stats_window_end": "2026-09-09T00:00:00Z",
+    "effective_at": "2026-09-10T00:00:00Z",
+    "built_at": "2026-09-09T09:00:00Z"
+  },
+  "sample_policy": {
+    "min_sample_floor": 200,
+    "below_floor_action": "degrade_basic",
+    "note": "低于样本门槛的阵容降级为基础事实展示"
+  },
+  "warnings": [],
+  "capabilities": ["base_facts", "meta_stats"]
+}

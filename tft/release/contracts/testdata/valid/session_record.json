@@ -1,0 +1,20 @@
+{
+  "owner_id": "user-fixture-001",
+  "session_id": "sess-fixture-001",
+  "state_revision": 3,
+  "scope": {
+    "game": "tft",
+    "set_id": 18,
+    "game_patch": "18.1",
+    "region": "cn",
+    "queue": "ranked",
+    "locale": "zh-CN",
+    "effective_at": "2026-09-10T00:00:00Z"
+  },
+  "assigned_release": "tft-s18-18.1-cn-2026-09-09T09:00:00Z-22d22239",
+  "experiment_id": "exp-gray-001",
+  "context": {
+    "topic": "comp_query"
+  },
+  "expires_at": "2026-10-09T00:00:00Z"
+}

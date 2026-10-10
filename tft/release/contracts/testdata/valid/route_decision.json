@@ -1,0 +1,9 @@
+{
+  "request_id": "req-fixture-0001",
+  "subject_id": "user-fixture-001",
+  "session_id": "sess-fixture-001",
+  "release_id": "tft-s18-18.1-cn-2026-09-09T09:00:00Z-22d22239",
+  "policy_revision": 7,
+  "backend_id": "backend-a",
+  "expires_at": "2026-10-10T00:00:00Z"
+}

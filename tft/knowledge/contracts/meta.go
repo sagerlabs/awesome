@@ -31,6 +31,18 @@ type KnowledgeMetadata struct {
 	Source      string `json:"source,omitempty" yaml:"source,omitempty"`
 	UpdatedAt   string `json:"updated_at,omitempty" yaml:"updated_at,omitempty"`
 	SampleCount int    `json:"sample_count,omitempty" yaml:"sample_count,omitempty"`
+
+	// DATA-01（ADR013）兼容扩展：版本身份投影。全部可选——旧数据/旧
+	// 调用方不填不影响任何现有行为；完整结构定义在 tft/release/contracts
+	//（版本结构只维护一份，此处仅为展示层投影）。
+	// DataReleaseID 对应 DataManifest.data_release_id。
+	DataReleaseID string `json:"data_release_id,omitempty" yaml:"data_release_id,omitempty"`
+	// GamePatch 对应 DataScope.game_patch（补丁真相源，不从标题推导）。
+	GamePatch string `json:"game_patch,omitempty" yaml:"game_patch,omitempty"`
+	// Region 对应 DataScope.region（统计地区，与 locale 语言无关）。
+	Region string `json:"region,omitempty" yaml:"region,omitempty"`
+	// StatsWindowEnd 对应 SourceRecord.stats_window_end（统计窗口）。
+	StatsWindowEnd string `json:"stats_window_end,omitempty" yaml:"stats_window_end,omitempty"`
 }
 
 // CompPlan describes a comp as stage-based board snapshots.
