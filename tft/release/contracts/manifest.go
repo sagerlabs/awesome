@@ -41,6 +41,10 @@ var KnownCapabilities = map[string]bool{
 var (
 	sha256Pattern  = regexp.MustCompile(`^[0-9a-f]{64}$`)
 	manifestPathRx = regexp.MustCompile(`^[A-Za-z0-9_][A-Za-z0-9_./-]*\.[A-Za-z0-9]+$`)
+	// statsScopeRx 统计口径的宽松格式（SourceRecord 专用，比 DataScope 的
+	// 白名单宽：上游可能是 global 等口径）。未知必须显式写 "unknown"
+	//（ADR013：不能编造），格式校验只挡空值/乱写，地区真伪由来源记录保证。
+	statsScopeRx = regexp.MustCompile(`^[a-z][a-z0-9-]*$`)
 )
 
 // FileRecord 描述发布包内的一个不可变数据负载文件。
@@ -193,6 +197,14 @@ func (m *DataManifest) Validate() error {
 		}
 		if !sha256Pattern.MatchString(s.RawSHA256) {
 			return newErr(ErrCategoryHash, "raw_sha256", "", "sources[%d].raw_sha256 必须为 64 位小写十六进制", i)
+		}
+		if !statsScopeRx.MatchString(s.StatsRegion) {
+			return newErr(ErrCategoryScope, "stats_region", "",
+				"sources[%d].stats_region 非法（非空小写；未知必须显式 unknown）：%q", i, s.StatsRegion)
+		}
+		if !statsScopeRx.MatchString(s.StatsQueue) {
+			return newErr(ErrCategoryScope, "stats_queue", "",
+				"sources[%d].stats_queue 非法（非空小写；未知必须显式 unknown）：%q", i, s.StatsQueue)
 		}
 		if s.StatsWindowEnd.IsZero() {
 			return newErr(ErrCategoryTimeOrder, "stats_window_end", "", "sources[%d].stats_window_end 为零值", i)

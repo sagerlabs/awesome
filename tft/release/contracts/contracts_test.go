@@ -242,6 +242,64 @@ func TestSamePatchInRegion(t *testing.T) {
 	}
 }
 
+// TestReviewRegression_DATA01 review 发现的对称疏漏回归：
+// 1) EvidenceEnvelope.Freshness.EffectiveAt 零值必须拒绝；
+// 2) SourceRecord.StatsRegion/StatsQueue 空值/乱写必须拒绝。
+func TestReviewRegression_DATA01(t *testing.T) {
+	// 合法基准
+	var valid EvidenceEnvelope
+	loadJSON(t, "evidence.json", &valid)
+
+	// 1. 缺 effective_at（JSON 零值）
+	noEffective := valid
+	noEffective.Freshness.EffectiveAt = time.Time{}
+	if err := noEffective.Validate(); err == nil {
+		t.Error("freshness.effective_at 零值应被拒绝")
+	} else if ce := err.(*ContractError); ce.Category != ErrCategoryTimeOrder {
+		t.Errorf("effective_at 零值类别 = %q, want time_order", ce.Category)
+	}
+
+	// 2. stats_region 空值 / 乱写
+	m, err := LoadManifest(filepath.Join(validDir, ManifestFilename))
+	if err != nil {
+		t.Fatal(err)
+	}
+	for i, mutate := range []func(*DataManifest){
+		func(mm *DataManifest) { mm.Sources[0].StatsRegion = "" },
+		func(mm *DataManifest) { mm.Sources[0].StatsRegion = "火星" },
+		func(mm *DataManifest) { mm.Sources[0].StatsQueue = "" },
+	} {
+		bad := *m
+		bad.Sources = append([]SourceRecord(nil), m.Sources...)
+		mutate(&bad)
+		if err := bad.Validate(); err == nil {
+			t.Errorf("case %d：stats scope 非法应被拒绝", i)
+		} else if ce := err.(*ContractError); ce.Category != ErrCategoryScope {
+			t.Errorf("case %d：stats scope 类别 = %q, want scope", i, ce.Category)
+		}
+	}
+
+	// 合法值不误杀：global 口径 + unknown
+	okMani := *m
+	okMani.Sources = append([]SourceRecord(nil), m.Sources...)
+	okMani.Sources[0].StatsRegion = "global"
+	okMani.Sources[0].StatsQueue = "unknown"
+	if err := okMani.Validate(); err != nil {
+		t.Errorf("global/unknown 统计口径不应被误杀：%v", err)
+	}
+}
+
+func loadJSON(t *testing.T, name string, v interface{}) {
+	t.Helper()
+	raw, err := os.ReadFile(filepath.Join(validDir, name))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if err := json.Unmarshal(raw, v); err != nil {
+		t.Fatalf("%s 解析失败：%v", name, err)
+	}
+}
+
 func mustTime(s string) time.Time {
 	t, err := time.Parse(time.RFC3339, s)
 	if err != nil {

@@ -180,5 +180,32 @@ class TestJsonSchemaFiles(unittest.TestCase):
                 self.assertIn("properties", data)
 
 
+class TestReviewRegression(unittest.TestCase):
+    """review 发现的对称疏漏回归（与 Go TestReviewRegression_DATA01 一致）。"""
+
+    def test_evidence_missing_effective_at_rejected(self):
+        evidence = _load_json(os.path.join(VALID_DIR, "evidence.json"))
+        del evidence["freshness"]["effective_at"]
+        with self.assertRaises(rc.ContractError) as ctx:
+            rc.validate_evidence(evidence)
+        self.assertEqual(ctx.exception.category, "time_order")
+
+    def test_stats_scope_invalid_rejected(self):
+        manifest = _load_json(os.path.join(VALID_DIR, "manifest.json"))
+        for field, value in (("stats_region", ""), ("stats_region", "火星"), ("stats_queue", "")):
+            with self.subTest(field=field, value=value):
+                bad = copy.deepcopy(manifest)
+                bad["sources"][0][field] = value
+                with self.assertRaises(rc.ContractError) as ctx:
+                    rc.validate_manifest(bad)
+                self.assertEqual(ctx.exception.category, "scope")
+
+    def test_stats_scope_global_unknown_not_overkilled(self):
+        manifest = _load_json(os.path.join(VALID_DIR, "manifest.json"))
+        manifest["sources"][0]["stats_region"] = "global"
+        manifest["sources"][0]["stats_queue"] = "unknown"
+        rc.validate_manifest(manifest)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

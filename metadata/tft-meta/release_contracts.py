@@ -38,6 +38,9 @@ HOTFIX_PATTERN = re.compile(r"^[a-z]$")
 LOCALE_PATTERN = re.compile(r"^[a-z]{2,3}(-[A-Za-z]{2,8})*$")
 SHA256_PATTERN = re.compile(r"^[0-9a-f]{64}$")
 MANIFEST_PATH_PATTERN = re.compile(r"^[A-Za-z0-9_][A-Za-z0-9_./-]*\.[A-Za-z0-9]+$")
+# 统计口径宽松格式（SourceRecord 专用，比 DataScope 白名单宽：上游可能是
+# global 等）。未知必须显式 "unknown"（ADR013：不能编造）。
+STATS_SCOPE_PATTERN = re.compile(r"^[a-z][a-z0-9-]*$")
 
 # 文件 kind -> 支撑的能力
 KIND_CAPABILITIES = {
@@ -235,6 +238,14 @@ def validate_manifest(manifest: dict) -> None:
         fetched = parse_time(s.get("fetched_at"), "fetched_at")
         if not SHA256_PATTERN.match(s.get("raw_sha256", "")):
             raise ContractError("hash", "raw_sha256", f"sources[{i}].raw_sha256 必须为 64 位小写十六进制")
+        if not STATS_SCOPE_PATTERN.match(s.get("stats_region", "")):
+            raise ContractError(
+                "scope", "stats_region",
+                f"sources[{i}].stats_region 非法（非空小写；未知必须显式 unknown）：{s.get('stats_region')!r}")
+        if not STATS_SCOPE_PATTERN.match(s.get("stats_queue", "")):
+            raise ContractError(
+                "scope", "stats_queue",
+                f"sources[{i}].stats_queue 非法（非空小写；未知必须显式 unknown）：{s.get('stats_queue')!r}")
         window_end = parse_time(s.get("stats_window_end"), "stats_window_end")
         window_start = s.get("stats_window_start")
         if window_start:
@@ -304,6 +315,8 @@ def validate_evidence(evidence: dict) -> None:
     if action not in ("degrade_basic", "reject"):
         raise ContractError("format", "below_floor_action", f"必须为 degrade_basic 或 reject：{action!r}")
     freshness = evidence.get("freshness", {})
+    # effective_at 必须显式给出（与 scope 同规则，双端对称）
+    parse_time(freshness.get("effective_at"), "effective_at")
     fetched = parse_time(freshness.get("fetched_at"), "fetched_at")
     built = parse_time(freshness.get("built_at"), "built_at")
     window_end = parse_time(freshness.get("stats_window_end"), "stats_window_end")
@@ -350,11 +363,10 @@ def build_manifest(data_dir: str, scope: dict, sources: list,
     files_plan: [{"relative_path": "data/team_comps.json", "kind": "team_comps"}, ...]
     sha256/size/entity_count 由实际文件计算；manifest 本身不写入 files。
     """
-    _check_path_ok_for_build = lambda p: _check_path(p)  # noqa: E731
     records = []
     for item in files_plan:
         rel = item["relative_path"]
-        _check_path_ok_for_build(rel)
+        _check_path(rel)
         full = os.path.join(data_dir, rel)
         if not os.path.isfile(full):
             raise ContractError("file_missing", "relative_path", f"文件不存在：{full}")

@@ -71,9 +71,22 @@ func (e *EvidenceEnvelope) Validate() error {
 		return newErr(ErrCategoryFormat, "below_floor_action", "",
 			"必须为 degrade_basic 或 reject：%q", e.SamplePolicy.BelowFloorAction)
 	}
-	// 时间语义：fetched <= built；window_end <= fetched；effective_at 独立
+	// 时间语义：fetched <= built；window_end <= fetched；effective_at 独立但必须显式
+	if e.Freshness.EffectiveAt.IsZero() {
+		return newErr(ErrCategoryTimeOrder, "effective_at", "",
+			"freshness.effective_at 为零值（补丁生效时间必须显式给出，与 scope 同规则）")
+	}
+	if e.Freshness.FetchedAt.IsZero() {
+		return newErr(ErrCategoryTimeOrder, "fetched_at", "", "freshness.fetched_at 为零值")
+	}
+	if e.Freshness.BuiltAt.IsZero() {
+		return newErr(ErrCategoryTimeOrder, "built_at", "", "freshness.built_at 为零值")
+	}
 	if e.Freshness.FetchedAt.After(e.Freshness.BuiltAt) {
 		return newErr(ErrCategoryTimeOrder, "freshness", "", "fetched_at 晚于 built_at")
+	}
+	if e.Freshness.StatsWindowEnd.IsZero() {
+		return newErr(ErrCategoryTimeOrder, "stats_window_end", "", "freshness.stats_window_end 为零值")
 	}
 	if e.Freshness.StatsWindowEnd.After(e.Freshness.FetchedAt) {
 		return newErr(ErrCategoryTimeOrder, "freshness", "", "stats_window_end 晚于 fetched_at")

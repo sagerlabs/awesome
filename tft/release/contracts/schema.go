@@ -87,8 +87,8 @@ func parseSemver(v string) (semver, error) {
 	if v == "" {
 		return s, fmt.Errorf("空版本号")
 	}
-	neg := strings.HasPrefix(v, "v")
-	if neg {
+	// 兼容 "v1.2.3" 前缀写法（与 Python 端一致）
+	if strings.HasPrefix(v, "v") {
 		v = v[1:]
 	}
 	parts := strings.Split(v, ".")
