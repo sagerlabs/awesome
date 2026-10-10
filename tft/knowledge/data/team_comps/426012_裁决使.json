@@ -1,0 +1,221 @@
+{
+  "cluster_id": "426012",
+  "tft_set": "TFTSet18",
+  "units": [
+    "黛安娜",
+    "伊泽瑞尔",
+    "赫卡里姆",
+    "卡兹克",
+    "奥恩",
+    "索拉卡",
+    "费德提克"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "永恒之森 (1)",
+    "裁决使 (1)",
+    "宿敌 (1)",
+    "重装战士 (1)",
+    "绝命花妖 (2)"
+  ],
+  "stars": [
+    "卡兹克",
+    "赫卡里姆",
+    "黛安娜",
+    "阿兹尔",
+    "雷恩加尔",
+    "卡西奥佩娅",
+    "拉莫斯",
+    "易"
+  ],
+  "name_string": "DA_18_Elderwood, DA_18_KhaZix",
+  "display_names": [
+    {
+      "name": "裁决使",
+      "type": "trait",
+      "score": 1.9885201007777413
+    },
+    {
+      "name": "卡兹克",
+      "type": "unit",
+      "score": 4.358922116332566
+    }
+  ],
+  "count": 138819,
+  "avg_placement": 4.3675,
+  "top4_rate": 0.5269,
+  "win_rate": 0.1358,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "卡兹克",
+      "items": [
+        "正义之手",
+        "纳什之牙",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.8245,
+      "count": 4615,
+      "score": 0.5359,
+      "place_change": -0.393,
+      "priority_scores": {
+        "正义之手": 100,
+        "纳什之牙": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "赫卡里姆",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.8117,
+      "count": 4014,
+      "score": 0.4275,
+      "place_change": -0.406,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "伊泽瑞尔",
+      "items": [
+        "死亡之刃",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.2585,
+      "count": 1582,
+      "score": 0.2894,
+      "place_change": -0.959,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "黛安娜",
+      "items": [
+        "正义之手",
+        "离子火花",
+        "珠光护手"
+      ],
+      "avg_placement": 3.4712,
+      "count": 1458,
+      "score": 0.245,
+      "place_change": -0.747,
+      "priority_scores": {
+        "正义之手": 100,
+        "离子火花": 85,
+        "珠光护手": 72
+      }
+    }
+  ],
+  "build_items": {
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 61932,
+      "avg": 4.0336,
+      "pcnt": 1.35682
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 40863,
+      "avg": 4.0904,
+      "pcnt": 0.89523
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 36112,
+      "avg": 4.0176,
+      "pcnt": 0.79115
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 27555,
+      "avg": 4.0617,
+      "pcnt": 0.60368
+    },
+    "离子火花": {
+      "itemNames": "DA_IonicSpark",
+      "count": 20568,
+      "avg": 3.7671,
+      "pcnt": 0.45061
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 19897,
+      "avg": 3.8772,
+      "pcnt": 0.43591
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 19391,
+      "avg": 3.7784,
+      "pcnt": 0.42482
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 16608,
+      "avg": 3.9789,
+      "pcnt": 0.36385
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 16444,
+      "avg": 3.9074,
+      "pcnt": 0.36026
+    },
+    "纳什之牙": {
+      "itemNames": "DA_NashorsTooth",
+      "count": 14408,
+      "avg": 3.8045,
+      "pcnt": 0.31565
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 10566,
+      "avg": 3.6936,
+      "pcnt": 0.23148
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 6443,
+      "avg": 4.1558,
+      "pick_rate": 0.027695
+    },
+    {
+      "day": "2026-10-07",
+      "count": 11304,
+      "avg": 4.1269,
+      "pick_rate": 0.026536
+    },
+    {
+      "day": "2026-10-08",
+      "count": 13709,
+      "avg": 4.2114,
+      "pick_rate": 0.035198
+    },
+    {
+      "day": "2026-10-09",
+      "count": 19141,
+      "avg": 4.2529,
+      "pick_rate": 0.035468
+    },
+    {
+      "day": "2026-10-10",
+      "count": 3483,
+      "avg": 4.2647,
+      "pick_rate": 0.035497
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": 0.031
+}

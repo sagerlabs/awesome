@@ -2,83 +2,71 @@
   "name": "纳尔",
   "appear_in_comps": [
     {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
       "tier": "S",
-      "avg_placement": 3.976
+      "avg_placement": 4.1565
     },
     {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
-      "tier": "S",
-      "avg_placement": 4.0985
-    },
-    {
-      "cluster_id": "422006",
+      "cluster_id": "426002",
       "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "tier": "A",
-      "avg_placement": 4.3252
+      "tier": "S",
+      "avg_placement": 4.1877
     },
     {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
       "tier": "A",
-      "avg_placement": 4.3871
+      "avg_placement": 4.3911
     },
     {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
       "tier": "A",
-      "avg_placement": 4.4541
+      "avg_placement": 4.5055
     },
     {
-      "cluster_id": "422007",
+      "cluster_id": "426026",
+      "comp_name": "DA_18_Elderwood, DA_18_Lillia",
+      "tier": "B",
+      "avg_placement": 4.6838
+    },
+    {
+      "cluster_id": "426038",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri",
+      "tier": "B",
+      "avg_placement": 4.7055
+    },
+    {
+      "cluster_id": "426046",
       "comp_name": "DA_18_Blossom, DA_18_Sett",
       "tier": "B",
-      "avg_placement": 4.5238
+      "avg_placement": 4.731
     },
     {
-      "cluster_id": "422001",
-      "comp_name": "DA_18_Executioner, DA_18_Sett",
-      "tier": "B",
-      "avg_placement": 4.6
-    },
-    {
-      "cluster_id": "422037",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "cluster_id": "426044",
+      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
       "tier": "C",
-      "avg_placement": 4.82
+      "avg_placement": 4.8811
     },
     {
-      "cluster_id": "422036",
-      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Sett",
+      "cluster_id": "426052",
+      "comp_name": "DA_18_Spellweaver, DA_18_Ahri",
       "tier": "C",
-      "avg_placement": 4.921
-    },
-    {
-      "cluster_id": "422034",
-      "comp_name": "DA_18_Elderwood, DA_18_Sett",
-      "tier": "D",
-      "avg_placement": 5.2877
-    },
-    {
-      "cluster_id": "422051",
-      "comp_name": "DA_18_Elderwood, DA_18_LeBlanc",
-      "tier": "D",
-      "avg_placement": 6.0247
+      "avg_placement": 4.9679
     }
   ],
   "builds": [
     {
-      "cluster_id": "422037",
+      "cluster_id": "426036",
       "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
       "items": [
         "饮血剑",
         "斯特拉克的挑战护手",
         "泰坦的坚决"
       ],
-      "avg_placement": 3.5413,
-      "count": 242,
+      "avg_placement": 3.2651,
+      "count": 83,
       "priority_scores": {
         "饮血剑": 100,
         "斯特拉克的挑战护手": 85,
@@ -86,15 +74,27 @@
       }
     },
     {
-      "cluster_id": "422034",
-      "comp_name": "DA_18_Elderwood, DA_18_Sett",
+      "cluster_id": "426046",
+      "comp_name": "DA_18_Blossom, DA_18_Sett",
+      "items": [
+        "暴风大剑"
+      ],
+      "avg_placement": 3.4444,
+      "count": 18,
+      "priority_scores": {
+        "暴风大剑": 100
+      }
+    },
+    {
+      "cluster_id": "426047",
+      "comp_name": "DA_18_Sprykin, DA_18_Tristana",
       "items": [
         "饮血剑",
         "斯特拉克的挑战护手",
         "泰坦的坚决"
       ],
-      "avg_placement": 3.7368,
-      "count": 19,
+      "avg_placement": 3.1667,
+      "count": 6,
       "priority_scores": {
         "饮血剑": 100,
         "斯特拉克的挑战护手": 85,

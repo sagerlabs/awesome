@@ -2,27 +2,51 @@
   "name": "正义之手",
   "priority_list": [
     {
-      "cluster_id": "422008",
+      "cluster_id": "426012",
       "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
       "comp_tier": "A",
-      "comp_avg": 4.4453,
+      "comp_avg": 4.3675,
+      "carry": "卡兹克",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.3675,
       "carry": "黛安娜",
       "priority_score": 100
     },
     {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
       "comp_tier": "A",
-      "comp_avg": 4.3871,
+      "comp_avg": 4.3827,
+      "carry": "莫甘娜",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "comp_tier": "A",
+      "comp_avg": 4.3419,
+      "carry": "黛安娜",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "comp_tier": "A",
+      "comp_avg": 4.3911,
       "carry": "凯南",
       "priority_score": 85
     },
     {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "cluster_id": "426009",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "comp_tier": "A",
-      "comp_avg": 4.4453,
-      "carry": "卡兹克",
+      "comp_avg": 4.4227,
+      "carry": "绯红印记树怪",
       "priority_score": 85
     }
   ]

@@ -1,0 +1,218 @@
+{
+  "cluster_id": "426025",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿卡丽",
+    "卡蜜尔",
+    "凯尔",
+    "蕾欧娜",
+    "奥恩",
+    "瑟庄妮",
+    "韦鲁斯"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "地狱火 (1)",
+    "迅捷射手 (1)",
+    "狂战士 (1)",
+    "日蚀骑士 (1)"
+  ],
+  "stars": [
+    "阿卡丽",
+    "卡蜜尔",
+    "奥恩",
+    "韦鲁斯",
+    "蕾欧娜",
+    "慎",
+    "洛",
+    "约里克",
+    "霞",
+    "可酷伯",
+    "雷克塞",
+    "卡尔玛"
+  ],
+  "name_string": "DA_18_Inferno, DA_18_Akali_AD",
+  "display_names": [
+    {
+      "name": "地狱火",
+      "type": "trait",
+      "score": 1.2128979591836735
+    },
+    {
+      "name": "阿卡丽",
+      "type": "unit",
+      "score": 4.1944489795918365
+    }
+  ],
+  "count": 52365,
+  "avg_placement": 4.5921,
+  "top4_rate": 0.497,
+  "win_rate": 0.0901,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "奥恩",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.951,
+      "count": 1287,
+      "score": 0.4074,
+      "place_change": -0.519,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "卡蜜尔",
+      "items": [
+        "正义之手",
+        "水银",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.7622,
+      "count": 143,
+      "score": 0.3938,
+      "place_change": -0.708,
+      "priority_scores": {
+        "正义之手": 100,
+        "水银": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "阿卡丽",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "无尽之刃"
+      ],
+      "avg_placement": 4.3077,
+      "count": 1576,
+      "score": 0.3794,
+      "place_change": -0.162,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "无尽之刃": 72
+      }
+    },
+    {
+      "unit": "韦鲁斯",
+      "items": [
+        "无尽之刃",
+        "最后的轻语",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.7253,
+      "count": 517,
+      "score": 0.2423,
+      "place_change": -0.745,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "最后的轻语": 85,
+        "朔极之矛": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 16508,
+      "avg": 4.2793,
+      "pcnt": 0.89839
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 16130,
+      "avg": 4.2661,
+      "pcnt": 0.87782
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 15038,
+      "avg": 4.1942,
+      "pcnt": 0.81839
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 14600,
+      "avg": 4.2846,
+      "pcnt": 0.79456
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 11318,
+      "avg": 4.1951,
+      "pcnt": 0.61595
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 9805,
+      "avg": 4.244,
+      "pcnt": 0.53361
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 6573,
+      "avg": 3.9843,
+      "pcnt": 0.35771
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 5872,
+      "avg": 3.9854,
+      "pcnt": 0.31956
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 5834,
+      "avg": 4.0399,
+      "pcnt": 0.3175
+    },
+    "水银": {
+      "itemNames": "DA_Quicksilver",
+      "count": 3930,
+      "avg": 4.1606,
+      "pcnt": 0.21388
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 1185,
+      "avg": 4.7426,
+      "pick_rate": 0.005094
+    },
+    {
+      "day": "2026-10-07",
+      "count": 4890,
+      "avg": 4.4589,
+      "pick_rate": 0.011479
+    },
+    {
+      "day": "2026-10-08",
+      "count": 4952,
+      "avg": 4.4105,
+      "pick_rate": 0.012714
+    },
+    {
+      "day": "2026-10-09",
+      "count": 7811,
+      "avg": 4.5054,
+      "pick_rate": 0.014474
+    },
+    {
+      "day": "2026-10-10",
+      "count": 1423,
+      "avg": 4.5531,
+      "pick_rate": 0.014503
+    }
+  ],
+  "levelling": "lvl 5",
+  "difficulty": 0.087
+}

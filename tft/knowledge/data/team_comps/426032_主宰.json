@@ -1,0 +1,203 @@
+{
+  "cluster_id": "426032",
+  "tft_set": "TFTSet18",
+  "units": [
+    "艾希",
+    "茂凯",
+    "瑟庄妮",
+    "希维尔",
+    "约里克",
+    "婕拉",
+    "阿木木",
+    "峡谷迅捷蟹",
+    "蔚"
+  ],
+  "traits": [
+    "猎人 (1)",
+    "远古树精 (1)",
+    "召唤师 (1)",
+    "荆棘之兴 (1)",
+    "主宰 (3)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "雷恩加尔",
+    "霞",
+    "维迦",
+    "卡西奥佩娅",
+    "可酷伯",
+    "奥恩",
+    "卡蜜尔"
+  ],
+  "name_string": "DA_Juggernaut18, DA_18_Zyra, DA_18_Sejuani",
+  "display_names": [
+    {
+      "name": "主宰",
+      "type": "trait",
+      "score": 2.7799103663289166
+    },
+    {
+      "name": "婕拉",
+      "type": "unit",
+      "score": 4.021677708495713
+    }
+  ],
+  "count": 100469,
+  "avg_placement": 4.6383,
+  "top4_rate": 0.4683,
+  "win_rate": 0.1087,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "婕拉",
+      "items": [
+        "大天使之杖",
+        "大天使之杖",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 4.0887,
+      "count": 8510,
+      "score": 0.6323,
+      "place_change": -0.56,
+      "priority_scores": {
+        "大天使之杖": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "unit": "茂凯",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.0149,
+      "count": 942,
+      "score": 0.2936,
+      "place_change": -1.634,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "阿木木",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.3539,
+      "count": 1619,
+      "score": 0.2262,
+      "place_change": -0.295,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "希维尔",
+      "items": [
+        "巨人杀手",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.8031,
+      "count": 127,
+      "score": 0.1802,
+      "place_change": -0.845,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    }
+  ],
+  "build_items": {
+    "大天使之杖": {
+      "itemNames": "DA_ArchangelsStaff",
+      "count": 45517,
+      "avg": 4.3178,
+      "pcnt": 1.10866
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 40103,
+      "avg": 4.4833,
+      "pcnt": 0.97679
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 29797,
+      "avg": 4.374,
+      "pcnt": 0.72576
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 27868,
+      "avg": 4.3575,
+      "pcnt": 0.67878
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 27195,
+      "avg": 4.3779,
+      "pcnt": 0.66239
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 18951,
+      "avg": 4.2441,
+      "pcnt": 0.46159
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 16239,
+      "avg": 4.2971,
+      "pcnt": 0.39553
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 7861,
+      "avg": 4.3045,
+      "pcnt": 0.19147
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 16354,
+      "avg": 4.4311,
+      "pick_rate": 0.070297
+    },
+    {
+      "day": "2026-10-07",
+      "count": 17845,
+      "avg": 4.6136,
+      "pick_rate": 0.041891
+    },
+    {
+      "day": "2026-10-08",
+      "count": 11423,
+      "avg": 4.6446,
+      "pick_rate": 0.029329
+    },
+    {
+      "day": "2026-10-09",
+      "count": 13945,
+      "avg": 4.6642,
+      "pick_rate": 0.02584
+    },
+    {
+      "day": "2026-10-10",
+      "count": 2198,
+      "avg": 4.6638,
+      "pick_rate": 0.022401
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.01
+}

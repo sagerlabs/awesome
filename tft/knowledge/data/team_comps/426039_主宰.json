@@ -1,0 +1,205 @@
+{
+  "cluster_id": "426039",
+  "tft_set": "TFTSet18",
+  "units": [
+    "凯特琳",
+    "洛",
+    "瑟庄妮",
+    "希维尔",
+    "约里克",
+    "阿木木",
+    "峡谷迅捷蟹",
+    "蔚"
+  ],
+  "traits": [
+    "猎人 (1)",
+    "主宰 (3)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "凯特琳",
+    "峡谷迅捷蟹",
+    "瑟庄妮",
+    "伊莉丝",
+    "雷恩加尔",
+    "芸阿娜"
+  ],
+  "name_string": "DA_Juggernaut18, DA_18_Caitlyn",
+  "display_names": [
+    {
+      "name": "主宰",
+      "type": "trait",
+      "score": 2.2266372956028126
+    },
+    {
+      "name": "凯特琳",
+      "type": "unit",
+      "score": 4.009700923494027
+    }
+  ],
+  "count": 33513,
+  "avg_placement": 4.9795,
+  "top4_rate": 0.4141,
+  "win_rate": 0.0547,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "凯特琳",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 4.5939,
+      "count": 2630,
+      "score": 0.5621,
+      "place_change": -0.419,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "unit": "希维尔",
+      "items": [
+        "无尽之刃",
+        "最后的轻语",
+        "红霸符"
+      ],
+      "avg_placement": 3.9709,
+      "count": 446,
+      "score": 0.3417,
+      "place_change": -1.042,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "最后的轻语": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "unit": "峡谷迅捷蟹",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.6104,
+      "count": 711,
+      "score": 0.2132,
+      "place_change": -0.403,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "瑟庄妮",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.6187,
+      "count": 278,
+      "score": 0.116,
+      "place_change": -0.394,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 11358,
+      "avg": 4.7857,
+      "pcnt": 0.9623
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 10274,
+      "avg": 4.8305,
+      "pcnt": 0.87046
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 8268,
+      "avg": 4.7424,
+      "pcnt": 0.7005
+    },
+    "海妖之怒": {
+      "itemNames": "DA_KrakensFury",
+      "count": 7917,
+      "avg": 4.8057,
+      "pcnt": 0.67076
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 7426,
+      "avg": 4.6876,
+      "pcnt": 0.62916
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 7083,
+      "avg": 4.7037,
+      "pcnt": 0.6001
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 6756,
+      "avg": 4.8074,
+      "pcnt": 0.5724
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 6581,
+      "avg": 4.6757,
+      "pcnt": 0.55757
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 4165,
+      "avg": 4.5061,
+      "pcnt": 0.35288
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 3180,
+      "avg": 4.7503,
+      "pick_rate": 0.013669
+    },
+    {
+      "day": "2026-10-07",
+      "count": 4563,
+      "avg": 4.9627,
+      "pick_rate": 0.010712
+    },
+    {
+      "day": "2026-10-08",
+      "count": 3339,
+      "avg": 5.0407,
+      "pick_rate": 0.008573
+    },
+    {
+      "day": "2026-10-09",
+      "count": 4115,
+      "avg": 4.9827,
+      "pick_rate": 0.007625
+    },
+    {
+      "day": "2026-10-10",
+      "count": 770,
+      "avg": 5.1195,
+      "pick_rate": 0.007848
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.018
+}

@@ -1,0 +1,13 @@
+{
+  "name": "月蚀骑士纹章",
+  "priority_list": [
+    {
+      "cluster_id": "426009",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "comp_tier": "A",
+      "comp_avg": 4.4227,
+      "carry": "莫甘娜",
+      "priority_score": 100
+    }
+  ]
+}

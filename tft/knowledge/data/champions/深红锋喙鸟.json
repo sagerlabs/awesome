@@ -2,71 +2,55 @@
   "name": "深红锋喙鸟",
   "appear_in_comps": [
     {
-      "cluster_id": "422013",
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
+      "tier": "A",
+      "avg_placement": 4.2678
+    },
+    {
+      "cluster_id": "426017",
       "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
-      "tier": "B",
-      "avg_placement": 4.5935
+      "tier": "A",
+      "avg_placement": 4.5099
     },
     {
-      "cluster_id": "422014",
-      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
+      "cluster_id": "426033",
+      "comp_name": "DA_18_Vanguard, DA_18_Hecarim",
       "tier": "B",
-      "avg_placement": 4.744
-    },
-    {
-      "cluster_id": "422052",
-      "comp_name": "DA_Riftbeast18, DA_CrimsonRaptor18",
-      "tier": "D",
-      "avg_placement": 6.2188
+      "avg_placement": 4.7405
     }
   ],
   "builds": [
     {
-      "cluster_id": "422013",
+      "cluster_id": "426017",
       "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
       "items": [
         "鬼索的狂暴之刃",
-        "无尽之刃",
-        "最后的轻语"
+        "海克斯科技枪刃",
+        "海妖之怒"
       ],
-      "avg_placement": 3.9203,
-      "count": 389,
+      "avg_placement": 3.9231,
+      "count": 39,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
-        "无尽之刃": 85,
-        "最后的轻语": 72
+        "海克斯科技枪刃": 85,
+        "海妖之怒": 72
       }
     },
     {
-      "cluster_id": "422014",
-      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
+      "cluster_id": "426033",
+      "comp_name": "DA_18_Vanguard, DA_18_Hecarim",
       "items": [
-        "鬼索的狂暴之刃",
         "海妖之怒",
-        "最后的轻语"
+        "最后的轻语",
+        "红霸符"
       ],
-      "avg_placement": 3.791,
-      "count": 737,
+      "avg_placement": 3.2308,
+      "count": 13,
       "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "海妖之怒": 85,
-        "最后的轻语": 72
-      }
-    },
-    {
-      "cluster_id": "422052",
-      "comp_name": "DA_Riftbeast18, DA_CrimsonRaptor18",
-      "items": [
-        "死亡之刃",
-        "鬼索的狂暴之刃",
-        "海克斯科技枪刃"
-      ],
-      "avg_placement": 4.5833,
-      "count": 12,
-      "priority_scores": {
-        "死亡之刃": 100,
-        "鬼索的狂暴之刃": 85,
-        "海克斯科技枪刃": 72
+        "海妖之怒": 100,
+        "最后的轻语": 85,
+        "红霸符": 72
       }
     }
   ]

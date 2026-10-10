@@ -2,42 +2,74 @@
   "name": "圣盾使的誓约",
   "priority_list": [
     {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3252,
-      "carry": "莉莉娅",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
-      "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "莉莉娅",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422012",
-      "comp_name": "DA_18_Invoker, DA_18_Morgana",
-      "comp_tier": "A",
-      "comp_avg": 4.5152,
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
       "carry": "苍蓝雕纹魔像",
       "priority_score": 85
     },
     {
-      "cluster_id": "422021",
+      "cluster_id": "426027",
       "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.2727,
+      "carry": "苍蓝雕纹魔像",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "comp_tier": "A",
+      "comp_avg": 4.3419,
+      "carry": "苍蓝雕纹魔像",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.5077,
+      "carry": "莉莉娅",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.5099,
+      "carry": "苍蓝雕纹魔像",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
       "comp_tier": "S",
-      "comp_avg": 4.2328,
+      "comp_avg": 4.1832,
       "carry": "苍蓝雕纹魔像",
       "priority_score": 72
     },
     {
-      "cluster_id": "422017",
-      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
       "comp_tier": "A",
-      "comp_avg": 4.4826,
+      "comp_avg": 4.2678,
+      "carry": "苍蓝雕纹魔像",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426010",
+      "comp_name": "DA_18_Invoker, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.3346,
+      "carry": "苍蓝雕纹魔像",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3827,
       "carry": "苍蓝雕纹魔像",
       "priority_score": 72
     }

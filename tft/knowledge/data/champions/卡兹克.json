@@ -2,41 +2,57 @@
   "name": "卡兹克",
   "appear_in_comps": [
     {
-      "cluster_id": "422008",
+      "cluster_id": "426012",
       "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
       "tier": "A",
-      "avg_placement": 4.4453
+      "avg_placement": 4.3675
     },
     {
-      "cluster_id": "422035",
-      "comp_name": "DA_18_Rival, DA_18_Rengar",
-      "tier": "C",
-      "avg_placement": 4.9153
+      "cluster_id": "426034",
+      "comp_name": "DA_18_Executioner, DA_18_Azir",
+      "tier": "B",
+      "avg_placement": 4.6172
     },
     {
-      "cluster_id": "422045",
-      "comp_name": "DA_18_Spellweaver, DA_18_KhaZix",
+      "cluster_id": "426024",
+      "comp_name": "DA_18_Elderwood, DA_18_Rengar",
+      "tier": "B",
+      "avg_placement": 4.6671
+    },
+    {
+      "cluster_id": "426057",
+      "comp_name": "DA_18_Executioner, DA_18_KhaZix",
       "tier": "D",
-      "avg_placement": 5.1856
-    },
-    {
-      "cluster_id": "422049",
-      "comp_name": "DA_18_Defender, DA_18_Rammus",
-      "tier": "D",
-      "avg_placement": 5.8333
+      "avg_placement": 5.6854
     }
   ],
   "builds": [
     {
-      "cluster_id": "422008",
+      "cluster_id": "426012",
       "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "items": [
+        "正义之手",
+        "纳什之牙",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.8245,
+      "count": 4615,
+      "priority_scores": {
+        "正义之手": 100,
+        "纳什之牙": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "cluster_id": "426024",
+      "comp_name": "DA_18_Elderwood, DA_18_Rengar",
       "items": [
         "夜之锋刃",
         "正义之手",
         "灭世者的死亡之帽"
       ],
-      "avg_placement": 4.186,
-      "count": 15851,
+      "avg_placement": 4.5837,
+      "count": 2210,
       "priority_scores": {
         "夜之锋刃": 100,
         "正义之手": 85,
@@ -44,31 +60,15 @@
       }
     },
     {
-      "cluster_id": "422035",
-      "comp_name": "DA_18_Rival, DA_18_Rengar",
-      "items": [
-        "正义之手",
-        "灭世者的死亡之帽",
-        "强袭者的链枷"
-      ],
-      "avg_placement": 3.7097,
-      "count": 31,
-      "priority_scores": {
-        "正义之手": 100,
-        "灭世者的死亡之帽": 85,
-        "强袭者的链枷": 72
-      }
-    },
-    {
-      "cluster_id": "422043",
-      "comp_name": "DA_18_Blackthorn, DA_18_KhaZix",
+      "cluster_id": "426056",
+      "comp_name": "DA_18_Blackthorn, DA_18_Azir",
       "items": [
         "黑荆棘纹章",
         "正义之手",
         "灭世者的死亡之帽"
       ],
-      "avg_placement": 4.6711,
-      "count": 304,
+      "avg_placement": 4.4366,
+      "count": 213,
       "priority_scores": {
         "黑荆棘纹章": 100,
         "正义之手": 85,
@@ -76,35 +76,19 @@
       }
     },
     {
-      "cluster_id": "422045",
-      "comp_name": "DA_18_Spellweaver, DA_18_KhaZix",
+      "cluster_id": "426057",
+      "comp_name": "DA_18_Executioner, DA_18_KhaZix",
       "items": [
         "夜之锋刃",
         "正义之手",
-        "泰坦的坚决"
+        "纳什之牙"
       ],
-      "avg_placement": 4.3182,
-      "count": 22,
+      "avg_placement": 4.5714,
+      "count": 14,
       "priority_scores": {
         "夜之锋刃": 100,
         "正义之手": 85,
-        "泰坦的坚决": 72
-      }
-    },
-    {
-      "cluster_id": "422049",
-      "comp_name": "DA_18_Defender, DA_18_Rammus",
-      "items": [
-        "夜之锋刃",
-        "正义之手",
-        "珠光护手"
-      ],
-      "avg_placement": 6,
-      "count": 9,
-      "priority_scores": {
-        "夜之锋刃": 100,
-        "正义之手": 85,
-        "珠光护手": 72
+        "纳什之牙": 72
       }
     }
   ]

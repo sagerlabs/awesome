@@ -2,192 +2,130 @@
   "name": "阿狸",
   "appear_in_comps": [
     {
-      "cluster_id": "422021",
-      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
-      "tier": "S",
-      "avg_placement": 4.2328
+      "cluster_id": "426010",
+      "comp_name": "DA_18_Invoker, DA_18_Ahri",
+      "tier": "A",
+      "avg_placement": 4.3346
     },
     {
-      "cluster_id": "422007",
-      "comp_name": "DA_18_Blossom, DA_18_Sett",
-      "tier": "B",
-      "avg_placement": 4.5238
-    },
-    {
-      "cluster_id": "422001",
+      "cluster_id": "426005",
       "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "tier": "A",
+      "avg_placement": 4.3357
+    },
+    {
+      "cluster_id": "426020",
+      "comp_name": "DA_18_Blossom, DA_18_Zyra",
       "tier": "B",
-      "avg_placement": 4.6
+      "avg_placement": 4.5472
     },
     {
-      "cluster_id": "422023",
-      "comp_name": "DA_18_Executioner, DA_18_Yunara",
+      "cluster_id": "426038",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri",
       "tier": "B",
-      "avg_placement": 4.604
+      "avg_placement": 4.7055
     },
     {
-      "cluster_id": "422004",
-      "comp_name": "DA_18_Spellweaver, DA_18_Cassiopeia",
-      "tier": "B",
-      "avg_placement": 4.6634
-    },
-    {
-      "cluster_id": "422027",
-      "comp_name": "DA_18_Spellweaver, DA_18_Lillia",
-      "tier": "B",
-      "avg_placement": 4.7714
-    },
-    {
-      "cluster_id": "422036",
-      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Sett",
-      "tier": "C",
-      "avg_placement": 4.921
-    },
-    {
-      "cluster_id": "422031",
+      "cluster_id": "426052",
       "comp_name": "DA_18_Spellweaver, DA_18_Ahri",
       "tier": "C",
-      "avg_placement": 4.9851
-    },
-    {
-      "cluster_id": "422025",
-      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Malphite",
-      "tier": "D",
-      "avg_placement": 5.1037
-    },
-    {
-      "cluster_id": "422050",
-      "comp_name": "DA_18_Coven, DA_18_Morgana",
-      "tier": "D",
-      "avg_placement": 5.8427
+      "avg_placement": 4.9679
     }
   ],
   "builds": [
     {
-      "cluster_id": "422021",
+      "cluster_id": "426027",
       "comp_name": "DA_18_Vanguard, DA_18_Ahri",
-      "items": [
-        "神谕纹章",
-        "珠光护手",
-        "强袭者的链枷"
-      ],
-      "avg_placement": 3.6545,
-      "count": 18573,
-      "priority_scores": {
-        "神谕纹章": 100,
-        "珠光护手": 85,
-        "强袭者的链枷": 72
-      }
-    },
-    {
-      "cluster_id": "422007",
-      "comp_name": "DA_18_Blossom, DA_18_Sett",
-      "items": [
-        "珠光护手",
-        "纳什之牙",
-        "强袭者的链枷"
-      ],
-      "avg_placement": 3.9405,
-      "count": 1848,
-      "priority_scores": {
-        "珠光护手": 100,
-        "纳什之牙": 85,
-        "强袭者的链枷": 72
-      }
-    },
-    {
-      "cluster_id": "422001",
-      "comp_name": "DA_18_Executioner, DA_18_Sett",
-      "items": [
-        "裁决使纹章",
-        "红霸符",
-        "虚空之杖"
-      ],
-      "avg_placement": 3.2157,
-      "count": 51,
-      "priority_scores": {
-        "裁决使纹章": 100,
-        "红霸符": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "422004",
-      "comp_name": "DA_18_Spellweaver, DA_18_Cassiopeia",
-      "items": [
-        "巨人杀手",
-        "珠光护手",
-        "虚空之杖"
-      ],
-      "avg_placement": 3.35,
-      "count": 20,
-      "priority_scores": {
-        "巨人杀手": 100,
-        "珠光护手": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "422027",
-      "comp_name": "DA_18_Spellweaver, DA_18_Lillia",
-      "items": [
-        "莫雷洛秘典",
-        "朔极之矛",
-        "虚空之杖"
-      ],
-      "avg_placement": 3.4091,
-      "count": 22,
-      "priority_scores": {
-        "莫雷洛秘典": 100,
-        "朔极之矛": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "422036",
-      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Sett",
-      "items": [
-        "裁决使纹章",
-        "珠光护手",
-        "朔极之矛"
-      ],
-      "avg_placement": 4.2135,
-      "count": 370,
-      "priority_scores": {
-        "裁决使纹章": 100,
-        "珠光护手": 85,
-        "朔极之矛": 72
-      }
-    },
-    {
-      "cluster_id": "422031",
-      "comp_name": "DA_18_Spellweaver, DA_18_Ahri",
       "items": [
         "珠光护手",
         "纳什之牙",
         "纳什之牙"
       ],
-      "avg_placement": 4.377,
-      "count": 252,
+      "avg_placement": 3.8571,
+      "count": 56,
       "priority_scores": {
         "珠光护手": 100,
         "纳什之牙": 72
       }
     },
     {
-      "cluster_id": "422025",
-      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Malphite",
+      "cluster_id": "426010",
+      "comp_name": "DA_18_Invoker, DA_18_Ahri",
+      "items": [
+        "神谕纹章",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.9066,
+      "count": 4541,
+      "priority_scores": {
+        "神谕纹章": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
       "items": [
         "裁决使纹章",
         "灭世者的死亡之帽",
         "朔极之矛"
       ],
-      "avg_placement": 4.5246,
-      "count": 366,
+      "avg_placement": 4.0623,
+      "count": 883,
       "priority_scores": {
         "裁决使纹章": 100,
         "灭世者的死亡之帽": 85,
         "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "426020",
+      "comp_name": "DA_18_Blossom, DA_18_Zyra",
+      "items": [
+        "珠光护手",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.3304,
+      "count": 2467,
+      "priority_scores": {
+        "珠光护手": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "426038",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri",
+      "items": [
+        "珠光护手",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.2817,
+      "count": 1594,
+      "priority_scores": {
+        "珠光护手": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "426052",
+      "comp_name": "DA_18_Spellweaver, DA_18_Ahri",
+      "items": [
+        "灭世者的死亡之帽",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.4,
+      "count": 20,
+      "priority_scores": {
+        "灭世者的死亡之帽": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
       }
     }
   ]

@@ -2,67 +2,147 @@
   "name": "朔极之矛",
   "priority_list": [
     {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "沃里克",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
       "comp_tier": "S",
-      "comp_avg": 4.0985,
-      "carry": "提莫",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3252,
-      "carry": "拉露恩",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
-      "comp_tier": "A",
-      "comp_avg": 4.3871,
-      "carry": "伊泽瑞尔",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
-      "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "希维尔",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422022",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
-      "comp_tier": "A",
-      "comp_avg": 4.474,
+      "comp_avg": 4.1276,
       "carry": "婕拉",
       "priority_score": 85
     },
     {
-      "cluster_id": "422022",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
-      "comp_tier": "A",
-      "comp_avg": 4.474,
-      "carry": "索拉卡",
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
+      "comp_tier": "S",
+      "comp_avg": 4.1832,
+      "carry": "奈德丽",
       "priority_score": 85
     },
     {
-      "cluster_id": "422009",
-      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.2845,
+      "carry": "提莫",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "comp_tier": "A",
+      "comp_avg": 4.3911,
+      "carry": "伊泽瑞尔",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "comp_tier": "A",
+      "comp_avg": 4.4727,
+      "carry": "奈德丽",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "comp_tier": "A",
+      "comp_avg": 4.4939,
+      "carry": "奈德丽",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
       "comp_tier": "S",
-      "comp_avg": 4.1713,
-      "carry": "克格莫",
+      "comp_avg": 4.1877,
+      "carry": "伊泽瑞尔",
       "priority_score": 72
     },
     {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
+      "carry": "拉露恩",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
       "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "艾希",
+      "comp_avg": 4.2727,
+      "carry": "拉露恩",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.2845,
+      "carry": "乐芙兰",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3357,
+      "carry": "伊泽瑞尔",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3357,
+      "carry": "阿狸",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3357,
+      "carry": "索拉卡",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.3675,
+      "carry": "伊泽瑞尔",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "comp_tier": "A",
+      "comp_avg": 4.5055,
+      "carry": "伊泽瑞尔",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "comp_tier": "A",
+      "comp_avg": 4.5055,
+      "carry": "索拉卡",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426029",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "comp_tier": "A",
+      "comp_avg": 4.5193,
+      "carry": "克格莫",
       "priority_score": 72
     }
   ]

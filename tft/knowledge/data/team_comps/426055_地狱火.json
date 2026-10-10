@@ -1,0 +1,223 @@
+{
+  "cluster_id": "426055",
+  "tft_set": "TFTSet18",
+  "units": [
+    "拉露恩",
+    "厄斐琉斯",
+    "黛安娜",
+    "艾翁",
+    "凯南",
+    "茂凯",
+    "韦鲁斯",
+    "阿木木",
+    "塔里克"
+  ],
+  "traits": [
+    "翠神 (1)",
+    "地狱火 (2)",
+    "月蚀骑士 (2)",
+    "远古树精 (1)",
+    "迅捷射手 (1)",
+    "重装战士 (1)",
+    "月华神女 (1)",
+    "宝石骑士 (1)",
+    "主宰 (1)"
+  ],
+  "stars": [],
+  "name_string": "DA_18_Inferno, DA_Amumu18",
+  "display_names": [
+    {
+      "name": "地狱火",
+      "type": "trait",
+      "score": 2.2235481304693714
+    },
+    {
+      "name": "阿木木",
+      "type": "unit",
+      "score": 2.9815035799522676
+    }
+  ],
+  "count": 18157,
+  "avg_placement": 5.2417,
+  "top4_rate": 0.3604,
+  "win_rate": 0.0689,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "厄斐琉斯",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "红霸符"
+      ],
+      "avg_placement": 3.1667,
+      "count": 12,
+      "score": 0.6163,
+      "place_change": -2.254,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "unit": "阿木木",
+      "items": [
+        "石像鬼石板甲",
+        "圣盾使的誓约",
+        "振奋盔甲"
+      ],
+      "avg_placement": 4.1852,
+      "count": 27,
+      "score": 0.4726,
+      "place_change": -1.236,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "unit": "凯南",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3,
+      "count": 9,
+      "score": 0.1762,
+      "place_change": -2.421,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "拉露恩",
+      "items": [
+        "蓝霸符",
+        "珠光护手",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.4167,
+      "count": 12,
+      "score": 0.1204,
+      "place_change": -1.005,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "珠光护手": 85,
+        "朔极之矛": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 2117,
+      "avg": 5.0902,
+      "pcnt": 0.84208
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 1369,
+      "avg": 5.0511,
+      "pcnt": 0.54455
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 1184,
+      "avg": 5.2145,
+      "pcnt": 0.47096
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 1042,
+      "avg": 4.9549,
+      "pcnt": 0.41448
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 719,
+      "avg": 4.6412,
+      "pcnt": 0.286
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 707,
+      "avg": 4.8769,
+      "pcnt": 0.28123
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 679,
+      "avg": 4.9764,
+      "pcnt": 0.27009
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 622,
+      "avg": 5.0418,
+      "pcnt": 0.24741
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 460,
+      "avg": 4.6261,
+      "pcnt": 0.18298
+    },
+    "蓝霸符": {
+      "itemNames": "DA_BlueBuff",
+      "count": 380,
+      "avg": 4.6368,
+      "pcnt": 0.15115
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 376,
+      "avg": 4.5638,
+      "pcnt": 0.14956
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 365,
+      "avg": 4.4219,
+      "pcnt": 0.14519
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 370,
+      "avg": 5.8216,
+      "pick_rate": 0.00159
+    },
+    {
+      "day": "2026-10-07",
+      "count": 711,
+      "avg": 5.8537,
+      "pick_rate": 0.001669
+    },
+    {
+      "day": "2026-10-08",
+      "count": 694,
+      "avg": 5.3256,
+      "pick_rate": 0.001782
+    },
+    {
+      "day": "2026-10-09",
+      "count": 1033,
+      "avg": 5.3456,
+      "pick_rate": 0.001914
+    },
+    {
+      "day": "2026-10-10",
+      "count": 227,
+      "avg": 5.1498,
+      "pick_rate": 0.002313
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.109
+}

@@ -1,0 +1,206 @@
+{
+  "cluster_id": "426052",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿狸",
+    "拉露恩",
+    "卡西奥佩娅",
+    "纳尔",
+    "莉莉娅",
+    "瑟提",
+    "费德提克",
+    "卡尔玛"
+  ],
+  "traits": [
+    "灵魂莲华 (1)",
+    "斗士 (1)",
+    "护卫 (1)",
+    "法师 (3)",
+    "月华神女 (1)",
+    "绝命花妖 (1)"
+  ],
+  "stars": [],
+  "name_string": "DA_18_Spellweaver, DA_18_Ahri",
+  "display_names": [
+    {
+      "name": "法师",
+      "type": "trait",
+      "score": 2.47452593100297
+    },
+    {
+      "name": "阿狸",
+      "type": "unit",
+      "score": 3.98971898560658
+    }
+  ],
+  "count": 17406,
+  "avg_placement": 4.9679,
+  "top4_rate": 0.4139,
+  "win_rate": 0.0723,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "阿狸",
+      "items": [
+        "灭世者的死亡之帽",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.4,
+      "count": 20,
+      "score": 0.6074,
+      "place_change": -1.545,
+      "priority_scores": {
+        "灭世者的死亡之帽": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "瑟提",
+      "items": [
+        "棘刺背心",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.3333,
+      "count": 30,
+      "score": 0.3227,
+      "place_change": -1.612,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "拉露恩",
+      "items": [
+        "红霸符",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.5476,
+      "count": 42,
+      "score": 0.3164,
+      "place_change": -1.398,
+      "priority_scores": {
+        "红霸符": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "莉莉娅",
+      "items": [
+        "法师纹章",
+        "圣盾使的誓约",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.75,
+      "count": 36,
+      "score": 0.1821,
+      "place_change": -1.195,
+      "priority_scores": {
+        "法师纹章": 100,
+        "圣盾使的誓约": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 4371,
+      "avg": 4.7836,
+      "pcnt": 0.99863
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 4042,
+      "avg": 4.6086,
+      "pcnt": 0.92346
+    },
+    "法师纹章": {
+      "itemNames": "DA_18_EmblemSpellweaver",
+      "count": 2804,
+      "avg": 4.6958,
+      "pcnt": 0.64062
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 2708,
+      "avg": 4.6643,
+      "pcnt": 0.61869
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 2461,
+      "avg": 4.553,
+      "pcnt": 0.56226
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 1415,
+      "avg": 4.6212,
+      "pcnt": 0.32328
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 1317,
+      "avg": 4.6188,
+      "pcnt": 0.30089
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 1134,
+      "avg": 4.4806,
+      "pcnt": 0.25908
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 1097,
+      "avg": 4.5524,
+      "pcnt": 0.25063
+    },
+    "棘刺背心": {
+      "itemNames": "DA_BrambleVest",
+      "count": 665,
+      "avg": 4.4466,
+      "pcnt": 0.15193
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 634,
+      "avg": 5.0032,
+      "pick_rate": 0.002725
+    },
+    {
+      "day": "2026-10-07",
+      "count": 1274,
+      "avg": 4.9176,
+      "pick_rate": 0.002991
+    },
+    {
+      "day": "2026-10-08",
+      "count": 1137,
+      "avg": 4.9947,
+      "pick_rate": 0.002919
+    },
+    {
+      "day": "2026-10-09",
+      "count": 1853,
+      "avg": 4.8964,
+      "pick_rate": 0.003434
+    },
+    {
+      "day": "2026-10-10",
+      "count": 361,
+      "avg": 5.036,
+      "pick_rate": 0.003679
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.003
+}

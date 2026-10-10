@@ -3,35 +3,35 @@
   "appear_in_comps": [],
   "builds": [
     {
-      "cluster_id": "422036",
-      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Sett",
+      "cluster_id": "426038",
+      "comp_name": "DA_18_Blossom, DA_18_Ahri",
       "items": [
         "珠光护手",
-        "灭世者的死亡之帽",
-        "朔极之矛"
+        "朔极之矛",
+        "强袭者的链枷"
       ],
-      "avg_placement": 3.2929,
-      "count": 140,
+      "avg_placement": 3.0909,
+      "count": 99,
       "priority_scores": {
         "珠光护手": 100,
-        "灭世者的死亡之帽": 85,
-        "朔极之矛": 72
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
       }
     },
     {
-      "cluster_id": "422042",
-      "comp_name": "DA_18_Inferno, DA_Amumu18",
+      "cluster_id": "426056",
+      "comp_name": "DA_18_Blackthorn, DA_18_Azir",
       "items": [
-        "珠光护手",
-        "灭世者的死亡之帽",
-        "朔极之矛"
+        "红霸符",
+        "朔极之矛",
+        "虚空之杖"
       ],
-      "avg_placement": 4.0851,
-      "count": 47,
+      "avg_placement": 2.9231,
+      "count": 13,
       "priority_scores": {
-        "珠光护手": 100,
-        "灭世者的死亡之帽": 85,
-        "朔极之矛": 72
+        "红霸符": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
       }
     }
   ]

@@ -1,0 +1,202 @@
+{
+  "cluster_id": "426018",
+  "tft_set": "TFTSet18",
+  "units": [
+    "卡西奥佩娅",
+    "蕾欧娜",
+    "莉莉娅",
+    "奥恩",
+    "拉莫斯",
+    "慎",
+    "费德提克"
+  ],
+  "traits": [
+    "护卫 (3)",
+    "法师 (1)",
+    "绝命花妖 (1)"
+  ],
+  "stars": [
+    "卡西奥佩娅",
+    "拉莫斯",
+    "费德提克",
+    "卡兹克",
+    "易"
+  ],
+  "name_string": "DA_18_Defender, DA_18_Cassiopeia",
+  "display_names": [
+    {
+      "name": "护卫",
+      "type": "trait",
+      "score": 2.800465544307909
+    },
+    {
+      "name": "卡西奥佩娅",
+      "type": "unit",
+      "score": 4.289124668435013
+    }
+  ],
+  "count": 75829,
+  "avg_placement": 4.5077,
+  "top4_rate": 0.5046,
+  "win_rate": 0.0807,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "卡西奥佩娅",
+      "items": [
+        "大天使之杖",
+        "大天使之杖",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 4.0852,
+      "count": 2488,
+      "score": 0.6246,
+      "place_change": -0.507,
+      "priority_scores": {
+        "大天使之杖": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "unit": "拉莫斯",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0537,
+      "count": 614,
+      "score": 0.3645,
+      "place_change": -0.538,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "费德提克",
+      "items": [
+        "适应性头盔",
+        "离子火花",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.6283,
+      "count": 113,
+      "score": 0.3141,
+      "place_change": -0.964,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "离子火花": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "unit": "莉莉娅",
+      "items": [
+        "石像鬼石板甲",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.025,
+      "count": 40,
+      "score": 0.078,
+      "place_change": -0.567,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "大天使之杖": {
+      "itemNames": "DA_ArchangelsStaff",
+      "count": 20539,
+      "avg": 4.3241,
+      "pcnt": 1.11184
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 15388,
+      "avg": 4.5059,
+      "pcnt": 0.833
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 15021,
+      "avg": 4.4223,
+      "pcnt": 0.81313
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 12517,
+      "avg": 4.397,
+      "pcnt": 0.67758
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 8351,
+      "avg": 4.3003,
+      "pcnt": 0.45207
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 8041,
+      "avg": 4.115,
+      "pcnt": 0.43528
+    },
+    "离子火花": {
+      "itemNames": "DA_IonicSpark",
+      "count": 7827,
+      "avg": 4.2495,
+      "pcnt": 0.4237
+    },
+    "适应性头盔": {
+      "itemNames": "DA_AdaptiveHelm",
+      "count": 7294,
+      "avg": 4.0909,
+      "pcnt": 0.39485
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 4327,
+      "avg": 3.9297,
+      "pcnt": 0.23423
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 3085,
+      "avg": 4.6058,
+      "pick_rate": 0.013261
+    },
+    {
+      "day": "2026-10-07",
+      "count": 5471,
+      "avg": 4.5533,
+      "pick_rate": 0.012843
+    },
+    {
+      "day": "2026-10-08",
+      "count": 5424,
+      "avg": 4.5946,
+      "pick_rate": 0.013926
+    },
+    {
+      "day": "2026-10-09",
+      "count": 7268,
+      "avg": 4.6006,
+      "pick_rate": 0.013468
+    },
+    {
+      "day": "2026-10-10",
+      "count": 1292,
+      "avg": 4.668,
+      "pick_rate": 0.013168
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.067
+}

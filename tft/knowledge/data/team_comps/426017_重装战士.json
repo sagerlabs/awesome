@@ -1,0 +1,217 @@
+{
+  "cluster_id": "426017",
+  "tft_set": "TFTSet18",
+  "units": [
+    "厄斐琉斯",
+    "黛安娜",
+    "赫卡里姆",
+    "婕拉",
+    "绯红印记树怪",
+    "深红锋喙鸟",
+    "苍蓝雕纹魔像",
+    "塔里克"
+  ],
+  "traits": [
+    "月蚀骑士 (1)",
+    "迅捷射手 (1)",
+    "狂战士 (1)",
+    "召唤师 (1)",
+    "重装战士 (2)",
+    "荆棘之兴 (1)",
+    "宝石骑士 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Vanguard, DA_18_Aphelios",
+  "display_names": [
+    {
+      "name": "重装战士",
+      "type": "trait",
+      "score": 1.8008381689232753
+    },
+    {
+      "name": "厄斐琉斯",
+      "type": "unit",
+      "score": 4.2451644100580275
+    }
+  ],
+  "count": 34940,
+  "avg_placement": 4.5099,
+  "top4_rate": 0.5064,
+  "win_rate": 0.0802,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "厄斐琉斯",
+      "items": [
+        "无尽之刃",
+        "海妖之怒",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.7669,
+      "count": 133,
+      "score": 0.5288,
+      "place_change": -0.842,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "海妖之怒": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "绯红印记树怪",
+      "items": [
+        "迅捷射手纹章",
+        "夜之锋刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.3103,
+      "count": 58,
+      "score": 0.4378,
+      "place_change": -1.299,
+      "priority_scores": {
+        "迅捷射手纹章": 100,
+        "夜之锋刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "石像鬼石板甲",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0868,
+      "count": 553,
+      "score": 0.4011,
+      "place_change": -0.522,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "深红锋喙鸟",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.9231,
+      "count": 39,
+      "score": 0.0345,
+      "place_change": -0.686,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "海妖之怒": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 11710,
+      "avg": 4.6079,
+      "pcnt": 0.755
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 11240,
+      "avg": 4.5079,
+      "pcnt": 0.72469
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 10752,
+      "avg": 4.4541,
+      "pcnt": 0.69323
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 9893,
+      "avg": 4.4974,
+      "pcnt": 0.63785
+    },
+    "海妖之怒": {
+      "itemNames": "DA_KrakensFury",
+      "count": 8220,
+      "avg": 4.4863,
+      "pcnt": 0.52998
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 7739,
+      "avg": 4.3509,
+      "pcnt": 0.49897
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 5412,
+      "avg": 4.2369,
+      "pcnt": 0.34894
+    },
+    "迅捷射手纹章": {
+      "itemNames": "DA_18_EmblemRapidfire",
+      "count": 4987,
+      "avg": 4.2396,
+      "pcnt": 0.32153
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 2746,
+      "avg": 4.3762,
+      "pcnt": 0.17705
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 2143,
+      "avg": 4.3252,
+      "pcnt": 0.13817
+    },
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 1525,
+      "avg": 4.2984,
+      "pcnt": 0.09832
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 1895,
+      "avg": 4.7636,
+      "pick_rate": 0.008146
+    },
+    {
+      "day": "2026-10-07",
+      "count": 4767,
+      "avg": 4.6115,
+      "pick_rate": 0.011191
+    },
+    {
+      "day": "2026-10-08",
+      "count": 4542,
+      "avg": 4.5878,
+      "pick_rate": 0.011662
+    },
+    {
+      "day": "2026-10-09",
+      "count": 6045,
+      "avg": 4.6306,
+      "pick_rate": 0.011201
+    },
+    {
+      "day": "2026-10-10",
+      "count": 1080,
+      "avg": 4.637,
+      "pick_rate": 0.011007
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.03
+}

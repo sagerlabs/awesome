@@ -1,0 +1,223 @@
+{
+  "cluster_id": "426013",
+  "tft_set": "TFTSet18",
+  "units": [
+    "莫甘娜",
+    "拉莫斯",
+    "苍蓝哨戒",
+    "提莫",
+    "维迦",
+    "费德提克",
+    "远古石甲虫",
+    "苍蓝雕纹魔像"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "神谕 (3)",
+    "法师 (1)",
+    "约德尔人和朋友 (1)",
+    "绝命花妖 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "提莫",
+    "拉莫斯",
+    "可酷伯",
+    "阿利斯塔",
+    "峡谷迅捷蟹",
+    "魔沼蛙",
+    "奥恩",
+    "慎",
+    "伊莉丝",
+    "瑟庄妮"
+  ],
+  "name_string": "DA_18_Invoker, DA_18_Teemo",
+  "display_names": [
+    {
+      "name": "神谕",
+      "type": "trait",
+      "score": 2.653804465640581
+    },
+    {
+      "name": "提莫",
+      "type": "unit",
+      "score": 4.3426186863212655
+    }
+  ],
+  "count": 18278,
+  "avg_placement": 4.3827,
+  "top4_rate": 0.5357,
+  "win_rate": 0.0753,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "提莫",
+      "items": [
+        "海克斯科技枪刃",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 4.0794,
+      "count": 403,
+      "score": 0.5987,
+      "place_change": -0.405,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "莫甘娜",
+      "items": [
+        "正义之手",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "avg_placement": 2.7778,
+      "count": 18,
+      "score": 0.3804,
+      "place_change": -1.707,
+      "priority_scores": {
+        "正义之手": 100,
+        "莫雷洛秘典": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "拉莫斯",
+      "items": [
+        "振奋盔甲",
+        "坚定之心",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.3077,
+      "count": 13,
+      "score": 0.3276,
+      "place_change": -1.177,
+      "priority_scores": {
+        "振奋盔甲": 100,
+        "坚定之心": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "适应性头盔",
+        "圣盾使的誓约",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.1786,
+      "count": 28,
+      "score": 0.1638,
+      "place_change": -1.306,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "圣盾使的誓约": 72
+      }
+    }
+  ],
+  "build_items": {
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 3917,
+      "avg": 4.3222,
+      "pcnt": 0.84912
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 2901,
+      "avg": 4.2713,
+      "pcnt": 0.62887
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 2891,
+      "avg": 4.3535,
+      "pcnt": 0.62671
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 2737,
+      "avg": 4.2671,
+      "pcnt": 0.59332
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 1995,
+      "avg": 4.0682,
+      "pcnt": 0.43247
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 1947,
+      "avg": 4.1967,
+      "pcnt": 0.42207
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 1864,
+      "avg": 4.1609,
+      "pcnt": 0.40408
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 1683,
+      "avg": 4.0927,
+      "pcnt": 0.36484
+    },
+    "适应性头盔": {
+      "itemNames": "DA_AdaptiveHelm",
+      "count": 1592,
+      "avg": 4.022,
+      "pcnt": 0.34511
+    },
+    "坚定之心": {
+      "itemNames": "DA_SteadfastHeart",
+      "count": 1141,
+      "avg": 4.177,
+      "pcnt": 0.24734
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 285,
+      "avg": 3.7123,
+      "pcnt": 0.06178
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 204,
+      "avg": 4.6716,
+      "pick_rate": 0.000877
+    },
+    {
+      "day": "2026-10-07",
+      "count": 545,
+      "avg": 4.5596,
+      "pick_rate": 0.001279
+    },
+    {
+      "day": "2026-10-08",
+      "count": 1672,
+      "avg": 4.4928,
+      "pick_rate": 0.004293
+    },
+    {
+      "day": "2026-10-09",
+      "count": 2144,
+      "avg": 4.4869,
+      "pick_rate": 0.003973
+    },
+    {
+      "day": "2026-10-10",
+      "count": 363,
+      "avg": 4.3471,
+      "pick_rate": 0.0037
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.023
+}

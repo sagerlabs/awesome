@@ -1,0 +1,13 @@
+{
+  "name": "坚定之心",
+  "priority_list": [
+    {
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3827,
+      "carry": "拉莫斯",
+      "priority_score": 85
+    }
+  ]
+}

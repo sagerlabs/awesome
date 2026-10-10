@@ -2,20 +2,52 @@
   "name": "巨人杀手",
   "priority_list": [
     {
-      "cluster_id": "422009",
-      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
-      "comp_tier": "S",
-      "comp_avg": 4.1713,
-      "carry": "奈德丽",
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "comp_tier": "A",
+      "comp_avg": 4.3168,
+      "carry": "厄斐琉斯",
       "priority_score": 100
     },
     {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
+      "comp_tier": "S",
+      "comp_avg": 4.1565,
+      "carry": "绯红树怪",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
       "comp_tier": "A",
-      "comp_avg": 4.3301,
-      "carry": "崔丝塔娜",
-      "priority_score": 100
+      "comp_avg": 4.2678,
+      "carry": "厄斐琉斯",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.2845,
+      "carry": "乐芙兰",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "绯红印记树怪",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "comp_tier": "A",
+      "comp_avg": 4.4939,
+      "carry": "易",
+      "priority_score": 85
     }
   ]
 }

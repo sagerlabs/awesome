@@ -2,41 +2,47 @@
   "name": "凯尔",
   "appear_in_comps": [
     {
-      "cluster_id": "422029",
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "tier": "A",
+      "avg_placement": 4.3168
+    },
+    {
+      "cluster_id": "426025",
+      "comp_name": "DA_18_Inferno, DA_18_Akali_AD",
+      "tier": "B",
+      "avg_placement": 4.5921
+    },
+    {
+      "cluster_id": "426031",
       "comp_name": "DA_18_Elderwood, DA_18_Kayle",
       "tier": "B",
-      "avg_placement": 4.6188
+      "avg_placement": 4.7426
     },
     {
-      "cluster_id": "422038",
-      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "cluster_id": "426053",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_18_Vanguard",
       "tier": "B",
-      "avg_placement": 4.6239
+      "avg_placement": 4.7656
     },
     {
-      "cluster_id": "422044",
-      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
-      "tier": "B",
-      "avg_placement": 4.776
-    },
-    {
-      "cluster_id": "422030",
-      "comp_name": "DA_18_Inferno, DA_18_Kayle",
+      "cluster_id": "426035",
+      "comp_name": "DA_18_Blossom, DA_18_Yunara",
       "tier": "C",
-      "avg_placement": 5.0
+      "avg_placement": 4.9744
     }
   ],
   "builds": [
     {
-      "cluster_id": "422029",
-      "comp_name": "DA_18_Elderwood, DA_18_Kayle",
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
       "items": [
         "鬼索的狂暴之刃",
         "珠光护手",
         "灭世者的死亡之帽"
       ],
-      "avg_placement": 4.6231,
-      "count": 11889,
+      "avg_placement": 3.9743,
+      "count": 1168,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
         "珠光护手": 85,
@@ -44,31 +50,15 @@
       }
     },
     {
-      "cluster_id": "422038",
-      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
-      "items": [
-        "月蚀骑士纹章",
-        "鬼索的狂暴之刃",
-        "珠光护手"
-      ],
-      "avg_placement": 3.9686,
-      "count": 191,
-      "priority_scores": {
-        "月蚀骑士纹章": 100,
-        "鬼索的狂暴之刃": 85,
-        "珠光护手": 72
-      }
-    },
-    {
-      "cluster_id": "422030",
-      "comp_name": "DA_18_Inferno, DA_18_Kayle",
+      "cluster_id": "426031",
+      "comp_name": "DA_18_Elderwood, DA_18_Kayle",
       "items": [
         "鬼索的狂暴之刃",
         "珠光护手",
         "灭世者的死亡之帽"
       ],
-      "avg_placement": 4.419,
-      "count": 1179,
+      "avg_placement": 4.6333,
+      "count": 1140,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
         "珠光护手": 85,

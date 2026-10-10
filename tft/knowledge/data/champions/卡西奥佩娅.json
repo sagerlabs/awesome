@@ -2,67 +2,106 @@
   "name": "卡西奥佩娅",
   "appear_in_comps": [
     {
-      "cluster_id": "422003",
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "tier": "S",
+      "avg_placement": 4.0991
+    },
+    {
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "tier": "A",
+      "avg_placement": 4.2727
+    },
+    {
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "tier": "A",
+      "avg_placement": 4.3434
+    },
+    {
+      "cluster_id": "426018",
       "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
       "tier": "A",
-      "avg_placement": 4.3641
+      "avg_placement": 4.5077
     },
     {
-      "cluster_id": "422004",
-      "comp_name": "DA_18_Spellweaver, DA_18_Cassiopeia",
-      "tier": "B",
-      "avg_placement": 4.6634
+      "cluster_id": "426052",
+      "comp_name": "DA_18_Spellweaver, DA_18_Ahri",
+      "tier": "C",
+      "avg_placement": 4.9679
     },
     {
-      "cluster_id": "422050",
-      "comp_name": "DA_18_Coven, DA_18_Morgana",
+      "cluster_id": "426054",
+      "comp_name": "DA_18_Coven, DA_18_Elise",
       "tier": "D",
-      "avg_placement": 5.8427
+      "avg_placement": 5.3499
+    },
+    {
+      "cluster_id": "426059",
+      "comp_name": "DA_18_Vanguard, DA_18_Elise",
+      "tier": "D",
+      "avg_placement": 6.0797
     }
   ],
   "builds": [
     {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
-      "items": [
-        "绝命花妖纹章",
-        "大天使之杖",
-        "海克斯科技枪刃"
-      ],
-      "avg_placement": 3.6583,
-      "count": 16419,
-      "priority_scores": {
-        "绝命花妖纹章": 100,
-        "大天使之杖": 85,
-        "海克斯科技枪刃": 72
-      }
-    },
-    {
-      "cluster_id": "422004",
-      "comp_name": "DA_18_Spellweaver, DA_18_Cassiopeia",
-      "items": [
-        "绝命花妖纹章",
-        "大天使之杖",
-        "海克斯科技枪刃"
-      ],
-      "avg_placement": 3.6608,
-      "count": 339,
-      "priority_scores": {
-        "绝命花妖纹章": 100,
-        "大天使之杖": 85,
-        "海克斯科技枪刃": 72
-      }
-    },
-    {
-      "cluster_id": "422050",
-      "comp_name": "DA_18_Coven, DA_18_Morgana",
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
       "items": [
         "大天使之杖",
         "蓝霸符",
         "海克斯科技枪刃"
       ],
-      "avg_placement": 5.2235,
-      "count": 613,
+      "avg_placement": 3.5458,
+      "count": 742,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "蓝霸符": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "items": [
+        "大天使之杖",
+        "大天使之杖",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 4.0852,
+      "count": 2488,
+      "priority_scores": {
+        "大天使之杖": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "cluster_id": "426054",
+      "comp_name": "DA_18_Coven, DA_18_Elise",
+      "items": [
+        "海克斯科技枪刃",
+        "珠光护手",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.746,
+      "count": 1138,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "珠光护手": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "426059",
+      "comp_name": "DA_18_Vanguard, DA_18_Elise",
+      "items": [
+        "大天使之杖",
+        "蓝霸符",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 4.2143,
+      "count": 14,
       "priority_scores": {
         "大天使之杖": 100,
         "蓝霸符": 85,

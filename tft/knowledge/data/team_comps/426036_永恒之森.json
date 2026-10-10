@@ -1,0 +1,217 @@
+{
+  "cluster_id": "426036",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿利斯塔",
+    "伊泽瑞尔",
+    "纳尔",
+    "赫卡里姆",
+    "乐芙兰",
+    "奥恩",
+    "索拉卡",
+    "霞",
+    "费德提克"
+  ],
+  "traits": [
+    "斗士 (1)",
+    "护卫 (1)",
+    "永恒之森 (3)",
+    "裁决使 (1)",
+    "法师 (1)",
+    "绝命花妖 (2)"
+  ],
+  "stars": [
+    "维迦",
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+  "display_names": [
+    {
+      "name": "永恒之森",
+      "type": "trait",
+      "score": 2.9853145557305663
+    },
+    {
+      "name": "伊泽瑞尔",
+      "type": "unit",
+      "score": 3.8882840730102846
+    }
+  ],
+  "count": 102999,
+  "avg_placement": 4.5055,
+  "top4_rate": 0.4901,
+  "win_rate": 0.134,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "伊泽瑞尔",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.0803,
+      "count": 598,
+      "score": 0.3689,
+      "place_change": -0.383,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "赫卡里姆",
+      "items": [
+        "薄暮法袍",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.1695,
+      "count": 59,
+      "score": 0.2628,
+      "place_change": -1.294,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "索拉卡",
+      "items": [
+        "永恒之森纹章",
+        "大天使之杖",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.8713,
+      "count": 202,
+      "score": 0.1955,
+      "place_change": -0.592,
+      "priority_scores": {
+        "永恒之森纹章": 100,
+        "大天使之杖": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "纳尔",
+      "items": [
+        "饮血剑",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.2651,
+      "count": 83,
+      "score": 0.0901,
+      "place_change": -1.198,
+      "priority_scores": {
+        "饮血剑": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ],
+  "build_items": {
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 21226,
+      "avg": 4.1972,
+      "pcnt": 0.98332
+    },
+    "永恒之森纹章": {
+      "itemNames": "DA_18_EmblemElderwood",
+      "count": 13896,
+      "avg": 4.0892,
+      "pcnt": 0.64375
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 10486,
+      "avg": 4.3511,
+      "pcnt": 0.48578
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 8729,
+      "avg": 4.2865,
+      "pcnt": 0.40438
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 8673,
+      "avg": 4.2183,
+      "pcnt": 0.40179
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 6370,
+      "avg": 4.035,
+      "pcnt": 0.2951
+    },
+    "大天使之杖": {
+      "itemNames": "DA_ArchangelsStaff",
+      "count": 5135,
+      "avg": 4.0399,
+      "pcnt": 0.23789
+    },
+    "薄暮法袍": {
+      "itemNames": "DA_Evenshroud",
+      "count": 4099,
+      "avg": 4.1086,
+      "pcnt": 0.18989
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 3009,
+      "avg": 3.5926,
+      "pcnt": 0.1394
+    },
+    "饮血剑": {
+      "itemNames": "DA_Bloodthirster",
+      "count": 2428,
+      "avg": 3.5844,
+      "pcnt": 0.11248
+    },
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 1607,
+      "avg": 3.7156,
+      "pcnt": 0.07445
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 2240,
+      "avg": 4.7241,
+      "pick_rate": 0.009629
+    },
+    {
+      "day": "2026-10-07",
+      "count": 6032,
+      "avg": 4.4443,
+      "pick_rate": 0.01416
+    },
+    {
+      "day": "2026-10-08",
+      "count": 6300,
+      "avg": 4.4538,
+      "pick_rate": 0.016175
+    },
+    {
+      "day": "2026-10-09",
+      "count": 8617,
+      "avg": 4.5085,
+      "pick_rate": 0.015967
+    },
+    {
+      "day": "2026-10-10",
+      "count": 1648,
+      "avg": 4.3489,
+      "pick_rate": 0.016796
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.098
+}

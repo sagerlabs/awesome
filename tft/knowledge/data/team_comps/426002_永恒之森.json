@@ -1,0 +1,197 @@
+{
+  "cluster_id": "426002",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿利斯塔",
+    "厄斐琉斯",
+    "伊泽瑞尔",
+    "纳尔",
+    "赫卡里姆",
+    "乐芙兰",
+    "莉莉娅",
+    "奥恩",
+    "霞"
+  ],
+  "traits": [
+    "斗士 (1)",
+    "护卫 (1)",
+    "永恒之森 (3)",
+    "花仙子 (1)",
+    "迅捷射手 (1)"
+  ],
+  "stars": [
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Elderwood, DA_18_Aphelios",
+  "display_names": [
+    {
+      "name": "永恒之森",
+      "type": "trait",
+      "score": 2.8910030537937517
+    },
+    {
+      "name": "厄斐琉斯",
+      "type": "unit",
+      "score": 3.7072384979361725
+    }
+  ],
+  "count": 75986,
+  "avg_placement": 4.1877,
+  "top4_rate": 0.552,
+  "win_rate": 0.1501,
+  "tier": "S",
+  "builds": [
+    {
+      "unit": "厄斐琉斯",
+      "items": [
+        "永恒之森纹章",
+        "无尽之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.6748,
+      "count": 449,
+      "score": 0.3996,
+      "place_change": -0.596,
+      "priority_scores": {
+        "永恒之森纹章": 100,
+        "无尽之刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "unit": "伊泽瑞尔",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.8121,
+      "count": 942,
+      "score": 0.3757,
+      "place_change": -0.459,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "莉莉娅",
+      "items": [
+        "永恒之森纹章",
+        "薄暮法袍",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.104,
+      "count": 125,
+      "score": 0.249,
+      "place_change": -1.167,
+      "priority_scores": {
+        "永恒之森纹章": 100,
+        "薄暮法袍": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "unit": "赫卡里姆",
+      "items": [
+        "薄暮法袍",
+        "振奋盔甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.3559,
+      "count": 118,
+      "score": 0.1922,
+      "place_change": -0.915,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "振奋盔甲": 85,
+        "日炎斗篷": 72
+      }
+    }
+  ],
+  "build_items": {
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 22277,
+      "avg": 4.1206,
+      "pcnt": 0.74758
+    },
+    "永恒之森纹章": {
+      "itemNames": "DA_18_EmblemElderwood",
+      "count": 21611,
+      "avg": 3.9807,
+      "pcnt": 0.72523
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 20719,
+      "avg": 4.0379,
+      "pcnt": 0.69529
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 14248,
+      "avg": 4.0248,
+      "pcnt": 0.47814
+    },
+    "海妖之怒": {
+      "itemNames": "DA_KrakensFury",
+      "count": 13930,
+      "avg": 4.143,
+      "pcnt": 0.46747
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 11576,
+      "avg": 4.1847,
+      "pcnt": 0.38847
+    },
+    "薄暮法袍": {
+      "itemNames": "DA_Evenshroud",
+      "count": 9621,
+      "avg": 3.8822,
+      "pcnt": 0.32286
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 9371,
+      "avg": 3.7894,
+      "pcnt": 0.31447
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 2925,
+      "avg": 4.5603,
+      "pick_rate": 0.012573
+    },
+    {
+      "day": "2026-10-07",
+      "count": 7313,
+      "avg": 4.2639,
+      "pick_rate": 0.017167
+    },
+    {
+      "day": "2026-10-08",
+      "count": 7841,
+      "avg": 4.3021,
+      "pick_rate": 0.020132
+    },
+    {
+      "day": "2026-10-09",
+      "count": 13453,
+      "avg": 4.2662,
+      "pick_rate": 0.024928
+    },
+    {
+      "day": "2026-10-10",
+      "count": 2451,
+      "avg": 4.2281,
+      "pick_rate": 0.02498
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.029
+}

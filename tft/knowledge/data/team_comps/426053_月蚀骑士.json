@@ -1,0 +1,221 @@
+{
+  "cluster_id": "426053",
+  "tft_set": "TFTSet18",
+  "units": [
+    "拉露恩",
+    "厄斐琉斯",
+    "黛安娜",
+    "凯尔",
+    "蕾欧娜",
+    "茂凯",
+    "瑟庄妮",
+    "费德提克",
+    "塔里克"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "日月双蚀 (1)",
+    "月蚀骑士 (2)",
+    "远古树精 (1)",
+    "迅捷射手 (1)",
+    "日蚀骑士 (1)",
+    "法师 (1)",
+    "重装战士 (1)",
+    "月华神女 (1)",
+    "宝石骑士 (1)",
+    "绝命花妖 (1)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Lunar, DA_18_Aphelios, DA_18_Vanguard",
+  "display_names": [
+    {
+      "name": "月蚀骑士",
+      "type": "trait",
+      "score": 2.051462865716429
+    },
+    {
+      "name": "厄斐琉斯",
+      "type": "unit",
+      "score": 4.153413353338335
+    }
+  ],
+  "count": 30749,
+  "avg_placement": 4.7656,
+  "top4_rate": 0.45,
+  "win_rate": 0.1061,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "厄斐琉斯",
+      "items": [
+        "死亡之刃",
+        "巨人杀手",
+        "最后的轻语"
+      ],
+      "avg_placement": 3.1765,
+      "count": 17,
+      "score": 0.6254,
+      "place_change": -1.636,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "巨人杀手": 85,
+        "最后的轻语": 72
+      }
+    },
+    {
+      "unit": "拉露恩",
+      "items": [
+        "珠光护手",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.3571,
+      "count": 28,
+      "score": 0.2548,
+      "place_change": -1.455,
+      "priority_scores": {
+        "珠光护手": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "适应性头盔",
+        "圣盾使的誓约",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 2.6667,
+      "count": 24,
+      "score": 0.2473,
+      "place_change": -2.145,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "圣盾使的誓约": 72
+      }
+    },
+    {
+      "unit": "茂凯",
+      "items": [
+        "重装战士纹章",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 2.6,
+      "count": 15,
+      "score": 0.1829,
+      "place_change": -2.212,
+      "priority_scores": {
+        "重装战士纹章": 100,
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 5239,
+      "avg": 4.6677,
+      "pcnt": 0.78605
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 2931,
+      "avg": 4.4333,
+      "pcnt": 0.43976
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 2810,
+      "avg": 4.59,
+      "pcnt": 0.42161
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 2569,
+      "avg": 4.4072,
+      "pcnt": 0.38545
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 2255,
+      "avg": 4.6545,
+      "pcnt": 0.33833
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 2053,
+      "avg": 4.2621,
+      "pcnt": 0.30803
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 1931,
+      "avg": 4.6302,
+      "pcnt": 0.28972
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 1744,
+      "avg": 4.5229,
+      "pcnt": 0.26167
+    },
+    "适应性头盔": {
+      "itemNames": "DA_AdaptiveHelm",
+      "count": 1739,
+      "avg": 4.2772,
+      "pcnt": 0.26092
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 973,
+      "avg": 4.4481,
+      "pcnt": 0.14599
+    },
+    "重装战士纹章": {
+      "itemNames": "DA_18_EmblemVanguard",
+      "count": 630,
+      "avg": 4.3,
+      "pcnt": 0.09452
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 904,
+      "avg": 5.021,
+      "pick_rate": 0.003886
+    },
+    {
+      "day": "2026-10-07",
+      "count": 1894,
+      "avg": 4.8849,
+      "pick_rate": 0.004446
+    },
+    {
+      "day": "2026-10-08",
+      "count": 1865,
+      "avg": 4.7839,
+      "pick_rate": 0.004788
+    },
+    {
+      "day": "2026-10-09",
+      "count": 2734,
+      "avg": 4.8018,
+      "pick_rate": 0.005066
+    },
+    {
+      "day": "2026-10-10",
+      "count": 542,
+      "avg": 4.7915,
+      "pick_rate": 0.005524
+    }
+  ],
+  "levelling": "Fast 9",
+  "difficulty": -0.057
+}

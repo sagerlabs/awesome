@@ -2,11 +2,51 @@
   "name": "死亡之刃",
   "priority_list": [
     {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
+      "comp_tier": "S",
+      "comp_avg": 4.1832,
+      "carry": "厄斐琉斯",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.1877,
+      "carry": "伊泽瑞尔",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
       "comp_tier": "A",
-      "comp_avg": 4.3871,
-      "carry": "德莱文",
+      "comp_avg": 4.2678,
+      "carry": "厄斐琉斯",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3357,
+      "carry": "伊泽瑞尔",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.3675,
+      "carry": "伊泽瑞尔",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "comp_tier": "A",
+      "comp_avg": 4.5055,
+      "carry": "伊泽瑞尔",
       "priority_score": 100
     }
   ]

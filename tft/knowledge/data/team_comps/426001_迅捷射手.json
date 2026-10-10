@@ -1,0 +1,207 @@
+{
+  "cluster_id": "426001",
+  "tft_set": "TFTSet18",
+  "units": [
+    "厄斐琉斯",
+    "洛",
+    "韦鲁斯",
+    "霞",
+    "阿木木",
+    "绯红印记树怪",
+    "深红锋喙鸟",
+    "苍蓝雕纹魔像"
+  ],
+  "traits": [
+    "花仙子 (1)",
+    "地狱火 (1)",
+    "迅捷射手 (4)",
+    "重装战士 (1)",
+    "主宰 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Rapidfire, DA_18_Aphelios",
+  "display_names": [
+    {
+      "name": "迅捷射手",
+      "type": "trait",
+      "score": 3.23004422533169
+    },
+    {
+      "name": "厄斐琉斯",
+      "type": "unit",
+      "score": 4.2867396505473785
+    }
+  ],
+  "count": 25134,
+  "avg_placement": 4.2678,
+  "top4_rate": 0.5571,
+  "win_rate": 0.0976,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "绯红印记树怪",
+      "items": [
+        "迅捷射手纹章",
+        "夜之锋刃",
+        "水银"
+      ],
+      "avg_placement": 3.8405,
+      "count": 2326,
+      "score": 0.5535,
+      "place_change": -0.44,
+      "priority_scores": {
+        "迅捷射手纹章": 100,
+        "夜之锋刃": 85,
+        "水银": 72
+      }
+    },
+    {
+      "unit": "厄斐琉斯",
+      "items": [
+        "死亡之刃",
+        "巨人杀手",
+        "无尽之刃"
+      ],
+      "avg_placement": 3.4267,
+      "count": 225,
+      "score": 0.548,
+      "place_change": -0.854,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "巨人杀手": 85,
+        "无尽之刃": 72
+      }
+    },
+    {
+      "unit": "阿木木",
+      "items": [
+        "重装战士纹章",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.2683,
+      "count": 82,
+      "score": 0.3199,
+      "place_change": -1.012,
+      "priority_scores": {
+        "重装战士纹章": 100,
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "圣盾使的誓约",
+        "圣盾使的誓约",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.2164,
+      "count": 134,
+      "score": 0.2675,
+      "place_change": -1.064,
+      "priority_scores": {
+        "圣盾使的誓约": 72
+      }
+    }
+  ],
+  "build_items": {
+    "迅捷射手纹章": {
+      "itemNames": "DA_18_EmblemRapidfire",
+      "count": 11818,
+      "avg": 4.0949,
+      "pcnt": 0.85681
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 10883,
+      "avg": 4.1477,
+      "pcnt": 0.78902
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 9443,
+      "avg": 4.1362,
+      "pcnt": 0.68462
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 8586,
+      "avg": 3.9703,
+      "pcnt": 0.62249
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 7349,
+      "avg": 4.0747,
+      "pcnt": 0.53281
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 6715,
+      "avg": 3.9824,
+      "pcnt": 0.48684
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 6573,
+      "avg": 4.019,
+      "pcnt": 0.47655
+    },
+    "水银": {
+      "itemNames": "DA_Quicksilver",
+      "count": 5233,
+      "avg": 4.0325,
+      "pcnt": 0.3794
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 4612,
+      "avg": 3.9798,
+      "pcnt": 0.33437
+    },
+    "重装战士纹章": {
+      "itemNames": "DA_18_EmblemVanguard",
+      "count": 1201,
+      "avg": 3.8543,
+      "pcnt": 0.08707
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 2464,
+      "avg": 4.4452,
+      "pick_rate": 0.010591
+    },
+    {
+      "day": "2026-10-07",
+      "count": 4278,
+      "avg": 4.2903,
+      "pick_rate": 0.010043
+    },
+    {
+      "day": "2026-10-08",
+      "count": 3907,
+      "avg": 4.3077,
+      "pick_rate": 0.010031
+    },
+    {
+      "day": "2026-10-09",
+      "count": 5413,
+      "avg": 4.2592,
+      "pick_rate": 0.01003
+    },
+    {
+      "day": "2026-10-10",
+      "count": 992,
+      "avg": 4.377,
+      "pick_rate": 0.01011
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.001
+}

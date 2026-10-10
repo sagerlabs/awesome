@@ -1,0 +1,201 @@
+{
+  "cluster_id": "426046",
+  "tft_set": "TFTSet18",
+  "units": [
+    "艾希",
+    "远古巨龙",
+    "纳尔",
+    "凯南",
+    "瑟提",
+    "约里克",
+    "阿木木",
+    "绯红树怪"
+  ],
+  "traits": [
+    "顶级掠食者 (1)",
+    "灵魂莲华 (1)",
+    "斗士 (1)",
+    "猎人 (1)",
+    "地狱火 (1)",
+    "主宰 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "深红锋喙鸟",
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Blossom, DA_18_Sett",
+  "display_names": [
+    {
+      "name": "灵魂莲华",
+      "type": "trait",
+      "score": 1.0205655526992288
+    },
+    {
+      "name": "瑟提",
+      "type": "unit",
+      "score": 3.921187931267758
+    }
+  ],
+  "count": 22045,
+  "avg_placement": 4.731,
+  "top4_rate": 0.4541,
+  "win_rate": 0.1015,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "艾希",
+      "items": [
+        "最后的轻语",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.9042,
+      "count": 480,
+      "score": 0.5516,
+      "place_change": -0.881,
+      "priority_scores": {
+        "最后的轻语": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "瑟提",
+      "items": [
+        "石像鬼石板甲",
+        "圣盾使的誓约",
+        "坚定之心"
+      ],
+      "avg_placement": 3.4286,
+      "count": 21,
+      "score": 0.5091,
+      "place_change": -1.357,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "坚定之心": 72
+      }
+    },
+    {
+      "unit": "希维尔",
+      "items": [
+        "巨人杀手",
+        "无尽之刃",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.5152,
+      "count": 33,
+      "score": 0.1989,
+      "place_change": -1.27,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "无尽之刃": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "纳尔",
+      "items": [
+        "暴风大剑"
+      ],
+      "avg_placement": 3.4444,
+      "count": 18,
+      "score": 0.0128,
+      "place_change": -1.341,
+      "priority_scores": {
+        "暴风大剑": 100
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 7028,
+      "avg": 4.6669,
+      "pcnt": 0.95089
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 6329,
+      "avg": 4.4582,
+      "pcnt": 0.85631
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 4532,
+      "avg": 4.5869,
+      "pcnt": 0.61318
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 3324,
+      "avg": 4.3351,
+      "pcnt": 0.44974
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 3093,
+      "avg": 4.5315,
+      "pcnt": 0.41848
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 1795,
+      "avg": 4.4123,
+      "pcnt": 0.24286
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 1759,
+      "avg": 4.3286,
+      "pcnt": 0.23799
+    },
+    "坚定之心": {
+      "itemNames": "DA_SteadfastHeart",
+      "count": 1251,
+      "avg": 4.3125,
+      "pcnt": 0.16926
+    },
+    "暴风大剑": {
+      "itemNames": "DA_Component_BFSword",
+      "count": 293,
+      "avg": 5.2696,
+      "pcnt": 0.03964
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 1621,
+      "avg": 4.6459,
+      "pick_rate": 0.006968
+    },
+    {
+      "day": "2026-10-07",
+      "count": 2713,
+      "avg": 4.7184,
+      "pick_rate": 0.006369
+    },
+    {
+      "day": "2026-10-08",
+      "count": 2069,
+      "avg": 4.8139,
+      "pick_rate": 0.005312
+    },
+    {
+      "day": "2026-10-09",
+      "count": 2719,
+      "avg": 4.8176,
+      "pick_rate": 0.005038
+    },
+    {
+      "day": "2026-10-10",
+      "count": 456,
+      "avg": 4.693,
+      "pick_rate": 0.004647
+    }
+  ],
+  "levelling": "Fast 9",
+  "difficulty": -0.023
+}

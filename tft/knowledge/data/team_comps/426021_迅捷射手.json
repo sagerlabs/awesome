@@ -1,0 +1,226 @@
+{
+  "cluster_id": "426021",
+  "tft_set": "TFTSet18",
+  "units": [
+    "厄斐琉斯",
+    "黛安娜",
+    "凯尔",
+    "蕾欧娜",
+    "瑟庄妮",
+    "慎",
+    "韦鲁斯",
+    "阿木木"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "地狱火 (2)",
+    "月蚀骑士 (1)",
+    "迅捷射手 (2)",
+    "日蚀骑士 (1)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "凯尔",
+    "瑟庄妮",
+    "蕾欧娜",
+    "慎",
+    "韦鲁斯",
+    "洛",
+    "霞",
+    "奥恩",
+    "峡谷迅捷蟹",
+    "阿卡丽",
+    "约里克",
+    "伊莉丝",
+    "卡蜜尔",
+    "乐芙兰",
+    "提莫",
+    "雷克塞",
+    "沃里克",
+    "卡尔玛"
+  ],
+  "name_string": "DA_18_Rapidfire, DA_18_Kayle",
+  "display_names": [
+    {
+      "name": "迅捷射手",
+      "type": "trait",
+      "score": 1.5738658182017664
+    },
+    {
+      "name": "凯尔",
+      "type": "unit",
+      "score": 4.20055954797301
+    }
+  ],
+  "count": 124530,
+  "avg_placement": 4.3168,
+  "top4_rate": 0.5355,
+  "win_rate": 0.1415,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "凯尔",
+      "items": [
+        "鬼索的狂暴之刃",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.9743,
+      "count": 1168,
+      "score": 0.5486,
+      "place_change": -0.483,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "瑟庄妮",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.9532,
+      "count": 2074,
+      "score": 0.4551,
+      "place_change": -0.505,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "厄斐琉斯",
+      "items": [
+        "巨人杀手",
+        "最后的轻语",
+        "红霸符"
+      ],
+      "avg_placement": 2.68,
+      "count": 50,
+      "score": 0.2582,
+      "place_change": -1.778,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "最后的轻语": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "unit": "慎",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.7183,
+      "count": 71,
+      "score": 0.1148,
+      "place_change": -0.739,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 21336,
+      "avg": 4.3312,
+      "pcnt": 1.17044
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 21055,
+      "avg": 4.3021,
+      "pcnt": 1.15503
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 13334,
+      "avg": 4.1859,
+      "pcnt": 0.73147
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 13086,
+      "avg": 4.2067,
+      "pcnt": 0.71787
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 7787,
+      "avg": 4.2211,
+      "pcnt": 0.42718
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 7093,
+      "avg": 4.1129,
+      "pcnt": 0.38911
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 6373,
+      "avg": 4.1379,
+      "pcnt": 0.34961
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 6069,
+      "avg": 4.07,
+      "pcnt": 0.33293
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 4121,
+      "avg": 3.9668,
+      "pcnt": 0.22607
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 3369,
+      "avg": 3.8753,
+      "pcnt": 0.18482
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 383,
+      "avg": 5.2507,
+      "pick_rate": 0.001646
+    },
+    {
+      "day": "2026-10-07",
+      "count": 3069,
+      "avg": 4.4953,
+      "pick_rate": 0.007204
+    },
+    {
+      "day": "2026-10-08",
+      "count": 5325,
+      "avg": 4.4757,
+      "pick_rate": 0.013672
+    },
+    {
+      "day": "2026-10-09",
+      "count": 8401,
+      "avg": 4.4478,
+      "pick_rate": 0.015567
+    },
+    {
+      "day": "2026-10-10",
+      "count": 1764,
+      "avg": 4.4189,
+      "pick_rate": 0.017978
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.166
+}

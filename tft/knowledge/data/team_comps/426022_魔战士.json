@@ -1,0 +1,225 @@
+{
+  "cluster_id": "426022",
+  "tft_set": "TFTSet18",
+  "units": [
+    "易",
+    "雷恩加尔",
+    "瑟提",
+    "约里克",
+    "远古石甲虫",
+    "奈德丽",
+    "蔚"
+  ],
+  "traits": [
+    "魔战士 (1)",
+    "灵魂莲华 (1)",
+    "斗士 (1)",
+    "宿敌 (1)",
+    "主宰 (1)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "易",
+    "雷恩加尔",
+    "蔚",
+    "远古石甲虫",
+    "克格莫",
+    "赫卡里姆",
+    "卡兹克"
+  ],
+  "name_string": "DA_18_Blossom, DA_18_Rengar",
+  "display_names": [
+    {
+      "name": "魔战士",
+      "type": "trait",
+      "score": 1.331859984315962
+    },
+    {
+      "name": "易",
+      "type": "unit",
+      "score": 4.310187495544307
+    },
+    {
+      "name": "雷恩加尔",
+      "type": "unit",
+      "score": 3.9979325586369145
+    }
+  ],
+  "count": 45608,
+  "avg_placement": 4.4939,
+  "top4_rate": 0.5046,
+  "win_rate": 0.1024,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "雷恩加尔",
+      "items": [
+        "夜之锋刃",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.9865,
+      "count": 2153,
+      "score": 0.5419,
+      "place_change": -0.466,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "易",
+      "items": [
+        "斗士纹章",
+        "巨人杀手",
+        "水银"
+      ],
+      "avg_placement": 3.7561,
+      "count": 82,
+      "score": 0.393,
+      "place_change": -0.696,
+      "priority_scores": {
+        "斗士纹章": 100,
+        "巨人杀手": 85,
+        "水银": 72
+      }
+    },
+    {
+      "unit": "蔚",
+      "items": [
+        "斗士纹章",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 2.9636,
+      "count": 55,
+      "score": 0.3201,
+      "place_change": -1.489,
+      "priority_scores": {
+        "斗士纹章": 100,
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "unit": "奈德丽",
+      "items": [
+        "无尽之刃",
+        "朔极之矛",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.2439,
+      "count": 164,
+      "score": 0.2253,
+      "place_change": -1.208,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "朔极之矛": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 20207,
+      "avg": 4.3697,
+      "pcnt": 1.44058
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 15710,
+      "avg": 4.2922,
+      "pcnt": 1.11998
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 8646,
+      "avg": 4.2526,
+      "pcnt": 0.61638
+    },
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 8501,
+      "avg": 4.2241,
+      "pcnt": 0.60605
+    },
+    "斗士纹章": {
+      "itemNames": "DA_18_EmblemBrawler",
+      "count": 7904,
+      "avg": 4.2936,
+      "pcnt": 0.56348
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 6492,
+      "avg": 4.2192,
+      "pcnt": 0.46282
+    },
+    "水银": {
+      "itemNames": "DA_Quicksilver",
+      "count": 5797,
+      "avg": 4.196,
+      "pcnt": 0.41327
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 5049,
+      "avg": 3.9323,
+      "pcnt": 0.35995
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 4157,
+      "avg": 4.0601,
+      "pcnt": 0.29636
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 3789,
+      "avg": 4.0327,
+      "pcnt": 0.27012
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 2454,
+      "avg": 3.9515,
+      "pcnt": 0.17495
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 2086,
+      "avg": 4.464,
+      "pick_rate": 0.008967
+    },
+    {
+      "day": "2026-10-07",
+      "count": 3953,
+      "avg": 4.317,
+      "pick_rate": 0.00928
+    },
+    {
+      "day": "2026-10-08",
+      "count": 3998,
+      "avg": 4.448,
+      "pick_rate": 0.010265
+    },
+    {
+      "day": "2026-10-09",
+      "count": 5675,
+      "avg": 4.5149,
+      "pick_rate": 0.010516
+    },
+    {
+      "day": "2026-10-10",
+      "count": 1052,
+      "avg": 4.5209,
+      "pick_rate": 0.010722
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": 0.008
+}

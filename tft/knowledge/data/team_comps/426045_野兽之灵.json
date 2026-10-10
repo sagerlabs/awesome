@@ -1,0 +1,206 @@
+{
+  "cluster_id": "426045",
+  "tft_set": "TFTSet18",
+  "units": [
+    "莉莉娅",
+    "洛",
+    "慎",
+    "希维尔",
+    "阿木木",
+    "克格莫",
+    "奈德丽",
+    "苍蓝雕纹魔像"
+  ],
+  "traits": [
+    "魔战士 (1)",
+    "帝王斑蝶 (1)",
+    "护卫 (1)",
+    "花仙子 (1)",
+    "地狱火 (1)",
+    "神谕 (1)",
+    "重装战士 (1)",
+    "主宰 (1)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "雷恩加尔"
+  ],
+  "name_string": "DA_Juggernaut18, DA_Nidalee18_AP",
+  "display_names": [
+    {
+      "name": "野兽之灵",
+      "type": "trait",
+      "score": 1.4524788915349642
+    },
+    {
+      "name": "奈德丽",
+      "type": "unit",
+      "score": 4.354513964061486
+    }
+  ],
+  "count": 17587,
+  "avg_placement": 4.911,
+  "top4_rate": 0.4216,
+  "win_rate": 0.0636,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "奈德丽",
+      "items": [
+        "猎人纹章",
+        "夜之锋刃",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.7647,
+      "count": 17,
+      "score": 0.7082,
+      "place_change": -1.347,
+      "priority_scores": {
+        "猎人纹章": 100,
+        "夜之锋刃": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "阿木木",
+      "items": [
+        "冕卫",
+        "巨龙之爪",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.0833,
+      "count": 12,
+      "score": 0.4633,
+      "place_change": -2.029,
+      "priority_scores": {
+        "冕卫": 100,
+        "巨龙之爪": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "希维尔",
+      "items": [
+        "死亡之刃",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.6842,
+      "count": 19,
+      "score": 0.413,
+      "place_change": -1.428,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "艾希",
+      "items": [
+        "野兽之灵纹章",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.6471,
+      "count": 68,
+      "score": 0.258,
+      "place_change": -1.465,
+      "priority_scores": {
+        "野兽之灵纹章": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    }
+  ],
+  "build_items": {
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 3447,
+      "avg": 4.8155,
+      "pcnt": 0.74627
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 2534,
+      "avg": 4.8161,
+      "pcnt": 0.5486
+    },
+    "野兽之灵纹章": {
+      "itemNames": "DA_18_EmblemPrimal",
+      "count": 1967,
+      "avg": 4.8343,
+      "pcnt": 0.42585
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 1881,
+      "avg": 4.698,
+      "pcnt": 0.40723
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 1358,
+      "avg": 4.7261,
+      "pcnt": 0.294
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 1300,
+      "avg": 4.8292,
+      "pcnt": 0.28145
+    },
+    "猎人纹章": {
+      "itemNames": "DA_18_EmblemHunter",
+      "count": 1223,
+      "avg": 4.9796,
+      "pcnt": 0.26478
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 1016,
+      "avg": 4.4163,
+      "pcnt": 0.21996
+    },
+    "巨龙之爪": {
+      "itemNames": "DA_DragonsClaw",
+      "count": 942,
+      "avg": 4.6635,
+      "pcnt": 0.20394
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 866,
+      "avg": 5.1363,
+      "pick_rate": 0.003722
+    },
+    {
+      "day": "2026-10-07",
+      "count": 1488,
+      "avg": 5.2601,
+      "pick_rate": 0.003493
+    },
+    {
+      "day": "2026-10-08",
+      "count": 1343,
+      "avg": 5.0127,
+      "pick_rate": 0.003448
+    },
+    {
+      "day": "2026-10-09",
+      "count": 1765,
+      "avg": 5.0941,
+      "pick_rate": 0.003271
+    },
+    {
+      "day": "2026-10-10",
+      "count": 327,
+      "avg": 5.0275,
+      "pick_rate": 0.003333
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.053
+}

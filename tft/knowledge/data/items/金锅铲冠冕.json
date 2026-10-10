@@ -1,0 +1,13 @@
+{
+  "name": "金锅铲冠冕",
+  "priority_list": [
+    {
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "comp_tier": "A",
+      "comp_avg": 4.4727,
+      "carry": "克格莫",
+      "priority_score": 100
+    }
+  ]
+}

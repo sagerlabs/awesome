@@ -2,48 +2,26 @@
   "name": "凯特琳",
   "appear_in_comps": [
     {
-      "cluster_id": "422005",
+      "cluster_id": "426039",
       "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
-      "tier": "A",
-      "avg_placement": 4.4132
-    },
-    {
-      "cluster_id": "422016",
-      "comp_name": "DA_18_Vanguard, DA_18_Caitlyn",
       "tier": "C",
-      "avg_placement": 5.0438
+      "avg_placement": 4.9795
     }
   ],
   "builds": [
     {
-      "cluster_id": "422005",
+      "cluster_id": "426039",
       "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
       "items": [
         "鬼索的狂暴之刃",
         "海克斯科技枪刃",
         "海妖之怒"
       ],
-      "avg_placement": 4.1033,
-      "count": 3157,
+      "avg_placement": 4.5939,
+      "count": 2630,
       "priority_scores": {
         "鬼索的狂暴之刃": 100,
         "海克斯科技枪刃": 85,
-        "海妖之怒": 72
-      }
-    },
-    {
-      "cluster_id": "422016",
-      "comp_name": "DA_18_Vanguard, DA_18_Caitlyn",
-      "items": [
-        "巨人杀手",
-        "鬼索的狂暴之刃",
-        "海妖之怒"
-      ],
-      "avg_placement": 4.4308,
-      "count": 455,
-      "priority_scores": {
-        "巨人杀手": 100,
-        "鬼索的狂暴之刃": 85,
         "海妖之怒": 72
       }
     }

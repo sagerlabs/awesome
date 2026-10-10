@@ -1,0 +1,213 @@
+{
+  "cluster_id": "426029",
+  "tft_set": "TFTSet18",
+  "units": [
+    "易",
+    "瑟提",
+    "约里克",
+    "克格莫",
+    "远古石甲虫",
+    "奈德丽",
+    "蔚"
+  ],
+  "traits": [
+    "魔战士 (2)",
+    "灵魂莲华 (1)",
+    "斗士 (1)",
+    "帝王斑蝶 (1)",
+    "主宰 (1)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "易",
+    "克格莫",
+    "远古石甲虫",
+    "蔚",
+    "拉莫斯",
+    "卡兹克"
+  ],
+  "name_string": "DA_18_Adaptor, DA_18_MasterYi_AD",
+  "display_names": [
+    {
+      "name": "魔战士",
+      "type": "trait",
+      "score": 1.8629692351114875
+    },
+    {
+      "name": "易",
+      "type": "unit",
+      "score": 4.34038950042337
+    }
+  ],
+  "count": 24376,
+  "avg_placement": 4.5193,
+  "top4_rate": 0.5086,
+  "win_rate": 0.0675,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "易",
+      "items": [
+        "斗士纹章",
+        "夜之锋刃",
+        "鬼索的狂暴之刃"
+      ],
+      "avg_placement": 4.3431,
+      "count": 1772,
+      "score": 0.4069,
+      "place_change": -0.11,
+      "priority_scores": {
+        "斗士纹章": 100,
+        "夜之锋刃": 85,
+        "鬼索的狂暴之刃": 72
+      }
+    },
+    {
+      "unit": "克格莫",
+      "items": [
+        "无尽之刃",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.7578,
+      "count": 322,
+      "score": 0.3384,
+      "place_change": -0.695,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "奈德丽",
+      "items": [
+        "饮血剑",
+        "无尽之刃",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 2.56,
+      "count": 25,
+      "score": 0.2872,
+      "place_change": -1.893,
+      "priority_scores": {
+        "饮血剑": 100,
+        "无尽之刃": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "蔚",
+      "items": [
+        "斗士纹章",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 2.5588,
+      "count": 34,
+      "score": 0.2599,
+      "place_change": -1.894,
+      "priority_scores": {
+        "斗士纹章": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 7797,
+      "avg": 4.3455,
+      "pcnt": 1.10034
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 6132,
+      "avg": 4.2169,
+      "pcnt": 0.86537
+    },
+    "斗士纹章": {
+      "itemNames": "DA_18_EmblemBrawler",
+      "count": 4884,
+      "avg": 4.2711,
+      "pcnt": 0.68925
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 4285,
+      "avg": 4.2847,
+      "pcnt": 0.60471
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 3967,
+      "avg": 4.2014,
+      "pcnt": 0.55984
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 3849,
+      "avg": 4.1543,
+      "pcnt": 0.54318
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 3001,
+      "avg": 4.1636,
+      "pcnt": 0.42351
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 2538,
+      "avg": 4.0158,
+      "pcnt": 0.35817
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 1699,
+      "avg": 3.9547,
+      "pcnt": 0.23977
+    },
+    "饮血剑": {
+      "itemNames": "DA_Bloodthirster",
+      "count": 969,
+      "avg": 4.0609,
+      "pcnt": 0.13675
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 1239,
+      "avg": 4.5593,
+      "pick_rate": 0.005326
+    },
+    {
+      "day": "2026-10-07",
+      "count": 2406,
+      "avg": 4.3213,
+      "pick_rate": 0.005648
+    },
+    {
+      "day": "2026-10-08",
+      "count": 1960,
+      "avg": 4.5189,
+      "pick_rate": 0.005032
+    },
+    {
+      "day": "2026-10-09",
+      "count": 2702,
+      "avg": 4.4845,
+      "pick_rate": 0.005007
+    },
+    {
+      "day": "2026-10-10",
+      "count": 491,
+      "avg": 4.4175,
+      "pick_rate": 0.005004
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": 0.034
+}

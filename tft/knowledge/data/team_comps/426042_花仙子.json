@@ -1,0 +1,214 @@
+{
+  "cluster_id": "426042",
+  "tft_set": "TFTSet18",
+  "units": [
+    "莉莉娅",
+    "洛",
+    "拉莫斯",
+    "雷恩加尔",
+    "希维尔",
+    "崔丝塔娜",
+    "蔚"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "花仙子 (2)",
+    "猎人 (1)",
+    "宿敌 (1)",
+    "主宰 (1)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "崔丝塔娜",
+    "雷恩加尔",
+    "拉莫斯",
+    "蔚",
+    "赫卡里姆",
+    "卡兹克",
+    "伊莉丝",
+    "易"
+  ],
+  "name_string": "DA_18_Fae, DA_18_Rengar",
+  "display_names": [
+    {
+      "name": "花仙子",
+      "type": "trait",
+      "score": 1.671032967032967
+    },
+    {
+      "name": "崔丝塔娜",
+      "type": "unit",
+      "score": 4.118769230769231
+    }
+  ],
+  "count": 25768,
+  "avg_placement": 5.0882,
+  "top4_rate": 0.3883,
+  "win_rate": 0.116,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "雷恩加尔",
+      "items": [
+        "花仙子纹章",
+        "约德尔人和朋友纹章",
+        "夜之锋刃"
+      ],
+      "avg_placement": 4.0314,
+      "count": 159,
+      "score": 0.6759,
+      "place_change": -1.052,
+      "priority_scores": {
+        "花仙子纹章": 100,
+        "约德尔人和朋友纹章": 85,
+        "夜之锋刃": 72
+      }
+    },
+    {
+      "unit": "崔丝塔娜",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海妖之怒",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.9186,
+      "count": 86,
+      "score": 0.6485,
+      "place_change": -1.165,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "unit": "拉莫斯",
+      "items": [
+        "重装战士纹章",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.7059,
+      "count": 34,
+      "score": 0.4274,
+      "place_change": -1.378,
+      "priority_scores": {
+        "重装战士纹章": 100,
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "unit": "蔚",
+      "items": [
+        "薄暮法袍",
+        "石像鬼石板甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.24,
+      "count": 25,
+      "score": 0.1835,
+      "place_change": -1.844,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "石像鬼石板甲": 85,
+        "日炎斗篷": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 13716,
+      "avg": 4.9689,
+      "pcnt": 1.2058
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 8887,
+      "avg": 4.8716,
+      "pcnt": 0.78127
+    },
+    "花仙子纹章": {
+      "itemNames": "DA_18_EmblemFae",
+      "count": 7621,
+      "avg": 4.8168,
+      "pcnt": 0.66998
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 6538,
+      "avg": 4.8314,
+      "pcnt": 0.57477
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 4033,
+      "avg": 4.7508,
+      "pcnt": 0.35455
+    },
+    "约德尔人和朋友纹章": {
+      "itemNames": "DA_18_EmblemSprykin",
+      "count": 3842,
+      "avg": 4.8824,
+      "pcnt": 0.33776
+    },
+    "海妖之怒": {
+      "itemNames": "DA_KrakensFury",
+      "count": 3462,
+      "avg": 4.7886,
+      "pcnt": 0.30435
+    },
+    "薄暮法袍": {
+      "itemNames": "DA_Evenshroud",
+      "count": 3385,
+      "avg": 4.5016,
+      "pcnt": 0.29758
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 2914,
+      "avg": 4.3699,
+      "pcnt": 0.25618
+    },
+    "重装战士纹章": {
+      "itemNames": "DA_18_EmblemVanguard",
+      "count": 642,
+      "avg": 4.472,
+      "pcnt": 0.05644
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 1381,
+      "avg": 4.937,
+      "pick_rate": 0.005936
+    },
+    {
+      "day": "2026-10-07",
+      "count": 3861,
+      "avg": 5.043,
+      "pick_rate": 0.009064
+    },
+    {
+      "day": "2026-10-08",
+      "count": 3256,
+      "avg": 5.0817,
+      "pick_rate": 0.00836
+    },
+    {
+      "day": "2026-10-09",
+      "count": 4227,
+      "avg": 5.1356,
+      "pick_rate": 0.007833
+    },
+    {
+      "day": "2026-10-10",
+      "count": 721,
+      "avg": 5.1331,
+      "pick_rate": 0.007348
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.002
+}

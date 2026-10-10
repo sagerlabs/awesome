@@ -2,123 +2,145 @@
   "name": "拉露恩",
   "appear_in_comps": [
     {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "tier": "S",
+      "avg_placement": 4.207
+    },
+    {
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
       "tier": "A",
-      "avg_placement": 4.3252
+      "avg_placement": 4.2727
     },
     {
-      "cluster_id": "422038",
-      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "cluster_id": "426009",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "tier": "A",
+      "avg_placement": 4.4227
+    },
+    {
+      "cluster_id": "426026",
+      "comp_name": "DA_18_Elderwood, DA_18_Lillia",
       "tier": "B",
-      "avg_placement": 4.6239
+      "avg_placement": 4.6838
     },
     {
-      "cluster_id": "422027",
-      "comp_name": "DA_18_Spellweaver, DA_18_Lillia",
+      "cluster_id": "426053",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_18_Vanguard",
       "tier": "B",
-      "avg_placement": 4.7714
+      "avg_placement": 4.7656
     },
     {
-      "cluster_id": "422044",
-      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
-      "tier": "B",
-      "avg_placement": 4.776
-    },
-    {
-      "cluster_id": "422031",
+      "cluster_id": "426052",
       "comp_name": "DA_18_Spellweaver, DA_18_Ahri",
       "tier": "C",
-      "avg_placement": 4.9851
+      "avg_placement": 4.9679
     },
     {
-      "cluster_id": "422041",
+      "cluster_id": "426050",
       "comp_name": "DA_18_Executioner, DA_18_Soraka",
       "tier": "C",
-      "avg_placement": 5.0
+      "avg_placement": 5.0042
     },
     {
-      "cluster_id": "422050",
-      "comp_name": "DA_18_Coven, DA_18_Morgana",
+      "cluster_id": "426055",
+      "comp_name": "DA_18_Inferno, DA_Amumu18",
       "tier": "D",
-      "avg_placement": 5.8427
+      "avg_placement": 5.2417
     }
   ],
   "builds": [
     {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
       "items": [
-        "珠光护手",
-        "朔极之矛",
-        "虚空之杖"
-      ],
-      "avg_placement": 3.5244,
-      "count": 860,
-      "priority_scores": {
-        "珠光护手": 100,
-        "朔极之矛": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "422012",
-      "comp_name": "DA_18_Invoker, DA_18_Morgana",
-      "items": [
-        "神谕纹章",
         "大天使之杖",
-        "珠光护手"
-      ],
-      "avg_placement": 3.1294,
-      "count": 170,
-      "priority_scores": {
-        "神谕纹章": 100,
-        "大天使之杖": 85,
-        "珠光护手": 72
-      }
-    },
-    {
-      "cluster_id": "422027",
-      "comp_name": "DA_18_Spellweaver, DA_18_Lillia",
-      "items": [
-        "适应性头盔",
-        "朔极之矛",
-        "虚空之杖"
-      ],
-      "avg_placement": 2.7895,
-      "count": 19,
-      "priority_scores": {
-        "适应性头盔": 100,
-        "朔极之矛": 85,
-        "虚空之杖": 72
-      }
-    },
-    {
-      "cluster_id": "422044",
-      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
-      "items": [
-        "海克斯科技枪刃",
         "珠光护手",
         "朔极之矛"
       ],
-      "avg_placement": 3.5,
-      "count": 38,
+      "avg_placement": 3.5946,
+      "count": 745,
       "priority_scores": {
-        "海克斯科技枪刃": 100,
+        "大天使之杖": 100,
         "珠光护手": 85,
         "朔极之矛": 72
       }
     },
     {
-      "cluster_id": "422031",
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.4765,
+      "count": 447,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "426009",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "items": [
+        "神谕纹章",
+        "大天使之杖",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 2.871,
+      "count": 31,
+      "priority_scores": {
+        "神谕纹章": 100,
+        "大天使之杖": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "cluster_id": "426026",
+      "comp_name": "DA_18_Elderwood, DA_18_Lillia",
+      "items": [
+        "蓝霸符",
+        "珠光护手",
+        "纳什之牙"
+      ],
+      "avg_placement": 3.0833,
+      "count": 12,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "珠光护手": 85,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "cluster_id": "426053",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_18_Vanguard",
+      "items": [
+        "珠光护手",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.3571,
+      "count": 28,
+      "priority_scores": {
+        "珠光护手": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "cluster_id": "426052",
       "comp_name": "DA_18_Spellweaver, DA_18_Ahri",
       "items": [
         "红霸符",
         "朔极之矛",
         "虚空之杖"
       ],
-      "avg_placement": 3.0548,
-      "count": 73,
+      "avg_placement": 3.5476,
+      "count": 42,
       "priority_scores": {
         "红霸符": 100,
         "朔极之矛": 85,
@@ -126,17 +148,17 @@
       }
     },
     {
-      "cluster_id": "422041",
-      "comp_name": "DA_18_Executioner, DA_18_Soraka",
+      "cluster_id": "426055",
+      "comp_name": "DA_18_Inferno, DA_Amumu18",
       "items": [
-        "大天使之杖",
+        "蓝霸符",
         "珠光护手",
         "朔极之矛"
       ],
-      "avg_placement": 3.6346,
-      "count": 52,
+      "avg_placement": 4.4167,
+      "count": 12,
       "priority_scores": {
-        "大天使之杖": 100,
+        "蓝霸符": 100,
         "珠光护手": 85,
         "朔极之矛": 72
       }

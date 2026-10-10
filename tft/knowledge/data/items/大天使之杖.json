@@ -2,27 +2,59 @@
   "name": "大天使之杖",
   "priority_list": [
     {
-      "cluster_id": "422017",
-      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
-      "comp_tier": "A",
-      "comp_avg": 4.4826,
-      "carry": "克格莫",
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "comp_tier": "S",
+      "comp_avg": 4.0991,
+      "carry": "卡西奥佩娅",
       "priority_score": 100
     },
     {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
+      "carry": "拉露恩",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
       "comp_tier": "A",
-      "comp_avg": 4.3641,
-      "carry": "卡西奥佩娅",
+      "comp_avg": 4.2845,
+      "carry": "乐芙兰",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "comp_tier": "S",
+      "comp_avg": 4.0991,
+      "carry": "费德提克",
       "priority_score": 85
     },
     {
-      "cluster_id": "422012",
+      "cluster_id": "426009",
       "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "comp_tier": "A",
-      "comp_avg": 4.5152,
+      "comp_avg": 4.4227,
       "carry": "拉露恩",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "comp_tier": "A",
+      "comp_avg": 4.5055,
+      "carry": "索拉卡",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.5077,
+      "carry": "卡西奥佩娅",
       "priority_score": 85
     }
   ]

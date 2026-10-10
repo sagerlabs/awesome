@@ -2,55 +2,73 @@
   "name": "韦鲁斯",
   "appear_in_comps": [
     {
-      "cluster_id": "422030",
-      "comp_name": "DA_18_Inferno, DA_18_Kayle",
-      "tier": "C",
-      "avg_placement": 5.0
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
+      "tier": "S",
+      "avg_placement": 4.1832
     },
     {
-      "cluster_id": "422042",
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
+      "tier": "A",
+      "avg_placement": 4.2678
+    },
+    {
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "tier": "A",
+      "avg_placement": 4.3168
+    },
+    {
+      "cluster_id": "426025",
+      "comp_name": "DA_18_Inferno, DA_18_Akali_AD",
+      "tier": "B",
+      "avg_placement": 4.5921
+    },
+    {
+      "cluster_id": "426055",
       "comp_name": "DA_18_Inferno, DA_Amumu18",
       "tier": "D",
-      "avg_placement": 5.1579
+      "avg_placement": 5.2417
     },
     {
-      "cluster_id": "422039",
+      "cluster_id": "426058",
       "comp_name": "DA_18_Fae, DA_18_Xayah",
       "tier": "D",
-      "avg_placement": 5.8295
+      "avg_placement": 5.8032
     }
   ],
   "builds": [
     {
-      "cluster_id": "422030",
-      "comp_name": "DA_18_Inferno, DA_18_Kayle",
+      "cluster_id": "426025",
+      "comp_name": "DA_18_Inferno, DA_18_Akali_AD",
+      "items": [
+        "无尽之刃",
+        "最后的轻语",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.7253,
+      "count": 517,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "最后的轻语": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "426058",
+      "comp_name": "DA_18_Fae, DA_18_Xayah",
       "items": [
         "死亡之刃",
         "无尽之刃",
         "朔极之矛"
       ],
-      "avg_placement": 4.1709,
-      "count": 550,
+      "avg_placement": 4.1,
+      "count": 20,
       "priority_scores": {
         "死亡之刃": 100,
         "无尽之刃": 85,
         "朔极之矛": 72
-      }
-    },
-    {
-      "cluster_id": "422039",
-      "comp_name": "DA_18_Fae, DA_18_Xayah",
-      "items": [
-        "死亡之刃",
-        "鬼索的狂暴之刃",
-        "无尽之刃"
-      ],
-      "avg_placement": 3.9286,
-      "count": 14,
-      "priority_scores": {
-        "死亡之刃": 100,
-        "鬼索的狂暴之刃": 85,
-        "无尽之刃": 72
       }
     }
   ]

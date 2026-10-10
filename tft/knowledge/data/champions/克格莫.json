@@ -2,59 +2,71 @@
   "name": "克格莫",
   "appear_in_comps": [
     {
-      "cluster_id": "422009",
-      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
       "tier": "S",
-      "avg_placement": 4.1713
+      "avg_placement": 4.1832
     },
     {
-      "cluster_id": "422017",
-      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
-      "tier": "A",
-      "avg_placement": 4.4826
-    },
-    {
-      "cluster_id": "422012",
+      "cluster_id": "426009",
       "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "tier": "A",
-      "avg_placement": 4.5152
+      "avg_placement": 4.4227
     },
     {
-      "cluster_id": "422011",
-      "comp_name": "DA_18_Invoker, DA_18_Sentry",
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "tier": "A",
+      "avg_placement": 4.4727
+    },
+    {
+      "cluster_id": "426029",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "tier": "A",
+      "avg_placement": 4.5193
+    },
+    {
+      "cluster_id": "426041",
+      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
       "tier": "B",
-      "avg_placement": 4.5469
+      "avg_placement": 4.7516
     },
     {
-      "cluster_id": "422026",
-      "comp_name": "DA_Riftbeast18, DA_18_Malphite",
-      "tier": "B",
-      "avg_placement": 4.5705
-    },
-    {
-      "cluster_id": "422018",
-      "comp_name": "DA_18_Adaptor, DA_Nidalee18_AP",
-      "tier": "C",
-      "avg_placement": 4.8382
-    },
-    {
-      "cluster_id": "422040",
+      "cluster_id": "426045",
       "comp_name": "DA_Juggernaut18, DA_Nidalee18_AP",
-      "tier": "D",
-      "avg_placement": 5.301
+      "tier": "C",
+      "avg_placement": 4.911
+    },
+    {
+      "cluster_id": "426051",
+      "comp_name": "DA_Riftbeast18, DA_Gromp18_AP",
+      "tier": "C",
+      "avg_placement": 5.0843
     }
   ],
   "builds": [
     {
-      "cluster_id": "422009",
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "items": [
+        "金锅铲冠冕"
+      ],
+      "avg_placement": 3.3929,
+      "count": 56,
+      "priority_scores": {
+        "金锅铲冠冕": 100
+      }
+    },
+    {
+      "cluster_id": "426029",
       "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
       "items": [
         "无尽之刃",
         "红霸符",
         "朔极之矛"
       ],
-      "avg_placement": 3.6569,
-      "count": 7843,
+      "avg_placement": 3.7578,
+      "count": 322,
       "priority_scores": {
         "无尽之刃": 100,
         "红霸符": 85,
@@ -62,15 +74,15 @@
       }
     },
     {
-      "cluster_id": "422017",
+      "cluster_id": "426041",
       "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
       "items": [
-        "大天使之杖"
+        "暴风大剑"
       ],
-      "avg_placement": 3.9571,
-      "count": 70,
+      "avg_placement": 3.8571,
+      "count": 77,
       "priority_scores": {
-        "大天使之杖": 100
+        "暴风大剑": 100
       }
     }
   ]

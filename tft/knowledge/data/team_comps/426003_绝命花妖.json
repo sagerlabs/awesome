@@ -1,0 +1,223 @@
+{
+  "cluster_id": "426003",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿兹尔",
+    "拉莫斯",
+    "索拉卡",
+    "提莫",
+    "维迦",
+    "婕拉",
+    "费德提克"
+  ],
+  "traits": [
+    "黑荆棘 (1)",
+    "护卫 (1)",
+    "裁决使 (1)",
+    "法师 (1)",
+    "约德尔人和朋友 (1)",
+    "召唤师 (1)",
+    "荆棘之兴 (1)",
+    "绝命花妖 (2)"
+  ],
+  "stars": [
+    "阿兹尔",
+    "拉莫斯",
+    "提莫",
+    "费德提克",
+    "卡兹克",
+    "雷恩加尔",
+    "阿卡丽",
+    "卡蜜尔",
+    "霞"
+  ],
+  "name_string": "DA_18_Sprykin, DA_18_Azir",
+  "display_names": [
+    {
+      "name": "绝命花妖",
+      "type": "trait",
+      "score": 1.8822610777044777
+    },
+    {
+      "name": "阿兹尔",
+      "type": "unit",
+      "score": 4.421295755735887
+    }
+  ],
+  "count": 259122,
+  "avg_placement": 4.1276,
+  "top4_rate": 0.5679,
+  "win_rate": 0.1538,
+  "tier": "S",
+  "builds": [
+    {
+      "unit": "阿兹尔",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.7376,
+      "count": 23472,
+      "score": 0.6449,
+      "place_change": -0.452,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "拉莫斯",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 3.5846,
+      "count": 8262,
+      "score": 0.5769,
+      "place_change": -0.605,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 72
+      }
+    },
+    {
+      "unit": "婕拉",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.2745,
+      "count": 3738,
+      "score": 0.3759,
+      "place_change": -0.915,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "费德提克",
+      "items": [
+        "离子火花",
+        "振奋盔甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 2.7914,
+      "count": 187,
+      "score": 0.1198,
+      "place_change": -1.398,
+      "priority_scores": {
+        "离子火花": 100,
+        "振奋盔甲": 85,
+        "日炎斗篷": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 99237,
+      "avg": 3.9875,
+      "pcnt": 1.44838
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 64636,
+      "avg": 4.0171,
+      "pcnt": 0.94337
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 56797,
+      "avg": 4.1122,
+      "pcnt": 0.82896
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 47593,
+      "avg": 3.8955,
+      "pcnt": 0.69463
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 45766,
+      "avg": 3.7458,
+      "pcnt": 0.66796
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 28461,
+      "avg": 3.7791,
+      "pcnt": 0.41539
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 24809,
+      "avg": 3.8639,
+      "pcnt": 0.36209
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 24572,
+      "avg": 3.6814,
+      "pcnt": 0.35863
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 23542,
+      "avg": 3.7125,
+      "pcnt": 0.3436
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 12526,
+      "avg": 3.7548,
+      "pcnt": 0.18282
+    },
+    "离子火花": {
+      "itemNames": "DA_IonicSpark",
+      "count": 9795,
+      "avg": 3.5569,
+      "pcnt": 0.14296
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 11052,
+      "avg": 4.222,
+      "pick_rate": 0.047507
+    },
+    {
+      "day": "2026-10-07",
+      "count": 18564,
+      "avg": 4.0898,
+      "pick_rate": 0.043579
+    },
+    {
+      "day": "2026-10-08",
+      "count": 19610,
+      "avg": 4.2235,
+      "pick_rate": 0.050349
+    },
+    {
+      "day": "2026-10-09",
+      "count": 28461,
+      "avg": 4.2165,
+      "pick_rate": 0.052738
+    },
+    {
+      "day": "2026-10-10",
+      "count": 5272,
+      "avg": 4.25,
+      "pick_rate": 0.05373
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.063
+}

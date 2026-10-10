@@ -1,0 +1,209 @@
+{
+  "cluster_id": "426006",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿利斯塔",
+    "赫卡里姆",
+    "可酷伯",
+    "乐芙兰",
+    "莫甘娜",
+    "提莫",
+    "维迦",
+    "苍蓝雕纹魔像"
+  ],
+  "traits": [
+    "斗士 (1)",
+    "永恒之森 (1)",
+    "神谕 (2)",
+    "法师 (1)",
+    "约德尔人和朋友 (1)",
+    "重装战士 (1)"
+  ],
+  "stars": [
+    "提莫",
+    "阿利斯塔",
+    "乐芙兰",
+    "维迦",
+    "可酷伯",
+    "奥恩",
+    "雷克塞",
+    "魔沼蛙",
+    "伊莉丝"
+  ],
+  "name_string": "DA_18_Sprykin, DA_18_Teemo",
+  "display_names": [
+    {
+      "name": "神谕",
+      "type": "trait",
+      "score": 1.4847812940939327
+    },
+    {
+      "name": "提莫",
+      "type": "unit",
+      "score": 4.279580729691594
+    },
+    {
+      "name": "阿利斯塔",
+      "type": "unit",
+      "score": 3.4127192098367267
+    }
+  ],
+  "count": 21304,
+  "avg_placement": 4.2845,
+  "top4_rate": 0.565,
+  "win_rate": 0.068,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "提莫",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 4.3115,
+      "count": 719,
+      "score": 0.4703,
+      "place_change": -0.22,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "阿利斯塔",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0841,
+      "count": 559,
+      "score": 0.4381,
+      "place_change": -0.447,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "乐芙兰",
+      "items": [
+        "大天使之杖",
+        "巨人杀手",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.2143,
+      "count": 14,
+      "score": 0.3677,
+      "place_change": -1.317,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "巨人杀手": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "赫卡里姆",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.7857,
+      "count": 14,
+      "score": 0.0576,
+      "place_change": -0.746,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 6411,
+      "avg": 4.3634,
+      "pcnt": 1.29228
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 4732,
+      "avg": 4.347,
+      "pcnt": 0.95384
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 3600,
+      "avg": 4.3864,
+      "pcnt": 0.72566
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 3291,
+      "avg": 4.3081,
+      "pcnt": 0.66337
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 2573,
+      "avg": 4.316,
+      "pcnt": 0.51865
+    },
+    "大天使之杖": {
+      "itemNames": "DA_ArchangelsStaff",
+      "count": 1759,
+      "avg": 4.3059,
+      "pcnt": 0.35457
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 1146,
+      "avg": 4.1562,
+      "pcnt": 0.231
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 966,
+      "avg": 4.0818,
+      "pcnt": 0.19472
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 262,
+      "avg": 4.6947,
+      "pick_rate": 0.001126
+    },
+    {
+      "day": "2026-10-07",
+      "count": 1104,
+      "avg": 4.7908,
+      "pick_rate": 0.002592
+    },
+    {
+      "day": "2026-10-08",
+      "count": 1363,
+      "avg": 4.5062,
+      "pick_rate": 0.0035
+    },
+    {
+      "day": "2026-10-09",
+      "count": 2216,
+      "avg": 4.4675,
+      "pick_rate": 0.004106
+    },
+    {
+      "day": "2026-10-10",
+      "count": 455,
+      "avg": 4.4879,
+      "pick_rate": 0.004637
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.084
+}

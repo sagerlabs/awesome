@@ -1,0 +1,221 @@
+{
+  "cluster_id": "426050",
+  "tft_set": "TFTSet18",
+  "units": [
+    "拉露恩",
+    "黛安娜",
+    "艾翁",
+    "凯南",
+    "茂凯",
+    "索拉卡",
+    "阿木木",
+    "费德提克",
+    "塔里克"
+  ],
+  "traits": [
+    "裁决使 (1)",
+    "翠神 (1)",
+    "地狱火 (1)",
+    "月蚀骑士 (1)",
+    "远古树精 (1)",
+    "法师 (1)",
+    "重装战士 (1)",
+    "月华神女 (1)",
+    "宝石骑士 (1)",
+    "绝命花妖 (2)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "雷克塞"
+  ],
+  "name_string": "DA_18_Executioner, DA_18_Soraka",
+  "display_names": [
+    {
+      "name": "绝命花妖",
+      "type": "trait",
+      "score": 1.820828667413214
+    },
+    {
+      "name": "索拉卡",
+      "type": "unit",
+      "score": 4.088045912653976
+    }
+  ],
+  "count": 14285,
+  "avg_placement": 5.0042,
+  "top4_rate": 0.398,
+  "win_rate": 0.0753,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "索拉卡",
+      "items": [
+        "适应性头盔",
+        "灭世者的死亡之帽",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.7273,
+      "count": 11,
+      "score": 0.555,
+      "place_change": -1.444,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "伊泽瑞尔",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.6296,
+      "count": 27,
+      "score": 0.2401,
+      "place_change": -1.542,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "阿木木",
+      "items": [
+        "石像鬼石板甲",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.8,
+      "count": 15,
+      "score": 0.1863,
+      "place_change": -1.372,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "凯南",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.8333,
+      "count": 12,
+      "score": 0.1739,
+      "place_change": -1.338,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "虚空之杖": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 3107,
+      "avg": 5.1065,
+      "pcnt": 0.86982
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 2789,
+      "avg": 4.8774,
+      "pcnt": 0.7808
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 1902,
+      "avg": 4.9784,
+      "pcnt": 0.53247
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 1541,
+      "avg": 4.8864,
+      "pcnt": 0.43141
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 1384,
+      "avg": 4.7623,
+      "pcnt": 0.38746
+    },
+    "适应性头盔": {
+      "itemNames": "DA_AdaptiveHelm",
+      "count": 1130,
+      "avg": 4.7124,
+      "pcnt": 0.31635
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 851,
+      "avg": 4.6921,
+      "pcnt": 0.23824
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 634,
+      "avg": 5.0047,
+      "pcnt": 0.17749
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 543,
+      "avg": 4.6004,
+      "pcnt": 0.15202
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 539,
+      "avg": 4.757,
+      "pcnt": 0.1509
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 516,
+      "avg": 4.4593,
+      "pcnt": 0.14446
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 664,
+      "avg": 5.1039,
+      "pick_rate": 0.002854
+    },
+    {
+      "day": "2026-10-07",
+      "count": 1157,
+      "avg": 5.0372,
+      "pick_rate": 0.002716
+    },
+    {
+      "day": "2026-10-08",
+      "count": 1026,
+      "avg": 5.2183,
+      "pick_rate": 0.002634
+    },
+    {
+      "day": "2026-10-09",
+      "count": 1350,
+      "avg": 5.1978,
+      "pick_rate": 0.002502
+    },
+    {
+      "day": "2026-10-10",
+      "count": 242,
+      "avg": 5.3388,
+      "pick_rate": 0.002466
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.061
+}

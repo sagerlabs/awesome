@@ -1,0 +1,217 @@
+{
+  "cluster_id": "426037",
+  "tft_set": "TFTSet18",
+  "units": [
+    "卡蜜尔",
+    "黛安娜",
+    "伊莉丝",
+    "赫卡里姆",
+    "沃里克",
+    "绯红印记树怪",
+    "暗影狼",
+    "苍蓝雕纹魔像"
+  ],
+  "traits": [
+    "狂战士 (3)",
+    "重装战士 (2)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "暗影狼",
+    "沃里克",
+    "卡蜜尔",
+    "伊莉丝",
+    "卡兹克",
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Slayer, DA_Brambleback18",
+  "display_names": [
+    {
+      "name": "狂战士",
+      "type": "trait",
+      "score": 2.7119252873563218
+    },
+    {
+      "name": "绯红印记树怪",
+      "type": "unit",
+      "score": 3.6163793103448274
+    }
+  ],
+  "count": 8945,
+  "avg_placement": 4.3419,
+  "top4_rate": 0.5487,
+  "win_rate": 0.0753,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "伊莉丝",
+      "items": [
+        "狂战士纹章",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.8351,
+      "count": 194,
+      "score": 0.7671,
+      "place_change": -0.596,
+      "priority_scores": {
+        "狂战士纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "绯红印记树怪",
+      "items": [
+        "夜之锋刃",
+        "水银",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.5263,
+      "count": 19,
+      "score": 0.4345,
+      "place_change": -0.905,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "水银": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "石像鬼石板甲",
+        "圣盾使的誓约",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.1111,
+      "count": 9,
+      "score": 0.1604,
+      "place_change": -1.32,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "unit": "黛安娜",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "珠光护手"
+      ],
+      "avg_placement": 2.8571,
+      "count": 7,
+      "score": 0.121,
+      "place_change": -1.574,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "珠光护手": 72
+      }
+    }
+  ],
+  "build_items": {
+    "狂战士纹章": {
+      "itemNames": "DA_18_EmblemSlayer",
+      "count": 940,
+      "avg": 4.1532,
+      "pcnt": 0.67529
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 897,
+      "avg": 4.2453,
+      "pcnt": 0.6444
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 847,
+      "avg": 4.0885,
+      "pcnt": 0.60848
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 844,
+      "avg": 4.1789,
+      "pcnt": 0.60632
+    },
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 835,
+      "avg": 4.097,
+      "pcnt": 0.59986
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 819,
+      "avg": 4.1013,
+      "pcnt": 0.58836
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 754,
+      "avg": 4.3342,
+      "pcnt": 0.54167
+    },
+    "水银": {
+      "itemNames": "DA_Quicksilver",
+      "count": 447,
+      "avg": 3.8904,
+      "pcnt": 0.32112
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 436,
+      "avg": 4.1972,
+      "pcnt": 0.31322
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 380,
+      "avg": 4.2263,
+      "pcnt": 0.27299
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 325,
+      "avg": 4.3415,
+      "pcnt": 0.23348
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 209,
+      "avg": 4.4354,
+      "pick_rate": 0.000898
+    },
+    {
+      "day": "2026-10-07",
+      "count": 440,
+      "avg": 4.5386,
+      "pick_rate": 0.001033
+    },
+    {
+      "day": "2026-10-08",
+      "count": 378,
+      "avg": 4.463,
+      "pick_rate": 0.000971
+    },
+    {
+      "day": "2026-10-09",
+      "count": 551,
+      "avg": 4.3358,
+      "pick_rate": 0.001021
+    },
+    {
+      "day": "2026-10-10",
+      "count": 90,
+      "avg": 4.1333,
+      "pick_rate": 0.000917
+    }
+  ],
+  "levelling": "Standard",
+  "difficulty": -0.036
+}

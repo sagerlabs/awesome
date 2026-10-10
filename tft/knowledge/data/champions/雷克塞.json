@@ -2,65 +2,82 @@
   "name": "雷克塞",
   "appear_in_comps": [
     {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
-      "tier": "S",
-      "avg_placement": 4.0985
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "tier": "A",
+      "avg_placement": 4.3434
     },
     {
-      "cluster_id": "422026",
-      "comp_name": "DA_Riftbeast18, DA_18_Malphite",
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "tier": "A",
+      "avg_placement": 4.399
+    },
+    {
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "tier": "A",
+      "avg_placement": 4.4727
+    },
+    {
+      "cluster_id": "426019",
+      "comp_name": "DA_18_Blackthorn, DA_18_Yunara",
       "tier": "B",
-      "avg_placement": 4.5705
+      "avg_placement": 4.5772
     },
     {
-      "cluster_id": "422032",
-      "comp_name": "DA_18_Blackthorn, DA_18_Warwick",
+      "cluster_id": "426034",
+      "comp_name": "DA_18_Executioner, DA_18_Azir",
+      "tier": "B",
+      "avg_placement": 4.6172
+    },
+    {
+      "cluster_id": "426044",
+      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
       "tier": "C",
-      "avg_placement": 4.9095
+      "avg_placement": 4.8811
     },
     {
-      "cluster_id": "422043",
-      "comp_name": "DA_18_Blackthorn, DA_18_KhaZix",
+      "cluster_id": "426049",
+      "comp_name": "DA_18_Blackthorn, DA_18_Veigar",
       "tier": "C",
-      "avg_placement": 4.9752
+      "avg_placement": 4.9712
     },
     {
-      "cluster_id": "422048",
+      "cluster_id": "426056",
       "comp_name": "DA_18_Blackthorn, DA_18_Azir",
       "tier": "D",
-      "avg_placement": 5.3625
+      "avg_placement": 5.2335
     }
   ],
   "builds": [
     {
-      "cluster_id": "422015",
+      "cluster_id": "426044",
       "comp_name": "DA_18_Sprykin, DA_18_Veigar",
       "items": [
         "石像鬼石板甲",
         "石像鬼石板甲",
-        "狂徒铠甲"
+        "坚定之心"
       ],
-      "avg_placement": 3.8382,
-      "count": 11905,
+      "avg_placement": 3.3333,
+      "count": 18,
       "priority_scores": {
         "石像鬼石板甲": 85,
-        "狂徒铠甲": 72
+        "坚定之心": 72
       }
     },
     {
-      "cluster_id": "422048",
-      "comp_name": "DA_18_Blackthorn, DA_18_Azir",
+      "cluster_id": "426049",
+      "comp_name": "DA_18_Blackthorn, DA_18_Veigar",
       "items": [
         "石像鬼石板甲",
-        "振奋盔甲",
+        "石像鬼石板甲",
         "狂徒铠甲"
       ],
-      "avg_placement": 4.2877,
-      "count": 73,
+      "avg_placement": 3.4211,
+      "count": 19,
       "priority_scores": {
-        "石像鬼石板甲": 100,
-        "振奋盔甲": 85,
+        "石像鬼石板甲": 85,
         "狂徒铠甲": 72
       }
     }

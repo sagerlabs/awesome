@@ -2,51 +2,51 @@
   "name": "日炎斗篷",
   "priority_list": [
     {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
       "comp_tier": "A",
-      "comp_avg": 4.3641,
-      "carry": "莉莉娅",
+      "comp_avg": 4.5055,
+      "carry": "赫卡里姆",
       "priority_score": 85
     },
     {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3252,
-      "carry": "莉莉娅",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3252,
-      "carry": "赫卡里姆",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
-      "comp_tier": "A",
-      "comp_avg": 4.3301,
-      "carry": "蔚",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
-      "comp_tier": "A",
-      "comp_avg": 4.3641,
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
+      "comp_tier": "S",
+      "comp_avg": 4.1276,
       "carry": "费德提克",
       "priority_score": 72
     },
     {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
-      "comp_tier": "A",
-      "comp_avg": 4.4453,
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.1877,
+      "carry": "莉莉娅",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.1877,
       "carry": "赫卡里姆",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "墨菲特",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.5077,
+      "carry": "费德提克",
       "priority_score": 72
     }
   ]

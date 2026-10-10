@@ -1,0 +1,206 @@
+{
+  "cluster_id": "426040",
+  "tft_set": "TFTSet18",
+  "units": [
+    "艾希",
+    "艾翁",
+    "凯南",
+    "茂凯",
+    "洛",
+    "希维尔",
+    "阿木木",
+    "塔里克",
+    "蔚"
+  ],
+  "traits": [
+    "翠神 (1)",
+    "猎人 (1)",
+    "地狱火 (1)",
+    "远古树精 (1)",
+    "重装战士 (1)",
+    "宝石骑士 (1)",
+    "主宰 (2)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "雷恩加尔"
+  ],
+  "name_string": "DA_Juggernaut18, DA_18_Sivir",
+  "display_names": [
+    {
+      "name": "主宰",
+      "type": "trait",
+      "score": 1.7029310039020928
+    },
+    {
+      "name": "艾希",
+      "type": "unit",
+      "score": 3.310582210003547
+    }
+  ],
+  "count": 130012,
+  "avg_placement": 4.6236,
+  "top4_rate": 0.4644,
+  "win_rate": 0.1328,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "艾希",
+      "items": [
+        "最后的轻语",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.8592,
+      "count": 3004,
+      "score": 0.6149,
+      "place_change": -0.9,
+      "priority_scores": {
+        "最后的轻语": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "希维尔",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.8222,
+      "count": 270,
+      "score": 0.3428,
+      "place_change": -0.937,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "茂凯",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.5987,
+      "count": 1251,
+      "score": 0.3128,
+      "place_change": -1.161,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "阿木木",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.3774,
+      "count": 1166,
+      "score": 0.1892,
+      "place_change": -0.382,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 41781,
+      "avg": 4.4609,
+      "pcnt": 0.92633
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 41576,
+      "avg": 4.5949,
+      "pcnt": 0.92178
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 34732,
+      "avg": 4.5221,
+      "pcnt": 0.77004
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 28487,
+      "avg": 4.4761,
+      "pcnt": 0.63158
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 23917,
+      "avg": 4.3691,
+      "pcnt": 0.53026
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 23440,
+      "avg": 4.4667,
+      "pcnt": 0.51969
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 19581,
+      "avg": 4.4608,
+      "pcnt": 0.43413
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 15418,
+      "avg": 4.4023,
+      "pcnt": 0.34183
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 10073,
+      "avg": 4.3165,
+      "pcnt": 0.22333
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 13426,
+      "avg": 4.4987,
+      "pick_rate": 0.057711
+    },
+    {
+      "day": "2026-10-07",
+      "count": 18022,
+      "avg": 4.8076,
+      "pick_rate": 0.042307
+    },
+    {
+      "day": "2026-10-08",
+      "count": 12454,
+      "avg": 4.6829,
+      "pick_rate": 0.031976
+    },
+    {
+      "day": "2026-10-09",
+      "count": 16066,
+      "avg": 4.7319,
+      "pick_rate": 0.02977
+    },
+    {
+      "day": "2026-10-10",
+      "count": 2751,
+      "avg": 4.723,
+      "pick_rate": 0.028037
+    }
+  ],
+  "levelling": "Fast 9",
+  "difficulty": -0.009
+}

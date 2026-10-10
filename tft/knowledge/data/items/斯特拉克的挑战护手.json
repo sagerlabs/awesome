@@ -2,19 +2,59 @@
   "name": "斯特拉克的挑战护手",
   "priority_list": [
     {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "沃里克",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "comp_tier": "A",
+      "comp_avg": 4.5055,
+      "carry": "纳尔",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
       "comp_tier": "S",
-      "comp_avg": 3.976,
+      "comp_avg": 4.1832,
+      "carry": "奈德丽",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "comp_tier": "A",
+      "comp_avg": 4.3419,
       "carry": "绯红印记树怪",
       "priority_score": 72
     },
     {
-      "cluster_id": "422012",
-      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
       "comp_tier": "A",
-      "comp_avg": 4.5152,
-      "carry": "绯红印记树怪",
+      "comp_avg": 4.4727,
+      "carry": "奈德丽",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "comp_tier": "A",
+      "comp_avg": 4.4939,
+      "carry": "奈德丽",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426029",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "comp_tier": "A",
+      "comp_avg": 4.5193,
+      "carry": "奈德丽",
       "priority_score": 72
     }
   ]

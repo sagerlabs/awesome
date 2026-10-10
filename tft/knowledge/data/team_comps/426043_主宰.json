@@ -1,0 +1,192 @@
+{
+  "cluster_id": "426043",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿兹尔",
+    "洛",
+    "瑟庄妮",
+    "约里克",
+    "婕拉",
+    "阿木木",
+    "峡谷迅捷蟹",
+    "蔚"
+  ],
+  "traits": [
+    "召唤师 (2)",
+    "荆棘之兴 (1)",
+    "主宰 (3)"
+  ],
+  "stars": [
+    "卡兹克",
+    "深红锋喙鸟"
+  ],
+  "name_string": "DA_Juggernaut18, DA_18_Azir",
+  "display_names": [
+    {
+      "name": "主宰",
+      "type": "trait",
+      "score": 2.159539756139447
+    },
+    {
+      "name": "婕拉",
+      "type": "unit",
+      "score": 3.596599690880989
+    },
+    {
+      "name": "阿兹尔",
+      "type": "unit",
+      "score": 3.3297269448737765
+    }
+  ],
+  "count": 24531,
+  "avg_placement": 4.987,
+  "top4_rate": 0.4059,
+  "win_rate": 0.064,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "婕拉",
+      "items": [
+        "灭世者的死亡之帽",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.0769,
+      "count": 13,
+      "score": 0.6368,
+      "place_change": -2.076,
+      "priority_scores": {
+        "灭世者的死亡之帽": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "阿兹尔",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 4.4161,
+      "count": 137,
+      "score": 0.3911,
+      "place_change": -0.737,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "阿木木",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.6136,
+      "count": 176,
+      "score": 0.2988,
+      "place_change": -0.539,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "茂凯",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.1739,
+      "count": 69,
+      "score": 0.2472,
+      "place_change": -1.979,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 5837,
+      "avg": 4.9741,
+      "pcnt": 1.0024
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 3993,
+      "avg": 4.8878,
+      "pcnt": 0.68573
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 3660,
+      "avg": 4.8219,
+      "pcnt": 0.62854
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 3292,
+      "avg": 4.8469,
+      "pcnt": 0.56534
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 2809,
+      "avg": 4.969,
+      "pcnt": 0.4824
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 2486,
+      "avg": 5.0257,
+      "pcnt": 0.42693
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 1671,
+      "avg": 4.5554,
+      "pcnt": 0.28697
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 1455,
+      "avg": 4.9581,
+      "pick_rate": 0.006254
+    },
+    {
+      "day": "2026-10-07",
+      "count": 2072,
+      "avg": 4.9884,
+      "pick_rate": 0.004864
+    },
+    {
+      "day": "2026-10-08",
+      "count": 1666,
+      "avg": 5.2167,
+      "pick_rate": 0.004278
+    },
+    {
+      "day": "2026-10-09",
+      "count": 2130,
+      "avg": 5.1864,
+      "pick_rate": 0.003947
+    },
+    {
+      "day": "2026-10-10",
+      "count": 407,
+      "avg": 5.2113,
+      "pick_rate": 0.004148
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.08
+}

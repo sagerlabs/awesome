@@ -1,0 +1,216 @@
+{
+  "cluster_id": "426034",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿兹尔",
+    "卡兹克",
+    "雷克塞",
+    "瑟提",
+    "约里克",
+    "芸阿娜",
+    "婕拉",
+    "蔚"
+  ],
+  "traits": [
+    "黑荆棘 (1)",
+    "灵魂莲华 (1)",
+    "斗士 (1)",
+    "裁决使 (2)",
+    "宿敌 (1)",
+    "召唤师 (2)",
+    "荆棘之兴 (1)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "阿兹尔",
+    "卡兹克",
+    "蔚",
+    "深红锋喙鸟",
+    "远古石甲虫",
+    "雷恩加尔",
+    "赫卡里姆"
+  ],
+  "name_string": "DA_18_Executioner, DA_18_Azir",
+  "display_names": [
+    {
+      "name": "裁决使",
+      "type": "trait",
+      "score": 2.018796992481203
+    },
+    {
+      "name": "阿兹尔",
+      "type": "unit",
+      "score": 4.194017652827721
+    }
+  ],
+  "count": 24153,
+  "avg_placement": 4.6172,
+  "top4_rate": 0.4846,
+  "win_rate": 0.0923,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "阿兹尔",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 4.0727,
+      "count": 715,
+      "score": 0.6802,
+      "place_change": -0.586,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "蔚",
+      "items": [
+        "石像鬼石板甲",
+        "圣盾使的誓约",
+        "坚定之心"
+      ],
+      "avg_placement": 3.2667,
+      "count": 15,
+      "score": 0.3111,
+      "place_change": -1.392,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "坚定之心": 72
+      }
+    },
+    {
+      "unit": "婕拉",
+      "items": [
+        "大天使之杖",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 2.2857,
+      "count": 21,
+      "score": 0.2904,
+      "place_change": -2.373,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "瑟提",
+      "items": [
+        "巨龙之爪",
+        "石像鬼石板甲",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 3.0556,
+      "count": 18,
+      "score": 0.2562,
+      "place_change": -1.603,
+      "priority_scores": {
+        "巨龙之爪": 100,
+        "石像鬼石板甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 7174,
+      "avg": 4.3946,
+      "pcnt": 1.17261
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 4525,
+      "avg": 4.4387,
+      "pcnt": 0.73962
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 3810,
+      "avg": 4.5247,
+      "pcnt": 0.62275
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 3176,
+      "avg": 4.2887,
+      "pcnt": 0.51912
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 2997,
+      "avg": 4.1925,
+      "pcnt": 0.48987
+    },
+    "大天使之杖": {
+      "itemNames": "DA_ArchangelsStaff",
+      "count": 2888,
+      "avg": 4.402,
+      "pcnt": 0.47205
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 2115,
+      "avg": 4.3319,
+      "pcnt": 0.3457
+    },
+    "坚定之心": {
+      "itemNames": "DA_SteadfastHeart",
+      "count": 1532,
+      "avg": 4.2213,
+      "pcnt": 0.25041
+    },
+    "巨龙之爪": {
+      "itemNames": "DA_DragonsClaw",
+      "count": 1383,
+      "avg": 4.3839,
+      "pcnt": 0.22605
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 1075,
+      "avg": 4.1349,
+      "pcnt": 0.17571
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 1218,
+      "avg": 4.6897,
+      "pick_rate": 0.005236
+    },
+    {
+      "day": "2026-10-07",
+      "count": 2167,
+      "avg": 4.5371,
+      "pick_rate": 0.005087
+    },
+    {
+      "day": "2026-10-08",
+      "count": 1722,
+      "avg": 4.6852,
+      "pick_rate": 0.004421
+    },
+    {
+      "day": "2026-10-09",
+      "count": 2238,
+      "avg": 4.7507,
+      "pick_rate": 0.004147
+    },
+    {
+      "day": "2026-10-10",
+      "count": 425,
+      "avg": 4.5106,
+      "pick_rate": 0.004331
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.046
+}

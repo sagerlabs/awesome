@@ -1,0 +1,218 @@
+{
+  "cluster_id": "426019",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿利斯塔",
+    "阿兹尔",
+    "伊泽瑞尔",
+    "雷克塞",
+    "沃里克",
+    "芸阿娜",
+    "暗影狼"
+  ],
+  "traits": [
+    "黑荆棘 (2)",
+    "斗士 (1)",
+    "裁决使 (2)",
+    "狂战士 (1)"
+  ],
+  "stars": [
+    "芸阿娜",
+    "沃里克",
+    "暗影狼",
+    "阿利斯塔",
+    "乐芙兰",
+    "峡谷迅捷蟹",
+    "卡兹克"
+  ],
+  "name_string": "DA_18_Blackthorn, DA_18_Yunara",
+  "display_names": [
+    {
+      "name": "黑荆棘",
+      "type": "trait",
+      "score": 1.9935446009389672
+    },
+    {
+      "name": "芸阿娜",
+      "type": "unit",
+      "score": 4.22593896713615
+    }
+  ],
+  "count": 13452,
+  "avg_placement": 4.5772,
+  "top4_rate": 0.498,
+  "win_rate": 0.0972,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "沃里克",
+      "items": [
+        "裁决使纹章",
+        "朔极之矛",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.1143,
+      "count": 70,
+      "score": 0.574,
+      "place_change": -1.553,
+      "priority_scores": {
+        "裁决使纹章": 100,
+        "朔极之矛": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "芸阿娜",
+      "items": [
+        "黑荆棘纹章",
+        "最后的轻语",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.3169,
+      "count": 2518,
+      "score": 0.5494,
+      "place_change": -0.351,
+      "priority_scores": {
+        "黑荆棘纹章": 100,
+        "最后的轻语": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "阿利斯塔",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0378,
+      "count": 344,
+      "score": 0.3937,
+      "place_change": -0.63,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "阿兹尔",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.1,
+      "count": 10,
+      "score": 0.0909,
+      "place_change": -1.568,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "强袭者的链枷": 72
+      }
+    }
+  ],
+  "build_items": {
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 7340,
+      "avg": 4.4353,
+      "pcnt": 1.43584
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 5037,
+      "avg": 4.4135,
+      "pcnt": 0.98533
+    },
+    "黑荆棘纹章": {
+      "itemNames": "DA_18_EmblemBlackthorn",
+      "count": 4837,
+      "avg": 4.394,
+      "pcnt": 0.94621
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 4103,
+      "avg": 4.5079,
+      "pcnt": 0.80262
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 2852,
+      "avg": 4.3331,
+      "pcnt": 0.5579
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 2431,
+      "avg": 4.364,
+      "pcnt": 0.47555
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 1747,
+      "avg": 4.3623,
+      "pcnt": 0.34174
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 1277,
+      "avg": 4.5951,
+      "pcnt": 0.2498
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 757,
+      "avg": 4.2127,
+      "pcnt": 0.14808
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 750,
+      "avg": 4.0453,
+      "pcnt": 0.14671
+    },
+    "裁决使纹章": {
+      "itemNames": "DA_18_EmblemExecutioner",
+      "count": 643,
+      "avg": 3.8663,
+      "pcnt": 0.12578
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 942,
+      "avg": 4.5902,
+      "pick_rate": 0.004049
+    },
+    {
+      "day": "2026-10-07",
+      "count": 1488,
+      "avg": 4.8683,
+      "pick_rate": 0.003493
+    },
+    {
+      "day": "2026-10-08",
+      "count": 1278,
+      "avg": 4.5423,
+      "pick_rate": 0.003281
+    },
+    {
+      "day": "2026-10-09",
+      "count": 2270,
+      "avg": 4.6436,
+      "pick_rate": 0.004206
+    },
+    {
+      "day": "2026-10-10",
+      "count": 372,
+      "avg": 4.6694,
+      "pick_rate": 0.003791
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": 0.051
+}

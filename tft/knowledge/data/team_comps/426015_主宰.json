@@ -1,0 +1,203 @@
+{
+  "cluster_id": "426015",
+  "tft_set": "TFTSet18",
+  "units": [
+    "洛",
+    "瑟庄妮",
+    "约里克",
+    "婕拉",
+    "阿木木",
+    "奈德丽",
+    "峡谷迅捷蟹",
+    "蔚"
+  ],
+  "traits": [
+    "召唤师 (1)",
+    "荆棘之兴 (1)",
+    "主宰 (3)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "雷恩加尔",
+    "霞",
+    "维迦",
+    "卡蜜尔",
+    "可酷伯"
+  ],
+  "name_string": "DA_Juggernaut18, DA_18_Zyra, DA_Nidalee18_AP",
+  "display_names": [
+    {
+      "name": "主宰",
+      "type": "trait",
+      "score": 2.8378708865311992
+    },
+    {
+      "name": "婕拉",
+      "type": "unit",
+      "score": 3.909872325121381
+    },
+    {
+      "name": "奈德丽",
+      "type": "unit",
+      "score": 3.1942636216507823
+    }
+  ],
+  "count": 48852,
+  "avg_placement": 4.5807,
+  "top4_rate": 0.4852,
+  "win_rate": 0.0973,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "婕拉",
+      "items": [
+        "大天使之杖",
+        "大天使之杖",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 4.0184,
+      "count": 6254,
+      "score": 0.6024,
+      "place_change": -0.525,
+      "priority_scores": {
+        "大天使之杖": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "unit": "奈德丽",
+      "items": [
+        "大天使之杖",
+        "鬼索的狂暴之刃",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.8086,
+      "count": 209,
+      "score": 0.2639,
+      "place_change": -0.735,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "鬼索的狂暴之刃": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "阿木木",
+      "items": [
+        "石像鬼石板甲",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0252,
+      "count": 437,
+      "score": 0.2523,
+      "place_change": -0.518,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "蔚",
+      "items": [
+        "石像鬼石板甲",
+        "离子火花",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.6714,
+      "count": 70,
+      "score": 0.0265,
+      "place_change": 0.128,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "离子火花": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "大天使之杖": {
+      "itemNames": "DA_ArchangelsStaff",
+      "count": 36691,
+      "avg": 4.2045,
+      "pcnt": 1.31958
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 27471,
+      "avg": 4.4081,
+      "pcnt": 0.98799
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 20980,
+      "avg": 4.334,
+      "pcnt": 0.75454
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 20286,
+      "avg": 4.2662,
+      "pcnt": 0.72958
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 15527,
+      "avg": 4.3737,
+      "pcnt": 0.55842
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 8777,
+      "avg": 4.1403,
+      "pcnt": 0.31566
+    },
+    "离子火花": {
+      "itemNames": "DA_IonicSpark",
+      "count": 5196,
+      "avg": 4.0037,
+      "pcnt": 0.18687
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 4667,
+      "avg": 4.1054,
+      "pcnt": 0.16785
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 7485,
+      "avg": 4.3842,
+      "pick_rate": 0.032174
+    },
+    {
+      "day": "2026-10-07",
+      "count": 10995,
+      "avg": 4.4252,
+      "pick_rate": 0.025811
+    },
+    {
+      "day": "2026-10-08",
+      "count": 7595,
+      "avg": 4.5774,
+      "pick_rate": 0.0195
+    },
+    {
+      "day": "2026-10-09",
+      "count": 9544,
+      "avg": 4.6136,
+      "pick_rate": 0.017685
+    },
+    {
+      "day": "2026-10-10",
+      "count": 1851,
+      "avg": 4.5694,
+      "pick_rate": 0.018865
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": 0.022
+}

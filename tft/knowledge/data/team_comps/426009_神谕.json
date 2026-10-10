@@ -1,0 +1,226 @@
+{
+  "cluster_id": "426009",
+  "tft_set": "TFTSet18",
+  "units": [
+    "拉露恩",
+    "黛安娜",
+    "赫卡里姆",
+    "莫甘娜",
+    "苍蓝哨戒",
+    "绯红印记树怪",
+    "克格莫",
+    "苍蓝雕纹魔像",
+    "塔里克"
+  ],
+  "traits": [
+    "帝王斑蝶 (1)",
+    "神谕 (3)",
+    "月蚀骑士 (1)",
+    "狂战士 (1)",
+    "重装战士 (2)",
+    "月华神女 (1)",
+    "宝石骑士 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "暗影狼",
+    "雷恩加尔",
+    "可酷伯"
+  ],
+  "name_string": "DA_18_Invoker, DA_18_Morgana",
+  "display_names": [
+    {
+      "name": "神谕",
+      "type": "trait",
+      "score": 2.6303025452217064
+    },
+    {
+      "name": "莫甘娜",
+      "type": "unit",
+      "score": 3.9031935328957905
+    }
+  ],
+  "count": 40868,
+  "avg_placement": 4.4227,
+  "top4_rate": 0.5135,
+  "win_rate": 0.1244,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "莫甘娜",
+      "items": [
+        "月蚀骑士纹章",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.5088,
+      "count": 114,
+      "score": 0.5619,
+      "place_change": -1.067,
+      "priority_scores": {
+        "月蚀骑士纹章": 100,
+        "莫雷洛秘典": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.8811,
+      "count": 185,
+      "score": 0.4242,
+      "place_change": -0.694,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "拉露恩",
+      "items": [
+        "神谕纹章",
+        "大天使之杖",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 2.871,
+      "count": 31,
+      "score": 0.2737,
+      "place_change": -1.704,
+      "priority_scores": {
+        "神谕纹章": 100,
+        "大天使之杖": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "绯红印记树怪",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "水银"
+      ],
+      "avg_placement": 4.0506,
+      "count": 237,
+      "score": 0.2713,
+      "place_change": -0.525,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "水银": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 9458,
+      "avg": 4.41,
+      "pcnt": 0.757
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 7595,
+      "avg": 4.3885,
+      "pcnt": 0.60789
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 7557,
+      "avg": 4.402,
+      "pcnt": 0.60485
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 6693,
+      "avg": 4.3008,
+      "pcnt": 0.5357
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 4753,
+      "avg": 4.2041,
+      "pcnt": 0.38042
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 4407,
+      "avg": 4.4416,
+      "pcnt": 0.35273
+    },
+    "大天使之杖": {
+      "itemNames": "DA_ArchangelsStaff",
+      "count": 4035,
+      "avg": 4.2342,
+      "pcnt": 0.32296
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 3502,
+      "avg": 4.261,
+      "pcnt": 0.28029
+    },
+    "水银": {
+      "itemNames": "DA_Quicksilver",
+      "count": 3457,
+      "avg": 4.5178,
+      "pcnt": 0.27669
+    },
+    "神谕纹章": {
+      "itemNames": "DA_18_EmblemInvoker",
+      "count": 2886,
+      "avg": 4.3073,
+      "pcnt": 0.23099
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 2430,
+      "avg": 4.2848,
+      "pcnt": 0.19449
+    },
+    "月蚀骑士纹章": {
+      "itemNames": "DA_18_EmblemLunar",
+      "count": 982,
+      "avg": 4.2383,
+      "pcnt": 0.0786
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 1351,
+      "avg": 4.5204,
+      "pick_rate": 0.005807
+    },
+    {
+      "day": "2026-10-07",
+      "count": 4025,
+      "avg": 4.5451,
+      "pick_rate": 0.009449
+    },
+    {
+      "day": "2026-10-08",
+      "count": 3950,
+      "avg": 4.5443,
+      "pick_rate": 0.010142
+    },
+    {
+      "day": "2026-10-09",
+      "count": 4527,
+      "avg": 4.6163,
+      "pick_rate": 0.008388
+    },
+    {
+      "day": "2026-10-10",
+      "count": 659,
+      "avg": 4.5296,
+      "pick_rate": 0.006716
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.065
+}

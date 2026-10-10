@@ -2,59 +2,59 @@
   "name": "茂凯",
   "appear_in_comps": [
     {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
       "tier": "A",
-      "avg_placement": 4.3871
+      "avg_placement": 4.3911
     },
     {
-      "cluster_id": "422011",
-      "comp_name": "DA_18_Invoker, DA_18_Sentry",
+      "cluster_id": "426030",
+      "comp_name": "DA_Juggernaut18, DA_Amumu18",
       "tier": "B",
-      "avg_placement": 4.5469
+      "avg_placement": 4.5203
     },
     {
-      "cluster_id": "422046",
-      "comp_name": "DA_Juggernaut18, DA_Draven18",
+      "cluster_id": "426040",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
       "tier": "B",
-      "avg_placement": 4.7644
+      "avg_placement": 4.6236
     },
     {
-      "cluster_id": "422044",
-      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
+      "cluster_id": "426032",
+      "comp_name": "DA_Juggernaut18, DA_18_Zyra, DA_18_Sejuani",
       "tier": "B",
-      "avg_placement": 4.776
+      "avg_placement": 4.6383
     },
     {
-      "cluster_id": "422036",
-      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Sett",
-      "tier": "C",
-      "avg_placement": 4.921
+      "cluster_id": "426053",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_18_Vanguard",
+      "tier": "B",
+      "avg_placement": 4.7656
     },
     {
-      "cluster_id": "422041",
+      "cluster_id": "426050",
       "comp_name": "DA_18_Executioner, DA_18_Soraka",
       "tier": "C",
-      "avg_placement": 5.0
+      "avg_placement": 5.0042
     },
     {
-      "cluster_id": "422042",
+      "cluster_id": "426055",
       "comp_name": "DA_18_Inferno, DA_Amumu18",
       "tier": "D",
-      "avg_placement": 5.1579
+      "avg_placement": 5.2417
     }
   ],
   "builds": [
     {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
       "items": [
         "石像鬼石板甲",
         "振奋盔甲",
         "狂徒铠甲"
       ],
-      "avg_placement": 3.6092,
-      "count": 6098,
+      "avg_placement": 3.4035,
+      "count": 3098,
       "priority_scores": {
         "石像鬼石板甲": 100,
         "振奋盔甲": 85,
@@ -62,15 +62,15 @@
       }
     },
     {
-      "cluster_id": "422046",
-      "comp_name": "DA_Juggernaut18, DA_Draven18",
+      "cluster_id": "426030",
+      "comp_name": "DA_Juggernaut18, DA_Amumu18",
       "items": [
         "石像鬼石板甲",
         "振奋盔甲",
         "狂徒铠甲"
       ],
-      "avg_placement": 3.4863,
-      "count": 3128,
+      "avg_placement": 3.2976,
+      "count": 5622,
       "priority_scores": {
         "石像鬼石板甲": 100,
         "振奋盔甲": 85,
@@ -78,18 +78,65 @@
       }
     },
     {
-      "cluster_id": "422044",
-      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
+      "cluster_id": "426040",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
       "items": [
         "石像鬼石板甲",
-        "圣盾使的誓约",
+        "振奋盔甲",
         "狂徒铠甲"
       ],
-      "avg_placement": 3.2188,
-      "count": 64,
+      "avg_placement": 3.5987,
+      "count": 1251,
       "priority_scores": {
         "石像鬼石板甲": 100,
-        "圣盾使的誓约": 85,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "426032",
+      "comp_name": "DA_Juggernaut18, DA_18_Zyra, DA_18_Sejuani",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.0149,
+      "count": 942,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "426053",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_18_Vanguard",
+      "items": [
+        "重装战士纹章",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 2.6,
+      "count": 15,
+      "priority_scores": {
+        "重装战士纹章": 100,
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "cluster_id": "426043",
+      "comp_name": "DA_Juggernaut18, DA_18_Azir",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.1739,
+      "count": 69,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
         "狂徒铠甲": 72
       }
     }

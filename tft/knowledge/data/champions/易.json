@@ -2,29 +2,45 @@
   "name": "易",
   "appear_in_comps": [
     {
-      "cluster_id": "422009",
-      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
-      "tier": "S",
-      "avg_placement": 4.1713
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "tier": "A",
+      "avg_placement": 4.4939
     },
     {
-      "cluster_id": "422036",
-      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Sett",
-      "tier": "C",
-      "avg_placement": 4.921
+      "cluster_id": "426029",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "tier": "A",
+      "avg_placement": 4.5193
     }
   ],
   "builds": [
     {
-      "cluster_id": "422009",
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "items": [
+        "斗士纹章",
+        "巨人杀手",
+        "水银"
+      ],
+      "avg_placement": 3.7561,
+      "count": 82,
+      "priority_scores": {
+        "斗士纹章": 100,
+        "巨人杀手": 85,
+        "水银": 72
+      }
+    },
+    {
+      "cluster_id": "426029",
       "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
       "items": [
         "斗士纹章",
         "夜之锋刃",
         "鬼索的狂暴之刃"
       ],
-      "avg_placement": 4.1064,
-      "count": 21314,
+      "avg_placement": 4.3431,
+      "count": 1772,
       "priority_scores": {
         "斗士纹章": 100,
         "夜之锋刃": 85,

@@ -1,0 +1,13 @@
+{
+  "name": "护卫纹章",
+  "priority_list": [
+    {
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "comp_tier": "S",
+      "comp_avg": 4.0991,
+      "carry": "雷恩加尔",
+      "priority_score": 100
+    }
+  ]
+}

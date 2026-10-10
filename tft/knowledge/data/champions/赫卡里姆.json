@@ -2,83 +2,107 @@
   "name": "赫卡里姆",
   "appear_in_comps": [
     {
-      "cluster_id": "422006",
+      "cluster_id": "426002",
       "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "tier": "A",
-      "avg_placement": 4.3252
+      "tier": "S",
+      "avg_placement": 4.1877
     },
     {
-      "cluster_id": "422008",
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "tier": "S",
+      "avg_placement": 4.207
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "tier": "A",
+      "avg_placement": 4.2845
+    },
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "tier": "A",
+      "avg_placement": 4.3419
+    },
+    {
+      "cluster_id": "426012",
       "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
       "tier": "A",
-      "avg_placement": 4.4453
+      "avg_placement": 4.3675
     },
     {
-      "cluster_id": "422012",
+      "cluster_id": "426009",
       "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "tier": "A",
-      "avg_placement": 4.5152
+      "avg_placement": 4.4227
     },
     {
-      "cluster_id": "422013",
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "tier": "A",
+      "avg_placement": 4.5055
+    },
+    {
+      "cluster_id": "426017",
       "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
-      "tier": "B",
-      "avg_placement": 4.5935
+      "tier": "A",
+      "avg_placement": 4.5099
     },
     {
-      "cluster_id": "422029",
+      "cluster_id": "426024",
+      "comp_name": "DA_18_Elderwood, DA_18_Rengar",
+      "tier": "B",
+      "avg_placement": 4.6671
+    },
+    {
+      "cluster_id": "426026",
+      "comp_name": "DA_18_Elderwood, DA_18_Lillia",
+      "tier": "B",
+      "avg_placement": 4.6838
+    },
+    {
+      "cluster_id": "426033",
+      "comp_name": "DA_18_Vanguard, DA_18_Hecarim",
+      "tier": "B",
+      "avg_placement": 4.7405
+    },
+    {
+      "cluster_id": "426031",
       "comp_name": "DA_18_Elderwood, DA_18_Kayle",
       "tier": "B",
-      "avg_placement": 4.6188
+      "avg_placement": 4.7426
     },
     {
-      "cluster_id": "422014",
-      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
-      "tier": "B",
-      "avg_placement": 4.744
-    },
-    {
-      "cluster_id": "422037",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
-      "tier": "C",
-      "avg_placement": 4.82
-    },
-    {
-      "cluster_id": "422016",
-      "comp_name": "DA_18_Vanguard, DA_18_Caitlyn",
-      "tier": "C",
-      "avg_placement": 5.0438
-    },
-    {
-      "cluster_id": "422047",
-      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Xayah",
+      "cluster_id": "426054",
+      "comp_name": "DA_18_Coven, DA_18_Elise",
       "tier": "D",
-      "avg_placement": 5.7119
+      "avg_placement": 5.3499
     },
     {
-      "cluster_id": "422039",
+      "cluster_id": "426058",
       "comp_name": "DA_18_Fae, DA_18_Xayah",
       "tier": "D",
-      "avg_placement": 5.8295
+      "avg_placement": 5.8032
     },
     {
-      "cluster_id": "422051",
-      "comp_name": "DA_18_Elderwood, DA_18_LeBlanc",
+      "cluster_id": "426059",
+      "comp_name": "DA_18_Vanguard, DA_18_Elise",
       "tier": "D",
-      "avg_placement": 6.0247
+      "avg_placement": 6.0797
     }
   ],
   "builds": [
     {
-      "cluster_id": "422006",
+      "cluster_id": "426002",
       "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
       "items": [
         "薄暮法袍",
         "振奋盔甲",
         "日炎斗篷"
       ],
-      "avg_placement": 3.8519,
-      "count": 243,
+      "avg_placement": 3.3559,
+      "count": 118,
       "priority_scores": {
         "薄暮法袍": 100,
         "振奋盔甲": 85,
@@ -86,50 +110,98 @@
       }
     },
     {
-      "cluster_id": "422008",
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.7857,
+      "count": 14,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "426012",
       "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
       "items": [
-        "薄暮法袍",
         "石像鬼石板甲",
-        "日炎斗篷"
+        "振奋盔甲",
+        "狂徒铠甲"
       ],
-      "avg_placement": 3.0881,
-      "count": 329,
+      "avg_placement": 3.8117,
+      "count": 4014,
       "priority_scores": {
-        "薄暮法袍": 100,
-        "石像鬼石板甲": 85,
-        "日炎斗篷": 72
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
       }
     },
     {
-      "cluster_id": "422014",
-      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
-      "items": [
-        "薄暮法袍",
-        "石像鬼石板甲",
-        "日炎斗篷"
-      ],
-      "avg_placement": 3.6034,
-      "count": 237,
-      "priority_scores": {
-        "薄暮法袍": 100,
-        "石像鬼石板甲": 85,
-        "日炎斗篷": 72
-      }
-    },
-    {
-      "cluster_id": "422037",
+      "cluster_id": "426036",
       "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
       "items": [
         "薄暮法袍",
         "日炎斗篷",
         "狂徒铠甲"
       ],
-      "avg_placement": 4.1765,
-      "count": 119,
+      "avg_placement": 3.1695,
+      "count": 59,
       "priority_scores": {
         "薄暮法袍": 100,
         "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "426024",
+      "comp_name": "DA_18_Elderwood, DA_18_Rengar",
+      "items": [
+        "薄暮法袍",
+        "石像鬼石板甲",
+        "坚定之心"
+      ],
+      "avg_placement": 2.8,
+      "count": 25,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "石像鬼石板甲": 85,
+        "坚定之心": 72
+      }
+    },
+    {
+      "cluster_id": "426033",
+      "comp_name": "DA_18_Vanguard, DA_18_Hecarim",
+      "items": [
+        "石像鬼石板甲",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.7021,
+      "count": 47,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "426059",
+      "comp_name": "DA_18_Vanguard, DA_18_Elise",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.3571,
+      "count": 14,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
         "狂徒铠甲": 72
       }
     }

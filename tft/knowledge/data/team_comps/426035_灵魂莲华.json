@@ -1,0 +1,212 @@
+{
+  "cluster_id": "426035",
+  "tft_set": "TFTSet18",
+  "units": [
+    "凯尔",
+    "乐芙兰",
+    "蕾欧娜",
+    "瑟庄妮",
+    "约里克",
+    "芸阿娜",
+    "卡尔玛"
+  ],
+  "traits": [
+    "灵魂莲华 (1)",
+    "日蚀骑士 (1)",
+    "法师 (1)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "芸阿娜",
+    "瑟庄妮",
+    "乐芙兰",
+    "凯尔",
+    "卡尔玛",
+    "蕾欧娜",
+    "约里克",
+    "奥恩",
+    "洛",
+    "阿利斯塔",
+    "慎",
+    "霞",
+    "卡兹克"
+  ],
+  "name_string": "DA_18_Blossom, DA_18_Yunara",
+  "display_names": [
+    {
+      "name": "灵魂莲华",
+      "type": "trait",
+      "score": 0.9866881807180314
+    },
+    {
+      "name": "芸阿娜",
+      "type": "unit",
+      "score": 3.953307785397338
+    }
+  ],
+  "count": 27955,
+  "avg_placement": 4.9744,
+  "top4_rate": 0.4208,
+  "win_rate": 0.0955,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "瑟庄妮",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0196,
+      "count": 561,
+      "score": 0.5239,
+      "place_change": -0.81,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "芸阿娜",
+      "items": [
+        "死亡之刃",
+        "最后的轻语",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.4819,
+      "count": 2131,
+      "score": 0.4945,
+      "place_change": -0.347,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "最后的轻语": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "乐芙兰",
+      "items": [
+        "蓝霸符",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3,
+      "count": 36,
+      "score": 0.2793,
+      "place_change": -1.829,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "卡尔玛",
+      "items": [
+        "蓝霸符",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.2532,
+      "count": 79,
+      "score": 0.2463,
+      "place_change": -1.576,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 11503,
+      "avg": 4.5757,
+      "pcnt": 1.16004
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 10250,
+      "avg": 4.5399,
+      "pcnt": 1.03368
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 6215,
+      "avg": 4.4354,
+      "pcnt": 0.62676
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 5788,
+      "avg": 4.6591,
+      "pcnt": 0.5837
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 4819,
+      "avg": 4.3878,
+      "pcnt": 0.48598
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 4812,
+      "avg": 4.5671,
+      "pcnt": 0.48528
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 3557,
+      "avg": 4.3961,
+      "pcnt": 0.35871
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 2491,
+      "avg": 4.0389,
+      "pcnt": 0.25121
+    },
+    "蓝霸符": {
+      "itemNames": "DA_BlueBuff",
+      "count": 2360,
+      "avg": 4.0555,
+      "pcnt": 0.238
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 1402,
+      "avg": 5.0956,
+      "pick_rate": 0.006026
+    },
+    {
+      "day": "2026-10-07",
+      "count": 2984,
+      "avg": 4.8043,
+      "pick_rate": 0.007005
+    },
+    {
+      "day": "2026-10-08",
+      "count": 2582,
+      "avg": 4.7587,
+      "pick_rate": 0.006629
+    },
+    {
+      "day": "2026-10-09",
+      "count": 3927,
+      "avg": 4.823,
+      "pick_rate": 0.007277
+    },
+    {
+      "day": "2026-10-10",
+      "count": 977,
+      "avg": 5.0542,
+      "pick_rate": 0.009957
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": 0.074
+}

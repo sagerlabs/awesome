@@ -1,0 +1,201 @@
+{
+  "cluster_id": "426038",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿狸",
+    "艾希",
+    "纳尔",
+    "瑟提",
+    "希维尔",
+    "约里克",
+    "婕拉",
+    "卡尔玛",
+    "蔚"
+  ],
+  "traits": [
+    "灵魂莲华 (2)",
+    "斗士 (1)",
+    "猎人 (1)",
+    "法师 (1)",
+    "召唤师 (1)",
+    "荆棘之兴 (1)",
+    "主宰 (1)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "奥恩",
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Blossom, DA_18_Ahri",
+  "display_names": [
+    {
+      "name": "灵魂莲华",
+      "type": "trait",
+      "score": 2.7585461424131874
+    },
+    {
+      "name": "阿狸",
+      "type": "unit",
+      "score": 3.6961897040940412
+    }
+  ],
+  "count": 87158,
+  "avg_placement": 4.7055,
+  "top4_rate": 0.4536,
+  "win_rate": 0.1097,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "阿狸",
+      "items": [
+        "珠光护手",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.2817,
+      "count": 1594,
+      "score": 0.4671,
+      "place_change": -0.403,
+      "priority_scores": {
+        "珠光护手": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "瑟提",
+      "items": [
+        "适应性头盔",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.5135,
+      "count": 74,
+      "score": 0.4326,
+      "place_change": -1.171,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "艾希",
+      "items": [
+        "最后的轻语",
+        "红霸符",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.5247,
+      "count": 566,
+      "score": 0.388,
+      "place_change": -1.16,
+      "priority_scores": {
+        "最后的轻语": 100,
+        "红霸符": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "拉克丝",
+      "items": [
+        "珠光护手",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.0909,
+      "count": 99,
+      "score": 0.1441,
+      "place_change": -1.594,
+      "priority_scores": {
+        "珠光护手": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    }
+  ],
+  "build_items": {
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 16276,
+      "avg": 4.3326,
+      "pcnt": 1.09958
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 14871,
+      "avg": 4.5009,
+      "pcnt": 1.00466
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 11515,
+      "avg": 4.4288,
+      "pcnt": 0.77794
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 8685,
+      "avg": 4.3598,
+      "pcnt": 0.58675
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 6092,
+      "avg": 4.1476,
+      "pcnt": 0.41157
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 4580,
+      "avg": 4.2456,
+      "pcnt": 0.30942
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 3556,
+      "avg": 4.2188,
+      "pcnt": 0.24024
+    },
+    "适应性头盔": {
+      "itemNames": "DA_AdaptiveHelm",
+      "count": 3498,
+      "avg": 3.936,
+      "pcnt": 0.23632
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 2121,
+      "avg": 4.7803,
+      "pick_rate": 0.009117
+    },
+    {
+      "day": "2026-10-07",
+      "count": 4873,
+      "avg": 4.568,
+      "pick_rate": 0.011439
+    },
+    {
+      "day": "2026-10-08",
+      "count": 4470,
+      "avg": 4.7492,
+      "pick_rate": 0.011477
+    },
+    {
+      "day": "2026-10-09",
+      "count": 5382,
+      "avg": 4.7317,
+      "pick_rate": 0.009973
+    },
+    {
+      "day": "2026-10-10",
+      "count": 934,
+      "avg": 4.6874,
+      "pick_rate": 0.009519
+    }
+  ],
+  "levelling": "Fast 9",
+  "difficulty": -0.091
+}

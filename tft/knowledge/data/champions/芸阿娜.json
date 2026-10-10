@@ -2,45 +2,61 @@
   "name": "芸阿娜",
   "appear_in_comps": [
     {
-      "cluster_id": "422001",
+      "cluster_id": "426005",
       "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "tier": "A",
+      "avg_placement": 4.3357
+    },
+    {
+      "cluster_id": "426019",
+      "comp_name": "DA_18_Blackthorn, DA_18_Yunara",
       "tier": "B",
-      "avg_placement": 4.6
+      "avg_placement": 4.5772
     },
     {
-      "cluster_id": "422023",
-      "comp_name": "DA_18_Executioner, DA_18_Yunara",
+      "cluster_id": "426034",
+      "comp_name": "DA_18_Executioner, DA_18_Azir",
       "tier": "B",
-      "avg_placement": 4.604
+      "avg_placement": 4.6172
     },
     {
-      "cluster_id": "422036",
-      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Sett",
+      "cluster_id": "426035",
+      "comp_name": "DA_18_Blossom, DA_18_Yunara",
       "tier": "C",
-      "avg_placement": 4.921
-    },
-    {
-      "cluster_id": "422043",
-      "comp_name": "DA_18_Blackthorn, DA_18_KhaZix",
-      "tier": "C",
-      "avg_placement": 4.9752
+      "avg_placement": 4.9744
     }
   ],
   "builds": [
     {
-      "cluster_id": "422023",
-      "comp_name": "DA_18_Executioner, DA_18_Yunara",
+      "cluster_id": "426019",
+      "comp_name": "DA_18_Blackthorn, DA_18_Yunara",
+      "items": [
+        "黑荆棘纹章",
+        "最后的轻语",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.3169,
+      "count": 2518,
+      "priority_scores": {
+        "黑荆棘纹章": 100,
+        "最后的轻语": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "426035",
+      "comp_name": "DA_18_Blossom, DA_18_Yunara",
       "items": [
         "死亡之刃",
-        "朔极之矛",
-        "强袭者的链枷"
+        "最后的轻语",
+        "朔极之矛"
       ],
-      "avg_placement": 4.4563,
-      "count": 1865,
+      "avg_placement": 4.4819,
+      "count": 2131,
       "priority_scores": {
         "死亡之刃": 100,
-        "朔极之矛": 85,
-        "强袭者的链枷": 72
+        "最后的轻语": 85,
+        "朔极之矛": 72
       }
     }
   ]

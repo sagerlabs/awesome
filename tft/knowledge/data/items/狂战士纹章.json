@@ -1,0 +1,13 @@
+{
+  "name": "狂战士纹章",
+  "priority_list": [
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "comp_tier": "A",
+      "comp_avg": 4.3419,
+      "carry": "伊莉丝",
+      "priority_score": 100
+    }
+  ]
+}

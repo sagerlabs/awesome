@@ -1,0 +1,211 @@
+{
+  "cluster_id": "426047",
+  "tft_set": "TFTSet18",
+  "units": [
+    "可酷伯",
+    "莉莉娅",
+    "莫甘娜",
+    "拉莫斯",
+    "提莫",
+    "崔丝塔娜",
+    "维迦",
+    "苍蓝雕纹魔像"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "花仙子 (1)",
+    "神谕 (2)",
+    "约德尔人和朋友 (2)"
+  ],
+  "stars": [
+    "拉莫斯",
+    "崔丝塔娜",
+    "提莫",
+    "雷恩加尔",
+    "卡兹克",
+    "沃里克",
+    "深红锋喙鸟"
+  ],
+  "name_string": "DA_18_Sprykin, DA_18_Tristana",
+  "display_names": [
+    {
+      "name": "约德尔人和朋友",
+      "type": "trait",
+      "score": 2.128408527516113
+    },
+    {
+      "name": "拉莫斯",
+      "type": "unit",
+      "score": 3.4871095686663365
+    }
+  ],
+  "count": 18594,
+  "avg_placement": 5.0149,
+  "top4_rate": 0.4029,
+  "win_rate": 0.0415,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "拉莫斯",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 3.8571,
+      "count": 14,
+      "score": 0.6092,
+      "place_change": -1.523,
+      "priority_scores": {
+        "石像鬼石板甲": 72
+      }
+    },
+    {
+      "unit": "崔丝塔娜",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海妖之怒",
+        "最后的轻语"
+      ],
+      "avg_placement": 4.1,
+      "count": 20,
+      "score": 0.4746,
+      "place_change": -1.28,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海妖之怒": 85,
+        "最后的轻语": 72
+      }
+    },
+    {
+      "unit": "提莫",
+      "items": [
+        "海克斯科技枪刃",
+        "珠光护手",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.1,
+      "count": 20,
+      "score": 0.3216,
+      "place_change": -1.28,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "珠光护手": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "纳尔",
+      "items": [
+        "饮血剑",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.1667,
+      "count": 6,
+      "score": 0.054,
+      "place_change": -2.213,
+      "priority_scores": {
+        "饮血剑": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 1941,
+      "avg": 5.117,
+      "pcnt": 0.96232
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 1413,
+      "avg": 5.397,
+      "pcnt": 0.70055
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 860,
+      "avg": 5.1081,
+      "pcnt": 0.42638
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 702,
+      "avg": 5.0413,
+      "pcnt": 0.34804
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 600,
+      "avg": 5.0617,
+      "pcnt": 0.29747
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 564,
+      "avg": 5.156,
+      "pcnt": 0.27962
+    },
+    "海妖之怒": {
+      "itemNames": "DA_KrakensFury",
+      "count": 468,
+      "avg": 5.0833,
+      "pcnt": 0.23203
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 310,
+      "avg": 4.8871,
+      "pcnt": 0.15369
+    },
+    "饮血剑": {
+      "itemNames": "DA_Bloodthirster",
+      "count": 209,
+      "avg": 4.5311,
+      "pcnt": 0.10362
+    },
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 191,
+      "avg": 4.5864,
+      "pcnt": 0.0947
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 209,
+      "avg": 5.3971,
+      "pick_rate": 0.000898
+    },
+    {
+      "day": "2026-10-07",
+      "count": 685,
+      "avg": 5.4409,
+      "pick_rate": 0.001608
+    },
+    {
+      "day": "2026-10-08",
+      "count": 631,
+      "avg": 5.2631,
+      "pick_rate": 0.00162
+    },
+    {
+      "day": "2026-10-09",
+      "count": 677,
+      "avg": 5.3885,
+      "pick_rate": 0.001254
+    },
+    {
+      "day": "2026-10-10",
+      "count": 131,
+      "avg": 5.5725,
+      "pick_rate": 0.001335
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.155
+}

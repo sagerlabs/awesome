@@ -2,27 +2,35 @@
   "name": "红霸符",
   "priority_list": [
     {
-      "cluster_id": "422009",
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.3675,
+      "carry": "伊泽瑞尔",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "comp_tier": "A",
+      "comp_avg": 4.4727,
+      "carry": "希维尔",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426029",
       "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
-      "comp_tier": "S",
-      "comp_avg": 4.1713,
+      "comp_tier": "A",
+      "comp_avg": 4.5193,
       "carry": "克格莫",
       "priority_score": 85
     },
     {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
       "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "艾希",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
-      "comp_tier": "A",
-      "comp_avg": 4.4132,
-      "carry": "希维尔",
+      "comp_avg": 4.3168,
+      "carry": "厄斐琉斯",
       "priority_score": 72
     }
   ]

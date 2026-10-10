@@ -2,51 +2,89 @@
   "name": "乐芙兰",
   "appear_in_comps": [
     {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "tier": "S",
+      "avg_placement": 4.1877
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
       "tier": "A",
-      "avg_placement": 4.4453
+      "avg_placement": 4.2845
     },
     {
-      "cluster_id": "422023",
-      "comp_name": "DA_18_Executioner, DA_18_Yunara",
-      "tier": "B",
-      "avg_placement": 4.604
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "tier": "A",
+      "avg_placement": 4.3434
     },
     {
-      "cluster_id": "422037",
+      "cluster_id": "426036",
       "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "tier": "A",
+      "avg_placement": 4.5055
+    },
+    {
+      "cluster_id": "426024",
+      "comp_name": "DA_18_Elderwood, DA_18_Rengar",
+      "tier": "B",
+      "avg_placement": 4.6671
+    },
+    {
+      "cluster_id": "426035",
+      "comp_name": "DA_18_Blossom, DA_18_Yunara",
       "tier": "C",
-      "avg_placement": 4.82
-    },
-    {
-      "cluster_id": "422045",
-      "comp_name": "DA_18_Spellweaver, DA_18_KhaZix",
-      "tier": "D",
-      "avg_placement": 5.1856
-    },
-    {
-      "cluster_id": "422051",
-      "comp_name": "DA_18_Elderwood, DA_18_LeBlanc",
-      "tier": "D",
-      "avg_placement": 6.0247
+      "avg_placement": 4.9744
     }
   ],
   "builds": [
     {
-      "cluster_id": "422051",
-      "comp_name": "DA_18_Elderwood, DA_18_LeBlanc",
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
       "items": [
-        "珠光护手",
-        "纳什之牙",
-        "强袭者的链枷"
+        "大天使之杖",
+        "巨人杀手",
+        "朔极之矛"
       ],
-      "avg_placement": 4.525,
-      "count": 40,
+      "avg_placement": 3.2143,
+      "count": 14,
       "priority_scores": {
-        "珠光护手": 100,
-        "纳什之牙": 85,
-        "强袭者的链枷": 72
+        "大天使之杖": 100,
+        "巨人杀手": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "items": [
+        "蓝霸符",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.5742,
+      "count": 566,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "莫雷洛秘典": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "426035",
+      "comp_name": "DA_18_Blossom, DA_18_Yunara",
+      "items": [
+        "蓝霸符",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3,
+      "count": 36,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
       }
     }
   ]

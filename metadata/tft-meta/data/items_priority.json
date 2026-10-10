@@ -1,1431 +1,2391 @@
 {
-  "DA_InfinityEdge": [
+  "DA_18_EmblemDefender": [
     {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
       "comp_tier": "S",
-      "comp_avg": 3.976,
-      "carry": "DA_18_ElderDragon",
+      "comp_avg": 4.0991,
+      "carry": "DA_18_Rengar",
+      "priority_score": 100
+    }
+  ],
+  "DA_GuinsoosRageblade": [
+    {
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
+      "comp_tier": "S",
+      "comp_avg": 4.1276,
+      "carry": "DA_18_Azir",
       "priority_score": 100
     },
     {
-      "cluster_id": "422009",
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "comp_tier": "A",
+      "comp_avg": 4.3168,
+      "carry": "DA_18_Kayle",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.5099,
+      "carry": "DA_CrimsonRaptor18",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "comp_tier": "S",
+      "comp_avg": 4.0991,
+      "carry": "DA_18_Rengar",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
+      "comp_tier": "S",
+      "comp_avg": 4.1832,
+      "carry": "DA_18_Aphelios",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "comp_tier": "A",
+      "comp_avg": 4.3419,
+      "carry": "DA_18_Elise",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "comp_tier": "A",
+      "comp_avg": 4.3911,
+      "carry": "DA_Draven18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "comp_tier": "A",
+      "comp_avg": 4.4939,
+      "carry": "DA_18_Rengar",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426029",
       "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
-      "comp_tier": "S",
-      "comp_avg": 4.1713,
-      "carry": "DA_KogMaw18_AD",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
       "comp_tier": "A",
-      "comp_avg": 4.4132,
-      "carry": "DA_18_Sivir",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
-      "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "DA_18_Sivir",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
-      "comp_tier": "A",
-      "comp_avg": 4.4541,
-      "carry": "DA_Cinderling18",
-      "priority_score": 85
-    }
-  ],
-  "DA_LastWhisper": [
-    {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
-      "comp_tier": "A",
-      "comp_avg": 4.3871,
-      "carry": "DA_18_Ezreal",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
-      "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "DA_18_Ashe",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
-      "comp_tier": "S",
-      "comp_avg": 3.976,
-      "carry": "DA_18_ElderDragon",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
-      "comp_tier": "A",
-      "comp_avg": 4.4132,
-      "carry": "DA_18_Sivir",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
-      "comp_tier": "A",
-      "comp_avg": 4.4541,
-      "carry": "DA_Cinderling18",
+      "comp_avg": 4.5193,
+      "carry": "DA_18_MasterYi_AD",
       "priority_score": 72
     }
   ],
-  "DA_StrikersFlail": [
+  "DA_TitansResolve": [
     {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
       "comp_tier": "S",
-      "comp_avg": 3.976,
-      "carry": "DA_18_ElderDragon",
+      "comp_avg": 4.0991,
+      "carry": "DA_18_Rengar",
       "priority_score": 72
     },
     {
-      "cluster_id": "422021",
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "comp_tier": "S",
+      "comp_avg": 4.0991,
+      "carry": "DA_Fiddlesticks18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "comp_tier": "A",
+      "comp_avg": 4.3419,
+      "carry": "DA_18_Elise",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "DA_18_Warwick",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "comp_tier": "A",
+      "comp_avg": 4.4939,
+      "carry": "DA_18_Rengar",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "comp_tier": "A",
+      "comp_avg": 4.5055,
+      "carry": "DA_18_GnarSmall",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.5099,
+      "carry": "DA_Brambleback18",
+      "priority_score": 72
+    }
+  ],
+  "DA_ArchangelsStaff": [
+    {
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "comp_tier": "S",
+      "comp_avg": 4.0991,
+      "carry": "DA_18_Cassiopeia",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
+      "carry": "DA_18_Alune",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.2845,
+      "carry": "DA_18_LeBlanc",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "comp_tier": "S",
+      "comp_avg": 4.0991,
+      "carry": "DA_Fiddlesticks18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426009",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "comp_tier": "A",
+      "comp_avg": 4.4227,
+      "carry": "DA_18_Alune",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "comp_tier": "A",
+      "comp_avg": 4.5055,
+      "carry": "DA_18_Soraka",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.5077,
+      "carry": "DA_18_Cassiopeia",
+      "priority_score": 85
+    }
+  ],
+  "DA_BlueBuff": [
+    {
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
+      "comp_tier": "S",
+      "comp_avg": 4.1565,
+      "carry": "DA_18_Sentry",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
+      "comp_tier": "S",
+      "comp_avg": 4.1565,
+      "carry": "DA_Cinderling18",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "comp_tier": "A",
+      "comp_avg": 4.3434,
+      "carry": "DA_18_LeBlanc",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "comp_tier": "S",
+      "comp_avg": 4.0991,
+      "carry": "DA_18_Cassiopeia",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "comp_tier": "A",
+      "comp_avg": 4.3434,
+      "carry": "DA_18_Veigar",
+      "priority_score": 85
+    }
+  ],
+  "DA_HextechGunblade": [
+    {
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3357,
+      "carry": "DA_18_Soraka",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3827,
+      "carry": "DA_18_Teemo",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
+      "comp_tier": "S",
+      "comp_avg": 4.1276,
+      "carry": "DA_18_Azir",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.5099,
+      "carry": "DA_CrimsonRaptor18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "comp_tier": "S",
+      "comp_avg": 4.0991,
+      "carry": "DA_18_Cassiopeia",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.5077,
+      "carry": "DA_18_Cassiopeia",
+      "priority_score": 72
+    }
+  ],
+  "DA_BrambleVest": [
+    {
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "comp_tier": "S",
+      "comp_avg": 4.0991,
+      "carry": "DA_18_Rammus",
+      "priority_score": 100
+    }
+  ],
+  "DA_SpiritVisage": [
+    {
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3827,
+      "carry": "DA_18_Rammus",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "comp_tier": "S",
+      "comp_avg": 4.0991,
+      "carry": "DA_18_Rammus",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
+      "comp_tier": "S",
+      "comp_avg": 4.1276,
+      "carry": "DA_Fiddlesticks18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
+      "comp_tier": "S",
+      "comp_avg": 4.1832,
+      "carry": "DA_Amumu18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.1877,
+      "carry": "DA_18_Hecarim",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
+      "carry": "DA_Taric18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "comp_tier": "A",
+      "comp_avg": 4.3168,
+      "carry": "DA_18_Sejuani",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426010",
+      "comp_name": "DA_18_Invoker, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.3346,
+      "carry": "DA_18_Sett",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3357,
+      "carry": "DA_18_Sett",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.3675,
+      "carry": "DA_18_Hecarim",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "comp_tier": "A",
+      "comp_avg": 4.3911,
+      "carry": "DA_18_Maokai",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "DA_18_Malphite",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426009",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "comp_tier": "A",
+      "comp_avg": 4.4227,
+      "carry": "DA_Sentinel18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.5077,
+      "carry": "DA_18_Rammus",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.2678,
+      "carry": "DA_Amumu18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "comp_tier": "A",
+      "comp_avg": 4.3168,
+      "carry": "DA_18_Shen",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "comp_tier": "A",
+      "comp_avg": 4.3419,
+      "carry": "DA_Sentinel18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "comp_tier": "A",
+      "comp_avg": 4.3434,
+      "carry": "DA_18_Ornn",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "comp_tier": "A",
+      "comp_avg": 4.4939,
+      "carry": "DA_Vi18",
+      "priority_score": 72
+    }
+  ],
+  "DA_WarmogsArmor": [
+    {
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "comp_tier": "S",
+      "comp_avg": 4.0991,
+      "carry": "DA_18_Rammus",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
+      "comp_tier": "S",
+      "comp_avg": 4.1565,
+      "carry": "DA_Krug18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
+      "comp_tier": "S",
+      "comp_avg": 4.1832,
+      "carry": "DA_Amumu18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
+      "carry": "DA_Sentinel18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
+      "carry": "DA_Taric18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426027",
       "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.2727,
+      "carry": "DA_Sentinel18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.2845,
+      "carry": "DA_18_Alistar",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.2845,
+      "carry": "DA_18_Hecarim",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "comp_tier": "A",
+      "comp_avg": 4.3168,
+      "carry": "DA_18_Sejuani",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426010",
+      "comp_name": "DA_18_Invoker, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.3346,
+      "carry": "DA_18_Sett",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3357,
+      "carry": "DA_18_Sett",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "comp_tier": "A",
+      "comp_avg": 4.3434,
+      "carry": "DA_18_Alistar",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.3675,
+      "carry": "DA_18_Hecarim",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3827,
+      "carry": "DA_18_Rammus",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "comp_tier": "A",
+      "comp_avg": 4.3911,
+      "carry": "DA_18_Maokai",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426009",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "comp_tier": "A",
+      "comp_avg": 4.4227,
+      "carry": "DA_Sentinel18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "comp_tier": "A",
+      "comp_avg": 4.4727,
+      "carry": "DA_18_Malphite",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "comp_tier": "A",
+      "comp_avg": 4.5055,
+      "carry": "DA_18_Hecarim",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.5077,
+      "carry": "DA_18_Rammus",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.5077,
+      "carry": "DA_18_Lillia",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.5099,
+      "carry": "DA_Sentinel18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426029",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "comp_tier": "A",
+      "comp_avg": 4.5193,
+      "carry": "DA_Vi18",
+      "priority_score": 72
+    }
+  ],
+  "DA_AdaptiveHelm": [
+    {
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
       "comp_tier": "S",
-      "comp_avg": 4.2328,
+      "comp_avg": 4.0991,
+      "carry": "DA_Fiddlesticks18",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3827,
+      "carry": "DA_Sentinel18",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.5077,
+      "carry": "DA_Fiddlesticks18",
+      "priority_score": 100
+    }
+  ],
+  "DA_RabadonsDeathcap": [
+    {
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
+      "carry": "DA_18_Morgana",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426010",
+      "comp_name": "DA_18_Invoker, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.3346,
+      "carry": "DA_18_Morgana",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3357,
+      "carry": "DA_18_Ahri",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3357,
+      "carry": "DA_18_Soraka",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
+      "comp_tier": "S",
+      "comp_avg": 4.1276,
+      "carry": "DA_18_Azir",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
+      "comp_tier": "S",
+      "comp_avg": 4.1565,
+      "carry": "DA_18_Sentry",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "comp_tier": "A",
+      "comp_avg": 4.3168,
+      "carry": "DA_18_Kayle",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426010",
+      "comp_name": "DA_18_Invoker, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.3346,
       "carry": "DA_18_Ahri",
       "priority_score": 72
     },
     {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
       "comp_tier": "A",
-      "comp_avg": 4.3871,
-      "carry": "DA_18_Ezreal",
+      "comp_avg": 4.3675,
+      "carry": "DA_18_KhaZix",
       "priority_score": 72
     },
     {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
       "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "DA_18_Sivir",
+      "comp_avg": 4.3827,
+      "carry": "DA_18_Teemo",
       "priority_score": 72
     },
     {
-      "cluster_id": "422022",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "cluster_id": "426009",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "comp_tier": "A",
-      "comp_avg": 4.474,
-      "carry": "DA_18_Soraka",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422017",
-      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
-      "comp_tier": "A",
-      "comp_avg": 4.4826,
-      "carry": "DA_Nidalee18_AP",
+      "comp_avg": 4.4227,
+      "carry": "DA_18_Alune",
       "priority_score": 72
     }
   ],
   "DA_Crownguard": [
     {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
       "comp_tier": "S",
-      "comp_avg": 3.976,
-      "carry": "DA_Sentinel18",
+      "comp_avg": 4.1276,
+      "carry": "DA_18_Rammus",
       "priority_score": 100
     },
     {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
       "comp_tier": "S",
-      "comp_avg": 4.0985,
-      "carry": "DA_Fiddlesticks18",
+      "comp_avg": 4.1565,
+      "carry": "DA_Krug18",
       "priority_score": 100
     },
     {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
       "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "DA_18_Lillia",
+      "comp_avg": 4.2845,
+      "carry": "DA_18_Hecarim",
       "priority_score": 100
     },
     {
-      "cluster_id": "422022",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
       "comp_tier": "A",
-      "comp_avg": 4.474,
+      "comp_avg": 4.3168,
+      "carry": "DA_18_Shen",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "comp_tier": "A",
+      "comp_avg": 4.3434,
+      "carry": "DA_18_Alistar",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "comp_tier": "A",
+      "comp_avg": 4.3434,
+      "carry": "DA_18_Ornn",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "comp_tier": "A",
+      "comp_avg": 4.4727,
       "carry": "DA_18_Malphite",
       "priority_score": 100
     }
   ],
   "DA_GargoyleStoneplate": [
     {
-      "cluster_id": "422021",
-      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
       "comp_tier": "S",
-      "comp_avg": 4.2328,
+      "comp_avg": 4.1832,
+      "carry": "DA_Amumu18",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
+      "carry": "DA_Sentinel18",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
+      "carry": "DA_Taric18",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.2727,
+      "carry": "DA_Sentinel18",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "comp_tier": "A",
+      "comp_avg": 4.3168,
+      "carry": "DA_18_Sejuani",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426010",
+      "comp_name": "DA_18_Invoker, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.3346,
       "carry": "DA_18_Sett",
       "priority_score": 100
     },
     {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
       "comp_tier": "A",
-      "comp_avg": 4.3641,
-      "carry": "DA_18_Rammus",
+      "comp_avg": 4.3357,
+      "carry": "DA_18_Sett",
       "priority_score": 100
     },
     {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
       "comp_tier": "A",
-      "comp_avg": 4.3871,
+      "comp_avg": 4.3419,
+      "carry": "DA_Sentinel18",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.3675,
+      "carry": "DA_18_Hecarim",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "comp_tier": "A",
+      "comp_avg": 4.3911,
       "carry": "DA_18_Maokai",
       "priority_score": 100
     },
     {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
-      "comp_tier": "A",
-      "comp_avg": 4.4132,
-      "carry": "DA_Scuttlecrab18",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
-      "comp_tier": "A",
-      "comp_avg": 4.4541,
-      "carry": "DA_Krug18",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422012",
+      "cluster_id": "426009",
       "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "comp_tier": "A",
-      "comp_avg": 4.5152,
+      "comp_avg": 4.4227,
       "carry": "DA_Sentinel18",
       "priority_score": 100
     },
     {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
-      "comp_tier": "S",
-      "comp_avg": 3.976,
-      "carry": "DA_Sentinel18",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
-      "comp_tier": "S",
-      "comp_avg": 4.0985,
-      "carry": "DA_18_RekSai",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422009",
-      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
-      "comp_tier": "S",
-      "comp_avg": 4.1713,
-      "carry": "DA_Vi18",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
       "comp_tier": "A",
-      "comp_avg": 4.3301,
+      "comp_avg": 4.5077,
       "carry": "DA_18_Rammus",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.5077,
+      "carry": "DA_18_Lillia",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.5099,
+      "carry": "DA_Sentinel18",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
+      "comp_tier": "S",
+      "comp_avg": 4.1565,
+      "carry": "DA_Krug18",
       "priority_score": 85
     },
     {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
       "comp_tier": "A",
-      "comp_avg": 4.3301,
-      "carry": "DA_Vi18",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
-      "comp_tier": "A",
-      "comp_avg": 4.4132,
-      "carry": "DA_18_Sejuani",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
-      "comp_tier": "A",
-      "comp_avg": 4.4202,
+      "comp_avg": 4.2678,
       "carry": "DA_Amumu18",
       "priority_score": 85
     },
     {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
       "comp_tier": "A",
-      "comp_avg": 4.4453,
+      "comp_avg": 4.2845,
+      "carry": "DA_18_Alistar",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.2845,
       "carry": "DA_18_Hecarim",
       "priority_score": 85
     },
     {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
       "comp_tier": "A",
-      "comp_avg": 4.4541,
-      "carry": "DA_Scuttlecrab18",
+      "comp_avg": 4.3168,
+      "carry": "DA_18_Shen",
       "priority_score": 85
     },
     {
-      "cluster_id": "422022",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
       "comp_tier": "A",
-      "comp_avg": 4.474,
+      "comp_avg": 4.3434,
+      "carry": "DA_18_Alistar",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "comp_tier": "A",
+      "comp_avg": 4.3434,
+      "carry": "DA_18_Ornn",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "comp_tier": "A",
+      "comp_avg": 4.4727,
       "carry": "DA_18_Malphite",
       "priority_score": 85
-    }
-  ],
-  "DA_WarmogsArmor": [
-    {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
-      "comp_tier": "S",
-      "comp_avg": 3.976,
-      "carry": "DA_Sentinel18",
-      "priority_score": 72
     },
     {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
-      "comp_tier": "S",
-      "comp_avg": 4.0985,
-      "carry": "DA_18_RekSai",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422009",
-      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
-      "comp_tier": "S",
-      "comp_avg": 4.1713,
-      "carry": "DA_Vi18",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422021",
-      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
-      "comp_tier": "S",
-      "comp_avg": 4.2328,
-      "carry": "DA_18_Sett",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
       "comp_tier": "A",
-      "comp_avg": 4.3641,
+      "comp_avg": 4.4939,
+      "carry": "DA_Vi18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426029",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "comp_tier": "A",
+      "comp_avg": 4.5193,
+      "carry": "DA_Vi18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
+      "comp_tier": "S",
+      "comp_avg": 4.1276,
       "carry": "DA_18_Rammus",
       "priority_score": 72
-    },
-    {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
-      "comp_tier": "A",
-      "comp_avg": 4.3641,
-      "carry": "DA_18_Lillia",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
-      "comp_tier": "A",
-      "comp_avg": 4.3871,
-      "carry": "DA_18_Maokai",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
-      "comp_tier": "A",
-      "comp_avg": 4.4132,
-      "carry": "DA_Scuttlecrab18",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
-      "comp_tier": "A",
-      "comp_avg": 4.4132,
-      "carry": "DA_18_Sejuani",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
-      "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "DA_Amumu18",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
-      "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "DA_18_Lillia",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
-      "comp_tier": "A",
-      "comp_avg": 4.4541,
-      "carry": "DA_Krug18",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
-      "comp_tier": "A",
-      "comp_avg": 4.4541,
-      "carry": "DA_Scuttlecrab18",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422022",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
-      "comp_tier": "A",
-      "comp_avg": 4.474,
-      "carry": "DA_18_Malphite",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422012",
-      "comp_name": "DA_18_Invoker, DA_18_Morgana",
-      "comp_tier": "A",
-      "comp_avg": 4.5152,
-      "carry": "DA_Sentinel18",
-      "priority_score": 72
-    }
-  ],
-  "DA_EdgeOfNight": [
-    {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
-      "comp_tier": "S",
-      "comp_avg": 3.976,
-      "carry": "DA_Brambleback18",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
-      "comp_tier": "A",
-      "comp_avg": 4.3871,
-      "carry": "DA_18_Kennen",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
-      "comp_tier": "A",
-      "comp_avg": 4.4453,
-      "carry": "DA_18_Rengar",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
-      "comp_tier": "A",
-      "comp_avg": 4.4453,
-      "carry": "DA_18_KhaZix",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422012",
-      "comp_name": "DA_18_Invoker, DA_18_Morgana",
-      "comp_tier": "A",
-      "comp_avg": 4.5152,
-      "carry": "DA_Brambleback18",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422009",
-      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
-      "comp_tier": "S",
-      "comp_avg": 4.1713,
-      "carry": "DA_18_MasterYi_AD",
-      "priority_score": 85
-    }
-  ],
-  "DA_Quicksilver": [
-    {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
-      "comp_tier": "S",
-      "comp_avg": 3.976,
-      "carry": "DA_Brambleback18",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422012",
-      "comp_name": "DA_18_Invoker, DA_18_Morgana",
-      "comp_tier": "A",
-      "comp_avg": 4.5152,
-      "carry": "DA_Brambleback18",
-      "priority_score": 85
-    }
-  ],
-  "DA_SteraksGage": [
-    {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
-      "comp_tier": "S",
-      "comp_avg": 3.976,
-      "carry": "DA_Brambleback18",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422012",
-      "comp_name": "DA_18_Invoker, DA_18_Morgana",
-      "comp_tier": "A",
-      "comp_avg": 4.5152,
-      "carry": "DA_Brambleback18",
-      "priority_score": 72
-    }
-  ],
-  "DA_BlueBuff": [
-    {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
-      "comp_tier": "S",
-      "comp_avg": 3.976,
-      "carry": "DA_18_Sentry",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
-      "comp_tier": "A",
-      "comp_avg": 4.4541,
-      "carry": "DA_Cinderling18",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
-      "comp_tier": "A",
-      "comp_avg": 4.4541,
-      "carry": "DA_18_Sentry",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
-      "comp_tier": "S",
-      "comp_avg": 4.0985,
-      "carry": "DA_18_Veigar",
-      "priority_score": 85
-    }
-  ],
-  "DA_JeweledGauntlet": [
-    {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3252,
-      "carry": "DA_18_Alune",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
-      "comp_tier": "S",
-      "comp_avg": 3.976,
-      "carry": "DA_18_Sentry",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422021",
-      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
-      "comp_tier": "S",
-      "comp_avg": 4.2328,
-      "carry": "DA_18_Ahri",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
-      "comp_tier": "A",
-      "comp_avg": 4.4541,
-      "carry": "DA_18_Sentry",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422017",
-      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
-      "comp_tier": "A",
-      "comp_avg": 4.4826,
-      "carry": "DA_Nidalee18_AP",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
-      "comp_tier": "S",
-      "comp_avg": 4.0985,
-      "carry": "DA_18_Veigar",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
-      "comp_tier": "A",
-      "comp_avg": 4.4453,
-      "carry": "DA_18_Diana",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422012",
-      "comp_name": "DA_18_Invoker, DA_18_Morgana",
-      "comp_tier": "A",
-      "comp_avg": 4.5152,
-      "carry": "DA_18_Alune",
-      "priority_score": 72
-    }
-  ],
-  "DA_RabadonsDeathcap": [
-    {
-      "cluster_id": "422022",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
-      "comp_tier": "A",
-      "comp_avg": 4.474,
-      "carry": "DA_18_Soraka",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422022",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
-      "comp_tier": "A",
-      "comp_avg": 4.474,
-      "carry": "DA_18_Kennen",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422021",
-      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
-      "comp_tier": "S",
-      "comp_avg": 4.2328,
-      "carry": "DA_18_Morgana",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
-      "comp_tier": "S",
-      "comp_avg": 3.976,
-      "carry": "DA_18_Sentry",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422009",
-      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
-      "comp_tier": "S",
-      "comp_avg": 4.1713,
-      "carry": "DA_Nidalee18_AP",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
-      "comp_tier": "A",
-      "comp_avg": 4.3871,
-      "carry": "DA_18_Kennen",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
-      "comp_tier": "A",
-      "comp_avg": 4.4453,
-      "carry": "DA_18_KhaZix",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
-      "comp_tier": "A",
-      "comp_avg": 4.4541,
-      "carry": "DA_18_Sentry",
-      "priority_score": 72
-    }
-  ],
-  "DA_18_EmblemFloraFatalisAugment": [
-    {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
-      "comp_tier": "S",
-      "comp_avg": 4.0985,
-      "carry": "DA_18_Veigar",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
-      "comp_tier": "A",
-      "comp_avg": 4.3641,
-      "carry": "DA_18_Cassiopeia",
-      "priority_score": 100
     }
   ],
   "DA_Morellonomicon": [
     {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
       "comp_tier": "S",
-      "comp_avg": 4.0985,
+      "comp_avg": 4.1276,
+      "carry": "DA_18_Zyra",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
+      "carry": "DA_18_Morgana",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.2845,
       "carry": "DA_18_Teemo",
       "priority_score": 100
     },
     {
-      "cluster_id": "422021",
-      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
-      "comp_tier": "S",
-      "comp_avg": 4.2328,
+      "cluster_id": "426010",
+      "comp_name": "DA_18_Invoker, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.3346,
       "carry": "DA_18_Morgana",
       "priority_score": 100
     },
     {
-      "cluster_id": "422017",
-      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
       "comp_tier": "A",
-      "comp_avg": 4.4826,
+      "comp_avg": 4.2727,
       "carry": "DA_18_Morgana",
       "priority_score": 85
     },
     {
-      "cluster_id": "422012",
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "comp_tier": "A",
+      "comp_avg": 4.3434,
+      "carry": "DA_18_LeBlanc",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3827,
+      "carry": "DA_18_Morgana",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426009",
       "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "comp_tier": "A",
-      "comp_avg": 4.5152,
+      "comp_avg": 4.4227,
       "carry": "DA_18_Morgana",
       "priority_score": 85
     }
   ],
   "DA_SpearOfShojin": [
     {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "DA_18_Warwick",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
       "comp_tier": "S",
-      "comp_avg": 4.0985,
-      "carry": "DA_18_Teemo",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3252,
-      "carry": "DA_18_Alune",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
-      "comp_tier": "A",
-      "comp_avg": 4.3871,
-      "carry": "DA_18_Ezreal",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
-      "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "DA_18_Sivir",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422022",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
-      "comp_tier": "A",
-      "comp_avg": 4.474,
+      "comp_avg": 4.1276,
       "carry": "DA_18_Zyra",
       "priority_score": 85
     },
     {
-      "cluster_id": "422022",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
-      "comp_tier": "A",
-      "comp_avg": 4.474,
-      "carry": "DA_18_Soraka",
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
+      "comp_tier": "S",
+      "comp_avg": 4.1832,
+      "carry": "DA_Nidalee18_AP",
       "priority_score": 85
     },
     {
-      "cluster_id": "422009",
-      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.2845,
+      "carry": "DA_18_Teemo",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "comp_tier": "A",
+      "comp_avg": 4.3911,
+      "carry": "DA_18_Ezreal",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "comp_tier": "A",
+      "comp_avg": 4.4727,
+      "carry": "DA_Nidalee18_AP",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "comp_tier": "A",
+      "comp_avg": 4.4939,
+      "carry": "DA_Nidalee18_AP",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
       "comp_tier": "S",
-      "comp_avg": 4.1713,
-      "carry": "DA_KogMaw18_AD",
+      "comp_avg": 4.1877,
+      "carry": "DA_18_Ezreal",
       "priority_score": 72
     },
     {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
+      "carry": "DA_18_Alune",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
       "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "DA_18_Ashe",
+      "comp_avg": 4.2727,
+      "carry": "DA_18_Alune",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.2845,
+      "carry": "DA_18_LeBlanc",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3357,
+      "carry": "DA_18_Ezreal",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3357,
+      "carry": "DA_18_Ahri",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3357,
+      "carry": "DA_18_Soraka",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.3675,
+      "carry": "DA_18_Ezreal",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "comp_tier": "A",
+      "comp_avg": 4.5055,
+      "carry": "DA_18_Ezreal",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "comp_tier": "A",
+      "comp_avg": 4.5055,
+      "carry": "DA_18_Soraka",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426029",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "comp_tier": "A",
+      "comp_avg": 4.5193,
+      "carry": "DA_KogMaw18_AD",
       "priority_score": 72
     }
   ],
   "DA_VoidStaff": [
     {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
       "comp_tier": "S",
-      "comp_avg": 4.0985,
-      "carry": "DA_18_Teemo",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422021",
-      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
-      "comp_tier": "S",
-      "comp_avg": 4.2328,
-      "carry": "DA_18_Morgana",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3252,
-      "carry": "DA_18_Alune",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422022",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
-      "comp_tier": "A",
-      "comp_avg": 4.474,
+      "comp_avg": 4.1276,
       "carry": "DA_18_Zyra",
       "priority_score": 72
     },
     {
-      "cluster_id": "422017",
-      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
-      "comp_tier": "A",
-      "comp_avg": 4.4826,
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
       "carry": "DA_18_Morgana",
       "priority_score": 72
     },
     {
-      "cluster_id": "422012",
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.2727,
+      "carry": "DA_18_Morgana",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.2845,
+      "carry": "DA_18_Teemo",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426010",
+      "comp_name": "DA_18_Invoker, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.3346,
+      "carry": "DA_18_Morgana",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "comp_tier": "A",
+      "comp_avg": 4.3434,
+      "carry": "DA_18_LeBlanc",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3827,
+      "carry": "DA_18_Morgana",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426009",
       "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "comp_tier": "A",
-      "comp_avg": 4.5152,
+      "comp_avg": 4.4227,
       "carry": "DA_18_Morgana",
       "priority_score": 72
     }
   ],
-  "DA_18_EmblemBrawler": [
+  "DA_IonicSpark": [
     {
-      "cluster_id": "422009",
-      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
       "comp_tier": "S",
-      "comp_avg": 4.1713,
-      "carry": "DA_18_MasterYi_AD",
+      "comp_avg": 4.1276,
+      "carry": "DA_Fiddlesticks18",
       "priority_score": 100
     },
     {
-      "cluster_id": "422009",
-      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
-      "comp_tier": "S",
-      "comp_avg": 4.1713,
-      "carry": "DA_Vi18",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
       "comp_tier": "A",
-      "comp_avg": 4.3301,
-      "carry": "DA_18_Rammus",
-      "priority_score": 100
-    }
-  ],
-  "DA_GuinsoosRageblade": [
-    {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
-      "comp_tier": "A",
-      "comp_avg": 4.4132,
-      "carry": "DA_18_Caitlyn",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422017",
-      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
-      "comp_tier": "A",
-      "comp_avg": 4.4826,
-      "carry": "DA_Nidalee18_AP",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422009",
-      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
-      "comp_tier": "S",
-      "comp_avg": 4.1713,
-      "carry": "DA_Nidalee18_AP",
+      "comp_avg": 4.3675,
+      "carry": "DA_18_Diana",
       "priority_score": 85
     },
     {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
       "comp_tier": "A",
-      "comp_avg": 4.3252,
+      "comp_avg": 4.5077,
+      "carry": "DA_Fiddlesticks18",
+      "priority_score": 85
+    }
+  ],
+  "DA_SunfireCape": [
+    {
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "comp_tier": "A",
+      "comp_avg": 4.5055,
+      "carry": "DA_18_Hecarim",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
+      "comp_tier": "S",
+      "comp_avg": 4.1276,
+      "carry": "DA_Fiddlesticks18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.1877,
+      "carry": "DA_18_Lillia",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.1877,
+      "carry": "DA_18_Hecarim",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "DA_18_Malphite",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.5077,
+      "carry": "DA_Fiddlesticks18",
+      "priority_score": 72
+    }
+  ],
+  "DA_InfinityEdge": [
+    {
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
+      "comp_tier": "S",
+      "comp_avg": 4.1565,
+      "carry": "DA_18_ElderDragon",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
+      "comp_tier": "S",
+      "comp_avg": 4.1832,
+      "carry": "DA_Nidalee18_AP",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "comp_tier": "A",
+      "comp_avg": 4.4727,
+      "carry": "DA_18_Sivir",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "comp_tier": "A",
+      "comp_avg": 4.4727,
+      "carry": "DA_Nidalee18_AP",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "comp_tier": "A",
+      "comp_avg": 4.4939,
+      "carry": "DA_Nidalee18_AP",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.5099,
+      "carry": "DA_18_Aphelios",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426029",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "comp_tier": "A",
+      "comp_avg": 4.5193,
+      "carry": "DA_KogMaw18_AD",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.1877,
       "carry": "DA_18_Aphelios",
       "priority_score": 85
     },
     {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
-      "comp_tier": "A",
-      "comp_avg": 4.3301,
-      "carry": "DA_18_Tristana",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
-      "comp_tier": "A",
-      "comp_avg": 4.3871,
-      "carry": "DA_Draven18",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
-      "comp_tier": "A",
-      "comp_avg": 4.4453,
-      "carry": "DA_18_Rengar",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422009",
-      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
       "comp_tier": "S",
-      "comp_avg": 4.1713,
-      "carry": "DA_18_MasterYi_AD",
+      "comp_avg": 4.1877,
+      "carry": "DA_18_Ezreal",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "comp_tier": "A",
+      "comp_avg": 4.5055,
+      "carry": "DA_18_Ezreal",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426029",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "comp_tier": "A",
+      "comp_avg": 4.5193,
+      "carry": "DA_Nidalee18_AP",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.2678,
+      "carry": "DA_18_Aphelios",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "DA_Murkwolf18",
       "priority_score": 72
     }
   ],
-  "DA_RedBuff": [
+  "DA_LastWhisper": [
     {
-      "cluster_id": "422009",
-      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "comp_tier": "A",
+      "comp_avg": 4.3911,
+      "carry": "DA_18_Ezreal",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
       "comp_tier": "S",
-      "comp_avg": 4.1713,
-      "carry": "DA_KogMaw18_AD",
+      "comp_avg": 4.1565,
+      "carry": "DA_18_ElderDragon",
       "priority_score": 85
     },
     {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
       "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "DA_18_Ashe",
+      "comp_avg": 4.3168,
+      "carry": "DA_18_Aphelios",
       "priority_score": 85
     },
     {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
       "comp_tier": "A",
-      "comp_avg": 4.4132,
+      "comp_avg": 4.3357,
+      "carry": "DA_18_Ezreal",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
+      "comp_tier": "S",
+      "comp_avg": 4.1565,
+      "carry": "DA_Cinderling18",
+      "priority_score": 72
+    }
+  ],
+  "DA_StrikersFlail": [
+    {
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
+      "comp_tier": "S",
+      "comp_avg": 4.1565,
+      "carry": "DA_18_ElderDragon",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "comp_tier": "A",
+      "comp_avg": 4.3911,
+      "carry": "DA_18_Ezreal",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "comp_tier": "A",
+      "comp_avg": 4.3911,
+      "carry": "DA_18_Kennen",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "comp_tier": "A",
+      "comp_avg": 4.4727,
       "carry": "DA_18_Sivir",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.5099,
+      "carry": "DA_18_Aphelios",
+      "priority_score": 72
+    }
+  ],
+  "DA_JeweledGauntlet": [
+    {
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.2727,
+      "carry": "DA_18_Alune",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.2727,
+      "carry": "DA_18_Ahri",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
+      "comp_tier": "S",
+      "comp_avg": 4.1565,
+      "carry": "DA_18_Sentry",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
+      "carry": "DA_18_Alune",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "comp_tier": "A",
+      "comp_avg": 4.3168,
+      "carry": "DA_18_Kayle",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426010",
+      "comp_name": "DA_18_Invoker, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.3346,
+      "carry": "DA_18_Ahri",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3827,
+      "carry": "DA_18_Teemo",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "comp_tier": "A",
+      "comp_avg": 4.3419,
+      "carry": "DA_18_Diana",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "comp_tier": "A",
+      "comp_avg": 4.3434,
+      "carry": "DA_18_Veigar",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.3675,
+      "carry": "DA_18_Diana",
       "priority_score": 72
     }
   ],
   "DA_GiantSlayer": [
     {
-      "cluster_id": "422009",
-      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "comp_tier": "A",
+      "comp_avg": 4.3168,
+      "carry": "DA_18_Aphelios",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
       "comp_tier": "S",
-      "comp_avg": 4.1713,
+      "comp_avg": 4.1565,
+      "carry": "DA_Cinderling18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.2678,
+      "carry": "DA_18_Aphelios",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.2845,
+      "carry": "DA_18_LeBlanc",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "DA_Brambleback18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "comp_tier": "A",
+      "comp_avg": 4.4939,
+      "carry": "DA_18_MasterYi_AD",
+      "priority_score": 85
+    }
+  ],
+  "DA_SteraksGage": [
+    {
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "DA_18_Warwick",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "comp_tier": "A",
+      "comp_avg": 4.5055,
+      "carry": "DA_18_GnarSmall",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
+      "comp_tier": "S",
+      "comp_avg": 4.1832,
       "carry": "DA_Nidalee18_AP",
-      "priority_score": 100
+      "priority_score": 72
     },
     {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
       "comp_tier": "A",
-      "comp_avg": 4.3301,
-      "carry": "DA_18_Tristana",
-      "priority_score": 100
-    }
-  ],
-  "DA_18_EmblemInvoker": [
-    {
-      "cluster_id": "422021",
-      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
-      "comp_tier": "S",
-      "comp_avg": 4.2328,
-      "carry": "DA_18_Ahri",
-      "priority_score": 100
+      "comp_avg": 4.3419,
+      "carry": "DA_Brambleback18",
+      "priority_score": 72
     },
     {
-      "cluster_id": "422012",
-      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
       "comp_tier": "A",
-      "comp_avg": 4.5152,
-      "carry": "DA_18_Alune",
-      "priority_score": 100
-    }
-  ],
-  "DA_SpiritVisage": [
-    {
-      "cluster_id": "422021",
-      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
-      "comp_tier": "S",
-      "comp_avg": 4.2328,
-      "carry": "DA_18_Sett",
-      "priority_score": 85
+      "comp_avg": 4.4727,
+      "carry": "DA_Nidalee18_AP",
+      "priority_score": 72
     },
     {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
       "comp_tier": "A",
-      "comp_avg": 4.3252,
-      "carry": "DA_18_Hecarim",
-      "priority_score": 85
+      "comp_avg": 4.4939,
+      "carry": "DA_Nidalee18_AP",
+      "priority_score": 72
     },
     {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "cluster_id": "426029",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
       "comp_tier": "A",
-      "comp_avg": 4.3641,
-      "carry": "DA_Fiddlesticks18",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
-      "comp_tier": "A",
-      "comp_avg": 4.3641,
-      "carry": "DA_18_Rammus",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
-      "comp_tier": "A",
-      "comp_avg": 4.3871,
-      "carry": "DA_18_Maokai",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
-      "comp_tier": "A",
-      "comp_avg": 4.4132,
-      "carry": "DA_Scuttlecrab18",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
-      "comp_tier": "A",
-      "comp_avg": 4.4541,
-      "carry": "DA_Krug18",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
-      "comp_tier": "A",
-      "comp_avg": 4.3301,
-      "carry": "DA_18_Rammus",
+      "comp_avg": 4.5193,
+      "carry": "DA_Nidalee18_AP",
       "priority_score": 72
     }
   ],
-  "DA_AdaptiveHelm": [
+  "DA_Deathblade": [
     {
-      "cluster_id": "422021",
-      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
       "comp_tier": "S",
-      "comp_avg": 4.2328,
-      "carry": "DA_Sentinel18",
+      "comp_avg": 4.1832,
+      "carry": "DA_18_Aphelios",
       "priority_score": 100
     },
     {
-      "cluster_id": "422017",
-      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
-      "comp_tier": "A",
-      "comp_avg": 4.4826,
-      "carry": "DA_18_Morgana",
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.1877,
+      "carry": "DA_18_Ezreal",
       "priority_score": 100
+    },
+    {
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.2678,
+      "carry": "DA_18_Aphelios",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3357,
+      "carry": "DA_18_Ezreal",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.3675,
+      "carry": "DA_18_Ezreal",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "comp_tier": "A",
+      "comp_avg": 4.5055,
+      "carry": "DA_18_Ezreal",
+      "priority_score": 100
+    }
+  ],
+  "DA_KrakensFury": [
+    {
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.5099,
+      "carry": "DA_18_Aphelios",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
+      "comp_tier": "S",
+      "comp_avg": 4.1832,
+      "carry": "DA_18_Aphelios",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.1877,
+      "carry": "DA_18_Aphelios",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "comp_tier": "A",
+      "comp_avg": 4.3911,
+      "carry": "DA_Draven18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.5099,
+      "carry": "DA_CrimsonRaptor18",
+      "priority_score": 72
     }
   ],
   "DA_ProtectorsVow": [
     {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3252,
-      "carry": "DA_18_Lillia",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
-      "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "DA_18_Lillia",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422012",
-      "comp_name": "DA_18_Invoker, DA_18_Morgana",
-      "comp_tier": "A",
-      "comp_avg": 4.5152,
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
       "carry": "DA_Sentinel18",
       "priority_score": 85
     },
     {
-      "cluster_id": "422021",
+      "cluster_id": "426027",
       "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.2727,
+      "carry": "DA_Sentinel18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "comp_tier": "A",
+      "comp_avg": 4.3419,
+      "carry": "DA_Sentinel18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.5077,
+      "carry": "DA_18_Lillia",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.5099,
+      "carry": "DA_Sentinel18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
       "comp_tier": "S",
-      "comp_avg": 4.2328,
+      "comp_avg": 4.1832,
       "carry": "DA_Sentinel18",
       "priority_score": 72
     },
     {
-      "cluster_id": "422017",
-      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
       "comp_tier": "A",
-      "comp_avg": 4.4826,
+      "comp_avg": 4.2678,
+      "carry": "DA_Sentinel18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426010",
+      "comp_name": "DA_18_Invoker, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.3346,
+      "carry": "DA_Sentinel18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3827,
       "carry": "DA_Sentinel18",
       "priority_score": 72
     }
   ],
   "DA_18_EmblemElderwood": [
     {
-      "cluster_id": "422006",
+      "cluster_id": "426002",
       "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3252,
+      "comp_tier": "S",
+      "comp_avg": 4.1877,
       "carry": "DA_18_Aphelios",
       "priority_score": 100
-    }
-  ],
-  "DA_KrakensFury": [
+    },
     {
-      "cluster_id": "422006",
+      "cluster_id": "426002",
       "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3252,
-      "carry": "DA_18_Aphelios",
-      "priority_score": 72
+      "comp_tier": "S",
+      "comp_avg": 4.1877,
+      "carry": "DA_18_Lillia",
+      "priority_score": 100
     },
     {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
       "comp_tier": "A",
-      "comp_avg": 4.3871,
-      "carry": "DA_Draven18",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
-      "comp_tier": "A",
-      "comp_avg": 4.4132,
-      "carry": "DA_18_Caitlyn",
-      "priority_score": 72
+      "comp_avg": 4.5055,
+      "carry": "DA_18_Soraka",
+      "priority_score": 100
     }
   ],
   "DA_Evenshroud": [
     {
-      "cluster_id": "422006",
+      "cluster_id": "426002",
       "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3252,
-      "carry": "DA_18_Lillia",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3252,
+      "comp_tier": "S",
+      "comp_avg": 4.1877,
       "carry": "DA_18_Hecarim",
       "priority_score": 100
     },
     {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
       "comp_tier": "A",
-      "comp_avg": 4.3301,
-      "carry": "DA_Vi18",
+      "comp_avg": 4.399,
+      "carry": "DA_18_Malphite",
       "priority_score": 100
     },
     {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
       "comp_tier": "A",
-      "comp_avg": 4.4453,
+      "comp_avg": 4.5055,
       "carry": "DA_18_Hecarim",
       "priority_score": 100
     },
     {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
-      "comp_tier": "A",
-      "comp_avg": 4.4541,
-      "carry": "DA_Scuttlecrab18",
-      "priority_score": 100
-    }
-  ],
-  "DA_SunfireCape": [
-    {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
-      "comp_tier": "A",
-      "comp_avg": 4.3641,
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "comp_tier": "S",
+      "comp_avg": 4.1877,
       "carry": "DA_18_Lillia",
       "priority_score": 85
-    },
-    {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3252,
-      "carry": "DA_18_Lillia",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "comp_tier": "A",
-      "comp_avg": 4.3252,
-      "carry": "DA_18_Hecarim",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
-      "comp_tier": "A",
-      "comp_avg": 4.3301,
-      "carry": "DA_Vi18",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
-      "comp_tier": "A",
-      "comp_avg": 4.3641,
-      "carry": "DA_Fiddlesticks18",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
-      "comp_tier": "A",
-      "comp_avg": 4.4453,
-      "carry": "DA_18_Hecarim",
-      "priority_score": 72
     }
   ],
-  "DA_18_EmblemFae": [
+  "DA_18_EmblemRapidfire": [
     {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
       "comp_tier": "A",
-      "comp_avg": 4.3301,
-      "carry": "DA_18_Rengar",
-      "priority_score": 100
-    }
-  ],
-  "DA_18_EmblemSprykin": [
-    {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
-      "comp_tier": "A",
-      "comp_avg": 4.3301,
-      "carry": "DA_18_Rengar",
-      "priority_score": 85
-    }
-  ],
-  "DA_TitansResolve": [
-    {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
-      "comp_tier": "A",
-      "comp_avg": 4.3301,
-      "carry": "DA_18_Rengar",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
-      "comp_tier": "A",
-      "comp_avg": 4.4453,
-      "carry": "DA_18_Rengar",
-      "priority_score": 72
-    }
-  ],
-  "DA_HextechGunblade": [
-    {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
-      "comp_tier": "A",
-      "comp_avg": 4.4132,
-      "carry": "DA_18_Caitlyn",
-      "priority_score": 85
-    },
-    {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
-      "comp_tier": "A",
-      "comp_avg": 4.3301,
-      "carry": "DA_18_Tristana",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
-      "comp_tier": "A",
-      "comp_avg": 4.3641,
-      "carry": "DA_18_Cassiopeia",
-      "priority_score": 72
-    }
-  ],
-  "DA_ArchangelsStaff": [
-    {
-      "cluster_id": "422017",
-      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
-      "comp_tier": "A",
-      "comp_avg": 4.4826,
-      "carry": "DA_KogMaw18_AD",
+      "comp_avg": 4.2678,
+      "carry": "DA_Brambleback18",
       "priority_score": 100
     },
     {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
       "comp_tier": "A",
-      "comp_avg": 4.3641,
-      "carry": "DA_18_Cassiopeia",
-      "priority_score": 85
+      "comp_avg": 4.5099,
+      "carry": "DA_Brambleback18",
+      "priority_score": 100
+    }
+  ],
+  "DA_EdgeOfNight": [
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "comp_tier": "A",
+      "comp_avg": 4.3419,
+      "carry": "DA_Brambleback18",
+      "priority_score": 100
     },
     {
-      "cluster_id": "422012",
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "comp_tier": "A",
+      "comp_avg": 4.3419,
+      "carry": "DA_18_Diana",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "comp_tier": "A",
+      "comp_avg": 4.3911,
+      "carry": "DA_18_Kennen",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "DA_Brambleback18",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426009",
       "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "comp_tier": "A",
-      "comp_avg": 4.5152,
-      "carry": "DA_18_Alune",
-      "priority_score": 85
-    }
-  ],
-  "DA_IonicSpark": [
-    {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
-      "comp_tier": "A",
-      "comp_avg": 4.3641,
-      "carry": "DA_Fiddlesticks18",
+      "comp_avg": 4.4227,
+      "carry": "DA_Brambleback18",
       "priority_score": 100
     },
     {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
       "comp_tier": "A",
-      "comp_avg": 4.3641,
-      "carry": "DA_18_Lillia",
+      "comp_avg": 4.4939,
+      "carry": "DA_18_Rengar",
       "priority_score": 100
     },
     {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
       "comp_tier": "A",
-      "comp_avg": 4.4453,
-      "carry": "DA_18_Diana",
-      "priority_score": 85
-    }
-  ],
-  "DA_Deathblade": [
-    {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
-      "comp_tier": "A",
-      "comp_avg": 4.3871,
-      "carry": "DA_Draven18",
-      "priority_score": 100
-    }
-  ],
-  "DA_HandOfJustice": [
-    {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
-      "comp_tier": "A",
-      "comp_avg": 4.4453,
-      "carry": "DA_18_Diana",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
-      "comp_tier": "A",
-      "comp_avg": 4.3871,
-      "carry": "DA_18_Kennen",
+      "comp_avg": 4.2678,
+      "carry": "DA_Brambleback18",
       "priority_score": 85
     },
     {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
       "comp_tier": "A",
-      "comp_avg": 4.4453,
-      "carry": "DA_18_KhaZix",
+      "comp_avg": 4.399,
+      "carry": "DA_Murkwolf18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.5099,
+      "carry": "DA_Brambleback18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426029",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "comp_tier": "A",
+      "comp_avg": 4.5193,
+      "carry": "DA_18_MasterYi_AD",
       "priority_score": 85
     }
   ],
-  "DA_DragonsClaw": [
+  "DA_Quicksilver": [
     {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
       "comp_tier": "A",
-      "comp_avg": 4.4132,
-      "carry": "DA_18_Sejuani",
-      "priority_score": 100
+      "comp_avg": 4.3419,
+      "carry": "DA_Brambleback18",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.2678,
+      "carry": "DA_Brambleback18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "DA_Brambleback18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426009",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "comp_tier": "A",
+      "comp_avg": 4.4227,
+      "carry": "DA_Brambleback18",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "comp_tier": "A",
+      "comp_avg": 4.4939,
+      "carry": "DA_18_MasterYi_AD",
+      "priority_score": 72
     }
   ],
-  "DA_18_EmblemExecutioner": [
+  "DA_18_EmblemVanguard": [
     {
-      "cluster_id": "422022",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
       "comp_tier": "A",
-      "comp_avg": 4.474,
-      "carry": "DA_18_Zyra",
+      "comp_avg": 4.2678,
+      "carry": "DA_Amumu18",
       "priority_score": 100
     }
   ],
   "DA_18_EmblemSpellweaver": [
     {
-      "cluster_id": "422012",
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.2727,
+      "carry": "DA_18_Morgana",
+      "priority_score": 100
+    }
+  ],
+  "DA_NashorsTooth": [
+    {
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.2727,
+      "carry": "DA_18_Alune",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.3675,
+      "carry": "DA_18_KhaZix",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.2727,
+      "carry": "DA_18_Ahri",
+      "priority_score": 72
+    }
+  ],
+  "DA_RedBuff": [
+    {
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.3675,
+      "carry": "DA_18_Ezreal",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "comp_tier": "A",
+      "comp_avg": 4.4727,
+      "carry": "DA_18_Sivir",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426029",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "comp_tier": "A",
+      "comp_avg": 4.5193,
+      "carry": "DA_KogMaw18_AD",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "comp_tier": "A",
+      "comp_avg": 4.3168,
+      "carry": "DA_18_Aphelios",
+      "priority_score": 72
+    }
+  ],
+  "DA_18_EmblemInvoker": [
+    {
+      "cluster_id": "426010",
+      "comp_name": "DA_18_Invoker, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.3346,
+      "carry": "DA_18_Ahri",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426009",
       "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "comp_tier": "A",
-      "comp_avg": 4.5152,
+      "comp_avg": 4.4227,
+      "carry": "DA_18_Alune",
+      "priority_score": 100
+    }
+  ],
+  "DA_18_EmblemExecutioner": [
+    {
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3357,
+      "carry": "DA_18_Ahri",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "comp_tier": "A",
+      "comp_avg": 4.3911,
+      "carry": "DA_Draven18",
+      "priority_score": 100
+    }
+  ],
+  "DA_18_EmblemSlayer": [
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "comp_tier": "A",
+      "comp_avg": 4.3419,
+      "carry": "DA_18_Elise",
+      "priority_score": 100
+    }
+  ],
+  "DA_HandOfJustice": [
+    {
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.3675,
+      "carry": "DA_18_KhaZix",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.3675,
+      "carry": "DA_18_Diana",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3827,
       "carry": "DA_18_Morgana",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "comp_tier": "A",
+      "comp_avg": 4.3419,
+      "carry": "DA_18_Diana",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "comp_tier": "A",
+      "comp_avg": 4.3911,
+      "carry": "DA_18_Kennen",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426009",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "comp_tier": "A",
+      "comp_avg": 4.4227,
+      "carry": "DA_Brambleback18",
+      "priority_score": 85
+    }
+  ],
+  "DA_18_EmblemFloraFatalis": [
+    {
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "comp_tier": "A",
+      "comp_avg": 4.3434,
+      "carry": "DA_18_Veigar",
+      "priority_score": 100
+    }
+  ],
+  "DA_SteadfastHeart": [
+    {
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3827,
+      "carry": "DA_18_Rammus",
+      "priority_score": 85
+    }
+  ],
+  "DA_18_EmblemBlackthorn": [
+    {
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "DA_Murkwolf18",
+      "priority_score": 100
+    }
+  ],
+  "DA_18_EmblemLunar": [
+    {
+      "cluster_id": "426009",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "comp_tier": "A",
+      "comp_avg": 4.4227,
+      "carry": "DA_18_Morgana",
+      "priority_score": 100
+    }
+  ],
+  "DA_TacticiansCape": [
+    {
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "comp_tier": "A",
+      "comp_avg": 4.4727,
+      "carry": "DA_KogMaw18_AD",
+      "priority_score": 100
+    }
+  ],
+  "DA_18_EmblemBrawler": [
+    {
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "comp_tier": "A",
+      "comp_avg": 4.4939,
+      "carry": "DA_18_MasterYi_AD",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "comp_tier": "A",
+      "comp_avg": 4.4939,
+      "carry": "DA_Vi18",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426029",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "comp_tier": "A",
+      "comp_avg": 4.5193,
+      "carry": "DA_18_MasterYi_AD",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426029",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "comp_tier": "A",
+      "comp_avg": 4.5193,
+      "carry": "DA_Vi18",
+      "priority_score": 100
+    }
+  ],
+  "DA_Bloodthirster": [
+    {
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "comp_tier": "A",
+      "comp_avg": 4.5055,
+      "carry": "DA_18_GnarSmall",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426029",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "comp_tier": "A",
+      "comp_avg": 4.5193,
+      "carry": "DA_Nidalee18_AP",
       "priority_score": 100
     }
   ]

@@ -1,0 +1,13 @@
+{
+  "name": "重装战士纹章",
+  "priority_list": [
+    {
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.2678,
+      "carry": "阿木木",
+      "priority_score": 100
+    }
+  ]
+}

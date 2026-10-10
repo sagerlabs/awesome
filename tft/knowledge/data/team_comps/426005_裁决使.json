@@ -1,0 +1,205 @@
+{
+  "cluster_id": "426005",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿狸",
+    "阿利斯塔",
+    "伊泽瑞尔",
+    "奥恩",
+    "瑟提",
+    "索拉卡",
+    "芸阿娜",
+    "费德提克"
+  ],
+  "traits": [
+    "灵魂莲华 (1)",
+    "斗士 (1)",
+    "护卫 (1)",
+    "永恒之森 (1)",
+    "裁决使 (2)",
+    "法师 (1)",
+    "绝命花妖 (2)"
+  ],
+  "stars": [
+    "阿卡丽",
+    "蕾欧娜"
+  ],
+  "name_string": "DA_18_Executioner, DA_18_Sett",
+  "display_names": [
+    {
+      "name": "裁决使",
+      "type": "trait",
+      "score": 2.249295310612439
+    },
+    {
+      "name": "瑟提",
+      "type": "unit",
+      "score": 3.9360654537467514
+    }
+  ],
+  "count": 63615,
+  "avg_placement": 4.3357,
+  "top4_rate": 0.5427,
+  "win_rate": 0.0951,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "瑟提",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0277,
+      "count": 1409,
+      "score": 0.4741,
+      "place_change": -0.464,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "伊泽瑞尔",
+      "items": [
+        "死亡之刃",
+        "最后的轻语",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.2221,
+      "count": 3052,
+      "score": 0.4268,
+      "place_change": -0.27,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "最后的轻语": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "阿狸",
+      "items": [
+        "裁决使纹章",
+        "灭世者的死亡之帽",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.0623,
+      "count": 883,
+      "score": 0.3115,
+      "place_change": -0.429,
+      "priority_scores": {
+        "裁决使纹章": 100,
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "索拉卡",
+      "items": [
+        "海克斯科技枪刃",
+        "灭世者的死亡之帽",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.5596,
+      "count": 109,
+      "score": 0.1999,
+      "place_change": -0.932,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
+      }
+    }
+  ],
+  "build_items": {
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 30108,
+      "avg": 4.2826,
+      "pcnt": 1.10217
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 27676,
+      "avg": 4.3945,
+      "pcnt": 1.01314
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 15598,
+      "avg": 4.311,
+      "pcnt": 0.571
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 14054,
+      "avg": 4.335,
+      "pcnt": 0.51448
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 12752,
+      "avg": 4.2531,
+      "pcnt": 0.46682
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 10632,
+      "avg": 4.1862,
+      "pcnt": 0.38921
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 8770,
+      "avg": 4.2686,
+      "pcnt": 0.32105
+    },
+    "裁决使纹章": {
+      "itemNames": "DA_18_EmblemExecutioner",
+      "count": 8288,
+      "avg": 4.2864,
+      "pcnt": 0.3034
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 4036,
+      "avg": 4.0971,
+      "pcnt": 0.14775
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 3228,
+      "avg": 4.632,
+      "pick_rate": 0.013876
+    },
+    {
+      "day": "2026-10-07",
+      "count": 6460,
+      "avg": 4.508,
+      "pick_rate": 0.015165
+    },
+    {
+      "day": "2026-10-08",
+      "count": 7002,
+      "avg": 4.4804,
+      "pick_rate": 0.017978
+    },
+    {
+      "day": "2026-10-09",
+      "count": 12557,
+      "avg": 4.4926,
+      "pick_rate": 0.023268
+    },
+    {
+      "day": "2026-10-10",
+      "count": 2396,
+      "avg": 4.4812,
+      "pick_rate": 0.024419
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": 0.007
+}

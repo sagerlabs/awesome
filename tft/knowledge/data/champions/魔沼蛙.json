@@ -2,11 +2,28 @@
   "name": "魔沼蛙",
   "appear_in_comps": [
     {
-      "cluster_id": "422018",
-      "comp_name": "DA_18_Adaptor, DA_Nidalee18_AP",
+      "cluster_id": "426051",
+      "comp_name": "DA_Riftbeast18, DA_Gromp18_AP",
       "tier": "C",
-      "avg_placement": 4.8382
+      "avg_placement": 5.0843
     }
   ],
-  "builds": []
+  "builds": [
+    {
+      "cluster_id": "426051",
+      "comp_name": "DA_Riftbeast18, DA_Gromp18_AP",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.6364,
+      "count": 33,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    }
+  ]
 }

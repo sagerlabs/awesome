@@ -2,10 +2,10 @@
   "name": "法师纹章",
   "priority_list": [
     {
-      "cluster_id": "422012",
-      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
       "comp_tier": "A",
-      "comp_avg": 4.5152,
+      "comp_avg": 4.2727,
       "carry": "莫甘娜",
       "priority_score": 100
     }

@@ -2,32 +2,32 @@
   "name": "绯红树怪",
   "appear_in_comps": [
     {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
       "tier": "A",
-      "avg_placement": 4.4541
+      "avg_placement": 4.4727
     },
     {
-      "cluster_id": "422026",
-      "comp_name": "DA_Riftbeast18, DA_18_Malphite",
+      "cluster_id": "426046",
+      "comp_name": "DA_18_Blossom, DA_18_Sett",
       "tier": "B",
-      "avg_placement": 4.5705
+      "avg_placement": 4.731
     }
   ],
   "builds": [
     {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
       "items": [
         "蓝霸符",
-        "无尽之刃",
+        "巨人杀手",
         "最后的轻语"
       ],
-      "avg_placement": 3.7597,
-      "count": 23499,
+      "avg_placement": 3.5537,
+      "count": 242,
       "priority_scores": {
         "蓝霸符": 100,
-        "无尽之刃": 85,
+        "巨人杀手": 85,
         "最后的轻语": 72
       }
     }

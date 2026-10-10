@@ -1,0 +1,219 @@
+{
+  "cluster_id": "426056",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿兹尔",
+    "墨菲特",
+    "雷克塞",
+    "索拉卡",
+    "维迦",
+    "沃里克",
+    "婕拉",
+    "费德提克"
+  ],
+  "traits": [
+    "魔岩巨兽 (1)",
+    "黑荆棘 (3)",
+    "裁决使 (1)",
+    "法师 (1)",
+    "召唤师 (1)",
+    "荆棘之兴 (1)",
+    "绝命花妖 (2)"
+  ],
+  "stars": [
+    "阿兹尔",
+    "卡兹克",
+    "远古石甲虫",
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Blackthorn, DA_18_Azir",
+  "display_names": [
+    {
+      "name": "黑荆棘",
+      "type": "trait",
+      "score": 2.4025304592314902
+    },
+    {
+      "name": "阿兹尔",
+      "type": "unit",
+      "score": 3.8434864104967197
+    }
+  ],
+  "count": 20865,
+  "avg_placement": 5.2335,
+  "top4_rate": 0.3639,
+  "win_rate": 0.0652,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "阿兹尔",
+      "items": [
+        "海克斯科技枪刃",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.1176,
+      "count": 17,
+      "score": 0.7662,
+      "place_change": -2.029,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "墨菲特",
+      "items": [
+        "棘刺背心",
+        "冕卫",
+        "石像鬼石板甲"
+      ],
+      "avg_placement": 3,
+      "count": 10,
+      "score": 0.6685,
+      "place_change": -2.147,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "冕卫": 85,
+        "石像鬼石板甲": 72
+      }
+    },
+    {
+      "unit": "卡兹克",
+      "items": [
+        "黑荆棘纹章",
+        "正义之手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 4.4366,
+      "count": 213,
+      "score": 0.3255,
+      "place_change": -0.71,
+      "priority_scores": {
+        "黑荆棘纹章": 100,
+        "正义之手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "拉克丝",
+      "items": [
+        "红霸符",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 2.9231,
+      "count": 13,
+      "score": 0.1471,
+      "place_change": -2.224,
+      "priority_scores": {
+        "红霸符": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 4207,
+      "avg": 4.8869,
+      "pcnt": 0.98571
+    },
+    "黑荆棘纹章": {
+      "itemNames": "DA_18_EmblemBlackthorn",
+      "count": 3010,
+      "avg": 4.9728,
+      "pcnt": 0.70525
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 2062,
+      "avg": 4.8429,
+      "pcnt": 0.48313
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 1876,
+      "avg": 4.7345,
+      "pcnt": 0.43955
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 1825,
+      "avg": 4.5841,
+      "pcnt": 0.4276
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 1806,
+      "avg": 4.5194,
+      "pcnt": 0.42315
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 1779,
+      "avg": 4.8134,
+      "pcnt": 0.41682
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 1671,
+      "avg": 4.8462,
+      "pcnt": 0.39152
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 1041,
+      "avg": 4.5303,
+      "pcnt": 0.24391
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 835,
+      "avg": 4.6036,
+      "pcnt": 0.19564
+    },
+    "棘刺背心": {
+      "itemNames": "DA_BrambleVest",
+      "count": 499,
+      "avg": 4.6353,
+      "pcnt": 0.11692
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 765,
+      "avg": 5.2562,
+      "pick_rate": 0.003288
+    },
+    {
+      "day": "2026-10-07",
+      "count": 1452,
+      "avg": 5.0634,
+      "pick_rate": 0.003409
+    },
+    {
+      "day": "2026-10-08",
+      "count": 1215,
+      "avg": 5.27,
+      "pick_rate": 0.00312
+    },
+    {
+      "day": "2026-10-09",
+      "count": 1603,
+      "avg": 5.1154,
+      "pick_rate": 0.00297
+    },
+    {
+      "day": "2026-10-10",
+      "count": 284,
+      "avg": 5.2042,
+      "pick_rate": 0.002894
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.012
+}

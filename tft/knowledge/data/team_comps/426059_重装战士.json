@@ -1,0 +1,221 @@
+{
+  "cluster_id": "426059",
+  "tft_set": "TFTSet18",
+  "units": [
+    "卡西奥佩娅",
+    "黛安娜",
+    "伊莉丝",
+    "赫卡里姆",
+    "洛",
+    "苍蓝雕纹魔像",
+    "塔里克"
+  ],
+  "traits": [
+    "重装战士 (3)",
+    "宝石骑士 (1)"
+  ],
+  "stars": [
+    "伊莉丝",
+    "暗影狼",
+    "凯特琳",
+    "沃里克",
+    "卡兹克",
+    "提莫"
+  ],
+  "name_string": "DA_18_Vanguard, DA_18_Elise",
+  "display_names": [
+    {
+      "name": "重装战士",
+      "type": "trait",
+      "score": 1.8303293971410814
+    },
+    {
+      "name": "伊莉丝",
+      "type": "unit",
+      "score": 4.022684897451834
+    }
+  ],
+  "count": 17717,
+  "avg_placement": 6.0797,
+  "top4_rate": 0.2151,
+  "win_rate": 0.0274,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "伊莉丝",
+      "items": [
+        "狂战士纹章",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 5.1935,
+      "count": 1023,
+      "score": 0.9079,
+      "place_change": -1.029,
+      "priority_scores": {
+        "狂战士纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "赫卡里姆",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.3571,
+      "count": 14,
+      "score": 0.1986,
+      "place_change": -1.865,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "卡西奥佩娅",
+      "items": [
+        "大天使之杖",
+        "蓝霸符",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 4.2143,
+      "count": 14,
+      "score": 0.1283,
+      "place_change": -2.008,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "蓝霸符": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "unit": "黛安娜",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "珠光护手"
+      ],
+      "avg_placement": 4.8182,
+      "count": 11,
+      "score": 0.0988,
+      "place_change": -1.404,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "珠光护手": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 4201,
+      "avg": 5.9771,
+      "pcnt": 0.87031
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 3652,
+      "avg": 6.0879,
+      "pcnt": 0.75658
+    },
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 2961,
+      "avg": 5.7666,
+      "pcnt": 0.61342
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 2219,
+      "avg": 6.0527,
+      "pcnt": 0.45971
+    },
+    "狂战士纹章": {
+      "itemNames": "DA_18_EmblemSlayer",
+      "count": 1648,
+      "avg": 5.4029,
+      "pcnt": 0.34141
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 1181,
+      "avg": 5.8366,
+      "pcnt": 0.24467
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 1016,
+      "avg": 5.435,
+      "pcnt": 0.21048
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 1013,
+      "avg": 5.85,
+      "pcnt": 0.20986
+    },
+    "大天使之杖": {
+      "itemNames": "DA_ArchangelsStaff",
+      "count": 969,
+      "avg": 6.0846,
+      "pcnt": 0.20075
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 584,
+      "avg": 5.1062,
+      "pcnt": 0.12099
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 570,
+      "avg": 5.5474,
+      "pcnt": 0.11809
+    },
+    "蓝霸符": {
+      "itemNames": "DA_BlueBuff",
+      "count": 532,
+      "avg": 5.8496,
+      "pcnt": 0.11021
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 598,
+      "avg": 6.1237,
+      "pick_rate": 0.00257
+    },
+    {
+      "day": "2026-10-07",
+      "count": 1580,
+      "avg": 6.2247,
+      "pick_rate": 0.003709
+    },
+    {
+      "day": "2026-10-08",
+      "count": 1326,
+      "avg": 6.2715,
+      "pick_rate": 0.003405
+    },
+    {
+      "day": "2026-10-09",
+      "count": 1893,
+      "avg": 6.1986,
+      "pick_rate": 0.003508
+    },
+    {
+      "day": "2026-10-10",
+      "count": 334,
+      "avg": 6.1826,
+      "pick_rate": 0.003404
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.051
+}

@@ -2,50 +2,82 @@
   "name": "夜之锋刃",
   "priority_list": [
     {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
-      "comp_tier": "S",
-      "comp_avg": 3.976,
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "comp_tier": "A",
+      "comp_avg": 4.3419,
       "carry": "绯红印记树怪",
       "priority_score": 100
     },
     {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
       "comp_tier": "A",
-      "comp_avg": 4.3871,
+      "comp_avg": 4.3419,
+      "carry": "黛安娜",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "comp_tier": "A",
+      "comp_avg": 4.3911,
       "carry": "凯南",
       "priority_score": 100
     },
     {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
       "comp_tier": "A",
-      "comp_avg": 4.4453,
-      "carry": "雷恩加尔",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
-      "comp_tier": "A",
-      "comp_avg": 4.4453,
-      "carry": "卡兹克",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422012",
-      "comp_name": "DA_18_Invoker, DA_18_Morgana",
-      "comp_tier": "A",
-      "comp_avg": 4.5152,
+      "comp_avg": 4.399,
       "carry": "绯红印记树怪",
       "priority_score": 100
     },
     {
-      "cluster_id": "422009",
+      "cluster_id": "426009",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "comp_tier": "A",
+      "comp_avg": 4.4227,
+      "carry": "绯红印记树怪",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "comp_tier": "A",
+      "comp_avg": 4.4939,
+      "carry": "雷恩加尔",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.2678,
+      "carry": "绯红印记树怪",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "暗影狼",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.5099,
+      "carry": "绯红印记树怪",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426029",
       "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
-      "comp_tier": "S",
-      "comp_avg": 4.1713,
+      "comp_tier": "A",
+      "comp_avg": 4.5193,
       "carry": "易",
       "priority_score": 85
     }

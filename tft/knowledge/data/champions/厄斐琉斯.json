@@ -2,155 +2,215 @@
   "name": "厄斐琉斯",
   "appear_in_comps": [
     {
-      "cluster_id": "422006",
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
+      "tier": "S",
+      "avg_placement": 4.1832
+    },
+    {
+      "cluster_id": "426002",
       "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "tier": "S",
+      "avg_placement": 4.1877
+    },
+    {
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
       "tier": "A",
-      "avg_placement": 4.3252
+      "avg_placement": 4.2678
     },
     {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
-      "tier": "A",
-      "avg_placement": 4.4453
-    },
-    {
-      "cluster_id": "422013",
-      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
-      "tier": "B",
-      "avg_placement": 4.5935
-    },
-    {
-      "cluster_id": "422038",
+      "cluster_id": "426021",
       "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
-      "tier": "B",
-      "avg_placement": 4.6239
+      "tier": "A",
+      "avg_placement": 4.3168
     },
     {
-      "cluster_id": "422014",
-      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
-      "tier": "B",
-      "avg_placement": 4.744
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "tier": "A",
+      "avg_placement": 4.5099
     },
     {
-      "cluster_id": "422044",
-      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
+      "cluster_id": "426024",
+      "comp_name": "DA_18_Elderwood, DA_18_Rengar",
       "tier": "B",
-      "avg_placement": 4.776
+      "avg_placement": 4.6671
     },
     {
-      "cluster_id": "422042",
+      "cluster_id": "426026",
+      "comp_name": "DA_18_Elderwood, DA_18_Lillia",
+      "tier": "B",
+      "avg_placement": 4.6838
+    },
+    {
+      "cluster_id": "426033",
+      "comp_name": "DA_18_Vanguard, DA_18_Hecarim",
+      "tier": "B",
+      "avg_placement": 4.7405
+    },
+    {
+      "cluster_id": "426053",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_18_Vanguard",
+      "tier": "B",
+      "avg_placement": 4.7656
+    },
+    {
+      "cluster_id": "426055",
       "comp_name": "DA_18_Inferno, DA_Amumu18",
       "tier": "D",
-      "avg_placement": 5.1579
+      "avg_placement": 5.2417
     },
     {
-      "cluster_id": "422045",
-      "comp_name": "DA_18_Spellweaver, DA_18_KhaZix",
+      "cluster_id": "426057",
+      "comp_name": "DA_18_Executioner, DA_18_KhaZix",
       "tier": "D",
-      "avg_placement": 5.1856
-    },
-    {
-      "cluster_id": "422052",
-      "comp_name": "DA_Riftbeast18, DA_CrimsonRaptor18",
-      "tier": "D",
-      "avg_placement": 6.2188
+      "avg_placement": 5.6854
     }
   ],
   "builds": [
     {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
       "items": [
-        "永恒之森纹章",
+        "死亡之刃",
         "鬼索的狂暴之刃",
         "海妖之怒"
       ],
-      "avg_placement": 4.0064,
-      "count": 1868,
+      "avg_placement": 4.0032,
+      "count": 10130,
       "priority_scores": {
-        "永恒之森纹章": 100,
+        "死亡之刃": 100,
         "鬼索的狂暴之刃": 85,
         "海妖之怒": 72
       }
     },
     {
-      "cluster_id": "422013",
-      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "items": [
+        "永恒之森纹章",
+        "无尽之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.6748,
+      "count": 449,
+      "priority_scores": {
+        "永恒之森纹章": 100,
+        "无尽之刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
       "items": [
         "死亡之刃",
-        "鬼索的狂暴之刃",
+        "巨人杀手",
         "无尽之刃"
       ],
-      "avg_placement": 4.4068,
-      "count": 7030,
+      "avg_placement": 3.4267,
+      "count": 225,
       "priority_scores": {
         "死亡之刃": 100,
-        "鬼索的狂暴之刃": 85,
+        "巨人杀手": 85,
         "无尽之刃": 72
       }
     },
     {
-      "cluster_id": "422038",
+      "cluster_id": "426021",
       "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
       "items": [
-        "鬼索的狂暴之刃",
+        "巨人杀手",
+        "最后的轻语",
+        "红霸符"
+      ],
+      "avg_placement": 2.68,
+      "count": 50,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "最后的轻语": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "items": [
         "无尽之刃",
+        "海妖之怒",
         "强袭者的链枷"
       ],
-      "avg_placement": 3.3448,
-      "count": 58,
+      "avg_placement": 3.7669,
+      "count": 133,
       "priority_scores": {
-        "鬼索的狂暴之刃": 100,
-        "无尽之刃": 85,
+        "无尽之刃": 100,
+        "海妖之怒": 85,
         "强袭者的链枷": 72
       }
     },
     {
-      "cluster_id": "422044",
-      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
+      "cluster_id": "426026",
+      "comp_name": "DA_18_Elderwood, DA_18_Lillia",
       "items": [
+        "花仙子纹章",
         "巨人杀手",
-        "海妖之怒",
-        "红霸符"
+        "无尽之刃"
       ],
-      "avg_placement": 3.8378,
-      "count": 37,
+      "avg_placement": 2.4545,
+      "count": 11,
       "priority_scores": {
-        "巨人杀手": 100,
-        "海妖之怒": 85,
-        "红霸符": 72
+        "花仙子纹章": 100,
+        "巨人杀手": 85,
+        "无尽之刃": 72
       }
     },
     {
-      "cluster_id": "422042",
-      "comp_name": "DA_18_Inferno, DA_Amumu18",
-      "items": [
-        "地狱火纹章",
-        "死亡之刃",
-        "巨人杀手"
-      ],
-      "avg_placement": 3.6957,
-      "count": 23,
-      "priority_scores": {
-        "地狱火纹章": 100,
-        "死亡之刃": 85,
-        "巨人杀手": 72
-      }
-    },
-    {
-      "cluster_id": "422045",
-      "comp_name": "DA_18_Spellweaver, DA_18_KhaZix",
+      "cluster_id": "426053",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_18_Vanguard",
       "items": [
         "死亡之刃",
-        "最后的轻语",
-        "红霸符"
+        "巨人杀手",
+        "最后的轻语"
       ],
-      "avg_placement": 4.2162,
-      "count": 37,
+      "avg_placement": 3.1765,
+      "count": 17,
       "priority_scores": {
         "死亡之刃": 100,
-        "最后的轻语": 85,
+        "巨人杀手": 85,
+        "最后的轻语": 72
+      }
+    },
+    {
+      "cluster_id": "426055",
+      "comp_name": "DA_18_Inferno, DA_Amumu18",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "红霸符"
+      ],
+      "avg_placement": 3.1667,
+      "count": 12,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
         "红霸符": 72
+      }
+    },
+    {
+      "cluster_id": "426057",
+      "comp_name": "DA_18_Executioner, DA_18_KhaZix",
+      "items": [
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 5.7778,
+      "count": 27,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "海妖之怒": 72
       }
     }
   ]

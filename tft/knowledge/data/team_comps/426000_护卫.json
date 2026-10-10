@@ -1,0 +1,212 @@
+{
+  "cluster_id": "426000",
+  "tft_set": "TFTSet18",
+  "units": [
+    "卡西奥佩娅",
+    "莉莉娅",
+    "奥恩",
+    "拉莫斯",
+    "雷恩加尔",
+    "慎",
+    "费德提克"
+  ],
+  "traits": [
+    "护卫 (3)",
+    "宿敌 (1)",
+    "法师 (1)",
+    "绝命花妖 (1)"
+  ],
+  "stars": [
+    "雷恩加尔",
+    "卡西奥佩娅",
+    "拉莫斯",
+    "费德提克",
+    "崔丝塔娜",
+    "卡兹克",
+    "易"
+  ],
+  "name_string": "DA_18_Defender, DA_18_Rengar",
+  "display_names": [
+    {
+      "name": "护卫",
+      "type": "trait",
+      "score": 2.932970156324017
+    },
+    {
+      "name": "雷恩加尔",
+      "type": "unit",
+      "score": 4.428233064898153
+    }
+  ],
+  "count": 16202,
+  "avg_placement": 4.0991,
+  "top4_rate": 0.5793,
+  "win_rate": 0.1422,
+  "tier": "S",
+  "builds": [
+    {
+      "unit": "雷恩加尔",
+      "items": [
+        "护卫纹章",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 3.7515,
+      "count": 2338,
+      "score": 0.5254,
+      "place_change": -0.279,
+      "priority_scores": {
+        "护卫纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "卡西奥佩娅",
+      "items": [
+        "大天使之杖",
+        "蓝霸符",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 3.5458,
+      "count": 742,
+      "score": 0.4915,
+      "place_change": -0.485,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "蓝霸符": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "unit": "拉莫斯",
+      "items": [
+        "棘刺背心",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 2.16,
+      "count": 25,
+      "score": 0.4484,
+      "place_change": -1.871,
+      "priority_scores": {
+        "棘刺背心": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "费德提克",
+      "items": [
+        "适应性头盔",
+        "大天使之杖",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 2.8571,
+      "count": 35,
+      "score": 0.2199,
+      "place_change": -1.174,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "大天使之杖": 85,
+        "泰坦的坚决": 72
+      }
+    }
+  ],
+  "build_items": {
+    "护卫纹章": {
+      "itemNames": "DA_18_EmblemDefender",
+      "count": 8319,
+      "avg": 3.9572,
+      "pcnt": 0.9852
+    },
+    "大天使之杖": {
+      "itemNames": "DA_ArchangelsStaff",
+      "count": 7457,
+      "avg": 3.8395,
+      "pcnt": 0.88311
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 6229,
+      "avg": 3.8308,
+      "pcnt": 0.73768
+    },
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 5787,
+      "avg": 3.7864,
+      "pcnt": 0.68534
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 5111,
+      "avg": 3.9941,
+      "pcnt": 0.60528
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 4836,
+      "avg": 3.8156,
+      "pcnt": 0.57271
+    },
+    "适应性头盔": {
+      "itemNames": "DA_AdaptiveHelm",
+      "count": 2952,
+      "avg": 3.5152,
+      "pcnt": 0.3496
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 2928,
+      "avg": 3.5878,
+      "pcnt": 0.34676
+    },
+    "蓝霸符": {
+      "itemNames": "DA_BlueBuff",
+      "count": 1996,
+      "avg": 3.7204,
+      "pcnt": 0.23638
+    },
+    "棘刺背心": {
+      "itemNames": "DA_BrambleVest",
+      "count": 1058,
+      "avg": 3.3384,
+      "pcnt": 0.1253
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 1432,
+      "avg": 4.1557,
+      "pick_rate": 0.006155
+    },
+    {
+      "day": "2026-10-07",
+      "count": 2382,
+      "avg": 3.9345,
+      "pick_rate": 0.005592
+    },
+    {
+      "day": "2026-10-08",
+      "count": 2305,
+      "avg": 4.0104,
+      "pick_rate": 0.005918
+    },
+    {
+      "day": "2026-10-09",
+      "count": 3479,
+      "avg": 4.1009,
+      "pick_rate": 0.006447
+    },
+    {
+      "day": "2026-10-10",
+      "count": 705,
+      "avg": 4.1901,
+      "pick_rate": 0.007185
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": 0.031
+}

@@ -2,35 +2,47 @@
   "name": "提莫",
   "appear_in_comps": [
     {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
       "tier": "S",
-      "avg_placement": 4.0985
+      "avg_placement": 4.1276
     },
     {
-      "cluster_id": "422011",
-      "comp_name": "DA_18_Invoker, DA_18_Sentry",
-      "tier": "B",
-      "avg_placement": 4.5469
-    },
-    {
-      "cluster_id": "422028",
+      "cluster_id": "426006",
       "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "tier": "A",
+      "avg_placement": 4.2845
+    },
+    {
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
+      "tier": "A",
+      "avg_placement": 4.3827
+    },
+    {
+      "cluster_id": "426044",
+      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
       "tier": "C",
-      "avg_placement": 4.8495
+      "avg_placement": 4.8811
+    },
+    {
+      "cluster_id": "426047",
+      "comp_name": "DA_18_Sprykin, DA_18_Tristana",
+      "tier": "C",
+      "avg_placement": 5.0149
     }
   ],
   "builds": [
     {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
       "items": [
         "莫雷洛秘典",
         "朔极之矛",
         "虚空之杖"
       ],
-      "avg_placement": 3.5063,
-      "count": 5177,
+      "avg_placement": 4.3115,
+      "count": 719,
       "priority_scores": {
         "莫雷洛秘典": 100,
         "朔极之矛": 85,
@@ -38,19 +50,66 @@
       }
     },
     {
-      "cluster_id": "422028",
-      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
       "items": [
+        "海克斯科技枪刃",
         "珠光护手",
-        "灭世者的死亡之帽",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 4.0794,
+      "count": 403,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "cluster_id": "426044",
+      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "items": [
+        "巨人杀手",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.7692,
+      "count": 13,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "莫雷洛秘典": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "cluster_id": "426047",
+      "comp_name": "DA_18_Sprykin, DA_18_Tristana",
+      "items": [
+        "海克斯科技枪刃",
+        "珠光护手",
         "朔极之矛"
       ],
-      "avg_placement": 4.2833,
-      "count": 593,
+      "avg_placement": 4.1,
+      "count": 20,
       "priority_scores": {
-        "珠光护手": 100,
-        "灭世者的死亡之帽": 85,
+        "海克斯科技枪刃": 100,
+        "珠光护手": 85,
         "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "426051",
+      "comp_name": "DA_Riftbeast18, DA_Gromp18_AP",
+      "items": [
+        "大天使之杖",
+        "大天使之杖",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 3.9524,
+      "count": 21,
+      "priority_scores": {
+        "大天使之杖": 85,
+        "海克斯科技枪刃": 72
       }
     }
   ]

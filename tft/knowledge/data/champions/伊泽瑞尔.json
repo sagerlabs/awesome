@@ -2,148 +2,142 @@
   "name": "伊泽瑞尔",
   "appear_in_comps": [
     {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
-      "tier": "A",
-      "avg_placement": 4.3871
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "tier": "S",
+      "avg_placement": 4.1877
     },
     {
-      "cluster_id": "422008",
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "tier": "A",
+      "avg_placement": 4.3357
+    },
+    {
+      "cluster_id": "426012",
       "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
       "tier": "A",
-      "avg_placement": 4.4453
+      "avg_placement": 4.3675
     },
     {
-      "cluster_id": "422001",
-      "comp_name": "DA_18_Executioner, DA_18_Sett",
-      "tier": "B",
-      "avg_placement": 4.6
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "tier": "A",
+      "avg_placement": 4.3911
     },
     {
-      "cluster_id": "422023",
-      "comp_name": "DA_18_Executioner, DA_18_Yunara",
-      "tier": "B",
-      "avg_placement": 4.604
-    },
-    {
-      "cluster_id": "422019",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Ezreal",
-      "tier": "B",
-      "avg_placement": 4.7481
-    },
-    {
-      "cluster_id": "422037",
+      "cluster_id": "426036",
       "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
-      "tier": "C",
-      "avg_placement": 4.82
+      "tier": "A",
+      "avg_placement": 4.5055
     },
     {
-      "cluster_id": "422034",
-      "comp_name": "DA_18_Elderwood, DA_18_Sett",
-      "tier": "D",
-      "avg_placement": 5.2877
+      "cluster_id": "426019",
+      "comp_name": "DA_18_Blackthorn, DA_18_Yunara",
+      "tier": "B",
+      "avg_placement": 4.5772
     },
     {
-      "cluster_id": "422051",
-      "comp_name": "DA_18_Elderwood, DA_18_LeBlanc",
-      "tier": "D",
-      "avg_placement": 6.0247
+      "cluster_id": "426024",
+      "comp_name": "DA_18_Elderwood, DA_18_Rengar",
+      "tier": "B",
+      "avg_placement": 4.6671
     }
   ],
   "builds": [
     {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "cluster_id": "426002",
+      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
       "items": [
-        "最后的轻语",
-        "朔极之矛",
-        "强袭者的链枷"
+        "死亡之刃",
+        "无尽之刃",
+        "朔极之矛"
       ],
-      "avg_placement": 3.9111,
-      "count": 2744,
+      "avg_placement": 3.8121,
+      "count": 942,
       "priority_scores": {
-        "最后的轻语": 100,
-        "朔极之矛": 85,
-        "强袭者的链枷": 72
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "朔极之矛": 72
       }
     },
     {
-      "cluster_id": "422001",
+      "cluster_id": "426005",
       "comp_name": "DA_18_Executioner, DA_18_Sett",
       "items": [
-        "无尽之刃",
-        "朔极之矛",
-        "强袭者的链枷"
+        "死亡之刃",
+        "最后的轻语",
+        "朔极之矛"
       ],
-      "avg_placement": 3.8771,
-      "count": 301,
+      "avg_placement": 4.2221,
+      "count": 3052,
       "priority_scores": {
-        "无尽之刃": 100,
-        "朔极之矛": 85,
-        "强袭者的链枷": 72
+        "死亡之刃": 100,
+        "最后的轻语": 85,
+        "朔极之矛": 72
       }
     },
     {
-      "cluster_id": "422023",
-      "comp_name": "DA_18_Executioner, DA_18_Yunara",
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
       "items": [
-        "最后的轻语",
+        "死亡之刃",
         "红霸符",
         "朔极之矛"
       ],
-      "avg_placement": 3.6276,
-      "count": 333,
+      "avg_placement": 3.2585,
+      "count": 1582,
       "priority_scores": {
-        "最后的轻语": 100,
+        "死亡之刃": 100,
         "红霸符": 85,
         "朔极之矛": 72
       }
     },
     {
-      "cluster_id": "422019",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Ezreal",
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
       "items": [
-        "死亡之刃",
         "最后的轻语",
-        "强袭者的链枷"
-      ],
-      "avg_placement": 3.7386,
-      "count": 88,
-      "priority_scores": {
-        "死亡之刃": 100,
-        "最后的轻语": 85,
-        "强袭者的链枷": 72
-      }
-    },
-    {
-      "cluster_id": "422037",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
-      "items": [
-        "死亡之刃",
         "朔极之矛",
         "强袭者的链枷"
       ],
-      "avg_placement": 4.3342,
-      "count": 748,
+      "avg_placement": 3.6624,
+      "count": 1262,
       "priority_scores": {
-        "死亡之刃": 100,
+        "最后的轻语": 100,
         "朔极之矛": 85,
         "强袭者的链枷": 72
       }
     },
     {
-      "cluster_id": "422034",
-      "comp_name": "DA_18_Elderwood, DA_18_Sett",
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
       "items": [
-        "最后的轻语",
-        "红霸符",
+        "死亡之刃",
+        "无尽之刃",
         "朔极之矛"
       ],
-      "avg_placement": 4.1714,
-      "count": 35,
+      "avg_placement": 4.0803,
+      "count": 598,
       "priority_scores": {
-        "最后的轻语": 100,
-        "红霸符": 85,
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "cluster_id": "426050",
+      "comp_name": "DA_18_Executioner, DA_18_Soraka",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.6296,
+      "count": 27,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
         "朔极之矛": 72
       }
     }

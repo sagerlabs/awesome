@@ -2,18 +2,18 @@
   "name": "神谕纹章",
   "priority_list": [
     {
-      "cluster_id": "422021",
-      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
-      "comp_tier": "S",
-      "comp_avg": 4.2328,
+      "cluster_id": "426010",
+      "comp_name": "DA_18_Invoker, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.3346,
       "carry": "阿狸",
       "priority_score": 100
     },
     {
-      "cluster_id": "422012",
+      "cluster_id": "426009",
       "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "comp_tier": "A",
-      "comp_avg": 4.5152,
+      "comp_avg": 4.4227,
       "carry": "拉露恩",
       "priority_score": 100
     }

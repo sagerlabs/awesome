@@ -1,0 +1,205 @@
+{
+  "cluster_id": "426010",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿狸",
+    "莫甘娜",
+    "苍蓝哨戒",
+    "瑟提",
+    "卡尔玛",
+    "远古石甲虫",
+    "苍蓝雕纹魔像",
+    "塔里克"
+  ],
+  "traits": [
+    "灵魂莲华 (1)",
+    "斗士 (1)",
+    "神谕 (2)",
+    "法师 (1)",
+    "重装战士 (1)",
+    "宝石骑士 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "阿卡丽",
+    "蕾欧娜",
+    "霞",
+    "韦鲁斯"
+  ],
+  "name_string": "DA_18_Invoker, DA_18_Ahri",
+  "display_names": [
+    {
+      "name": "神谕",
+      "type": "trait",
+      "score": 2.389362177988329
+    },
+    {
+      "name": "阿狸",
+      "type": "unit",
+      "score": 4.287502795681434
+    }
+  ],
+  "count": 189462,
+  "avg_placement": 4.3346,
+  "top4_rate": 0.5378,
+  "win_rate": 0.118,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "莫甘娜",
+      "items": [
+        "莫雷洛秘典",
+        "灭世者的死亡之帽",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.6967,
+      "count": 5563,
+      "score": 0.4764,
+      "place_change": -0.643,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "灭世者的死亡之帽": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "阿狸",
+      "items": [
+        "神谕纹章",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.9066,
+      "count": 4541,
+      "score": 0.4589,
+      "place_change": -0.433,
+      "priority_scores": {
+        "神谕纹章": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "圣盾使的誓约",
+        "圣盾使的誓约",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.3508,
+      "count": 1753,
+      "score": 0.3095,
+      "place_change": -0.989,
+      "priority_scores": {
+        "圣盾使的誓约": 72
+      }
+    },
+    {
+      "unit": "瑟提",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.8872,
+      "count": 3147,
+      "score": 0.2889,
+      "place_change": -0.453,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 100089,
+      "avg": 4.209,
+      "pcnt": 1.01752
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 99110,
+      "avg": 4.2245,
+      "pcnt": 1.00756
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 75668,
+      "avg": 4.1409,
+      "pcnt": 0.76925
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 58395,
+      "avg": 4.0634,
+      "pcnt": 0.59365
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 58247,
+      "avg": 4.0921,
+      "pcnt": 0.59215
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 54199,
+      "avg": 3.8821,
+      "pcnt": 0.55099
+    },
+    "神谕纹章": {
+      "itemNames": "DA_18_EmblemInvoker",
+      "count": 39842,
+      "avg": 4.1791,
+      "pcnt": 0.40504
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 39038,
+      "avg": 3.9697,
+      "pcnt": 0.39686
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 29818,
+      "avg": 3.9216,
+      "pcnt": 0.30313
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 17587,
+      "avg": 4.3575,
+      "pick_rate": 0.075597
+    },
+    {
+      "day": "2026-10-07",
+      "count": 29586,
+      "avg": 4.2753,
+      "pick_rate": 0.069453
+    },
+    {
+      "day": "2026-10-08",
+      "count": 28479,
+      "avg": 4.3572,
+      "pick_rate": 0.073121
+    },
+    {
+      "day": "2026-10-09",
+      "count": 38989,
+      "avg": 4.3699,
+      "pick_rate": 0.072246
+    },
+    {
+      "day": "2026-10-10",
+      "count": 7017,
+      "avg": 4.3501,
+      "pick_rate": 0.071514
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": 0.089
+}

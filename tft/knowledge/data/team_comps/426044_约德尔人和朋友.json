@@ -1,0 +1,215 @@
+{
+  "cluster_id": "426044",
+  "tft_set": "TFTSet18",
+  "units": [
+    "纳尔",
+    "可酷伯",
+    "拉莫斯",
+    "雷克塞",
+    "瑟提",
+    "提莫",
+    "维迦",
+    "费德提克"
+  ],
+  "traits": [
+    "黑荆棘 (1)",
+    "斗士 (2)",
+    "护卫 (1)",
+    "法师 (1)",
+    "约德尔人和朋友 (2)",
+    "绝命花妖 (1)"
+  ],
+  "stars": [
+    "维迦",
+    "雷克塞",
+    "可酷伯",
+    "提莫",
+    "乐芙兰",
+    "奥恩",
+    "卡尔玛",
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Sprykin, DA_18_Veigar",
+  "display_names": [
+    {
+      "name": "约德尔人和朋友",
+      "type": "trait",
+      "score": 1.6943105110896817
+    },
+    {
+      "name": "维迦",
+      "type": "unit",
+      "score": 3.9691417550626804
+    }
+  ],
+  "count": 34809,
+  "avg_placement": 4.8811,
+  "top4_rate": 0.434,
+  "win_rate": 0.0508,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "维迦",
+      "items": [
+        "大天使之杖",
+        "蓝霸符",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 4.0476,
+      "count": 21,
+      "score": 0.4988,
+      "place_change": -1.019,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "蓝霸符": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "unit": "雷克塞",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "坚定之心"
+      ],
+      "avg_placement": 3.3333,
+      "count": 18,
+      "score": 0.3604,
+      "place_change": -1.733,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "坚定之心": 72
+      }
+    },
+    {
+      "unit": "提莫",
+      "items": [
+        "巨人杀手",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.7692,
+      "count": 13,
+      "score": 0.2389,
+      "place_change": -1.297,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "莫雷洛秘典": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "拉莫斯",
+      "items": [
+        "石像鬼石板甲",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.8421,
+      "count": 19,
+      "score": 0.1674,
+      "place_change": -1.224,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 4676,
+      "avg": 4.8201,
+      "pcnt": 1.12729
+    },
+    "蓝霸符": {
+      "itemNames": "DA_BlueBuff",
+      "count": 2726,
+      "avg": 4.8338,
+      "pcnt": 0.65718
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 2720,
+      "avg": 4.8713,
+      "pcnt": 0.65574
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 2098,
+      "avg": 4.684,
+      "pcnt": 0.50579
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 1549,
+      "avg": 4.7134,
+      "pcnt": 0.37343
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 1098,
+      "avg": 4.7377,
+      "pcnt": 0.26471
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 1045,
+      "avg": 4.5407,
+      "pcnt": 0.25193
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 964,
+      "avg": 4.6867,
+      "pcnt": 0.2324
+    },
+    "坚定之心": {
+      "itemNames": "DA_SteadfastHeart",
+      "count": 956,
+      "avg": 4.5492,
+      "pcnt": 0.23047
+    },
+    "大天使之杖": {
+      "itemNames": "DA_ArchangelsStaff",
+      "count": 892,
+      "avg": 4.8924,
+      "pcnt": 0.21504
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 680,
+      "avg": 4.9706,
+      "pick_rate": 0.002923
+    },
+    {
+      "day": "2026-10-07",
+      "count": 1337,
+      "avg": 5.0621,
+      "pick_rate": 0.003139
+    },
+    {
+      "day": "2026-10-08",
+      "count": 1147,
+      "avg": 5.0593,
+      "pick_rate": 0.002945
+    },
+    {
+      "day": "2026-10-09",
+      "count": 1642,
+      "avg": 5.0737,
+      "pick_rate": 0.003043
+    },
+    {
+      "day": "2026-10-10",
+      "count": 286,
+      "avg": 5.0699,
+      "pick_rate": 0.002915
+    }
+  ],
+  "levelling": "lvl 5",
+  "difficulty": -0.063
+}

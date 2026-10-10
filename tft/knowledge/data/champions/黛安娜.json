@@ -2,123 +2,125 @@
   "name": "黛安娜",
   "appear_in_comps": [
     {
-      "cluster_id": "422006",
-      "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
-      "tier": "A",
-      "avg_placement": 4.3252
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
+      "tier": "S",
+      "avg_placement": 4.1832
     },
     {
-      "cluster_id": "422008",
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "tier": "S",
+      "avg_placement": 4.207
+    },
+    {
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "tier": "A",
+      "avg_placement": 4.2727
+    },
+    {
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "tier": "A",
+      "avg_placement": 4.3168
+    },
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "tier": "A",
+      "avg_placement": 4.3419
+    },
+    {
+      "cluster_id": "426012",
       "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
       "tier": "A",
-      "avg_placement": 4.4453
+      "avg_placement": 4.3675
     },
     {
-      "cluster_id": "422012",
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "tier": "A",
+      "avg_placement": 4.399
+    },
+    {
+      "cluster_id": "426009",
       "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "tier": "A",
-      "avg_placement": 4.5152
+      "avg_placement": 4.4227
     },
     {
-      "cluster_id": "422013",
+      "cluster_id": "426017",
       "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "tier": "A",
+      "avg_placement": 4.5099
+    },
+    {
+      "cluster_id": "426024",
+      "comp_name": "DA_18_Elderwood, DA_18_Rengar",
       "tier": "B",
-      "avg_placement": 4.5935
+      "avg_placement": 4.6671
     },
     {
-      "cluster_id": "422038",
-      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "cluster_id": "426026",
+      "comp_name": "DA_18_Elderwood, DA_18_Lillia",
       "tier": "B",
-      "avg_placement": 4.6239
+      "avg_placement": 4.6838
     },
     {
-      "cluster_id": "422014",
-      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
+      "cluster_id": "426033",
+      "comp_name": "DA_18_Vanguard, DA_18_Hecarim",
       "tier": "B",
-      "avg_placement": 4.744
+      "avg_placement": 4.7405
     },
     {
-      "cluster_id": "422027",
-      "comp_name": "DA_18_Spellweaver, DA_18_Lillia",
+      "cluster_id": "426053",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_18_Vanguard",
       "tier": "B",
-      "avg_placement": 4.7714
+      "avg_placement": 4.7656
     },
     {
-      "cluster_id": "422044",
-      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
-      "tier": "B",
-      "avg_placement": 4.776
-    },
-    {
-      "cluster_id": "422032",
-      "comp_name": "DA_18_Blackthorn, DA_18_Warwick",
-      "tier": "C",
-      "avg_placement": 4.9095
-    },
-    {
-      "cluster_id": "422041",
+      "cluster_id": "426050",
       "comp_name": "DA_18_Executioner, DA_18_Soraka",
       "tier": "C",
-      "avg_placement": 5.0
+      "avg_placement": 5.0042
     },
     {
-      "cluster_id": "422042",
+      "cluster_id": "426055",
       "comp_name": "DA_18_Inferno, DA_Amumu18",
       "tier": "D",
-      "avg_placement": 5.1579
+      "avg_placement": 5.2417
     },
     {
-      "cluster_id": "422045",
-      "comp_name": "DA_18_Spellweaver, DA_18_KhaZix",
+      "cluster_id": "426054",
+      "comp_name": "DA_18_Coven, DA_18_Elise",
       "tier": "D",
-      "avg_placement": 5.1856
+      "avg_placement": 5.3499
     },
     {
-      "cluster_id": "422049",
-      "comp_name": "DA_18_Defender, DA_18_Rammus",
+      "cluster_id": "426057",
+      "comp_name": "DA_18_Executioner, DA_18_KhaZix",
       "tier": "D",
-      "avg_placement": 5.8333
+      "avg_placement": 5.6854
     },
     {
-      "cluster_id": "422050",
-      "comp_name": "DA_18_Coven, DA_18_Morgana",
+      "cluster_id": "426059",
+      "comp_name": "DA_18_Vanguard, DA_18_Elise",
       "tier": "D",
-      "avg_placement": 5.8427
-    },
-    {
-      "cluster_id": "422052",
-      "comp_name": "DA_Riftbeast18, DA_CrimsonRaptor18",
-      "tier": "D",
-      "avg_placement": 6.2188
+      "avg_placement": 6.0797
     }
   ],
   "builds": [
     {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
-      "items": [
-        "正义之手",
-        "离子火花",
-        "珠光护手"
-      ],
-      "avg_placement": 3.6762,
-      "count": 281,
-      "priority_scores": {
-        "正义之手": 100,
-        "离子火花": 85,
-        "珠光护手": 72
-      }
-    },
-    {
-      "cluster_id": "422014",
-      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
       "items": [
         "夜之锋刃",
         "正义之手",
         "珠光护手"
       ],
-      "avg_placement": 3.9206,
-      "count": 63,
+      "avg_placement": 2.8571,
+      "count": 7,
       "priority_scores": {
         "夜之锋刃": 100,
         "正义之手": 85,
@@ -126,27 +128,75 @@
       }
     },
     {
-      "cluster_id": "422044",
-      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
       "items": [
-        "金锅铲冠冕"
+        "正义之手",
+        "离子火花",
+        "珠光护手"
       ],
-      "avg_placement": 3.3714,
-      "count": 35,
+      "avg_placement": 3.4712,
+      "count": 1458,
       "priority_scores": {
-        "金锅铲冠冕": 100
+        "正义之手": 100,
+        "离子火花": 85,
+        "珠光护手": 72
       }
     },
     {
-      "cluster_id": "422045",
-      "comp_name": "DA_18_Spellweaver, DA_18_KhaZix",
+      "cluster_id": "426024",
+      "comp_name": "DA_18_Elderwood, DA_18_Rengar",
       "items": [
-        "离子火花"
+        "日炎斗篷"
       ],
-      "avg_placement": 4.5789,
-      "count": 38,
+      "avg_placement": 3.8304,
+      "count": 112,
       "priority_scores": {
-        "离子火花": 100
+        "日炎斗篷": 100
+      }
+    },
+    {
+      "cluster_id": "426026",
+      "comp_name": "DA_18_Elderwood, DA_18_Lillia",
+      "items": [
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.9333,
+      "count": 15,
+      "priority_scores": {
+        "斯特拉克的挑战护手": 100
+      }
+    },
+    {
+      "cluster_id": "426033",
+      "comp_name": "DA_18_Vanguard, DA_18_Hecarim",
+      "items": [
+        "正义之手",
+        "珠光护手",
+        "水银"
+      ],
+      "avg_placement": 3.7778,
+      "count": 9,
+      "priority_scores": {
+        "正义之手": 100,
+        "珠光护手": 85,
+        "水银": 72
+      }
+    },
+    {
+      "cluster_id": "426059",
+      "comp_name": "DA_18_Vanguard, DA_18_Elise",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "珠光护手"
+      ],
+      "avg_placement": 4.8182,
+      "count": 11,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "珠光护手": 72
       }
     }
   ]

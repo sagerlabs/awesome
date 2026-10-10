@@ -1,0 +1,205 @@
+{
+  "cluster_id": "426027",
+  "tft_set": "TFTSet18",
+  "units": [
+    "拉露恩",
+    "卡西奥佩娅",
+    "黛安娜",
+    "远古巨龙",
+    "伊莉丝",
+    "莫甘娜",
+    "苍蓝雕纹魔像",
+    "塔里克"
+  ],
+  "traits": [
+    "顶级掠食者 (1)",
+    "魔女 (1)",
+    "神谕 (1)",
+    "月蚀骑士 (1)",
+    "法师 (1)",
+    "重装战士 (2)",
+    "月华神女 (1)",
+    "宝石骑士 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "奥恩"
+  ],
+  "name_string": "DA_18_Vanguard, DA_18_Ahri",
+  "display_names": [
+    {
+      "name": "重装战士",
+      "type": "trait",
+      "score": 1.7962442514052122
+    },
+    {
+      "name": "莫甘娜",
+      "type": "unit",
+      "score": 3.6530403679100667
+    }
+  ],
+  "count": 51727,
+  "avg_placement": 4.2727,
+  "top4_rate": 0.5276,
+  "win_rate": 0.1902,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "莫甘娜",
+      "items": [
+        "法师纹章",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.8244,
+      "count": 524,
+      "score": 0.4817,
+      "place_change": -0.64,
+      "priority_scores": {
+        "法师纹章": 100,
+        "莫雷洛秘典": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "石像鬼石板甲",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.826,
+      "count": 684,
+      "score": 0.4558,
+      "place_change": -0.638,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "拉露恩",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.4765,
+      "count": 447,
+      "score": 0.4161,
+      "place_change": -0.988,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "阿狸",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "纳什之牙"
+      ],
+      "avg_placement": 3.8571,
+      "count": 56,
+      "score": 0.1975,
+      "place_change": -0.607,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 15695,
+      "avg": 4.2905,
+      "pcnt": 1.00249
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 13688,
+      "avg": 4.2575,
+      "pcnt": 0.8743
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 12036,
+      "avg": 4.1581,
+      "pcnt": 0.76878
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 11381,
+      "avg": 4.2905,
+      "pcnt": 0.72694
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 9178,
+      "avg": 4.1219,
+      "pcnt": 0.58623
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 9028,
+      "avg": 4.2363,
+      "pcnt": 0.57665
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 7994,
+      "avg": 4.1394,
+      "pcnt": 0.5106
+    },
+    "纳什之牙": {
+      "itemNames": "DA_NashorsTooth",
+      "count": 3894,
+      "avg": 4.0208,
+      "pcnt": 0.24872
+    },
+    "法师纹章": {
+      "itemNames": "DA_18_EmblemSpellweaver",
+      "count": 2328,
+      "avg": 4.1499,
+      "pcnt": 0.1487
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 2626,
+      "avg": 4.4756,
+      "pick_rate": 0.011288
+    },
+    {
+      "day": "2026-10-07",
+      "count": 5581,
+      "avg": 4.4684,
+      "pick_rate": 0.013101
+    },
+    {
+      "day": "2026-10-08",
+      "count": 4467,
+      "avg": 4.5084,
+      "pick_rate": 0.011469
+    },
+    {
+      "day": "2026-10-09",
+      "count": 5677,
+      "avg": 4.4546,
+      "pick_rate": 0.010519
+    },
+    {
+      "day": "2026-10-10",
+      "count": 1005,
+      "avg": 4.4318,
+      "pick_rate": 0.010243
+    }
+  ],
+  "levelling": "Fast 9",
+  "difficulty": -0.063
+}

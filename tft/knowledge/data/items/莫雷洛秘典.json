@@ -2,34 +2,66 @@
   "name": "莫雷洛秘典",
   "priority_list": [
     {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
       "comp_tier": "S",
-      "comp_avg": 4.0985,
+      "comp_avg": 4.1276,
+      "carry": "婕拉",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
+      "carry": "莫甘娜",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.2845,
       "carry": "提莫",
       "priority_score": 100
     },
     {
-      "cluster_id": "422021",
-      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
-      "comp_tier": "S",
-      "comp_avg": 4.2328,
+      "cluster_id": "426010",
+      "comp_name": "DA_18_Invoker, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.3346,
       "carry": "莫甘娜",
       "priority_score": 100
     },
     {
-      "cluster_id": "422017",
-      "comp_name": "DA_18_Invoker, DA_Nidalee18_AP",
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
       "comp_tier": "A",
-      "comp_avg": 4.4826,
+      "comp_avg": 4.2727,
       "carry": "莫甘娜",
       "priority_score": 85
     },
     {
-      "cluster_id": "422012",
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "comp_tier": "A",
+      "comp_avg": 4.3434,
+      "carry": "乐芙兰",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3827,
+      "carry": "莫甘娜",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426009",
       "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "comp_tier": "A",
-      "comp_avg": 4.5152,
+      "comp_avg": 4.4227,
       "carry": "莫甘娜",
       "priority_score": 85
     }

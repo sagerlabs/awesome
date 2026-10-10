@@ -1,0 +1,220 @@
+{
+  "cluster_id": "426007",
+  "tft_set": "TFTSet18",
+  "units": [
+    "远古巨龙",
+    "纳尔",
+    "苍蓝哨戒",
+    "绯红印记树怪",
+    "远古石甲虫",
+    "暗影狼",
+    "苍蓝雕纹魔像",
+    "塔里克"
+  ],
+  "traits": [
+    "顶级掠食者 (1)",
+    "斗士 (1)",
+    "神谕 (1)",
+    "狂战士 (1)",
+    "重装战士 (1)",
+    "宝石骑士 (1)",
+    "峡谷野怪 (3)"
+  ],
+  "stars": [
+    "苍蓝哨戒",
+    "远古石甲虫",
+    "峡谷迅捷蟹",
+    "绯红树怪",
+    "魔沼蛙",
+    "韦鲁斯",
+    "霞",
+    "卡蜜尔",
+    "卡尔玛",
+    "蕾欧娜",
+    "维迦"
+  ],
+  "name_string": "DA_Riftbeast18, DA_18_Sentry",
+  "display_names": [
+    {
+      "name": "峡谷野怪",
+      "type": "trait",
+      "score": 3.041839465307106
+    },
+    {
+      "name": "苍蓝哨戒",
+      "type": "unit",
+      "score": 3.2582087280751812
+    }
+  ],
+  "count": 302034,
+  "avg_placement": 4.1565,
+  "top4_rate": 0.5665,
+  "win_rate": 0.1429,
+  "tier": "S",
+  "builds": [
+    {
+      "unit": "远古巨龙",
+      "items": [
+        "无尽之刃",
+        "最后的轻语",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.0643,
+      "count": 3592,
+      "score": 0.3856,
+      "place_change": -1.102,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "最后的轻语": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "苍蓝哨戒",
+      "items": [
+        "蓝霸符",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.9066,
+      "count": 8372,
+      "score": 0.3433,
+      "place_change": -0.26,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "珠光护手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "远古石甲虫",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.6787,
+      "count": 2129,
+      "score": 0.3182,
+      "place_change": -0.487,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "绯红树怪",
+      "items": [
+        "蓝霸符",
+        "巨人杀手",
+        "最后的轻语"
+      ],
+      "avg_placement": 3.5537,
+      "count": 242,
+      "score": 0.119,
+      "place_change": -0.612,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "巨人杀手": 85,
+        "最后的轻语": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 81098,
+      "avg": 4.0649,
+      "pcnt": 1.02852
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 57690,
+      "avg": 3.9639,
+      "pcnt": 0.73165
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 51556,
+      "avg": 3.9903,
+      "pcnt": 0.65386
+    },
+    "蓝霸符": {
+      "itemNames": "DA_BlueBuff",
+      "count": 47379,
+      "avg": 4.0459,
+      "pcnt": 0.60088
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 40928,
+      "avg": 3.9205,
+      "pcnt": 0.51907
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 37699,
+      "avg": 4.0679,
+      "pcnt": 0.47812
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 26919,
+      "avg": 3.8149,
+      "pcnt": 0.3414
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 26880,
+      "avg": 3.9883,
+      "pcnt": 0.3409
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 18095,
+      "avg": 3.6864,
+      "pcnt": 0.22949
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 15985,
+      "avg": 3.8114,
+      "pcnt": 0.20273
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 3168,
+      "avg": 4.666,
+      "pick_rate": 0.013618
+    },
+    {
+      "day": "2026-10-07",
+      "count": 16531,
+      "avg": 4.1654,
+      "pick_rate": 0.038807
+    },
+    {
+      "day": "2026-10-08",
+      "count": 23576,
+      "avg": 4.2009,
+      "pick_rate": 0.060532
+    },
+    {
+      "day": "2026-10-09",
+      "count": 34313,
+      "avg": 4.1482,
+      "pick_rate": 0.063582
+    },
+    {
+      "day": "2026-10-10",
+      "count": 6345,
+      "avg": 4.1497,
+      "pick_rate": 0.064666
+    }
+  ],
+  "levelling": "lvl 5",
+  "difficulty": -0.086
+}

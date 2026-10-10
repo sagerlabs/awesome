@@ -2,26 +2,50 @@
   "name": "海克斯科技枪刃",
   "priority_list": [
     {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
       "comp_tier": "A",
-      "comp_avg": 4.4132,
-      "carry": "凯特琳",
+      "comp_avg": 4.3357,
+      "carry": "索拉卡",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3827,
+      "carry": "提莫",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
+      "comp_tier": "S",
+      "comp_avg": 4.1276,
+      "carry": "阿兹尔",
       "priority_score": 85
     },
     {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
       "comp_tier": "A",
-      "comp_avg": 4.3301,
-      "carry": "崔丝塔娜",
+      "comp_avg": 4.5099,
+      "carry": "深红锋喙鸟",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "comp_tier": "S",
+      "comp_avg": 4.0991,
+      "carry": "卡西奥佩娅",
       "priority_score": 72
     },
     {
-      "cluster_id": "422003",
+      "cluster_id": "426018",
       "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
       "comp_tier": "A",
-      "comp_avg": 4.3641,
+      "comp_avg": 4.5077,
       "carry": "卡西奥佩娅",
       "priority_score": 72
     }

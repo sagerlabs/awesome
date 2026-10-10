@@ -1,0 +1,216 @@
+{
+  "cluster_id": "426014",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿利斯塔",
+    "卡西奥佩娅",
+    "乐芙兰",
+    "奥恩",
+    "雷克塞",
+    "维迦",
+    "费德提克"
+  ],
+  "traits": [
+    "黑荆棘 (1)",
+    "斗士 (1)",
+    "护卫 (1)",
+    "永恒之森 (1)",
+    "法师 (2)",
+    "绝命花妖 (1)"
+  ],
+  "stars": [
+    "维迦",
+    "奥恩",
+    "阿利斯塔",
+    "乐芙兰",
+    "雷克塞",
+    "可酷伯",
+    "蕾欧娜",
+    "凯尔",
+    "霞",
+    "约里克",
+    "洛",
+    "卡兹克",
+    "阿卡丽",
+    "卡蜜尔",
+    "韦鲁斯"
+  ],
+  "name_string": "DA_18_Spellweaver, DA_18_Veigar",
+  "display_names": [
+    {
+      "name": "法师",
+      "type": "trait",
+      "score": 1.9296821364822188
+    },
+    {
+      "name": "维迦",
+      "type": "unit",
+      "score": 4.4371824797473565
+    }
+  ],
+  "count": 143260,
+  "avg_placement": 4.3434,
+  "top4_rate": 0.5297,
+  "win_rate": 0.1383,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "阿利斯塔",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.2903,
+      "count": 1233,
+      "score": 0.3035,
+      "place_change": -0.962,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "奥恩",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "振奋盔甲"
+      ],
+      "avg_placement": 3.9731,
+      "count": 781,
+      "score": 0.223,
+      "place_change": -0.279,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "振奋盔甲": 72
+      }
+    },
+    {
+      "unit": "乐芙兰",
+      "items": [
+        "蓝霸符",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.5742,
+      "count": 566,
+      "score": 0.1871,
+      "place_change": -0.678,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "莫雷洛秘典": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "维迦",
+      "items": [
+        "绝命花妖纹章",
+        "蓝霸符",
+        "珠光护手"
+      ],
+      "avg_placement": 4.5628,
+      "count": 581,
+      "score": 0.0759,
+      "place_change": 0.311,
+      "priority_scores": {
+        "绝命花妖纹章": 100,
+        "蓝霸符": 85,
+        "珠光护手": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 71808,
+      "avg": 4.0842,
+      "pcnt": 1.23246
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 60102,
+      "avg": 4.1302,
+      "pcnt": 1.03155
+    },
+    "蓝霸符": {
+      "itemNames": "DA_BlueBuff",
+      "count": 51317,
+      "avg": 4.0914,
+      "pcnt": 0.88077
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 45027,
+      "avg": 4.063,
+      "pcnt": 0.77281
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 38338,
+      "avg": 3.9349,
+      "pcnt": 0.658
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 25502,
+      "avg": 3.7403,
+      "pcnt": 0.4377
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 18754,
+      "avg": 3.7,
+      "pcnt": 0.32188
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 17903,
+      "avg": 3.806,
+      "pcnt": 0.30727
+    },
+    "绝命花妖纹章": {
+      "itemNames": "DA_18_EmblemFloraFatalis",
+      "count": 2374,
+      "avg": 3.8585,
+      "pcnt": 0.04075
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 16925,
+      "avg": 4.1917,
+      "pick_rate": 0.072752
+    },
+    {
+      "day": "2026-10-07",
+      "count": 20422,
+      "avg": 4.2998,
+      "pick_rate": 0.047941
+    },
+    {
+      "day": "2026-10-08",
+      "count": 15555,
+      "avg": 4.2255,
+      "pick_rate": 0.039938
+    },
+    {
+      "day": "2026-10-09",
+      "count": 22702,
+      "avg": 4.2216,
+      "pick_rate": 0.042067
+    },
+    {
+      "day": "2026-10-10",
+      "count": 4226,
+      "avg": 4.2825,
+      "pick_rate": 0.04307
+    }
+  ],
+  "levelling": "lvl 5",
+  "difficulty": 0.086
+}

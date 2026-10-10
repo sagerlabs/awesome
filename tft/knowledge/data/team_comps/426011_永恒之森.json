@@ -1,0 +1,220 @@
+{
+  "cluster_id": "426011",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿利斯塔",
+    "伊泽瑞尔",
+    "纳尔",
+    "艾翁",
+    "凯南",
+    "茂凯",
+    "阿木木",
+    "德莱文",
+    "塔里克"
+  ],
+  "traits": [
+    "斗士 (1)",
+    "永恒之森 (1)",
+    "裁决使 (1)",
+    "翠神 (1)",
+    "地狱火 (1)",
+    "远古树精 (1)",
+    "赏金猎人 (1)",
+    "宝石骑士 (1)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "维迦",
+    "蕾欧娜"
+  ],
+  "name_string": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+  "display_names": [
+    {
+      "name": "永恒之森",
+      "type": "trait",
+      "score": 1.1946508172362555
+    },
+    {
+      "name": "德莱文",
+      "type": "unit",
+      "score": 3.206979011887073
+    }
+  ],
+  "count": 206104,
+  "avg_placement": 4.3911,
+  "top4_rate": 0.4989,
+  "win_rate": 0.1908,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "德莱文",
+      "items": [
+        "裁决使纹章",
+        "鬼索的狂暴之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 3.4591,
+      "count": 1503,
+      "score": 0.4693,
+      "place_change": -0.951,
+      "priority_scores": {
+        "裁决使纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "unit": "茂凯",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.4035,
+      "count": 3098,
+      "score": 0.4149,
+      "place_change": -1.006,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "伊泽瑞尔",
+      "items": [
+        "最后的轻语",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.6624,
+      "count": 1262,
+      "score": 0.293,
+      "place_change": -0.747,
+      "priority_scores": {
+        "最后的轻语": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "凯南",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 2.5263,
+      "count": 152,
+      "score": 0.1521,
+      "place_change": -1.883,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "强袭者的链枷": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 55839,
+      "avg": 4.293,
+      "pcnt": 0.86427
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 52010,
+      "avg": 4.3084,
+      "pcnt": 0.80501
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 41656,
+      "avg": 4.094,
+      "pcnt": 0.64475
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 38464,
+      "avg": 4.1761,
+      "pcnt": 0.59534
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 31491,
+      "avg": 4.2086,
+      "pcnt": 0.48742
+    },
+    "海妖之怒": {
+      "itemNames": "DA_KrakensFury",
+      "count": 31006,
+      "avg": 4.169,
+      "pcnt": 0.47991
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 29594,
+      "avg": 4.1882,
+      "pcnt": 0.45805
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 14096,
+      "avg": 3.8842,
+      "pcnt": 0.21818
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 11629,
+      "avg": 3.7781,
+      "pcnt": 0.17999
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 11495,
+      "avg": 3.512,
+      "pcnt": 0.17792
+    },
+    "裁决使纹章": {
+      "itemNames": "DA_18_EmblemExecutioner",
+      "count": 7045,
+      "avg": 3.9813,
+      "pcnt": 0.10904
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 7316,
+      "avg": 4.5309,
+      "pick_rate": 0.031448
+    },
+    {
+      "day": "2026-10-07",
+      "count": 17358,
+      "avg": 4.3261,
+      "pick_rate": 0.040748
+    },
+    {
+      "day": "2026-10-08",
+      "count": 19541,
+      "avg": 4.4262,
+      "pick_rate": 0.050172
+    },
+    {
+      "day": "2026-10-09",
+      "count": 26362,
+      "avg": 4.4486,
+      "pick_rate": 0.048848
+    },
+    {
+      "day": "2026-10-10",
+      "count": 4289,
+      "avg": 4.4201,
+      "pick_rate": 0.043712
+    }
+  ],
+  "levelling": "Fast 9",
+  "difficulty": 0.017
+}

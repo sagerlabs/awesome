@@ -1,0 +1,13 @@
+{
+  "name": "棘刺背心",
+  "priority_list": [
+    {
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "comp_tier": "S",
+      "comp_avg": 4.0991,
+      "carry": "拉莫斯",
+      "priority_score": 100
+    }
+  ]
+}

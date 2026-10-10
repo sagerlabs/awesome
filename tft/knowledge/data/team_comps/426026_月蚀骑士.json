@@ -1,0 +1,214 @@
+{
+  "cluster_id": "426026",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿利斯塔",
+    "拉露恩",
+    "厄斐琉斯",
+    "黛安娜",
+    "纳尔",
+    "赫卡里姆",
+    "莉莉娅",
+    "奥恩",
+    "霞"
+  ],
+  "traits": [
+    "斗士 (1)",
+    "护卫 (1)",
+    "永恒之森 (2)",
+    "花仙子 (1)",
+    "月蚀骑士 (2)",
+    "迅捷射手 (1)",
+    "重装战士 (1)",
+    "月华神女 (1)"
+  ],
+  "stars": [
+    "雷恩加尔",
+    "伊莉丝"
+  ],
+  "name_string": "DA_18_Elderwood, DA_18_Lillia",
+  "display_names": [
+    {
+      "name": "月蚀骑士",
+      "type": "trait",
+      "score": 1.4355588618188582
+    },
+    {
+      "name": "厄斐琉斯",
+      "type": "unit",
+      "score": 3.9378835782034596
+    },
+    {
+      "name": "莉莉娅",
+      "type": "unit",
+      "score": 3.7314487632508833
+    }
+  ],
+  "count": 18182,
+  "avg_placement": 4.6838,
+  "top4_rate": 0.4655,
+  "win_rate": 0.1033,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "厄斐琉斯",
+      "items": [
+        "花仙子纹章",
+        "巨人杀手",
+        "无尽之刃"
+      ],
+      "avg_placement": 2.4545,
+      "count": 11,
+      "score": 0.8018,
+      "place_change": -2.412,
+      "priority_scores": {
+        "花仙子纹章": 100,
+        "巨人杀手": 85,
+        "无尽之刃": 72
+      }
+    },
+    {
+      "unit": "莉莉娅",
+      "items": [
+        "冕卫",
+        "圣盾使的誓约",
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.2308,
+      "count": 13,
+      "score": 0.5501,
+      "place_change": -1.636,
+      "priority_scores": {
+        "冕卫": 100,
+        "圣盾使的誓约": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "unit": "拉露恩",
+      "items": [
+        "蓝霸符",
+        "珠光护手",
+        "纳什之牙"
+      ],
+      "avg_placement": 3.0833,
+      "count": 12,
+      "score": 0.1942,
+      "place_change": -1.783,
+      "priority_scores": {
+        "蓝霸符": 100,
+        "珠光护手": 85,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "unit": "黛安娜",
+      "items": [
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.9333,
+      "count": 15,
+      "score": 0.0086,
+      "place_change": -0.933,
+      "priority_scores": {
+        "斯特拉克的挑战护手": 100
+      }
+    }
+  ],
+  "build_items": {
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 3144,
+      "avg": 4.7309,
+      "pcnt": 0.58471
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 2588,
+      "avg": 4.5595,
+      "pcnt": 0.48131
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 1628,
+      "avg": 4.4509,
+      "pcnt": 0.30277
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 1411,
+      "avg": 4.5025,
+      "pcnt": 0.26241
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 1372,
+      "avg": 4.5044,
+      "pcnt": 0.25516
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 1326,
+      "avg": 4.6916,
+      "pcnt": 0.24661
+    },
+    "花仙子纹章": {
+      "itemNames": "DA_18_EmblemFae",
+      "count": 954,
+      "avg": 4.5398,
+      "pcnt": 0.17742
+    },
+    "蓝霸符": {
+      "itemNames": "DA_BlueBuff",
+      "count": 817,
+      "avg": 4.1909,
+      "pcnt": 0.15194
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 684,
+      "avg": 4.2617,
+      "pcnt": 0.12721
+    },
+    "纳什之牙": {
+      "itemNames": "DA_NashorsTooth",
+      "count": 384,
+      "avg": 4.0365,
+      "pcnt": 0.07142
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 766,
+      "avg": 4.9987,
+      "pick_rate": 0.003293
+    },
+    {
+      "day": "2026-10-07",
+      "count": 1500,
+      "avg": 4.7347,
+      "pick_rate": 0.003521
+    },
+    {
+      "day": "2026-10-08",
+      "count": 1449,
+      "avg": 4.8723,
+      "pick_rate": 0.00372
+    },
+    {
+      "day": "2026-10-09",
+      "count": 2260,
+      "avg": 4.9522,
+      "pick_rate": 0.004188
+    },
+    {
+      "day": "2026-10-10",
+      "count": 435,
+      "avg": 4.7931,
+      "pick_rate": 0.004433
+    }
+  ],
+  "levelling": "Fast 9",
+  "difficulty": -0.104
+}

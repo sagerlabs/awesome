@@ -1,0 +1,201 @@
+{
+  "cluster_id": "426041",
+  "tft_set": "TFTSet18",
+  "units": [
+    "莫甘娜",
+    "苍蓝哨戒",
+    "克格莫",
+    "奈德丽",
+    "峡谷迅捷蟹",
+    "苍蓝雕纹魔像",
+    "塔里克",
+    "蔚"
+  ],
+  "traits": [
+    "魔战士 (1)",
+    "帝王斑蝶 (1)",
+    "神谕 (3)",
+    "重装战士 (1)",
+    "宝石骑士 (1)",
+    "主宰 (1)",
+    "野兽之灵 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Invoker, DA_Nidalee18_AP",
+  "display_names": [
+    {
+      "name": "神谕",
+      "type": "trait",
+      "score": 1.8493870402802102
+    },
+    {
+      "name": "奈德丽",
+      "type": "unit",
+      "score": 4.113572679509632
+    }
+  ],
+  "count": 16419,
+  "avg_placement": 4.7516,
+  "top4_rate": 0.4595,
+  "win_rate": 0.071,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "奈德丽",
+      "items": [
+        "珠光护手",
+        "纳什之牙",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 3.5263,
+      "count": 19,
+      "score": 0.5667,
+      "place_change": -1.346,
+      "priority_scores": {
+        "珠光护手": 100,
+        "纳什之牙": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "适应性头盔",
+        "冕卫",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.65,
+      "count": 20,
+      "score": 0.4107,
+      "place_change": -1.223,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "冕卫": 85,
+        "圣盾使的誓约": 72
+      }
+    },
+    {
+      "unit": "莫甘娜",
+      "items": [
+        "适应性头盔",
+        "莫雷洛秘典",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.3125,
+      "count": 16,
+      "score": 0.2561,
+      "place_change": -1.56,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "莫雷洛秘典": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "克格莫",
+      "items": [
+        "暴风大剑"
+      ],
+      "avg_placement": 3.8571,
+      "count": 77,
+      "score": 0.0176,
+      "place_change": -1.016,
+      "priority_scores": {
+        "暴风大剑": 100
+      }
+    }
+  ],
+  "build_items": {
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 3314,
+      "avg": 4.6684,
+      "pcnt": 0.58039
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 3227,
+      "avg": 4.6926,
+      "pcnt": 0.56515
+    },
+    "适应性头盔": {
+      "itemNames": "DA_AdaptiveHelm",
+      "count": 2199,
+      "avg": 4.4361,
+      "pcnt": 0.38511
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 1873,
+      "avg": 4.535,
+      "pcnt": 0.32802
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 1605,
+      "avg": 4.5888,
+      "pcnt": 0.28109
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 1361,
+      "avg": 4.3835,
+      "pcnt": 0.23835
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 1287,
+      "avg": 4.4895,
+      "pcnt": 0.22539
+    },
+    "纳什之牙": {
+      "itemNames": "DA_NashorsTooth",
+      "count": 556,
+      "avg": 4.4335,
+      "pcnt": 0.09737
+    },
+    "暴风大剑": {
+      "itemNames": "DA_Component_BFSword",
+      "count": 269,
+      "avg": 4.9814,
+      "pcnt": 0.04711
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 809,
+      "avg": 4.9765,
+      "pick_rate": 0.003477
+    },
+    {
+      "day": "2026-10-07",
+      "count": 1998,
+      "avg": 4.8624,
+      "pick_rate": 0.00469
+    },
+    {
+      "day": "2026-10-08",
+      "count": 1699,
+      "avg": 4.8399,
+      "pick_rate": 0.004362
+    },
+    {
+      "day": "2026-10-09",
+      "count": 2073,
+      "avg": 4.9064,
+      "pick_rate": 0.003841
+    },
+    {
+      "day": "2026-10-10",
+      "count": 332,
+      "avg": 4.9036,
+      "pick_rate": 0.003384
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.066
+}

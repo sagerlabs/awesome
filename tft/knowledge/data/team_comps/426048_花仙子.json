@@ -1,0 +1,216 @@
+{
+  "cluster_id": "426048",
+  "tft_set": "TFTSet18",
+  "units": [
+    "可酷伯",
+    "莉莉娅",
+    "洛",
+    "拉莫斯",
+    "希维尔",
+    "崔丝塔娜",
+    "霞",
+    "蔚"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "花仙子 (2)",
+    "猎人 (1)",
+    "约德尔人和朋友 (1)",
+    "主宰 (1)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "崔丝塔娜",
+    "拉莫斯",
+    "伊莉丝"
+  ],
+  "name_string": "DA_18_Fae, DA_18_Tristana",
+  "display_names": [
+    {
+      "name": "花仙子",
+      "type": "trait",
+      "score": 1.7895802258683144
+    },
+    {
+      "name": "崔丝塔娜",
+      "type": "unit",
+      "score": 3.919081610909866
+    },
+    {
+      "name": "希维尔",
+      "type": "unit",
+      "score": 3.227732793522267
+    }
+  ],
+  "count": 39799,
+  "avg_placement": 4.8441,
+  "top4_rate": 0.4326,
+  "win_rate": 0.0874,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "希维尔",
+      "items": [
+        "花仙子纹章",
+        "最后的轻语",
+        "红霸符"
+      ],
+      "avg_placement": 3.7493,
+      "count": 335,
+      "score": 0.6293,
+      "place_change": -1.307,
+      "priority_scores": {
+        "花仙子纹章": 100,
+        "最后的轻语": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "unit": "崔丝塔娜",
+      "items": [
+        "巨人杀手",
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 4.6104,
+      "count": 811,
+      "score": 0.5367,
+      "place_change": -0.446,
+      "priority_scores": {
+        "巨人杀手": 100,
+        "鬼索的狂暴之刃": 85,
+        "海克斯科技枪刃": 72
+      }
+    },
+    {
+      "unit": "拉莫斯",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.3723,
+      "count": 368,
+      "score": 0.2675,
+      "place_change": -0.684,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "莉莉娅",
+      "items": [
+        "圣盾使的誓约",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.8824,
+      "count": 34,
+      "score": 0.2413,
+      "place_change": -1.174,
+      "priority_scores": {
+        "圣盾使的誓约": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 9028,
+      "avg": 4.9616,
+      "pcnt": 0.96186
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 8455,
+      "avg": 4.8331,
+      "pcnt": 0.90081
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 5324,
+      "avg": 4.7724,
+      "pcnt": 0.56723
+    },
+    "最后的轻语": {
+      "itemNames": "DA_LastWhisper",
+      "count": 5089,
+      "avg": 4.7506,
+      "pcnt": 0.54219
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 4966,
+      "avg": 4.7501,
+      "pcnt": 0.52909
+    },
+    "花仙子纹章": {
+      "itemNames": "DA_18_EmblemFae",
+      "count": 4745,
+      "avg": 4.7479,
+      "pcnt": 0.50554
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 4190,
+      "avg": 4.8105,
+      "pcnt": 0.44641
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 3790,
+      "avg": 4.624,
+      "pcnt": 0.40379
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 3259,
+      "avg": 4.4566,
+      "pcnt": 0.34722
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 2948,
+      "avg": 4.6398,
+      "pcnt": 0.31408
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 1284,
+      "avg": 4.9634,
+      "pick_rate": 0.005519
+    },
+    {
+      "day": "2026-10-07",
+      "count": 3237,
+      "avg": 5.1637,
+      "pick_rate": 0.007599
+    },
+    {
+      "day": "2026-10-08",
+      "count": 2692,
+      "avg": 5.0249,
+      "pick_rate": 0.006912
+    },
+    {
+      "day": "2026-10-09",
+      "count": 3484,
+      "avg": 4.9908,
+      "pick_rate": 0.006456
+    },
+    {
+      "day": "2026-10-10",
+      "count": 595,
+      "avg": 5.0538,
+      "pick_rate": 0.006064
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.067
+}

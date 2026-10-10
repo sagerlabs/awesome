@@ -2,123 +2,179 @@
   "name": "狂徒铠甲",
   "priority_list": [
     {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
       "comp_tier": "S",
-      "comp_avg": 3.976,
-      "carry": "苍蓝雕纹魔像",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
-      "comp_tier": "S",
-      "comp_avg": 4.0985,
-      "carry": "雷克塞",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422009",
-      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
-      "comp_tier": "S",
-      "comp_avg": 4.1713,
-      "carry": "蔚",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422021",
-      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
-      "comp_tier": "S",
-      "comp_avg": 4.2328,
-      "carry": "瑟提",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
-      "comp_tier": "A",
-      "comp_avg": 4.3641,
+      "comp_avg": 4.0991,
       "carry": "拉莫斯",
       "priority_score": 72
     },
     {
-      "cluster_id": "422003",
-      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
-      "comp_tier": "A",
-      "comp_avg": 4.3641,
-      "carry": "莉莉娅",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
-      "comp_tier": "A",
-      "comp_avg": 4.3871,
-      "carry": "茂凯",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
-      "comp_tier": "A",
-      "comp_avg": 4.4132,
-      "carry": "峡谷迅捷蟹",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
-      "comp_tier": "A",
-      "comp_avg": 4.4132,
-      "carry": "瑟庄妮",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
-      "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "阿木木",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
-      "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "莉莉娅",
-      "priority_score": 72
-    },
-    {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
-      "comp_tier": "A",
-      "comp_avg": 4.4541,
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
+      "comp_tier": "S",
+      "comp_avg": 4.1565,
       "carry": "远古石甲虫",
       "priority_score": 72
     },
     {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
-      "comp_tier": "A",
-      "comp_avg": 4.4541,
-      "carry": "峡谷迅捷蟹",
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
+      "comp_tier": "S",
+      "comp_avg": 4.1832,
+      "carry": "阿木木",
       "priority_score": 72
     },
     {
-      "cluster_id": "422022",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
+      "carry": "苍蓝雕纹魔像",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426008",
+      "comp_name": "DA_18_Vanguard, DA_18_Morgana",
+      "comp_tier": "S",
+      "comp_avg": 4.207,
+      "carry": "塔里克",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
       "comp_tier": "A",
-      "comp_avg": 4.474,
+      "comp_avg": 4.2727,
+      "carry": "苍蓝雕纹魔像",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.2845,
+      "carry": "阿利斯塔",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.2845,
+      "carry": "赫卡里姆",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "comp_tier": "A",
+      "comp_avg": 4.3168,
+      "carry": "瑟庄妮",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426010",
+      "comp_name": "DA_18_Invoker, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.3346,
+      "carry": "瑟提",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
+      "comp_tier": "A",
+      "comp_avg": 4.3357,
+      "carry": "瑟提",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "comp_tier": "A",
+      "comp_avg": 4.3434,
+      "carry": "阿利斯塔",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.3675,
+      "carry": "赫卡里姆",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426013",
+      "comp_name": "DA_18_Invoker, DA_18_Teemo",
+      "comp_tier": "A",
+      "comp_avg": 4.3827,
+      "carry": "拉莫斯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "comp_tier": "A",
+      "comp_avg": 4.3911,
+      "carry": "茂凯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426009",
+      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "comp_tier": "A",
+      "comp_avg": 4.4227,
+      "carry": "苍蓝雕纹魔像",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "comp_tier": "A",
+      "comp_avg": 4.4727,
       "carry": "墨菲特",
       "priority_score": 72
     },
     {
-      "cluster_id": "422012",
-      "comp_name": "DA_18_Invoker, DA_18_Morgana",
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
       "comp_tier": "A",
-      "comp_avg": 4.5152,
+      "comp_avg": 4.5055,
+      "carry": "赫卡里姆",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.5077,
+      "carry": "拉莫斯",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426018",
+      "comp_name": "DA_18_Defender, DA_18_Cassiopeia",
+      "comp_tier": "A",
+      "comp_avg": 4.5077,
+      "carry": "莉莉娅",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.5099,
       "carry": "苍蓝雕纹魔像",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426029",
+      "comp_name": "DA_18_Adaptor, DA_18_MasterYi_AD",
+      "comp_tier": "A",
+      "comp_avg": 4.5193,
+      "carry": "蔚",
       "priority_score": 72
     }
   ]

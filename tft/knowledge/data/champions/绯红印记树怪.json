@@ -2,59 +2,81 @@
   "name": "绯红印记树怪",
   "appear_in_comps": [
     {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
       "tier": "S",
-      "avg_placement": 3.976
+      "avg_placement": 4.1565
     },
     {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
       "tier": "A",
-      "avg_placement": 4.4541
+      "avg_placement": 4.2678
     },
     {
-      "cluster_id": "422012",
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "tier": "A",
+      "avg_placement": 4.3419
+    },
+    {
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "tier": "A",
+      "avg_placement": 4.399
+    },
+    {
+      "cluster_id": "426009",
       "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "tier": "A",
-      "avg_placement": 4.5152
+      "avg_placement": 4.4227
     },
     {
-      "cluster_id": "422013",
+      "cluster_id": "426017",
       "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "tier": "A",
+      "avg_placement": 4.5099
+    },
+    {
+      "cluster_id": "426033",
+      "comp_name": "DA_18_Vanguard, DA_18_Hecarim",
       "tier": "B",
-      "avg_placement": 4.5935
+      "avg_placement": 4.7405
     },
     {
-      "cluster_id": "422014",
-      "comp_name": "DA_18_Vanguard, DA_18_Rengar",
-      "tier": "B",
-      "avg_placement": 4.744
-    },
-    {
-      "cluster_id": "422018",
-      "comp_name": "DA_18_Adaptor, DA_Nidalee18_AP",
+      "cluster_id": "426051",
+      "comp_name": "DA_Riftbeast18, DA_Gromp18_AP",
       "tier": "C",
-      "avg_placement": 4.8382
-    },
-    {
-      "cluster_id": "422032",
-      "comp_name": "DA_18_Blackthorn, DA_18_Warwick",
-      "tier": "C",
-      "avg_placement": 4.9095
+      "avg_placement": 5.0843
     }
   ],
   "builds": [
     {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
+      "items": [
+        "迅捷射手纹章",
+        "夜之锋刃",
+        "水银"
+      ],
+      "avg_placement": 3.8405,
+      "count": 2326,
+      "priority_scores": {
+        "迅捷射手纹章": 100,
+        "夜之锋刃": 85,
+        "水银": 72
+      }
+    },
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
       "items": [
         "夜之锋刃",
         "水银",
         "斯特拉克的挑战护手"
       ],
-      "avg_placement": 3.4926,
-      "count": 1494,
+      "avg_placement": 3.5263,
+      "count": 19,
       "priority_scores": {
         "夜之锋刃": 100,
         "水银": 85,
@@ -62,67 +84,51 @@
       }
     },
     {
-      "cluster_id": "422012",
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "items": [
+        "夜之锋刃",
+        "巨人杀手",
+        "水银"
+      ],
+      "avg_placement": 3,
+      "count": 55,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "巨人杀手": 85,
+        "水银": 72
+      }
+    },
+    {
+      "cluster_id": "426009",
       "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "items": [
         "夜之锋刃",
-        "水银",
-        "斯特拉克的挑战护手"
-      ],
-      "avg_placement": 4.2855,
-      "count": 1692,
-      "priority_scores": {
-        "夜之锋刃": 100,
-        "水银": 85,
-        "斯特拉克的挑战护手": 72
-      }
-    },
-    {
-      "cluster_id": "422013",
-      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
-      "items": [
-        "夜之锋刃",
-        "水银",
-        "斯特拉克的挑战护手"
-      ],
-      "avg_placement": 4.0675,
-      "count": 6300,
-      "priority_scores": {
-        "夜之锋刃": 100,
-        "水银": 85,
-        "斯特拉克的挑战护手": 72
-      }
-    },
-    {
-      "cluster_id": "422018",
-      "comp_name": "DA_18_Adaptor, DA_Nidalee18_AP",
-      "items": [
-        "夜之锋刃",
         "正义之手",
-        "强袭者的链枷"
+        "水银"
       ],
-      "avg_placement": 3.3846,
-      "count": 13,
+      "avg_placement": 4.0506,
+      "count": 237,
       "priority_scores": {
         "夜之锋刃": 100,
         "正义之手": 85,
-        "强袭者的链枷": 72
+        "水银": 72
       }
     },
     {
-      "cluster_id": "422032",
-      "comp_name": "DA_18_Blackthorn, DA_18_Warwick",
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
       "items": [
-        "饮血剑",
-        "水银",
-        "斯特拉克的挑战护手"
+        "迅捷射手纹章",
+        "夜之锋刃",
+        "泰坦的坚决"
       ],
-      "avg_placement": 3.1509,
-      "count": 53,
+      "avg_placement": 3.3103,
+      "count": 58,
       "priority_scores": {
-        "饮血剑": 100,
-        "水银": 85,
-        "斯特拉克的挑战护手": 72
+        "迅捷射手纹章": 100,
+        "夜之锋刃": 85,
+        "泰坦的坚决": 72
       }
     }
   ]

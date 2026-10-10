@@ -2,34 +2,58 @@
   "name": "冕卫",
   "priority_list": [
     {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "cluster_id": "426003",
+      "comp_name": "DA_18_Sprykin, DA_18_Azir",
       "comp_tier": "S",
-      "comp_avg": 3.976,
-      "carry": "苍蓝雕纹魔像",
+      "comp_avg": 4.1276,
+      "carry": "拉莫斯",
       "priority_score": 100
     },
     {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
       "comp_tier": "S",
-      "comp_avg": 4.0985,
-      "carry": "费德提克",
+      "comp_avg": 4.1565,
+      "carry": "远古石甲虫",
       "priority_score": 100
     },
     {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
       "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "莉莉娅",
+      "comp_avg": 4.2845,
+      "carry": "赫卡里姆",
       "priority_score": 100
     },
     {
-      "cluster_id": "422022",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
       "comp_tier": "A",
-      "comp_avg": 4.474,
+      "comp_avg": 4.3168,
+      "carry": "慎",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "comp_tier": "A",
+      "comp_avg": 4.3434,
+      "carry": "阿利斯塔",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "comp_tier": "A",
+      "comp_avg": 4.3434,
+      "carry": "奥恩",
+      "priority_score": 100
+    },
+    {
+      "cluster_id": "426016",
+      "comp_name": "DA_18_Hunter, DA_18_Malphite",
+      "comp_tier": "A",
+      "comp_avg": 4.4727,
       "carry": "墨菲特",
       "priority_score": 100
     }

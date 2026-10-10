@@ -1,0 +1,201 @@
+{
+  "cluster_id": "426024",
+  "tft_set": "TFTSet18",
+  "units": [
+    "厄斐琉斯",
+    "黛安娜",
+    "伊泽瑞尔",
+    "赫卡里姆",
+    "卡兹克",
+    "乐芙兰",
+    "雷恩加尔"
+  ],
+  "traits": [
+    "永恒之森 (1)",
+    "月蚀骑士 (1)",
+    "宿敌 (3)",
+    "狂战士 (1)",
+    "重装战士 (1)"
+  ],
+  "stars": [
+    "卡兹克",
+    "雷恩加尔",
+    "黛安娜",
+    "赫卡里姆",
+    "拉莫斯"
+  ],
+  "name_string": "DA_18_Elderwood, DA_18_Rengar",
+  "display_names": [
+    {
+      "name": "宿敌",
+      "type": "trait",
+      "score": 2.8550185873605947
+    },
+    {
+      "name": "卡兹克",
+      "type": "unit",
+      "score": 4.31523158846579
+    }
+  ],
+  "count": 40847,
+  "avg_placement": 4.6671,
+  "top4_rate": 0.4709,
+  "win_rate": 0.1002,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "雷恩加尔",
+      "items": [
+        "夜之锋刃",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.3974,
+      "count": 1779,
+      "score": 0.5043,
+      "place_change": -0.395,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "卡兹克",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 4.5837,
+      "count": 2210,
+      "score": 0.4586,
+      "place_change": -0.208,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "赫卡里姆",
+      "items": [
+        "薄暮法袍",
+        "石像鬼石板甲",
+        "坚定之心"
+      ],
+      "avg_placement": 2.8,
+      "count": 25,
+      "score": 0.4274,
+      "place_change": -1.992,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "石像鬼石板甲": 85,
+        "坚定之心": 72
+      }
+    },
+    {
+      "unit": "黛安娜",
+      "items": [
+        "日炎斗篷"
+      ],
+      "avg_placement": 3.8304,
+      "count": 112,
+      "score": 0.0154,
+      "place_change": -0.962,
+      "priority_scores": {
+        "日炎斗篷": 100
+      }
+    }
+  ],
+  "build_items": {
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 11452,
+      "avg": 4.6243,
+      "pcnt": 1.15061
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 11130,
+      "avg": 4.6422,
+      "pcnt": 1.11826
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 7287,
+      "avg": 4.6756,
+      "pcnt": 0.73214
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 5830,
+      "avg": 4.5144,
+      "pcnt": 0.58575
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 5225,
+      "avg": 4.5715,
+      "pcnt": 0.52497
+    },
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 4826,
+      "avg": 4.5489,
+      "pcnt": 0.48488
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 2060,
+      "avg": 4.2311,
+      "pcnt": 0.20697
+    },
+    "薄暮法袍": {
+      "itemNames": "DA_Evenshroud",
+      "count": 1801,
+      "avg": 4.2432,
+      "pcnt": 0.18095
+    },
+    "坚定之心": {
+      "itemNames": "DA_SteadfastHeart",
+      "count": 915,
+      "avg": 3.9126,
+      "pcnt": 0.09193
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 1561,
+      "avg": 4.8898,
+      "pick_rate": 0.00671
+    },
+    {
+      "day": "2026-10-07",
+      "count": 3121,
+      "avg": 4.7039,
+      "pick_rate": 0.007327
+    },
+    {
+      "day": "2026-10-08",
+      "count": 2906,
+      "avg": 4.8262,
+      "pick_rate": 0.007461
+    },
+    {
+      "day": "2026-10-09",
+      "count": 3809,
+      "avg": 4.8136,
+      "pick_rate": 0.007058
+    },
+    {
+      "day": "2026-10-10",
+      "count": 705,
+      "avg": 4.8113,
+      "pick_rate": 0.007185
+    }
+  ],
+  "levelling": "lvl 7",
+  "difficulty": -0.07
+}

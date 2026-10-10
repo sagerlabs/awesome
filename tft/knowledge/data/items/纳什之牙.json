@@ -1,0 +1,29 @@
+{
+  "name": "纳什之牙",
+  "priority_list": [
+    {
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.2727,
+      "carry": "拉露恩",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426012",
+      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "comp_tier": "A",
+      "comp_avg": 4.3675,
+      "carry": "卡兹克",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "comp_tier": "A",
+      "comp_avg": 4.2727,
+      "carry": "阿狸",
+      "priority_score": 72
+    }
+  ]
+}

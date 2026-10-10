@@ -2,19 +2,59 @@
   "name": "泰坦的坚决",
   "priority_list": [
     {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
-      "comp_tier": "A",
-      "comp_avg": 4.3301,
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "comp_tier": "S",
+      "comp_avg": 4.0991,
       "carry": "雷恩加尔",
       "priority_score": 72
     },
     {
-      "cluster_id": "422008",
-      "comp_name": "DA_18_Elderwood, DA_18_KhaZix",
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
+      "comp_tier": "S",
+      "comp_avg": 4.0991,
+      "carry": "费德提克",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
       "comp_tier": "A",
-      "comp_avg": 4.4453,
+      "comp_avg": 4.3419,
+      "carry": "伊莉丝",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "沃里克",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "comp_tier": "A",
+      "comp_avg": 4.4939,
       "carry": "雷恩加尔",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426036",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
+      "comp_tier": "A",
+      "comp_avg": 4.5055,
+      "carry": "纳尔",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426017",
+      "comp_name": "DA_18_Vanguard, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.5099,
+      "carry": "绯红印记树怪",
       "priority_score": 72
     }
   ]

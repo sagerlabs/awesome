@@ -2,63 +2,103 @@
   "name": "瑟庄妮",
   "appear_in_comps": [
     {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
       "tier": "A",
-      "avg_placement": 4.4132
+      "avg_placement": 4.3168
     },
     {
-      "cluster_id": "422029",
+      "cluster_id": "426015",
+      "comp_name": "DA_Juggernaut18, DA_18_Zyra, DA_Nidalee18_AP",
+      "tier": "B",
+      "avg_placement": 4.5807
+    },
+    {
+      "cluster_id": "426025",
+      "comp_name": "DA_18_Inferno, DA_18_Akali_AD",
+      "tier": "B",
+      "avg_placement": 4.5921
+    },
+    {
+      "cluster_id": "426032",
+      "comp_name": "DA_Juggernaut18, DA_18_Zyra, DA_18_Sejuani",
+      "tier": "B",
+      "avg_placement": 4.6383
+    },
+    {
+      "cluster_id": "426031",
       "comp_name": "DA_18_Elderwood, DA_18_Kayle",
       "tier": "B",
-      "avg_placement": 4.6188
+      "avg_placement": 4.7426
     },
     {
-      "cluster_id": "422038",
-      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "cluster_id": "426053",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_18_Vanguard",
       "tier": "B",
-      "avg_placement": 4.6239
+      "avg_placement": 4.7656
     },
     {
-      "cluster_id": "422044",
-      "comp_name": "DA_18_Lunar, DA_18_Aphelios",
-      "tier": "B",
-      "avg_placement": 4.776
-    },
-    {
-      "cluster_id": "422030",
-      "comp_name": "DA_18_Inferno, DA_18_Kayle",
+      "cluster_id": "426035",
+      "comp_name": "DA_18_Blossom, DA_18_Yunara",
       "tier": "C",
-      "avg_placement": 5.0
+      "avg_placement": 4.9744
+    },
+    {
+      "cluster_id": "426039",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "tier": "C",
+      "avg_placement": 4.9795
+    },
+    {
+      "cluster_id": "426043",
+      "comp_name": "DA_Juggernaut18, DA_18_Azir",
+      "tier": "C",
+      "avg_placement": 4.987
     }
   ],
   "builds": [
     {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
       "items": [
-        "巨龙之爪",
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.9532,
+      "count": 2074,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "426031",
+      "comp_name": "DA_18_Elderwood, DA_18_Kayle",
+      "items": [
+        "冕卫",
         "石像鬼石板甲",
         "狂徒铠甲"
       ],
-      "avg_placement": 3.496,
-      "count": 125,
+      "avg_placement": 3.4769,
+      "count": 216,
       "priority_scores": {
-        "巨龙之爪": 100,
+        "冕卫": 100,
         "石像鬼石板甲": 85,
         "狂徒铠甲": 72
       }
     },
     {
-      "cluster_id": "422029",
-      "comp_name": "DA_18_Elderwood, DA_18_Kayle",
+      "cluster_id": "426035",
+      "comp_name": "DA_18_Blossom, DA_18_Yunara",
       "items": [
         "石像鬼石板甲",
         "振奋盔甲",
         "狂徒铠甲"
       ],
-      "avg_placement": 4.0826,
-      "count": 5375,
+      "avg_placement": 4.0196,
+      "count": 561,
       "priority_scores": {
         "石像鬼石板甲": 100,
         "振奋盔甲": 85,
@@ -66,31 +106,15 @@
       }
     },
     {
-      "cluster_id": "422038",
-      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
+      "cluster_id": "426039",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
       "items": [
         "石像鬼石板甲",
         "振奋盔甲",
         "狂徒铠甲"
       ],
-      "avg_placement": 3.9774,
-      "count": 354,
-      "priority_scores": {
-        "石像鬼石板甲": 100,
-        "振奋盔甲": 85,
-        "狂徒铠甲": 72
-      }
-    },
-    {
-      "cluster_id": "422030",
-      "comp_name": "DA_18_Inferno, DA_18_Kayle",
-      "items": [
-        "石像鬼石板甲",
-        "振奋盔甲",
-        "狂徒铠甲"
-      ],
-      "avg_placement": 4.2849,
-      "count": 1046,
+      "avg_placement": 4.6187,
+      "count": 278,
       "priority_scores": {
         "石像鬼石板甲": 100,
         "振奋盔甲": 85,

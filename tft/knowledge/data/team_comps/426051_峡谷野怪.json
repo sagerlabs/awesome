@@ -1,0 +1,212 @@
+{
+  "cluster_id": "426051",
+  "tft_set": "TFTSet18",
+  "units": [
+    "苍蓝哨戒",
+    "绯红印记树怪",
+    "魔沼蛙",
+    "克格莫",
+    "远古石甲虫",
+    "暗影狼",
+    "峡谷迅捷蟹",
+    "苍蓝雕纹魔像"
+  ],
+  "traits": [
+    "魔战士 (1)",
+    "帝王斑蝶 (1)",
+    "神谕 (2)",
+    "狂战士 (1)",
+    "峡谷野怪 (3)"
+  ],
+  "stars": [
+    "魔沼蛙",
+    "峡谷迅捷蟹",
+    "远古石甲虫",
+    "苍蓝哨戒",
+    "暗影狼",
+    "提莫",
+    "瑟庄妮",
+    "绯红树怪",
+    "蕾欧娜",
+    "凯尔",
+    "深红锋喙鸟",
+    "阿利斯塔",
+    "伊莉丝"
+  ],
+  "name_string": "DA_Riftbeast18, DA_Gromp18_AP",
+  "display_names": [
+    {
+      "name": "峡谷野怪",
+      "type": "trait",
+      "score": 2.3469469737546866
+    },
+    {
+      "name": "魔沼蛙",
+      "type": "unit",
+      "score": 3.6226566684520622
+    }
+  ],
+  "count": 23181,
+  "avg_placement": 5.0843,
+  "top4_rate": 0.3961,
+  "win_rate": 0.0547,
+  "tier": "C",
+  "builds": [
+    {
+      "unit": "魔沼蛙",
+      "items": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.6364,
+      "count": 33,
+      "score": 0.629,
+      "place_change": -1.45,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "峡谷迅捷蟹",
+      "items": [
+        "斗士纹章",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.6,
+      "count": 30,
+      "score": 0.5501,
+      "place_change": -1.486,
+      "priority_scores": {
+        "斗士纹章": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "苍蓝哨戒",
+      "items": [
+        "大天使之杖",
+        "大天使之杖",
+        "珠光护手"
+      ],
+      "avg_placement": 4,
+      "count": 52,
+      "score": 0.1695,
+      "place_change": -1.086,
+      "priority_scores": {
+        "大天使之杖": 85,
+        "珠光护手": 72
+      }
+    },
+    {
+      "unit": "提莫",
+      "items": [
+        "大天使之杖",
+        "大天使之杖",
+        "海克斯科技枪刃"
+      ],
+      "avg_placement": 3.9524,
+      "count": 21,
+      "score": 0.1045,
+      "place_change": -1.134,
+      "priority_scores": {
+        "大天使之杖": 85,
+        "海克斯科技枪刃": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 7846,
+      "avg": 4.8834,
+      "pcnt": 1.05062
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 4515,
+      "avg": 4.8472,
+      "pcnt": 0.60458
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 4441,
+      "avg": 4.8057,
+      "pcnt": 0.59467
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 3803,
+      "avg": 4.898,
+      "pcnt": 0.50924
+    },
+    "大天使之杖": {
+      "itemNames": "DA_ArchangelsStaff",
+      "count": 2513,
+      "avg": 4.6701,
+      "pcnt": 0.3365
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 1860,
+      "avg": 4.6339,
+      "pcnt": 0.24906
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 1665,
+      "avg": 4.5784,
+      "pcnt": 0.22295
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 1106,
+      "avg": 4.5877,
+      "pcnt": 0.1481
+    },
+    "斗士纹章": {
+      "itemNames": "DA_18_EmblemBrawler",
+      "count": 296,
+      "avg": 3.9189,
+      "pcnt": 0.03964
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 574,
+      "avg": 5.5226,
+      "pick_rate": 0.002467
+    },
+    {
+      "day": "2026-10-07",
+      "count": 2082,
+      "avg": 5.2176,
+      "pick_rate": 0.004888
+    },
+    {
+      "day": "2026-10-08",
+      "count": 2262,
+      "avg": 5.0836,
+      "pick_rate": 0.005808
+    },
+    {
+      "day": "2026-10-09",
+      "count": 2973,
+      "avg": 5.0155,
+      "pick_rate": 0.005509
+    },
+    {
+      "day": "2026-10-10",
+      "count": 537,
+      "avg": 5.0019,
+      "pick_rate": 0.005473
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": -0.028
+}

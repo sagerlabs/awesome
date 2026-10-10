@@ -1,0 +1,218 @@
+{
+  "cluster_id": "426004",
+  "tft_set": "TFTSet18",
+  "units": [
+    "厄斐琉斯",
+    "黛安娜",
+    "韦鲁斯",
+    "阿木木",
+    "克格莫",
+    "奈德丽",
+    "苍蓝雕纹魔像",
+    "蔚"
+  ],
+  "traits": [
+    "魔战士 (1)",
+    "帝王斑蝶 (1)",
+    "地狱火 (1)",
+    "神谕 (1)",
+    "月蚀骑士 (1)",
+    "迅捷射手 (1)",
+    "重装战士 (1)",
+    "主宰 (1)",
+    "野兽之灵 (1)"
+  ],
+  "stars": [
+    "可酷伯",
+    "雷恩加尔",
+    "维迦",
+    "卡尔玛"
+  ],
+  "name_string": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
+  "display_names": [
+    {
+      "name": "月蚀骑士",
+      "type": "trait",
+      "score": 1.2060632011646828
+    },
+    {
+      "name": "厄斐琉斯",
+      "type": "unit",
+      "score": 4.300286888755673
+    },
+    {
+      "name": "奈德丽",
+      "type": "unit",
+      "score": 4.187038622933973
+    }
+  ],
+  "count": 268831,
+  "avg_placement": 4.1832,
+  "top4_rate": 0.5827,
+  "win_rate": 0.0863,
+  "tier": "S",
+  "builds": [
+    {
+      "unit": "奈德丽",
+      "items": [
+        "无尽之刃",
+        "朔极之矛",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 4.0169,
+      "count": 21612,
+      "score": 0.4947,
+      "place_change": -0.302,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "朔极之矛": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "厄斐琉斯",
+      "items": [
+        "死亡之刃",
+        "鬼索的狂暴之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 4.0032,
+      "count": 10130,
+      "score": 0.4489,
+      "place_change": -0.316,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "海妖之怒": 72
+      }
+    },
+    {
+      "unit": "阿木木",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.7403,
+      "count": 5059,
+      "score": 0.3158,
+      "place_change": -0.579,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "圣盾使的誓约",
+        "圣盾使的誓约",
+        "圣盾使的誓约"
+      ],
+      "avg_placement": 3.6149,
+      "count": 1714,
+      "score": 0.2315,
+      "place_change": -0.704,
+      "priority_scores": {
+        "圣盾使的誓约": 72
+      }
+    }
+  ],
+  "build_items": {
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 123813,
+      "avg": 4.1863,
+      "pcnt": 1.06032
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 100283,
+      "avg": 4.3141,
+      "pcnt": 0.85881
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 97559,
+      "avg": 4.1668,
+      "pcnt": 0.83548
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 74079,
+      "avg": 4.0531,
+      "pcnt": 0.6344
+    },
+    "海妖之怒": {
+      "itemNames": "DA_KrakensFury",
+      "count": 72830,
+      "avg": 4.1694,
+      "pcnt": 0.6237
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 70380,
+      "avg": 4.0568,
+      "pcnt": 0.60272
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 70231,
+      "avg": 4.0533,
+      "pcnt": 0.60145
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 64789,
+      "avg": 4.1693,
+      "pcnt": 0.55484
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 52195,
+      "avg": 4.0815,
+      "pcnt": 0.44699
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 48108,
+      "avg": 4.0896,
+      "pcnt": 0.41199
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 27534,
+      "avg": 4.3167,
+      "pick_rate": 0.118355
+    },
+    {
+      "day": "2026-10-07",
+      "count": 39006,
+      "avg": 4.3223,
+      "pick_rate": 0.091567
+    },
+    {
+      "day": "2026-10-08",
+      "count": 32939,
+      "avg": 4.2859,
+      "pick_rate": 0.084572
+    },
+    {
+      "day": "2026-10-09",
+      "count": 44954,
+      "avg": 4.3294,
+      "pick_rate": 0.083299
+    },
+    {
+      "day": "2026-10-10",
+      "count": 8123,
+      "avg": 4.3493,
+      "pick_rate": 0.082786
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": 0.011
+}

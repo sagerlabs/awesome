@@ -391,8 +391,11 @@ class OutputBuilder:
     """将解析后的数据构建为三个输出文件（保持原设计）"""
 
     def save_all(self, comps: list[Comp], tft_set: str, cluster_id: str, translator: Translator):
-        # 实际写入时再创建目录，避免 import 时副作用与现场 data 目录冲突
-        OUTPUT_DIR.mkdir(exist_ok=True)
+        # 实际写入时再创建目录，避免 import 时副作用与现场 data 目录冲突；
+        # 先判存在再 mkdir（部分沙箱/只读文件系统对 exist_ok=True 的
+        # EEXIST 语义处理不一致，重跑时目录必然已存在）
+        if not OUTPUT_DIR.exists():
+            OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
         self._save_comps_full(comps, tft_set, cluster_id)
         self._save_comps_for_agent(comps, tft_set, cluster_id)
         self._save_items_priority(comps)

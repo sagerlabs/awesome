@@ -1,0 +1,218 @@
+{
+  "cluster_id": "426008",
+  "tft_set": "TFTSet18",
+  "units": [
+    "拉露恩",
+    "黛安娜",
+    "赫卡里姆",
+    "艾翁",
+    "莉莉娅",
+    "莫甘娜",
+    "费德提克",
+    "苍蓝雕纹魔像",
+    "塔里克"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "翠神 (1)",
+    "神谕 (1)",
+    "月蚀骑士 (1)",
+    "法师 (1)",
+    "重装战士 (2)",
+    "月华神女 (1)",
+    "宝石骑士 (1)",
+    "绝命花妖 (1)"
+  ],
+  "stars": [
+    "奥恩"
+  ],
+  "name_string": "DA_18_Vanguard, DA_18_Morgana",
+  "display_names": [
+    {
+      "name": "重装战士",
+      "type": "trait",
+      "score": 1.7772838928529653
+    },
+    {
+      "name": "莫甘娜",
+      "type": "unit",
+      "score": 3.3906597262837757
+    },
+    {
+      "name": "拉露恩",
+      "type": "unit",
+      "score": 3.33144227395017
+    }
+  ],
+  "count": 53749,
+  "avg_placement": 4.207,
+  "top4_rate": 0.5391,
+  "win_rate": 0.1941,
+  "tier": "S",
+  "builds": [
+    {
+      "unit": "拉露恩",
+      "items": [
+        "大天使之杖",
+        "珠光护手",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.5946,
+      "count": 745,
+      "score": 0.5029,
+      "place_change": -0.64,
+      "priority_scores": {
+        "大天使之杖": 100,
+        "珠光护手": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "莫甘娜",
+      "items": [
+        "莫雷洛秘典",
+        "灭世者的死亡之帽",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.4949,
+      "count": 495,
+      "score": 0.4647,
+      "place_change": -0.739,
+      "priority_scores": {
+        "莫雷洛秘典": 100,
+        "灭世者的死亡之帽": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "苍蓝雕纹魔像",
+      "items": [
+        "石像鬼石板甲",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.587,
+      "count": 644,
+      "score": 0.3885,
+      "place_change": -0.647,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "塔里克",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.1152,
+      "count": 191,
+      "score": 0.2034,
+      "place_change": -1.119,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 17452,
+      "avg": 4.0961,
+      "pcnt": 1.0207
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 12171,
+      "avg": 3.921,
+      "pcnt": 0.71184
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 11769,
+      "avg": 3.958,
+      "pcnt": 0.68833
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 11410,
+      "avg": 4.0101,
+      "pcnt": 0.66733
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 11191,
+      "avg": 3.9381,
+      "pcnt": 0.65452
+    },
+    "圣盾使的誓约": {
+      "itemNames": "DA_ProtectorsVow",
+      "count": 9013,
+      "avg": 3.862,
+      "pcnt": 0.52714
+    },
+    "莫雷洛秘典": {
+      "itemNames": "DA_Morellonomicon",
+      "count": 8537,
+      "avg": 3.9493,
+      "pcnt": 0.4993
+    },
+    "大天使之杖": {
+      "itemNames": "DA_ArchangelsStaff",
+      "count": 8197,
+      "avg": 3.8231,
+      "pcnt": 0.47941
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 5510,
+      "avg": 3.8102,
+      "pcnt": 0.32226
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 5496,
+      "avg": 3.8819,
+      "pcnt": 0.32144
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 2746,
+      "avg": 4.2986,
+      "pick_rate": 0.011804
+    },
+    {
+      "day": "2026-10-07",
+      "count": 5127,
+      "avg": 4.1755,
+      "pick_rate": 0.012036
+    },
+    {
+      "day": "2026-10-08",
+      "count": 4310,
+      "avg": 4.2587,
+      "pick_rate": 0.011066
+    },
+    {
+      "day": "2026-10-09",
+      "count": 7108,
+      "avg": 4.2615,
+      "pick_rate": 0.013171
+    },
+    {
+      "day": "2026-10-10",
+      "count": 1601,
+      "avg": 4.2854,
+      "pick_rate": 0.016317
+    }
+  ],
+  "levelling": "Fast 9",
+  "difficulty": -0.028
+}

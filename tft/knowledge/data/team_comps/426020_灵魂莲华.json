@@ -1,0 +1,211 @@
+{
+  "cluster_id": "426020",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿狸",
+    "瑟提",
+    "慎",
+    "约里克",
+    "婕拉",
+    "阿木木",
+    "费德提克",
+    "远古石甲虫"
+  ],
+  "traits": [
+    "灵魂莲华 (1)",
+    "斗士 (1)",
+    "护卫 (1)",
+    "地狱火 (1)",
+    "法师 (1)",
+    "召唤师 (1)",
+    "荆棘之兴 (1)",
+    "绝命花妖 (1)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "深红锋喙鸟"
+  ],
+  "name_string": "DA_18_Blossom, DA_18_Zyra",
+  "display_names": [
+    {
+      "name": "灵魂莲华",
+      "type": "trait",
+      "score": 1.3098547062539483
+    },
+    {
+      "name": "阿狸",
+      "type": "unit",
+      "score": 4.026571383449147
+    },
+    {
+      "name": "瑟提",
+      "type": "unit",
+      "score": 3.5803853442830067
+    }
+  ],
+  "count": 30878,
+  "avg_placement": 4.5472,
+  "top4_rate": 0.4937,
+  "win_rate": 0.0927,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "阿狸",
+      "items": [
+        "珠光护手",
+        "朔极之矛",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.3304,
+      "count": 2467,
+      "score": 0.4387,
+      "place_change": -0.233,
+      "priority_scores": {
+        "珠光护手": 100,
+        "朔极之矛": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "婕拉",
+      "items": [
+        "海克斯科技枪刃",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.6039,
+      "count": 207,
+      "score": 0.4077,
+      "place_change": -0.96,
+      "priority_scores": {
+        "海克斯科技枪刃": 100,
+        "朔极之矛": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "瑟提",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.047,
+      "count": 617,
+      "score": 0.3825,
+      "place_change": -0.517,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "阿木木",
+      "items": [
+        "石像鬼石板甲",
+        "坚定之心",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.875,
+      "count": 88,
+      "score": 0.0985,
+      "place_change": -0.689,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "坚定之心": 85,
+        "狂徒铠甲": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 14312,
+      "avg": 4.4367,
+      "pcnt": 1.13013
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 12958,
+      "avg": 4.3425,
+      "pcnt": 1.02322
+    },
+    "珠光护手": {
+      "itemNames": "DA_JeweledGauntlet",
+      "count": 11849,
+      "avg": 4.4392,
+      "pcnt": 0.93564
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 8176,
+      "avg": 4.3432,
+      "pcnt": 0.64561
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 8042,
+      "avg": 4.3018,
+      "pcnt": 0.63503
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 4897,
+      "avg": 4.3516,
+      "pcnt": 0.38669
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 4283,
+      "avg": 4.24,
+      "pcnt": 0.3382
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 3547,
+      "avg": 4.2704,
+      "pcnt": 0.28009
+    },
+    "坚定之心": {
+      "itemNames": "DA_SteadfastHeart",
+      "count": 2878,
+      "avg": 4.1939,
+      "pcnt": 0.22726
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 2223,
+      "avg": 4.7238,
+      "pick_rate": 0.009556
+    },
+    {
+      "day": "2026-10-07",
+      "count": 4515,
+      "avg": 4.4893,
+      "pick_rate": 0.010599
+    },
+    {
+      "day": "2026-10-08",
+      "count": 3659,
+      "avg": 4.5611,
+      "pick_rate": 0.009395
+    },
+    {
+      "day": "2026-10-09",
+      "count": 4585,
+      "avg": 4.5913,
+      "pick_rate": 0.008496
+    },
+    {
+      "day": "2026-10-10",
+      "count": 761,
+      "avg": 4.6886,
+      "pick_rate": 0.007756
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.031
+}

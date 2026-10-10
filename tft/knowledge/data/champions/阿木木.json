@@ -2,122 +2,135 @@
   "name": "阿木木",
   "appear_in_comps": [
     {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
-      "tier": "A",
-      "avg_placement": 4.3871
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
+      "tier": "S",
+      "avg_placement": 4.1832
     },
     {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
       "tier": "A",
-      "avg_placement": 4.4202
+      "avg_placement": 4.2678
     },
     {
-      "cluster_id": "422022",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Zyra",
-      "tier": "A",
-      "avg_placement": 4.474
-    },
-    {
-      "cluster_id": "422038",
+      "cluster_id": "426021",
       "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
-      "tier": "B",
-      "avg_placement": 4.6239
+      "tier": "A",
+      "avg_placement": 4.3168
     },
     {
-      "cluster_id": "422019",
-      "comp_name": "DA_18_Executioner, DA_18_Malphite, DA_18_Ezreal",
-      "tier": "B",
-      "avg_placement": 4.7481
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "tier": "A",
+      "avg_placement": 4.3911
     },
     {
-      "cluster_id": "422046",
-      "comp_name": "DA_Juggernaut18, DA_Draven18",
+      "cluster_id": "426030",
+      "comp_name": "DA_Juggernaut18, DA_Amumu18",
       "tier": "B",
-      "avg_placement": 4.7644
+      "avg_placement": 4.5203
     },
     {
-      "cluster_id": "422018",
-      "comp_name": "DA_18_Adaptor, DA_Nidalee18_AP",
+      "cluster_id": "426020",
+      "comp_name": "DA_18_Blossom, DA_18_Zyra",
+      "tier": "B",
+      "avg_placement": 4.5472
+    },
+    {
+      "cluster_id": "426028",
+      "comp_name": "DA_18_Executioner, DA_18_Malphite",
+      "tier": "B",
+      "avg_placement": 4.5576
+    },
+    {
+      "cluster_id": "426015",
+      "comp_name": "DA_Juggernaut18, DA_18_Zyra, DA_Nidalee18_AP",
+      "tier": "B",
+      "avg_placement": 4.5807
+    },
+    {
+      "cluster_id": "426040",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "tier": "B",
+      "avg_placement": 4.6236
+    },
+    {
+      "cluster_id": "426032",
+      "comp_name": "DA_Juggernaut18, DA_18_Zyra, DA_18_Sejuani",
+      "tier": "B",
+      "avg_placement": 4.6383
+    },
+    {
+      "cluster_id": "426046",
+      "comp_name": "DA_18_Blossom, DA_18_Sett",
+      "tier": "B",
+      "avg_placement": 4.731
+    },
+    {
+      "cluster_id": "426045",
+      "comp_name": "DA_Juggernaut18, DA_Nidalee18_AP",
       "tier": "C",
-      "avg_placement": 4.8382
+      "avg_placement": 4.911
     },
     {
-      "cluster_id": "422030",
-      "comp_name": "DA_18_Inferno, DA_18_Kayle",
+      "cluster_id": "426039",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
       "tier": "C",
-      "avg_placement": 5.0
+      "avg_placement": 4.9795
     },
     {
-      "cluster_id": "422041",
+      "cluster_id": "426043",
+      "comp_name": "DA_Juggernaut18, DA_18_Azir",
+      "tier": "C",
+      "avg_placement": 4.987
+    },
+    {
+      "cluster_id": "426050",
       "comp_name": "DA_18_Executioner, DA_18_Soraka",
       "tier": "C",
-      "avg_placement": 5.0
+      "avg_placement": 5.0042
     },
     {
-      "cluster_id": "422025",
-      "comp_name": "DA_18_Blossom, DA_18_Ahri, DA_18_Malphite",
-      "tier": "D",
-      "avg_placement": 5.1037
-    },
-    {
-      "cluster_id": "422042",
+      "cluster_id": "426055",
       "comp_name": "DA_18_Inferno, DA_Amumu18",
       "tier": "D",
-      "avg_placement": 5.1579
+      "avg_placement": 5.2417
     },
     {
-      "cluster_id": "422045",
-      "comp_name": "DA_18_Spellweaver, DA_18_KhaZix",
-      "tier": "D",
-      "avg_placement": 5.1856
-    },
-    {
-      "cluster_id": "422034",
-      "comp_name": "DA_18_Elderwood, DA_18_Sett",
-      "tier": "D",
-      "avg_placement": 5.2877
-    },
-    {
-      "cluster_id": "422040",
-      "comp_name": "DA_Juggernaut18, DA_Nidalee18_AP",
-      "tier": "D",
-      "avg_placement": 5.301
-    },
-    {
-      "cluster_id": "422039",
+      "cluster_id": "426058",
       "comp_name": "DA_18_Fae, DA_18_Xayah",
       "tier": "D",
-      "avg_placement": 5.8295
+      "avg_placement": 5.8032
     }
   ],
   "builds": [
     {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "cluster_id": "426004",
+      "comp_name": "DA_18_Lunar, DA_18_Aphelios, DA_Nidalee18_AP",
       "items": [
         "石像鬼石板甲",
-        "石像鬼石板甲",
+        "振奋盔甲",
         "狂徒铠甲"
       ],
-      "avg_placement": 4.1258,
-      "count": 1534,
+      "avg_placement": 3.7403,
+      "count": 5059,
       "priority_scores": {
-        "石像鬼石板甲": 85,
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
         "狂徒铠甲": 72
       }
     },
     {
-      "cluster_id": "422018",
-      "comp_name": "DA_18_Adaptor, DA_Nidalee18_AP",
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
       "items": [
         "重装战士纹章",
         "石像鬼石板甲",
         "振奋盔甲"
       ],
-      "avg_placement": 3.3077,
-      "count": 13,
+      "avg_placement": 3.2683,
+      "count": 82,
       "priority_scores": {
         "重装战士纹章": 100,
         "石像鬼石板甲": 85,
@@ -125,49 +138,130 @@
       }
     },
     {
-      "cluster_id": "422041",
-      "comp_name": "DA_18_Executioner, DA_18_Soraka",
+      "cluster_id": "426020",
+      "comp_name": "DA_18_Blossom, DA_18_Zyra",
+      "items": [
+        "石像鬼石板甲",
+        "坚定之心",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.875,
+      "count": 88,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "坚定之心": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "426015",
+      "comp_name": "DA_Juggernaut18, DA_18_Zyra, DA_Nidalee18_AP",
+      "items": [
+        "石像鬼石板甲",
+        "日炎斗篷",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0252,
+      "count": 437,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "日炎斗篷": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "426040",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
       "items": [
         "石像鬼石板甲",
         "振奋盔甲",
-        "日炎斗篷"
+        "狂徒铠甲"
       ],
-      "avg_placement": 4.3158,
-      "count": 19,
+      "avg_placement": 4.3774,
+      "count": 1166,
       "priority_scores": {
         "石像鬼石板甲": 100,
         "振奋盔甲": 85,
-        "日炎斗篷": 72
+        "狂徒铠甲": 72
       }
     },
     {
-      "cluster_id": "422042",
+      "cluster_id": "426032",
+      "comp_name": "DA_Juggernaut18, DA_18_Zyra, DA_18_Sejuani",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.3539,
+      "count": 1619,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "426045",
+      "comp_name": "DA_Juggernaut18, DA_Nidalee18_AP",
+      "items": [
+        "冕卫",
+        "巨龙之爪",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.0833,
+      "count": 12,
+      "priority_scores": {
+        "冕卫": 100,
+        "巨龙之爪": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "426043",
+      "comp_name": "DA_Juggernaut18, DA_18_Azir",
+      "items": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.6136,
+      "count": 176,
+      "priority_scores": {
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "426050",
+      "comp_name": "DA_18_Executioner, DA_18_Soraka",
+      "items": [
+        "石像鬼石板甲",
+        "圣盾使的誓约",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 3.8,
+      "count": 15,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "426055",
       "comp_name": "DA_18_Inferno, DA_Amumu18",
       "items": [
         "石像鬼石板甲",
-        "石像鬼石板甲",
-        "石像鬼石板甲"
+        "圣盾使的誓约",
+        "振奋盔甲"
       ],
-      "avg_placement": 4,
-      "count": 17,
+      "avg_placement": 4.1852,
+      "count": 27,
       "priority_scores": {
-        "石像鬼石板甲": 72
-      }
-    },
-    {
-      "cluster_id": "422040",
-      "comp_name": "DA_Juggernaut18, DA_Nidalee18_AP",
-      "items": [
-        "棘刺背心",
-        "石像鬼石板甲",
-        "日炎斗篷"
-      ],
-      "avg_placement": 3.3333,
-      "count": 18,
-      "priority_scores": {
-        "棘刺背心": 100,
-        "石像鬼石板甲": 85,
-        "日炎斗篷": 72
+        "石像鬼石板甲": 100,
+        "圣盾使的誓约": 85,
+        "振奋盔甲": 72
       }
     }
   ]

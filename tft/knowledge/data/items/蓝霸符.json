@@ -2,34 +2,42 @@
   "name": "蓝霸符",
   "priority_list": [
     {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
       "comp_tier": "S",
-      "comp_avg": 3.976,
+      "comp_avg": 4.1565,
       "carry": "苍蓝哨戒",
       "priority_score": 100
     },
     {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
-      "comp_tier": "A",
-      "comp_avg": 4.4541,
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
+      "comp_tier": "S",
+      "comp_avg": 4.1565,
       "carry": "绯红树怪",
       "priority_score": 100
     },
     {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
       "comp_tier": "A",
-      "comp_avg": 4.4541,
-      "carry": "苍蓝哨戒",
+      "comp_avg": 4.3434,
+      "carry": "乐芙兰",
       "priority_score": 100
     },
     {
-      "cluster_id": "422015",
-      "comp_name": "DA_18_Sprykin, DA_18_Veigar",
+      "cluster_id": "426000",
+      "comp_name": "DA_18_Defender, DA_18_Rengar",
       "comp_tier": "S",
-      "comp_avg": 4.0985,
+      "comp_avg": 4.0991,
+      "carry": "卡西奥佩娅",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "comp_tier": "A",
+      "comp_avg": 4.3434,
       "carry": "维迦",
       "priority_score": 85
     }

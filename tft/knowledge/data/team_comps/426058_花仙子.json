@@ -1,0 +1,210 @@
+{
+  "cluster_id": "426058",
+  "tft_set": "TFTSet18",
+  "units": [
+    "赫卡里姆",
+    "莉莉娅",
+    "奥恩",
+    "洛",
+    "崔丝塔娜",
+    "韦鲁斯",
+    "霞",
+    "阿木木"
+  ],
+  "traits": [
+    "护卫 (1)",
+    "永恒之森 (1)",
+    "花仙子 (2)",
+    "地狱火 (1)",
+    "迅捷射手 (1)",
+    "重装战士 (1)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "霞",
+    "洛",
+    "奥恩",
+    "韦鲁斯",
+    "约里克",
+    "蕾欧娜",
+    "伊莉丝"
+  ],
+  "name_string": "DA_18_Fae, DA_18_Xayah",
+  "display_names": [
+    {
+      "name": "花仙子",
+      "type": "trait",
+      "score": 1.3729343456900402
+    },
+    {
+      "name": "霞",
+      "type": "unit",
+      "score": 3.7724430549352395
+    }
+  ],
+  "count": 14820,
+  "avg_placement": 5.8032,
+  "top4_rate": 0.272,
+  "win_rate": 0.04,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "霞",
+      "items": [
+        "死亡之刃",
+        "鬼索的狂暴之刃",
+        "红霸符"
+      ],
+      "avg_placement": 4.7273,
+      "count": 22,
+      "score": 0.6117,
+      "place_change": -1.259,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "鬼索的狂暴之刃": 85,
+        "红霸符": 72
+      }
+    },
+    {
+      "unit": "洛",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.7959,
+      "count": 49,
+      "score": 0.3208,
+      "place_change": -1.191,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "奥恩",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.4211,
+      "count": 19,
+      "score": 0.2266,
+      "place_change": -1.566,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "韦鲁斯",
+      "items": [
+        "死亡之刃",
+        "无尽之刃",
+        "朔极之矛"
+      ],
+      "avg_placement": 4.1,
+      "count": 20,
+      "score": 0.2227,
+      "place_change": -1.887,
+      "priority_scores": {
+        "死亡之刃": 100,
+        "无尽之刃": 85,
+        "朔极之矛": 72
+      }
+    }
+  ],
+  "build_items": {
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 2030,
+      "avg": 5.6236,
+      "pcnt": 0.90665
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 1666,
+      "avg": 5.5642,
+      "pcnt": 0.74408
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 1356,
+      "avg": 5.5892,
+      "pcnt": 0.60563
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 1163,
+      "avg": 5.3929,
+      "pcnt": 0.51943
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 985,
+      "avg": 5.4701,
+      "pcnt": 0.43993
+    },
+    "死亡之刃": {
+      "itemNames": "DA_Deathblade",
+      "count": 811,
+      "avg": 5.3354,
+      "pcnt": 0.36222
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 674,
+      "avg": 5.4407,
+      "pcnt": 0.30103
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 509,
+      "avg": 5.2024,
+      "pcnt": 0.22733
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 417,
+      "avg": 5.2638,
+      "pcnt": 0.18624
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 202,
+      "avg": 6.3812,
+      "pick_rate": 0.000868
+    },
+    {
+      "day": "2026-10-07",
+      "count": 820,
+      "avg": 6.0549,
+      "pick_rate": 0.001925
+    },
+    {
+      "day": "2026-10-08",
+      "count": 626,
+      "avg": 5.9808,
+      "pick_rate": 0.001607
+    },
+    {
+      "day": "2026-10-09",
+      "count": 820,
+      "avg": 5.9585,
+      "pick_rate": 0.001519
+    },
+    {
+      "day": "2026-10-10",
+      "count": 152,
+      "avg": 6.0132,
+      "pick_rate": 0.001549
+    }
+  ],
+  "levelling": "lvl 5",
+  "difficulty": -0.085
+}

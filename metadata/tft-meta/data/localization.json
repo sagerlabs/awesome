@@ -148,7 +148,7 @@
     "TFTSet18_Item_RiftbeastSelector": "阿尔法印记",
     "DA_18_EmblemSlayer": "狂战士纹章",
     "DA_18_EmblemSpellweaver": "法师纹章",
-    "DA_18_EmblemSprykin": "约德尔人…纹章",
+    "DA_18_EmblemSprykin": "约德尔人和朋友纹章",
     "DA_18_EmblemVanguard": "重装战士纹章",
     "TFT_GoldenEgg": "金蛋",
     "DA_GoldenEggCharacter": "金蛋",
@@ -205,6 +205,8 @@
     "DA_18_Ezreal": "伊泽瑞尔",
     "TFT18_Fiddlesticks": "费德提克",
     "DA_Fiddlesticks18": "费德提克",
+    "TFT18_GnarBig": "纳尔",
+    "DA_18_GnarBig": "纳尔",
     "TFT18_Gnar": "纳尔",
     "DA_18_GnarSmall": "纳尔",
     "TFT18_Gromp": "魔沼蛙",
@@ -319,10 +321,10 @@
     "DA_Elderwood18_StonebarkTree": "生命花",
     "TFT18_Elderwood_GolemSummon": "深林守卫",
     "DA_Elderwood18_Protector": "深林守卫",
-    "TFT18_SprykinSummonMelee": "将1个【约德尔人...】拖至【毛茸茸大朋友】身上以选择其【骑乘者】。",
-    "DA_18_SprykinAugmentSummonMelee": "将1个【约德尔人...】拖至【毛茸茸大朋友】身上以选择其【骑乘者】。",
-    "TFT18_SprykinSummonRanged": "将1个【约德尔人...】拖至【毛茸茸大朋友】身上以选择其【骑乘者】。",
-    "DA_18_SprykinAugmentSummonRanged": "将1个【约德尔人...】拖至【毛茸茸大朋友】身上以选择其【骑乘者】。",
+    "TFT18_SprykinSummonMelee": "将1个【约德尔人和朋友】拖至【毛茸茸大朋友】身上以选择其【骑乘者】。",
+    "DA_18_SprykinAugmentSummonMelee": "将1个【约德尔人和朋友】拖至【毛茸茸大朋友】身上以选择其【骑乘者】。",
+    "TFT18_SprykinSummonRanged": "将1个【约德尔人和朋友】拖至【毛茸茸大朋友】身上以选择其【骑乘者】。",
+    "DA_18_SprykinAugmentSummonRanged": "将1个【约德尔人和朋友】拖至【毛茸茸大朋友】身上以选择其【骑乘者】。",
     "DA_AluneUniqueTrait18": "月华神女",
     "DA_AluneUniqueTrait18_1": "月华神女 (1)",
     "DA_AluneUniqueTrait18_2": "月华神女 (2)",
@@ -363,16 +365,16 @@
     "DA_18_Greenfather_7": "翠神 (7)",
     "DA_18_Greenfather_8": "翠神 (8)",
     "DA_18_Greenfather_9": "翠神 (9)",
-    "DA_18_LuxUniqueTrait": "大元素使",
-    "DA_18_LuxUniqueTrait_1": "大元素使 (1)",
-    "DA_18_LuxUniqueTrait_2": "大元素使 (2)",
-    "DA_18_LuxUniqueTrait_3": "大元素使 (3)",
-    "DA_18_LuxUniqueTrait_4": "大元素使 (4)",
-    "DA_18_LuxUniqueTrait_5": "大元素使 (5)",
-    "DA_18_LuxUniqueTrait_6": "大元素使 (6)",
-    "DA_18_LuxUniqueTrait_7": "大元素使 (7)",
-    "DA_18_LuxUniqueTrait_8": "大元素使 (8)",
-    "DA_18_LuxUniqueTrait_9": "大元素使 (9)",
+    "DA_18_LuxUniqueTrait": "自然之力！大元素使",
+    "DA_18_LuxUniqueTrait_1": "自然之力！大元素使 (1)",
+    "DA_18_LuxUniqueTrait_2": "自然之力！大元素使 (2)",
+    "DA_18_LuxUniqueTrait_3": "自然之力！大元素使 (3)",
+    "DA_18_LuxUniqueTrait_4": "自然之力！大元素使 (4)",
+    "DA_18_LuxUniqueTrait_5": "自然之力！大元素使 (5)",
+    "DA_18_LuxUniqueTrait_6": "自然之力！大元素使 (6)",
+    "DA_18_LuxUniqueTrait_7": "自然之力！大元素使 (7)",
+    "DA_18_LuxUniqueTrait_8": "自然之力！大元素使 (8)",
+    "DA_18_LuxUniqueTrait_9": "自然之力！大元素使 (9)",
     "DA_18_Maokai_UniqueTrait": "远古树精",
     "DA_18_Maokai_UniqueTrait_1": "远古树精 (1)",
     "DA_18_Maokai_UniqueTrait_2": "远古树精 (2)",
@@ -383,6 +385,16 @@
     "DA_18_Maokai_UniqueTrait_7": "远古树精 (7)",
     "DA_18_Maokai_UniqueTrait_8": "远古树精 (8)",
     "DA_18_Maokai_UniqueTrait_9": "远古树精 (9)",
+    "TFT18_Prowler": "狂野女猎手",
+    "TFT18_Prowler_1": "狂野女猎手 (1)",
+    "TFT18_Prowler_2": "狂野女猎手 (2)",
+    "TFT18_Prowler_3": "狂野女猎手 (3)",
+    "TFT18_Prowler_4": "狂野女猎手 (4)",
+    "TFT18_Prowler_5": "狂野女猎手 (5)",
+    "TFT18_Prowler_6": "狂野女猎手 (6)",
+    "TFT18_Prowler_7": "狂野女猎手 (7)",
+    "TFT18_Prowler_8": "狂野女猎手 (8)",
+    "TFT18_Prowler_9": "狂野女猎手 (9)",
     "DA_18_ZyraUniqueTrait": "荆棘之兴",
     "DA_18_ZyraUniqueTrait_1": "荆棘之兴 (1)",
     "DA_18_ZyraUniqueTrait_2": "荆棘之兴 (2)",
@@ -653,16 +665,16 @@
     "DA_18_Spellweaver_7": "法师 (7)",
     "DA_18_Spellweaver_8": "法师 (8)",
     "DA_18_Spellweaver_9": "法师 (9)",
-    "DA_18_Sprykin": "约德尔人...",
-    "DA_18_Sprykin_1": "约德尔人... (1)",
-    "DA_18_Sprykin_2": "约德尔人... (2)",
-    "DA_18_Sprykin_3": "约德尔人... (3)",
-    "DA_18_Sprykin_4": "约德尔人... (4)",
-    "DA_18_Sprykin_5": "约德尔人... (5)",
-    "DA_18_Sprykin_6": "约德尔人... (6)",
-    "DA_18_Sprykin_7": "约德尔人... (7)",
-    "DA_18_Sprykin_8": "约德尔人... (8)",
-    "DA_18_Sprykin_9": "约德尔人... (9)",
+    "DA_18_Sprykin": "约德尔人和朋友",
+    "DA_18_Sprykin_1": "约德尔人和朋友 (1)",
+    "DA_18_Sprykin_2": "约德尔人和朋友 (2)",
+    "DA_18_Sprykin_3": "约德尔人和朋友 (3)",
+    "DA_18_Sprykin_4": "约德尔人和朋友 (4)",
+    "DA_18_Sprykin_5": "约德尔人和朋友 (5)",
+    "DA_18_Sprykin_6": "约德尔人和朋友 (6)",
+    "DA_18_Sprykin_7": "约德尔人和朋友 (7)",
+    "DA_18_Sprykin_8": "约德尔人和朋友 (8)",
+    "DA_18_Sprykin_9": "约德尔人和朋友 (9)",
     "DA_18_Summoner": "召唤师",
     "DA_18_Summoner_1": "召唤师 (1)",
     "DA_18_Summoner_2": "召唤师 (2)",
@@ -830,7 +842,7 @@
     "阿尔法印记": "TFTSet18_Item_RiftbeastSelector",
     "狂战士纹章": "DA_18_EmblemSlayer",
     "法师纹章": "DA_18_EmblemSpellweaver",
-    "约德尔人…纹章": "DA_18_EmblemSprykin",
+    "约德尔人和朋友纹章": "DA_18_EmblemSprykin",
     "重装战士纹章": "DA_18_EmblemVanguard",
     "金蛋": "TFT_GoldenEgg",
     "高塔": "TFT_TrainingDummy",
@@ -845,7 +857,7 @@
     "阿兹尔": "DA_18_Azir",
     "绯红印记树怪": "DA_Brambleback18",
     "凯特琳": "DA_18_Caitlyn",
-    "卡蜜尔": "TFT18_Camille",
+    "卡蜜尔": "DA_18_Camille",
     "卡西奥佩娅": "DA_18_Cassiopeia",
     "绯红树怪": "DA_Cinderling18",
     "深红锋喙鸟": "DA_CrimsonRaptor18",
@@ -906,13 +918,14 @@
     "婕拉": "DA_18_Zyra",
     "生命花": "TFT18_Elderwood_TreeSummon",
     "深林守卫": "TFT18_Elderwood_GolemSummon",
-    "将1个【约德尔人...】拖至【毛茸茸大朋友】身上以选择其【骑乘者】。": "TFT18_SprykinSummonRanged",
+    "将1个【约德尔人和朋友】拖至【毛茸茸大朋友】身上以选择其【骑乘者】。": "TFT18_SprykinSummonMelee",
     "月华神女": "DA_AluneUniqueTrait18",
     "赏金猎人": "DA_DravenUniqueTrait18",
     "顶级掠食者": "DA_18_ApexPredator",
     "翠神": "DA_18_Greenfather",
-    "大元素使": "DA_18_LuxUniqueTrait",
+    "自然之力！大元素使": "DA_18_LuxUniqueTrait",
     "远古树精": "DA_18_Maokai_UniqueTrait",
+    "狂野女猎手": "TFT18_Prowler",
     "荆棘之兴": "DA_18_ZyraUniqueTrait",
     "魔战士": "DA_18_Adaptor",
     "魔岩巨兽": "DA_18_Battlemage",
@@ -940,7 +953,7 @@
     "狂战士": "DA_18_Slayer",
     "日蚀骑士": "DA_18_Solar",
     "法师": "DA_18_Spellweaver",
-    "约德尔人...": "DA_18_Sprykin",
+    "约德尔人和朋友": "DA_18_Sprykin",
     "召唤师": "DA_18_Summoner",
     "重装战士": "DA_18_Vanguard"
   },
@@ -1028,21 +1041,11 @@
         "猎人"
       ]
     },
-    "TFT18_AzirSoldier": {
-      "api_name": "TFT18_AzirSoldier",
-      "name": "阿兹尔",
-      "cost": 1,
-      "traits": []
-    },
     "DA_18_Azir": {
       "api_name": "DA_18_Azir",
       "name": "阿兹尔",
-      "cost": 3,
-      "traits": [
-        "黑荆棘",
-        "裁决使",
-        "召唤师"
-      ]
+      "cost": 1,
+      "traits": []
     },
     "DA_Brambleback18": {
       "api_name": "DA_Brambleback18",
@@ -1062,8 +1065,8 @@
         "猎人"
       ]
     },
-    "TFT18_Camille": {
-      "api_name": "TFT18_Camille",
+    "DA_18_Camille": {
+      "api_name": "DA_18_Camille",
       "name": "卡蜜尔",
       "cost": 1,
       "traits": [
@@ -1166,7 +1169,7 @@
       "cost": 5,
       "traits": [
         "永恒之森",
-        "约德尔人...",
+        "约德尔人和朋友",
         "斗士"
       ]
     },
@@ -1236,7 +1239,7 @@
       "name": "可酷伯",
       "cost": 1,
       "traits": [
-        "约德尔人...",
+        "约德尔人和朋友",
         "斗士"
       ]
     },
@@ -1297,7 +1300,7 @@
       "name": "拉克丝",
       "cost": 5,
       "traits": [
-        "大元素使"
+        "自然之力！大元素使"
       ]
     },
     "DA_18_Malphite": {
@@ -1384,7 +1387,7 @@
       "name": "拉莫斯",
       "cost": 3,
       "traits": [
-        "约德尔人...",
+        "约德尔人和朋友",
         "护卫"
       ]
     },
@@ -1492,7 +1495,7 @@
       "name": "提莫",
       "cost": 2,
       "traits": [
-        "约德尔人...",
+        "约德尔人和朋友",
         "神谕"
       ]
     },
@@ -1502,7 +1505,7 @@
       "cost": 3,
       "traits": [
         "花仙子",
-        "约德尔人...",
+        "约德尔人和朋友",
         "猎人"
       ]
     },
@@ -1521,7 +1524,7 @@
       "cost": 1,
       "traits": [
         "黑荆棘",
-        "约德尔人...",
+        "约德尔人和朋友",
         "法师"
       ]
     },
@@ -1601,13 +1604,7 @@
     },
     "TFT18_SprykinSummonMelee": {
       "api_name": "TFT18_SprykinSummonMelee",
-      "name": "将1个【约德尔人...】拖至【毛茸茸大朋友】身上以选择其【骑乘者】。",
-      "cost": 0,
-      "traits": []
-    },
-    "TFT18_SprykinSummonRanged": {
-      "api_name": "TFT18_SprykinSummonRanged",
-      "name": "将1个【约德尔人...】拖至【毛茸茸大朋友】身上以选择其【骑乘者】。",
+      "name": "将1个【约德尔人和朋友】拖至【毛茸茸大朋友】身上以选择其【骑乘者】。",
       "cost": 0,
       "traits": []
     }

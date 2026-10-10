@@ -2,42 +2,42 @@
   "name": "最后的轻语",
   "priority_list": [
     {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
       "comp_tier": "A",
-      "comp_avg": 4.3871,
+      "comp_avg": 4.3911,
       "carry": "伊泽瑞尔",
       "priority_score": 100
     },
     {
-      "cluster_id": "422010",
-      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
-      "comp_tier": "A",
-      "comp_avg": 4.4202,
-      "carry": "艾希",
-      "priority_score": 100
-    },
-    {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
       "comp_tier": "S",
-      "comp_avg": 3.976,
+      "comp_avg": 4.1565,
       "carry": "远古巨龙",
       "priority_score": 85
     },
     {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "cluster_id": "426021",
+      "comp_name": "DA_18_Rapidfire, DA_18_Kayle",
       "comp_tier": "A",
-      "comp_avg": 4.4132,
-      "carry": "希维尔",
+      "comp_avg": 4.3168,
+      "carry": "厄斐琉斯",
       "priority_score": 85
     },
     {
-      "cluster_id": "422033",
-      "comp_name": "DA_Riftbeast18",
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
       "comp_tier": "A",
-      "comp_avg": 4.4541,
+      "comp_avg": 4.3357,
+      "carry": "伊泽瑞尔",
+      "priority_score": 85
+    },
+    {
+      "cluster_id": "426007",
+      "comp_name": "DA_Riftbeast18, DA_18_Sentry",
+      "comp_tier": "S",
+      "comp_avg": 4.1565,
       "carry": "绯红树怪",
       "priority_score": 72
     }

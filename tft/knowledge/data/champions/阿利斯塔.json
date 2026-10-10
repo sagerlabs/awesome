@@ -2,72 +2,99 @@
   "name": "阿利斯塔",
   "appear_in_comps": [
     {
-      "cluster_id": "422006",
+      "cluster_id": "426002",
       "comp_name": "DA_18_Elderwood, DA_18_Aphelios",
+      "tier": "S",
+      "avg_placement": 4.1877
+    },
+    {
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
       "tier": "A",
-      "avg_placement": 4.3252
+      "avg_placement": 4.2845
     },
     {
-      "cluster_id": "422002",
-      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Amumu18",
+      "cluster_id": "426005",
+      "comp_name": "DA_18_Executioner, DA_18_Sett",
       "tier": "A",
-      "avg_placement": 4.3871
+      "avg_placement": 4.3357
     },
     {
-      "cluster_id": "422023",
-      "comp_name": "DA_18_Executioner, DA_18_Yunara",
-      "tier": "B",
-      "avg_placement": 4.604
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
+      "tier": "A",
+      "avg_placement": 4.3434
     },
     {
-      "cluster_id": "422037",
+      "cluster_id": "426011",
+      "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_Draven18",
+      "tier": "A",
+      "avg_placement": 4.3911
+    },
+    {
+      "cluster_id": "426036",
       "comp_name": "DA_18_Elderwood, DA_18_Ezreal, DA_18_Alistar",
-      "tier": "C",
-      "avg_placement": 4.82
+      "tier": "A",
+      "avg_placement": 4.5055
     },
     {
-      "cluster_id": "422034",
-      "comp_name": "DA_18_Elderwood, DA_18_Sett",
-      "tier": "D",
-      "avg_placement": 5.2877
+      "cluster_id": "426019",
+      "comp_name": "DA_18_Blackthorn, DA_18_Yunara",
+      "tier": "B",
+      "avg_placement": 4.5772
     },
     {
-      "cluster_id": "422051",
-      "comp_name": "DA_18_Elderwood, DA_18_LeBlanc",
-      "tier": "D",
-      "avg_placement": 6.0247
+      "cluster_id": "426026",
+      "comp_name": "DA_18_Elderwood, DA_18_Lillia",
+      "tier": "B",
+      "avg_placement": 4.6838
     }
   ],
   "builds": [
     {
-      "cluster_id": "422023",
-      "comp_name": "DA_18_Executioner, DA_18_Yunara",
+      "cluster_id": "426006",
+      "comp_name": "DA_18_Sprykin, DA_18_Teemo",
       "items": [
-        "薄暮法袍",
         "石像鬼石板甲",
-        "坚定之心"
+        "石像鬼石板甲",
+        "狂徒铠甲"
       ],
-      "avg_placement": 3.4545,
-      "count": 22,
+      "avg_placement": 4.0841,
+      "count": 559,
       "priority_scores": {
-        "薄暮法袍": 100,
         "石像鬼石板甲": 85,
-        "坚定之心": 72
+        "狂徒铠甲": 72
       }
     },
     {
-      "cluster_id": "422051",
-      "comp_name": "DA_18_Elderwood, DA_18_LeBlanc",
+      "cluster_id": "426014",
+      "comp_name": "DA_18_Spellweaver, DA_18_Veigar",
       "items": [
-        "棘刺背心",
-        "巨龙之爪",
+        "冕卫",
+        "石像鬼石板甲",
         "狂徒铠甲"
       ],
-      "avg_placement": 4.1429,
-      "count": 14,
+      "avg_placement": 3.2903,
+      "count": 1233,
       "priority_scores": {
-        "棘刺背心": 100,
-        "巨龙之爪": 85,
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "cluster_id": "426019",
+      "comp_name": "DA_18_Blackthorn, DA_18_Yunara",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0378,
+      "count": 344,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
         "狂徒铠甲": 72
       }
     }

@@ -1,0 +1,228 @@
+{
+  "cluster_id": "426057",
+  "tft_set": "TFTSet18",
+  "units": [
+    "厄斐琉斯",
+    "阿兹尔",
+    "黛安娜",
+    "卡兹克",
+    "洛",
+    "拉莫斯",
+    "崔丝塔娜",
+    "维迦",
+    "费德提克"
+  ],
+  "traits": [
+    "黑荆棘 (1)",
+    "护卫 (1)",
+    "花仙子 (1)",
+    "月蚀骑士 (1)",
+    "迅捷射手 (1)",
+    "宿敌 (1)",
+    "法师 (1)",
+    "约德尔人和朋友 (1)",
+    "重装战士 (1)",
+    "绝命花妖 (1)"
+  ],
+  "stars": [
+    "卡兹克",
+    "雷恩加尔",
+    "深红锋喙鸟",
+    "远古石甲虫"
+  ],
+  "name_string": "DA_18_Executioner, DA_18_KhaZix",
+  "display_names": [
+    {
+      "name": "宿敌",
+      "type": "trait",
+      "score": 1.1739879414298018
+    },
+    {
+      "name": "卡兹克",
+      "type": "unit",
+      "score": 4.258397932816537
+    },
+    {
+      "name": "费德提克",
+      "type": "unit",
+      "score": 1.5801033591731266
+    }
+  ],
+  "count": 6420,
+  "avg_placement": 5.6854,
+  "top4_rate": 0.2821,
+  "win_rate": 0.047,
+  "tier": "D",
+  "builds": [
+    {
+      "unit": "卡兹克",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "纳什之牙"
+      ],
+      "avg_placement": 4.5714,
+      "count": 14,
+      "score": 0.7912,
+      "place_change": -1.377,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "纳什之牙": 72
+      }
+    },
+    {
+      "unit": "费德提克",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 5.1111,
+      "count": 9,
+      "score": 0.1156,
+      "place_change": -0.837,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "阿兹尔",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.5714,
+      "count": 7,
+      "score": 0.0907,
+      "place_change": -2.377,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "灭世者的死亡之帽": 72
+      }
+    },
+    {
+      "unit": "厄斐琉斯",
+      "items": [
+        "鬼索的狂暴之刃",
+        "无尽之刃",
+        "海妖之怒"
+      ],
+      "avg_placement": 5.7778,
+      "count": 27,
+      "score": 0.0789,
+      "place_change": -0.17,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "无尽之刃": 85,
+        "海妖之怒": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 914,
+      "avg": 5.5985,
+      "pcnt": 0.78725
+    },
+    "正义之手": {
+      "itemNames": "DA_HandOfJustice",
+      "count": 837,
+      "avg": 5.638,
+      "pcnt": 0.72093
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 625,
+      "avg": 5.6672,
+      "pcnt": 0.53833
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 594,
+      "avg": 5.5657,
+      "pcnt": 0.51163
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 558,
+      "avg": 5.7634,
+      "pcnt": 0.48062
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 494,
+      "avg": 5.4737,
+      "pcnt": 0.4255
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 377,
+      "avg": 5.3448,
+      "pcnt": 0.32472
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 247,
+      "avg": 5.6802,
+      "pcnt": 0.21275
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 245,
+      "avg": 5.3184,
+      "pcnt": 0.21102
+    },
+    "纳什之牙": {
+      "itemNames": "DA_NashorsTooth",
+      "count": 219,
+      "avg": 5.0365,
+      "pcnt": 0.18863
+    },
+    "海妖之怒": {
+      "itemNames": "DA_KrakensFury",
+      "count": 192,
+      "avg": 6.0521,
+      "pcnt": 0.16537
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 217,
+      "avg": 5.7419,
+      "pick_rate": 0.000933
+    },
+    {
+      "day": "2026-10-07",
+      "count": 399,
+      "avg": 5.8897,
+      "pick_rate": 0.000937
+    },
+    {
+      "day": "2026-10-08",
+      "count": 335,
+      "avg": 5.9493,
+      "pick_rate": 0.00086
+    },
+    {
+      "day": "2026-10-09",
+      "count": 420,
+      "avg": 5.9952,
+      "pick_rate": 0.000778
+    },
+    {
+      "day": "2026-10-10",
+      "count": 79,
+      "avg": 5.9114,
+      "pick_rate": 0.000805
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.089
+}

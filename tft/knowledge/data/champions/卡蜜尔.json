@@ -1,0 +1,35 @@
+{
+  "name": "卡蜜尔",
+  "appear_in_comps": [
+    {
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "tier": "A",
+      "avg_placement": 4.3419
+    },
+    {
+      "cluster_id": "426025",
+      "comp_name": "DA_18_Inferno, DA_18_Akali_AD",
+      "tier": "B",
+      "avg_placement": 4.5921
+    }
+  ],
+  "builds": [
+    {
+      "cluster_id": "426025",
+      "comp_name": "DA_18_Inferno, DA_18_Akali_AD",
+      "items": [
+        "正义之手",
+        "水银",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 3.7622,
+      "count": 143,
+      "priority_scores": {
+        "正义之手": 100,
+        "水银": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    }
+  ]
+}

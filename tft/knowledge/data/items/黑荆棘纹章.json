@@ -1,0 +1,13 @@
+{
+  "name": "黑荆棘纹章",
+  "priority_list": [
+    {
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "暗影狼",
+      "priority_score": 100
+    }
+  ]
+}

@@ -2,23 +2,28 @@
   "name": "阿卡丽",
   "appear_in_comps": [
     {
-      "cluster_id": "422018",
-      "comp_name": "DA_18_Adaptor, DA_Nidalee18_AP",
-      "tier": "C",
-      "avg_placement": 4.8382
-    },
-    {
-      "cluster_id": "422030",
-      "comp_name": "DA_18_Inferno, DA_18_Kayle",
-      "tier": "C",
-      "avg_placement": 5.0
-    },
-    {
-      "cluster_id": "422042",
-      "comp_name": "DA_18_Inferno, DA_Amumu18",
-      "tier": "D",
-      "avg_placement": 5.1579
+      "cluster_id": "426025",
+      "comp_name": "DA_18_Inferno, DA_18_Akali_AD",
+      "tier": "B",
+      "avg_placement": 4.5921
     }
   ],
-  "builds": []
+  "builds": [
+    {
+      "cluster_id": "426025",
+      "comp_name": "DA_18_Inferno, DA_18_Akali_AD",
+      "items": [
+        "夜之锋刃",
+        "正义之手",
+        "无尽之刃"
+      ],
+      "avg_placement": 4.3077,
+      "count": 1576,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "正义之手": 85,
+        "无尽之刃": 72
+      }
+    }
+  ]
 }

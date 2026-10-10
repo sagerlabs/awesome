@@ -2,47 +2,75 @@
   "name": "伊莉丝",
   "appear_in_comps": [
     {
-      "cluster_id": "422016",
-      "comp_name": "DA_18_Vanguard, DA_18_Caitlyn",
-      "tier": "C",
-      "avg_placement": 5.0438
+      "cluster_id": "426027",
+      "comp_name": "DA_18_Vanguard, DA_18_Ahri",
+      "tier": "A",
+      "avg_placement": 4.2727
     },
     {
-      "cluster_id": "422050",
-      "comp_name": "DA_18_Coven, DA_18_Morgana",
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "tier": "A",
+      "avg_placement": 4.3419
+    },
+    {
+      "cluster_id": "426054",
+      "comp_name": "DA_18_Coven, DA_18_Elise",
       "tier": "D",
-      "avg_placement": 5.8427
+      "avg_placement": 5.3499
+    },
+    {
+      "cluster_id": "426059",
+      "comp_name": "DA_18_Vanguard, DA_18_Elise",
+      "tier": "D",
+      "avg_placement": 6.0797
     }
   ],
   "builds": [
     {
-      "cluster_id": "422016",
-      "comp_name": "DA_18_Vanguard, DA_18_Caitlyn",
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
       "items": [
-        "巨龙之爪",
-        "石像鬼石板甲",
-        "狂徒铠甲"
-      ],
-      "avg_placement": 4.2301,
-      "count": 113,
-      "priority_scores": {
-        "巨龙之爪": 100,
-        "石像鬼石板甲": 85,
-        "狂徒铠甲": 72
-      }
-    },
-    {
-      "cluster_id": "422050",
-      "comp_name": "DA_18_Coven, DA_18_Morgana",
-      "items": [
-        "大天使之杖",
+        "狂战士纹章",
         "鬼索的狂暴之刃",
         "泰坦的坚决"
       ],
-      "avg_placement": 5.3922,
-      "count": 816,
+      "avg_placement": 3.8351,
+      "count": 194,
       "priority_scores": {
-        "大天使之杖": 100,
+        "狂战士纹章": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "426054",
+      "comp_name": "DA_18_Coven, DA_18_Elise",
+      "items": [
+        "石像鬼石板甲",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.2341,
+      "count": 13149,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "鬼索的狂暴之刃": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "cluster_id": "426059",
+      "comp_name": "DA_18_Vanguard, DA_18_Elise",
+      "items": [
+        "狂战士纹章",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 5.1935,
+      "count": 1023,
+      "priority_scores": {
+        "狂战士纹章": 100,
         "鬼索的狂暴之刃": 85,
         "泰坦的坚决": 72
       }

@@ -1,0 +1,224 @@
+{
+  "cluster_id": "426023",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿兹尔",
+    "黛安娜",
+    "墨菲特",
+    "雷克塞",
+    "沃里克",
+    "绯红印记树怪",
+    "远古石甲虫",
+    "暗影狼"
+  ],
+  "traits": [
+    "魔岩巨兽 (1)",
+    "黑荆棘 (2)",
+    "斗士 (1)",
+    "狂战士 (2)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "沃里克",
+    "暗影狼",
+    "伊莉丝",
+    "卡蜜尔",
+    "峡谷迅捷蟹",
+    "阿利斯塔",
+    "卡兹克",
+    "雷恩加尔",
+    "芸阿娜",
+    "凯特琳",
+    "瑟庄妮"
+  ],
+  "name_string": "DA_18_Slayer, DA_18_Warwick",
+  "display_names": [
+    {
+      "name": "狂战士",
+      "type": "trait",
+      "score": 1.8804905518708548
+    },
+    {
+      "name": "沃里克",
+      "type": "unit",
+      "score": 4.360718308096609
+    }
+  ],
+  "count": 33191,
+  "avg_placement": 4.399,
+  "top4_rate": 0.5332,
+  "win_rate": 0.0735,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "沃里克",
+      "items": [
+        "朔极之矛",
+        "斯特拉克的挑战护手",
+        "泰坦的坚决"
+      ],
+      "avg_placement": 4.2106,
+      "count": 2925,
+      "score": 0.4695,
+      "place_change": -0.203,
+      "priority_scores": {
+        "朔极之矛": 100,
+        "斯特拉克的挑战护手": 85,
+        "泰坦的坚决": 72
+      }
+    },
+    {
+      "unit": "墨菲特",
+      "items": [
+        "薄暮法袍",
+        "振奋盔甲",
+        "日炎斗篷"
+      ],
+      "avg_placement": 2.5,
+      "count": 20,
+      "score": 0.3145,
+      "place_change": -1.914,
+      "priority_scores": {
+        "薄暮法袍": 100,
+        "振奋盔甲": 85,
+        "日炎斗篷": 72
+      }
+    },
+    {
+      "unit": "绯红印记树怪",
+      "items": [
+        "夜之锋刃",
+        "巨人杀手",
+        "水银"
+      ],
+      "avg_placement": 3,
+      "count": 55,
+      "score": 0.2128,
+      "place_change": -1.414,
+      "priority_scores": {
+        "夜之锋刃": 100,
+        "巨人杀手": 85,
+        "水银": 72
+      }
+    },
+    {
+      "unit": "暗影狼",
+      "items": [
+        "黑荆棘纹章",
+        "夜之锋刃",
+        "无尽之刃"
+      ],
+      "avg_placement": 3.6757,
+      "count": 37,
+      "score": 0.155,
+      "place_change": -0.738,
+      "priority_scores": {
+        "黑荆棘纹章": 100,
+        "夜之锋刃": 85,
+        "无尽之刃": 72
+      }
+    }
+  ],
+  "build_items": {
+    "泰坦的坚决": {
+      "itemNames": "DA_TitansResolve",
+      "count": 6931,
+      "avg": 4.2695,
+      "pcnt": 0.86735
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 6689,
+      "avg": 4.2232,
+      "pcnt": 0.83707
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 6567,
+      "avg": 4.3,
+      "pcnt": 0.8218
+    },
+    "夜之锋刃": {
+      "itemNames": "DA_EdgeOfNight",
+      "count": 3660,
+      "avg": 4.0978,
+      "pcnt": 0.45802
+    },
+    "水银": {
+      "itemNames": "DA_Quicksilver",
+      "count": 3061,
+      "avg": 4.0987,
+      "pcnt": 0.38306
+    },
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 3031,
+      "avg": 4.2191,
+      "pcnt": 0.3793
+    },
+    "薄暮法袍": {
+      "itemNames": "DA_Evenshroud",
+      "count": 3000,
+      "avg": 3.9167,
+      "pcnt": 0.37542
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 2480,
+      "avg": 4.0714,
+      "pcnt": 0.31035
+    },
+    "日炎斗篷": {
+      "itemNames": "DA_SunfireCape",
+      "count": 1707,
+      "avg": 3.8981,
+      "pcnt": 0.21362
+    },
+    "黑荆棘纹章": {
+      "itemNames": "DA_18_EmblemBlackthorn",
+      "count": 1541,
+      "avg": 4.2901,
+      "pcnt": 0.19284
+    },
+    "巨人杀手": {
+      "itemNames": "DA_GiantSlayer",
+      "count": 1513,
+      "avg": 3.8678,
+      "pcnt": 0.18934
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 1656,
+      "avg": 4.4807,
+      "pick_rate": 0.007118
+    },
+    {
+      "day": "2026-10-07",
+      "count": 2431,
+      "avg": 4.4953,
+      "pick_rate": 0.005707
+    },
+    {
+      "day": "2026-10-08",
+      "count": 2237,
+      "avg": 4.3657,
+      "pick_rate": 0.005744
+    },
+    {
+      "day": "2026-10-09",
+      "count": 3228,
+      "avg": 4.4009,
+      "pick_rate": 0.005981
+    },
+    {
+      "day": "2026-10-10",
+      "count": 590,
+      "avg": 4.4017,
+      "pick_rate": 0.006013
+    }
+  ],
+  "levelling": "lvl 6",
+  "difficulty": 0.028
+}

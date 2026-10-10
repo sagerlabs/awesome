@@ -1,0 +1,202 @@
+{
+  "cluster_id": "426016",
+  "tft_set": "TFTSet18",
+  "units": [
+    "墨菲特",
+    "雷克塞",
+    "希维尔",
+    "绯红树怪",
+    "克格莫",
+    "远古石甲虫",
+    "奈德丽",
+    "苍蓝雕纹魔像"
+  ],
+  "traits": [
+    "魔战士 (1)",
+    "魔岩巨兽 (1)",
+    "黑荆棘 (1)",
+    "斗士 (1)",
+    "帝王斑蝶 (1)",
+    "猎人 (1)",
+    "神谕 (1)",
+    "野兽之灵 (1)",
+    "峡谷野怪 (1)"
+  ],
+  "stars": [
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Hunter, DA_18_Malphite",
+  "display_names": [
+    {
+      "name": "猎人",
+      "type": "trait",
+      "score": 1.611775528978841
+    },
+    {
+      "name": "希维尔",
+      "type": "unit",
+      "score": 4.11738730450782
+    }
+  ],
+  "count": 32574,
+  "avg_placement": 4.4727,
+  "top4_rate": 0.5185,
+  "win_rate": 0.0852,
+  "tier": "A",
+  "builds": [
+    {
+      "unit": "希维尔",
+      "items": [
+        "无尽之刃",
+        "红霸符",
+        "强袭者的链枷"
+      ],
+      "avg_placement": 4.1268,
+      "count": 1293,
+      "score": 0.569,
+      "place_change": -0.517,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "红霸符": 85,
+        "强袭者的链枷": 72
+      }
+    },
+    {
+      "unit": "墨菲特",
+      "items": [
+        "冕卫",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.1645,
+      "count": 1836,
+      "score": 0.5153,
+      "place_change": -0.479,
+      "priority_scores": {
+        "冕卫": 100,
+        "石像鬼石板甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "奈德丽",
+      "items": [
+        "无尽之刃",
+        "朔极之矛",
+        "斯特拉克的挑战护手"
+      ],
+      "avg_placement": 4.2426,
+      "count": 1154,
+      "score": 0.4869,
+      "place_change": -0.401,
+      "priority_scores": {
+        "无尽之刃": 100,
+        "朔极之矛": 85,
+        "斯特拉克的挑战护手": 72
+      }
+    },
+    {
+      "unit": "克格莫",
+      "items": [
+        "金锅铲冠冕"
+      ],
+      "avg_placement": 3.3929,
+      "count": 56,
+      "score": 0.0167,
+      "place_change": -1.251,
+      "priority_scores": {
+        "金锅铲冠冕": 100
+      }
+    }
+  ],
+  "build_items": {
+    "无尽之刃": {
+      "itemNames": "DA_InfinityEdge",
+      "count": 17849,
+      "avg": 4.4246,
+      "pcnt": 1.09469
+    },
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 17080,
+      "avg": 4.5148,
+      "pcnt": 1.04753
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 13445,
+      "avg": 4.3909,
+      "pcnt": 0.82459
+    },
+    "红霸符": {
+      "itemNames": "DA_RedBuff",
+      "count": 9972,
+      "avg": 4.2754,
+      "pcnt": 0.61159
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 9378,
+      "avg": 4.4287,
+      "pcnt": 0.57516
+    },
+    "斯特拉克的挑战护手": {
+      "itemNames": "DA_SteraksGage",
+      "count": 7866,
+      "avg": 4.2998,
+      "pcnt": 0.48243
+    },
+    "冕卫": {
+      "itemNames": "DA_Crownguard",
+      "count": 7793,
+      "avg": 4.3639,
+      "pcnt": 0.47795
+    },
+    "强袭者的链枷": {
+      "itemNames": "DA_StrikersFlail",
+      "count": 5061,
+      "avg": 4.3359,
+      "pcnt": 0.3104
+    },
+    "金锅铲冠冕": {
+      "itemNames": "DA_TacticiansCape",
+      "count": 310,
+      "avg": 4.3065,
+      "pcnt": 0.01901
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 3214,
+      "avg": 4.71,
+      "pick_rate": 0.013815
+    },
+    {
+      "day": "2026-10-07",
+      "count": 5554,
+      "avg": 4.8967,
+      "pick_rate": 0.013038
+    },
+    {
+      "day": "2026-10-08",
+      "count": 4480,
+      "avg": 4.5232,
+      "pick_rate": 0.011503
+    },
+    {
+      "day": "2026-10-09",
+      "count": 6268,
+      "avg": 4.5456,
+      "pick_rate": 0.011615
+    },
+    {
+      "day": "2026-10-10",
+      "count": 1104,
+      "avg": 4.5707,
+      "pick_rate": 0.011252
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": -0.018
+}

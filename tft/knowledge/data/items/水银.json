@@ -2,20 +2,44 @@
   "name": "水银",
   "priority_list": [
     {
-      "cluster_id": "422024",
-      "comp_name": "DA_Riftbeast18, DA_Sentinel18",
-      "comp_tier": "S",
-      "comp_avg": 3.976,
+      "cluster_id": "426037",
+      "comp_name": "DA_18_Slayer, DA_Brambleback18",
+      "comp_tier": "A",
+      "comp_avg": 4.3419,
       "carry": "绯红印记树怪",
       "priority_score": 85
     },
     {
-      "cluster_id": "422012",
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
+      "comp_tier": "A",
+      "comp_avg": 4.2678,
+      "carry": "绯红印记树怪",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426023",
+      "comp_name": "DA_18_Slayer, DA_18_Warwick",
+      "comp_tier": "A",
+      "comp_avg": 4.399,
+      "carry": "绯红印记树怪",
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426009",
       "comp_name": "DA_18_Invoker, DA_18_Morgana",
       "comp_tier": "A",
-      "comp_avg": 4.5152,
+      "comp_avg": 4.4227,
       "carry": "绯红印记树怪",
-      "priority_score": 85
+      "priority_score": 72
+    },
+    {
+      "cluster_id": "426022",
+      "comp_name": "DA_18_Blossom, DA_18_Rengar",
+      "comp_tier": "A",
+      "comp_avg": 4.4939,
+      "carry": "易",
+      "priority_score": 72
     }
   ]
 }

@@ -1,0 +1,221 @@
+{
+  "cluster_id": "426028",
+  "tft_set": "TFTSet18",
+  "units": [
+    "阿兹尔",
+    "凯南",
+    "墨菲特",
+    "索拉卡",
+    "约里克",
+    "婕拉",
+    "阿木木",
+    "费德提克"
+  ],
+  "traits": [
+    "魔岩巨兽 (1)",
+    "黑荆棘 (1)",
+    "裁决使 (2)",
+    "地狱火 (1)",
+    "召唤师 (2)",
+    "荆棘之兴 (1)",
+    "绝命花妖 (2)",
+    "主宰 (1)"
+  ],
+  "stars": [
+    "卡兹克",
+    "可酷伯",
+    "蕾欧娜",
+    "霞",
+    "雷恩加尔"
+  ],
+  "name_string": "DA_18_Executioner, DA_18_Malphite",
+  "display_names": [
+    {
+      "name": "裁决使",
+      "type": "trait",
+      "score": 2.062324694266801
+    },
+    {
+      "name": "墨菲特",
+      "type": "unit",
+      "score": 4.196545775833053
+    }
+  ],
+  "count": 124924,
+  "avg_placement": 4.5576,
+  "top4_rate": 0.494,
+  "win_rate": 0.0908,
+  "tier": "B",
+  "builds": [
+    {
+      "unit": "墨菲特",
+      "items": [
+        "石像鬼石板甲",
+        "振奋盔甲",
+        "狂徒铠甲"
+      ],
+      "avg_placement": 4.0635,
+      "count": 3526,
+      "score": 0.5282,
+      "place_change": -0.506,
+      "priority_scores": {
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
+      }
+    },
+    {
+      "unit": "婕拉",
+      "items": [
+        "黑荆棘纹章",
+        "裁决使纹章",
+        "虚空之杖"
+      ],
+      "avg_placement": 3.5743,
+      "count": 491,
+      "score": 0.4389,
+      "place_change": -0.995,
+      "priority_scores": {
+        "黑荆棘纹章": 100,
+        "裁决使纹章": 85,
+        "虚空之杖": 72
+      }
+    },
+    {
+      "unit": "索拉卡",
+      "items": [
+        "适应性头盔",
+        "灭世者的死亡之帽",
+        "朔极之矛"
+      ],
+      "avg_placement": 3.8755,
+      "count": 233,
+      "score": 0.2312,
+      "place_change": -0.694,
+      "priority_scores": {
+        "适应性头盔": 100,
+        "灭世者的死亡之帽": 85,
+        "朔极之矛": 72
+      }
+    },
+    {
+      "unit": "阿兹尔",
+      "items": [
+        "鬼索的狂暴之刃",
+        "海克斯科技枪刃",
+        "灭世者的死亡之帽"
+      ],
+      "avg_placement": 3.715,
+      "count": 1695,
+      "score": 0.203,
+      "place_change": -0.855,
+      "priority_scores": {
+        "鬼索的狂暴之刃": 100,
+        "海克斯科技枪刃": 85,
+        "灭世者的死亡之帽": 72
+      }
+    }
+  ],
+  "build_items": {
+    "石像鬼石板甲": {
+      "itemNames": "DA_GargoyleStoneplate",
+      "count": 85381,
+      "avg": 4.4631,
+      "pcnt": 1.19742
+    },
+    "朔极之矛": {
+      "itemNames": "DA_SpearOfShojin",
+      "count": 53898,
+      "avg": 4.3731,
+      "pcnt": 0.75589
+    },
+    "虚空之杖": {
+      "itemNames": "DA_VoidStaff",
+      "count": 49662,
+      "avg": 4.3214,
+      "pcnt": 0.69648
+    },
+    "狂徒铠甲": {
+      "itemNames": "DA_WarmogsArmor",
+      "count": 45843,
+      "avg": 4.3934,
+      "pcnt": 0.64292
+    },
+    "灭世者的死亡之帽": {
+      "itemNames": "DA_RabadonsDeathcap",
+      "count": 34380,
+      "avg": 4.1914,
+      "pcnt": 0.48216
+    },
+    "海克斯科技枪刃": {
+      "itemNames": "DA_HextechGunblade",
+      "count": 33075,
+      "avg": 4.3027,
+      "pcnt": 0.46386
+    },
+    "适应性头盔": {
+      "itemNames": "DA_AdaptiveHelm",
+      "count": 22125,
+      "avg": 4.1408,
+      "pcnt": 0.31029
+    },
+    "振奋盔甲": {
+      "itemNames": "DA_SpiritVisage",
+      "count": 22118,
+      "avg": 4.2029,
+      "pcnt": 0.31019
+    },
+    "黑荆棘纹章": {
+      "itemNames": "DA_18_EmblemBlackthorn",
+      "count": 20242,
+      "avg": 4.263,
+      "pcnt": 0.28388
+    },
+    "裁决使纹章": {
+      "itemNames": "DA_18_EmblemExecutioner",
+      "count": 19298,
+      "avg": 4.308,
+      "pcnt": 0.27064
+    },
+    "鬼索的狂暴之刃": {
+      "itemNames": "DA_GuinsoosRageblade",
+      "count": 17302,
+      "avg": 4.3333,
+      "pcnt": 0.24265
+    }
+  },
+  "trends": [
+    {
+      "day": "2026-10-06",
+      "count": 15877,
+      "avg": 4.5694,
+      "pick_rate": 0.068247
+    },
+    {
+      "day": "2026-10-07",
+      "count": 25402,
+      "avg": 4.4759,
+      "pick_rate": 0.059631
+    },
+    {
+      "day": "2026-10-08",
+      "count": 20323,
+      "avg": 4.6072,
+      "pick_rate": 0.05218
+    },
+    {
+      "day": "2026-10-09",
+      "count": 26166,
+      "avg": 4.6153,
+      "pick_rate": 0.048485
+    },
+    {
+      "day": "2026-10-10",
+      "count": 4551,
+      "avg": 4.6159,
+      "pick_rate": 0.046382
+    }
+  ],
+  "levelling": "Fast 8",
+  "difficulty": 0.072
+}

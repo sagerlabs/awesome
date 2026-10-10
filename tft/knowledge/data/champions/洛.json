@@ -2,103 +2,99 @@
   "name": "洛",
   "appear_in_comps": [
     {
-      "cluster_id": "422000",
-      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "cluster_id": "426001",
+      "comp_name": "DA_18_Rapidfire, DA_18_Aphelios",
       "tier": "A",
-      "avg_placement": 4.3301
+      "avg_placement": 4.2678
     },
     {
-      "cluster_id": "422005",
-      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
-      "tier": "A",
-      "avg_placement": 4.4132
-    },
-    {
-      "cluster_id": "422020",
-      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Rammus",
+      "cluster_id": "426015",
+      "comp_name": "DA_Juggernaut18, DA_18_Zyra, DA_Nidalee18_AP",
       "tier": "B",
-      "avg_placement": 4.5619
+      "avg_placement": 4.5807
     },
     {
-      "cluster_id": "422029",
+      "cluster_id": "426040",
+      "comp_name": "DA_Juggernaut18, DA_18_Sivir",
+      "tier": "B",
+      "avg_placement": 4.6236
+    },
+    {
+      "cluster_id": "426031",
       "comp_name": "DA_18_Elderwood, DA_18_Kayle",
       "tier": "B",
-      "avg_placement": 4.6188
+      "avg_placement": 4.7426
     },
     {
-      "cluster_id": "422027",
-      "comp_name": "DA_18_Spellweaver, DA_18_Lillia",
-      "tier": "B",
-      "avg_placement": 4.7714
-    },
-    {
-      "cluster_id": "422016",
-      "comp_name": "DA_18_Vanguard, DA_18_Caitlyn",
+      "cluster_id": "426048",
+      "comp_name": "DA_18_Fae, DA_18_Tristana",
       "tier": "C",
-      "avg_placement": 5.0438
+      "avg_placement": 4.8441
     },
     {
-      "cluster_id": "422045",
-      "comp_name": "DA_18_Spellweaver, DA_18_KhaZix",
-      "tier": "D",
-      "avg_placement": 5.1856
-    },
-    {
-      "cluster_id": "422040",
+      "cluster_id": "426045",
       "comp_name": "DA_Juggernaut18, DA_Nidalee18_AP",
-      "tier": "D",
-      "avg_placement": 5.301
+      "tier": "C",
+      "avg_placement": 4.911
     },
     {
-      "cluster_id": "422047",
-      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Xayah",
-      "tier": "D",
-      "avg_placement": 5.7119
+      "cluster_id": "426039",
+      "comp_name": "DA_Juggernaut18, DA_18_Caitlyn",
+      "tier": "C",
+      "avg_placement": 4.9795
     },
     {
-      "cluster_id": "422039",
+      "cluster_id": "426043",
+      "comp_name": "DA_Juggernaut18, DA_18_Azir",
+      "tier": "C",
+      "avg_placement": 4.987
+    },
+    {
+      "cluster_id": "426042",
+      "comp_name": "DA_18_Fae, DA_18_Rengar",
+      "tier": "C",
+      "avg_placement": 5.0882
+    },
+    {
+      "cluster_id": "426054",
+      "comp_name": "DA_18_Coven, DA_18_Elise",
+      "tier": "D",
+      "avg_placement": 5.3499
+    },
+    {
+      "cluster_id": "426057",
+      "comp_name": "DA_18_Executioner, DA_18_KhaZix",
+      "tier": "D",
+      "avg_placement": 5.6854
+    },
+    {
+      "cluster_id": "426058",
       "comp_name": "DA_18_Fae, DA_18_Xayah",
       "tier": "D",
-      "avg_placement": 5.8295
+      "avg_placement": 5.8032
     },
     {
-      "cluster_id": "422049",
-      "comp_name": "DA_18_Defender, DA_18_Rammus",
+      "cluster_id": "426059",
+      "comp_name": "DA_18_Vanguard, DA_18_Elise",
       "tier": "D",
-      "avg_placement": 5.8333
+      "avg_placement": 6.0797
     }
   ],
   "builds": [
     {
-      "cluster_id": "422047",
-      "comp_name": "DA_18_Fae, DA_18_Tristana, DA_18_Xayah",
-      "items": [
-        "石像鬼石板甲",
-        "日炎斗篷",
-        "狂徒铠甲"
-      ],
-      "avg_placement": 4,
-      "count": 11,
-      "priority_scores": {
-        "石像鬼石板甲": 100,
-        "日炎斗篷": 85,
-        "狂徒铠甲": 72
-      }
-    },
-    {
-      "cluster_id": "422039",
+      "cluster_id": "426058",
       "comp_name": "DA_18_Fae, DA_18_Xayah",
       "items": [
-        "薄暮法袍",
         "石像鬼石板甲",
-        "日炎斗篷"
+        "振奋盔甲",
+        "狂徒铠甲"
       ],
-      "avg_placement": 4,
-      "count": 17,
+      "avg_placement": 4.7959,
+      "count": 49,
       "priority_scores": {
-        "薄暮法袍": 100,
-        "石像鬼石板甲": 85,
-        "日炎斗篷": 72
+        "石像鬼石板甲": 100,
+        "振奋盔甲": 85,
+        "狂徒铠甲": 72
       }
     }
   ]
