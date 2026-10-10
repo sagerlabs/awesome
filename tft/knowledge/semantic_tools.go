@@ -213,12 +213,23 @@ func (s *UnifiedStore) resolveKnowledgeAlias(kind string, raw string) string {
 	return raw
 }
 
+// MinSampleFloorForStats 统一样本门槛（DATA-03 SamplePolicy）：
+// 低于该对局数的统计仅作参考展示（标注低样本），
+// 不作为排名/推荐依据。与数据抓取侧（get_tftmeta_cn.py 的
+// valid = count >= 200）保持同一数值，声明在响应元信息里，
+// 使基础推荐与 Meta 补充的低样本处理口径一致。
+const MinSampleFloorForStats = 200
+
 func (s *UnifiedStore) buildKnowledgeMetadata() *contracts.KnowledgeMetadata {
 	if s == nil || s.knowledgeStore == nil {
 		return nil
 	}
 
-	metadata := &contracts.KnowledgeMetadata{Source: "MetaTFT"}
+	metadata := &contracts.KnowledgeMetadata{
+		Source:      "MetaTFT",
+		GamePatch:   s.knowledgeStore.CurrentPatch(), // DATA-03：当前补丁显式声明
+		SampleFloor: MinSampleFloorForStats,           // DATA-03：统一样本门槛
+	}
 	for _, comp := range s.knowledgeStore.GetAllMetaComps() {
 		if comp == nil {
 			continue

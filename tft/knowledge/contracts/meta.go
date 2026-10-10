@@ -43,6 +43,10 @@ type KnowledgeMetadata struct {
 	Region string `json:"region,omitempty" yaml:"region,omitempty"`
 	// StatsWindowEnd 对应 SourceRecord.stats_window_end（统计窗口）。
 	StatsWindowEnd string `json:"stats_window_end,omitempty" yaml:"stats_window_end,omitempty"`
+	// SampleFloor 统一样本门槛（DATA-03）：基础推荐与 Meta 补充共用，
+	// 低于该样本数的统计仅作参考展示，不作为排名/推荐依据。
+	// 0 表示未声明（旧数据兼容）。
+	SampleFloor int `json:"sample_floor,omitempty" yaml:"sample_floor,omitempty"`
 }
 
 // CompPlan describes a comp as stage-based board snapshots.

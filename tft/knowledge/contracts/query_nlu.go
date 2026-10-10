@@ -17,6 +17,11 @@ type QueryNLURequest struct {
 	Gold           *int            `json:"gold"`
 	Level          *int            `json:"level"`
 	HP             *int            `json:"hp"`
+	// PatchHint 用户显式提及的补丁版本（如问"17.7 改了什么"时填 "17.7"）。
+	// DATA-03：非空时公告检索进入历史模式；为空一律只看当前补丁，
+	// 旧公告不再混入当前回答（NLU 抽取端接入由 CORE-02 完成，
+	// 字段缺席时零值走 current 模式，行为向后兼容）。
+	PatchHint string `json:"patch_hint,omitempty"`
 }
 
 // QueryNLUResponse 是 knowledge 对外返回的标准查询结果。
@@ -132,4 +137,9 @@ type PatchNoteInsight struct {
 	Summary      string   `json:"summary"`
 	ImpactTags   []string `json:"impact_tags,omitempty"`
 	Details      []string `json:"details,omitempty"`
+	// IsHistorical 该条公告是否属于历史（非当前生效）补丁。
+	// DATA-03：current 模式恒为 false；历史模式（PatchHint 指定旧版本）
+	// 为 true，agent 应显式向用户说明这是历史版本内容。
+	// 零值语义：false = 当前（未显式设置的旧调用方默认按当前处理）。
+	IsHistorical bool `json:"is_historical,omitempty"`
 }

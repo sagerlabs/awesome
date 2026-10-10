@@ -107,11 +107,21 @@ func writeKnowledgeMetadata(sb *strings.Builder, input *NluEnrichedContext) {
 	if input.Metadata.Version != "" {
 		sb.WriteString(fmt.Sprintf("- 版本：%s\n", input.Metadata.Version))
 	}
+	// DATA-03：当前补丁显式声明。回答"当前是什么版本"以此为准，
+	// 不要从公告标题或赛季名推断。
+	if input.Metadata.GamePatch != "" {
+		sb.WriteString(fmt.Sprintf("- 当前补丁：%s\n", input.Metadata.GamePatch))
+	}
 	if input.Metadata.UpdatedAt != "" {
 		sb.WriteString(fmt.Sprintf("- 更新时间：%s\n", input.Metadata.UpdatedAt))
 	}
 	if input.Metadata.SampleCount > 0 {
 		sb.WriteString(fmt.Sprintf("- 样本量：%d\n", input.Metadata.SampleCount))
+	}
+	// DATA-03：统一样本门槛。低于该样本数的阵容统计要标注
+	// "低样本，参考性有限"，不得作为强势结论的依据。
+	if input.Metadata.SampleFloor > 0 {
+		sb.WriteString(fmt.Sprintf("- 样本门槛：%d（低于此数的统计仅作参考展示）\n", input.Metadata.SampleFloor))
 	}
 }
 
@@ -234,7 +244,12 @@ func writePatchNotesSection(sb *strings.Builder, notes []PatchNoteInsight) {
 		if i >= 5 {
 			break
 		}
-		sb.WriteString(fmt.Sprintf("\n### %d. %s - %s\n", i+1, note.Patch, note.SectionTitle))
+		// DATA-03：历史模式显式标注，防止旧版本内容被当成当前环境
+		header := fmt.Sprintf("### %d. %s - %s\n", i+1, note.Patch, note.SectionTitle)
+		if note.IsHistorical {
+			header = fmt.Sprintf("### %d. [%s·历史版本] %s\n", i+1, note.Patch, note.SectionTitle)
+		}
+		sb.WriteString(header)
 		if note.Summary != "" {
 			sb.WriteString(fmt.Sprintf("- 摘要：%s\n", note.Summary))
 		}

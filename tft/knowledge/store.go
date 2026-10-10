@@ -238,6 +238,61 @@ func (s *Store) GetAllPatchNotes() []*models.PatchNote {
 	return notes
 }
 
+// CurrentPatch 返回当前生效补丁号（所有公告中版本号最大者）。
+// DATA-03：公告检索的 current 模式以此为准；语义化比较，
+// "18.10" > "18.4" > "18.1" > "17.7"（非字典序）。
+// 注意：这里选的是"知识库里最新的公告版本"，与 MetaTFT 统计所属
+// 补丁独立声明（统计新鲜度由 SourceRecord 的窗口字段承载，
+// 不用公告更新证明统计已更新——ADR013）。
+func (s *Store) CurrentPatch() string {
+	current := ""
+	for patch := range s.patchNotes {
+		if current == "" || ComparePatch(patch, current) > 0 {
+			current = patch
+		}
+	}
+	return current
+}
+
+// ComparePatch 语义化比较两个补丁号（MAJOR.MINOR），返回 -1/0/1。
+// 逐段按整数比较，段数不足按 0 补齐："18.10" > "18.4"，
+// "17.7" < "18.1"。非法格式按字典序兜底。
+func ComparePatch(a, b string) int {
+	pa, aok := parsePatchSegments(a)
+	pb, bok := parsePatchSegments(b)
+	if !aok || !bok {
+		return strings.Compare(a, b)
+	}
+	for i := 0; i < 2; i++ {
+		if pa[i] != pb[i] {
+			if pa[i] < pb[i] {
+				return -1
+			}
+			return 1
+		}
+	}
+	return 0
+}
+
+func parsePatchSegments(p string) ([2]int, bool) {
+	var out [2]int
+	parts := strings.Split(p, ".")
+	if len(parts) != 2 {
+		return out, false
+	}
+	for i, part := range parts {
+		n := 0
+		for _, r := range part {
+			if r < '0' || r > '9' {
+				return out, false
+			}
+			n = n*10 + int(r-'0')
+		}
+		out[i] = n
+	}
+	return out, true
+}
+
 // SearchChampions 搜索英雄（简单的关键词搜索）
 func (s *Store) SearchChampions(query string) []*models.Champion {
 	var results []*models.Champion
