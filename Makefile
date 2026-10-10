@@ -148,30 +148,14 @@ data-opgg-mvp-check: ## 使用 OP.GG MCP 响应样例做 dry-run 校验（可传
 	@echo "✅ OP.GG MCP MVP 数据管线校验完成"
 
 .PHONY: data-check
-data-check: ## 检查数据文件是否存在且非空
-	@echo "🔍 检查数据文件..."
-	@for f in comps_for_agent.json items_priority.json localization.json; do \
-		path="$(METADATA_DIR)/$$f"; \
-		if [ ! -f "$$path" ]; then \
-			echo "❌ 缺少文件: $$path，请先运行 make data"; \
-			exit 1; \
-		fi; \
-		echo "  ✓ $$f"; \
-	done
-	@for d in champions items team_comps; do \
-		path="$(KNOWLEDGE_DIR)/$$d"; \
-		if [ ! -d "$$path" ]; then \
-			echo "❌ 缺少目录: $$path，请先运行 make data"; \
-			exit 1; \
-		fi; \
-		echo "  ✓ $$d/"; \
-	done
-	@if [ ! -f "$(KNOWLEDGE_DIR)/aliases.json" ]; then \
-		echo "❌ 缺少文件: $(KNOWLEDGE_DIR)/aliases.json"; \
-		exit 1; \
-	fi
-	@echo "  ✓ aliases.json"
-	@echo "✅ 数据文件完整"
+data-check: ## 权威数据校验（DATA-02）：非空/截断/引用/反向冲突/混版本/hash，退出码做构建门禁
+	@echo "🔍 数据校验（权威入口）..."
+	@go run ./cmd/tft-data-check -metadata $(METADATA_DIR) -knowledge $(KNOWLEDGE_DIR)
+	@echo "✅ 数据校验通过"
+
+.PHONY: data-check-baseline
+data-check-baseline: ## 写入 entity 计数基线（供 data-check 骤变对比）
+	@go run ./cmd/tft-data-check -metadata $(METADATA_DIR) -knowledge $(KNOWLEDGE_DIR) -baseline .data-check-baseline.json -write-baseline
 
 # ── 测试 ──────────────────────────────────────────────────────────────────────
 

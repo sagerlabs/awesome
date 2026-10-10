@@ -27,6 +27,8 @@ release/
 # 数据发布契约包（源码，非构建产物；勿与上面的 release/ 构建目录混淆）
 !tft/release/
 !tft/release/**
+# data-check 基线（本地产物）
+.data-check-baseline.json
 # 环境变量
 .env
 .env.local
